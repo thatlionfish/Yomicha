@@ -1,0 +1,196 @@
+{
+  "id": "2026-11-13-kenshin-1",
+  "date": "2026-11-13",
+  "topic": "jlpt",
+  "type": "email",
+  "stufe": 1,
+  "titleDe": "Wegen nächstem Mittwoch",
+  "title": [
+    {"t": "来週", "r": "らいしゅう", "g": "nächste Woche", "j": 5},
+    {"t": "の"},
+    {"t": "水曜日", "r": "すいようび", "g": "Mittwoch", "j": 5},
+    {"t": "の"},
+    {"t": "こと", "g": "Sache; 〜のこと = wegen …, über …", "j": 4}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "来週", "r": "らいしゅう", "g": "nächste Woche", "j": 5},
+        {"t": "の"},
+        {"t": "水曜日", "r": "すいようび", "g": "Mittwoch", "j": 5},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "お医者さん", "r": "おいしゃさん", "ruby": [["お", ""], ["医者", "いしゃ"], ["さん", ""]], "g": "Arzt, Ärztin (höflich)"},
+        {"t": "が"},
+        {"t": "会社", "r": "かいしゃ", "g": "Firma", "j": 5},
+        {"t": "に"},
+        {"t": "来ます", "r": "きます", "ruby": [["来", "き"], ["ます", ""]], "b": "来る", "g": "kommen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "午前", "r": "ごぜん", "g": "vormittags", "j": 5},
+        {"t": "8時", "r": "はちじ", "g": "acht Uhr"},
+        {"t": "から", "g": "von, ab"},
+        {"t": "12時", "r": "いちにじ", "g": "zwölf Uhr"},
+        {"t": "まで", "g": "bis"},
+        {"t": "、"},
+        {"t": "三階", "r": "さんかい", "g": "dritter Stock (in Japan: 2. OG)"},
+        {"t": "の"},
+        {"t": "部屋", "r": "へや", "g": "Zimmer, Raum", "j": 5},
+        {"t": "で", "b": "だ"},
+        {"t": "、"},
+        {"t": "お医者さん", "r": "おいしゃさん", "ruby": [["お", ""], ["医者", "いしゃ"], ["さん", ""]], "g": "Arzt, Ärztin (höflich)"},
+        {"t": "が"},
+        {"t": "みなさん", "g": "alle (Anrede)", "j": 5},
+        {"t": "の"},
+        {"t": "体", "r": "からだ", "g": "Körper", "j": 5},
+        {"t": "を"},
+        {"t": "見ます", "r": "みます", "ruby": [["見", "み"], ["ます", ""]], "b": "見る", "g": "ansehen; 体を見る = untersuchen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "水曜日", "r": "すいようび", "g": "Mittwoch", "j": 5},
+        {"t": "の"},
+        {"t": "朝", "r": "あさ", "g": "Morgen", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "朝ごはん", "r": "あさごはん", "ruby": [["朝", "あさ"], ["ごはん", ""]], "g": "Frühstück", "j": 5},
+        {"t": "を"},
+        {"t": "食べないで", "r": "たべないで", "ruby": [["食", "た"], ["べないで", ""]], "b": "食べる", "g": "essen", "j": 5, "gr": "g1"},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …; 〜ないでください = bitte nicht …", "j": 4, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "水", "r": "みず", "g": "Wasser", "j": 5},
+        {"t": "は"},
+        {"t": "少し", "r": "すこし", "ruby": [["少", "すこ"], ["し", ""]], "g": "ein wenig", "j": 5},
+        {"t": "飲んで", "r": "のんで", "ruby": [["飲", "の"], ["んで", ""]], "b": "飲む", "g": "trinken", "j": 5, "gr": "g2"},
+        {"t": "も", "gr": "g2"},
+        {"t": "いい", "g": "gut; 〜てもいい = darf …", "j": 5, "gr": "g2"},
+        {"t": "です", "gr": "g2"},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "名前", "r": "なまえ", "g": "Name", "j": 5},
+        {"t": "を"},
+        {"t": "書いた", "r": "かいた", "ruby": [["書", "か"], ["いた", ""]], "b": "書く", "g": "schreiben", "j": 5},
+        {"t": "紙", "r": "かみ", "g": "Papier, Zettel", "j": 5},
+        {"t": "を"},
+        {"t": "、"},
+        {"t": "月曜日", "r": "げつようび", "g": "Montag", "j": 5},
+        {"t": "まで", "g": "bis", "gr": "g3"},
+        {"t": "に", "gr": "g3"},
+        {"t": "出して", "r": "だして", "ruby": [["出", "だ"], ["して", ""]], "b": "出す", "g": "abgeben, einreichen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …; 〜ないでください = bitte nicht …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "わからない", "b": "わかる", "g": "verstehen", "j": 5},
+        {"t": "とき", "g": "wenn, Zeitpunkt; 〜ときは = wenn …", "j": 5, "gr": "g4"},
+        {"t": "は", "gr": "g4"},
+        {"t": "、"},
+        {"t": "山田", "r": "やまだ", "g": "Yamada (Familienname)", "say": "やまだ"},
+        {"t": "に"},
+        {"t": "電話", "r": "でんわ", "g": "Telefon; 電話する = anrufen", "j": 5},
+        {"t": "して", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …; 〜ないでください = bitte nicht …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ないでください",
+      "j": 5,
+      "de": "Nai-Form + でください: „bitte nicht …“.",
+      "ex": "ここで{写真|しゃしん}を{撮|と}らないでください。",
+      "exDe": "Bitte hier keine Fotos machen."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜てもいいです",
+      "j": 5,
+      "de": "て-Form + もいいです: „man darf …“.",
+      "ex": "{窓|まど}を{開|あ}けてもいいですか。",
+      "exDe": "Darf ich das Fenster öffnen?"
+    },
+    {
+      "id": "g3",
+      "pattern": "〜までに",
+      "j": 4,
+      "de": "„bis spätestens …“ – ein Termin, an dem etwas fertig sein muss (まで = die ganze Zeit bis …).",
+      "ex": "{金曜日|きんようび}までに{本|ほん}を{返|かえ}してください。",
+      "exDe": "Bitte geben Sie das Buch bis Freitag zurück."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜とき",
+      "j": 5,
+      "de": "„wenn …“, „als …“ – der Zeitpunkt, zu dem etwas passiert.",
+      "ex": "{寒|さむ}いときは、{温|あたた}かいお{茶|ちゃ}を{飲|の}みます。",
+      "exDe": "Wenn es kalt ist, trinke ich warmen Tee."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "{来週|らいしゅう}の{水曜日|すいようび}に、{会社|かいしゃ}に来るのはだれですか。",
+      "qDe": "Wer kommt nächsten Mittwoch in die Firma?",
+      "options": ["{山田|やまだ}さん", "お{医者|いしゃ}さん", "先生", "みなさんの{家族|かぞく}"],
+      "answer": 1,
+      "explain": "Satz 1: お医者さんが会社に来ます – eine Ärztin oder ein Arzt kommt.",
+      "evidence": [0]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{水曜日|すいようび}の{朝|あさ}、してもいいことはどれですか。",
+      "qDe": "Was darf man am Mittwochmorgen tun?",
+      "options": ["{朝|あさ}ごはんを食べる", "水を{少|すこ}し{飲|の}む", "{部屋|へや}で{寝|ね}る", "{会社|かいしゃ}に来ない"],
+      "answer": 1,
+      "explain": "Satz 4: 水は少し飲んでもいいです. Frühstück ist laut Satz 3 nicht erlaubt.",
+      "evidence": [2, 3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{月曜日|げつようび}までに、何をしますか。",
+      "qDe": "Was muss man bis Montag tun?",
+      "options": ["{山田|やまだ}さんに電話する", "お{医者|いしゃ}さんに{会|あ}う", "名前を書いた{紙|かみ}を出す", "{三階|さんかい}の{部屋|へや}に行く"],
+      "answer": 2,
+      "explain": "Satz 5: 名前を書いた紙を、月曜日までに出してください. Anrufen soll man nur, wenn man etwas nicht versteht (Satz 6).",
+      "evidence": [4, 5]
+    },
+    {
+      "kind": "sprache",
+      "q": "「午前」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 午前?",
+      "options": ["ごご", "ごぜん", "うまえ", "ごまえ"],
+      "answer": 1,
+      "explain": "午前 liest man ごぜん (vormittags). ごご ist 午後 (nachmittags).",
+      "evidence": [1]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "2": "texte/2026/11/2026-11-13-kenshin-2",
+    "3": "texte/2026/11/2026-11-13-kenshin-3",
+    "4": "texte/2026/11/2026-11-13-kenshin-4"
+  }
+}

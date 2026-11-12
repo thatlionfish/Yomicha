@@ -1,6 +1,130 @@
 {
   "texts": [
     {
+      "id": "2026-11-13-sekki-4",
+      "folder": "texte/2026/11/2026-11-13-sekki-4",
+      "date": "2026-11-13",
+      "topic": "welt",
+      "stufe": 4,
+      "title": "日本で最も古い石器、広島の山で調査続く",
+      "titleDe": "Japans ältestes Steinwerkzeug: Untersuchungen in den Bergen Hiroshimas gehen weiter",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-sekki-3",
+      "folder": "texte/2026/11/2026-11-13-sekki-3",
+      "date": "2026-11-13",
+      "topic": "welt",
+      "stufe": 3,
+      "title": "日本で最も古い石器、広島で調査続く",
+      "titleDe": "Japans ältestes Steinwerkzeug: Die Untersuchungen in Hiroshima gehen weiter",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-sekki-2",
+      "folder": "texte/2026/11/2026-11-13-sekki-2",
+      "date": "2026-11-13",
+      "topic": "welt",
+      "stufe": 2,
+      "title": "日本でいちばん古い石器",
+      "titleDe": "Das älteste Steinwerkzeug Japans",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-sekki-1",
+      "folder": "texte/2026/11/2026-11-13-sekki-1",
+      "date": "2026-11-13",
+      "topic": "welt",
+      "stufe": 1,
+      "title": "広島の古い石の道具",
+      "titleDe": "Ein altes Steinwerkzeug aus Hiroshima",
+      "minutes": 2
+    },
+    {
+      "id": "2026-11-13-kenshin-4",
+      "folder": "texte/2026/11/2026-11-13-kenshin-4",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 4,
+      "title": "定期健康診断の実施について",
+      "titleDe": "Zur jährlichen Gesundheitsuntersuchung",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-13-kenshin-3",
+      "folder": "texte/2026/11/2026-11-13-kenshin-3",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "健康診断の日程について",
+      "titleDe": "Zum Termin der Gesundheitsuntersuchung",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-kenshin-2",
+      "folder": "texte/2026/11/2026-11-13-kenshin-2",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "健康診断のお知らせ",
+      "titleDe": "Mitteilung zur Gesundheitsuntersuchung",
+      "minutes": 2
+    },
+    {
+      "id": "2026-11-13-kenshin-1",
+      "folder": "texte/2026/11/2026-11-13-kenshin-1",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 1,
+      "title": "来週の水曜日のこと",
+      "titleDe": "Wegen nächstem Mittwoch",
+      "minutes": 2
+    },
+    {
+      "id": "2026-11-13-gomi-4",
+      "folder": "texte/2026/11/2026-11-13-gomi-4",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 4,
+      "title": "家庭ごみの分け方について",
+      "titleDe": "Hausmüll richtig trennen",
+      "minutes": 5,
+      "vorrat": true
+    },
+    {
+      "id": "2026-11-13-gomi-3",
+      "folder": "texte/2026/11/2026-11-13-gomi-3",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "ごみの分け方と出し方",
+      "titleDe": "Müll trennen und rausbringen",
+      "minutes": 4,
+      "vorrat": true
+    },
+    {
+      "id": "2026-11-13-gomi-2",
+      "folder": "texte/2026/11/2026-11-13-gomi-2",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "ごみの正しい出し方",
+      "titleDe": "Den Müll richtig rausbringen",
+      "minutes": 3,
+      "vorrat": true
+    },
+    {
+      "id": "2026-11-13-gomi-1",
+      "folder": "texte/2026/11/2026-11-13-gomi-1",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 1,
+      "title": "ごみを出す日",
+      "titleDe": "Die Tage für den Müll",
+      "minutes": 2,
+      "vorrat": true
+    },
+    {
       "id": "2026-11-12-hojicha-2",
       "folder": "texte/2026/11/2026-11-12-hojicha-2",
       "date": "2026-11-12",

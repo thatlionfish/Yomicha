@@ -1,0 +1,262 @@
+{
+  "id": "2026-11-13-sekki-1",
+  "date": "2026-11-13",
+  "topic": "welt",
+  "type": "nachricht",
+  "stufe": 1,
+  "titleDe": "Ein altes Steinwerkzeug aus Hiroshima",
+  "title": [
+    {"t": "広島", "r": "ひろしま", "g": "Hiroshima (Stadt und Präfektur im Westen Japans)"},
+    {"t": "の"},
+    {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+    {"t": "石", "r": "いし", "g": "Stein", "j": 4},
+    {"t": "の"},
+    {"t": "道具", "r": "どうぐ", "g": "Werkzeug", "j": 4}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "去年", "r": "きょねん", "g": "letztes Jahr", "j": 5},
+        {"t": "、"},
+        {"t": "広島県", "r": "ひろしまけん", "g": "Präfektur Hiroshima", "say": "ひろしまけん"},
+        {"t": "の"},
+        {"t": "山", "r": "やま", "g": "Berg", "j": 5},
+        {"t": "の"},
+        {"t": "中", "r": "なか", "g": "Inneres; 山の中 = in den Bergen", "j": 5},
+        {"t": "で"},
+        {"t": "、"},
+        {"t": "とても", "g": "sehr", "j": 5},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "石", "r": "いし", "g": "Stein", "j": 4},
+        {"t": "の"},
+        {"t": "道具", "r": "どうぐ", "g": "Werkzeug", "j": 4},
+        {"t": "が"},
+        {"t": "出ました", "r": "でました", "ruby": [["出", "で"], ["ました", ""]], "b": "出る", "g": "herauskommen, zum Vorschein kommen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "四万二千年", "r": "よんまんにせんねん", "g": "42.000 Jahre"},
+        {"t": "ぐらい", "g": "ungefähr, etwa", "gr": "g1"},
+        {"t": "前", "r": "まえ", "g": "vor (zeitlich)", "j": 5},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "人", "r": "ひと", "g": "Mensch", "j": 5},
+        {"t": "が"},
+        {"t": "使った", "r": "つかった", "ruby": [["使", "つか"], ["った", ""]], "b": "使う", "g": "benutzen", "j": 5},
+        {"t": "道具", "r": "どうぐ", "g": "Werkzeug", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "で"},
+        {"t": "いちばん", "g": "am meisten; いちばん古い = am ältesten", "j": 5, "gr": "g2"},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "道具", "r": "どうぐ", "g": "Werkzeug", "j": 4},
+        {"t": "か", "gr": "g3"},
+        {"t": "も", "g": "auch; 今も = auch jetzt noch", "gr": "g3"},
+        {"t": "しれません", "b": "しれる", "g": "かもしれない = vielleicht, könnte sein", "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "前", "r": "まえ", "g": "vor (zeitlich)", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "いちばん", "g": "am meisten; いちばん古い = am ältesten", "j": 5},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "道具", "r": "どうぐ", "g": "Werkzeug", "j": 4},
+        {"t": "は"},
+        {"t": "三万七千年", "r": "さんまんななせんねん", "g": "37.000 Jahre"},
+        {"t": "ぐらい", "g": "ungefähr, etwa", "gr": "g1"},
+        {"t": "前", "r": "まえ", "g": "vor (zeitlich)", "j": 5},
+        {"t": "の"},
+        {"t": "もの", "g": "Ding, Sache", "j": 5},
+        {"t": "でし", "b": "です"},
+        {"t": "た"},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "奈良", "r": "なら", "g": "Nara (Stadt in Westjapan)", "say": "なら"},
+        {"t": "の"},
+        {"t": "研究所", "r": "けんきゅうしょ", "g": "Forschungsinstitut"},
+        {"t": "の"},
+        {"t": "人たち", "r": "ひとたち", "ruby": [["人", "ひと"], ["たち", ""]], "g": "Leute"},
+        {"t": "が"},
+        {"t": "、"},
+        {"t": "今", "r": "いま", "g": "jetzt", "j": 5},
+        {"t": "も", "g": "auch; 今も = auch jetzt noch"},
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "山", "r": "やま", "g": "Berg", "j": 5},
+        {"t": "で"},
+        {"t": "調べています", "r": "しらべています", "ruby": [["調", "しら"], ["べています", ""]], "b": "調べる", "g": "untersuchen, erforschen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "山", "r": "やま", "g": "Berg", "j": 5},
+        {"t": "から"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "ほか", "g": "andere(s); ほかにも = auch noch weitere", "j": 5},
+        {"t": "に"},
+        {"t": "も", "g": "auch; 今も = auch jetzt noch"},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "石", "r": "いし", "g": "Stein", "j": 4},
+        {"t": "の"},
+        {"t": "道具", "r": "どうぐ", "g": "Werkzeug", "j": 4},
+        {"t": "が"},
+        {"t": "たくさん", "g": "viel(e)", "j": 5},
+        {"t": "出ました", "r": "でました", "ruby": [["出", "で"], ["ました", ""]], "b": "出る", "g": "herauskommen, zum Vorschein kommen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "町", "r": "まち", "g": "Stadt, Ort", "j": 5, "say": "まち"},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "ここ", "g": "hier", "j": 5},
+        {"t": "に"},
+        {"t": "たくさん", "g": "viel(e)", "j": 5},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch", "j": 5},
+        {"t": "に"},
+        {"t": "来て", "r": "きて", "ruby": [["来", "き"], ["て", ""]], "b": "来る", "g": "kommen", "j": 5, "gr": "g4"},
+        {"t": "ほしい", "g": "wollen; 〜てほしい = möchten, dass jemand …", "j": 5, "gr": "g4"},
+        {"t": "と"},
+        {"t": "言っています", "r": "いっています", "ruby": [["言", "い"], ["っています", ""]], "b": "言う", "g": "sagen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "わたし", "g": "ich", "j": 5},
+        {"t": "も", "g": "auch; 今も = auch jetzt noch"},
+        {"t": "、"},
+        {"t": "いつか", "g": "irgendwann", "j": 5},
+        {"t": "友だち", "r": "ともだち", "ruby": [["友", "とも"], ["だち", ""]], "g": "Freund(in)", "j": 5},
+        {"t": "と"},
+        {"t": "見", "r": "み", "b": "見る", "g": "sehen, anschauen", "j": 5},
+        {"t": "に"},
+        {"t": "行きたい", "r": "いきたい", "ruby": [["行", "い"], ["きたい", ""]], "b": "行く", "g": "gehen", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ぐらい",
+      "j": 5,
+      "de": "Nach einer Zahl oder Menge: „ungefähr“, „etwa“.",
+      "ex": "{駅|えき}まで{十分|じゅっぷん}ぐらいです。",
+      "exDe": "Bis zum Bahnhof sind es etwa zehn Minuten."
+    },
+    {
+      "id": "g2",
+      "pattern": "いちばん〜",
+      "j": 5,
+      "de": "„am …sten“ – der höchste Grad in einer Gruppe.",
+      "ex": "{富士山|ふじさん}は{日本|にほん}でいちばん{高|たか}い{山|やま}です。",
+      "exDe": "Der Fuji ist der höchste Berg Japans."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜かもしれません",
+      "j": 4,
+      "de": "„vielleicht …“, „es könnte sein, dass …“ – man ist sich nicht sicher.",
+      "ex": "{明日|あした}は{雨|あめ}かもしれません。",
+      "exDe": "Morgen regnet es vielleicht."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜てほしい",
+      "j": 4,
+      "de": "て-Form + ほしい: „möchten, dass jemand anderes … tut“.",
+      "ex": "{友|とも}だちに{手伝|てつだ}ってほしいです。",
+      "exDe": "Ich möchte, dass meine Freundin mir hilft."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "{石|いし}の{道具|どうぐ}は、どこで出ましたか。",
+      "qDe": "Wo wurde das Steinwerkzeug gefunden?",
+      "options": ["{奈良|なら}の{町|まち}", "{広島県|ひろしまけん}の山の中", "{東京|とうきょう}の{店|みせ}", "{海|うみ}の{近|ちか}く"],
+      "answer": 1,
+      "explain": "Satz 1: 広島県の山の中で … 出ました – in den Bergen der Präfektur Hiroshima. Nara (Satz 5) ist der Ort des Forschungsinstituts.",
+      "evidence": [0]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{道具|どうぐ}は、何年ぐらい前のものですか。",
+      "qDe": "Wie alt ist das Werkzeug ungefähr?",
+      "options": ["三万七千年ぐらい前", "四万二千年ぐらい前", "四百年ぐらい前", "{去年|きょねん}"],
+      "answer": 1,
+      "explain": "Satz 2: 四万二千年ぐらい前 – etwa 42.000 Jahre. 37.000 Jahre (Satz 4) war das bisher älteste Werkzeug.",
+      "evidence": [1, 3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{町|まち}の人は、何がしたいですか。",
+      "qDe": "Was möchten die Leute aus dem Ort?",
+      "options": ["{石|いし}の{道具|どうぐ}を{売|う}りたい", "山を{作|つく}りたい", "{多|おお}くの人に来てほしい", "{奈良|なら}に行きたい"],
+      "answer": 2,
+      "explain": "Satz 7: ここに多くの人に来てほしい – sie möchten, dass viele Menschen hierherkommen.",
+      "evidence": [6]
+    },
+    {
+      "kind": "sprache",
+      "q": "「去年」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 去年?",
+      "options": ["こねん", "きょねん", "きょとし", "さるとし"],
+      "answer": 1,
+      "explain": "去年 liest man きょねん (letztes Jahr).",
+      "evidence": [0]
+    }
+  ],
+  "sources": [
+    {
+      "name": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/news/2026/11/12/japan/society/hiroshima-ruins-excavation/"
+    },
+    {
+      "name": "Chugoku Shimbun",
+      "url": "https://www.chugoku-np.co.jp/articles/-/713491"
+    },
+    {
+      "name": "Chugoku Shimbun",
+      "url": "https://www.chugoku-np.co.jp/articles/-/800381"
+    },
+    {
+      "name": "nippon.com (Jiji)",
+      "url": "https://www.nippon.com/en/articles/-/56472"
+    }
+  ],
+  "versions": {
+    "2": "texte/2026/11/2026-11-13-sekki-2",
+    "3": "texte/2026/11/2026-11-13-sekki-3",
+    "4": "texte/2026/11/2026-11-13-sekki-4"
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "id": "2026-11-13-gomi-3",
+  "date": "2026-11-13",
+  "topic": "jlpt",
+  "type": "infoblatt",
+  "stufe": 3,
+  "titleDe": "Müll trennen und rausbringen",
+  "title": [
+    {"t": "ごみ", "g": "Müll", "j": 4},
+    {"t": "の"},
+    {"t": "分け方", "r": "わけかた", "ruby": [["分", "わ"], ["け", ""], ["方", "かた"]], "g": "Art zu trennen, Trennung"},
+    {"t": "と"},
+    {"t": "出し方", "r": "だしかた", "ruby": [["出", "だ"], ["し", ""], ["方", "かた"]], "g": "Art, (den Müll) rauszubringen"}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "市", "r": "し", "g": "Stadt (Verwaltung)", "j": 4},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "を"},
+        {"t": "減らす", "r": "へらす", "ruby": [["減", "へ"], ["らす", ""]], "g": "verringern", "j": 3},
+        {"t": "ため", "g": "um … zu", "j": 4},
+        {"t": "、"},
+        {"t": "四つ", "r": "よんつ", "ruby": [["四", "よん"], ["つ", ""]], "g": "vier (Stück)", "j": 5},
+        {"t": "に", "g": "an"},
+        {"t": "分けて", "r": "わけて", "ruby": [["分", "わ"], ["けて", ""]], "b": "分ける", "g": "trennen, aufteilen", "j": 3},
+        {"t": "集めています", "r": "あつめています", "ruby": [["集", "あつ"], ["めています", ""]], "b": "集める", "g": "sammeln, abholen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "燃える", "r": "もえる", "ruby": [["燃", "も"], ["える", ""]], "g": "brennen; 燃えるごみ = brennbarer Müll", "j": 3},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "は"},
+        {"t": "毎週", "r": "まいしゅう", "g": "jede Woche", "j": 5},
+        {"t": "月曜日", "r": "げつようび", "g": "Montag", "j": 5},
+        {"t": "と"},
+        {"t": "木曜日", "r": "もくようび", "g": "Donnerstag", "j": 5},
+        {"t": "、"},
+        {"t": "ビン", "g": "Flasche (aus Glas)"},
+        {"t": "・"},
+        {"t": "カン", "g": "Dose"},
+        {"t": "・"},
+        {"t": "ペットボトル", "g": "PET-Flasche"},
+        {"t": "は"},
+        {"t": "毎週", "r": "まいしゅう", "g": "jede Woche", "j": 5},
+        {"t": "水曜日", "r": "すいようび", "g": "Mittwoch", "j": 5},
+        {"t": "に", "g": "an"},
+        {"t": "集めます", "r": "あつめます", "ruby": [["集", "あつ"], ["めます", ""]], "b": "集める", "g": "sammeln, abholen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "燃えない", "r": "もえない", "ruby": [["燃", "も"], ["えない", ""]], "b": "燃える", "g": "nicht brennbar", "j": 3},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "と"},
+        {"t": "古紙", "r": "こし", "g": "Altpapier", "j": 3},
+        {"t": "は"},
+        {"t": "月", "r": "つき", "g": "Monat", "j": 4},
+        {"t": "に", "g": "an"},
+        {"t": "一回", "r": "いちかい", "g": "einmal"},
+        {"t": "ずつ", "g": "jeweils", "gr": "g1"},
+        {"t": "集めます", "r": "あつめます", "ruby": [["集", "あつ"], ["めます", ""]], "b": "集める", "g": "sammeln, abholen", "j": 4},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "カレンダー", "g": "Kalender", "j": 5},
+        {"t": "で"},
+        {"t": "日にち", "r": "ひにち", "ruby": [["日", "ひ"], ["にち", ""]], "g": "Datum, Tag", "j": 2},
+        {"t": "を"},
+        {"t": "確認", "r": "かくにん", "g": "Überprüfung; 確認する = nachsehen, prüfen", "j": 3},
+        {"t": "して", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "ビン", "g": "Flasche (aus Glas)"},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "カン", "g": "Dose"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "中", "r": "なか", "g": "Inneres", "j": 5},
+        {"t": "を"},
+        {"t": "軽く", "r": "かるく", "ruby": [["軽", "かる"], ["く", ""]], "b": "軽い", "g": "leicht; 軽く = leicht, kurz", "j": 5},
+        {"t": "洗い", "r": "あらい", "ruby": [["洗", "あら"], ["い", ""]], "b": "洗う", "g": "waschen, ausspülen", "j": 5},
+        {"t": "、"},
+        {"t": "ふた", "g": "Deckel", "j": 2},
+        {"t": "を"},
+        {"t": "外して", "r": "はずして", "ruby": [["外", "はず"], ["して", ""]], "b": "外す", "g": "abnehmen, entfernen", "j": 3},
+        {"t": "から", "g": "〜てから = nachdem …"},
+        {"t": "出して", "r": "だして", "ruby": [["出", "だ"], ["して", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "集める", "r": "あつめる", "ruby": [["集", "あつ"], ["める", ""]], "g": "sammeln, abholen", "j": 4},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "の"},
+        {"t": "朝", "r": "あさ", "g": "Morgen", "j": 5},
+        {"t": "8時", "r": "はちじ", "g": "acht Uhr"},
+        {"t": "まで", "g": "an, bis zu"},
+        {"t": "に", "g": "an"},
+        {"t": "、"},
+        {"t": "決められた", "r": "きめられた", "ruby": [["決", "き"], ["められた", ""]], "b": "決める", "g": "festlegen; 決められた = festgelegt", "j": 4},
+        {"t": "場所", "r": "ばしょ", "g": "Ort, Platz", "j": 4},
+        {"t": "に", "g": "an"},
+        {"t": "出して", "r": "だして", "ruby": [["出", "だ"], ["して", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "カラス", "g": "Krähe"},
+        {"t": "など", "g": "und andere"},
+        {"t": "に", "g": "an"},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "を"},
+        {"t": "散らかされないよう", "r": "ちらかされないよう", "ruby": [["散", "ち"], ["らかされないよう", ""]], "b": "散らかす", "g": "verstreuen, unordentlich machen", "j": 2},
+        {"t": "、"},
+        {"t": "必ず", "r": "かならず", "ruby": [["必", "かなら"], ["ず", ""]], "g": "unbedingt, immer", "j": 4},
+        {"t": "ネット", "g": "Netz"},
+        {"t": "を"},
+        {"t": "かけて", "b": "かける", "g": "überdecken, darüberlegen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "ルール", "g": "Regel", "j": 3},
+        {"t": "を"},
+        {"t": "守らず", "r": "まもらず", "ruby": [["守", "まも"], ["らず", ""]], "b": "守る", "g": "einhalten", "j": 3, "gr": "g2"},
+        {"t": "に", "g": "an", "gr": "g2"},
+        {"t": "出された", "r": "だされた", "ruby": [["出", "だ"], ["された", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "に", "g": "an"},
+        {"t": "は"},
+        {"t": "黄色い", "r": "きいろい", "ruby": [["黄色", "きいろ"], ["い", ""]], "g": "gelb", "j": 5},
+        {"t": "シール", "g": "Aufkleber"},
+        {"t": "が"},
+        {"t": "はられ", "b": "はる", "g": "kleben", "j": 5},
+        {"t": "、"},
+        {"t": "集められない", "r": "あつめられない", "ruby": [["集", "あつ"], ["められない", ""]], "b": "集める", "g": "sammeln, abholen", "j": 4},
+        {"t": "こと", "g": "〜ことがある = es kommt vor, dass …", "j": 4, "gr": "g3"},
+        {"t": "が", "gr": "g3"},
+        {"t": "あります", "b": "ある", "g": "〜ことがある = es kommt vor, dass …", "j": 5, "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "分け方", "r": "わけかた", "ruby": [["分", "わ"], ["け", ""], ["方", "かた"]], "g": "Art zu trennen, Trennung"},
+        {"t": "が"},
+        {"t": "わからない", "b": "わかる", "g": "verstehen, wissen", "j": 5, "gr": "g4"},
+        {"t": "場合", "r": "ばあい", "g": "Fall; 〜場合は = falls …", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "市", "r": "し", "g": "Stadt (Verwaltung)", "j": 4},
+        {"t": "の"},
+        {"t": "ホームページ", "g": "Website"},
+        {"t": "で"},
+        {"t": "確認", "r": "かくにん", "g": "Überprüfung; 確認する = nachsehen, prüfen", "j": 3},
+        {"t": "する", "g": "machen, tun", "j": 5},
+        {"t": "か", "g": "oder"},
+        {"t": "、"},
+        {"t": "市役所", "r": "しやくしょ", "g": "Rathaus"},
+        {"t": "に", "g": "an"},
+        {"t": "ご相談", "r": "ごそうだん", "ruby": [["ご", ""], ["相談", "そうだん"]], "g": "Beratung; ご相談ください = wenden Sie sich bitte an …"},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ずつ",
+      "j": 3,
+      "de": "Nach einer Menge: „jeweils …“, „je …“.",
+      "ex": "{一人|ひとり}{二枚|にまい}ずつ{取|と}ってください。",
+      "exDe": "Bitte nehmen Sie jeweils zwei Blätter pro Person."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜ずに",
+      "j": 3,
+      "de": "Nai-Stamm + ずに: „ohne zu …“ – schriftlicher als 〜ないで.",
+      "ex": "{辞書|じしょ}を{使|つか}わずに{読|よ}んだ。",
+      "exDe": "Ich habe es ohne Wörterbuch gelesen."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜ことがあります",
+      "j": 4,
+      "de": "Wörterbuch- oder Nai-Form + ことがある: „es kommt vor, dass …“ – in Mitteilungen eine höfliche Warnung.",
+      "ex": "{雪|ゆき}の{日|ひ}は、{電車|でんしゃ}が{遅|おく}れることがあります。",
+      "exDe": "An Schneetagen kommt es vor, dass die Züge Verspätung haben."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜か、〜",
+      "j": 3,
+      "de": "Zwei Möglichkeiten: „entweder … oder …“.",
+      "ex": "メールで{送|おく}るか、{電話|でんわ}してください。",
+      "exDe": "Schicken Sie es per E-Mail oder rufen Sie an."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "月に一回だけ集めるごみはどれか。",
+      "qDe": "Welcher Müll wird nur einmal im Monat abgeholt?",
+      "options": ["{燃|も}えるごみ", "ビンとカン", "{燃|も}えないごみと古紙", "ペットボトル"],
+      "answer": 2,
+      "explain": "Satz 3: 燃えないごみと古紙は月に一回ずつ集めます. Brennbarer Müll und Flaschen kommen jede Woche dran (Satz 2).",
+      "evidence": [1, 2]
+    },
+    {
+      "kind": "inhalt",
+      "q": "ネットをかけるのは何のためか。",
+      "qDe": "Wozu legt man ein Netz über den Müll?",
+      "options": ["ごみを{減|へ}らすため", "カラスなどにごみを散らかされないため", "シールをはるため", "雨にぬれないため"],
+      "answer": 1,
+      "explain": "Satz 6: カラスなどにごみを散らかされないよう、必ずネットをかけてください.",
+      "evidence": [5]
+    },
+    {
+      "kind": "inhalt",
+      "q": "ルールを守らずに出したごみは、どうなることがあるか。",
+      "qDe": "Was kann mit Müll passieren, der gegen die Regeln rausgestellt wurde?",
+      "options": ["すぐに集められる", "シールがはられ、集められない", "市役所に送られる", "次の日に集められる"],
+      "answer": 1,
+      "explain": "Satz 7: 黄色いシールがはられ、集められないことがあります.",
+      "evidence": [6]
+    },
+    {
+      "kind": "sprache",
+      "q": "「ふたを外してから」の「外す」の{読|よ}み{方|かた}はどれか。",
+      "qDe": "Wie liest man 外す?",
+      "options": ["そとす", "はずす", "がいす", "ほかす"],
+      "answer": 1,
+      "explain": "外す liest man はずす (abnehmen). Dasselbe Kanji steht in 外 (そと, draußen).",
+      "evidence": [3]
+    }
+  ],
+  "sources": [],
+  "vorrat": true,
+  "versions": {
+    "1": "texte/2026/11/2026-11-13-gomi-1",
+    "2": "texte/2026/11/2026-11-13-gomi-2",
+    "4": "texte/2026/11/2026-11-13-gomi-4"
+  }
+}

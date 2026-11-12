@@ -1,0 +1,300 @@
+{
+  "id": "2026-11-13-sekki-4",
+  "date": "2026-11-13",
+  "topic": "welt",
+  "type": "nachricht",
+  "stufe": 4,
+  "titleDe": "Japans ältestes Steinwerkzeug: Untersuchungen in den Bergen Hiroshimas gehen weiter",
+  "title": [
+    {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+    {"t": "で", "g": "in"},
+    {"t": "最も", "r": "もっとも", "ruby": [["最", "もっと"], ["も", ""]], "g": "am meisten; 最も古い = am ältesten", "j": 4},
+    {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+    {"t": "石器", "r": "せっき", "g": "Steinwerkzeug"},
+    {"t": "、"},
+    {"t": "広島", "r": "ひろしま", "g": "Hiroshima"},
+    {"t": "の"},
+    {"t": "山", "r": "やま", "g": "Berg", "j": 5},
+    {"t": "で", "g": "in"},
+    {"t": "調査", "r": "ちょうさ", "g": "Untersuchung", "j": 3},
+    {"t": "続く", "r": "つづく", "ruby": [["続", "つづ"], ["く", ""]], "g": "andauern, weitergehen", "j": 4}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "広島県廿日市市吉和", "r": "ひろしまけんはつかいちしよしわ", "g": "Yoshiwa in Hatsukaichi, Präfektur Hiroshima", "say": "ひろしまけんはつかいちしよしわ"},
+        {"t": "の"},
+        {"t": "山", "r": "やま", "g": "Berg", "j": 5},
+        {"t": "の"},
+        {"t": "中", "r": "なか", "g": "Inneres; 山の中 = in den Bergen", "j": 5},
+        {"t": "で", "g": "in"},
+        {"t": "、"},
+        {"t": "奈良", "r": "なら", "g": "Nara (Stadt in Westjapan)", "say": "なら"},
+        {"t": "に"},
+        {"t": "ある", "g": "sich befinden", "j": 5},
+        {"t": "国", "r": "くに", "g": "Staat; 国の研究所 = staatliches Forschungsinstitut", "j": 5},
+        {"t": "の"},
+        {"t": "研究所", "r": "けんきゅうしょ", "g": "Forschungsinstitut"},
+        {"t": "の"},
+        {"t": "専門家", "r": "せんもんか", "g": "Fachleute, Expert(inn)en"},
+        {"t": "を", "gr": "g1"},
+        {"t": "中心", "r": "ちゅうしん", "g": "Mitte, Zentrum; 〜を中心とする = unter der Leitung von …", "j": 3, "gr": "g1"},
+        {"t": "と", "gr": "g1"},
+        {"t": "する", "g": "machen, tun", "j": 5, "gr": "g1"},
+        {"t": "調査", "r": "ちょうさ", "g": "Untersuchung", "j": 3},
+        {"t": "が"},
+        {"t": "続いている", "r": "つづいている", "ruby": [["続", "つづ"], ["いている", ""]], "b": "続く", "g": "andauern, weitergehen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "ここ", "g": "hier", "j": 5},
+        {"t": "で", "g": "in"},
+        {"t": "は"},
+        {"t": "去年", "r": "きょねん", "g": "letztes Jahr", "j": 5},
+        {"t": "、"},
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "で", "g": "in"},
+        {"t": "最も", "r": "もっとも", "ruby": [["最", "もっと"], ["も", ""]], "g": "am meisten; 最も古い = am ältesten", "j": 4},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "と"},
+        {"t": "みられる", "b": "みる", "g": "ansehen; 〜とみられる = man nimmt an, dass …", "j": 5},
+        {"t": "約四万二千年", "r": "やくよんまんにせんねん", "g": "etwa 42.000 Jahre"},
+        {"t": "前", "r": "まえ", "g": "vor (zeitlich)", "j": 5},
+        {"t": "の"},
+        {"t": "石器", "r": "せっき", "g": "Steinwerkzeug"},
+        {"t": "が"},
+        {"t": "発見", "r": "はっけん", "g": "Entdeckung; 発見される = entdeckt werden", "j": 3},
+        {"t": "され", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "、"},
+        {"t": "大きな", "r": "おおきな", "ruby": [["大", "おお"], ["きな", ""]], "g": "groß", "j": 5},
+        {"t": "話題", "r": "わだい", "g": "Gesprächsthema; 話題となる = für Aufsehen sorgen", "j": 3},
+        {"t": "と"},
+        {"t": "なった", "b": "なる", "g": "werden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "これ", "g": "dies; これまで = bisher", "j": 5},
+        {"t": "まで"},
+        {"t": "最も", "r": "もっとも", "ruby": [["最", "もっと"], ["も", ""]], "g": "am meisten; 最も古い = am ältesten", "j": 4},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "と"},
+        {"t": "考えられて", "r": "かんがえられて", "ruby": [["考", "かんが"], ["えられて", ""]], "b": "考える", "g": "denken; 考えられてきた = galt bisher als", "j": 4},
+        {"t": "きた", "b": "くる", "g": "〜てきた = bis jetzt (andauernd)", "j": 5},
+        {"t": "石器", "r": "せっき", "g": "Steinwerkzeug"},
+        {"t": "と"},
+        {"t": "比べ", "r": "くらべ", "ruby": [["比", "くら"], ["べ", ""]], "b": "比べる", "g": "vergleichen; 〜と比べ = im Vergleich zu …", "j": 4, "gr": "g2"},
+        {"t": "、"},
+        {"t": "およそ", "g": "ungefähr, etwa", "j": 3},
+        {"t": "五千年", "r": "ごせんねん", "g": "5.000 Jahre"},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "年代", "r": "ねんだい", "g": "Alter, Zeitraum", "j": 3},
+        {"t": "で", "b": "だ", "g": "in"},
+        {"t": "ある", "g": "sich befinden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "調査", "r": "ちょうさ", "g": "Untersuchung", "j": 3},
+        {"t": "は"},
+        {"t": "さらに", "g": "weiter, noch mehr", "j": 3},
+        {"t": "続けられ", "r": "つづけられ", "ruby": [["続", "つづ"], ["けられ", ""]], "b": "続ける", "g": "fortsetzen; 続けられる = wird fortgesetzt", "j": 4},
+        {"t": "、"},
+        {"t": "四百点", "r": "よんひゃくてん", "g": "vierhundert"},
+        {"t": "を"},
+        {"t": "超える", "r": "こえる", "ruby": [["超", "こ"], ["える", ""]], "g": "übersteigen; 〜を超える = mehr als …", "j": 3},
+        {"t": "石器", "r": "せっき", "g": "Steinwerkzeug"},
+        {"t": "が"},
+        {"t": "新たに", "r": "あらたに", "ruby": [["新", "あら"], ["たに", ""]], "b": "新た", "g": "neu; 新たに = neu, zusätzlich", "j": 3},
+        {"t": "見つかっている", "r": "みつかっている", "ruby": [["見", "み"], ["つかっている", ""]], "b": "見つかる", "g": "gefunden werden", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "列島", "r": "れっとう", "g": "Inselkette", "j": 2},
+        {"t": "に"},
+        {"t": "人類", "r": "じんるい", "g": "die Menschheit, der Mensch", "j": 3},
+        {"t": "が"},
+        {"t": "いつ", "g": "wann", "j": 5},
+        {"t": "、"},
+        {"t": "どの", "g": "welche(r)", "j": 5},
+        {"t": "道", "r": "みち", "g": "Weg", "j": 5},
+        {"t": "を"},
+        {"t": "通って", "r": "とおって", "ruby": [["通", "とお"], ["って", ""]], "b": "通る", "g": "durchgehen, einen Weg nehmen", "j": 4},
+        {"t": "やって", "b": "やる", "g": "やって来る = herkommen", "j": 5},
+        {"t": "来た", "r": "きた", "ruby": [["来", "き"], ["た", ""]], "b": "来る", "g": "kommen", "j": 5},
+        {"t": "の"},
+        {"t": "か"},
+        {"t": "に", "gr": "g3"},
+        {"t": "ついて", "b": "つく", "g": "について = über, bezüglich", "j": 5, "gr": "g3"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "まだ", "g": "noch", "j": 5},
+        {"t": "分かっていない", "r": "わかっていない", "ruby": [["分", "わ"], ["かっていない", ""]], "b": "分かる", "g": "wissen, klar sein", "j": 5},
+        {"t": "こと", "g": "Sache, Punkt", "j": 4},
+        {"t": "が"},
+        {"t": "多い", "r": "おおい", "ruby": [["多", "おお"], ["い", ""]], "g": "viel(e)", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "研究", "r": "けんきゅう", "g": "Forschung", "j": 4},
+        {"t": "チーム", "g": "Team", "j": 3},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "場所", "r": "ばしょ", "g": "Ort", "j": 4},
+        {"t": "が"},
+        {"t": "その", "g": "dieser, jener", "j": 5},
+        {"t": "答え", "r": "こたえ", "ruby": [["答", "こた"], ["え", ""]], "g": "Antwort", "j": 4},
+        {"t": "を"},
+        {"t": "探す", "r": "さがす", "ruby": [["探", "さが"], ["す", ""]], "g": "suchen", "j": 4},
+        {"t": "ため", "g": "um … zu; 〜ための = für …", "j": 4},
+        {"t": "の"},
+        {"t": "重要な", "r": "じゅうような", "ruby": [["重要", "じゅうよう"], ["な", ""]], "b": "重要", "g": "wichtig", "j": 3},
+        {"t": "場所", "r": "ばしょ", "g": "Ort", "j": 4},
+        {"t": "に"},
+        {"t": "なる", "g": "werden", "j": 5},
+        {"t": "と"},
+        {"t": "期待", "r": "きたい", "g": "Erwartung; 期待する = erwarten, hoffen", "j": 3},
+        {"t": "している", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "一方", "r": "いっぽう", "g": "andererseits", "j": 3},
+        {"t": "、"},
+        {"t": "廿日市市", "r": "はつかいちし", "g": "Hatsukaichi (Stadt in der Präfektur Hiroshima)", "say": "はつかいちし"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "場所", "r": "ばしょ", "g": "Ort", "j": 4},
+        {"t": "を"},
+        {"t": "教育", "r": "きょういく", "g": "Bildung, Erziehung", "j": 4},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "観光", "r": "かんこう", "g": "Tourismus", "j": 3},
+        {"t": "の"},
+        {"t": "場", "r": "ば", "g": "Ort, Gelegenheit", "j": 3},
+        {"t": "と", "gr": "g4"},
+        {"t": "して", "b": "する", "g": "machen, tun", "j": 5, "gr": "g4"},
+        {"t": "活用", "r": "かつよう", "g": "Nutzung; 活用する = nutzen", "j": 3},
+        {"t": "したい", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "考え", "r": "かんがえ", "ruby": [["考", "かんが"], ["え", ""]], "g": "Absicht, Gedanke", "j": 3},
+        {"t": "を"},
+        {"t": "示している", "r": "しめしている", "ruby": [["示", "しめ"], ["している", ""]], "b": "示す", "g": "zeigen; 考えを示す = seine Absicht äußern", "j": 3},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜を中心とする",
+      "j": 3,
+      "de": "„mit … im Mittelpunkt“, „unter Leitung von …“.",
+      "ex": "{学生|がくせい}を{中心|ちゅうしん}とするグループが{町|まち}を{掃除|そうじ}した。",
+      "exDe": "Eine Gruppe, vor allem aus Studierenden, hat die Stadt geputzt."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜と比べ（て）",
+      "j": 3,
+      "de": "„im Vergleich zu …“. In Nachrichten oft ohne て: 〜と比べ.",
+      "ex": "{去年|きょねん}と{比|くら}べ、{客|きゃく}が{二割|にわり}{増|ふ}えた。",
+      "exDe": "Im Vergleich zum Vorjahr kamen 20 % mehr Gäste."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜について",
+      "j": 3,
+      "de": "„über …“, „was … betrifft“ – nennt das Thema.",
+      "ex": "{日本|にほん}の{歴史|れきし}について{調|しら}べている。",
+      "exDe": "Ich recherchiere über die Geschichte Japans."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜として",
+      "j": 3,
+      "de": "„als …“ – in der Rolle oder Funktion von …",
+      "ex": "{通訳|つうやく}として{働|はたら}いている。",
+      "exDe": "Sie arbeitet als Dolmetscherin."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "この{調査|ちょうさ}について、本文の内容と合うものはどれか。",
+      "qDe": "Was passt zum Inhalt über diese Untersuchung?",
+      "options": ["{石器|せっき}が見つかったのは今年だ", "{調査|ちょうさ}はもう終わった", "去年、日本で最も古いとみられる{石器|せっき}が見つかった", "{石器|せっき}は四百点だけ見つかった"],
+      "answer": 2,
+      "explain": "Satz 2: 去年、日本で最も古いとみられる … 石器が発見され. Laut Satz 1 geht die Grabung weiter; laut Satz 4 kamen später noch über 400 weitere Stücke dazu.",
+      "evidence": [0, 1, 3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "まだ{分|わ}かっていないことが多いのは、どんなことか。",
+      "qDe": "Worüber weiß man noch vieles nicht?",
+      "options": ["{石器|せっき}の数", "人類がいつ、どの道を通って日本{列島|れっとう}に来たのか", "{調査|ちょうさ}がどこで行われているのか", "市が何をしたいのか"],
+      "answer": 1,
+      "explain": "Satz 5: 人類がいつ、どの道を通ってやって来たのかについては、まだ分かっていないことが多い.",
+      "evidence": [4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{廿日市市|はつかいちし}は、{遺跡|いせき}をどうしたいと考えているか。",
+      "qDe": "Was hat die Stadt Hatsukaichi mit der Fundstätte vor?",
+      "options": ["研究所に売りたい", "教育や観光の場として活用したい", "{発掘|はっくつ}をやめたい", "新しい研究所を作りたい"],
+      "answer": 1,
+      "explain": "Satz 7: この場所を教育や観光の場として活用したい考えを示している.",
+      "evidence": [6]
+    },
+    {
+      "kind": "sprache",
+      "q": "「およそ五千年古い」の「およそ」と{意味|いみ}が{近|ちか}いものはどれか。",
+      "qDe": "Welches Wort ist およそ in der Bedeutung am nächsten?",
+      "options": ["ちょうど", "約", "以上", "まだ"],
+      "answer": 1,
+      "explain": "およそ heißt „ungefähr“, wie 約 (Satz 2 und 3).",
+      "evidence": [2]
+    }
+  ],
+  "sources": [
+    {
+      "name": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/news/2026/11/12/japan/society/hiroshima-ruins-excavation/"
+    },
+    {
+      "name": "Chugoku Shimbun",
+      "url": "https://www.chugoku-np.co.jp/articles/-/713491"
+    },
+    {
+      "name": "Chugoku Shimbun",
+      "url": "https://www.chugoku-np.co.jp/articles/-/800381"
+    },
+    {
+      "name": "nippon.com (Jiji)",
+      "url": "https://www.nippon.com/en/articles/-/56472"
+    }
+  ],
+  "versions": {
+    "1": "texte/2026/11/2026-11-13-sekki-1",
+    "2": "texte/2026/11/2026-11-13-sekki-2",
+    "3": "texte/2026/11/2026-11-13-sekki-3"
+  }
+}

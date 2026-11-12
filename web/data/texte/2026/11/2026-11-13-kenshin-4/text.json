@@ -1,0 +1,317 @@
+{
+  "id": "2026-11-13-kenshin-4",
+  "date": "2026-11-13",
+  "topic": "jlpt",
+  "type": "email",
+  "stufe": 4,
+  "titleDe": "Zur jährlichen Gesundheitsuntersuchung",
+  "title": [
+    {"t": "定期", "r": "ていき", "g": "regelmäßig", "j": 3},
+    {"t": "健康診断", "r": "けんこうしんだん", "g": "Gesundheitsuntersuchung, Check-up"},
+    {"t": "の"},
+    {"t": "実施", "r": "じっし", "g": "Durchführung; 実施する = durchführen", "j": 3},
+    {"t": "に"},
+    {"t": "ついて", "b": "つく", "g": "について = über, zu", "j": 5}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "みなさま", "g": "alle (sehr höfliche Anrede)"},
+        {"t": "、"},
+        {"t": "総務部", "r": "そうむぶ", "g": "Verwaltungsabteilung"},
+        {"t": "の"},
+        {"t": "山田", "r": "やまだ", "g": "Yamada (Familienname)", "say": "やまだ"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "毎年", "r": "まいとし", "g": "jedes Jahr", "j": 5},
+        {"t": "実施", "r": "じっし", "g": "Durchführung; 実施する = durchführen", "j": 3},
+        {"t": "している", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "定期", "r": "ていき", "g": "regelmäßig", "j": 3},
+        {"t": "健康診断", "r": "けんこうしんだん", "g": "Gesundheitsuntersuchung, Check-up"},
+        {"t": "を"},
+        {"t": "、"},
+        {"t": "今年", "r": "ことし", "g": "dieses Jahr", "j": 5},
+        {"t": "も"},
+        {"t": "来週", "r": "らいしゅう", "g": "nächste Woche", "j": 5},
+        {"t": "の"},
+        {"t": "水曜日", "r": "すいようび", "g": "Mittwoch", "j": 5},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "会社", "r": "かいしゃ", "g": "Firma", "j": 5},
+        {"t": "の"},
+        {"t": "三階", "r": "さんかい", "g": "dritter Stock (in Japan: 2. OG)"},
+        {"t": "の"},
+        {"t": "会議室", "r": "かいぎしつ", "g": "Besprechungsraum", "j": 4},
+        {"t": "で"},
+        {"t": "行います", "r": "おこないます", "ruby": [["行", "おこな"], ["います", ""]], "b": "行う", "g": "durchführen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "受付", "r": "うけつけ", "g": "Anmeldung", "j": 4},
+        {"t": "は"},
+        {"t": "午前", "r": "ごぜん", "g": "vormittags", "j": 5},
+        {"t": "8時", "r": "はちじ", "g": "acht Uhr"},
+        {"t": "から", "g": "von, ab; 〜てから = nachdem"},
+        {"t": "11時半", "r": "いちいちじはん", "g": "halb zwölf"},
+        {"t": "まで", "g": "bis"},
+        {"t": "と"},
+        {"t": "なって", "b": "なる", "g": "werden; 〜となっております = ist (höflich)", "j": 5, "gr": "g1"},
+        {"t": "おります", "b": "おる", "g": "(bescheiden für いる); 〜ております = ist", "j": 4, "gr": "g1"},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "部ごと", "r": "ぶごと", "ruby": [["部", "ぶ"], ["ごと", ""]], "g": "Abteilung"},
+        {"t": "に"},
+        {"t": "順番", "r": "じゅんばん", "g": "Reihenfolge", "j": 3},
+        {"t": "を"},
+        {"t": "決めて", "r": "きめて", "ruby": [["決", "き"], ["めて", ""]], "b": "決める", "g": "festlegen", "j": 4},
+        {"t": "から", "g": "von, ab; 〜てから = nachdem"},
+        {"t": "来て", "r": "きて", "ruby": [["来", "き"], ["て", ""]], "b": "来る", "g": "kommen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "検査", "r": "けんさ", "g": "Untersuchung, Test", "j": 3},
+        {"t": "の"},
+        {"t": "結果", "r": "けっか", "g": "Ergebnis", "j": 3},
+        {"t": "に"},
+        {"t": "影響", "r": "えいきょう", "g": "Einfluss; 影響が出る = beeinträchtigt werden", "j": 3},
+        {"t": "が"},
+        {"t": "出ないよう", "r": "でないよう", "ruby": [["出", "で"], ["ないよう", ""]], "b": "出る", "g": "auftreten", "j": 5, "gr": "g2"},
+        {"t": "、"},
+        {"t": "前の日", "r": "まえのひ", "ruby": [["前", "まえ"], ["の", ""], ["日", "ひ"]], "g": "der Tag davor"},
+        {"t": "の"},
+        {"t": "夜", "r": "よる", "g": "Abend, Nacht", "j": 5},
+        {"t": "8時", "r": "はちじ", "g": "acht Uhr"},
+        {"t": "以降", "r": "いこう", "g": "ab, nach", "j": 2},
+        {"t": "は"},
+        {"t": "食事", "r": "しょくじ", "g": "Essen, Mahlzeit", "j": 4},
+        {"t": "を"},
+        {"t": "しないで", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "ただし", "g": "allerdings", "j": 2},
+        {"t": "、"},
+        {"t": "水", "r": "みず", "g": "Wasser", "j": 5},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "お茶", "r": "おちゃ", "ruby": [["お", ""], ["茶", "ちゃ"]], "g": "Tee", "j": 5},
+        {"t": "など", "g": "und Ähnliches"},
+        {"t": "、"},
+        {"t": "砂糖", "r": "さとう", "g": "Zucker", "j": 5},
+        {"t": "の"},
+        {"t": "入っていない", "r": "はいっていない", "ruby": [["入", "はい"], ["っていない", ""]], "b": "入る", "g": "enthalten sein", "j": 5},
+        {"t": "飲み物", "r": "のみもの", "ruby": [["飲", "の"], ["み", ""], ["物", "もの"]], "g": "Getränk", "j": 5},
+        {"t": "で", "b": "だ", "gr": "g3"},
+        {"t": "あれば", "b": "ある", "g": "であれば = wenn es … ist", "j": 5, "gr": "g3"},
+        {"t": "、"},
+        {"t": "少し", "r": "すこし", "ruby": [["少", "すこ"], ["し", ""]], "g": "ein wenig", "j": 5},
+        {"t": "なら", "b": "だ", "g": "wenn; 少しなら = in kleiner Menge"},
+        {"t": "飲んで", "r": "のんで", "ruby": [["飲", "の"], ["んで", ""]], "b": "飲む", "g": "trinken", "j": 5},
+        {"t": "も"},
+        {"t": "かまいません", "b": "かまう", "g": "〜てもかまいません = man darf ruhig …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "また", "g": "außerdem", "j": 5},
+        {"t": "、"},
+        {"t": "当日", "r": "とうじつ", "g": "der betreffende Tag", "j": 2},
+        {"t": "は"},
+        {"t": "着替えやすい", "r": "きがえやすい", "ruby": [["着替", "きが"], ["えやすい", ""]], "g": "leicht umzuziehen"},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "で"},
+        {"t": "来るように", "r": "くるように", "ruby": [["来", "く"], ["るように", ""]], "b": "来る", "g": "kommen", "j": 5},
+        {"t": "して", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "出張", "r": "しゅっちょう", "g": "Dienstreise", "j": 2},
+        {"t": "など", "g": "und Ähnliches"},
+        {"t": "で"},
+        {"t": "どう", "g": "どうしても = beim besten Willen (nicht)", "j": 5},
+        {"t": "して", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "も"},
+        {"t": "参加", "r": "さんか", "g": "Teilnahme; 参加する = teilnehmen", "j": 3},
+        {"t": "できない", "b": "できる", "g": "können", "j": 5},
+        {"t": "方", "r": "かた", "g": "Person (höflich)", "j": 5, "say": "かた"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "今週", "r": "こんしゅう", "g": "diese Woche", "j": 5},
+        {"t": "の"},
+        {"t": "金曜日", "r": "きんようび", "g": "Freitag", "j": 5},
+        {"t": "まで", "g": "bis"},
+        {"t": "に"},
+        {"t": "総務部", "r": "そうむぶ", "g": "Verwaltungsabteilung"},
+        {"t": "へ", "g": "an, nach"},
+        {"t": "ご連絡", "r": "ごれんらく", "ruby": [["ご", ""], ["連絡", "れんらく"]], "g": "Kontakt; ご連絡ください = bitte geben Sie Bescheid"},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "その", "g": "dieser", "j": 5},
+        {"t": "場合", "r": "ばあい", "g": "Fall", "j": 4},
+        {"t": "、"},
+        {"t": "別", "r": "べつ", "g": "andere(r)", "j": 4},
+        {"t": "の"},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "会社", "r": "かいしゃ", "g": "Firma", "j": 5},
+        {"t": "が"},
+        {"t": "指定", "r": "してい", "g": "Festlegung; 指定する = bestimmen, festlegen", "j": 2},
+        {"t": "する", "g": "machen, tun", "j": 5},
+        {"t": "病院", "r": "びょういん", "g": "Krankenhaus, Klinik", "j": 5},
+        {"t": "で"},
+        {"t": "受けて", "r": "うけて", "ruby": [["受", "う"], ["けて", ""]], "b": "受ける", "g": "(Untersuchung) machen lassen", "j": 4},
+        {"t": "いただく", "g": "〜ていただく = (höflich) jemanden etwas tun lassen", "j": 4},
+        {"t": "こと", "g": "〜ことになる = es wird so sein, dass …", "j": 4, "gr": "g4"},
+        {"t": "に", "gr": "g4"},
+        {"t": "なります", "b": "なる", "g": "werden; 〜となっております = ist (höflich)", "j": 5, "gr": "g4"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "健康診断", "r": "けんこうしんだん", "g": "Gesundheitsuntersuchung, Check-up"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "病気", "r": "びょうき", "g": "Krankheit", "j": 5},
+        {"t": "を"},
+        {"t": "早く", "r": "はやく", "ruby": [["早", "はや"], ["く", ""]], "b": "早い", "g": "früh", "j": 5},
+        {"t": "見つける", "r": "みつける", "ruby": [["見", "み"], ["つける", ""]], "g": "finden, entdecken", "j": 4},
+        {"t": "ため", "g": "für, um … zu", "j": 4},
+        {"t": "の"},
+        {"t": "大切な", "r": "たいせつな", "ruby": [["大切", "たいせつ"], ["な", ""]], "b": "大切", "g": "wichtig", "j": 5},
+        {"t": "機会", "r": "きかい", "g": "Gelegenheit", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "お忙しい", "r": "おいそがしい", "ruby": [["お", ""], ["忙", "いそが"], ["しい", ""]], "g": "beschäftigt; お忙しい = (höflich) beschäftigt"},
+        {"t": "時期", "r": "じき", "g": "Zeit, Phase", "j": 3},
+        {"t": "とは", "g": "〜とは思いますが = ich weiß zwar, dass …, aber"},
+        {"t": "思います", "r": "おもいます", "ruby": [["思", "おも"], ["います", ""]], "b": "思う", "g": "denken", "j": 4},
+        {"t": "が"},
+        {"t": "、"},
+        {"t": "全員", "r": "ぜんいん", "g": "alle", "j": 3},
+        {"t": "が"},
+        {"t": "受けられるよう", "r": "うけられるよう", "ruby": [["受", "う"], ["けられるよう", ""]], "b": "受ける", "g": "(Untersuchung) machen lassen", "j": 4},
+        {"t": "、"},
+        {"t": "ご協力", "r": "ごきょうりょく", "ruby": [["ご", ""], ["協力", "きょうりょく"]], "g": "Mithilfe, Zusammenarbeit"},
+        {"t": "を"},
+        {"t": "お願い", "r": "おねがい", "ruby": [["お", ""], ["願", "ねが"], ["い", ""]], "b": "お願う", "g": "Bitte"},
+        {"t": "いたします", "b": "いたす", "g": "(bescheiden für する); お願いいたします = ich bitte darum", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s10.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ておりますので",
+      "j": 3,
+      "de": "Bescheidene Form von 〜ていますので – typisch für Firmen-E-Mails.",
+      "ex": "{本日|ほんじつ}は{休業|きゅうぎょう}となっておりますので、ご{注意|ちゅうい}ください。",
+      "exDe": "Heute ist geschlossen, bitte beachten Sie das."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜ないよう（に）",
+      "j": 3,
+      "de": "„damit nicht …“, „um … zu vermeiden“.",
+      "ex": "{忘|わす}れないよう、メモしておく。",
+      "exDe": "Damit ich es nicht vergesse, schreibe ich es auf."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜であれば",
+      "j": 3,
+      "de": "Schriftliches „wenn es … ist“ – entspricht なら.",
+      "ex": "{学生|がくせい}であれば、{無料|むりょう}で{入|はい}れる。",
+      "exDe": "Wenn man Student ist, kommt man kostenlos hinein."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜ことになる",
+      "j": 3,
+      "de": "„es ist (so) festgelegt, dass …“ – eine Entscheidung, die nicht man selbst trifft.",
+      "ex": "{来月|らいげつ}から{大阪|おおさか}で{働|はたら}くことになった。",
+      "exDe": "Es wurde entschieden, dass ich ab nächstem Monat in Osaka arbeite."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "このメールで一番伝えたいことは何か。",
+      "qDe": "Was will diese E-Mail vor allem mitteilen?",
+      "options": ["{出張|しゅっちょう}の予定", "{健康診断|けんこうしんだん}の日時と注意すること", "会議室の場所が変わったこと", "新しい病院ができたこと"],
+      "answer": 1,
+      "explain": "Die ganze E-Mail erklärt Termin (Satz 2–3) und Regeln (Satz 4–8) der Gesundheitsuntersuchung.",
+      "evidence": [1, 2, 3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "前の日の夜8時以降について、正しいものはどれか。",
+      "qDe": "Was stimmt für die Zeit nach 20 Uhr am Vortag?",
+      "options": ["何も飲んではいけない", "ジュースなら飲んでもいい", "{砂糖|さとう}の入っていないお茶なら少し飲んでもいい", "{軽|かる}い食事ならしてもいい"],
+      "answer": 2,
+      "explain": "Satz 5: 砂糖の入っていない飲み物であれば、少しなら飲んでもかまいません. Saft enthält Zucker; Essen ist laut Satz 4 nicht erlaubt.",
+      "evidence": [3, 4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{出張|しゅっちょう}で当日参加できない人は、どうしなければならないか。",
+      "qDe": "Was muss tun, wer wegen einer Dienstreise nicht kommen kann?",
+      "options": ["来週の水曜日までに{連絡|れんらく}する", "今週の金曜日までに{総務部|そうむぶ}へ{連絡|れんらく}する", "{自分|じぶん}で病院を決めて受ける", "部ごとに{順番|じゅんばん}を決める"],
+      "answer": 1,
+      "explain": "Satz 7: 今週の金曜日までに総務部へご連絡ください. Das Krankenhaus legt laut Satz 8 die Firma fest.",
+      "evidence": [6, 7]
+    },
+    {
+      "kind": "sprache",
+      "q": "「影響」の{読|よ}み{方|かた}はどれか。",
+      "qDe": "Wie liest man 影響?",
+      "options": ["えいきょう", "えいこう", "けいきょう", "えいひびき"],
+      "answer": 0,
+      "explain": "影響 liest man えいきょう (Einfluss).",
+      "evidence": [3]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "1": "texte/2026/11/2026-11-13-kenshin-1",
+    "2": "texte/2026/11/2026-11-13-kenshin-2",
+    "3": "texte/2026/11/2026-11-13-kenshin-3"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "id": "2026-11-13-kenshin-2",
+  "date": "2026-11-13",
+  "topic": "jlpt",
+  "type": "email",
+  "stufe": 2,
+  "titleDe": "Mitteilung zur Gesundheitsuntersuchung",
+  "title": [
+    {"t": "健康診断", "r": "けんこうしんだん", "g": "Gesundheitsuntersuchung, Check-up"},
+    {"t": "の"},
+    {"t": "お知らせ", "r": "おしらせ", "ruby": [["お", ""], ["知", "し"], ["らせ", ""]], "g": "Mitteilung, Bekanntmachung"}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "みなさん", "g": "alle (Anrede)", "j": 5},
+        {"t": "、"},
+        {"t": "山田", "r": "やまだ", "g": "Yamada (Familienname)", "say": "やまだ"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "来週", "r": "らいしゅう", "g": "nächste Woche", "j": 5},
+        {"t": "の"},
+        {"t": "水曜日", "r": "すいようび", "g": "Mittwoch", "j": 5},
+        {"t": "、"},
+        {"t": "会社", "r": "かいしゃ", "g": "Firma", "j": 5},
+        {"t": "で"},
+        {"t": "健康診断", "r": "けんこうしんだん", "g": "Gesundheitsuntersuchung, Check-up"},
+        {"t": "を"},
+        {"t": "行います", "r": "おこないます", "ruby": [["行", "おこな"], ["います", ""]], "b": "行う", "g": "durchführen, veranstalten", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "時間", "r": "じかん", "g": "Zeit, Uhrzeit", "j": 5},
+        {"t": "は"},
+        {"t": "午前", "r": "ごぜん", "g": "vormittags", "j": 5},
+        {"t": "8時", "r": "はちじ", "g": "acht Uhr"},
+        {"t": "から", "g": "von, ab"},
+        {"t": "12時", "r": "いちにじ", "g": "zwölf Uhr"},
+        {"t": "まで", "g": "bis"},
+        {"t": "で", "b": "だ"},
+        {"t": "、"},
+        {"t": "場所", "r": "ばしょ", "g": "Ort", "j": 4},
+        {"t": "は"},
+        {"t": "三階", "r": "さんかい", "g": "dritter Stock (in Japan: 2. OG)"},
+        {"t": "の"},
+        {"t": "会議室", "r": "かいぎしつ", "g": "Besprechungsraum", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "前の日", "r": "まえのひ", "ruby": [["前", "まえ"], ["の", ""], ["日", "ひ"]], "g": "der Tag davor"},
+        {"t": "の"},
+        {"t": "夜", "r": "よる", "g": "Abend, Nacht", "j": 5},
+        {"t": "8時", "r": "はちじ", "g": "acht Uhr"},
+        {"t": "から", "g": "von, ab"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "何", "r": "なに", "g": "was; 何も = nichts (mit Verneinung)", "j": 5, "say": "なに"},
+        {"t": "も"},
+        {"t": "食べないで", "r": "たべないで", "ruby": [["食", "た"], ["べないで", ""]], "b": "食べる", "g": "essen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …; 〜ないでください = bitte nicht …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "水", "r": "みず", "g": "Wasser", "j": 5},
+        {"t": "なら", "b": "だ", "g": "wenn es … ist; 水なら = Wasser schon"},
+        {"t": "飲んで", "r": "のんで", "ruby": [["飲", "の"], ["んで", ""]], "b": "飲む", "g": "trinken", "j": 5, "gr": "g1"},
+        {"t": "も", "gr": "g1"},
+        {"t": "かまいません", "b": "かまう", "g": "sich kümmern; 〜てもかまいません = man darf ruhig …", "j": 4, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "その", "g": "dieser, jener; その日 = an dem Tag", "j": 5},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "に"},
+        {"t": "都合", "r": "つごう", "g": "Umstände; 都合が悪い = keine Zeit haben, verhindert sein", "j": 4},
+        {"t": "が"},
+        {"t": "悪い", "r": "わるい", "ruby": [["悪", "わる"], ["い", ""]], "g": "schlecht", "j": 5},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "月曜日", "r": "げつようび", "g": "Montag", "j": 5},
+        {"t": "まで", "g": "bis", "gr": "g2"},
+        {"t": "に", "gr": "g2"},
+        {"t": "私", "r": "わたくし", "g": "ich", "j": 5},
+        {"t": "に"},
+        {"t": "連絡", "r": "れんらく", "g": "Kontakt; 連絡する = Bescheid geben", "j": 4},
+        {"t": "して", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …; 〜ないでください = bitte nicht …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "会社", "r": "かいしゃ", "g": "Firma", "j": 5},
+        {"t": "の"},
+        {"t": "健康診断", "r": "けんこうしんだん", "g": "Gesundheitsuntersuchung, Check-up"},
+        {"t": "を"},
+        {"t": "受けない", "r": "うけない", "ruby": [["受", "う"], ["けない", ""]], "b": "受ける", "g": "(Untersuchung) machen lassen, erhalten", "j": 4},
+        {"t": "場合", "r": "ばあい", "g": "Fall; 〜場合は = falls …", "j": 4, "gr": "g3"},
+        {"t": "は", "gr": "g3"},
+        {"t": "、"},
+        {"t": "自分", "r": "じぶん", "g": "selbst", "j": 5},
+        {"t": "で"},
+        {"t": "病院", "r": "びょういん", "g": "Krankenhaus, Klinik", "j": 5},
+        {"t": "に"},
+        {"t": "行かなければ", "r": "いかなければ", "ruby": [["行", "い"], ["かなければ", ""]], "b": "行く", "g": "gehen", "j": 5, "gr": "g4"},
+        {"t": "なりません", "b": "なる", "g": "werden; 〜なければなりません = muss …", "j": 5, "gr": "g4"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "わからない", "b": "わかる", "g": "verstehen", "j": 5},
+        {"t": "こと", "g": "Sache", "j": 4},
+        {"t": "が"},
+        {"t": "あったら", "b": "ある", "g": "es gibt", "j": 5},
+        {"t": "、"},
+        {"t": "いつ", "g": "wann; いつでも = jederzeit", "j": 5},
+        {"t": "でも", "g": "いつでも = jederzeit", "j": 5},
+        {"t": "聞いて", "r": "きいて", "ruby": [["聞", "き"], ["いて", ""]], "b": "聞く", "g": "fragen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …; 〜ないでください = bitte nicht …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜てもかまいません",
+      "j": 4,
+      "de": "て-Form + もかまいません: „man darf ruhig …“ – etwas höflicher als 〜てもいいです.",
+      "ex": "ここに{座|すわ}ってもかまいません。",
+      "exDe": "Sie dürfen sich ruhig hierhin setzen."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜までに",
+      "j": 4,
+      "de": "„bis spätestens …“ – ein Termin, an dem etwas erledigt sein muss.",
+      "ex": "{明日|あした}までに{返事|へんじ}をください。",
+      "exDe": "Bitte antworten Sie bis morgen."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜場合は",
+      "j": 4,
+      "de": "„falls …“, „im Fall, dass …“ – typisch für Mitteilungen und Regeln.",
+      "ex": "{遅|おく}れる{場合|ばあい}は、{電話|でんわ}してください。",
+      "exDe": "Falls Sie sich verspäten, rufen Sie bitte an."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜なければなりません",
+      "j": 4,
+      "de": "„muss …“ – eine Pflicht.",
+      "ex": "{毎日|まいにち}{薬|くすり}を{飲|の}まなければなりません。",
+      "exDe": "Ich muss jeden Tag Medizin nehmen."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "{健康診断|けんこうしんだん}はどこで行いますか。",
+      "qDe": "Wo findet die Untersuchung statt?",
+      "options": ["病院", "{三階|さんかい}の{会議室|かいぎしつ}", "山田さんの{部屋|へや}", "山田さんの家"],
+      "answer": 1,
+      "explain": "Satz 3: 場所は三階の会議室です. Ins Krankenhaus muss nur, wer nicht teilnimmt (Satz 7).",
+      "evidence": [2, 6]
+    },
+    {
+      "kind": "inhalt",
+      "q": "前の日の夜8時から、してはいけないことはどれですか。",
+      "qDe": "Was darf man am Vorabend ab 20 Uhr nicht tun?",
+      "options": ["水を飲む", "何かを食べる", "山田さんに{連絡|れんらく}する", "{寝|ね}る"],
+      "answer": 1,
+      "explain": "Satz 4: 何も食べないでください – nichts essen. Wasser ist erlaubt (Satz 5).",
+      "evidence": [3, 4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "その日に{都合|つごう}が悪い人は、どうしますか。",
+      "qDe": "Was tut, wer an dem Tag verhindert ist?",
+      "options": ["何もしなくてもいい", "月曜日までに山田さんに{連絡|れんらく}する", "水曜日に{会議室|かいぎしつ}に行く", "午後に来る"],
+      "answer": 1,
+      "explain": "Satz 6: 月曜日までに私に連絡してください – „私“ ist Yamada, wer die E-Mail schreibt.",
+      "evidence": [5]
+    },
+    {
+      "kind": "sprache",
+      "q": "「都合が悪い」と{同|おな}じ{意味|いみ}のものはどれですか。",
+      "qDe": "Was bedeutet dasselbe wie 都合が悪い?",
+      "options": ["体の{調子|ちょうし}が悪い", "その日は用事があって行けない", "仕事が{好|す}きではない", "時間がたくさんある"],
+      "answer": 1,
+      "explain": "都合が悪い heißt: zu dem Termin verhindert sein, keine Zeit haben (Satz 6). Mit Krankheit hat es nichts zu tun.",
+      "evidence": [5]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "1": "texte/2026/11/2026-11-13-kenshin-1",
+    "3": "texte/2026/11/2026-11-13-kenshin-3",
+    "4": "texte/2026/11/2026-11-13-kenshin-4"
+  }
+}

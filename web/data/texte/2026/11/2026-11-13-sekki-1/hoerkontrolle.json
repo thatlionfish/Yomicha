@@ -1,0 +1,41 @@
+{
+ "s01.mp3": "ok",
+ "s02.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "どうぐ"
+  ],
+  "gehoert": "よんまんにせんねんぐらいまえにひとがつかった。どうぐです。"
+ },
+ "s03.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "うぐ"
+  ],
+  "gehoert": "にほんで、いちばんふるい、どうぐかもしれません。"
+ },
+ "s04.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "いちばん",
+   "うぐ"
+  ],
+  "gehoert": "まえはいちばんふるいどうぐはさんまんななせんねんぐらいまえのものでした。"
+ },
+ "s05.mp3": "ok",
+ "s06.mp3": "ok",
+ "s07.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "き"
+  ],
+  "gehoert": "まちのひとは、ここにたくさんのひとにきてほしいといっています。"
+ },
+ "s08.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "いき"
+  ],
+  "gehoert": "わたしもいつか、ともだちとみにいきたいです。"
+ }
+}
