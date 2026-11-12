@@ -8,6 +8,7 @@ import '../data/stufen.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/furigana.dart';
+import '../widgets/speak_sheet.dart';
 import '../widgets/word_sheet.dart';
 import 'questions_screen.dart';
 
@@ -330,6 +331,14 @@ class _ReadingScreenState extends State<ReadingScreen> {
                     scope.progress.setRate(r);
                   },
                   child: Text(p.rate == 1.0 ? '1×' : '0,75×'),
+                ),
+                IconButton(
+                  tooltip: 'Nachsprechen',
+                  onPressed: () {
+                    p.pause();
+                    showSpeakSheet(context, doc: _doc!, start: p.current ?? 0);
+                  },
+                  icon: const Icon(Icons.mic_none_rounded),
                 ),
               ],
             ),

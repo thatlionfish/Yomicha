@@ -28,6 +28,7 @@
     "taeglich": "../learnwithleoni/werkstatt/azure-speech.env"
   },
   "aufbau_bis": "2026-12-03",
+  "aufbewahren_tage": 90,
   "azure_gratis_zeichen_pro_monat": 500000,
   "warnen_ab_anteil": 0.8,
   "verbrauch_datei": "../../azure-verbrauch.json"

@@ -84,11 +84,18 @@ tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\pruefen.py
 - Danach: `dart run tool/tts.dart --key=../learnwithleoni/werkstatt/azure-speech.env` (Gratis-Zugang F0).
 - Den Schlüssel nie ausgeben. Meldet das Skript eine Kostengrenze oder Fehler, keine weiteren Aufnahmen.
 
-## 6. Testen und veröffentlichen
+## 6. Aufräumen, testen und veröffentlichen
+
+Alte Texte wegräumen (älter als `aufbewahren_tage`, Standard 90). Wortaufnahmen bleiben immer,
+damit Leonis gespeicherte Wörter ihre Aussprache behalten:
+
+```
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\aufraeumen.py
+```
 
 ```
 flutter test
-git add web/data
+git add -A web/data
 git status --short      # nur web/data darf vorgemerkt sein
 git commit -m "Teeküche: Texte vom <datum>"
 git push

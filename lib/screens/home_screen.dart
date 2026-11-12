@@ -5,11 +5,19 @@ import '../data/models.dart';
 import '../data/progress.dart';
 import '../data/stufen.dart';
 import '../learn/calendar.dart';
+import '../learn/library.dart';
+import '../learn/review.dart';
+import '../learn/weekly.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/kumachan.dart';
+import '../widgets/text_card.dart';
+import 'archive_screen.dart';
+import 'progress_screen.dart';
 import 'reading_screen.dart';
 import 'sources_screen.dart';
+import 'weekly_screen.dart';
+import 'words_screen.dart';
 
 /// Startseite: Texte des Tages, Countdown, Lernserie (Spezifikation 3).
 class HomeScreen extends StatefulWidget {
@@ -114,54 +122,62 @@ class _HomeScreenState extends State<HomeScreen> {
                   if (rest) ...[
                     _RestCard(),
                     const SizedBox(height: 22),
-                    Text('Archiv – falls du doch Lust hast', style: sans(14, weight: 650, color: YoColors.inkSoft)),
-                    const SizedBox(height: 8),
                   ],
                   FutureBuilder<List<TextEntry>>(
                     future: _index,
                     builder: (context, snap) {
                       if (snap.hasError) return Text('Texte konnten nicht geladen werden: ${snap.error}');
                       if (!snap.hasData) return const Center(child: CircularProgressIndicator());
-                      // Texte mit späterem Datum (Ferienpaket) erscheinen erst an ihrem Tag.
-                      final day = DateTime(_today.year, _today.month, _today.day);
-                      final all = snap.data!.where((e) => !e.date.isAfter(day)).toList();
-                      if (all.isEmpty) return Text('Noch keine Texte.', style: sans(16));
-                      // Jeder Inhalt steht in mehreren Stufen; gezeigt wird meine Stufe
-                      // (die anderen erreicht man im Text über „leichter / schwerer“).
-                      final mine = all.where((e) => e.stufe == progress.stufe).toList();
-                      final shown = mine.isEmpty ? _closestStufe(all, progress.stufe) : mine;
-                      final today = rest ? <TextEntry>[] : shown.where((e) => e.date == day).take(2).toList();
-                      final rest_ = shown.where((e) => !today.contains(e)).toList();
+                      final shown = textsForStufe(visibleTexts(snap.data!, _today), progress.stufe);
+                      var today = shown.where((e) => sameDay(e.date, _today)).take(2).toList();
+                      var label = 'Deine Texte für heute';
+                      if (today.isEmpty && !rest) {
+                        // Keine neuen Texte (Teeküche ausgefallen): die neuesten ungelesenen.
+                        today = shown.where((e) => !readIds.contains(e.id)).take(2).toList();
+                        label = 'Noch nicht gelesen';
+                      }
+                      if (rest) today = const [];
+                      final older = shown.length - today.length;
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           if (today.isNotEmpty) ...[
-                            Text('Deine Texte für heute', style: sans(14, weight: 650, color: YoColors.inkSoft)),
+                            Text(label, style: sans(14, weight: 650, color: YoColors.inkSoft)),
                             const SizedBox(height: 8),
                             for (final e in today) ...[
-                              _TextCard(entry: e, read: readIds.contains(e.id), big: true, onTap: () => _open(e)),
+                              TextCard(entry: e, read: readIds.contains(e.id), big: true, onTap: () => _open(e)),
                               const SizedBox(height: 12),
                             ],
                           ],
-                          if (rest_.isNotEmpty) ...[
-                            if (!rest) ...[
-                              const SizedBox(height: 10),
-                              Text('Archiv', style: sans(14, weight: 650, color: YoColors.inkSoft)),
-                              const SizedBox(height: 8),
-                            ],
-                            for (final e in rest_) ...[
-                              _TextCard(entry: e, read: readIds.contains(e.id), onTap: () => _open(e)),
-                              const SizedBox(height: 10),
-                            ],
-                          ],
+                          const SizedBox(height: 6),
+                          ?_weeklyTile(progress),
+                          _Tile(
+                            icon: Icons.style_rounded,
+                            title: 'Meine Wörter',
+                            subtitle: _wordsLine(progress),
+                            onTap: () => Navigator.of(context).push(
+                              MaterialPageRoute<void>(builder: (_) => const WordsScreen()),
+                            ),
+                          ),
+                          _Tile(
+                            icon: Icons.inventory_2_outlined,
+                            title: 'Archiv',
+                            subtitle: older <= 0 ? 'Noch keine älteren Texte' : '$older ältere ${older == 1 ? 'Text' : 'Texte'}',
+                            onTap: () => Navigator.of(context).push(
+                              MaterialPageRoute<void>(builder: (_) => ArchiveScreen(texts: shown)),
+                            ),
+                          ),
+                          _Tile(
+                            icon: Icons.show_chart_rounded,
+                            title: 'Fortschritt',
+                            subtitle: 'Zielkurve bis zur N2 am 5.12.2027',
+                            onTap: () => Navigator.of(context).push(
+                              MaterialPageRoute<void>(builder: (_) => const ProgressScreen()),
+                            ),
+                          ),
                         ],
                       );
                     },
-                  ),
-                  const SizedBox(height: 18),
-                  Text(
-                    'Meine Wörter: ${progress.myWords.length}',
-                    style: sans(15, color: YoColors.inkSoft),
                   ),
                 ],
               ),
@@ -172,28 +188,48 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  /// Gibt es keinen Text in meiner Stufe: pro Inhalt die nächstliegende Stufe.
-  List<TextEntry> _closestStufe(List<TextEntry> all, int stufe) {
-    final best = <String, TextEntry>{};
-    for (final e in all) {
-      final content = e.id.replaceFirst(RegExp(r'-\d$'), '');
-      final old = best[content];
-      if (old == null || (e.stufe - stufe).abs() < (old.stufe - stufe).abs()) best[content] = e;
-    }
-    return best.values.toList()..sort((a, b) => b.date.compareTo(a.date));
+  /// Wochentest: samstags für die laufende Woche, Montag bis Freitag zum
+  /// Nachholen der vergangenen (nur wenn noch nicht gemacht).
+  Widget? _weeklyTile(Progress progress) {
+    final week = testWeek(_today);
+    if (week == null) return null;
+    final done = progress.weeklyFor(week);
+    final saturday = _today.weekday == DateTime.saturday;
+    if (done != null && !saturday) return null;
+    return _Tile(
+      icon: Icons.quiz_outlined,
+      title: 'Wochentest · KW ${isoWeek(week)}',
+      subtitle: done != null
+          ? 'Erledigt: ${done.correct} von ${done.total} – nochmal machen?'
+          : saturday
+          ? 'Etwa 15 Fragen zu dieser Woche · ca. 10 Min'
+          : 'Von letzter Woche – jetzt nachholen',
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute<void>(builder: (_) => WeeklyScreen(weekStart: week)),
+      ),
+    );
+  }
+
+  String _wordsLine(Progress progress) {
+    final n = progress.myWords.length;
+    if (n == 0) return 'Noch keine Wörter gespeichert';
+    if (isRestDay(_today)) return '$n Wörter · sonntags ist nichts fällig';
+    final due = dueToday(progress, _today).length;
+    return due == 0 ? '$n Wörter · heute nichts fällig' : 'Heute zu wiederholen: $due';
   }
 
   void _settings(BuildContext context) {
     final progress = AppScope.of(context).progress;
     showModalBottomSheet<void>(
       context: context,
-      constraints: const BoxConstraints(maxWidth: 640),
+      isScrollControlled: true,
+      constraints: BoxConstraints(maxWidth: 640, maxHeight: MediaQuery.sizeOf(context).height * 0.9),
       builder: (context) => ListenableBuilder(
         listenable: progress,
         builder: (context, _) => SafeArea(
           child: ListView(
             shrinkWrap: true,
-            padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+            padding: EdgeInsets.fromLTRB(24, 0, 24, 24 + MediaQuery.viewInsetsOf(context).bottom),
             children: [
               Text('Kumachan', style: serif(21)),
               const SizedBox(height: 8),
@@ -214,6 +250,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 style: sans(13.5, color: YoColors.inkSoft),
               ),
+              const SizedBox(height: 22),
+              Text('Nachsprechen', style: serif(21)),
+              const SizedBox(height: 4),
+              const _AzureSettings(),
               const SizedBox(height: 22),
               Text('Meine Stufe', style: serif(21)),
               const SizedBox(height: 4),
@@ -251,6 +291,111 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
+/// Azure-Schlüssel fürs Nachsprechen – nur auf diesem Gerät gespeichert.
+class _AzureSettings extends StatefulWidget {
+  const _AzureSettings();
+
+  @override
+  State<_AzureSettings> createState() => _AzureSettingsState();
+}
+
+class _AzureSettingsState extends State<_AzureSettings> {
+  late final _key = TextEditingController(text: AppScope.of(context).progress.azureKey);
+  late final _region = TextEditingController(text: AppScope.of(context).progress.azureRegion);
+  var _saved = false;
+
+  @override
+  void dispose() {
+    _key.dispose();
+    _region.dispose();
+    super.dispose();
+  }
+
+  InputDecoration _field(String label) => InputDecoration(
+    labelText: label,
+    filled: true,
+    fillColor: YoColors.coconutMilk,
+    border: const OutlineInputBorder(borderRadius: organicRadius, borderSide: BorderSide.none),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = AppScope.of(context).progress;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Für die Aussprache-Bewertung: der Schlüssel deines Azure-Speech-Zugangs in der Gratis-Stufe F0 '
+          '(Azure-Portal → Speech-Zugang → „Schlüssel und Endpunkt“). Er bleibt nur auf diesem Gerät.',
+          style: sans(13.5, color: YoColors.inkSoft),
+        ),
+        const SizedBox(height: 8),
+        TextField(controller: _key, obscureText: true, autocorrect: false, decoration: _field('Schlüssel')),
+        const SizedBox(height: 8),
+        TextField(controller: _region, autocorrect: false, decoration: _field('Region (z. B. switzerlandnorth)')),
+        const SizedBox(height: 8),
+        Row(
+          children: [
+            FilledButton(
+              onPressed: () {
+                progress.setAzure(_key.text, _region.text);
+                setState(() => _saved = true);
+              },
+              child: const Text('Speichern'),
+            ),
+            const SizedBox(width: 12),
+            if (_saved || progress.azureKey.isNotEmpty)
+              Text(
+                'Gespeichert · diesen Monat ${(progress.speechSecondsThisMonth(DateTime.now()) / 60).ceil()} von 300 Gratis-Minuten',
+                style: sans(13, color: YoColors.inkSoft),
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _Tile extends StatelessWidget {
+  const _Tile({required this.icon, required this.title, required this.subtitle, required this.onTap});
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsets.only(bottom: 10),
+    child: Material(
+      color: YoColors.vanillaIce,
+      shape: const RoundedRectangleBorder(borderRadius: organicRadius),
+      child: InkWell(
+        customBorder: const RoundedRectangleBorder(borderRadius: organicRadius),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          child: Row(
+            children: [
+              Icon(icon, color: YoColors.chocolate),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(title, style: sans(16, weight: 650)),
+                    Text(subtitle, style: sans(13.5, color: YoColors.inkSoft)),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right_rounded, color: YoColors.inkSoft),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
 class _RestCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
@@ -269,49 +414,4 @@ class _RestCard extends StatelessWidget {
       ],
     ),
   );
-}
-
-class _TextCard extends StatelessWidget {
-  const _TextCard({required this.entry, required this.read, required this.onTap, this.big = false});
-  final TextEntry entry;
-  final bool read;
-  final bool big;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final stufe = Stufe.of(entry.stufe);
-    return Material(
-      color: YoColors.brightWhite,
-      shape: const RoundedRectangleBorder(borderRadius: organicRadius),
-      child: InkWell(
-        customBorder: const RoundedRectangleBorder(borderRadius: organicRadius),
-        onTap: onTap,
-        child: Padding(
-          padding: EdgeInsets.all(big ? 20 : 16),
-          child: Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(entry.title, style: jp(big ? 24 : 19, weight: FontWeight.w500)),
-                    const SizedBox(height: 2),
-                    Text(entry.titleDe, style: sans(15)),
-                    const SizedBox(height: 6),
-                    Text(
-                      '${topicLabels[entry.topic] ?? entry.topic} · ${stufe.name} (${stufe.label}) · ≈ ${entry.minutes} Min',
-                      style: sans(13.5, color: YoColors.inkSoft),
-                    ),
-                  ],
-                ),
-              ),
-              if (read) const Icon(Icons.check_rounded, color: YoColors.chocolate),
-              const Icon(Icons.chevron_right_rounded, color: YoColors.inkSoft),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 }

@@ -36,6 +36,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   var _correct = 0;
   var _showDe = false;
   var _saved = false;
+  final _wrong = <int>[];
 
   List<Question> get _qs => widget.doc.questions;
   bool get _done => _index >= _qs.length;
@@ -44,7 +45,11 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     if (_chosen != null) return;
     setState(() {
       _chosen = i;
-      if (i == _qs[_index].answer) _correct++;
+      if (i == _qs[_index].answer) {
+        _correct++;
+      } else {
+        _wrong.add(_index);
+      }
     });
   }
 
@@ -70,6 +75,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         lookups: widget.lookups.length,
         rating: widget.rating,
         usedAudio: widget.usedAudio,
+        wrong: List.of(_wrong),
       ),
     );
   }
