@@ -71,6 +71,92 @@ def fmt(o, ind: int = 0) -> str:
     return json.dumps(o, ensure_ascii=False)
 
 
+# --- Stil: vom Plauderton zum Schriftstil der N2 ---------------------------
+# Ab Stufe 3 kein gesprochener Stil in Nachricht, Essay und Meinung; ab Stufe 5
+# Schriftsprache wie im Leseteil der N2. Wörtliche Rede in 「」 bleibt frei.
+
+HOEFLICH_ERLAUBT = {"email", "aushang", "infoblatt"}
+SATZENDE_PARTIKEL = {"ね", "よ", "な", "なあ", "わ", "ぞ", "ぜ", "さ", "よね"}
+KURZFORMEN = {"てる", "でる", "ちゃう", "じゃう", "とく", "どく"}
+KURZ_OBERFLAECHE = {"なきゃ", "なくちゃ", "ちゃ", "じゃ", "って", "けど", "っけ"}
+UMGANGSWOERTER = {"すごく", "すっごく", "すごい", "やっぱり", "やっぱ", "ちょっと", "いっぱい",
+                  "めっちゃ", "とっても", "だって", "じゃあ", "ほんと", "ほんとう"}
+SCHRIFT_MUSTER = ["である", "ており", "とされ", "に伴", "につれ", "ものの", "にほかならない",
+                  "に対し", "によって", "における", "とともに", "わけではない", "ざるを得", "に過ぎない",
+                  "に違いない", "をめぐ", "に応じ", "一方", "とはいえ", "にもかかわらず", "つつ"]
+# 「ください」 allein ist noch kein Keigo einer Geschäfts-E-Mail.
+KEIGO = {"いたす", "申す", "申し上げる", "いただく", "ござる", "存じる", "伺う", "参る", "おる", "なさる", "いらっしゃる"}
+
+
+def _ohne_zitate(text: str) -> str:
+    """Wörtliche Rede in 「」 durch Leerzeichen ersetzen (gleiche Länge)."""
+    out, depth = [], 0
+    for ch in text:
+        if ch == "「":
+            depth += 1
+        out.append("　" if depth else ch)
+        if ch == "」" and depth:
+            depth -= 1
+    return "".join(out)
+
+
+def stil(doc: dict, tok) -> tuple[int, list[str]]:
+    """Fehler (müssen umgeschrieben werden) und Hinweise zum Stil."""
+    stufe, art = doc["stufe"], doc.get("type", "")
+    funde: list[tuple[str, str]] = []  # (Satz, Fund)
+    hoeflich = 0
+    keigo = False
+    gesamt = ""
+    for si, s in enumerate(doc["sentences"], start=1):
+        text = _ohne_zitate("".join(t["t"] for t in s["tokens"]))
+        gesamt += text
+        ms = [m for m in tok.tokenize(text, SplitMode.C) if m.surface().strip("　")]
+        for i, m in enumerate(ms):
+            pos, form, surf = m.part_of_speech(), m.dictionary_form(), m.surface()
+            nxt = ms[i + 1].surface() if i + 1 < len(ms) else "。"
+            if pos[0] == "助動詞" and form in ("です", "ます"):
+                hoeflich += 1
+            if form in KEIGO:
+                keigo = True
+            if pos[1] == "終助詞" and surf in SATZENDE_PARTIKEL and nxt[:1] in "。！？」":
+                funde.append((f"Satz {si}", f"Satzende-Partikel 「{surf}」"))
+            elif form in KURZFORMEN or (surf in KURZ_OBERFLAECHE and pos[0] in ("助詞", "助動詞")):
+                funde.append((f"Satz {si}", f"Kurzform 「{surf}」"))
+            elif surf in UMGANGSWOERTER:
+                funde.append((f"Satz {si}", f"Umgangswort 「{surf}」"))
+        # Sudachi trennt でも in で + も – deshalb am Text erkennen.
+        anfang = text.lstrip("　")
+        for wort, besser in (("でも", "しかし / だが"), ("だけど", "しかし / だが"), ("じゃあ", "では")):
+            if anfang.startswith(wort + "、") or anfang.startswith(wort + "，"):
+                funde.append((f"Satz {si}", f"「{wort}」 am Satzanfang (schriftlich: {besser})"))
+        if "！" in text and art not in HOEFLICH_ERLAUBT:
+            funde.append((f"Satz {si}", "Ausrufezeichen"))
+
+    fehler, hinweise = 0, []
+    if stufe <= 2:
+        # Höflich und einfach ist richtig; nur kein Plauderton wie in einem Blog.
+        if len(funde) > 2:
+            fehler = len(funde) - 2
+            hinweise.append(f"STIL  {len(funde)} Plauder-Stellen (höchstens 2):")
+        else:
+            hinweise += [f"STIL  {w}: {f} (erlaubt bis 2)" for w, f in funde]
+            funde = []
+    else:
+        fehler = len(funde)
+    hinweise += [f"STIL  {w}: {f}" for w, f in funde]
+
+    if stufe >= 3 and art not in HOEFLICH_ERLAUBT and hoeflich:
+        fehler += 1
+        hinweise.append(f"STIL  です/ます in einem Text der Art „{art}“ – ab Stufe 3 Schriftform (だ / である)")
+    if stufe >= 5:
+        treffer = [p for p in SCHRIFT_MUSTER if p in gesamt]
+        if art not in HOEFLICH_ERLAUBT and len(treffer) < 2:
+            hinweise.append("STIL  kaum Schriftsprache der N2 (z. B. である, 〜ており, 〜に伴い, 〜ものの) – einbauen")
+        if art == "email" and not keigo:
+            hinweise.append("STIL  E-Mail ohne Keigo (いたします, いただく, ございます …) – wie in der N2 ergänzen")
+    return fehler, hinweise
+
+
 def check(path: pathlib.Path, tok, apply: bool = False) -> int:
     doc = json.loads(path.read_text(encoding="utf-8"))
     stufe = doc["stufe"]
@@ -144,7 +230,17 @@ def check(path: pathlib.Path, tok, apply: bool = False) -> int:
           f"weit darüber {share['weit darüber']} % · nicht in den Listen {share['unbekannt']} %")
     for n in notes:
         print(f"  Hinweis {n}")
-    print(f"  {'OK' if errors == 0 else f'{errors} Lesung(en) prüfen'}")
+    stil_fehler, stil_hinweise = stil(doc, tok)
+    for n in stil_hinweise:
+        print(f"  {n}")
+    if errors or stil_fehler:
+        teile = [f"{errors} Lesung(en) prüfen"] if errors else []
+        if stil_fehler:
+            teile.append(f"{stil_fehler} Stil-Stelle(n) umschreiben")
+        print("  " + " · ".join(teile))
+    else:
+        print("  OK")
+    errors += stil_fehler
     if apply:
         path.write_text(fmt(doc) + "\n", encoding="utf-8")
         print("  JLPT-Stufen aus der Liste übernommen.")

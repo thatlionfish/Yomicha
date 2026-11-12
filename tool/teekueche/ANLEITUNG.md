@@ -46,12 +46,28 @@ neu geschrieben**, nicht nur gekürzt.
 | Stufe | Name | JLPT | Länge (Zeichen) | Stil |
 |---|---|---|---|---|
 | 1 | Bancha | N5 | 120–200 | です/ます, kurze Sätze, fast nur N5-Kanji |
-| 2 | Hōjicha | N4 | 150–250 | です/ます |
-| 3 | Genmaicha | N3 leicht | 200–300 | einfache Schriftform möglich, 2–3 neue N3-Muster |
-| 4 | Sencha | N3 | 250–400 | einfache Schriftform |
-| 5 | Kabusecha | N2 leicht | 300–450 | 2–3 neue N2-Muster |
-| 6 | Gyokuro | N2 | 350–550 | wie in der N2-Leseprüfung |
-| 7 | Matcha | N2+ | 400–700 | auch zwei Texte im Vergleich oder Infoblatt |
+| 2 | Hōjicha | N4 | 150–250 | です/ます wie Memo, Brief, Aushang oder Tagebuch der N4 – kein Blog-Plauderton |
+| 3 | Genmaicha | N3 leicht | 200–300 | Schriftform (だ) in Nachricht, Essay, Meinung; 2–3 neue N3-Muster |
+| 4 | Sencha | N3 | 250–400 | Schriftform (だ / である), Zeitungston; mehr 漢語 (増加する, 行う) |
+| 5 | Kabusecha | N2 leicht | 300–450 | Schriftsprache der N2 (である, 〜ており, 〜に伴い, 〜ものの), E-Mails mit Keigo; 2–3 neue N2-Muster |
+| 6 | Gyokuro | N2 | 350–550 | wie in der N2-Leseprüfung: lange Sätze, Meinung des Verfassers, Geschäfts-E-Mail, Mitteilung |
+| 7 | Matcha | N2+ | 400–700 | wie 6, dazu zwei Texte im Vergleich (統合理解) oder Infoblatt (情報検索) |
+
+**Der Stil wächst mit der Stufe – das Ziel ist die Sprache der Prüfung, nicht die Sprache eines Blogs.**
+- **Stufe 1–2:** höflich und einfach. Höchstens zwei Plauder-Stellen pro Text (Satzende ね/よ, „みなさんも…てください“, 〜し).
+  Textarten wie in der N4: kurze Mitteilung, Brief/E-Mail, Aushang, Tagebuch, Infotext.
+- **Ab Stufe 3:** in Nachricht, Essay und Meinung **Schriftform, keine gesprochene Sprache**: kein ね/よ am Satzende,
+  keine Kurzformen (〜てる, 〜ちゃう, 〜とく, 〜なきゃ, じゃ, って, けど), keine Umgangswörter (すごく, やっぱり,
+  ちょっと, いっぱい), kein でも/だけど am Satzanfang (しかし, だが), keine Ausrufezeichen.
+  です/ます nur in E-Mail, Aushang und Infoblatt. Wörtliche Rede in 「」 darf gesprochen klingen.
+- **Ab Stufe 5:** Schriftsprache wie im Leseteil der N2 – in jedem Text mehrere Ausdrücke wie である, 〜ており,
+  〜とされる, 〜に伴い, 〜につれ, 〜ものの, 〜わけではない, 〜にほかならない, 〜をめぐって. E-Mails und Mitteilungen
+  mit **Keigo** (いたします, 申し上げます, いただけますでしょうか, ございます), wie Firmen sie schreiben.
+- **Fragen ab Stufe 5** im Wortlaut der N2: „筆者の考えに合うのはどれか“, „〜とあるが、それはなぜか“,
+  „このメールで一番伝えたいことは何か“. Ab Stufe 6 auch Fragen zum ganzen Text (主張理解).
+- **Grammatik:** Muster wählen, die in den letzten 30 Texten noch nicht vorkamen (`grammar` der Texte in
+  `web/data/texte/` ansehen), ab Stufe 5 vor allem Muster der N2. So kommt über das Jahr die ganze N2-Grammatik dran.
+- `pruefen.py` prüft den Stil (`STIL …`). Fehler dort heißen: **die Fassung umschreiben**, nicht nur das Wort tauschen.
 
 Für jeden Entwurf:
 - **Glossar:** deutsche Bedeutung für jedes Inhaltswort, passend zum Satz (Schlüssel: Schreibung,
@@ -73,6 +89,9 @@ tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\pruefen.py
 
 - `zerlegen.py` meldet `FEHLT …` für fehlende Bedeutungen oder Grammatikstellen: Glossar ergänzen und neu laufen lassen,
   bis nichts mehr fehlt.
+- `pruefen.py` meldet `STIL …` bei gesprochener Sprache ab Stufe 3 (und bei mehr als zwei Plauder-Stellen in
+  Stufe 1–2): die betroffenen Sätze im Entwurf in Schriftform umschreiben und neu prüfen, bis `OK` steht.
+  Hinweise ohne Fehler (z. B. „kaum Schriftsprache der N2“) ebenfalls beheben.
 - `pruefen.py` meldet `LESUNG …`, wenn Sudachi anders liest: im Zusammenhang entscheiden und, falls die
   Text-Lesung falsch ist, im Entwurf unter `lesungen` eintragen (`"Satz:Schreibung": "lesung"`).
 - Stufenregeln (Spezifikation 9.1), sonst umschreiben:
