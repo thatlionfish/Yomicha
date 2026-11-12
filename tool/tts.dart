@@ -8,15 +8,19 @@
 //   dart run tool/tts.dart --dry                 # zeigt nur, was erzeugt würde
 //   dart run tool/tts.dart --force               # alles neu erzeugen
 //   dart run tool/tts.dart --key=werkstatt/azure-speech.env   # anderer Zugang
+//   dart run tool/tts.dart --jlpt                # dazu der JLPT-Wortschatz N5–N2 (Aufbaupaket)
+//   dart run tool/tts.dart --hoerkontrolle       # Satzaufnahmen abhören (neue Texte; --alle: alle)
 //
 // Standard ist der Aufbau-Zugang werkstatt/azure-aufbau.env (S0, Startguthaben).
 // Ab dem 6.12.2026 nur noch den Gratis-Zugang F0 verwenden.
 // Den Schlüssel nie ausgeben, nie committen.
 import 'dart:convert';
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:yomicha/data/audio_key.dart';
 import 'package:yomicha/data/models.dart';
+import 'package:yomicha/speech/assessment.dart';
 
 const voice = 'ja-JP-NanamiNeural';
 
@@ -55,6 +59,15 @@ Future<void> main(List<String> args) async {
     }
   }
 
+  if (args.contains('--hoerkontrolle')) {
+    await _hoerkontrolle(
+      all: args.contains('--alle'),
+      paths: [for (final a in args) if (!a.startsWith('--')) a],
+    );
+    if (billed > 0) _count();
+    return;
+  }
+
   final texts = Directory('web/data/texte')
       .listSync(recursive: true)
       .whereType<File>()
@@ -78,6 +91,16 @@ Future<void> main(List<String> args) async {
     for (final t in [...doc.title, for (final s in doc.sentences) ...s.tokens]) {
       if (wantsWordAudio(t)) words[wordAudioKey(t)] = t;
     }
+  }
+
+  // Aufbaupaket: Aufnahmen für den ganzen JLPT-Wortschatz N5–N2 (Spezifikation 16),
+  // mit demselben Schlüssel wie im Text (Schreibung|Lesung).
+  if (args.contains('--jlpt')) {
+    final before = words.length;
+    for (final t in _jlptWords()) {
+      words.putIfAbsent(wordAudioKey(t), () => t);
+    }
+    stdout.writeln('JLPT-Wortschatz: ${words.length - before} Wörter dazu');
   }
 
   for (final t in words.values) {
@@ -152,18 +175,27 @@ Future<void> _make(File out, String ssml, int chars, {required bool dry, require
     stdout.writeln('  ${out.path}');
     return;
   }
+  final bytes = await _synth(ssml, format, label: out.path);
+  if (bytes == null) {
+    billed -= chars;
+    return;
+  }
   out.parent.createSync(recursive: true);
+  out.writeAsBytesSync(bytes);
+  stdout.writeln('  ✓ ${out.path}');
+}
+
+/// Eine Aufnahme bei Azure holen; bei 429 (Gratis-Zugang F0) warten und erneut versuchen.
+Future<List<int>?> _synth(String ssml, String outputFormat, {required String label}) async {
   final client = HttpClient();
   try {
-    // Der Gratis-Zugang F0 erlaubt nur wenige Anfragen pro Minute:
-    // bei 429 warten und es erneut versuchen.
     for (var attempt = 1; ; attempt++) {
       final req = await client.postUrl(
         Uri.parse('https://$region.tts.speech.microsoft.com/cognitiveservices/v1'),
       );
       req.headers
         ..set('Ocp-Apim-Subscription-Key', key)
-        ..set('X-Microsoft-OutputFormat', format)
+        ..set('X-Microsoft-OutputFormat', outputFormat)
         ..set('User-Agent', 'yomicha-teekueche')
         ..contentType = ContentType('application', 'ssml+xml', charset: 'utf-8');
       req.add(utf8.encode(ssml));
@@ -177,20 +209,85 @@ Future<void> _make(File out, String ssml, int chars, {required bool dry, require
       }
       if (res.statusCode != 200) {
         final body = await res.transform(utf8.decoder).join();
-        stderr.writeln('FEHLER ${res.statusCode} bei ${out.path}: $body');
+        stderr.writeln('FEHLER ${res.statusCode} bei $label: $body');
         exitCode = 1;
-        billed -= chars;
-        return;
+        return null;
       }
-      final sink = out.openWrite();
-      await res.pipe(sink);
-      stdout.writeln('  ✓ ${out.path}');
-      return;
+      final out = BytesBuilder(copy: false);
+      await res.forEach(out.add);
+      return out.takeBytes();
     }
   } finally {
     client.close();
   }
 }
+
+/// Hörkontrolle (Spezifikation 16): Für jeden Satz holt Azure dieselbe Aufnahme
+/// als WAV, und die Aussprache-Bewertung vergleicht sie mit der **Lesung des
+/// Textes in Kana**. Liest die Stimme ein Kanji anders (今日 als こんにち statt
+/// きょう), fällt das Wort durch. Abhilfe: im Satz eine feste Lesung (`say`)
+/// eintragen und die Aufnahme mit --force neu erzeugen.
+Future<void> _hoerkontrolle({required bool all, required List<String> paths}) async {
+  final files = paths.isNotEmpty
+      ? [for (final p in paths) File(p)]
+      : (Directory('web/data/texte')
+              .listSync(recursive: true)
+              .whereType<File>()
+              .where((f) => f.path.endsWith('text.json'))
+              .toList()
+            ..sort((a, b) => a.path.compareTo(b.path)));
+  var checked = 0, flagged = 0, ms = 0;
+  for (final file in files) {
+    final folder = file.parent.path;
+    final report = File('$folder/hoerkontrolle.json');
+    if (!all && paths.isEmpty && report.existsSync()) continue;
+    final doc = TextDoc.fromJson(jsonDecode(await file.readAsString()) as Map<String, dynamic>, folder: folder);
+    final rate = rateByStufe[doc.stufe] ?? '0%';
+    stdout.writeln('\n== ${doc.id} (Stufe ${doc.stufe}) ==');
+    final result = <String, Object>{};
+    for (var i = 0; i < doc.sentences.length; i++) {
+      final s = doc.sentences[i];
+      final name = s.audio ?? 's${(i + 1).toString().padLeft(2, '0')}.mp3';
+      if (!File('$folder/$name').existsSync()) continue;
+      final wav = await _synth(_ssml(_sentenceText(s), rate), 'riff-16khz-16bit-mono-pcm', label: '$folder/$name');
+      if (wav == null) continue;
+      billed += _billable(s.plain);
+      final PronunciationResult pa;
+      try {
+        pa = await assess(key: key, region: region, wav: Uint8List.fromList(wav), referenceText: _spokenReading(s));
+      } on PronunciationError catch (e) {
+        stderr.writeln('  FEHLER Satz ${i + 1}: $e');
+        exitCode = 1;
+        continue;
+      }
+      checked++;
+      ms += ((wav.length - 44) / 32).round(); // 16 kHz · 16 bit = 32 Byte pro ms
+      // „Insertion“ meldet die Erkennung oft bei reinem Kana-Bezug, ohne dass die
+      // Stimme etwas falsch macht – zählt nicht. Verdächtig sind ausgelassene und
+      // deutlich anders gesprochene Wörter.
+      final bad = [
+        for (final w in pa.words)
+          if (w.error == 'Omission' || (w.error == 'Mispronunciation' && w.accuracy < 60)) w,
+      ];
+      if (bad.isEmpty) {
+        stdout.writeln('  OK          Satz ${i + 1} (${pa.accuracy.round()})');
+        result[name] = 'ok';
+      } else {
+        flagged++;
+        stdout.writeln('  ABWEICHUNG  Satz ${i + 1}: '
+            '${bad.map((w) => '${w.word} (${w.error}, ${w.accuracy.round()})').join(', ')} · gehört: ${pa.recognized}');
+        result[name] = {'status': 'abweichung', 'woerter': [for (final w in bad) w.word], 'gehoert': pa.recognized};
+      }
+    }
+    report.writeAsStringSync('${const JsonEncoder.withIndent(' ').convert(result)}\n');
+  }
+  stdout.writeln('\nHörkontrolle: $checked Sätze, ${(ms / 1000).round()} s Audio · Abweichungen: $flagged');
+  if (flagged > 0) exitCode = 1;
+}
+
+/// So soll der Satz klingen: feste Lesung, sonst die Lesung des Textes, Kana wie geschrieben.
+String _spokenReading(Sentence s) =>
+    s.tokens.map((t) => t.say ?? (t.hasKanji ? t.reading : t.t)).join();
 
 /// Satztext für die Stimme; Wörter mit fester Lesung ([Token.say]) als <sub>.
 String _sentenceText(Sentence s) => s.tokens
@@ -224,6 +321,36 @@ String _esc(String s) => s
     .replaceAll('"', '&quot;');
 
 /// Japanische Zeichen zählen bei Azure teilweise doppelt – vorsichtig schätzen.
+/// Wörter N5–N2 aus `tool/teekueche/daten/jlpt_woerter.json` als Token wie im Text:
+/// Kana-Wörter ohne Lesung (Schlüssel „たくさん|たくさん“), Kanji-Wörter mit Lesung in Hiragana.
+List<Token> _jlptWords() {
+  final list = jsonDecode(File('tool/teekueche/daten/jlpt_woerter.json').readAsStringSync()) as Map<String, dynamic>;
+  final kana = RegExp(r'^[ぁ-ゖァ-ヺー]+$');
+  final hira = RegExp(r'^[ぁ-ゖー]+$');
+  final japanese = RegExp(r'^[ぁ-ゖァ-ヺー々一-鿿]+$');
+  final endsWithKanji = RegExp(r'[々一-鿿]$');
+  final out = <Token>[];
+  for (final MapEntry(:key, :value) in list.entries) {
+    if (!key.contains('|') || (value as num) < 2) continue;
+    final [surface, raw] = key.split('|');
+    if (!japanese.hasMatch(surface)) continue;
+    if (kana.hasMatch(surface)) {
+      out.add(Token(t: surface));
+      continue;
+    }
+    // Kanji-Wörter brauchen genau eine Lesung in Hiragana.
+    var reading = raw;
+    if (!hira.hasMatch(reading)) continue;
+    // „世話|せわする“: Die Lesung gehört zum Nomen ohne する.
+    if (reading.endsWith('する') && endsWithKanji.hasMatch(surface)) {
+      reading = reading.substring(0, reading.length - 2);
+    }
+    if (reading.isEmpty) continue;
+    out.add(Token(t: surface, r: reading));
+  }
+  return out;
+}
+
 int _billable(String s) => s.runes.fold(0, (n, r) => n + (r > 0x2E80 ? 2 : 1));
 
 Map<String, String> _readEnv(String path) {

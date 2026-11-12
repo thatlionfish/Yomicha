@@ -183,19 +183,21 @@ class _HomeScreenState extends State<HomeScreen> {
                       if (snap.hasError) return Text('Texte konnten nicht geladen werden: ${snap.error}');
                       if (!snap.hasData) return const Center(child: CircularProgressIndicator());
                       final visible = visibleTexts(snap.data!, _today);
-                      final shown = textsForStufe(visible, progress.stufe);
+                      final regular = textsForStufe([for (final e in visible) if (!e.vorrat) e], progress.stufe);
+                      final stock = textsForStufe([for (final e in visible) if (e.vorrat) e], progress.stufe);
+                      // Archiv: alle neuen Texte und die schon gelesenen aus dem Vorrat.
+                      final shown = [...regular, ...stock.where((e) => readIds.contains(e.id))];
                       // Die Teeküche kennt meine Stufe nur aus config.json: Fehlt sie bei den
                       // neuen Texten, soll ich sie melden.
-                      final recent = visible.where((e) => _today.difference(e.date).inDays <= 3);
+                      final recent = visible.where((e) => !e.vorrat && _today.difference(e.date).inDays <= 3);
                       final noTexts = !rest && recent.isNotEmpty && !recent.any((e) => e.stufe == progress.stufe);
-                      var today = shown.where((e) => sameDay(e.date, _today)).take(2).toList();
-                      var label = 'Deine Texte für heute';
-                      if (today.isEmpty && !rest) {
-                        // Keine neuen Texte (Teeküche ausgefallen): die neuesten ungelesenen.
-                        today = shown.where((e) => !readIds.contains(e.id)).take(2).toList();
-                        label = 'Noch nicht gelesen';
-                      }
-                      if (rest) today = const [];
+                      final (texts: today, :label) = textsForToday(
+                        regular: regular,
+                        stock: stock,
+                        read: readIds,
+                        today: _today,
+                        rest: rest,
+                      );
                       final older = shown.length - today.length;
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,

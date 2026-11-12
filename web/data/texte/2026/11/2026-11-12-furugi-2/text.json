@@ -16,7 +16,7 @@
       "tokens": [
         {"t": "最近", "r": "さいきん", "g": "in letzter Zeit", "j": 4},
         {"t": "、"},
-        {"t": "日本", "r": "にっぽん", "g": "Japan", "j": 3},
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
         {"t": "の"},
         {"t": "若者", "r": "わかもの", "g": "junge Leute"},
         {"t": "の"},
@@ -86,7 +86,7 @@
       "tokens": [
         {"t": "東京", "r": "とうきょう", "g": "Tokio"},
         {"t": "の"},
-        {"t": "下北沢", "r": "しもきたざわ", "g": "Shimokitazawa (Stadtviertel in Tokio)"},
+        {"t": "下北沢", "r": "しもきたざわ", "say": "しもきたざわ", "g": "Shimokitazawa (Stadtviertel in Tokio)"},
         {"t": "に"},
         {"t": "は"},
         {"t": "、"},

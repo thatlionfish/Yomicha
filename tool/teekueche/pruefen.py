@@ -23,6 +23,11 @@ KANA_SHIFT = ord("ァ") - ord("ぁ")
 CONTENT_POS = {"名詞", "動詞", "形容詞", "副詞", "形状詞", "連体詞", "接続詞", "感動詞"}
 
 
+# Übliche Lesungen, wo Sudachi eine seltenere wählt (日本 → ニッポン). Gilt für
+# Zerlegen und Prüfen; die Stimme spricht ebenfalls so.
+STANDARD_LESUNGEN = {"日本": "にほん", "日本人": "にほんじん", "日本語": "にほんご", "日本茶": "にほんちゃ"}
+
+
 def hira(s: str) -> str:
     return "".join(chr(ord(c) - KANA_SHIFT) if "ァ" <= c <= "ヶ" else c for c in s)
 
@@ -178,7 +183,7 @@ def check(path: pathlib.Path, tok, apply: bool = False) -> int:
             aligned = inside and inside[0].begin() == start and inside[-1].end() == end
             where = "Titel" if si == 0 else f"Satz {si}"
             if t.get("r") and aligned:
-                sudachi = hira("".join(m.reading_form() for m in inside))
+                sudachi = STANDARD_LESUNGEN.get(t["t"]) or hira("".join(m.reading_form() for m in inside))
                 if sudachi != t["r"]:
                     errors += 1
                     print(f"  LESUNG  {where}: {t['t']} – Text: {t['r']}, Sudachi: {sudachi}")

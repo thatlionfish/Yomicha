@@ -19,7 +19,7 @@
         {"t": "ここ", "g": "hier; ここ数年 = die letzten Jahre", "j": 5},
         {"t": "数年", "r": "すうねん", "g": "einige Jahre; ここ数年 = die letzten Jahre"},
         {"t": "、"},
-        {"t": "日本", "r": "にっぽん", "g": "Japan", "j": 3},
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
         {"t": "の"},
         {"t": "若者", "r": "わかもの", "g": "junge Leute"},
         {"t": "の"},
@@ -92,7 +92,7 @@
       "tokens": [
         {"t": "東京", "r": "とうきょう", "g": "Tokio"},
         {"t": "の"},
-        {"t": "下北沢", "r": "しもきたざわ", "g": "Shimokitazawa (Stadtviertel in Tokio)"},
+        {"t": "下北沢", "r": "しもきたざわ", "say": "しもきたざわ", "g": "Shimokitazawa (Stadtviertel in Tokio)"},
         {"t": "や"},
         {"t": "高円寺", "r": "こうえんじ", "g": "Kōenji (Stadtviertel in Tokio)"},
         {"t": "に"},

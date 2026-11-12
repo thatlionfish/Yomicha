@@ -5,6 +5,7 @@ import '../data/stufen.dart';
 import '../learn/einstufung.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
+import 'kumachan.dart';
 
 /// Vorschlag für einen Stufenwechsel (Spezifikation 9.3) – ich bestätige ihn.
 class StufenVorschlagCard extends StatelessWidget {
@@ -56,7 +57,12 @@ class StufenVorschlagCard extends StatelessWidget {
             runSpacing: 8,
             children: [
               FilledButton(
-                onPressed: () => progress.setStufe(v.nach),
+                onPressed: () {
+                  // Der Navigator bleibt, auch wenn die Karte nach dem Wechsel verschwindet.
+                  final nav = Navigator.of(context);
+                  progress.setStufe(v.nach);
+                  if (up && progress.kuma != KumaMode.aus) _celebrate(nav.context, nach);
+                },
                 child: Text(up ? 'Aufsteigen' : 'Zurück zu Stufe ${nach.nr}'),
               ),
               OutlinedButton(
@@ -69,4 +75,23 @@ class StufenVorschlagCard extends StatelessWidget {
       ),
     );
   }
+
+  /// Kumachan gratuliert zur neuen Stufe.
+  static void _celebrate(BuildContext context, Stufe s) => showDialog<void>(
+    context: context,
+    builder: (context) => AlertDialog(
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const KumaMoment(mood: 'aufstieg', height: 130),
+          const SizedBox(height: 10),
+          Text('Stufe ${s.nr} · ${s.name} ${s.kanji}', style: serif(21), textAlign: TextAlign.center),
+          Text(s.label, style: sans(14, color: YoColors.inkSoft)),
+        ],
+      ),
+      actions: [
+        FilledButton(onPressed: () => Navigator.pop(context), child: const Text('Los geht’s')),
+      ],
+    ),
+  );
 }

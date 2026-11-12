@@ -288,6 +288,7 @@ class TextEntry {
     required this.title,
     required this.titleDe,
     required this.minutes,
+    this.vorrat = false,
   });
   final String id;
   final String folder;
@@ -298,6 +299,9 @@ class TextEntry {
   final String titleDe;
   final int minutes;
 
+  /// Zeitloser Text aus dem Vorrat: erscheint nur, wenn keine neuen Texte da sind.
+  final bool vorrat;
+
   factory TextEntry.fromJson(Map<String, dynamic> j) => TextEntry(
     id: j['id'] as String,
     folder: j['folder'] as String,
@@ -307,6 +311,7 @@ class TextEntry {
     title: j['title'] as String,
     titleDe: j['titleDe'] as String,
     minutes: j['minutes'] as int,
+    vorrat: j['vorrat'] == true,
   );
 }
 

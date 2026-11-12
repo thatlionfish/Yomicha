@@ -5,6 +5,7 @@ Claude schreibt nur einen Entwurf (werkstatt/entwuerfe/<id>.json):
 {
   "id": "2026-11-13-matcha-export-3",      # Datum-Thema-Stufe
   "date": "2026-11-13", "topic": "tee", "type": "nachricht", "stufe": 3,
+  "vorrat": true,                                    # nur für zeitlose Vorrat-Texte (sonst weglassen)
   "title": "抹茶の輸出", "titleDe": "Matcha-Export",
   "absaetze": [["1. Satz。", "2. Satz。"], ["3. Satz。"]],
   "glossar": {"抹茶": "Matcha", "輸出": "Export", "2:で": "mit"},   # Schreibung, Grundform oder "Satz:Schreibung"
@@ -34,7 +35,7 @@ import sys
 from sudachipy import Dictionary, SplitMode
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from pruefen import STUFE_JLPT, fmt, hira, word_level  # noqa: E402
+from pruefen import STANDARD_LESUNGEN, STUFE_JLPT, fmt, hira, word_level  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 KANJI = re.compile(r"[㐀-䶿一-鿿豈-﫿々]")
@@ -119,7 +120,7 @@ def make_token(ms: list, sentence_no: int, draft: dict, missing: set) -> dict:
     pos1 = head.part_of_speech()[0]
     if pos1 == "補助記号" or pos1 == "空白":
         return tok
-    reading = hira("".join(m.reading_form() for m in ms))
+    reading = STANDARD_LESUNGEN.get(surface) or hira("".join(m.reading_form() for m in ms))
     override = draft.get("lesungen", {}).get(f"{sentence_no}:{surface}") or draft.get("lesungen", {}).get(surface)
     if override:
         reading = override
@@ -257,6 +258,9 @@ def build(path: pathlib.Path, tok, levels: dict) -> tuple[dict, set]:
         "questions": questions,
         "sources": draft.get("sources", []),
     }
+    # Vorrat (Spezifikation 10): zeitlose Texte, die die App nur zeigt, wenn nichts Neues da ist.
+    if draft.get("vorrat"):
+        doc["vorrat"] = True
     return doc, missing
 
 
@@ -306,6 +310,7 @@ def link_versions_and_index() -> None:
             "title": "".join(t["t"] for t in d["title"]),
             "titleDe": d["titleDe"],
             "minutes": max(1, round(chars / 80)),
+            **({"vorrat": True} if d.get("vorrat") else {}),
         })
     entries.sort(key=lambda e: (e["date"], e["id"]), reverse=True)
     (texte / "index.json").write_text(fmt({"texts": entries}) + "\n", encoding="utf-8")

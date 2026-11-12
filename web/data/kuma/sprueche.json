@@ -8,7 +8,17 @@
       {"ja": "ようこそ。ゆっくりしていってね。", "de": "Willkommen. Mach es dir gemütlich."},
       {"ja": "{今日|きょう}もがんばろうね！", "de": "Lass uns auch heute unser Bestes geben!"},
       {"ja": "{温|あたた}かいお{茶|ちゃ}、{入|い}れたよ。", "de": "Ich habe dir warmen Tee gemacht."},
-      {"ja": "{今日|きょう}のお{話|はなし}、{楽|たの}しみだね。", "de": "Ich freue mich auf die heutige Geschichte."}
+      {"ja": "{今日|きょう}のお{話|はなし}、{楽|たの}しみだね。", "de": "Ich freue mich auf die heutige Geschichte."},
+      {"ja": "おはよう！お{茶|ちゃ}の{準備|じゅんび}ができたよ。", "de": "Guten Morgen! Der Tee ist bereit."},
+      {"ja": "{待|ま}ってたよ！", "de": "Ich habe auf dich gewartet!"},
+      {"ja": "{今日|きょう}はどんなお{話|はなし}かな。", "de": "Was für eine Geschichte es heute wohl gibt?"},
+      {"ja": "{一杯|いっぱい}のお{茶|ちゃ}と、{一|ひと}つのお{話|はなし}。", "de": "Eine Tasse Tee und eine Geschichte."},
+      {"ja": "{会|あ}えてうれしいな。", "de": "Schön, dich zu sehen."},
+      {"ja": "さあ、{始|はじ}めようか。", "de": "Na dann, fangen wir an?"},
+      {"ja": "{今日|きょう}も{来|き}てくれてありがとう。", "de": "Danke, dass du heute wieder da bist."},
+      {"ja": "{新|あたら}しいお{話|はなし}が{届|とど}いたよ。", "de": "Eine neue Geschichte ist angekommen."},
+      {"ja": "{少|すこ}しずつ、{一緒|いっしょ}に{進|すす}もうね。", "de": "Gehen wir Schritt für Schritt zusammen weiter."},
+      {"ja": "お{湯|ゆ}が{沸|わ}いたよ。{読|よ}む{準備|じゅんび}はいい？", "de": "Das Wasser kocht. Bereit zum Lesen?"}
     ]
   },
   "fertig": {
@@ -18,7 +28,17 @@
       {"ja": "いいね！その{調子|ちょうし}！", "de": "Super! Weiter so!"},
       {"ja": "お{疲|つか}れさま。", "de": "Gute Arbeit – danke für deine Mühe."},
       {"ja": "{毎日|まいにち}{少|すこ}しずつ、だね。", "de": "Jeden Tag ein bisschen, nicht wahr?"},
-      {"ja": "いい{感|かん}じだよ！", "de": "Das fühlt sich gut an!"}
+      {"ja": "いい{感|かん}じだよ！", "de": "Das fühlt sich gut an!"},
+      {"ja": "{最後|さいご}まで{読|よ}めたね。", "de": "Du hast bis zum Ende gelesen."},
+      {"ja": "{今日|きょう}も{一|ひと}つ{進|すす}んだね。", "de": "Heute bist du wieder einen Schritt weitergekommen."},
+      {"ja": "がんばったね！", "de": "Du hast dich angestrengt!"},
+      {"ja": "お{茶|ちゃ}、もう{一杯|いっぱい}どう？", "de": "Noch eine Tasse Tee?"},
+      {"ja": "{新|あたら}しい{言葉|ことば}、{覚|おぼ}えたかな？", "de": "Hast du dir neue Wörter gemerkt?"},
+      {"ja": "この{調子|ちょうし}で{続|つづ}けよう。", "de": "Machen wir so weiter."},
+      {"ja": "{少|すこ}しずつ{上手|じょうず}になってるよ。", "de": "Du wirst Stück für Stück besser."},
+      {"ja": "{明日|あした}も{一緒|いっしょ}に{読|よ}もうね。", "de": "Lass uns morgen wieder zusammen lesen."},
+      {"ja": "ちょっと{休|やす}もうか。", "de": "Wollen wir kurz Pause machen?"},
+      {"ja": "{今日|きょう}の{分|ぶん}、おしまい！", "de": "Das war’s für heute!"}
     ]
   },
   "perfekt": {
@@ -27,7 +47,17 @@
       {"ja": "{全部|ぜんぶ}{正解|せいかい}！すごい！", "de": "Alles richtig! Toll!"},
       {"ja": "パーフェクト！", "de": "Perfekt!"},
       {"ja": "やったね！", "de": "Geschafft!"},
-      {"ja": "すばらしい！", "de": "Großartig!"}
+      {"ja": "すばらしい！", "de": "Großartig!"},
+      {"ja": "{完璧|かんぺき}だね！", "de": "Perfekt!"},
+      {"ja": "{一|ひと}つもまちがえなかったね！", "de": "Kein einziger Fehler!"},
+      {"ja": "{本当|ほんとう}にすごいよ！", "de": "Wirklich toll!"},
+      {"ja": "{満点|まんてん}おめでとう！", "de": "Glückwunsch zur vollen Punktzahl!"},
+      {"ja": "お{祝|いわ}いにお{菓子|かし}をどうぞ。", "de": "Zur Feier gibt es Süßes."},
+      {"ja": "{今日|きょう}は{最高|さいこう}の{日|ひ}だね！", "de": "Heute ist ein super Tag!"},
+      {"ja": "{自分|じぶん}をほめてあげてね。", "de": "Lob dich ruhig selbst."},
+      {"ja": "N2も{夢|ゆめ}じゃないね！", "de": "Die N2 ist kein Traum mehr!"},
+      {"ja": "{抹茶|まっちゃ}みたいに{完璧|かんぺき}！", "de": "Perfekt wie ein Matcha!"},
+      {"ja": "{全問|ぜんもん}{正解|せいかい}、さすが！", "de": "Alle Fragen richtig – wie erwartet von dir!"}
     ]
   },
   "rueckschlag": {
@@ -36,7 +66,17 @@
       {"ja": "{大丈夫|だいじょうぶ}、{次|つぎ}はきっとできるよ。", "de": "Keine Sorge, nächstes Mal klappt es bestimmt."},
       {"ja": "{惜|お}しい！もう{少|すこ}し！", "de": "Knapp! Nur noch ein bisschen!"},
       {"ja": "ゆっくりでいいよ。", "de": "Langsam ist völlig in Ordnung."},
-      {"ja": "まちがえても{大丈夫|だいじょうぶ}。お{茶|ちゃ}を{入|い}れるね。", "de": "Fehler sind okay. Ich mache dir einen Tee."}
+      {"ja": "まちがえても{大丈夫|だいじょうぶ}。お{茶|ちゃ}を{入|い}れるね。", "de": "Fehler sind okay. Ich mache dir einen Tee."},
+      {"ja": "{大丈夫|だいじょうぶ}、{誰|だれ}でもまちがえるよ。", "de": "Keine Sorge, jeder macht Fehler."},
+      {"ja": "まちがえたところが、{一番|いちばん}{覚|おぼ}えられるよ。", "de": "Was man falsch hatte, merkt man sich am besten."},
+      {"ja": "{今日|きょう}は{難|むずか}しかったね。", "de": "Heute war es schwer, oder?"},
+      {"ja": "{一歩|いっぽ}ずつでいいんだよ。", "de": "Ein Schritt nach dem anderen reicht."},
+      {"ja": "お{茶|ちゃ}を{飲|の}んで、{深呼吸|しんこきゅう}しよう。", "de": "Trink einen Tee und atme tief durch."},
+      {"ja": "{次|つぎ}は{一緒|いっしょ}にがんばろうね。", "de": "Nächstes Mal schaffen wir es zusammen."},
+      {"ja": "{難|むずか}しい{日|ひ}もあるよ。", "de": "Es gibt auch schwere Tage."},
+      {"ja": "あきらめないでね。", "de": "Gib nicht auf."},
+      {"ja": "{昨日|きのう}より{少|すこ}し{前|まえ}に{進|すす}んでるよ。", "de": "Du bist trotzdem weiter als gestern."},
+      {"ja": "{失敗|しっぱい}は{成功|せいこう}のもと、だよ。", "de": "Aus Fehlern wird Erfolg (Sprichwort)."}
     ]
   },
   "hinweis": {
@@ -44,14 +84,34 @@
     "sprueche": [
       {"ja": "うーん、どこに{書|か}いてあるかな？", "de": "Hmm, wo steht das wohl?"},
       {"ja": "もう{一度|いちど}{読|よ}んでみよう。", "de": "Lass es uns noch einmal lesen."},
-      {"ja": "ヒントは{下|した}にあるよ。", "de": "Der Hinweis steht unten."}
+      {"ja": "ヒントは{下|した}にあるよ。", "de": "Der Hinweis steht unten."},
+      {"ja": "{答|こた}えは{本文|ほんぶん}の{中|なか}にあるよ。", "de": "Die Antwort steht im Text."},
+      {"ja": "{大事|だいじ}な{言葉|ことば}を{探|さが}してみて。", "de": "Such nach den wichtigen Wörtern."},
+      {"ja": "{文|ぶん}の{最後|さいご}も{大事|だいじ}だよ。", "de": "Auch das Satzende ist wichtig – dort steht im Japanischen oft die Aussage."},
+      {"ja": "「しかし」の{後|あと}に{注意|ちゅうい}してね。", "de": "Achte auf das, was nach „しかし“ kommt."},
+      {"ja": "{筆者|ひっしゃ}は{何|なに}を{言|い}いたいのかな？", "de": "Was will der Verfasser wohl sagen?"},
+      {"ja": "{答|こた}えをよく{比|くら}べてみて。", "de": "Vergleiche die Antworten genau."},
+      {"ja": "{本文|ほんぶん}にない{答|こた}えに{気|き}をつけて。", "de": "Vorsicht bei Antworten, die nicht im Text stehen."},
+      {"ja": "{誰|だれ}が、{何|なに}をしたのかな？", "de": "Wer hat was getan?"},
+      {"ja": "{理由|りゆう}は「から」や「ので」の{前|まえ}にあるよ。", "de": "Den Grund findest du vor „から“ oder „ので“."},
+      {"ja": "{知|し}らない{言葉|ことば}は、{前後|ぜんご}から{考|かんが}えてみて。", "de": "Bei unbekannten Wörtern: Denk vom Zusammenhang her."}
     ]
   },
   "serie": {
     "posen": ["thumbs"],
     "sprueche": [
       {"ja": "{毎日|まいにち}{続|つづ}いてるね！", "de": "Du bleibst jeden Tag dran!"},
-      {"ja": "{続|つづ}けるのが{一番|いちばん}だよ。", "de": "Dranbleiben ist das Wichtigste."}
+      {"ja": "{続|つづ}けるのが{一番|いちばん}だよ。", "de": "Dranbleiben ist das Wichtigste."},
+      {"ja": "{毎日|まいにち}えらいね！", "de": "Jeden Tag – toll von dir!"},
+      {"ja": "{続|つづ}けると、{力|ちから}になるよ。", "de": "Dranbleiben macht stark."},
+      {"ja": "{毎日|まいにち}のお{茶|ちゃ}みたいに、{習慣|しゅうかん}になったね。", "de": "Wie der tägliche Tee ist es zur Gewohnheit geworden."},
+      {"ja": "{継続|けいぞく}は{力|ちから}なり！", "de": "Beharrlichkeit ist Stärke (Sprichwort)."},
+      {"ja": "その{調子|ちょうし}で、N2まで{行|い}こう！", "de": "Weiter so, bis zur N2!"},
+      {"ja": "{毎日|まいにち}{少|すこ}しずつが、{一番|いちばん}の{近道|ちかみち}だよ。", "de": "Jeden Tag ein bisschen ist der kürzeste Weg."},
+      {"ja": "{毎日|まいにち}{会|あ}えてうれしいよ。", "de": "Ich freue mich, dich jeden Tag zu sehen."},
+      {"ja": "{明日|あした}も{待|ま}ってるね。", "de": "Ich warte morgen wieder auf dich."},
+      {"ja": "{少|すこ}しずつ{山|やま}を{登|のぼ}ってるね。", "de": "Du steigst Stück für Stück den Berg hinauf."},
+      {"ja": "{毎日|まいにち}がんばってて、{本当|ほんとう}にすごい。", "de": "Dass du dich jeden Tag anstrengst, ist wirklich toll."}
     ]
   },
   "ruhetag": {
@@ -59,14 +119,34 @@
     "sprueche": [
       {"ja": "{今日|きょう}はゆっくり{休|やす}んでね。", "de": "Ruh dich heute gut aus."},
       {"ja": "{日曜日|にちようび}はお{休|やす}み。お{茶|ちゃ}でも{飲|の}もう。", "de": "Sonntag ist frei. Lass uns einfach Tee trinken."},
-      {"ja": "また{明日|あした}ね。", "de": "Bis morgen!"}
+      {"ja": "また{明日|あした}ね。", "de": "Bis morgen!"},
+      {"ja": "{日曜日|にちようび}は{何|なに}もしなくていいよ。", "de": "Sonntags musst du gar nichts tun."},
+      {"ja": "のんびりしよう。", "de": "Lass es uns gemütlich angehen."},
+      {"ja": "お{茶|ちゃ}がおいしいね。", "de": "Der Tee schmeckt gut, nicht?"},
+      {"ja": "{休|やす}むのも{勉強|べんきょう}のうちだよ。", "de": "Ausruhen gehört auch zum Lernen."},
+      {"ja": "{今日|きょう}はお{休|やす}み。{本|ほん}より、お{茶|ちゃ}。", "de": "Heute ist frei. Lieber Tee als Bücher."},
+      {"ja": "ゆっくり{寝|ね}てね。", "de": "Schlaf dich aus."},
+      {"ja": "{散歩|さんぽ}でもどう？", "de": "Wie wäre es mit einem Spaziergang?"},
+      {"ja": "{頭|あたま}を{休|やす}めるのも{大事|だいじ}だよ。", "de": "Den Kopf ausruhen ist auch wichtig."},
+      {"ja": "{明日|あした}からまた{一緒|いっしょ}に{読|よ}もうね。", "de": "Ab morgen lesen wir wieder zusammen."},
+      {"ja": "{来週|らいしゅう}もよろしくね。", "de": "Auf eine gute neue Woche!"}
     ]
   },
   "aufstieg": {
     "posen": ["cheer"],
     "sprueche": [
       {"ja": "{新|あたら}しいお{茶|ちゃ}の{時間|じかん}だよ！", "de": "Zeit für einen neuen Tee – deine neue Stufe!"},
-      {"ja": "レベルアップ！おめでとう！", "de": "Eine Stufe höher! Glückwunsch!"}
+      {"ja": "レベルアップ！おめでとう！", "de": "Eine Stufe höher! Glückwunsch!"},
+      {"ja": "{新|あたら}しいステージへ、ようこそ！", "de": "Willkommen auf der neuen Stufe!"},
+      {"ja": "{一|ひと}つ{上|うえ}のお{茶|ちゃ}だね。", "de": "Ein Tee eine Stufe höher."},
+      {"ja": "ここまで{来|き}たね！", "de": "So weit bist du schon gekommen!"},
+      {"ja": "{少|すこ}し{難|むずか}しくなるけど、{大丈夫|だいじょうぶ}。", "de": "Es wird etwas schwerer, aber das klappt."},
+      {"ja": "{努力|どりょく}が{実|みの}ったね。", "de": "Deine Mühe hat sich ausgezahlt."},
+      {"ja": "N2に{一歩|いっぽ}{近|ちか}づいたよ！", "de": "Einen Schritt näher an der N2!"},
+      {"ja": "{新|あたら}しいお{茶|ちゃ}で{乾杯|かんぱい}しよう！", "de": "Stoßen wir mit dem neuen Tee an!"},
+      {"ja": "{前|まえ}より{長|なが}い{文|ぶん}も{読|よ}めるね。", "de": "Jetzt kannst du auch längere Texte lesen."},
+      {"ja": "{自信|じしん}を{持|も}ってね。", "de": "Sei selbstbewusst."},
+      {"ja": "これからも{一緒|いっしょ}に{登|のぼ}ろうね。", "de": "Lass uns weiter zusammen hinaufsteigen."}
     ]
   }
 }

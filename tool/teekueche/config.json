@@ -3,6 +3,7 @@
   "stufe": 2,
   "zielkurve": {"start": "2026-11-12", "startstufe": 2},
   "texte_pro_tag": 2,
+  "vorrat_bis": "2026-11-28",
   "stufen_fenster": [-1, 0, 1, 2],
   "audio_fuer_stufen": [0, 1],
   "themen": {

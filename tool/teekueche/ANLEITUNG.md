@@ -35,6 +35,10 @@ Arbeitsordner: `C:\dev\Apps\Study\yomicha`. Mit Leoni wird Deutsch gesprochen.
   BBC, Asahi). Für Mode und Tee ist auch ein zeitloser Hintergrundtext in Ordnung.
 - **Text 2, JLPT-Thema:** eines aus `jlpt_themen`, das in den letzten 10 Texten nicht vorkam.
 - Je Text eine Textart aus `textarten`, abwechselnd (Nachricht, Essay, Meinung, Aushang, E-Mail, Infoblatt).
+- **Text 3, Vorrat** (nur bis `vorrat_bis` in config.json, Aufbaupaket): ein **zeitloser** Inhalt – Mode, Tee
+  oder ein JLPT-Thema, keine Nachricht – in denselben Stufen wie heute, im Entwurf `"vorrat": true`.
+  Die App zeigt Vorrat-Texte nur, wenn keine neuen Texte da sind (PC aus, Ferien), und `aufraeumen.py`
+  löscht sie nie. Themen und Textarten breit streuen; nichts, was in den letzten 10 Texten vorkam.
 
 ## 3. Entwürfe schreiben
 
@@ -104,6 +108,15 @@ tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\pruefen.py
 - Bis einschließlich `aufbau_bis` (3.12.2026): `dart run tool/tts.dart` (Aufbau-Zugang, Startguthaben).
 - Danach: `dart run tool/tts.dart --key=../learnwithleoni/werkstatt/azure-speech.env` (Gratis-Zugang F0).
 - Den Schlüssel nie ausgeben. Meldet das Skript eine Kostengrenze oder Fehler, keine weiteren Aufnahmen.
+- **Hörkontrolle** der neuen Texte: `dart run tool/tts.dart --hoerkontrolle` (danach mit demselben `--key=` wie oben).
+  Azure bewertet jede Satzaufnahme gegen die Lesung des Textes. Bei `ABWEICHUNG` das Wort im Zusammenhang prüfen:
+  - Liest die Stimme falsch (z. B. 今日 als こんにち), im Text beim Wort `"say": "<lesung>"` eintragen,
+    die Satzaufnahme löschen und `tts.dart` neu laufen lassen.
+  - Steht im Text eine unübliche Lesung, die Lesung korrigieren (`lesungen` im Entwurf). Übliche Lesungen
+    für Wörter, bei denen Sudachi danebenliegt, stehen in `STANDARD_LESUNGEN` (pruefen.py), z. B. 日本 → にほん.
+  - Eigennamen (Orte, Personen) bekommen immer `say`, damit die Stimme sie sicher richtig liest.
+  - Die Erkennung meldet manchmal Unsinn. Ist die Lesung im Text richtig und die Stimme vermutlich auch,
+    die Abweichung stehen lassen.
 
 ## 6. Aufräumen, testen und veröffentlichen
 

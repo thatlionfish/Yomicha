@@ -31,6 +31,7 @@ anpassen und nach ihrem OK committen. Welche Stufen die Teeküche heute schreibt
 tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\stufen_heute.py            # Stufen für heute
 tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\pruefen.py --uebernehmen   # Lesungen (Sudachi), JLPT-Stufen
 dart run tool/tts.dart                                                               # Aufnahmen (Nanami, Kumachan: Aoi)
+dart run tool/tts.dart --hoerkontrolle                                               # Satzaufnahmen gegen die Lesung prüfen
 flutter test                                                                         # prüft jeden Text
 ```
 

@@ -32,7 +32,11 @@ def main() -> None:
     limit = datetime.date.today() - datetime.timedelta(days=keep)
     removed = []
     for f in sorted((ROOT / "web" / "data" / "texte").rglob("text.json")):
-        date = datetime.date.fromisoformat(json.loads(f.read_text(encoding="utf-8"))["date"])
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        # Der Vorrat bleibt: Er springt ein, wenn die Teeküche ausfällt.
+        if doc.get("vorrat"):
+            continue
+        date = datetime.date.fromisoformat(doc["date"])
         if date < limit:
             removed.append(f.parent)
     for folder in removed:
