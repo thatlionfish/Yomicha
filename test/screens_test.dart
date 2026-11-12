@@ -9,6 +9,7 @@ import 'package:yomicha/data/progress.dart';
 import 'package:yomicha/data/repository.dart';
 import 'package:yomicha/main.dart';
 import 'package:yomicha/screens/archive_screen.dart';
+import 'package:yomicha/screens/home_screen.dart';
 import 'package:yomicha/screens/progress_screen.dart';
 import 'package:yomicha/screens/words_screen.dart';
 import 'package:yomicha/widgets/splash.dart';
@@ -173,5 +174,24 @@ void main() {
     expect(find.text('読み茶'), findsOneWidget);
     expect(find.textContaining('レオニ'), findsOneWidget);
     expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('Startseite erinnert an die Sicherung, Einstellungen zeigen sie', (tester) async {
+    final p = await _progress();
+    await _pump(tester, p, HomeScreen(today: DateTime(2026, 11, 12, 10)));
+    final hint = find.textContaining('Sichere deinen Lernstand');
+    expect(hint, findsOneWidget);
+    await tester.tap(hint);
+    await tester.pump(const Duration(milliseconds: 400));
+    await tester.scrollUntilVisible(find.text('Zurückholen'), 200, scrollable: find.byType(Scrollable).last);
+    expect(find.text('Sicherung'), findsOneWidget);
+    expect(find.text('Noch nie gesichert.'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+
+    // Nach dem Sichern verschwindet die Erinnerung.
+    p.markBackedUp(DateTime(2026, 11, 12, 9));
+    await tester.pump();
+    expect(find.text('Zuletzt gesichert am 12.11.2026.'), findsOneWidget);
+    expect(hint, findsNothing);
   });
 }

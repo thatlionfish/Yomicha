@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../app_scope.dart';
+import '../data/backup_file.dart';
 import '../data/models.dart';
 import '../data/progress.dart';
 import '../data/stufen.dart';
@@ -131,6 +132,36 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
+                  if (_backupDue(progress))
+                    Padding(
+                      padding: const EdgeInsets.only(top: 14),
+                      child: GestureDetector(
+                        onTap: () => _settings(context),
+                        child: Container(
+                          padding: const EdgeInsets.all(14),
+                          decoration: const BoxDecoration(
+                            color: YoColors.vanillaIce,
+                            borderRadius: organicRadius,
+                            border: Border(left: BorderSide(color: YoColors.woodAsh, width: 4)),
+                          ),
+                          child: Row(
+                            children: [
+                              const Icon(Icons.save_alt_rounded, color: YoColors.chocolate, size: 20),
+                              const SizedBox(width: 10),
+                              Expanded(
+                                child: Text(
+                                  progress.lastBackup == null
+                                      ? 'Sichere deinen Lernstand als Datei – er liegt nur auf diesem Gerät.'
+                                      : 'Deine letzte Sicherung ist vom ${_date(progress.lastBackup!)}. Zeit für eine neue.',
+                                  style: sans(14.5),
+                                ),
+                              ),
+                              const Icon(Icons.chevron_right_rounded, color: YoColors.inkSoft),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   const SizedBox(height: 22),
                   if (rest) ...[
                     _RestCard(),
@@ -223,6 +254,14 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  /// Erinnerung an die Sicherung: wenn es etwas zu sichern gibt und die letzte
+  /// Sicherung zwei Wochen oder länger her ist. Sonntags nicht (Ruhetag).
+  bool _backupDue(Progress p) {
+    if (isRestDay(_today) || (p.myWords.isEmpty && p.reads.isEmpty)) return false;
+    final last = p.lastBackup;
+    return last == null || _today.difference(last).inDays >= 14;
+  }
+
   String _wordsLine(Progress progress) {
     final n = progress.myWords.length;
     if (n == 0) return 'Noch keine Wörter gespeichert';
@@ -267,6 +306,10 @@ class _HomeScreenState extends State<HomeScreen> {
               Text('Nachsprechen', style: serif(21)),
               const SizedBox(height: 4),
               const _AzureSettings(),
+              const SizedBox(height: 22),
+              Text('Sicherung', style: serif(21)),
+              const SizedBox(height: 4),
+              const _BackupSettings(),
               const SizedBox(height: 22),
               Text('Meine Stufe', style: serif(21)),
               const SizedBox(height: 4),
@@ -363,6 +406,105 @@ class _AzureSettingsState extends State<_AzureSettings> {
                 style: sans(13, color: YoColors.inkSoft),
               ),
           ],
+        ),
+      ],
+    );
+  }
+}
+
+String _date(DateTime d) => '${d.day}.${d.month}.${d.year}';
+
+/// Lernstand als Datei sichern und zurückholen (Spezifikation 17).
+class _BackupSettings extends StatefulWidget {
+  const _BackupSettings();
+
+  @override
+  State<_BackupSettings> createState() => _BackupSettingsState();
+}
+
+class _BackupSettingsState extends State<_BackupSettings> {
+  String? _message;
+
+  void _save(Progress progress) {
+    final now = DateTime.now();
+    final name = 'yomicha-lernstand-${now.toIso8601String().substring(0, 10)}.json';
+    // Ohne await davor: iPhone und iPad erlauben „Teilen“ nur direkt beim Antippen.
+    saveTextFile(name, progress.backupJson(now)).then((ok) {
+      if (ok) progress.markBackedUp(now);
+      if (mounted) setState(() => _message = ok ? 'Gesichert als $name.' : 'Nicht gesichert.');
+    });
+  }
+
+  Future<void> _restore(Progress progress) async {
+    final text = await pickTextFile();
+    if (text == null || !mounted) return;
+    final BackupPreview preview;
+    try {
+      preview = Progress.previewBackup(text);
+    } on BackupError catch (e) {
+      setState(() => _message = e.message);
+      return;
+    }
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Lernstand zurückholen?'),
+        content: Text(
+          'Die Sicherung vom ${_date(preview.saved)} ersetzt den Lernstand auf diesem Gerät: '
+          '${preview.words} Wörter und ${preview.reads} gelesene Texte. Der Azure-Schlüssel bleibt.',
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Abbrechen')),
+          FilledButton(onPressed: () => Navigator.pop(context, true), child: const Text('Zurückholen')),
+        ],
+      ),
+    );
+    if (ok != true) return;
+    await progress.restoreBackup(text);
+    if (mounted) {
+      setState(() => _message = 'Zurückgeholt: ${progress.myWords.length} Wörter, ${progress.reads.length} gelesene Texte.');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = AppScope.of(context).progress;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Dein Lernstand liegt nur auf diesem Gerät. Sichere ihn ab und zu als Datei, '
+          'auf dem iPhone mit „In Dateien sichern“ (z. B. in iCloud Drive). '
+          'Damit holst du ihn auch auf ein anderes Gerät. Der Azure-Schlüssel kommt nicht mit.',
+          style: sans(13.5, color: YoColors.inkSoft),
+        ),
+        const SizedBox(height: 8),
+        Wrap(
+          spacing: 10,
+          runSpacing: 8,
+          children: [
+            FilledButton.icon(
+              onPressed: () => _save(progress),
+              icon: const Icon(Icons.save_alt_rounded),
+              label: const Text('Sichern'),
+            ),
+            OutlinedButton.icon(
+              onPressed: () => _restore(progress),
+              icon: const Icon(Icons.restore_rounded),
+              label: const Text('Zurückholen'),
+            ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        ListenableBuilder(
+          listenable: progress,
+          builder: (context, _) {
+            final last = progress.lastBackup;
+            return Text(
+              _message ?? (last == null ? 'Noch nie gesichert.' : 'Zuletzt gesichert am ${_date(last)}.'),
+              style: sans(13, color: YoColors.inkSoft),
+            );
+          },
         ),
       ],
     );

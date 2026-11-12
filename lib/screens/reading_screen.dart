@@ -117,6 +117,22 @@ class _ReadingScreenState extends State<ReadingScreen> {
       _watch.start();
       return;
     }
+    // Gelesen ist gelesen: Der Text zählt jetzt schon für die Lernserie,
+    // auch wenn ich die Fragen auslasse (Spezifikation 3).
+    final now = DateTime.now();
+    AppScope.of(context).progress.addRead(
+      ReadRecord(
+        id: _doc!.id,
+        day: DateTime(now.year, now.month, now.day),
+        seconds: _watch.elapsed.inSeconds,
+        chars: _doc!.chars,
+        correct: 0,
+        total: 0,
+        lookups: _lookups.length,
+        rating: rating,
+        usedAudio: _player?.used ?? false,
+      ),
+    );
     await Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => QuestionsScreen(

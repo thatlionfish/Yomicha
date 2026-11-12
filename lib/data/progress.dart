@@ -155,6 +155,17 @@ class MyWord {
   );
 }
 
+/// Sicherung, die sich nicht lesen ließ.
+class BackupError implements Exception {
+  const BackupError(this.message);
+  final String message;
+  @override
+  String toString() => message;
+}
+
+/// Was in einer Sicherungsdatei steckt (für die Rückfrage vor dem Zurückholen).
+typedef BackupPreview = ({DateTime saved, int words, int reads});
+
 /// Lernstand – nur auf diesem Gerät (Abgleich folgt, Spezifikation 17).
 /// Alle Einträge beginnen mit „yomicha.“, weil sich alle Apps unter
 /// thatlionfish.github.io denselben Speicher teilen.
@@ -188,8 +199,12 @@ class Progress extends ChangeNotifier {
   final Map<String, String> stories = {};
   final List<ReadRecord> reads = [];
 
+  /// Wann ich den Lernstand zuletzt als Datei gesichert habe.
+  DateTime? lastBackup;
+
   Future<void> load() async {
     final p = _prefs = await SharedPreferences.getInstance();
+    lastBackup = DateTime.tryParse(p.getString('${_p}lastBackup') ?? '');
     stufe = p.getInt('${_p}stufe') ?? 2;
     furigana = FuriganaMode.values.asNameMap()[p.getString('${_p}furigana')] ?? FuriganaMode.aus;
     rate = p.getDouble('${_p}rate') ?? 1.0;
@@ -387,8 +402,108 @@ class Progress extends ChangeNotifier {
     notifyListeners();
   }
 
+  // --- Sicherung (Spezifikation 17) ----------------------------------------
+
+  /// Bleibt auf dem Gerät: der Azure-Schlüssel gehört nicht in eine Datei.
+  static const _notInBackup = {'azureKey', 'azureRegion', 'lastBackup'};
+
+  bool _inBackup(String prefKey) =>
+      prefKey.startsWith(_p) && !_notInBackup.contains(prefKey.substring(_p.length));
+
+  /// Der ganze Lernstand als JSON: Wörter, Karten, gelesene Texte, Stufe,
+  /// Wochentests, Einstellungen – ohne Azure-Schlüssel.
+  String backupJson(DateTime now) {
+    final p = _prefs!;
+    return const JsonEncoder.withIndent(' ').convert({
+      'app': 'yomicha',
+      'version': 1,
+      'saved': now.toIso8601String(),
+      'data': {
+        for (final k in p.getKeys().toList()..sort())
+          if (_inBackup(k)) k.substring(_p.length): p.get(k),
+      },
+    });
+  }
+
+  void markBackedUp(DateTime now) {
+    lastBackup = now;
+    _prefs?.setString('${_p}lastBackup', now.toIso8601String());
+    notifyListeners();
+  }
+
+  static Map<String, dynamic> _parseBackup(String json) {
+    const wrong = BackupError('Das ist keine Sicherung von Yomicha.');
+    final Object? root;
+    try {
+      root = jsonDecode(json);
+    } on FormatException {
+      throw wrong;
+    }
+    if (root is! Map<String, dynamic> || root['app'] != 'yomicha' || root['data'] is! Map<String, dynamic>) {
+      throw wrong;
+    }
+    return root;
+  }
+
+  /// Was die Sicherung enthält, ohne etwas zu ändern.
+  static BackupPreview previewBackup(String json) {
+    final root = _parseBackup(json);
+    final data = root['data'] as Map<String, dynamic>;
+    return (
+      saved: DateTime.tryParse(root['saved'] as String? ?? '') ?? DateTime(2000),
+      words: (data['words'] as List?)?.length ?? 0,
+      reads: (data['reads'] as List?)?.length ?? 0,
+    );
+  }
+
+  /// Ersetzt den Lernstand auf diesem Gerät durch die Sicherung. Der
+  /// Azure-Schlüssel auf dem Gerät bleibt.
+  Future<void> restoreBackup(String json) async {
+    final data = _parseBackup(json)['data'] as Map<String, dynamic>;
+    final p = _prefs!;
+    for (final k in p.getKeys().toList()) {
+      if (_inBackup(k)) await p.remove(k);
+    }
+    for (final MapEntry(:key, :value) in data.entries) {
+      if (_notInBackup.contains(key)) continue;
+      final k = '$_p$key';
+      switch (value) {
+        case final bool v:
+          await p.setBool(k, v);
+        case final int v:
+          await p.setInt(k, v);
+        case final double v:
+          await p.setDouble(k, v);
+        case final String v:
+          await p.setString(k, v);
+        case final List<dynamic> v:
+          await p.setStringList(k, [for (final x in v) '$x']);
+      }
+    }
+    myWords.clear();
+    _cards.clear();
+    _newDay = '';
+    _newCount = 0;
+    stufeHistory.clear();
+    weeklyResults.clear();
+    _speechSeconds.clear();
+    stories.clear();
+    reads.clear();
+    await load();
+  }
+
+  /// Speichert einen gelesenen Text. Er zählt schon nach „Fertig“ (ohne
+  /// Fragen, `total` 0); das Ergebnis der Fragen ersetzt diesen Eintrag.
+  /// Derselbe Text am selben Tag steht nur einmal da, und ein späteres
+  /// „Fertig“ ohne Fragen löscht keine Antworten.
   void addRead(ReadRecord r) {
-    reads.add(r);
+    final i = reads.indexWhere((x) => x.id == r.id && x.day == r.day);
+    if (i >= 0) {
+      if (r.total == 0 && reads[i].total > 0) return;
+      reads[i] = r;
+    } else {
+      reads.add(r);
+    }
     _prefs?.setStringList('${_p}reads', [for (final x in reads) jsonEncode(x.toJson())]);
     notifyListeners();
   }
