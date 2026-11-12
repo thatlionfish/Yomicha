@@ -229,6 +229,9 @@ class TextDoc {
 
   int get chars => sentences.fold(0, (n, s) => n + s.plain.length);
 
+  /// Inhaltswörter (mit Bedeutung) – Grundlage für den Anteil nachgeschlagener Wörter.
+  int get contentWords => sentences.fold(0, (n, s) => n + s.tokens.where((t) => t.gloss != null).length);
+
   /// Absätze als Listen von Satz-Indizes.
   List<List<int>> get paragraphs {
     final out = <List<int>>[];

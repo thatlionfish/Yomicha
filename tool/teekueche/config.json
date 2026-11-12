@@ -1,6 +1,7 @@
 {
-  "_info": "Einstellungen der Teeküche. stufe = Leonis aktuelle Stufe (bis zum Abgleich hier von Hand nachführen).",
+  "_info": "Einstellungen der Teeküche. stufe = Leonis aktuelle Stufe: nachführen, wenn sie ihre neue Stufe nennt. Die Stufen für heute rechnet stufen_heute.py (stufe plus Fenster, nach oben der Zielkurve folgend).",
   "stufe": 2,
+  "zielkurve": {"start": "2026-11-12", "startstufe": 2},
   "texte_pro_tag": 2,
   "stufen_fenster": [-1, 0, 1, 2],
   "audio_fuer_stufen": [0, 1],

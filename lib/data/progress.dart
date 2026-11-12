@@ -47,6 +47,8 @@ class ReadRecord {
     required this.rating,
     required this.usedAudio,
     this.wrong = const [],
+    this.textStufe,
+    this.words,
   });
   final String id;
   final DateTime day;
@@ -63,6 +65,18 @@ class ReadRecord {
   /// Fragen (Index), die falsch beantwortet wurden – für den Wochentest.
   final List<int> wrong;
 
+  /// Stufe des Textes, wie gespeichert (ältere Einträge haben keine).
+  final int? textStufe;
+
+  /// Stufe des Textes; ältere Einträge: aus der Kennung („…-2“).
+  int? get stufe => textStufe ?? int.tryParse(RegExp(r'-(\d)$').firstMatch(id)?.group(1) ?? '');
+
+  /// Inhaltswörter im Text (mit Bedeutung) – für den Anteil nachgeschlagener Wörter.
+  final int? words;
+
+  /// Anteil nachgeschlagener Wörter; ältere Einträge ohne Wortzahl: geschätzt.
+  double get lookupShare => lookups / ((words ?? (chars / 3).round()).clamp(1, 1 << 20));
+
   Map<String, dynamic> toJson() => {
     'id': id,
     'day': day.toIso8601String().substring(0, 10),
@@ -74,6 +88,8 @@ class ReadRecord {
     'rating': rating,
     'audio': usedAudio,
     'wrong': wrong,
+    if (textStufe != null) 'stufe': textStufe,
+    if (words != null) 'words': words,
   };
 
   factory ReadRecord.fromJson(Map<String, dynamic> j) => ReadRecord(
@@ -87,6 +103,8 @@ class ReadRecord {
     rating: j['rating'] as int,
     usedAudio: j['audio'] as bool? ?? false,
     wrong: [for (final w in (j['wrong'] as List? ?? const [])) (w as num).toInt()],
+    textStufe: (j['stufe'] as num?)?.toInt(),
+    words: (j['words'] as num?)?.toInt(),
   );
 }
 
@@ -155,6 +173,44 @@ class MyWord {
   );
 }
 
+/// Ergebnis der Einstufung zu Beginn (Spezifikation 9.2).
+class EinstufungErgebnis {
+  const EinstufungErgebnis({
+    required this.day,
+    required this.wortschatz,
+    required this.lesen,
+    required this.vorschlag,
+    required this.gewaehlt,
+  });
+  final DateTime day;
+
+  /// Wortschatz als JLPT-Zahl (5 = N5 … 2 = N2), null = unter N5.
+  final int? wortschatz;
+
+  /// Lesen als Stufe (1–6).
+  final int lesen;
+
+  /// Vorgeschlagene und gewählte Startstufe.
+  final int vorschlag;
+  final int gewaehlt;
+
+  Map<String, dynamic> toJson() => {
+    'day': day.toIso8601String().substring(0, 10),
+    'wortschatz': wortschatz,
+    'lesen': lesen,
+    'vorschlag': vorschlag,
+    'gewaehlt': gewaehlt,
+  };
+
+  factory EinstufungErgebnis.fromJson(Map<String, dynamic> j) => EinstufungErgebnis(
+    day: DateTime.parse(j['day'] as String),
+    wortschatz: (j['wortschatz'] as num?)?.toInt(),
+    lesen: (j['lesen'] as num).toInt(),
+    vorschlag: (j['vorschlag'] as num).toInt(),
+    gewaehlt: (j['gewaehlt'] as num).toInt(),
+  );
+}
+
 /// Sicherung, die sich nicht lesen ließ.
 class BackupError implements Exception {
   const BackupError(this.message);
@@ -202,9 +258,19 @@ class Progress extends ChangeNotifier {
   /// Wann ich den Lernstand zuletzt als Datei gesichert habe.
   DateTime? lastBackup;
 
+  /// Ergebnis der Einstufung zu Beginn; null = noch nicht gemacht.
+  EinstufungErgebnis? einstufung;
+
+  /// Nach „Noch nicht“ beim Stufenvorschlag: (Stufe, gelesene Texte damals).
+  (int, int)? vorschlagPause;
+
   Future<void> load() async {
     final p = _prefs = await SharedPreferences.getInstance();
     lastBackup = DateTime.tryParse(p.getString('${_p}lastBackup') ?? '');
+    final e = p.getString('${_p}einstufung');
+    einstufung = e == null ? null : EinstufungErgebnis.fromJson(jsonDecode(e) as Map<String, dynamic>);
+    final pause = p.getString('${_p}vorschlagPause')?.split(':');
+    vorschlagPause = pause == null || pause.length != 2 ? null : (int.parse(pause[0]), int.parse(pause[1]));
     stufe = p.getInt('${_p}stufe') ?? 2;
     furigana = FuriganaMode.values.asNameMap()[p.getString('${_p}furigana')] ?? FuriganaMode.aus;
     rate = p.getDouble('${_p}rate') ?? 1.0;
@@ -316,6 +382,22 @@ class Progress extends ChangeNotifier {
     stufe = s;
     _prefs?.setInt('${_p}stufe', s);
     _recordStufe(DateTime.now(), s);
+    notifyListeners();
+  }
+
+  /// Seit wann ich auf meiner jetzigen Stufe bin.
+  DateTime get stufeSince => stufeHistory.isEmpty ? DateTime(2000) : stufeHistory.last.$1;
+
+  void setEinstufung(EinstufungErgebnis e) {
+    einstufung = e;
+    _prefs?.setString('${_p}einstufung', jsonEncode(e.toJson()));
+    setStufe(e.gewaehlt);
+  }
+
+  /// „Noch nicht“: Die App fragt erst nach ein paar weiteren Texten wieder.
+  void pauseVorschlag(int stufe, int readsSoFar) {
+    vorschlagPause = (stufe, readsSoFar);
+    _prefs?.setString('${_p}vorschlagPause', '$stufe:$readsSoFar');
     notifyListeners();
   }
 

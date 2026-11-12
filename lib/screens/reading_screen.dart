@@ -131,6 +131,8 @@ class _ReadingScreenState extends State<ReadingScreen> {
         lookups: _lookups.length,
         rating: rating,
         usedAudio: _player?.used ?? false,
+        textStufe: _doc!.stufe,
+        words: _doc!.contentWords,
       ),
     );
     await Navigator.of(context).push(

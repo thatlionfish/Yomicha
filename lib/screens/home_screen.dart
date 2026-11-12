@@ -6,6 +6,7 @@ import '../data/models.dart';
 import '../data/progress.dart';
 import '../data/stufen.dart';
 import '../learn/calendar.dart';
+import '../learn/einstufung.dart';
 import '../learn/library.dart';
 import '../learn/review.dart';
 import '../learn/weekly.dart';
@@ -13,8 +14,10 @@ import '../ui/app_icon.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/kumachan.dart';
+import '../widgets/stufen_vorschlag.dart';
 import '../widgets/text_card.dart';
 import 'archive_screen.dart';
+import 'einstufung_screen.dart';
 import 'progress_screen.dart';
 import 'reading_screen.dart';
 import 'sources_screen.dart';
@@ -112,6 +115,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     'Meine Stufe: ${stufe.nr} · ${stufe.name} ${stufe.kanji} (${stufe.label})',
                     style: sans(15, color: YoColors.inkSoft),
                   ),
+                  // Laufende Einschätzung (Spezifikation 9.3) – nicht am Ruhetag.
+                  if (!rest)
+                    if (stufenVorschlag(progress) case final v?)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 14),
+                        child: StufenVorschlagCard(progress: progress, vorschlag: v),
+                      ),
                   FutureBuilder<List<Notice>>(
                     future: _notices,
                     builder: (context, snap) => Column(
@@ -172,7 +182,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     builder: (context, snap) {
                       if (snap.hasError) return Text('Texte konnten nicht geladen werden: ${snap.error}');
                       if (!snap.hasData) return const Center(child: CircularProgressIndicator());
-                      final shown = textsForStufe(visibleTexts(snap.data!, _today), progress.stufe);
+                      final visible = visibleTexts(snap.data!, _today);
+                      final shown = textsForStufe(visible, progress.stufe);
+                      // Die Teeküche kennt meine Stufe nur aus config.json: Fehlt sie bei den
+                      // neuen Texten, soll ich sie melden.
+                      final recent = visible.where((e) => _today.difference(e.date).inDays <= 3);
+                      final noTexts = !rest && recent.isNotEmpty && !recent.any((e) => e.stufe == progress.stufe);
                       var today = shown.where((e) => sameDay(e.date, _today)).take(2).toList();
                       var label = 'Deine Texte für heute';
                       if (today.isEmpty && !rest) {
@@ -185,6 +200,23 @@ class _HomeScreenState extends State<HomeScreen> {
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
+                          if (noTexts) ...[
+                            Container(
+                              padding: const EdgeInsets.all(14),
+                              decoration: const BoxDecoration(
+                                color: YoColors.vanillaIce,
+                                borderRadius: organicRadius,
+                                border: Border(left: BorderSide(color: YoColors.woodAsh, width: 4)),
+                              ),
+                              child: Text(
+                                'Für Stufe ${stufe.nr} · ${stufe.name} gibt es gerade keine neuen Texte, '
+                                'du liest die nächstliegende. Sag Claude „Meine Stufe ist jetzt ${stufe.nr}“, '
+                                'dann schreibt die Teeküche für deine Stufe.',
+                                style: sans(14.5),
+                              ),
+                            ),
+                            const SizedBox(height: 14),
+                          ],
                           if (today.isNotEmpty) ...[
                             Text(label, style: sans(14, weight: 650, color: YoColors.inkSoft)),
                             const SizedBox(height: 8),
@@ -194,6 +226,13 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ],
                           const SizedBox(height: 6),
+                          if (progress.einstufung == null && !rest)
+                            _Tile(
+                              icon: Icons.explore_outlined,
+                              title: 'Einstufung · ca. 10 Min',
+                              subtitle: 'Welche Stufe passt? 40 Wörter und drei kurze Texte',
+                              onTap: () => _openEinstufung(context),
+                            ),
                           ?_weeklyTile(progress),
                           _Tile(
                             icon: Icons.style_rounded,
@@ -270,6 +309,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return due == 0 ? '$n Wörter · heute nichts fällig' : 'Heute zu wiederholen: $due';
   }
 
+  void _openEinstufung(BuildContext context) => Navigator.of(context).push(
+    MaterialPageRoute<void>(builder: (_) => const EinstufungScreen()),
+  );
+
   void _settings(BuildContext context) {
     final progress = AppScope.of(context).progress;
     showModalBottomSheet<void>(
@@ -314,8 +357,21 @@ class _HomeScreenState extends State<HomeScreen> {
               Text('Meine Stufe', style: serif(21)),
               const SizedBox(height: 4),
               Text(
-                'Bis die Einstufung gebaut ist, stelle ich sie hier ein.',
+                switch (progress.einstufung) {
+                  null => 'Die Einstufung schlägt dir eine Startstufe vor. Du kannst sie auch hier selbst wählen.',
+                  final e => 'Einstufung am ${_date(e.day)}: Wortschatz ${jlptName(e.wortschatz)}, '
+                      'Lesen Stufe ${e.lesen} → Vorschlag Stufe ${e.vorschlag}. '
+                      'Danach schlägt die App Wechsel vor, wenn es passt.',
+                },
                 style: sans(14, color: YoColors.inkSoft),
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton.icon(
+                  onPressed: () => _openEinstufung(context),
+                  icon: const Icon(Icons.explore_outlined),
+                  label: Text(progress.einstufung == null ? 'Einstufung machen' : 'Einstufung wiederholen'),
+                ),
               ),
               const SizedBox(height: 8),
               for (final s in Stufe.all)

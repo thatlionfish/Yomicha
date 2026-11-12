@@ -4,10 +4,12 @@ import '../app_scope.dart';
 import '../data/models.dart';
 import '../data/progress.dart';
 import '../learn/calendar.dart';
+import '../learn/einstufung.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/furigana.dart';
 import '../widgets/kumachan.dart';
+import '../widgets/stufen_vorschlag.dart';
 
 /// Fragen zum Text im Stil der JLPT (Spezifikation 8).
 class QuestionsScreen extends StatefulWidget {
@@ -76,6 +78,8 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         rating: widget.rating,
         usedAudio: widget.usedAudio,
         wrong: List.of(_wrong),
+        textStufe: widget.doc.stufe,
+        words: widget.doc.contentWords,
       ),
     );
   }
@@ -207,6 +211,17 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           // Unter 20 Sekunden wurde nicht wirklich gelesen – kein Tempo.
           '${widget.usedAudio ? ' (mit Vorlesen)' : widget.seconds < 20 ? '' : ' · $speed Zeichen pro Minute'}',
           style: sans(15.5, color: YoColors.inkSoft),
+        ),
+        // Laufende Einschätzung: nach genug Texten ein Vorschlag zum Stufenwechsel.
+        ListenableBuilder(
+          listenable: progress,
+          builder: (context, _) => switch (stufenVorschlag(progress)) {
+            final v? => Padding(
+              padding: const EdgeInsets.only(top: 18),
+              child: StufenVorschlagCard(progress: progress, vorschlag: v),
+            ),
+            null => const SizedBox.shrink(),
+          },
         ),
         const SizedBox(height: 22),
         Text(

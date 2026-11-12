@@ -22,7 +22,13 @@ Texte: `web/data/texte/<jahr>/<monat>/<id>/text.json`, Verzeichnis `web/data/tex
 Format siehe `lib/data/models.dart` und den Beispieltext. Jeder Inhalt wird in Stufen
 geschrieben (Stufen 1–7 nach Teesorten, `lib/data/stufen.dart`).
 
+**Leonis Stufe:** Die App kann sie der Teeküche nicht melden (Lernstand nur auf dem Gerät).
+Sagt Leoni ihre neue Stufe („Meine Stufe ist jetzt 3“), `stufe` in `tool/teekueche/config.json`
+anpassen und nach ihrem OK committen. Welche Stufen die Teeküche heute schreibt, rechnet
+`stufen_heute.py` (Stufe plus Fenster, nach oben der Zielkurve folgend, höchstens fünf).
+
 ```
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\stufen_heute.py            # Stufen für heute
 tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\pruefen.py --uebernehmen   # Lesungen (Sudachi), JLPT-Stufen
 dart run tool/tts.dart                                                               # Aufnahmen (Nanami, Kumachan: Aoi)
 flutter test                                                                         # prüft jeden Text

@@ -19,9 +19,11 @@ Arbeitsordner: `C:\dev\Apps\Study\yomicha`. Mit Leoni wird Deutsch gesprochen.
 ## 1. Vorbereiten
 
 1. Datum prüfen (Zeitzone Tokio). Sonntag → aufhören.
-2. `tool/teekueche/config.json` lesen: `stufe` (Leonis Stufe), `stufen_fenster` (z. B. -1, 0, +1, +2),
-   `themen` (Anteile), `jlpt_themen`, `textarten`.
-   Die Stufen für heute: Leonis Stufe plus Fenster, begrenzt auf 1–7.
+2. `tool/teekueche/config.json` lesen: `stufe` (Leonis Stufe), `themen` (Anteile), `jlpt_themen`, `textarten`.
+   **Die Stufen für heute** liefert
+   `tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\stufen_heute.py` (Feld `stufen`):
+   Leonis Stufe plus Fenster, nach oben der Zielkurve folgend, höchstens fünf Stufen.
+   So stehen schwerere Texte bereit, wenn sie in der App aufsteigt.
 3. `web/data/texte/index.json` lesen.
    - Gibt es für heute schon Texte (Ferienpaket oder Vorrat), nichts Neues erzeugen.
    - Themen und Textarten der letzten 7 Tage merken, damit sich nichts wiederholt.
