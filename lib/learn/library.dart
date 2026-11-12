@@ -31,7 +31,9 @@ List<TextEntry> textsForStufe(List<TextEntry> all, int stufe) {
 }) {
   if (rest) return (texts: const [], label: '');
   final fresh = regular.where((e) => sameDay(e.date, today)).take(2).toList();
-  if (fresh.isNotEmpty) return (texts: fresh, label: 'Deine Texte für heute');
+  if (fresh.isNotEmpty) {
+    return (texts: fresh, label: fresh.length == 1 ? 'Dein Text für heute' : 'Deine Texte für heute');
+  }
   bool unread(TextEntry e) => !read.contains(e.id);
   final lately = regular.where((e) => unread(e) && today.difference(e.date).inDays <= 3).take(2).toList();
   if (lately.isNotEmpty) return (texts: lately, label: 'Noch nicht gelesen');

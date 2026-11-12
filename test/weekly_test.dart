@@ -12,10 +12,12 @@ import 'package:yomicha/main.dart';
 import 'package:yomicha/screens/weekly_screen.dart';
 import 'package:yomicha/widgets/figure.dart';
 
+/// Feste Beispieltexte vom 12.11.2026 – die täglichen Texte der Teeküche sollen
+/// den Ablauf des Tests nicht verändern (sie prüft data_test.dart).
 List<TextDoc> _docs() => [
   for (final f in Directory('web/data/texte').listSync(recursive: true).whereType<File>().where((f) => f.path.endsWith('text.json')))
     TextDoc.fromJson(jsonDecode(f.readAsStringSync()) as Map<String, dynamic>, folder: f.parent.path),
-].where((d) => d.stufe == 2).toList();
+].where((d) => d.stufe == 2 && d.id.startsWith('2026-11-12-')).toList();
 
 Future<Progress> _progress() async {
   SharedPreferences.setMockInitialValues({});

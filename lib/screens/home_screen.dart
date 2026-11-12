@@ -187,10 +187,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       final stock = textsForStufe([for (final e in visible) if (e.vorrat) e], progress.stufe);
                       // Archiv: alle neuen Texte und die schon gelesenen aus dem Vorrat.
                       final shown = [...regular, ...stock.where((e) => readIds.contains(e.id))];
-                      // Die Teeküche kennt meine Stufe nur aus config.json: Fehlt sie bei den
-                      // neuen Texten, soll ich sie melden.
-                      final recent = visible.where((e) => !e.vorrat && _today.difference(e.date).inDays <= 3);
-                      final noTexts = !rest && recent.isNotEmpty && !recent.any((e) => e.stufe == progress.stufe);
+                      // Die Teeküche schreibt meine Stufe und eine darüber, kennt meine Stufe aber
+                      // nur aus config.json. Fehlt eine der beiden bei den neuen Texten (z. B. nach
+                      // einem Aufstieg), soll ich ihr die neue Stufe melden.
+                      final recentStufen = {
+                        for (final e in visible)
+                          if (!e.vorrat && _today.difference(e.date).inDays <= 3) e.stufe,
+                      };
+                      final wanted = {progress.stufe, if (progress.stufe < 7) progress.stufe + 1};
+                      final noTexts = !rest && recentStufen.isNotEmpty && !recentStufen.containsAll(wanted);
                       final (texts: today, :label) = textsForToday(
                         regular: regular,
                         stock: stock,
@@ -211,9 +216,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                 border: Border(left: BorderSide(color: YoColors.woodAsh, width: 4)),
                               ),
                               child: Text(
-                                'Für Stufe ${stufe.nr} · ${stufe.name} gibt es gerade keine neuen Texte, '
-                                'du liest die nächstliegende. Sag Claude „Meine Stufe ist jetzt ${stufe.nr}“, '
-                                'dann schreibt die Teeküche für deine Stufe.',
+                                'Die Teeküche schreibt gerade für Stufe ${(recentStufen.toList()..sort()).join(' und ')}, '
+                                'noch nicht für deine Stufe ${stufe.nr} · ${stufe.name} und eine darüber. '
+                                'Sag Claude „Meine Stufe ist jetzt ${stufe.nr}“, dann stellt sie sich um.',
                                 style: sans(14.5),
                               ),
                             ),

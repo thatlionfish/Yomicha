@@ -25,7 +25,7 @@ geschrieben (Stufen 1–7 nach Teesorten, `lib/data/stufen.dart`).
 **Leonis Stufe:** Die App kann sie der Teeküche nicht melden (Lernstand nur auf dem Gerät).
 Sagt Leoni ihre neue Stufe („Meine Stufe ist jetzt 3“), `stufe` in `tool/teekueche/config.json`
 anpassen und nach ihrem OK committen. Welche Stufen die Teeküche heute schreibt, rechnet
-`stufen_heute.py` (Stufe plus Fenster, nach oben der Zielkurve folgend, höchstens fünf).
+`stufen_heute.py`: Leonis Stufe und eine darüber (zwei Fassungen pro Text). Keinen Vorrat; für Ferien das Ferienpaket.
 
 ```
 tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\stufen_heute.py            # Stufen für heute

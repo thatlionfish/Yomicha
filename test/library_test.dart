@@ -21,7 +21,7 @@ void main() {
 
   test('Heute: die neuen Texte', () {
     final r = textsForToday(regular: regular, stock: stock, read: {}, today: today, rest: false);
-    expect(r.label, 'Deine Texte für heute');
+    expect(r.label, 'Dein Text für heute');
     expect(r.texts.map((e) => e.title), ['neu']);
   });
 

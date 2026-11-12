@@ -1,7 +1,8 @@
 # Teeküche – der tägliche Lauf
 
 Diese Anleitung befolgt Claude jeden Morgen (Montag bis Samstag) als geplante Aufgabe.
-Ziel: **2 neue Texte**, jeder in **4 Stufen**, geprüft, vertont und veröffentlicht.
+Ziel: **1 neuer Text** pro Tag in **2 Stufen** (Leonis Stufe und eine darüber), geprüft, vertont und veröffentlicht.
+Leoni liest einen Text am Tag (13.11.2026); mehr zu schreiben verbraucht nur ihr Nutzungskontingent.
 
 Arbeitsordner: `C:\dev\Apps\Study\yomicha`. Mit Leoni wird Deutsch gesprochen.
 
@@ -22,23 +23,23 @@ Arbeitsordner: `C:\dev\Apps\Study\yomicha`. Mit Leoni wird Deutsch gesprochen.
 2. `tool/teekueche/config.json` lesen: `stufe` (Leonis Stufe), `themen` (Anteile), `jlpt_themen`, `textarten`.
    **Die Stufen für heute** liefert
    `tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\stufen_heute.py` (Feld `stufen`):
-   Leonis Stufe plus Fenster, nach oben der Zielkurve folgend, höchstens fünf Stufen.
-   So stehen schwerere Texte bereit, wenn sie in der App aufsteigt.
+   **Leonis Stufe und eine darüber – genau zwei Fassungen pro Text**
+   (ihr Wunsch vom 13.11.2026, auch um das Nutzungskontingent zu schonen). Keine weiteren Stufen schreiben.
+   Steht im Ergebnis ein `hinweis` (Zielkurve voraus), Leoni in `web/data/status.json` nach ihrer Stufe fragen.
 3. `web/data/texte/index.json` lesen.
-   - Gibt es für heute schon Texte (Ferienpaket oder Vorrat), nichts Neues erzeugen.
+   - Gibt es für heute schon Texte (Ferienpaket), nichts Neues erzeugen.
    - Themen und Textarten der letzten 7 Tage merken, damit sich nichts wiederholt.
 
 ## 2. Themen wählen
 
-- **Text 1, aktuell:** Weltgeschehen, Mode oder Tee, gewichtet nach `themen`. Bei Weltgeschehen mit der
+- **Ein Text pro Tag, abwechselnd** – war der letzte Text (`topic` im Verzeichnis) ein JLPT-Thema, heute ein
+  aktuelles Thema, sonst ein JLPT-Thema.
+- **Aktuelles Thema:** Weltgeschehen, Mode oder Tee, gewichtet nach `themen`. Bei Weltgeschehen mit der
   Websuche die Meldungen der letzten 48 Stunden in mehreren seriösen Quellen lesen (z. B. NHK, Reuters,
   BBC, Asahi). Für Mode und Tee ist auch ein zeitloser Hintergrundtext in Ordnung.
-- **Text 2, JLPT-Thema:** eines aus `jlpt_themen`, das in den letzten 10 Texten nicht vorkam.
-- Je Text eine Textart aus `textarten`, abwechselnd (Nachricht, Essay, Meinung, Aushang, E-Mail, Infoblatt).
-- **Text 3, Vorrat** (nur bis `vorrat_bis` in config.json, Aufbaupaket): ein **zeitloser** Inhalt – Mode, Tee
-  oder ein JLPT-Thema, keine Nachricht – in denselben Stufen wie heute, im Entwurf `"vorrat": true`.
-  Die App zeigt Vorrat-Texte nur, wenn keine neuen Texte da sind (PC aus, Ferien), und `aufraeumen.py`
-  löscht sie nie. Themen und Textarten breit streuen; nichts, was in den letzten 10 Texten vorkam.
+- **JLPT-Thema:** eines aus `jlpt_themen`, das in den letzten 10 Texten nicht vorkam.
+- Eine Textart aus `textarten`, abwechselnd (Nachricht, Essay, Meinung, Aushang, E-Mail, Infoblatt).
+- **Kein Vorrat:** Für Ferien sagt Leoni rechtzeitig Bescheid; dann gilt das Ferienpaket (unten).
 
 ## 3. Entwürfe schreiben
 
@@ -142,7 +143,7 @@ Schlägt `flutter test` fehl: Ursache im Text beheben, nie Tests ändern oder ab
 
 Kann der Lauf nicht fertig werden (keine Websuche, Kontingent erschöpft, Tests rot), eine Meldung oben in
 `web/data/status.json` eintragen, z. B. `{"datum": "2026-11-13", "text": "Heute keine neuen Texte – die Teeküche konnte nicht laufen."}`,
-nur diese Datei committen und pushen. Die App zeigt dann Texte aus dem Vorrat.
+nur diese Datei committen und pushen. Die App zeigt dann die neuesten ungelesenen Texte.
 
 ## 8. Abschluss
 
@@ -152,5 +153,5 @@ Hinweise aus `pruefen.py`, ob veröffentlicht wurde.
 ## Ferienpaket (auf Zuruf)
 
 Sagt Leoni z. B. „Ich bin vom 1. bis 14. August weg“: für jeden Lerntag (Mo–Sa) in diesem Zeitraum
-wie oben 2 Texte in 4 Stufen schreiben, mit dem Datum des jeweiligen Tages. Nur zeitlose Themen (keine
+wie oben 1 Text in 2 Stufen schreiben, mit dem Datum des jeweiligen Tages. Nur zeitlose Themen (keine
 Nachrichten). Die App zeigt Texte erst an ihrem Datum.
