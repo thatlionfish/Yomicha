@@ -1,0 +1,265 @@
+{
+  "id": "2026-11-12-furugi-3",
+  "date": "2026-11-12",
+  "topic": "mode",
+  "type": "essay",
+  "stufe": 3,
+  "titleDe": "Warum Secondhand-Mode immer beliebter wird",
+  "title": [
+    {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+    {"t": "の"},
+    {"t": "人気", "r": "にんき", "g": "Beliebtheit", "j": 3},
+    {"t": "が"},
+    {"t": "高まる", "r": "たかまる", "ruby": [["高", "たか"], ["まる", ""]], "g": "steigen, zunehmen", "j": 3},
+    {"t": "理由", "r": "りゆう", "g": "Grund", "j": 4}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "ここ", "g": "hier; ここ数年 = die letzten Jahre", "j": 5},
+        {"t": "数年", "r": "すうねん", "g": "einige Jahre; ここ数年 = die letzten Jahre"},
+        {"t": "、"},
+        {"t": "日本", "r": "にっぽん", "g": "Japan", "j": 3},
+        {"t": "の"},
+        {"t": "若者", "r": "わかもの", "g": "junge Leute"},
+        {"t": "の"},
+        {"t": "間", "r": "あいだ", "g": "Zwischenraum; 〜の間で = unter …", "j": 4},
+        {"t": "で"},
+        {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+        {"t": "の"},
+        {"t": "人気", "r": "にんき", "g": "Beliebtheit", "j": 3},
+        {"t": "が"},
+        {"t": "高まっている", "r": "たかまっている", "ruby": [["高", "たか"], ["まっている", ""]], "b": "高まる", "g": "steigen, zunehmen", "j": 3},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+        {"t": "とは", "g": "… bedeutet / ist (Erklärung)", "gr": "g1"},
+        {"t": "、"},
+        {"t": "一度", "r": "いちど", "g": "einmal", "j": 4},
+        {"t": "だれか", "g": "jemand", "j": 5},
+        {"t": "が"},
+        {"t": "着た", "r": "きた", "ruby": [["着", "き"], ["た", ""]], "b": "着る", "g": "(Kleidung) tragen, anziehen", "j": 5},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "の"},
+        {"t": "こと", "g": "Sache; 〜のこと = damit ist … gemeint; 〜ことは = das …(en)", "j": 4},
+        {"t": "で", "b": "だ", "g": "ist … und"},
+        {"t": "、"},
+        {"t": "新品", "r": "しんぴん", "g": "Neuware, neue Ware"},
+        {"t": "より", "g": "als (Vergleich)"},
+        {"t": "安く", "r": "やすく", "ruby": [["安", "やす"], ["く", ""]], "b": "安い", "g": "billig, günstig", "j": 5},
+        {"t": "買える", "r": "かえる", "ruby": [["買", "か"], ["える", ""]], "g": "kaufen können", "j": 5},
+        {"t": "の"},
+        {"t": "が"},
+        {"t": "いい", "g": "gut", "j": 5},
+        {"t": "ところ", "g": "Stelle; いいところ = Vorteil", "j": 5},
+        {"t": "だ"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "また", "g": "außerdem", "j": 5},
+        {"t": "、"},
+        {"t": "ほか", "g": "andere", "j": 5},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "と"},
+        {"t": "同じ", "r": "おなじ", "ruby": [["同", "おな"], ["じ", ""]], "g": "gleich, derselbe", "j": 5},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "に"},
+        {"t": "なりにくい", "g": "kaum … werden, schwer zu … werden", "gr": "g2"},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "自分", "r": "じぶん", "g": "selbst, man selbst", "j": 5},
+        {"t": "の"},
+        {"t": "好きな", "r": "すきな", "ruby": [["好", "す"], ["きな", ""]], "b": "好き", "g": "mögen; 好きな = das man mag", "j": 5},
+        {"t": "おしゃれ", "g": "Mode, schicker Stil", "j": 3},
+        {"t": "が"},
+        {"t": "楽しめる", "r": "たのしめる", "ruby": [["楽", "たの"], ["しめる", ""]], "g": "genießen können"},
+        {"t": "と", "gr": "g3"},
+        {"t": "いう", "g": "sagen; 〜という = man sagt, dass …", "j": 5, "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "東京", "r": "とうきょう", "g": "Tokio"},
+        {"t": "の"},
+        {"t": "下北沢", "r": "しもきたざわ", "g": "Shimokitazawa (Stadtviertel in Tokio)"},
+        {"t": "や"},
+        {"t": "高円寺", "r": "こうえんじ", "g": "Kōenji (Stadtviertel in Tokio)"},
+        {"t": "に"},
+        {"t": "は"},
+        {"t": "古着屋", "r": "ふるぎや", "g": "Secondhand-Laden"},
+        {"t": "が"},
+        {"t": "多く", "r": "おおく", "ruby": [["多", "おお"], ["く", ""]], "b": "多い", "g": "viel(e)", "j": 5},
+        {"t": "、"},
+        {"t": "週末", "r": "しゅうまつ", "g": "Wochenende"},
+        {"t": "は"},
+        {"t": "たくさん", "g": "viel(e)", "j": 5},
+        {"t": "の"},
+        {"t": "客", "r": "きゃく", "g": "Kundschaft, Gäste", "j": 4},
+        {"t": "で"},
+        {"t": "込んでいる", "r": "こんでいる", "ruby": [["込", "こ"], ["んでいる", ""]], "b": "込む", "g": "voll sein; 込んでいる = ist voll", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "最近", "r": "さいきん", "g": "in letzter Zeit", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "着なく", "r": "きなく", "ruby": [["着", "き"], ["なく", ""]], "b": "着る", "g": "(Kleidung) tragen, anziehen", "j": 5},
+        {"t": "なった", "b": "なる", "g": "werden", "j": 5},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "を"},
+        {"t": "店", "r": "みせ", "g": "Laden, Geschäft", "j": 5},
+        {"t": "に"},
+        {"t": "売る", "r": "うる", "ruby": [["売", "う"], ["る", ""]], "g": "verkaufen", "j": 5},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "も"},
+        {"t": "増えている", "r": "ふえている", "ruby": [["増", "ふ"], ["えている", ""]], "b": "増える", "g": "zunehmen, mehr werden", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "を"},
+        {"t": "捨てないで", "r": "すてないで", "ruby": [["捨", "す"], ["てないで", ""]], "b": "捨てる", "g": "wegwerfen", "j": 4},
+        {"t": "次", "r": "つぎ", "g": "nächste(r)", "j": 5},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "に"},
+        {"t": "使って", "r": "つかって", "ruby": [["使", "つか"], ["って", ""]], "b": "使う", "g": "benutzen", "j": 5, "gr": "g4"},
+        {"t": "もらう", "g": "bekommen; 〜てもらう = jemand tut etwas für einen", "j": 4, "gr": "g4"},
+        {"t": "こと", "g": "Sache; 〜のこと = damit ist … gemeint; 〜ことは = das …(en)", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "環境", "r": "かんきょう", "g": "Umwelt", "j": 3},
+        {"t": "を"},
+        {"t": "守る", "r": "まもる", "ruby": [["守", "まも"], ["る", ""]], "g": "schützen", "j": 3},
+        {"t": "こと", "g": "Sache; 〜のこと = damit ist … gemeint; 〜ことは = das …(en)", "j": 4},
+        {"t": "に"},
+        {"t": "も"},
+        {"t": "つながる", "g": "verbunden sein; 〜につながる = zu … beitragen", "j": 3},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "安くて", "r": "やすくて", "ruby": [["安", "やす"], ["くて", ""]], "b": "安い", "g": "billig, günstig", "j": 5},
+        {"t": "楽しく", "r": "たのしく", "ruby": [["楽", "たの"], ["しく", ""]], "b": "楽しい", "g": "fröhlich, unterhaltsam", "j": 5},
+        {"t": "、"},
+        {"t": "地球", "r": "ちきゅう", "g": "Erde", "j": 3},
+        {"t": "に"},
+        {"t": "も"},
+        {"t": "やさしい", "g": "freundlich; 地球にやさしい = umweltfreundlich", "j": 5},
+        {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+        {"t": "の"},
+        {"t": "人気", "r": "にんき", "g": "Beliebtheit", "j": 3},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "これから", "g": "von jetzt an, künftig", "j": 4},
+        {"t": "も"},
+        {"t": "続きそうだ", "r": "つづきそうだ", "ruby": [["続", "つづ"], ["きそうだ", ""]], "b": "続く", "g": "andauern, weitergehen", "j": 4, "gr": "g5"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜とは",
+      "j": 3,
+      "de": "„… bedeutet …“, „unter … versteht man …“ – leitet eine Erklärung ein.",
+      "ex": "{茶道|さどう}とは、お{茶|ちゃ}を{点|た}てる{日本|にほん}の{文化|ぶんか}だ。",
+      "exDe": "Sadō ist die japanische Kultur der Teezubereitung."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜にくい",
+      "j": 4,
+      "de": "Verbstamm + にくい: „schwer zu …“, „kaum …“. Das Gegenteil ist 〜やすい.",
+      "ex": "この{漢字|かんじ}は{覚|おぼ}えにくい。",
+      "exDe": "Dieses Kanji ist schwer zu merken."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜という",
+      "j": 3,
+      "de": "Am Satzende: „man sagt, dass …“ – gibt wieder, was andere sagen.",
+      "ex": "あの{店|みせ}のケーキはおいしいという。",
+      "exDe": "Man sagt, die Kuchen in dem Laden seien lecker."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜てもらう",
+      "j": 4,
+      "de": "て-Form + もらう: Jemand anderes tut etwas (für einen).",
+      "ex": "{友|とも}だちに{写真|しゃしん}を{撮|と}ってもらった。",
+      "exDe": "Eine Freundin hat ein Foto von mir gemacht."
+    },
+    {
+      "id": "g5",
+      "pattern": "〜そうだ",
+      "j": 4,
+      "de": "Verbstamm + そうだ: „es sieht so aus, als ob …“.",
+      "ex": "{雨|あめ}が{降|ふ}りそうだ。",
+      "exDe": "Es sieht nach Regen aus."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "古着のいいところとして、本文に書かれていないものはどれか。",
+      "qDe": "Welcher Vorteil von Secondhand-Kleidung steht NICHT im Text?",
+      "options": ["新品より安く買える", "{自分|じぶん}の好きなおしゃれが楽しめる", "{環境|かんきょう}を守ることにつながる", "新品より品質がいい"],
+      "answer": 3,
+      "explain": "Satz 2 (günstiger), Satz 3 (eigener Stil) und Satz 6 (Umweltschutz) stehen im Text. Dass die Qualität besser ist als bei Neuware, steht nirgends.",
+      "evidence": [1, 2, 5]
+    },
+    {
+      "kind": "inhalt",
+      "q": "最近増えているのは、どんな人か。",
+      "qDe": "Welche Menschen gibt es in letzter Zeit mehr?",
+      "options": ["古着を{捨|す}てる人", "着なくなった服を店に売る人", "新品だけを買う人", "{下北沢|しもきたざわ}に住む人"],
+      "answer": 1,
+      "explain": "Satz 5: 着なくなった服を店に売る人も増えている – mehr Menschen verkaufen Kleidung, die sie nicht mehr tragen.",
+      "evidence": [4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{筆者|ひっしゃ}は、古着の人気についてどう考えているか。",
+      "qDe": "Was denkt die Verfasserin über die Beliebtheit von Secondhand-Kleidung?",
+      "options": ["すぐに終わる", "これからも続きそうだ", "東京だけで人気だ", "もう人気がない"],
+      "answer": 1,
+      "explain": "Satz 7 endet mit 続きそうだ – „es sieht so aus, als würde es weitergehen“.",
+      "evidence": [6]
+    },
+    {
+      "kind": "sprache",
+      "q": "「環境」の{読|よ}み{方|かた}はどれか。",
+      "qDe": "Wie liest man 環境?",
+      "options": ["かんきょう", "かんけい", "けんきょう", "かんぎょう"],
+      "answer": 0,
+      "explain": "環境 liest man かんきょう (Umwelt). Nicht verwechseln mit 関係 (かんけい, Beziehung).",
+      "evidence": [5]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "2": "texte/2026/11/2026-11-12-furugi-2"
+  }
+}

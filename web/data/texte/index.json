@@ -8,7 +8,27 @@
       "stufe": 2,
       "title": "ほうじ茶の季節",
       "titleDe": "Die Zeit für Hōjicha",
+      "minutes": 2
+    },
+    {
+      "id": "2026-11-12-furugi-3",
+      "folder": "texte/2026/11/2026-11-12-furugi-3",
+      "date": "2026-11-12",
+      "topic": "mode",
+      "stufe": 3,
+      "title": "古着の人気が高まる理由",
+      "titleDe": "Warum Secondhand-Mode immer beliebter wird",
       "minutes": 3
+    },
+    {
+      "id": "2026-11-12-furugi-2",
+      "folder": "texte/2026/11/2026-11-12-furugi-2",
+      "date": "2026-11-12",
+      "topic": "mode",
+      "stufe": 2,
+      "title": "古着が好きな若者",
+      "titleDe": "Junge Leute lieben Secondhand-Mode",
+      "minutes": 2
     }
   ]
 }

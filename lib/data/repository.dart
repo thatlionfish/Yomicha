@@ -84,5 +84,19 @@ class Repository {
     }
   }();
 
+  /// Meldungen der Teeküche, z. B. Kostengrenze oder ausgefallener Lauf
+  /// (data/status.json, Spezifikation 16).
+  Future<List<Notice>> notices() async {
+    try {
+      final j = await _json('status.json') as Map<String, dynamic>;
+      return [
+        for (final m in (j['meldungen'] as List? ?? const []).cast<Map<String, dynamic>>())
+          Notice(DateTime.parse(m['datum'] as String), m['text'] as String),
+      ];
+    } catch (_) {
+      return const [];
+    }
+  }
+
   String audioUrl(String path) => url(path).toString();
 }

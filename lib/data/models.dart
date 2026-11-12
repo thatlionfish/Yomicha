@@ -368,6 +368,13 @@ class KanjiInfo {
   );
 }
 
+/// Meldung der Teeküche auf der Startseite.
+class Notice {
+  const Notice(this.date, this.text);
+  final DateTime date;
+  final String text;
+}
+
 /// Ein Spruch von Kumachan.
 class KumaLine {
   const KumaLine(this.ja, this.de);

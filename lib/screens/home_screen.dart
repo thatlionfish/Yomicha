@@ -24,11 +24,13 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   Future<List<TextEntry>>? _index;
+  Future<List<Notice>>? _notices;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     _index ??= AppScope.of(context).repo.index();
+    _notices ??= AppScope.of(context).repo.notices();
   }
 
   DateTime get _today => widget.today ?? DateTime.now();
@@ -88,6 +90,26 @@ class _HomeScreenState extends State<HomeScreen> {
                     'Meine Stufe: ${stufe.nr} · ${stufe.name} ${stufe.kanji} (${stufe.label})',
                     style: sans(15, color: YoColors.inkSoft),
                   ),
+                  FutureBuilder<List<Notice>>(
+                    future: _notices,
+                    builder: (context, snap) => Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        for (final n in snap.data ?? const <Notice>[])
+                          if (_today.difference(n.date).inDays < 7)
+                            Container(
+                              margin: const EdgeInsets.only(top: 14),
+                              padding: const EdgeInsets.all(14),
+                              decoration: const BoxDecoration(
+                                color: YoColors.vanillaIce,
+                                borderRadius: organicRadius,
+                                border: Border(left: BorderSide(color: YoColors.woodAsh, width: 4)),
+                              ),
+                              child: Text('Teeküche: ${n.text}', style: sans(14.5)),
+                            ),
+                      ],
+                    ),
+                  ),
                   const SizedBox(height: 22),
                   if (rest) ...[
                     _RestCard(),
@@ -100,11 +122,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     builder: (context, snap) {
                       if (snap.hasError) return Text('Texte konnten nicht geladen werden: ${snap.error}');
                       if (!snap.hasData) return const Center(child: CircularProgressIndicator());
-                      final all = snap.data!;
+                      // Texte mit späterem Datum (Ferienpaket) erscheinen erst an ihrem Tag.
+                      final day = DateTime(_today.year, _today.month, _today.day);
+                      final all = snap.data!.where((e) => !e.date.isAfter(day)).toList();
                       if (all.isEmpty) return Text('Noch keine Texte.', style: sans(16));
+                      // Jeder Inhalt steht in mehreren Stufen; gezeigt wird meine Stufe
+                      // (die anderen erreicht man im Text über „leichter / schwerer“).
                       final mine = all.where((e) => e.stufe == progress.stufe).toList();
-                      final today = rest ? <TextEntry>[] : (mine.isEmpty ? all : mine).take(2).toList();
-                      final rest_ = all.where((e) => !today.contains(e)).toList();
+                      final shown = mine.isEmpty ? _closestStufe(all, progress.stufe) : mine;
+                      final today = rest ? <TextEntry>[] : shown.where((e) => e.date == day).take(2).toList();
+                      final rest_ = shown.where((e) => !today.contains(e)).toList();
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
@@ -143,6 +170,17 @@ class _HomeScreenState extends State<HomeScreen> {
         },
       ),
     );
+  }
+
+  /// Gibt es keinen Text in meiner Stufe: pro Inhalt die nächstliegende Stufe.
+  List<TextEntry> _closestStufe(List<TextEntry> all, int stufe) {
+    final best = <String, TextEntry>{};
+    for (final e in all) {
+      final content = e.id.replaceFirst(RegExp(r'-\d$'), '');
+      final old = best[content];
+      if (old == null || (e.stufe - stufe).abs() < (old.stufe - stufe).abs()) best[content] = e;
+    }
+    return best.values.toList()..sort((a, b) => b.date.compareTo(a.date));
   }
 
   void _settings(BuildContext context) {

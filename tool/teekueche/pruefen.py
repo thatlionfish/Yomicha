@@ -34,6 +34,27 @@ def level(*keys: str) -> int | None:
     return None
 
 
+def has_kanji(s: str) -> bool:
+    return any("㐀" <= c <= "鿿" or c == "々" for c in s)
+
+
+def word_level(surface: str, reading: str = "", base: str = "", base_reading: str = "") -> int | None:
+    """JLPT-Stufe eines Wortes – dieselbe Regel für Teeküche und Prüfung:
+    gebeugte Wörter über die Grundform (飲みたい → 飲む), Kana-Wörter über
+    die leichteste Stufe, Kanji-Wörter zur Not über die Lesung (子ども ↔ 子供)."""
+    keys = []
+    if base and base != surface:
+        keys += [f"{base}|{base_reading}", base]
+    if has_kanji(surface):
+        keys += [f"{surface}|{reading}", surface]
+    else:
+        keys += [surface]
+    found = level(*keys)
+    if found is None and has_kanji(surface) and reading:
+        found = level(reading)
+    return found
+
+
 def fmt(o, ind: int = 0) -> str:
     """JSON wie in den Texten: jedes Wort auf einer Zeile."""
     pad = "  " * ind
@@ -93,16 +114,10 @@ def check(path: pathlib.Path, tok, apply: bool = False) -> int:
                 continue
             lemma = head.dictionary_form()
             lemma_r = hira(tok.tokenize(lemma, SplitMode.C)[0].reading_form()) if lemma else ""
-            # Zuerst das ganze Wort (お茶, ください), dann Sudachis Grundform.
-            kana_only = t.get("r") is None
-            found = level(
-                f"{t['t']}|{t.get('r', '')}",
-                t["t"],
-                t.get("b", ""),
-                t["t"] if kana_only else "",
-                f"{lemma}|{lemma_r}",
-                lemma,
-            )
+            base = t.get("b", "")
+            found = word_level(t["t"], t.get("r", ""), base, lemma_r if base == lemma else "")
+            if found is None and not base:
+                found = level(f"{lemma}|{lemma_r}", lemma)
             if apply:
                 if found is None:
                     t.pop("j", None)

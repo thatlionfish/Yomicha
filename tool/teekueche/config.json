@@ -1,0 +1,34 @@
+{
+  "_info": "Einstellungen der Teeküche. stufe = Leonis aktuelle Stufe (bis zum Abgleich hier von Hand nachführen).",
+  "stufe": 2,
+  "texte_pro_tag": 2,
+  "stufen_fenster": [-1, 0, 1, 2],
+  "audio_fuer_stufen": [0, 1],
+  "themen": {
+    "welt": 25,
+    "mode": 20,
+    "tee": 20,
+    "jlpt": 35
+  },
+  "jlpt_themen": [
+    "Arbeit und Gesellschaft",
+    "Umwelt",
+    "Wissenschaft und Technik",
+    "Gesundheit",
+    "Bildung",
+    "Wirtschaft",
+    "Kultur und Tradition",
+    "Alltag und Wohnen",
+    "Essen",
+    "Reisen"
+  ],
+  "textarten": ["nachricht", "essay", "meinung", "aushang", "email", "infoblatt"],
+  "schluessel": {
+    "aufbau": "werkstatt/azure-aufbau.env",
+    "taeglich": "../learnwithleoni/werkstatt/azure-speech.env"
+  },
+  "aufbau_bis": "2026-12-03",
+  "azure_gratis_zeichen_pro_monat": 500000,
+  "warnen_ab_anteil": 0.8,
+  "verbrauch_datei": "../../azure-verbrauch.json"
+}

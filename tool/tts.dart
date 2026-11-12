@@ -30,6 +30,9 @@ const rateByStufe = {1: '-20%', 2: '-15%', 3: '-10%', 4: '-8%', 5: '-5%', 6: '0%
 
 late final String key;
 late final String region;
+
+/// F0 (gratis) oder S0 (bezahlt, nur für den Aufbau) – aus AZURE_SPEECH_TIER.
+var tier = 'F0';
 var billed = 0;
 var made = 0;
 var skipped = 0;
@@ -45,6 +48,7 @@ Future<void> main(List<String> args) async {
     final cfg = _readEnv(keyFile);
     key = cfg['AZURE_SPEECH_KEY'] ?? '';
     region = cfg['AZURE_SPEECH_REGION'] ?? '';
+    tier = cfg['AZURE_SPEECH_TIER'] ?? 'F0';
     if (key.isEmpty || region.isEmpty) {
       stderr.writeln('Schlüssel fehlt in $keyFile');
       exit(1);
@@ -101,8 +105,40 @@ Future<void> main(List<String> args) async {
 
   stdout.writeln(
     '${dry ? 'Würde erzeugen' : 'Erzeugt'}: $made · übersprungen: $skipped · '
-    'ca. $billed abgerechnete Zeichen',
+    'ca. $billed abgerechnete Zeichen ($tier)',
   );
+  if (!dry && billed > 0) _count();
+}
+
+/// Verbrauch pro Monat in einer gemeinsamen lokalen Datei (auch für
+/// LearnwithLeoni gedacht). Beim Gratis-Zugang F0 gibt es ab dem
+/// eingestellten Anteil eine Meldung auf der Startseite (Spezifikation 16).
+void _count() {
+  final cfg = jsonDecode(File('tool/teekueche/config.json').readAsStringSync()) as Map<String, dynamic>;
+  final file = File(cfg['verbrauch_datei'] as String);
+  final data = file.existsSync() ? jsonDecode(file.readAsStringSync()) as Map<String, dynamic> : <String, dynamic>{};
+  final month = DateTime.now().toIso8601String().substring(0, 7);
+  final m = (data[month] as Map<String, dynamic>?) ?? <String, dynamic>{};
+  m[tier] = ((m[tier] as int?) ?? 0) + billed;
+  m['yomicha_$tier'] = ((m['yomicha_$tier'] as int?) ?? 0) + billed;
+  data[month] = m;
+  file.writeAsStringSync(const JsonEncoder.withIndent('  ').convert(data));
+
+  final limit = cfg['azure_gratis_zeichen_pro_monat'] as int;
+  final share = ((m['F0'] as int?) ?? 0) / limit;
+  stdout.writeln('Azure-Verbrauch $month: F0 ${m['F0'] ?? 0} von $limit (${(share * 100).round()} %), S0 ${m['S0'] ?? 0}');
+  if (share >= (cfg['warnen_ab_anteil'] as num)) {
+    final status = File('web/data/status.json');
+    final s = jsonDecode(status.readAsStringSync()) as Map<String, dynamic>;
+    final list = (s['meldungen'] as List).cast<Map<String, dynamic>>();
+    final text = 'Das Azure-Gratiskontingent ist diesen Monat zu ${(share * 100).round()} % verbraucht.';
+    if (!list.any((x) => (x['text'] as String).startsWith('Das Azure-Gratiskontingent') && (x['datum'] as String).startsWith(month))) {
+      list.insert(0, {'datum': DateTime.now().toIso8601String().substring(0, 10), 'text': text});
+      s['meldungen'] = list;
+      status.writeAsStringSync('${const JsonEncoder.withIndent('  ').convert(s)}\n');
+      stdout.writeln('MELDUNG: $text');
+    }
+  }
 }
 
 Future<void> _make(File out, String ssml, int chars, {required bool dry, required bool force}) async {
@@ -119,25 +155,38 @@ Future<void> _make(File out, String ssml, int chars, {required bool dry, require
   out.parent.createSync(recursive: true);
   final client = HttpClient();
   try {
-    final req = await client.postUrl(
-      Uri.parse('https://$region.tts.speech.microsoft.com/cognitiveservices/v1'),
-    );
-    req.headers
-      ..set('Ocp-Apim-Subscription-Key', key)
-      ..set('X-Microsoft-OutputFormat', format)
-      ..set('User-Agent', 'yomicha-teekueche')
-      ..contentType = ContentType('application', 'ssml+xml', charset: 'utf-8');
-    req.add(utf8.encode(ssml));
-    final res = await req.close();
-    if (res.statusCode != 200) {
-      final body = await res.transform(utf8.decoder).join();
-      stderr.writeln('FEHLER ${res.statusCode} bei ${out.path}: $body');
-      exitCode = 1;
+    // Der Gratis-Zugang F0 erlaubt nur wenige Anfragen pro Minute:
+    // bei 429 warten und es erneut versuchen.
+    for (var attempt = 1; ; attempt++) {
+      final req = await client.postUrl(
+        Uri.parse('https://$region.tts.speech.microsoft.com/cognitiveservices/v1'),
+      );
+      req.headers
+        ..set('Ocp-Apim-Subscription-Key', key)
+        ..set('X-Microsoft-OutputFormat', format)
+        ..set('User-Agent', 'yomicha-teekueche')
+        ..contentType = ContentType('application', 'ssml+xml', charset: 'utf-8');
+      req.add(utf8.encode(ssml));
+      final res = await req.close();
+      if (res.statusCode == 429 && attempt < 8) {
+        await res.drain<void>();
+        final wait = int.tryParse(res.headers.value('retry-after') ?? '') ?? 10 * attempt;
+        stdout.writeln('  … Azure bremst, warte $wait s');
+        await Future<void>.delayed(Duration(seconds: wait));
+        continue;
+      }
+      if (res.statusCode != 200) {
+        final body = await res.transform(utf8.decoder).join();
+        stderr.writeln('FEHLER ${res.statusCode} bei ${out.path}: $body');
+        exitCode = 1;
+        billed -= chars;
+        return;
+      }
+      final sink = out.openWrite();
+      await res.pipe(sink);
+      stdout.writeln('  ✓ ${out.path}');
       return;
     }
-    final sink = out.openWrite();
-    await res.pipe(sink);
-    stdout.writeln('  ✓ ${out.path}');
   } finally {
     client.close();
   }

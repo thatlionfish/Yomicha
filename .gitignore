@@ -7,6 +7,8 @@ werkstatt/*.env
 werkstatt/hoerproben/
 # Heruntergeladene Rohdaten (KanjiVG, KANJIDIC2, JLPT-Listen, Schriften)
 werkstatt/quellen/
+# Entwürfe der Teeküche (veröffentlicht wird nur web/data)
+werkstatt/entwuerfe/
 tool/teekueche/.venv/
 __pycache__/
 

@@ -1,0 +1,248 @@
+{
+  "id": "2026-11-12-furugi-2",
+  "date": "2026-11-12",
+  "topic": "mode",
+  "type": "essay",
+  "stufe": 2,
+  "titleDe": "Junge Leute lieben Secondhand-Mode",
+  "title": [
+    {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+    {"t": "が"},
+    {"t": "好きな", "r": "すきな", "ruby": [["好", "す"], ["きな", ""]], "b": "好き", "g": "mögen; 〜が好きな = der/die … mag", "j": 5},
+    {"t": "若者", "r": "わかもの", "g": "junge Leute"}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "最近", "r": "さいきん", "g": "in letzter Zeit", "j": 4},
+        {"t": "、"},
+        {"t": "日本", "r": "にっぽん", "g": "Japan", "j": 3},
+        {"t": "の"},
+        {"t": "若者", "r": "わかもの", "g": "junge Leute"},
+        {"t": "の"},
+        {"t": "間", "r": "あいだ", "g": "Zwischenraum; 〜の間で = unter …", "j": 4},
+        {"t": "で"},
+        {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+        {"t": "が"},
+        {"t": "人気", "r": "にんき", "g": "Beliebtheit; 人気です = ist beliebt", "j": 3},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "だれか", "g": "jemand", "j": 5},
+        {"t": "が"},
+        {"t": "前", "r": "まえ", "g": "vorher, früher", "j": 5},
+        {"t": "に"},
+        {"t": "着ていた", "r": "きていた", "ruby": [["着", "き"], ["ていた", ""]], "b": "着る", "g": "(Kleidung) tragen, anziehen", "j": 5},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "の"},
+        {"t": "こと", "g": "Sache; 〜のことです = damit ist … gemeint", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "でも", "g": "auch wenn, sogar", "j": 5},
+        {"t": "、"},
+        {"t": "きれいに", "b": "きれい", "g": "sauber, schön", "j": 5},
+        {"t": "洗って", "r": "あらって", "ruby": [["洗", "あら"], ["って", ""]], "b": "洗う", "g": "waschen", "j": 5, "gr": "g1"},
+        {"t": "あります", "b": "ある", "g": "es gibt; (〜てある) ist …", "j": 5, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "新しい", "r": "あたらしい", "ruby": [["新", "あたら"], ["しい", ""]], "g": "neu", "j": 5, "gr": "g2"},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "より", "g": "als (Vergleich)"},
+        {"t": "安い", "r": "やすい", "ruby": [["安", "やす"], ["い", ""]], "g": "billig, günstig", "j": 5},
+        {"t": "し", "g": "und außerdem (Aufzählung)"},
+        {"t": "、"},
+        {"t": "ほか", "g": "andere", "j": 5},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "と", "g": "wenn, sobald"},
+        {"t": "ちがう", "g": "anders sein, sich unterscheiden", "j": 5},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "が"},
+        {"t": "見つかります", "r": "みつかります", "ruby": [["見", "み"], ["つかります", ""]], "b": "見つかる", "g": "gefunden werden", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "東京", "r": "とうきょう", "g": "Tokio"},
+        {"t": "の"},
+        {"t": "下北沢", "r": "しもきたざわ", "g": "Shimokitazawa (Stadtviertel in Tokio)"},
+        {"t": "に"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+        {"t": "の"},
+        {"t": "店", "r": "みせ", "g": "Laden, Geschäft", "j": 5},
+        {"t": "が"},
+        {"t": "たくさん", "g": "viel(e)", "j": 5},
+        {"t": "あります", "b": "ある", "g": "es gibt; (〜てある) ist …", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "週末", "r": "しゅうまつ", "g": "Wochenende"},
+        {"t": "に"},
+        {"t": "なる", "g": "werden", "j": 5},
+        {"t": "と", "g": "wenn, sobald"},
+        {"t": "、"},
+        {"t": "多く", "r": "おおく", "ruby": [["多", "おお"], ["く", ""]], "g": "viele"},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "が"},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "を"},
+        {"t": "見", "r": "み", "b": "見る", "g": "sehen, anschauen", "j": 5, "gr": "g3"},
+        {"t": "に", "gr": "g3"},
+        {"t": "来ます", "r": "きます", "ruby": [["来", "き"], ["ます", ""]], "b": "来る", "g": "kommen", "j": 5, "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+        {"t": "を"},
+        {"t": "買う", "r": "かう", "ruby": [["買", "か"], ["う", ""]], "g": "kaufen", "j": 5},
+        {"t": "と", "g": "wenn, sobald"},
+        {"t": "、"},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "を"},
+        {"t": "すてなくて", "b": "すてる", "g": "wegwerfen", "j": 4, "gr": "g4"},
+        {"t": "も", "gr": "g4"},
+        {"t": "いい", "g": "gut; 〜なくてもいい = muss nicht", "j": 5, "gr": "g4"},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "地球", "r": "ちきゅう", "g": "Erde", "j": 3},
+        {"t": "に"},
+        {"t": "も"},
+        {"t": "やさしい", "g": "freundlich; 地球にやさしい = umweltfreundlich", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "わたし", "g": "ich", "j": 5},
+        {"t": "も"},
+        {"t": "今度", "r": "こんど", "g": "nächstes Mal, demnächst", "j": 4},
+        {"t": "、"},
+        {"t": "古着", "r": "ふるぎ", "g": "Secondhand-Kleidung (gebrauchte Kleidung)"},
+        {"t": "の"},
+        {"t": "店", "r": "みせ", "g": "Laden, Geschäft", "j": 5},
+        {"t": "に"},
+        {"t": "行って", "r": "いって", "ruby": [["行", "い"], ["って", ""]], "b": "行く", "g": "gehen", "j": 5, "gr": "g5"},
+        {"t": "みたい", "b": "みる", "g": "(mal) versuchen; 〜てみたい = möchte mal …", "j": 5, "gr": "g5"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜てある",
+      "j": 4,
+      "de": "て-Form + ある: Etwas ist (absichtlich) gemacht worden und bleibt so.",
+      "ex": "{窓|まど}が{開|あ}けてあります。",
+      "exDe": "Das Fenster ist geöffnet (jemand hat es aufgemacht)."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜し",
+      "j": 4,
+      "de": "Gründe oder Eigenschaften aufzählen: „… und außerdem …“.",
+      "ex": "このカフェは{安|やす}いし、おいしいです。",
+      "exDe": "Dieses Café ist günstig und außerdem lecker."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜に来る",
+      "j": 4,
+      "de": "Verbstamm + に + 来る/行く: kommen oder gehen, um etwas zu tun.",
+      "ex": "{友|とも}だちが{遊|あそ}びに{来|き}ました。",
+      "exDe": "Eine Freundin ist zum Spielen vorbeigekommen."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜なくてもいい",
+      "j": 4,
+      "de": "„muss nicht …“, „braucht nicht zu …“.",
+      "ex": "{明日|あした}は{来|こ}なくてもいいです。",
+      "exDe": "Morgen musst du nicht kommen."
+    },
+    {
+      "id": "g5",
+      "pattern": "〜てみたい",
+      "j": 4,
+      "de": "て-Form + みたい: „möchte einmal ausprobieren …“.",
+      "ex": "{着物|きもの}を{着|き}てみたいです。",
+      "exDe": "Ich möchte einmal einen Kimono anziehen."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "古着とは、どんな服ですか。",
+      "qDe": "Was für Kleidung ist 古着?",
+      "options": ["新しく作った服", "だれかが前に着ていた服", "外国で買った服", "{自分|じぶん}で作った服"],
+      "answer": 1,
+      "explain": "Satz 2: 古着は、だれかが前に着ていた服のことです – Kleidung, die vorher schon jemand getragen hat.",
+      "evidence": [1]
+    },
+    {
+      "kind": "inhalt",
+      "q": "古着のいいところはどれですか。",
+      "qDe": "Was ist ein Vorteil von Secondhand-Kleidung?",
+      "options": ["新しい服より高い", "ほかの人とちがう服が見つかる", "{洗|あら}っていない", "店が少ない"],
+      "answer": 1,
+      "explain": "Satz 4: Sie ist günstiger als neue Kleidung, und man findet Kleidung, die anders ist als die der anderen. Laut Satz 3 ist sie sauber gewaschen.",
+      "evidence": [3, 2]
+    },
+    {
+      "kind": "inhalt",
+      "q": "古着が{地球|ちきゅう}にやさしいのは、どうしてですか。",
+      "qDe": "Warum ist Secondhand-Kleidung umweltfreundlich?",
+      "options": ["安いから", "服をすてなくてもいいから", "東京にあるから", "{若者|わかもの}に人気だから"],
+      "answer": 1,
+      "explain": "Satz 7 nennt den Grund mit ので: 服をすてなくてもいいので – man muss die Kleidung nicht wegwerfen. Die anderen Antworten stehen auch im Text, sind aber nicht der Grund.",
+      "evidence": [6]
+    },
+    {
+      "kind": "sprache",
+      "q": "「週末」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 週末?",
+      "options": ["しゅうまつ", "しゅうすえ", "しゅまつ", "よまつ"],
+      "answer": 0,
+      "explain": "週末 liest man しゅうまつ (Wochenende): 週 = Woche (しゅう), 末 = Ende (まつ).",
+      "evidence": [5]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "3": "texte/2026/11/2026-11-12-furugi-3"
+  }
+}
