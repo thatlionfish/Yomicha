@@ -24,9 +24,19 @@
   <link rel="manifest" href="manifest.json">
   <style>
     html, body { margin: 0; background: #F1EEE6; }
+    /* Startbild, bis Flutter läuft; dieselbe Größe wie lib/widgets/splash.dart. */
+    #splash { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: #F1EEE6; }
+    #splash img { width: min(260px, 60vmin); height: auto; }
   </style>
 </head>
 <body>
+  <div id="splash"><img src="icons/Icon-512.png" alt="Yomicha"></div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var s = document.getElementById('splash');
+      if (s) s.remove();
+    });
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

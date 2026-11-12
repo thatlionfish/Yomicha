@@ -20,6 +20,9 @@ import 'sources_screen.dart';
 import 'weekly_screen.dart';
 import 'words_screen.dart';
 
+/// Mein Name, wie die App mich anspricht – in Katakana.
+const userName = 'レオニ';
+
 /// Startseite: Texte des Tages, Countdown, Lernserie (Spezifikation 3).
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, this.today});
@@ -46,9 +49,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   String get _greeting {
     final h = _today.hour;
-    if (h < 11) return 'おはよう、Leoni';
-    if (h < 18) return 'こんにちは、Leoni';
-    return 'こんばんは、Leoni';
+    if (h < 11) return 'おはよう、$userName';
+    if (h < 18) return 'こんにちは、$userName';
+    return 'こんばんは、$userName';
   }
 
   void _open(TextEntry e) => Navigator.of(context).push(
@@ -65,7 +68,9 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             const AppIcon(size: 36, background: false, zoom: 1.25),
             const SizedBox(width: 8),
-            Text('Yomicha', style: serif(24, weight: 460)),
+            Text('読み茶', style: jp(23, weight: FontWeight.w600, height: 1)),
+            const SizedBox(width: 10),
+            Text('Yomicha', style: serif(19, weight: 440).copyWith(color: YoColors.inkSoft)),
           ],
         ),
         actions: [

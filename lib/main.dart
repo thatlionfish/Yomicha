@@ -5,6 +5,7 @@ import 'data/progress.dart';
 import 'data/repository.dart';
 import 'screens/home_screen.dart';
 import 'ui/theme.dart';
+import 'widgets/splash.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +31,7 @@ class YomichaApp extends StatelessWidget {
       title: 'Yomicha',
       debugShowCheckedModeBanner: false,
       theme: buildYoTheme(),
-      home: home ?? const HomeScreen(),
+      home: home ?? const SplashGate(child: HomeScreen()),
     ),
   );
 }

@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -8,6 +11,8 @@ import 'package:yomicha/main.dart';
 import 'package:yomicha/screens/archive_screen.dart';
 import 'package:yomicha/screens/progress_screen.dart';
 import 'package:yomicha/screens/words_screen.dart';
+import 'package:yomicha/widgets/splash.dart';
+import 'package:yomicha/widgets/word_sheet.dart';
 import 'package:yomicha/widgets/figure.dart';
 import 'package:yomicha/widgets/speak_sheet.dart';
 
@@ -115,5 +120,58 @@ void main() {
     await tester.pump();
     expect(find.text('ほうじ茶の季節'), findsNothing);
     expect(find.text('古着が好きな若者'), findsOneWidget);
+  });
+
+  testWidgets('Angetippte Wörter kommen von selbst in „Meine Wörter“', (tester) async {
+    final p = await _progress();
+    final f = File('web/data/texte/2026/11/2026-11-12-hojicha-2/text.json');
+    final doc = TextDoc.fromJson(jsonDecode(f.readAsStringSync()) as Map<String, dynamic>, folder: f.parent.path);
+    final sentence = doc.sentences.firstWhere((s) => s.tokens.any((t) => t.hasKanji && t.gloss != null));
+    final token = sentence.tokens.firstWhere((t) => t.hasKanji && t.gloss != null);
+    final key = myWordOf(token, sentence, doc).key;
+    expect(p.hasWord(key), isFalse);
+
+    await _pump(tester, p, Scaffold(
+      body: Builder(
+        builder: (context) => TextButton(
+          onPressed: () => showWordSheet(context, token: token, sentence: sentence, doc: doc, repo: Repository(), progress: p),
+          child: const Text('Wort'),
+        ),
+      ),
+    ));
+    await tester.tap(find.text('Wort'));
+    await tester.pumpAndSettle();
+    expect(p.hasWord(key), isTrue);
+    expect(p.myWords[key]!.sentence, sentence.plain);
+    expect(find.text('Gespeichert in „Meine Wörter“'), findsOneWidget);
+
+    // Wieder entfernen geht in der Wortleiste.
+    await tester.tap(find.text('Entfernen'));
+    await tester.pump();
+    expect(p.hasWord(key), isFalse);
+    expect(find.text('Meine Wörter'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('Beim Öffnen erst groß das Logo, dann die Startseite', (tester) async {
+    final p = await _progress();
+    AnimatedFigure.animate = false;
+    tester.view.physicalSize = const Size(390 * 3, 844 * 3);
+    tester.view.devicePixelRatio = 3;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(YomichaApp(repo: Repository(), progress: p));
+    await tester.pump(const Duration(milliseconds: 700));
+    // Startbild und Titelleiste zeigen beide 読み茶.
+    expect(find.text('読み茶'), findsNWidgets(2));
+    expect(find.text('Yomicha'), findsNWidgets(2));
+
+    await tester.pump(SplashGate.hold);
+    await tester.pump(); // Ausblenden beginnt
+    await tester.pump(SplashGate.fade);
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 100)); // Startbild entfernt
+    expect(find.text('読み茶'), findsOneWidget);
+    expect(find.textContaining('レオニ'), findsOneWidget);
+    expect(tester.takeException(), isNull);
   });
 }

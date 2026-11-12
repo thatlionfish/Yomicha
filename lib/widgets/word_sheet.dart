@@ -12,8 +12,19 @@ import 'kanji_card.dart';
 
 String jlptLabel(int? j) => j == null ? 'nicht in den JLPT-Listen' : 'N$j';
 
+/// Das angetippte Wort als Eintrag für „Meine Wörter“.
+MyWord myWordOf(Token t, Sentence sentence, TextDoc doc) => MyWord(
+  t: t.t,
+  reading: t.reading,
+  gloss: t.gloss ?? '',
+  sentence: sentence.plain,
+  textId: doc.id,
+);
+
 /// Wortleiste (Spezifikation 4.2): Lesung, Bedeutung, Grundform, Stufe,
-/// Kanji und „＋ Meine Wörter“.
+/// Kanji und „Meine Wörter“. Wer ein Wort antippt, will es lernen: Es kommt
+/// gleich in „Meine Wörter“ (Wörter ohne Bedeutung nicht) und lässt sich in
+/// der Leiste wieder entfernen.
 Future<void> showWordSheet(
   BuildContext context, {
   required Token token,
@@ -22,6 +33,8 @@ Future<void> showWordSheet(
   required Repository repo,
   required Progress progress,
 }) {
+  final word = myWordOf(token, sentence, doc);
+  if (word.gloss.isNotEmpty && !progress.hasWord(word.key)) progress.addWords([word]);
   return showModalBottomSheet(
     context: context,
     isScrollControlled: true,
@@ -55,13 +68,7 @@ class _WordSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = token;
     final grammar = t.grammar == null ? null : doc.grammar[t.grammar];
-    final word = MyWord(
-      t: t.t,
-      reading: t.reading,
-      gloss: t.gloss ?? '',
-      sentence: sentence.plain,
-      textId: doc.id,
-    );
+    final word = myWordOf(t, sentence, doc);
     return SafeArea(
       child: SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
@@ -136,10 +143,16 @@ class _WordSheet extends StatelessWidget {
               builder: (context, _) {
                 final has = progress.hasWord(word.key);
                 return has
-                    ? OutlinedButton.icon(
-                        onPressed: () => progress.toggleWord(word),
-                        icon: const Icon(Icons.check_rounded, color: YoColors.chocolate),
-                        label: const Text('In „Meine Wörter“'),
+                    ? Row(
+                        children: [
+                          const Icon(Icons.check_circle_rounded, color: YoColors.chocolate, size: 22),
+                          const SizedBox(width: 8),
+                          Expanded(child: Text('Gespeichert in „Meine Wörter“', style: sans(15, weight: 600))),
+                          TextButton(
+                            onPressed: () => progress.removeWord(word.key),
+                            child: const Text('Entfernen'),
+                          ),
+                        ],
                       )
                     : FilledButton.icon(
                         onPressed: () => progress.toggleWord(word),
