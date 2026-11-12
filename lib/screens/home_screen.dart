@@ -328,7 +328,7 @@ class _AzureSettingsState extends State<_AzureSettings> {
     labelText: label,
     filled: true,
     fillColor: YoColors.coconutMilk,
-    border: const OutlineInputBorder(borderRadius: organicRadius, borderSide: BorderSide.none),
+    border: const OutlineInputBorder(borderRadius: fieldRadius, borderSide: BorderSide.none),
   );
 
   @override

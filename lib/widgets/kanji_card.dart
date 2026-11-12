@@ -183,7 +183,7 @@ class _KanjiCardState extends State<_KanjiCard> {
                   hintText: 'Meine eigene Geschichte …',
                   filled: true,
                   fillColor: YoColors.coconutMilk,
-                  border: OutlineInputBorder(borderRadius: organicRadius, borderSide: BorderSide.none),
+                  border: OutlineInputBorder(borderRadius: fieldRadius, borderSide: BorderSide.none),
                 ),
                 onChanged: (s) => widget.progress.setStory(widget.kanji, s),
               ),

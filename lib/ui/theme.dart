@@ -48,6 +48,9 @@ FontWeight _weight(double w) =>
     FontWeight.values[((w / 100).round() - 1).clamp(0, 8)];
 
 /// Weiche, leicht ungleichmäßige Rundung wie bei LearnwithLeoni.
+/// Für Eingabefelder: Flutter erlaubt dort nur runde (nicht elliptische) Ecken.
+const fieldRadius = BorderRadius.all(Radius.circular(24));
+
 const organicRadius = BorderRadius.only(
   topLeft: Radius.elliptical(26, 22),
   topRight: Radius.elliptical(22, 26),
