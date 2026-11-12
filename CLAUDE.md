@@ -35,6 +35,7 @@ flutter analyze
 flutter test
 flutter build web && dart run tool/serve.dart    # Vorschau http://localhost:8123
 dart run tool/gen_kuma.dart                      # Kumachans Posen neu zeichnen
+flutter test tool/render_icon_test.dart          # App-Icon (lib/ui/app_icon.dart) in alle Größen rendern
 ```
 
 - Design: Wabi-Sabi wie LearnwithLeoni, Farben in `lib/ui/colors.dart`; Lemon Grass nur als Detail, kein Rot.

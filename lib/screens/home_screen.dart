@@ -8,6 +8,7 @@ import '../learn/calendar.dart';
 import '../learn/library.dart';
 import '../learn/review.dart';
 import '../learn/weekly.dart';
+import '../ui/app_icon.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/kumachan.dart';
@@ -59,7 +60,14 @@ class _HomeScreenState extends State<HomeScreen> {
     final progress = AppScope.of(context).progress;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Yomicha', style: serif(24, weight: 460)),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const AppIcon(size: 36, background: false, zoom: 1.25),
+            const SizedBox(width: 8),
+            Text('Yomicha', style: serif(24, weight: 460)),
+          ],
+        ),
         actions: [
           IconButton(
             tooltip: 'Einstellungen',
