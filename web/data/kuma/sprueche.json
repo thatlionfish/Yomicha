@@ -1,0 +1,72 @@
+{
+  "_info": "Kumachans Sprüche:Japanisch auf N5–N4-Niveau in Ruby-Schreibweise ({漢字|かな}), dazu Deutsch. Aufnahmen erzeugt tool/tts.dart (Stimme ja-JP-AoiNeural, etwas höher).",
+  "begruessung": {
+    "posen": ["bow", "tea"],
+    "sprueche": [
+      {"ja": "お{茶|ちゃ}をどうぞ。", "de": "Bitte, ein Tee für dich."},
+      {"ja": "いらっしゃい！{今日|きょう}も{一緒|いっしょ}に{読|よ}もうね。", "de": "Willkommen! Lass uns heute wieder zusammen lesen."},
+      {"ja": "ようこそ。ゆっくりしていってね。", "de": "Willkommen. Mach es dir gemütlich."},
+      {"ja": "{今日|きょう}もがんばろうね！", "de": "Lass uns auch heute unser Bestes geben!"},
+      {"ja": "{温|あたた}かいお{茶|ちゃ}、{入|い}れたよ。", "de": "Ich habe dir warmen Tee gemacht."},
+      {"ja": "{今日|きょう}のお{話|はなし}、{楽|たの}しみだね。", "de": "Ich freue mich auf die heutige Geschichte."}
+    ]
+  },
+  "fertig": {
+    "posen": ["thumbs"],
+    "sprueche": [
+      {"ja": "よくできました！", "de": "Gut gemacht!"},
+      {"ja": "いいね！その{調子|ちょうし}！", "de": "Super! Weiter so!"},
+      {"ja": "お{疲|つか}れさま。", "de": "Gute Arbeit – danke für deine Mühe."},
+      {"ja": "{毎日|まいにち}{少|すこ}しずつ、だね。", "de": "Jeden Tag ein bisschen, nicht wahr?"},
+      {"ja": "いい{感|かん}じだよ！", "de": "Das fühlt sich gut an!"}
+    ]
+  },
+  "perfekt": {
+    "posen": ["cheer"],
+    "sprueche": [
+      {"ja": "{全部|ぜんぶ}{正解|せいかい}！すごい！", "de": "Alles richtig! Toll!"},
+      {"ja": "パーフェクト！", "de": "Perfekt!"},
+      {"ja": "やったね！", "de": "Geschafft!"},
+      {"ja": "すばらしい！", "de": "Großartig!"}
+    ]
+  },
+  "rueckschlag": {
+    "posen": ["whisk"],
+    "sprueche": [
+      {"ja": "{大丈夫|だいじょうぶ}、{次|つぎ}はきっとできるよ。", "de": "Keine Sorge, nächstes Mal klappt es bestimmt."},
+      {"ja": "{惜|お}しい！もう{少|すこ}し！", "de": "Knapp! Nur noch ein bisschen!"},
+      {"ja": "ゆっくりでいいよ。", "de": "Langsam ist völlig in Ordnung."},
+      {"ja": "まちがえても{大丈夫|だいじょうぶ}。お{茶|ちゃ}を{入|い}れるね。", "de": "Fehler sind okay. Ich mache dir einen Tee."}
+    ]
+  },
+  "hinweis": {
+    "posen": ["think"],
+    "sprueche": [
+      {"ja": "うーん、どこに{書|か}いてあるかな？", "de": "Hmm, wo steht das wohl?"},
+      {"ja": "もう{一度|いちど}{読|よ}んでみよう。", "de": "Lass es uns noch einmal lesen."},
+      {"ja": "ヒントは{下|した}にあるよ。", "de": "Der Hinweis steht unten."}
+    ]
+  },
+  "serie": {
+    "posen": ["thumbs"],
+    "sprueche": [
+      {"ja": "{毎日|まいにち}{続|つづ}いてるね！", "de": "Du bleibst jeden Tag dran!"},
+      {"ja": "{続|つづ}けるのが{一番|いちばん}だよ。", "de": "Dranbleiben ist das Wichtigste."}
+    ]
+  },
+  "ruhetag": {
+    "posen": ["sip"],
+    "sprueche": [
+      {"ja": "{今日|きょう}はゆっくり{休|やす}んでね。", "de": "Ruh dich heute gut aus."},
+      {"ja": "{日曜日|にちようび}はお{休|やす}み。お{茶|ちゃ}でも{飲|の}もう。", "de": "Sonntag ist frei. Lass uns einfach Tee trinken."},
+      {"ja": "また{明日|あした}ね。", "de": "Bis morgen!"}
+    ]
+  },
+  "aufstieg": {
+    "posen": ["cheer"],
+    "sprueche": [
+      {"ja": "{新|あたら}しいお{茶|ちゃ}の{時間|じかん}だよ！", "de": "Zeit für einen neuen Tee – deine neue Stufe!"},
+      {"ja": "レベルアップ！おめでとう！", "de": "Eine Stufe höher! Glückwunsch!"}
+    ]
+  }
+}

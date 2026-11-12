@@ -1,0 +1,42 @@
+name: yomicha
+description: "Yomicha – kurze japanische Texte bis zur JLPT N2."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.3.2
+  http: ^1.6.0
+  shared_preferences: ^2.5.6
+  web: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/kuma/
+
+  fonts:
+    # Alle Schriften: SIL Open Font License, siehe assets/fonts/*-OFL.txt.
+    # Die japanischen Schriften sind mit tool/teekueche/schriften.py verkleinert.
+    - family: ZenOldMincho
+      fonts:
+        - asset: assets/fonts/ZenOldMincho-Yomicha.ttf
+    - family: KleeOne
+      fonts:
+        - asset: assets/fonts/KleeOne-Yomicha.ttf
+    - family: Fraunces
+      fonts:
+        - asset: assets/fonts/Fraunces.ttf
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito.ttf

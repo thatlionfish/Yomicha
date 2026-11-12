@@ -1,0 +1,28 @@
+{
+  "hinweis": "Eigene Ergänzungen zu den Kanji-Karten: deutsche Bedeutung, eigenes Schlüsselwort, Vorschlag für eine Merkgeschichte. Nie Heisigs Schlüsselwörter oder Geschichten eintragen – das Repository ist öffentlich.",
+  "kanji": {
+    "寒": {"de": "kalt"},
+    "冬": {"de": "Winter"},
+    "飲": {"de": "trinken"},
+    "茶": {"de": "Tee", "story": "Under a roof of grass, a person rests beside a tree with a cup of tea."},
+    "緑": {"de": "grün"},
+    "葉": {"de": "Blatt", "story": "Grass on top, a tree below – and in between the whole world of its leaves."},
+    "強": {"de": "stark"},
+    "火": {"de": "Feuer"},
+    "作": {"de": "machen, herstellen"},
+    "色": {"de": "Farbe"},
+    "香": {"de": "Duft", "keyword": "fragrance", "story":"Grain roasting in the sun gives off a warm fragrance."},
+    "苦": {"de": "bitter; Leid", "story": "Old grass tastes bitter."},
+    "子": {"de": "Kind"},
+    "少": {"de": "wenig"},
+    "夜": {"de": "Nacht"},
+    "眠": {"de": "schlafen"},
+    "最": {"de": "am meisten"},
+    "近": {"de": "nah"},
+    "人": {"de": "Mensch"},
+    "気": {"de": "Geist, Stimmung"},
+    "日": {"de": "Tag; Sonne"},
+    "季": {"de": "Jahreszeit"},
+    "節": {"de": "Abschnitt; Jahreszeit"}
+  }
+}

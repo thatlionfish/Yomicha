@@ -1,0 +1,254 @@
+{
+  "id": "2026-11-12-hojicha-2",
+  "date": "2026-11-12",
+  "topic": "tee",
+  "type": "essay",
+  "stufe": 2,
+  "titleDe": "Die Zeit für Hōjicha",
+  "title": [
+    {"t": "ほうじ茶", "r": "ほうじちゃ", "ruby": [["ほうじ", ""], ["茶", "ちゃ"]], "g": "Hōjicha (gerösteter Grüntee)"},
+    {"t": "の"},
+    {"t": "季節", "r": "きせつ", "j": 4, "g": "Jahreszeit"}
+  ],
+  "sentences": [
+    {
+      "audio": "s01.mp3",
+      "tokens": [
+        {"t": "寒く", "r": "さむく", "ruby": [["寒", "さむ"], ["く", ""]], "b": "寒い", "j": 5, "g": "kalt"},
+        {"t": "なって", "r": "なって", "b": "なる", "j": 5, "g": "werden"},
+        {"t": "きました", "r": "きました", "b": "くる", "j": 5, "g": "(allmählich) geworden", "gr": "g1"},
+        {"t": "ね", "g": "nicht wahr?"},
+        {"t": "。"}
+      ]
+    },
+    {
+      "audio": "s02.mp3",
+      "tokens": [
+        {"t": "冬", "r": "ふゆ", "j": 5, "g": "Winter"},
+        {"t": "に"},
+        {"t": "なる", "r": "なる", "j": 5, "g": "werden"},
+        {"t": "と", "g": "wenn, sobald", "gr": "g2"},
+        {"t": "、"},
+        {"t": "わたし", "j": 5, "g": "ich"},
+        {"t": "は"},
+        {"t": "よく", "j": 5, "g": "oft"},
+        {"t": "ほうじ茶", "r": "ほうじちゃ", "ruby": [["ほうじ", ""], ["茶", "ちゃ"]], "g": "Hōjicha (gerösteter Grüntee)"},
+        {"t": "を"},
+        {"t": "飲みます", "r": "のみます", "ruby": [["飲", "の"], ["みます", ""]], "b": "飲む", "j": 5, "g": "trinken"},
+        {"t": "。"}
+      ]
+    },
+    {
+      "audio": "s03.mp3",
+      "tokens": [
+        {"t": "ほうじ茶", "r": "ほうじちゃ", "ruby": [["ほうじ", ""], ["茶", "ちゃ"]], "g": "Hōjicha (gerösteter Grüntee)"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "緑茶", "r": "りょくちゃ", "g": "Grüntee"},
+        {"t": "の"},
+        {"t": "葉", "r": "は", "j": 4, "g": "Blatt"},
+        {"t": "を"},
+        {"t": "強い", "r": "つよい", "ruby": [["強", "つよ"], ["い", ""]], "j": 5, "g": "stark"},
+        {"t": "火", "r": "ひ", "j": 4, "g": "Feuer"},
+        {"t": "で", "g": "mit, über (Mittel)"},
+        {"t": "ロースト", "g": "rösten (engl. roast)"},
+        {"t": "して", "b": "する", "j": 5, "g": "machen, tun"},
+        {"t": "作る", "r": "つくる", "ruby": [["作", "つく"], ["る", ""]], "j": 5, "g": "herstellen, machen"},
+        {"t": "お茶", "r": "おちゃ", "ruby": [["お", ""], ["茶", "ちゃ"]], "j": 5, "g": "Tee"},
+        {"t": "です"},
+        {"t": "。"}
+      ]
+    },
+    {
+      "audio": "s04.mp3",
+      "tokens": [
+        {"t": "色", "r": "いろ", "j": 5, "g": "Farbe"},
+        {"t": "は"},
+        {"t": "茶色", "r": "ちゃいろ", "j": 5, "g": "braun"},
+        {"t": "で", "g": "ist … und"},
+        {"t": "、"},
+        {"t": "香ばしい", "r": "こうばしい", "ruby": [["香", "こう"], ["ばしい", ""]], "g": "angenehm geröstet duftend"},
+        {"t": "香り", "r": "かおり", "ruby": [["香", "かお"], ["り", ""]], "j": 3, "g": "Duft"},
+        {"t": "が"},
+        {"t": "します", "b": "する", "j": 5, "g": "(Duft) haben, riechen nach", "gr": "g3"},
+        {"t": "。"}
+      ]
+    },
+    {
+      "p": true,
+      "audio": "s05.mp3",
+      "tokens": [
+        {"t": "緑茶", "r": "りょくちゃ", "g": "Grüntee"},
+        {"t": "より", "j": 5, "g": "als (Vergleich)", "gr": "g4"},
+        {"t": "苦くない", "r": "にがくない", "ruby": [["苦", "にが"], ["くない", ""]], "b": "苦い", "j": 4, "g": "nicht bitter"},
+        {"t": "ので", "j": 4, "g": "weil, da", "gr": "g5"},
+        {"t": "、"},
+        {"t": "子ども", "r": "こども", "ruby": [["子", "こ"], ["ども", ""]], "g": "Kind"},
+        {"t": "でも", "j": 4, "g": "sogar, auch"},
+        {"t": "飲みやすい", "r": "のみやすい", "ruby": [["飲", "の"], ["みやすい", ""]], "b": "飲む", "j": 5, "g": "leicht zu trinken", "gr": "g6"},
+        {"t": "です"},
+        {"t": "。"}
+      ]
+    },
+    {
+      "audio": "s06.mp3",
+      "tokens": [
+        {"t": "それに", "j": 3, "g": "außerdem"},
+        {"t": "、"},
+        {"t": "カフェイン", "g": "Koffein"},
+        {"t": "が"},
+        {"t": "少ない", "r": "すくない", "ruby": [["少", "すく"], ["ない", ""]], "j": 5, "g": "wenig"},
+        {"t": "ので", "j": 4, "g": "weil, da", "gr": "g5"},
+        {"t": "、"},
+        {"t": "夜", "r": "よる", "j": 5, "g": "Abend, Nacht"},
+        {"t": "に"},
+        {"t": "飲んでも", "r": "のんでも", "ruby": [["飲", "の"], ["んでも", ""]], "b": "飲む", "j": 5, "g": "auch wenn man … trinkt", "gr": "g7"},
+        {"t": "よく", "j": 5, "g": "gut"},
+        {"t": "眠れます", "r": "ねむれます", "ruby": [["眠", "ねむ"], ["れます", ""]], "b": "眠る", "j": 4, "g": "schlafen können"},
+        {"t": "。"}
+      ]
+    },
+    {
+      "p": true,
+      "audio": "s07.mp3",
+      "tokens": [
+        {"t": "最近", "r": "さいきん", "j": 4, "g": "in letzter Zeit"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "ほうじ茶", "r": "ほうじちゃ", "ruby": [["ほうじ", ""], ["茶", "ちゃ"]], "g": "Hōjicha (gerösteter Grüntee)"},
+        {"t": "の"},
+        {"t": "ラテ", "g": "Latte (mit Milch)"},
+        {"t": "や", "j": 4, "g": "und (unter anderem)"},
+        {"t": "アイスクリーム", "j": 3, "g": "Speiseeis"},
+        {"t": "も"},
+        {"t": "人気", "r": "にんき", "j": 3, "g": "Beliebtheit; 人気がある = beliebt sein"},
+        {"t": "が"},
+        {"t": "あります", "b": "ある", "j": 5, "g": "es gibt; (hier) haben"},
+        {"t": "。"}
+      ]
+    },
+    {
+      "audio": "s08.mp3",
+      "tokens": [
+        {"t": "みなさん", "j": 5, "g": "alle (Anrede)"},
+        {"t": "も"},
+        {"t": "、"},
+        {"t": "寒い", "r": "さむい", "ruby": [["寒", "さむ"], ["い", ""]], "j": 5, "g": "kalt"},
+        {"t": "日", "r": "ひ", "j": 4, "g": "Tag"},
+        {"t": "に"},
+        {"t": "あたたかい", "j": 5, "g": "warm"},
+        {"t": "ほうじ茶", "r": "ほうじちゃ", "ruby": [["ほうじ", ""], ["茶", "ちゃ"]], "g": "Hōjicha (gerösteter Grüntee)"},
+        {"t": "を"},
+        {"t": "飲んで", "r": "のんで", "ruby": [["飲", "の"], ["んで", ""]], "b": "飲む", "j": 5, "g": "trinken"},
+        {"t": "みて", "b": "みる", "j": 5, "g": "(mal) versuchen", "gr": "g8"},
+        {"t": "ください", "j": 5, "g": "bitte"},
+        {"t": "。"}
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜てくる",
+      "j": 4,
+      "de": "Eine Veränderung, die sich allmählich bis jetzt entwickelt hat: „… ist … geworden“.",
+      "ex": "{外|そと}が{暗|くら}くなってきました。",
+      "exDe": "Draußen ist es dunkel geworden."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜と",
+      "j": 4,
+      "de": "„Wenn / immer wenn“: Auf A folgt ganz natürlich B.",
+      "ex": "{春|はる}になると、{花|はな}がさきます。",
+      "exDe": "Wenn es Frühling wird, blühen die Blumen."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜がする",
+      "j": 4,
+      "de": "Einen Duft, Geschmack oder ein Geräusch wahrnehmen: „es riecht nach …“, „es klingt nach …“.",
+      "ex": "いいにおいがします。",
+      "exDe": "Es riecht gut."
+    },
+    {
+      "id": "g4",
+      "pattern": "AよりB",
+      "j": 5,
+      "de": "Vergleich: „B ist …er als A“. より steht nach dem, womit verglichen wird.",
+      "ex": "{今日|きょう}は{昨日|きのう}より{寒|さむ}いです。",
+      "exDe": "Heute ist es kälter als gestern."
+    },
+    {
+      "id": "g5",
+      "pattern": "〜ので",
+      "j": 4,
+      "de": "„Weil, da“ – sachlicher und höflicher als から.",
+      "ex": "{雨|あめ}なので、{出|で}かけません。",
+      "exDe": "Weil es regnet, gehe ich nicht hinaus."
+    },
+    {
+      "id": "g6",
+      "pattern": "〜やすい",
+      "j": 4,
+      "de": "Verbstamm + やすい: „leicht zu …“. Das Gegenteil ist 〜にくい.",
+      "ex": "このペンは{書|か}きやすいです。",
+      "exDe": "Mit diesem Stift schreibt es sich leicht."
+    },
+    {
+      "id": "g7",
+      "pattern": "〜ても",
+      "j": 4,
+      "de": "て-Form + も: „auch wenn …“.",
+      "ex": "{雨|あめ}が{降|ふ}っても、{行|い}きます。",
+      "exDe": "Auch wenn es regnet, gehe ich hin."
+    },
+    {
+      "id": "g8",
+      "pattern": "〜てみる",
+      "j": 4,
+      "de": "て-Form + みる: „etwas (einmal) ausprobieren“.",
+      "ex": "{一度|いちど}{食|た}べてみてください。",
+      "exDe": "Probier es doch einmal."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "ほうじ{茶|ちゃ}について、{文章|ぶんしょう}の{内容|ないよう}と{合|あ}っているものはどれですか。",
+      "qDe": "Was passt zum Inhalt des Textes über Hōjicha?",
+      "options": ["{緑茶|りょくちゃ}より{苦|にが}い。", "{子|こ}どもは{飲|の}めない。", "カフェインが{少|すく}ない。", "{夏|なつ}だけ{飲|の}む。"],
+      "answer": 2,
+      "explain": "Satz 6: カフェインが少ない – „wenig Koffein“. Hōjicha ist laut Satz 5 nicht bitterer, sondern weniger bitter als Grüntee, und sogar für Kinder leicht zu trinken (子どもでも飲みやすい).",
+      "evidence": [5, 4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{夜|よる}にほうじ{茶|ちゃ}を{飲|の}んでもよく{眠|ねむ}れるのは、どうしてですか。",
+      "qDe": "Warum kann man gut schlafen, auch wenn man abends Hōjicha trinkt?",
+      "options": ["あたたかいから", "カフェインが{少|すく}ないから", "{香|かお}りがいいから", "{苦|にが}くないから"],
+      "answer": 1,
+      "explain": "Satz 6 nennt den Grund mit ので: カフェインが少ないので – „weil er wenig Koffein hat“. Die anderen Antworten stehen auch im Text, sind aber nicht der Grund fürs Schlafen – typisch JLPT.",
+      "evidence": [5]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{最近|さいきん}、{人気|にんき}があるものはどれですか。",
+      "qDe": "Was ist in letzter Zeit beliebt?",
+      "options": ["{緑茶|りょくちゃ}のアイスクリーム", "ほうじ{茶|ちゃ}のラテ", "{茶色|ちゃいろ}のケーキ", "あたたかい{緑茶|りょくちゃ}"],
+      "answer": 1,
+      "explain": "Satz 7: ほうじ茶のラテやアイスクリームも人気があります. Beliebt sind Latte und Eis aus Hōjicha, nicht aus Grüntee.",
+      "evidence": [6]
+    },
+    {
+      "kind": "sprache",
+      "q": "「香り」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 香り?",
+      "options": ["かおり", "こうり", "かり", "におり"],
+      "answer": 0,
+      "explain": "香り liest man かおり (Duft). Im Wort 香ばしい (こうばしい) hat dasselbe Kanji die Lesung こう.",
+      "evidence": [3]
+    }
+  ],
+  "sources": []
+}
