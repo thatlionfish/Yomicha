@@ -1,0 +1,261 @@
+{
+  "id": "2026-11-14-hitoritabi-2",
+  "date": "2026-11-14",
+  "topic": "jlpt",
+  "type": "essay",
+  "stufe": 2,
+  "titleDe": "Meine erste Reise allein",
+  "title": [
+    {"t": "はじめて", "g": "zum ersten Mal", "j": 5},
+    {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+    {"t": "一人", "r": "ひとり", "g": "allein; 一人で = allein", "j": 5},
+    {"t": "旅", "r": "たび", "g": "Reise", "j": 3}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "先月", "r": "せんげつ", "g": "letzten Monat", "j": 5},
+        {"t": "、"},
+        {"t": "はじめて", "g": "zum ersten Mal", "j": 5},
+        {"t": "一人", "r": "ひとり", "g": "allein; 一人で = allein", "j": 5},
+        {"t": "で"},
+        {"t": "旅行", "r": "りょこう", "g": "Reise; 旅行に行く = verreisen", "j": 5},
+        {"t": "に"},
+        {"t": "行きました", "r": "いきました", "ruby": [["行", "い"], ["きました", ""]], "b": "行く", "g": "gehen, fahren", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "行った", "r": "いった", "ruby": [["行", "い"], ["った", ""]], "b": "行く", "g": "gehen, fahren", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "山", "r": "やま", "g": "Berg, Gebirge", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "中", "r": "なか", "g": "Inneres; 山の中 = in den Bergen", "j": 5},
+        {"t": "に"},
+        {"t": "ある", "g": "liegen, sich befinden", "j": 5},
+        {"t": "小さな", "r": "ちいさな", "ruby": [["小", "ちい"], ["さな", ""]], "g": "klein", "j": 5},
+        {"t": "町", "r": "まち", "g": "Stadt, Kleinstadt", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "速い", "r": "はやい", "ruby": [["速", "はや"], ["い", ""]], "g": "schnell", "j": 5},
+        {"t": "電車", "r": "でんしゃ", "g": "Zug, Bahn", "j": 5},
+        {"t": "は"},
+        {"t": "高い", "r": "たかい", "ruby": [["高", "たか"], ["い", ""]], "g": "teuer", "j": 5},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "ふつう", "g": "normal, gewöhnlich", "j": 4},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "電車", "r": "でんしゃ", "g": "Zug, Bahn", "j": 5},
+        {"t": "で"},
+        {"t": "行く", "r": "いく", "ruby": [["行", "い"], ["く", ""]], "g": "gehen, fahren", "j": 5},
+        {"t": "こと", "g": "〜ことにする = sich entscheiden, … zu tun; 〜ことができる = … können", "j": 4, "gr": "g1"},
+        {"t": "に", "gr": "g1"},
+        {"t": "しました", "b": "する", "g": "machen, tun", "j": 5, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "電車", "r": "でんしゃ", "g": "Zug, Bahn", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "中", "r": "なか", "g": "Inneres; 山の中 = in den Bergen", "j": 5},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "窓", "r": "まど", "g": "Fenster", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "外", "r": "そと", "g": "draußen; 窓の外 = vor dem Fenster", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "山", "r": "やま", "g": "Berg, Gebirge", "j": 5},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "川", "r": "かわ", "g": "Fluss", "j": 5},
+        {"t": "を"},
+        {"t": "見", "r": "み", "b": "見る", "g": "sehen, anschauen", "j": 5, "gr": "g2"},
+        {"t": "ながら", "g": "während, beim …", "gr": "g2"},
+        {"t": "、"},
+        {"t": "お弁当", "r": "おべんとう", "ruby": [["お", ""], ["弁当", "べんとう"]], "g": "Lunchbox, Bentō", "j": 5},
+        {"t": "を"},
+        {"t": "食べました", "r": "たべました", "ruby": [["食", "た"], ["べました", ""]], "b": "食べる", "g": "essen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "町", "r": "まち", "g": "Stadt, Kleinstadt", "j": 5},
+        {"t": "に"},
+        {"t": "着いて", "r": "ついて", "ruby": [["着", "つ"], ["いて", ""]], "b": "着く", "g": "ankommen", "j": 5},
+        {"t": "から", "g": "〜てから = nachdem …"},
+        {"t": "、"},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "お寺", "r": "おてら", "ruby": [["お", ""], ["寺", "てら"]], "g": "(buddhistischer) Tempel"},
+        {"t": "と", "g": "und"},
+        {"t": "小さな", "r": "ちいさな", "ruby": [["小", "ちい"], ["さな", ""]], "g": "klein", "j": 5},
+        {"t": "博物館", "r": "はくぶつかん", "g": "Museum", "j": 3},
+        {"t": "を"},
+        {"t": "見ました", "r": "みました", "ruby": [["見", "み"], ["ました", ""]], "b": "見る", "g": "sehen, anschauen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "夜", "r": "よる", "g": "Abend, Nacht", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "駅", "r": "えき", "g": "Bahnhof", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "近く", "r": "ちかく", "ruby": [["近", "ちか"], ["く", ""]], "g": "Nähe; 駅の近く = in der Nähe des Bahnhofs", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "旅館", "r": "りょかん", "g": "Ryokan (japanisches Gasthaus)", "j": 4},
+        {"t": "に"},
+        {"t": "泊まりました", "r": "とまりました", "ruby": [["泊", "と"], ["まりました", ""]], "b": "泊まる", "g": "übernachten", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "一人", "r": "ひとり", "g": "allein; 一人で = allein", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen); 行ったのは = wohin ich fuhr, war …"},
+        {"t": "旅行", "r": "りょこう", "g": "Reise; 旅行に行く = verreisen", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "行きたい", "r": "いきたい", "ruby": [["行", "い"], ["きたい", ""]], "b": "行く", "g": "gehen, fahren", "j": 5},
+        {"t": "所", "r": "ところ", "g": "Ort, Stelle", "j": 5},
+        {"t": "に"},
+        {"t": "好きな", "r": "すきな", "ruby": [["好", "す"], ["きな", ""]], "b": "好き", "g": "Lieblings-, beliebig; 好きな時間 = wann man möchte", "j": 5},
+        {"t": "時間", "r": "じかん", "g": "Zeit, Uhrzeit", "j": 5},
+        {"t": "に"},
+        {"t": "行く", "r": "いく", "ruby": [["行", "い"], ["く", ""]], "g": "gehen, fahren", "j": 5},
+        {"t": "こと", "g": "〜ことにする = sich entscheiden, … zu tun; 〜ことができる = … können", "j": 4},
+        {"t": "が"},
+        {"t": "できる", "g": "können; 〜ことができる = … können", "j": 5},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "とても", "g": "sehr", "j": 5},
+        {"t": "自由", "r": "じゆう", "g": "frei", "j": 4},
+        {"t": "でし", "b": "です"},
+        {"t": "た"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "でも", "g": "aber", "j": 5},
+        {"t": "、"},
+        {"t": "旅館", "r": "りょかん", "g": "Ryokan (japanisches Gasthaus)", "j": 4},
+        {"t": "で"},
+        {"t": "晩ご飯", "r": "ばんごはん", "ruby": [["晩", "ばん"], ["ご", ""], ["飯", "はん"]], "g": "Abendessen", "j": 5},
+        {"t": "を"},
+        {"t": "食べた", "r": "たべた", "ruby": [["食", "た"], ["べた", ""]], "b": "食べる", "g": "essen", "j": 5},
+        {"t": "とき", "g": "als, wenn", "j": 5},
+        {"t": "、"},
+        {"t": "だれか", "g": "jemand", "j": 5},
+        {"t": "と", "g": "und"},
+        {"t": "話したい", "r": "はなしたい", "ruby": [["話", "はな"], ["したい", ""]], "b": "話す", "g": "sprechen, sich unterhalten", "j": 5},
+        {"t": "と", "g": "und"},
+        {"t": "思いました", "r": "おもいました", "ruby": [["思", "おも"], ["いました", ""]], "b": "思う", "g": "denken, finden", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "次", "r": "つぎ", "g": "nächstes Mal", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "友だち", "r": "ともだち", "ruby": [["友", "とも"], ["だち", ""]], "g": "Freund, Freundin", "j": 5},
+        {"t": "と", "g": "und"},
+        {"t": "いっしょ", "g": "zusammen; 〜といっしょに = zusammen mit …", "j": 5},
+        {"t": "に"},
+        {"t": "行く", "r": "いく", "ruby": [["行", "い"], ["く", ""]], "g": "gehen, fahren", "j": 5},
+        {"t": "つもり", "g": "Absicht; 〜つもりです = ich habe vor, …", "j": 4, "gr": "g3"},
+        {"t": "です", "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ことにする",
+      "j": 4,
+      "de": "Wörterbuchform + ことにする: „sich entscheiden, … zu tun“. In der Vergangenheit (ことにしました) erzählt man eine eigene Entscheidung.",
+      "ex": "{明日|あした}から{毎朝|まいあさ}{走|はし}ることにしました。",
+      "exDe": "Ich habe beschlossen, ab morgen jeden Morgen zu laufen."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜ながら",
+      "j": 4,
+      "de": "ます-Stamm + ながら: „während …“, „beim …“ – zwei Dinge geschehen gleichzeitig. Die Hauptsache steht am Ende.",
+      "ex": "{音楽|おんがく}を{聞|き}きながら{勉強|べんきょう}します。",
+      "exDe": "Ich lerne, während ich Musik höre."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜つもりです",
+      "j": 4,
+      "de": "Wörterbuchform + つもりです: „ich habe vor, …“, „ich plane, …“ – eine feste Absicht.",
+      "ex": "{夏休|なつやす}みに{国|くに}へ{帰|かえ}るつもりです。",
+      "exDe": "In den Sommerferien habe ich vor, nach Hause zu fahren."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "この人は、どうしてふつうの電車で行きましたか。",
+      "qDe": "Warum ist die Person mit dem normalen Zug gefahren?",
+      "options": ["{速|はや}い電車が高いから", "{速|はや}い電車がなかったから", "{窓|まど}の外を見たかったから", "友だちがふつうの電車で来たから"],
+      "answer": 0,
+      "explain": "Satz 3: 速い電車は高いので – der schnelle Zug ist teuer. Aus dem Fenster geschaut hat die Person zwar auch (Satz 4), aber das war nicht der Grund.",
+      "evidence": [2, 3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "この人は、電車の中で何をしましたか。",
+      "qDe": "Was hat die Person im Zug gemacht?",
+      "options": ["旅館に電話した", "外を見ながらお{弁当|べんとう}を食べた", "{博物館|はくぶつかん}の本を読んだ", "友だちと話した"],
+      "answer": 1,
+      "explain": "Satz 4: 窓の外の山や川を見ながら、お弁当を食べました.",
+      "evidence": [3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "旅館で{晩|ばん}ご{飯|はん}を食べたとき、この人はどう思いましたか。",
+      "qDe": "Was hat die Person beim Abendessen im Ryokan gedacht?",
+      "options": ["一人がいちばんいい", "もっと食べたい", "だれかと話したい", "早く家に帰りたい"],
+      "answer": 2,
+      "explain": "Satz 8: だれかと話したいと思いました. Deshalb will die Person das nächste Mal mit Freunden fahren (Satz 9).",
+      "evidence": [7, 8]
+    },
+    {
+      "kind": "sprache",
+      "q": "「泊まりました」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 泊まりました?",
+      "options": ["とまりました", "とどまりました", "はくまりました", "しまりました"],
+      "answer": 0,
+      "explain": "泊まる liest man とまる (übernachten), Satz 6. Ähnlich klingt 止まる (とまる, anhalten).",
+      "evidence": [5]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "3": "texte/2026/11/2026-11-14-hitoritabi-3"
+  }
+}

@@ -1,6 +1,26 @@
 {
   "texts": [
     {
+      "id": "2026-11-14-hitoritabi-3",
+      "folder": "texte/2026/11/2026-11-14-hitoritabi-3",
+      "date": "2026-11-14",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "一人旅で気づいたこと",
+      "titleDe": "Was ich auf einer Reise allein bemerkt habe",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-14-hitoritabi-2",
+      "folder": "texte/2026/11/2026-11-14-hitoritabi-2",
+      "date": "2026-11-14",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "はじめての一人旅",
+      "titleDe": "Meine erste Reise allein",
+      "minutes": 3
+    },
+    {
       "id": "2026-11-13-sekki-4",
       "folder": "texte/2026/11/2026-11-13-sekki-4",
       "date": "2026-11-13",

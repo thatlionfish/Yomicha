@@ -1,0 +1,311 @@
+{
+  "id": "2026-11-14-hitoritabi-3",
+  "date": "2026-11-14",
+  "topic": "jlpt",
+  "type": "essay",
+  "stufe": 3,
+  "titleDe": "Was ich auf einer Reise allein bemerkt habe",
+  "title": [
+    {"t": "一人", "r": "ひとり", "g": "allein; 一人で = allein", "j": 5},
+    {"t": "旅", "r": "たび", "g": "Reise; 旅に出る = auf Reisen gehen", "j": 3},
+    {"t": "で"},
+    {"t": "気づいた", "r": "きづいた", "ruby": [["気", "き"], ["づいた", ""]], "b": "気づく", "g": "bemerken, erkennen"},
+    {"t": "こと", "g": "Sache, das, was …", "j": 4}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "先月", "r": "せんげつ", "g": "letzten Monat", "j": 5},
+        {"t": "、"},
+        {"t": "初めて", "r": "はじめて", "ruby": [["初", "はじ"], ["めて", ""]], "g": "zum ersten Mal", "j": 5},
+        {"t": "一人", "r": "ひとり", "g": "allein; 一人で = allein", "j": 5},
+        {"t": "で"},
+        {"t": "旅", "r": "たび", "g": "Reise; 旅に出る = auf Reisen gehen", "j": 3},
+        {"t": "に"},
+        {"t": "出た", "r": "でた", "ruby": [["出", "で"], ["た", ""]], "b": "出る", "g": "aufbrechen; 旅に出る = auf Reisen gehen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "行った", "r": "いった", "ruby": [["行", "い"], ["った", ""]], "b": "行く", "g": "gehen, fahren", "j": 5},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "山", "r": "やま", "g": "Berg, Gebirge", "j": 5},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "中", "r": "なか", "g": "Inneres; 山の中 = in den Bergen", "j": 5},
+        {"t": "に"},
+        {"t": "ある", "g": "liegen, sich befinden", "j": 5},
+        {"t": "小さな", "r": "ちいさな", "ruby": [["小", "ちい"], ["さな", ""]], "g": "klein", "j": 5},
+        {"t": "町", "r": "まち", "g": "Stadt, Kleinstadt", "j": 5},
+        {"t": "だ"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "新幹線", "r": "しんかんせん", "g": "Shinkansen (Schnellzug)", "j": 2},
+        {"t": "を"},
+        {"t": "使えば", "r": "つかえば", "ruby": [["使", "つか"], ["えば", ""]], "b": "使う", "g": "benutzen", "j": 5, "gr": "g4"},
+        {"t": "早い", "r": "はやい", "ruby": [["早", "はや"], ["い", ""]], "g": "schnell, früh", "j": 5, "gr": "g4"},
+        {"t": "が", "g": "aber", "gr": "g4"},
+        {"t": "、"},
+        {"t": "急ぐ", "r": "いそぐ", "ruby": [["急", "いそ"], ["ぐ", ""]], "g": "sich beeilen", "j": 4},
+        {"t": "旅", "r": "たび", "g": "Reise; 旅に出る = auf Reisen gehen", "j": 3},
+        {"t": "で", "b": "だ"},
+        {"t": "は"},
+        {"t": "ない", "g": "nicht (Verneinung)", "j": 5},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "普通", "r": "ふつう", "g": "normal, gewöhnlich", "j": 4},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "電車", "r": "でんしゃ", "g": "Zug, Bahn", "j": 5},
+        {"t": "で"},
+        {"t": "ゆっくり", "g": "langsam, gemächlich"},
+        {"t": "行く", "r": "いく", "ruby": [["行", "い"], ["く", ""]], "g": "gehen, fahren", "j": 5},
+        {"t": "こと", "g": "Sache, das, was …", "j": 4},
+        {"t": "に"},
+        {"t": "した", "b": "する", "g": "machen, tun; 〜ことにする = sich entscheiden, … zu tun", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "窓", "r": "まど", "g": "Fenster", "j": 5},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "外", "r": "そと", "g": "draußen; 窓の外 = vor dem Fenster", "j": 5},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "景色", "r": "けしき", "g": "Landschaft, Aussicht", "j": 4},
+        {"t": "を"},
+        {"t": "見ている", "r": "みている", "ruby": [["見", "み"], ["ている", ""]], "b": "見る", "g": "sehen, anschauen", "j": 5},
+        {"t": "うち", "g": "〜うちに = während …", "j": 5, "gr": "g1"},
+        {"t": "に", "gr": "g1"},
+        {"t": "、"},
+        {"t": "ふだん", "g": "gewöhnlich, im Alltag", "j": 3},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "忙しさ", "r": "いそがしさ", "ruby": [["忙", "いそが"], ["しさ", ""]], "g": "Geschäftigkeit, Stress"},
+        {"t": "を"},
+        {"t": "忘れていた", "r": "わすれていた", "ruby": [["忘", "わす"], ["れていた", ""]], "b": "忘れる", "g": "vergessen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "町", "r": "まち", "g": "Stadt, Kleinstadt", "j": 5},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "寺", "r": "てら", "g": "(buddhistischer) Tempel", "j": 4},
+        {"t": "を"},
+        {"t": "見", "r": "み", "b": "見る", "g": "sehen, anschauen", "j": 5},
+        {"t": "たり"},
+        {"t": "、"},
+        {"t": "町", "r": "まち", "g": "Stadt, Kleinstadt", "j": 5},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "に"},
+        {"t": "道", "r": "みち", "g": "Weg", "j": 5},
+        {"t": "を"},
+        {"t": "聞い", "r": "きい", "ruby": [["聞", "き"], ["い", ""]], "b": "聞く", "g": "fragen", "j": 5},
+        {"t": "たり"},
+        {"t": "した", "b": "する", "g": "machen, tun; 〜ことにする = sich entscheiden, … zu tun", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "一人", "r": "ひとり", "g": "allein; 一人で = allein", "j": 5},
+        {"t": "だっ", "b": "だ"},
+        {"t": "た"},
+        {"t": "おかげ", "g": "〜おかげで = dank …", "j": 4, "gr": "g2"},
+        {"t": "で", "b": "だ", "gr": "g2"},
+        {"t": "、"},
+        {"t": "知らない", "r": "しらない", "ruby": [["知", "し"], ["らない", ""]], "b": "知る", "g": "kennen; 知らない人 = Fremde", "j": 5},
+        {"t": "人とも", "r": "ひととも", "ruby": [["人", "ひと"], ["とも", ""]], "g": "Mensch, Person"},
+        {"t": "自然に", "r": "しぜんに", "ruby": [["自然", "しぜん"], ["に", ""]], "b": "自然", "g": "natürlich; 自然に = ganz natürlich, ungezwungen", "j": 3},
+        {"t": "話す", "r": "はなす", "ruby": [["話", "はな"], ["す", ""]], "g": "sprechen, sich unterhalten", "j": 5},
+        {"t": "こと", "g": "Sache, das, was …", "j": 4},
+        {"t": "が", "g": "aber"},
+        {"t": "できた", "b": "できる", "g": "können; 〜ことができる = … können", "j": 5},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "だ"},
+        {"t": "と"},
+        {"t": "思う", "r": "おもう", "ruby": [["思", "おも"], ["う", ""]], "g": "denken, finden", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "一人", "r": "ひとり", "g": "allein; 一人で = allein", "j": 5},
+        {"t": "旅", "r": "たび", "g": "Reise; 旅に出る = auf Reisen gehen", "j": 3},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "良さ", "r": "よさ", "ruby": [["良", "よ"], ["さ", ""]], "g": "das Gute, Vorzug"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "すべて", "g": "alles", "j": 3},
+        {"t": "を"},
+        {"t": "自分", "r": "じぶん", "g": "selbst", "j": 5},
+        {"t": "で"},
+        {"t": "決められる", "r": "きめられる", "ruby": [["決", "き"], ["められる", ""]], "b": "決める", "g": "entscheiden, festlegen", "j": 4},
+        {"t": "こと", "g": "Sache, das, was …", "j": 4},
+        {"t": "だ"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "予定", "r": "よてい", "g": "Plan", "j": 4},
+        {"t": "を"},
+        {"t": "変えたく", "r": "かえたく", "ruby": [["変", "か"], ["えたく", ""]], "b": "変える", "g": "ändern", "j": 4},
+        {"t": "なって", "b": "なる", "g": "werden; 〜ようになる = es dahin kommen, dass …", "j": 5},
+        {"t": "も"},
+        {"t": "、"},
+        {"t": "だれ", "g": "wer; だれにも = niemandem (mit Verneinung)", "j": 5},
+        {"t": "に"},
+        {"t": "も"},
+        {"t": "相談", "r": "そうだん", "g": "Beratung; 相談する = sich beraten, um Rat fragen", "j": 4},
+        {"t": "する", "g": "machen, tun; 〜ことにする = sich entscheiden, … zu tun", "j": 5},
+        {"t": "必要", "r": "ひつよう", "g": "nötig; 必要がない = nicht nötig", "j": 4},
+        {"t": "が", "g": "aber"},
+        {"t": "ない", "g": "nicht (Verneinung)", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "しかし", "g": "jedoch, aber", "j": 5},
+        {"t": "、"},
+        {"t": "旅館", "r": "りょかん", "g": "Ryokan (japanisches Gasthaus)", "j": 4},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "夕食", "r": "ゆうしょく", "g": "Abendessen"},
+        {"t": "が", "g": "aber"},
+        {"t": "おいしかった", "b": "おいしい", "g": "lecker", "j": 5},
+        {"t": "とき", "g": "als, wenn", "j": 5},
+        {"t": "、"},
+        {"t": "この", "g": "dieser", "j": 5},
+        {"t": "味", "r": "あじ", "g": "Geschmack", "j": 4},
+        {"t": "を"},
+        {"t": "だれか", "g": "jemand", "j": 5},
+        {"t": "に"},
+        {"t": "伝えたい", "r": "つたえたい", "ruby": [["伝", "つた"], ["えたい", ""]], "b": "伝える", "g": "mitteilen, vermitteln", "j": 4},
+        {"t": "と"},
+        {"t": "強く", "r": "つよく", "ruby": [["強", "つよ"], ["く", ""]], "b": "強い", "g": "stark; 強く = stark, sehr", "j": 5},
+        {"t": "感じた", "r": "かんじた", "ruby": [["感", "かん"], ["じた", ""]], "b": "感ずる", "g": "fühlen, empfinden", "j": 2},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "旅", "r": "たび", "g": "Reise; 旅に出る = auf Reisen gehen", "j": 3},
+        {"t": "から", "g": "aus, von"},
+        {"t": "帰って", "r": "かえって", "ruby": [["帰", "かえ"], ["って", ""]], "b": "帰る", "g": "zurückkehren, heimkommen", "j": 5},
+        {"t": "、"},
+        {"t": "一人", "r": "ひとり", "g": "allein; 一人で = allein", "j": 5},
+        {"t": "の", "g": "〜のだ = erklärt einen Grund; 行ったのは = wohin ich fuhr, war …"},
+        {"t": "時間", "r": "じかん", "g": "Zeit", "j": 5},
+        {"t": "も"},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "と"},
+        {"t": "過ごす", "r": "すごす", "ruby": [["過", "す"], ["ごす", ""]], "g": "verbringen", "j": 3},
+        {"t": "時間", "r": "じかん", "g": "Zeit", "j": 5},
+        {"t": "も"},
+        {"t": "、"},
+        {"t": "どちら", "g": "welches (von beiden); どちらも = beides", "j": 5},
+        {"t": "も"},
+        {"t": "大切に", "r": "たいせつに", "ruby": [["大切", "たいせつ"], ["に", ""]], "b": "大切", "g": "wichtig, wertvoll; 大切にする = wertschätzen", "j": 5},
+        {"t": "するように", "b": "する", "g": "machen, tun; 〜ことにする = sich entscheiden, … zu tun", "j": 5, "gr": "g3"},
+        {"t": "なった", "b": "なる", "g": "werden; 〜ようになる = es dahin kommen, dass …", "j": 5, "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s10.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜うちに",
+      "j": 3,
+      "de": "〜ている + うちに: „während …“ – während etwas andauert, passiert unbemerkt etwas anderes.",
+      "ex": "{本|ほん}を{読|よ}んでいるうちに、{寝|ね}てしまった。",
+      "exDe": "Während ich das Buch las, bin ich eingeschlafen."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜おかげで",
+      "j": 3,
+      "de": "„dank …“ – nennt einen Grund für etwas Gutes. Nach Nomen mit の, nach Verben und Adjektiven direkt (一人だったおかげで).",
+      "ex": "{先生|せんせい}のおかげで、{試験|しけん}に{合格|ごうかく}できた。",
+      "exDe": "Dank meiner Lehrerin habe ich die Prüfung bestanden."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜ようになる",
+      "j": 3,
+      "de": "Wörterbuchform + ようになる: „es dahin kommen, dass …“ – eine Gewohnheit oder Fähigkeit ändert sich mit der Zeit.",
+      "ex": "{毎日|まいにち}{練習|れんしゅう}して、{泳|およ}げるようになった。",
+      "exDe": "Durch tägliches Üben kann ich jetzt schwimmen."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜ば〜が",
+      "j": 3,
+      "de": "„wenn …, dann zwar …, aber …“ – nennt eine Möglichkeit und schränkt sie gleich ein. が verbindet hier in der Schriftform wie „aber“.",
+      "ex": "タクシーに{乗|の}れば{早|はや}いが、お{金|かね}がかかる。",
+      "exDe": "Mit dem Taxi ginge es schnell, aber es kostet Geld."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "{筆者|ひっしゃ}が{普通|ふつう}の電車で行ったのはなぜか。",
+      "qDe": "Warum fuhr die Verfasserin bzw. der Verfasser mit dem normalen Zug?",
+      "options": ["{新幹線|しんかんせん}が高かったから", "急ぐ旅ではなかったから", "{新幹線|しんかんせん}が止まっていたから", "町の人にすすめられたから"],
+      "answer": 1,
+      "explain": "Satz 3: 急ぐ旅ではないので、普通の電車でゆっくり行くことにした. Vom Preis steht im Text nichts.",
+      "evidence": [2]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{筆者|ひっしゃ}は、知らない人と話せた理由を何だと考えているか。",
+      "qDe": "Was hält die Person für den Grund, dass sie mit Fremden sprechen konnte?",
+      "options": ["町の人が親切だったから", "道がわからなかったから", "一人で旅をしていたから", "小さな町だったから"],
+      "answer": 2,
+      "explain": "Satz 6: 一人だったおかげで、知らない人とも自然に話せた – der Grund ist, dass sie allein unterwegs war.",
+      "evidence": [5]
+    },
+    {
+      "kind": "inhalt",
+      "q": "旅から帰って、{筆者|ひっしゃ}はどう変わったか。",
+      "qDe": "Wie hat sich die Person nach der Reise verändert?",
+      "options": ["一人の時間だけを大切にするようになった", "いつも友だちと旅行するようになった", "一人の時間も人と過ごす時間も大切にするようになった", "予定をだれかに相談するようになった"],
+      "answer": 2,
+      "explain": "Satz 10: 一人の時間も人と過ごす時間も、どちらも大切にするようになった – beides. Satz 9 zeigt, warum: Sie wollte den Geschmack mit jemandem teilen.",
+      "evidence": [8, 9]
+    },
+    {
+      "kind": "sprache",
+      "q": "「景色」の{読|よ}み{方|かた}はどれか。",
+      "qDe": "Wie liest man 景色?",
+      "options": ["けいしょく", "けしき", "けいいろ", "かげしき"],
+      "answer": 1,
+      "explain": "景色 liest man けしき (Landschaft, Aussicht), Satz 4 – eine besondere Lesung: 景 sonst meist けい.",
+      "evidence": [3]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "2": "texte/2026/11/2026-11-14-hitoritabi-2"
+  }
+}
