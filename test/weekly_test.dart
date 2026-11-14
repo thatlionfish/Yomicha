@@ -75,7 +75,7 @@ void main() {
     await tester.pumpWidget(YomichaApp(repo: Repository(), progress: p, home: WeeklyScreen(weekStart: week, docs: _docs())));
     await tester.pumpAndSettle();
     for (var i = 0; i < 20; i++) {
-      if (find.text('Zur Startseite').evaluate().isNotEmpty) break;
+      if (find.textContaining('geschafft!').evaluate().isNotEmpty) break;
       await tester.tap(find.byType(InkWell).first);
       await tester.pump();
       final next = find.textContaining(RegExp('Nächste Frage|Auswertung'));
@@ -83,9 +83,19 @@ void main() {
       await tester.tap(next);
       await tester.pump();
     }
-    expect(find.text('Zur Startseite'), findsOneWidget);
+    // Feier: Ergebnis, Verbesserung, Üben, Ausblick.
+    expect(find.text('KW 46 geschafft!'), findsOneWidget);
     expect(find.textContaining(RegExp(r'\d+ von \d+ richtig')), findsOneWidget);
     expect(p.weeklyFor(week), isNotNull);
+    final list = find.byType(Scrollable).first;
+    await tester.scrollUntilVisible(find.text('So hast du dich verbessert'), 300, scrollable: list);
+    expect(find.textContaining('erste Woche mit Yomicha'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('Hier kannst du zulegen'), 300, scrollable: list);
+    await tester.scrollUntilVisible(find.text('Ausblick'), 300, scrollable: list);
+    await tester.scrollUntilVisible(find.textContaining('Nächster Wochentest: Samstag, 21.11.'), 300, scrollable: list);
+    await tester.scrollUntilVisible(find.text('Zur Startseite'), 300, scrollable: list);
+    expect(find.text('Zur Startseite'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 4)); // Teeblätter fertig
     expect(tester.takeException(), isNull);
   });
 }

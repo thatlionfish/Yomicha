@@ -7,9 +7,11 @@ import '../learn/calendar.dart';
 import '../learn/goal.dart';
 import '../learn/review.dart';
 import '../learn/weekly.dart';
+import '../learn/wochenbilanz.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/goal_chart.dart';
+import '../widgets/stat_tile.dart';
 
 /// Fortschritt (Spezifikation 9.4 und 13): Zielkurve bis zur N2 und Statistik.
 class ProgressScreen extends StatelessWidget {
@@ -34,6 +36,30 @@ class ProgressScreen extends StatelessWidget {
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
                 children: [
+                  // Woche für Woche (Wunsch vom 14.11.2026): kleine Schritte sichtbar machen.
+                  Text('Woche für Woche', style: serif(24, weight: 420)),
+                  const SizedBox(height: 2),
+                  Text(
+                    'Diese Woche im Vergleich zur Vorwoche. Tippe auf einen Balken, um eine Woche anzusehen.',
+                    style: sans(14, color: YoColors.inkSoft),
+                  ),
+                  const SizedBox(height: 10),
+                  StatTileGrid(
+                    weeks: lastWeeks(progress, today),
+                    kennzahlen: const [
+                      Kennzahl.correct,
+                      Kennzahl.speed,
+                      Kennzahl.looked,
+                      Kennzahl.test,
+                      Kennzahl.texts,
+                      Kennzahl.newWords,
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Text(aufstiegStand(progress), style: sans(14, height: 1.4)),
+                  const SizedBox(height: 26),
+                  Text('Der große Weg bis zur N2', style: serif(21)),
+                  const SizedBox(height: 4),
                   Text(planStatus(weeks), style: serif(28, weight: 420)),
                   const SizedBox(height: 4),
                   Text(
@@ -68,8 +94,8 @@ class ProgressScreen extends StatelessWidget {
                   _Table(rows: _stats(progress, now)),
                   const SizedBox(height: 14),
                   Text(
-                    'Bis die automatische Einstufung fertig ist, stellst du deine Stufe in den Einstellungen ein. '
-                    'Jeder Wechsel erscheint hier in der Kurve.',
+                    'Deine Stufe wechselt, wenn du einen Vorschlag nach den Texten annimmst oder sie in den '
+                    'Einstellungen änderst. Jeder Wechsel erscheint hier in der Kurve.',
                     style: sans(13.5, color: YoColors.inkSoft),
                   ),
                 ],

@@ -16,6 +16,7 @@ import 'package:yomicha/widgets/splash.dart';
 import 'package:yomicha/widgets/word_sheet.dart';
 import 'package:yomicha/widgets/figure.dart';
 import 'package:yomicha/widgets/speak_sheet.dart';
+import 'package:yomicha/widgets/stat_tile.dart';
 
 Future<Progress> _progress() async {
   SharedPreferences.setMockInitialValues({});
@@ -66,7 +67,18 @@ void main() {
   testWidgets('Fortschritt mit Zielkurve', (tester) async {
     final p = await _progress();
     await _pump(tester, p, const ProgressScreen());
+    // Zuerst Woche für Woche, darunter der große Weg.
+    expect(find.text('Woche für Woche'), findsOneWidget);
+    expect(find.text('Fragen richtig'), findsOneWidget);
+    expect(find.text('Nachgeschlagen'), findsOneWidget);
+    // Antippen des letzten Balkens zeigt die laufende Woche.
+    final bars = tester.getRect(find.descendant(of: find.byType(StatTile).first, matching: find.byType(CustomPaint)).last);
+    await tester.tapAt(bars.centerRight - const Offset(6, 0));
+    await tester.pump();
+    expect(find.textContaining(RegExp(r'^KW \d+: ')), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('Im Plan'), 300);
     expect(find.text('Im Plan'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('31.8.2027'), 300);
     expect(find.text('31.8.2027'), findsOneWidget);
     await tester.scrollUntilVisible(find.text('Lernstatistik'), 300);
     expect(find.text('Lernstatistik'), findsOneWidget);

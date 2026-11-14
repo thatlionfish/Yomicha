@@ -148,5 +148,18 @@
       {"ja": "{自信|じしん}を{持|も}ってね。", "de": "Sei selbstbewusst."},
       {"ja": "これからも{一緒|いっしょ}に{登|のぼ}ろうね。", "de": "Lass uns weiter zusammen hinaufsteigen."}
     ]
+  },
+  "woche": {
+    "posen": ["cheer", "tea"],
+    "sprueche": [
+      {"ja": "{今週|こんしゅう}もおつかれさま！", "de": "Gute Arbeit diese Woche!"},
+      {"ja": "{一週間|いっしゅうかん}、よくがんばったね。", "de": "Eine ganze Woche drangeblieben – toll gemacht."},
+      {"ja": "{今週|こんしゅう}の{分|ぶん}、ちゃんとできたね！", "de": "Diese Woche hast du geschafft!"},
+      {"ja": "お{茶|ちゃ}を{入|い}れて、お{祝|いわ}いしよう！", "de": "Ich mache Tee – lass uns feiern!"},
+      {"ja": "{一歩|いっぽ}ずつ、N2に{近|ちか}づいてるよ。", "de": "Schritt für Schritt kommst du der N2 näher."},
+      {"ja": "{来週|らいしゅう}も{一緒|いっしょ}に{読|よ}もうね。", "de": "Nächste Woche lesen wir wieder zusammen."},
+      {"ja": "{週末|しゅうまつ}はゆっくり{休|やす}んでね。", "de": "Ruh dich am Wochenende gut aus."},
+      {"ja": "がんばった{自分|じぶん}に、お{茶|ちゃ}を{一杯|いっぱい}。", "de": "Eine Tasse Tee für dich – du hast sie dir verdient."}
+    ]
   }
 }
