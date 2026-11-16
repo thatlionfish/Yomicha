@@ -1,0 +1,1234 @@
+{
+  "id": "2026-11-16-irekata-3",
+  "date": "2026-11-16",
+  "topic": "tee",
+  "type": "aushang",
+  "stufe": 3,
+  "titleDe": "Aushang: Einladung zum Kurs „Japanischen Tee richtig zubereiten“",
+  "title": [
+    {
+      "t": "日本茶",
+      "r": "にほんちゃ",
+      "g": "japanischer (grüner) Tee"
+    },
+    {
+      "t": "の"
+    },
+    {
+      "t": "入れ方",
+      "r": "いれかた",
+      "ruby": [
+        [
+          "入",
+          "い"
+        ],
+        [
+          "れ",
+          ""
+        ],
+        [
+          "方",
+          "かた"
+        ]
+      ],
+      "g": "Art der Zubereitung; 日本茶の入れ方 = wie man japanischen Tee zubereitet"
+    },
+    {
+      "t": "教室",
+      "r": "きょうしつ",
+      "g": "Kurs, Unterricht; Klassenzimmer",
+      "j": 5
+    },
+    {
+      "t": "の"
+    },
+    {
+      "t": "ご案内",
+      "r": "ごあんない",
+      "ruby": [
+        [
+          "ご",
+          ""
+        ],
+        [
+          "案内",
+          "あんない"
+        ]
+      ],
+      "g": "Einladung, Information"
+    }
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {
+          "t": "この",
+          "g": "dieser",
+          "j": 5
+        },
+        {
+          "t": "店",
+          "r": "みせ",
+          "g": "Geschäft, Laden",
+          "j": 5
+        },
+        {
+          "t": "で"
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "来週",
+          "r": "らいしゅう",
+          "g": "nächste Woche",
+          "j": 5
+        },
+        {
+          "t": "の"
+        },
+        {
+          "t": "土曜日",
+          "r": "どようび",
+          "g": "Samstag",
+          "j": 5
+        },
+        {
+          "t": "の"
+        },
+        {
+          "t": "午後",
+          "r": "ごご",
+          "g": "Nachmittag",
+          "j": 5
+        },
+        {
+          "t": "三時",
+          "r": "さんじ",
+          "g": "drei Uhr"
+        },
+        {
+          "t": "から"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "初心者向け",
+          "r": "しょしんしゃむけ",
+          "ruby": [
+            [
+              "初心者向",
+              "しょしんしゃむ"
+            ],
+            [
+              "け",
+              ""
+            ]
+          ],
+          "g": "für Anfänger",
+          "gr": "g1"
+        },
+        {
+          "t": "の"
+        },
+        {
+          "t": "「"
+        },
+        {
+          "t": "日本茶",
+          "r": "にほんちゃ",
+          "g": "japanischer (grüner) Tee"
+        },
+        {
+          "t": "の"
+        },
+        {
+          "t": "入れ方",
+          "r": "いれかた",
+          "ruby": [
+            [
+              "入",
+              "い"
+            ],
+            [
+              "れ",
+              ""
+            ],
+            [
+              "方",
+              "かた"
+            ]
+          ],
+          "g": "Art der Zubereitung; 日本茶の入れ方 = wie man japanischen Tee zubereitet",
+          "say": "いれかた"
+        },
+        {
+          "t": "教室",
+          "r": "きょうしつ",
+          "g": "Kurs, Unterricht; Klassenzimmer",
+          "j": 5
+        },
+        {
+          "t": "」"
+        },
+        {
+          "t": "を"
+        },
+        {
+          "t": "開きます",
+          "r": "ひらきます",
+          "ruby": [
+            [
+              "開",
+              "ひら"
+            ],
+            [
+              "きます",
+              ""
+            ]
+          ],
+          "b": "開く",
+          "g": "veranstalten, abhalten; öffnen",
+          "j": 5
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {
+          "t": "日本茶",
+          "r": "にほんちゃ",
+          "g": "japanischer (grüner) Tee"
+        },
+        {
+          "t": "の"
+        },
+        {
+          "t": "味",
+          "r": "あじ",
+          "g": "Geschmack",
+          "j": 4
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "お湯",
+          "r": "おゆ",
+          "ruby": [
+            [
+              "お",
+              ""
+            ],
+            [
+              "湯",
+              "ゆ"
+            ]
+          ],
+          "g": "heißes Wasser"
+        },
+        {
+          "t": "の"
+        },
+        {
+          "t": "温度",
+          "r": "おんど",
+          "g": "Temperatur",
+          "j": 3
+        },
+        {
+          "t": "に",
+          "gr": "g2"
+        },
+        {
+          "t": "よって",
+          "b": "よる",
+          "g": "〜によって = je nach …",
+          "j": 5,
+          "gr": "g2"
+        },
+        {
+          "t": "大きく",
+          "r": "おおきく",
+          "ruby": [
+            [
+              "大",
+              "おお"
+            ],
+            [
+              "きく",
+              ""
+            ]
+          ],
+          "b": "大きい",
+          "g": "stark, deutlich",
+          "j": 5
+        },
+        {
+          "t": "変わります",
+          "r": "かわります",
+          "ruby": [
+            [
+              "変",
+              "か"
+            ],
+            [
+              "わります",
+              ""
+            ]
+          ],
+          "b": "変わる",
+          "g": "sich ändern",
+          "j": 4
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {
+          "t": "熱い",
+          "r": "あつい",
+          "ruby": [
+            [
+              "熱",
+              "あつ"
+            ],
+            [
+              "い",
+              ""
+            ]
+          ],
+          "g": "heiß",
+          "j": 5
+        },
+        {
+          "t": "お湯",
+          "r": "おゆ",
+          "ruby": [
+            [
+              "お",
+              ""
+            ],
+            [
+              "湯",
+              "ゆ"
+            ]
+          ],
+          "g": "heißes Wasser"
+        },
+        {
+          "t": "で"
+        },
+        {
+          "t": "入れる",
+          "r": "いれる",
+          "ruby": [
+            [
+              "入",
+              "い"
+            ],
+            [
+              "れる",
+              ""
+            ]
+          ],
+          "g": "(Tee) zubereiten, aufgießen",
+          "j": 5
+        },
+        {
+          "t": "と"
+        },
+        {
+          "t": "苦く",
+          "r": "にがく",
+          "ruby": [
+            [
+              "苦",
+              "にが"
+            ],
+            [
+              "く",
+              ""
+            ]
+          ],
+          "b": "苦い",
+          "g": "bitter",
+          "j": 4
+        },
+        {
+          "t": "なります",
+          "b": "なる",
+          "g": "werden",
+          "j": 5
+        },
+        {
+          "t": "が",
+          "g": "aber"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "少し",
+          "r": "すこし",
+          "ruby": [
+            [
+              "少",
+              "すこ"
+            ],
+            [
+              "し",
+              ""
+            ]
+          ],
+          "g": "ein wenig",
+          "j": 5
+        },
+        {
+          "t": "冷ました",
+          "r": "さました",
+          "ruby": [
+            [
+              "冷",
+              "さ"
+            ],
+            [
+              "ました",
+              ""
+            ]
+          ],
+          "b": "冷ます",
+          "g": "abkühlen lassen",
+          "j": 3
+        },
+        {
+          "t": "お湯",
+          "r": "おゆ",
+          "ruby": [
+            [
+              "お",
+              ""
+            ],
+            [
+              "湯",
+              "ゆ"
+            ]
+          ],
+          "g": "heißes Wasser"
+        },
+        {
+          "t": "を"
+        },
+        {
+          "t": "使えば",
+          "r": "つかえば",
+          "ruby": [
+            [
+              "使",
+              "つか"
+            ],
+            [
+              "えば",
+              ""
+            ]
+          ],
+          "b": "使う",
+          "g": "benutzen",
+          "j": 5
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "甘さ",
+          "r": "あまさ",
+          "ruby": [
+            [
+              "甘",
+              "あま"
+            ],
+            [
+              "さ",
+              ""
+            ]
+          ],
+          "g": "Süße"
+        },
+        {
+          "t": "を"
+        },
+        {
+          "t": "感じる",
+          "r": "かんじる",
+          "ruby": [
+            [
+              "感",
+              "かん"
+            ],
+            [
+              "じる",
+              ""
+            ]
+          ],
+          "g": "spüren, wahrnehmen",
+          "j": 3
+        },
+        {
+          "t": "こと",
+          "g": "〜ことができる = … können; 〜こともできる = auch … können",
+          "j": 4
+        },
+        {
+          "t": "が",
+          "g": "aber"
+        },
+        {
+          "t": "できます",
+          "b": "できる",
+          "g": "können",
+          "j": 5
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {
+          "t": "教室",
+          "r": "きょうしつ",
+          "g": "Kurs, Unterricht; Klassenzimmer",
+          "j": 5
+        },
+        {
+          "t": "で"
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "温度",
+          "r": "おんど",
+          "g": "Temperatur",
+          "j": 3
+        },
+        {
+          "t": "だけ",
+          "g": "〜だけでなく = nicht nur …",
+          "gr": "g3"
+        },
+        {
+          "t": "で",
+          "b": "だ",
+          "gr": "g3"
+        },
+        {
+          "t": "なく",
+          "b": "ない",
+          "g": "nicht; 〜だけでなく = nicht nur …",
+          "j": 5,
+          "gr": "g3"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "待つ",
+          "r": "まつ",
+          "ruby": [
+            [
+              "待",
+              "ま"
+            ],
+            [
+              "つ",
+              ""
+            ]
+          ],
+          "g": "warten; 待つ時間 = Ziehzeit",
+          "j": 5
+        },
+        {
+          "t": "時間",
+          "r": "じかん",
+          "g": "Zeit",
+          "j": 5
+        },
+        {
+          "t": "や"
+        },
+        {
+          "t": "注ぎ方",
+          "r": "そそぎかた",
+          "ruby": [
+            [
+              "注",
+              "そそ"
+            ],
+            [
+              "ぎ",
+              ""
+            ],
+            [
+              "方",
+              "かた"
+            ]
+          ],
+          "g": "Art des Eingießens"
+        },
+        {
+          "t": "に"
+        },
+        {
+          "t": "ついて",
+          "b": "つく",
+          "g": "〜について = über …",
+          "j": 5
+        },
+        {
+          "t": "も"
+        },
+        {
+          "t": "店員",
+          "r": "てんいん",
+          "g": "Verkäuferin, Verkäufer",
+          "j": 4
+        },
+        {
+          "t": "が",
+          "g": "aber"
+        },
+        {
+          "t": "説明",
+          "r": "せつめい",
+          "g": "Erklärung; 説明する = erklären",
+          "j": 4
+        },
+        {
+          "t": "します",
+          "b": "する",
+          "g": "machen, tun",
+          "j": 5
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {
+          "t": "参加者",
+          "r": "さんかしゃ",
+          "g": "Teilnehmerin, Teilnehmer"
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "三",
+          "r": "さん",
+          "g": "drei",
+          "j": 5
+        },
+        {
+          "t": "種類",
+          "r": "しゅるい",
+          "g": "Sorte, Art",
+          "j": 3
+        },
+        {
+          "t": "の"
+        },
+        {
+          "t": "お茶",
+          "r": "おちゃ",
+          "ruby": [
+            [
+              "お",
+              ""
+            ],
+            [
+              "茶",
+              "ちゃ"
+            ]
+          ],
+          "g": "(grüner) Tee",
+          "j": 5
+        },
+        {
+          "t": "を"
+        },
+        {
+          "t": "自分",
+          "r": "じぶん",
+          "g": "selbst; 自分で = selbst, eigenhändig",
+          "j": 5
+        },
+        {
+          "t": "で"
+        },
+        {
+          "t": "入れて",
+          "r": "いれて",
+          "ruby": [
+            [
+              "入",
+              "い"
+            ],
+            [
+              "れて",
+              ""
+            ]
+          ],
+          "b": "入れる",
+          "g": "(Tee) zubereiten, aufgießen",
+          "j": 5
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "味",
+          "r": "あじ",
+          "g": "Geschmack",
+          "j": 4
+        },
+        {
+          "t": "を"
+        },
+        {
+          "t": "比べます",
+          "r": "くらべます",
+          "ruby": [
+            [
+              "比",
+              "くら"
+            ],
+            [
+              "べます",
+              ""
+            ]
+          ],
+          "b": "比べる",
+          "g": "vergleichen",
+          "j": 4
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {
+          "t": "道具",
+          "r": "どうぐ",
+          "g": "Gerät, Utensilien",
+          "j": 4
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "店",
+          "r": "みせ",
+          "g": "Geschäft, Laden",
+          "j": 5
+        },
+        {
+          "t": "で"
+        },
+        {
+          "t": "用意",
+          "r": "ようい",
+          "g": "Vorbereitung; 用意する = bereitstellen",
+          "j": 4
+        },
+        {
+          "t": "する",
+          "g": "machen, tun",
+          "j": 5
+        },
+        {
+          "t": "ため",
+          "g": "〜ため = weil, da (Schriftform)",
+          "j": 4
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "何",
+          "r": "なに",
+          "g": "was; 何も…ない = nichts",
+          "j": 5
+        },
+        {
+          "t": "も"
+        },
+        {
+          "t": "持って",
+          "r": "もって",
+          "ruby": [
+            [
+              "持",
+              "も"
+            ],
+            [
+              "って",
+              ""
+            ]
+          ],
+          "b": "持つ",
+          "g": "halten, tragen; 持ってくる = mitbringen",
+          "j": 5
+        },
+        {
+          "t": "くる",
+          "g": "kommen; 持ってくる = mitbringen",
+          "j": 5
+        },
+        {
+          "t": "必要",
+          "r": "ひつよう",
+          "g": "Notwendigkeit; 必要はない = nicht nötig",
+          "j": 4
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "ありません",
+          "b": "ある",
+          "g": "da sein, es gibt",
+          "j": 5
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {
+          "t": "料金",
+          "r": "りょうきん",
+          "g": "Gebühr, Preis",
+          "j": 3
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "五百円",
+          "r": "ごひゃくえん",
+          "g": "500 Yen"
+        },
+        {
+          "t": "で"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "お菓子",
+          "r": "おかし",
+          "ruby": [
+            [
+              "お",
+              ""
+            ],
+            [
+              "菓子",
+              "かし"
+            ]
+          ],
+          "g": "Süßigkeit, Gebäck",
+          "j": 5
+        },
+        {
+          "t": "が",
+          "g": "aber"
+        },
+        {
+          "t": "付きます",
+          "r": "つきます",
+          "ruby": [
+            [
+              "付",
+              "つ"
+            ],
+            [
+              "きます",
+              ""
+            ]
+          ],
+          "b": "付く",
+          "g": "dabei sein, inbegriffen sein",
+          "j": 3
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {
+          "t": "定員",
+          "r": "ていいん",
+          "g": "Höchstzahl der Teilnehmenden, Platzzahl",
+          "j": 2
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "十名",
+          "r": "じゅうめい",
+          "g": "zehn Personen (höflich)"
+        },
+        {
+          "t": "です"
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {
+          "t": "参加",
+          "r": "さんか",
+          "g": "Teilnahme",
+          "j": 3
+        },
+        {
+          "t": "を"
+        },
+        {
+          "t": "希望",
+          "r": "きぼう",
+          "g": "Wunsch; 希望する = wünschen",
+          "j": 3
+        },
+        {
+          "t": "する",
+          "g": "machen, tun",
+          "j": 5
+        },
+        {
+          "t": "方",
+          "r": "かた",
+          "g": "Person (höflich); 希望する方 = wer … wünscht",
+          "j": 5
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "金曜日",
+          "r": "きんようび",
+          "g": "Freitag",
+          "j": 5
+        },
+        {
+          "t": "まで"
+        },
+        {
+          "t": "に"
+        },
+        {
+          "t": "店員",
+          "r": "てんいん",
+          "g": "Verkäuferin, Verkäufer",
+          "j": 4
+        },
+        {
+          "t": "に"
+        },
+        {
+          "t": "申し込んで",
+          "r": "もうしこんで",
+          "ruby": [
+            [
+              "申",
+              "もう"
+            ],
+            [
+              "し",
+              ""
+            ],
+            [
+              "込",
+              "こ"
+            ],
+            [
+              "んで",
+              ""
+            ]
+          ],
+          "b": "申し込む",
+          "g": "sich anmelden",
+          "j": 3
+        },
+        {
+          "t": "ください",
+          "b": "くださる",
+          "g": "〜てください = bitte …",
+          "j": 4
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {
+          "t": "当日",
+          "r": "とうじつ",
+          "g": "der Tag selbst, an dem Tag",
+          "j": 2
+        },
+        {
+          "t": "は"
+        },
+        {
+          "t": "、"
+        },
+        {
+          "t": "教室",
+          "r": "きょうしつ",
+          "g": "Kurs, Unterricht; Klassenzimmer",
+          "j": 5
+        },
+        {
+          "t": "で"
+        },
+        {
+          "t": "使った",
+          "r": "つかった",
+          "ruby": [
+            [
+              "使",
+              "つか"
+            ],
+            [
+              "った",
+              ""
+            ]
+          ],
+          "b": "使う",
+          "g": "benutzen",
+          "j": 5
+        },
+        {
+          "t": "お茶",
+          "r": "おちゃ",
+          "ruby": [
+            [
+              "お",
+              ""
+            ],
+            [
+              "茶",
+              "ちゃ"
+            ]
+          ],
+          "g": "(grüner) Tee",
+          "j": 5
+        },
+        {
+          "t": "を"
+        },
+        {
+          "t": "割引",
+          "r": "わりびき",
+          "g": "Rabatt, Ermäßigung",
+          "j": 2
+        },
+        {
+          "t": "の"
+        },
+        {
+          "t": "値段",
+          "r": "ねだん",
+          "g": "Preis",
+          "j": 4
+        },
+        {
+          "t": "で"
+        },
+        {
+          "t": "買う",
+          "r": "かう",
+          "ruby": [
+            [
+              "買",
+              "か"
+            ],
+            [
+              "う",
+              ""
+            ]
+          ],
+          "g": "kaufen",
+          "j": 5
+        },
+        {
+          "t": "こと",
+          "g": "〜ことができる = … können; 〜こともできる = auch … können",
+          "j": 4
+        },
+        {
+          "t": "も"
+        },
+        {
+          "t": "できます",
+          "b": "できる",
+          "g": "können",
+          "j": 5
+        },
+        {
+          "t": "。"
+        }
+      ],
+      "audio": "s10.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜向け",
+      "j": 3,
+      "de": "Nomen + 向け（むけ）: „für … gedacht“ – nennt die Zielgruppe. 初心者向けの教室 = ein Kurs für Anfänger.",
+      "ex": "これは{子|こ}ども{向|む}けの{辞書|じしょ}です。",
+      "exDe": "Das ist ein Wörterbuch für Kinder."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜によって",
+      "j": 3,
+      "de": "Nomen + によって: „je nach …“ – das Ergebnis ist verschieden, wenn sich das Genannte ändert. Oft mit 変わる oder 違う.",
+      "ex": "{国|くに}によって、{食事|しょくじ}の{習慣|しゅうかん}は{違|ちが}います。",
+      "exDe": "Je nach Land sind die Essgewohnheiten verschieden."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜だけでなく〜も",
+      "j": 3,
+      "de": "„nicht nur …, sondern auch …“ – fügt dem Ersten etwas hinzu. Im zweiten Teil steht meist も.",
+      "ex": "この{店|みせ}は、{安|やす}いだけでなく{味|あじ}もいいです。",
+      "exDe": "Dieses Lokal ist nicht nur günstig, es schmeckt auch gut."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "日本茶を熱いお{湯|ゆ}で入れると、どうなりますか。",
+      "qDe": "Was passiert, wenn man japanischen Tee mit heißem Wasser zubereitet?",
+      "options": [
+        "{甘|あま}さを感じることができます",
+        "苦くなります",
+        "味は変わりません",
+        "{温度|おんど}がすぐに下がります"
+      ],
+      "answer": 1,
+      "explain": "Satz 3: 熱いお湯で入れると苦くなります. Die Süße spürt man erst mit etwas abgekühltem Wasser (少し冷ましたお湯).",
+      "evidence": [
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "この教室で店員が説明しないことはどれですか。",
+      "qDe": "Was erklärt das Personal in diesem Kurs nicht?",
+      "options": [
+        "お{湯|ゆ}の{温度|おんど}",
+        "待つ時間",
+        "お茶の注ぎ方",
+        "お茶の育て方"
+      ],
+      "answer": 3,
+      "explain": "Satz 4 nennt Temperatur, Ziehzeit (待つ時間) und das Eingießen (注ぎ方). Vom Anbau des Tees steht nichts im Text.",
+      "evidence": [
+        3
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "教室に参加したい人は、どうしなければなりませんか。",
+      "qDe": "Was muss man tun, wenn man am Kurs teilnehmen möchte?",
+      "options": [
+        "道具を用意して持っていきます",
+        "金曜日までに店員に申し込みます",
+        "当日、店でお茶を買います",
+        "土曜日までに参加費を送ります"
+      ],
+      "answer": 1,
+      "explain": "Satz 9: 金曜日までに店員に申し込んでください. Utensilien stellt das Geschäft (Satz 6), und Tee zu kaufen ist nur ein Angebot (Satz 10).",
+      "evidence": [
+        5,
+        8
+      ]
+    },
+    {
+      "kind": "sprache",
+      "q": "「{温度|おんど}によって大きく変わります」の「によって」と同じ使い方はどれですか。",
+      "qDe": "Welcher Satz verwendet によって so wie in „温度によって大きく変わります“?",
+      "options": [
+        "大雨によって、電車が止まりました。",
+        "この絵は有名な人によってかかれました。",
+        "{季節|きせつ}によって、店に{並|なら}ぶお茶は違います。",
+        "インターネットによって、世界のニュースを知ることができます。"
+      ],
+      "answer": 2,
+      "explain": "In Satz 2 heißt によって „je nach“ – wie bei 季節によって (je nach Jahreszeit). In den anderen Sätzen nennt es die Ursache (Starkregen), den Handelnden im Passiv oder das Mittel.",
+      "evidence": [
+        1
+      ]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "2": "texte/2026/11/2026-11-16-irekata-2"
+  }
+}

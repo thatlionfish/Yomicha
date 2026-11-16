@@ -1,6 +1,26 @@
 {
   "texts": [
     {
+      "id": "2026-11-16-irekata-3",
+      "folder": "texte/2026/11/2026-11-16-irekata-3",
+      "date": "2026-11-16",
+      "topic": "tee",
+      "stufe": 3,
+      "title": "日本茶の入れ方教室のご案内",
+      "titleDe": "Aushang: Einladung zum Kurs „Japanischen Tee richtig zubereiten“",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-16-irekata-2",
+      "folder": "texte/2026/11/2026-11-16-irekata-2",
+      "date": "2026-11-16",
+      "topic": "tee",
+      "stufe": 2,
+      "title": "お茶の入れ方教室のお知らせ",
+      "titleDe": "Aushang: Kurs „Tee richtig zubereiten“",
+      "minutes": 3
+    },
+    {
       "id": "2026-11-14-hitoritabi-3",
       "folder": "texte/2026/11/2026-11-14-hitoritabi-3",
       "date": "2026-11-14",
