@@ -1,0 +1,278 @@
+{
+  "id": "2026-11-18-arte-2",
+  "date": "2026-11-18",
+  "topic": "welt",
+  "type": "nachricht",
+  "stufe": 2,
+  "titleDe": "Ein Museum mit Licht, Klang und Duft",
+  "title": [
+    {"t": "光", "r": "ひかり", "g": "Licht", "j": 4},
+    {"t": "と"},
+    {"t": "音", "r": "おと", "g": "Klang, Geräusch", "j": 4},
+    {"t": "と"},
+    {"t": "におい", "g": "Geruch, Duft", "j": 4},
+    {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen)"},
+    {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "十一月", "r": "じゅういちがつ", "g": "November"},
+        {"t": "十八日", "r": "じゅうはちにち", "g": "der 18. (Tag)"},
+        {"t": "、"},
+        {"t": "愛知県知多市", "r": "あいちけんちたし", "g": "Chita in der Präfektur Aichi"},
+        {"t": "に"},
+        {"t": "新しい", "r": "あたらしい", "ruby": [["新", "あたら"], ["しい", ""]], "g": "neu", "j": 5},
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "が"},
+        {"t": "できました", "b": "できる", "g": "entstehen, eröffnet werden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "「"},
+        {"t": "アルテ", "g": "Arte (Teil des Namens „Arte Museum“)"},
+        {"t": "ミュージアム", "g": "Museum (englisches Lehnwort)"},
+        {"t": "名古屋", "r": "なごや", "g": "Nagoya (Großstadt in Mitteljapan)"},
+        {"t": "」"},
+        {"t": "と", "gr": "g4"},
+        {"t": "いう", "g": "sagen; 〜という = namens", "j": 5, "gr": "g4"},
+        {"t": "名前", "r": "なまえ", "g": "Name", "j": 5},
+        {"t": "で", "b": "だ"},
+        {"t": "、"},
+        {"t": "もと", "g": "Ursprung; もとは = ursprünglich", "j": 3},
+        {"t": "は"},
+        {"t": "韓国", "r": "かんこく", "g": "Südkorea", "j": 1},
+        {"t": "で"},
+        {"t": "生まれた", "r": "うまれた", "ruby": [["生", "う"], ["まれた", ""]], "b": "生まれる", "g": "geboren werden, entstehen", "j": 5},
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "に"},
+        {"t": "できた", "b": "できる", "g": "entstehen, eröffnet werden", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen)"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "これ", "g": "dies", "j": 5},
+        {"t": "が"},
+        {"t": "初めて", "r": "はじめて", "ruby": [["初", "はじ"], ["めて", ""]], "g": "zum ersten Mal", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "かべ", "g": "Wand", "j": 4},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "ゆか", "g": "Fußboden", "j": 3},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "大きな", "r": "おおきな", "ruby": [["大", "おお"], ["きな", ""]], "g": "groß", "j": 5},
+        {"t": "絵", "r": "え", "g": "Bild", "j": 5},
+        {"t": "が"},
+        {"t": "動いて", "r": "うごいて", "ruby": [["動", "うご"], ["いて", ""]], "b": "動く", "g": "sich bewegen", "j": 4},
+        {"t": "見えます", "r": "みえます", "ruby": [["見", "み"], ["えます", ""]], "b": "見える", "g": "zu sehen sein; 動いて見える = sieht aus, als bewege es sich", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "音楽", "r": "おんがく", "g": "Musik", "j": 5},
+        {"t": "も"},
+        {"t": "聞こえて", "r": "きこえて", "ruby": [["聞", "き"], ["こえて", ""]], "b": "聞こえる", "g": "zu hören sein", "j": 4},
+        {"t": "、"},
+        {"t": "花", "r": "はな", "g": "Blume", "j": 5},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "海", "r": "うみ", "g": "Meer", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen)"},
+        {"t": "におい", "g": "Geruch, Duft", "j": 4},
+        {"t": "も"},
+        {"t": "します", "b": "する", "g": "machen; においがする = es riecht nach …", "j": 5, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "部屋", "r": "へや", "g": "Zimmer, Raum", "j": 5},
+        {"t": "は"},
+        {"t": "十七", "r": "じゅうなな", "g": "siebzehn"},
+        {"t": "あって", "b": "ある", "g": "es gibt, vorhanden sein", "j": 5},
+        {"t": "、"},
+        {"t": "名古屋城", "r": "なごやじょう", "g": "Burg Nagoya"},
+        {"t": "を"},
+        {"t": "テーマ", "g": "Thema", "j": 2},
+        {"t": "に"},
+        {"t": "した", "b": "する", "g": "machen; においがする = es riecht nach …", "j": 5},
+        {"t": "作品", "r": "さくひん", "g": "Werk, Kunstwerk", "j": 3},
+        {"t": "も"},
+        {"t": "あります", "b": "ある", "g": "es gibt, vorhanden sein", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "ニュース", "g": "Nachrichten", "j": 5},
+        {"t": "に", "gr": "g3"},
+        {"t": "よる", "g": "〜によると = laut …", "j": 5, "gr": "g3"},
+        {"t": "と", "gr": "g3"},
+        {"t": "、"},
+        {"t": "外国", "r": "がいこく", "g": "Ausland", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen)"},
+        {"t": "同じ", "r": "おなじ", "ruby": [["同", "おな"], ["じ", ""]], "g": "gleich, derselbe", "j": 5},
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "に"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "これ", "g": "dies", "j": 5},
+        {"t": "まで"},
+        {"t": "に"},
+        {"t": "千二百万人", "r": "せんにひゃくまんにん", "g": "12 Millionen Menschen"},
+        {"t": "以上", "r": "いじょう", "g": "mehr als, über", "j": 4},
+        {"t": "が"},
+        {"t": "来た", "r": "きた", "ruby": [["来", "き"], ["た", ""]], "b": "来る", "g": "kommen", "j": 5},
+        {"t": "そう", "g": "〜そうです = soll …, man sagt, dass …", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "新舞子駅", "r": "しんまいこえき", "g": "Bahnhof Shin-Maiko"},
+        {"t": "から"},
+        {"t": "歩いて", "r": "あるいて", "ruby": [["歩", "ある"], ["いて", ""]], "b": "歩く", "g": "zu Fuß gehen", "j": 5},
+        {"t": "三分", "r": "さんぷん", "g": "drei Minuten", "j": 5},
+        {"t": "な", "b": "だ"},
+        {"t": "ので", "g": "das (macht aus dem Satzteil ein Nomen)"},
+        {"t": "、"},
+        {"t": "電車", "r": "でんしゃ", "g": "Zug", "j": 5},
+        {"t": "で"},
+        {"t": "行きやすい", "r": "いきやすい", "ruby": [["行", "い"], ["きやすい", ""]], "g": "gehen, fahren", "gr": "g2", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "に"},
+        {"t": "休み", "r": "やすみ", "ruby": [["休", "やす"], ["み", ""]], "g": "Ruhetag, Pause; 休みの日 = Ruhetag", "j": 5},
+        {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen)"},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "は"},
+        {"t": "ありません", "b": "ある", "g": "es gibt, vorhanden sein", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜がする",
+      "j": 4,
+      "de": "Bei Sinneseindrücken: においがする = es riecht, 音がする = man hört ein Geräusch, 味がする = es schmeckt nach …",
+      "ex": "{台所|だいどころ}からいいにおいがします。",
+      "exDe": "Aus der Küche riecht es gut."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜やすい",
+      "j": 4,
+      "de": "Verbstamm + やすい: „leicht zu …“, „gut zu …“.",
+      "ex": "この{本|ほん}は{字|じ}が{大|おお}きくて{読|よ}みやすいです。",
+      "exDe": "Dieses Buch hat große Schrift und ist leicht zu lesen."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜によると",
+      "j": 4,
+      "de": "Gibt die Quelle an: „laut …“, „nach Angaben von …“ – oft zusammen mit 〜そうです am Satzende.",
+      "ex": "{天気予報|てんきよほう}によると、{明日|あした}は{雨|あめ}だそうです。",
+      "exDe": "Laut Wetterbericht soll es morgen regnen."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜という名前",
+      "j": 4,
+      "de": "Nennt einen Namen: „mit dem Namen …“, „namens …“.",
+      "ex": "「さくら」という{名前|なまえ}の{店|みせ}に{行|い}きました。",
+      "exDe": "Ich war in einem Laden namens „Sakura“."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "この{美術館|びじゅつかん}について、正しいものはどれですか。",
+      "qDe": "Was stimmt über dieses Museum?",
+      "options": ["{韓国|かんこく}にできた{初|はじ}めての{美術館|びじゅつかん}です", "日本にできた{初|はじ}めてのアルテミュージアムです", "{名古屋城|なごやじょう}の中にあります", "{部屋|へや}は十八あります"],
+      "answer": 1,
+      "explain": "Satz 2 und 3: Das Museum stammt ursprünglich aus Südkorea, und in Japan ist es das erste (日本にできたのは、これが初めてです). Die 18 ist das Datum (Satz 1), Räume gibt es 17 (Satz 6).",
+      "evidence": [1, 2, 5]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{美術館|びじゅつかん}の中で、何を楽しむことができますか。",
+      "qDe": "Was kann man im Museum genießen?",
+      "options": ["動く{絵|え}と音楽とにおい", "{名古屋城|なごやじょう}の{本当|ほんとう}のかべ", "海で{泳|およ}ぐこと", "{韓国|かんこく}の料理"],
+      "answer": 0,
+      "explain": "Satz 4 und 5: Bilder bewegen sich auf Wänden und Boden, man hört Musik und riecht Blumen und Meer.",
+      "evidence": [3, 4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{新舞子駅|しんまいこえき}から{美術館|びじゅつかん}まで、どのぐらいかかりますか。",
+      "qDe": "Wie lange braucht man vom Bahnhof Shin-Maiko bis zum Museum?",
+      "options": ["歩いて{三分|さんぷん}", "電車で{三分|さんぷん}", "歩いて{十七分|じゅうななふん}", "電車で{十八分|じゅうはっぷん}"],
+      "answer": 0,
+      "explain": "Satz 8: 新舞子駅から歩いて三分 – drei Minuten zu Fuß.",
+      "evidence": [7]
+    },
+    {
+      "kind": "sprache",
+      "q": "「部屋」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 部屋?",
+      "options": ["へや", "ぶや", "へいや", "ぶおく"],
+      "answer": 0,
+      "explain": "部屋 liest man へや (Zimmer, Raum) – eine besondere Lesung, die man als ganzes Wort lernt (Satz 6).",
+      "evidence": [5]
+    }
+  ],
+  "sources": [
+    {
+      "name": "Chukyo TV (Yahoo!ニュース)",
+      "url": "https://news.yahoo.co.jp/articles/2eab27afc99e99e1598090057b90b42e4bf70bcb"
+    },
+    {
+      "name": "Fashion Press",
+      "url": "https://www.fashion-press.net/news/147691"
+    },
+    {
+      "name": "地球の歩き方",
+      "url": "https://www.arukikata.co.jp/webmagazine/402108/"
+    }
+  ],
+  "versions": {
+    "3": "texte/2026/11/2026-11-18-arte-3"
+  }
+}

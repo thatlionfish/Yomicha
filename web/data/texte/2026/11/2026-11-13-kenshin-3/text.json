@@ -15,7 +15,7 @@
   "sentences": [
     {
       "tokens": [
-        {"t": "みなさま", "g": "alle (sehr höfliche Anrede)"},
+        {"t": "みなさま", "g": "alle (sehr höfliche Anrede)", "j": 4},
         {"t": "、"},
         {"t": "総務部", "r": "そうむぶ", "g": "Verwaltungsabteilung"},
         {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen)"},
@@ -38,7 +38,7 @@
         {"t": "に"},
         {"t": "会社", "r": "かいしゃ", "g": "Firma", "j": 5},
         {"t": "の", "g": "das (macht aus dem Satzteil ein Nomen)"},
-        {"t": "三階", "r": "さんかい", "g": "dritter Stock (in Japan: 2. OG)"},
+        {"t": "三階", "r": "さんかい", "g": "dritter Stock (in Japan: 2. OG)", "j": 5},
         {"t": "で"},
         {"t": "行います", "r": "おこないます", "ruby": [["行", "おこな"], ["います", ""]], "b": "行う", "g": "durchführen", "j": 4},
         {"t": "。"}
@@ -124,7 +124,7 @@
         {"t": "に"},
         {"t": "総務部", "r": "そうむぶ", "g": "Verwaltungsabteilung"},
         {"t": "に"},
-        {"t": "ご連絡", "r": "ごれんらく", "ruby": [["ご", ""], ["連絡", "れんらく"]], "g": "Kontakt; ご連絡ください = bitte geben Sie Bescheid", "gr": "g4"},
+        {"t": "ご連絡", "r": "ごれんらく", "ruby": [["ご", ""], ["連絡", "れんらく"]], "g": "Kontakt; ご連絡ください = bitte geben Sie Bescheid", "gr": "g4", "j": 4},
         {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4, "gr": "g4"},
         {"t": "。"}
       ],

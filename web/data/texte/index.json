@@ -1,6 +1,46 @@
 {
   "texts": [
     {
+      "id": "2026-11-18-arte-3",
+      "folder": "texte/2026/11/2026-11-18-arte-3",
+      "date": "2026-11-18",
+      "topic": "welt",
+      "stufe": 3,
+      "title": "光と音と香りの美術館、知多市に開館",
+      "titleDe": "Museum mit Licht, Klang und Duft in Chita eröffnet",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-18-arte-2",
+      "folder": "texte/2026/11/2026-11-18-arte-2",
+      "date": "2026-11-18",
+      "topic": "welt",
+      "stufe": 2,
+      "title": "光と音とにおいの美術館",
+      "titleDe": "Ein Museum mit Licht, Klang und Duft",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-17-shift-3",
+      "folder": "texte/2026/11/2026-11-17-shift-3",
+      "date": "2026-11-17",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "十二月のシフト希望の提出について",
+      "titleDe": "E-Mail: Schichtwünsche für Dezember abgeben",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-17-shift-2",
+      "folder": "texte/2026/11/2026-11-17-shift-2",
+      "date": "2026-11-17",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "十二月のシフトについて",
+      "titleDe": "E-Mail: Die Schichten im Dezember",
+      "minutes": 3
+    },
+    {
       "id": "2026-11-16-irekata-3",
       "folder": "texte/2026/11/2026-11-16-irekata-3",
       "date": "2026-11-16",

@@ -1,0 +1,236 @@
+{
+  "id": "2026-11-17-shift-2",
+  "date": "2026-11-17",
+  "topic": "jlpt",
+  "type": "email",
+  "stufe": 2,
+  "titleDe": "E-Mail: Die Schichten im Dezember",
+  "title": [
+    {"t": "十二月", "r": "じゅうにがつ", "g": "Dezember"},
+    {"t": "の"},
+    {"t": "シフト", "g": "Schicht, Schichtplan (bei der Arbeit)"},
+    {"t": "に"},
+    {"t": "ついて", "b": "つく", "g": "について = über, zu, bezüglich", "j": 5}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "アルバイト", "g": "Aushilfsjob, Teilzeitkraft", "j": 4},
+        {"t": "の"},
+        {"t": "みなさん", "g": "alle (Anrede)", "j": 5},
+        {"t": "、"},
+        {"t": "いつも", "g": "immer", "j": 5},
+        {"t": "ありがとう", "g": "danke", "j": 3},
+        {"t": "ございます", "b": "ござる", "g": "sein, haben (sehr höflich)", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "店長", "r": "てんちょう", "g": "Filialleiter, Ladenchefin"},
+        {"t": "の"},
+        {"t": "森", "r": "もり", "g": "Mori (Familienname)", "j": 4, "say": "もり"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "十二月", "r": "じゅうにがつ", "g": "Dezember"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "ケーキ", "g": "Kuchen, Torte", "j": 4},
+        {"t": "を"},
+        {"t": "買う", "r": "かう", "ruby": [["買", "か"], ["う", ""]], "g": "kaufen", "j": 5},
+        {"t": "お客さん", "r": "おきゃくさん", "ruby": [["お", ""], ["客", "きゃく"], ["さん", ""]], "g": "Kundin, Kunde"},
+        {"t": "が"},
+        {"t": "多く", "r": "おおく", "ruby": [["多", "おお"], ["く", ""]], "b": "多い", "g": "viel, zahlreich; 多くなる = mehr werden", "j": 5},
+        {"t": "なる", "g": "werden", "j": 5},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "店", "r": "みせ", "g": "Geschäft, Laden", "j": 5},
+        {"t": "が"},
+        {"t": "とても", "g": "sehr", "j": 5},
+        {"t": "忙しく", "r": "いそがしく", "ruby": [["忙", "いそが"], ["しく", ""]], "b": "忙しい", "g": "beschäftigt, viel zu tun; 忙しくなる = viel zu tun bekommen", "j": 5},
+        {"t": "なります", "b": "なる", "g": "werden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "それで", "g": "deshalb, darum", "j": 4},
+        {"t": "、"},
+        {"t": "十二月", "r": "じゅうにがつ", "g": "Dezember"},
+        {"t": "に"},
+        {"t": "働く", "r": "はたらく", "ruby": [["働", "はたら"], ["く", ""]], "g": "arbeiten", "j": 5},
+        {"t": "こと", "g": "〜ことができる = … können", "j": 4},
+        {"t": "が"},
+        {"t": "できる", "g": "können; 〜ことができる = … können", "j": 5},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "を"},
+        {"t": "教えて", "r": "おしえて", "ruby": [["教", "おし"], ["えて", ""]], "b": "教える", "g": "mitteilen, sagen, beibringen", "j": 5, "gr": "g1"},
+        {"t": "もらえません", "b": "もらえる", "g": "〜てもらえませんか = könnten Sie bitte …?", "gr": "g1"},
+        {"t": "か", "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "来週", "r": "らいしゅう", "g": "nächste Woche", "j": 5},
+        {"t": "の"},
+        {"t": "金曜日", "r": "きんようび", "g": "Freitag", "j": 5},
+        {"t": "まで", "g": "bis"},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "メール", "g": "E-Mail"},
+        {"t": "で"},
+        {"t": "送って", "r": "おくって", "ruby": [["送", "おく"], ["って", ""]], "b": "送る", "g": "schicken, senden", "j": 4, "gr": "g2"},
+        {"t": "おいて", "b": "おく", "g": "〜ておく = (vorab) erledigen", "j": 5, "gr": "g2"},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "働ける", "r": "はたらける", "ruby": [["働", "はたら"], ["ける", ""]], "g": "arbeiten können (Möglichkeitsform von 働く)"},
+        {"t": "か", "gr": "g3"},
+        {"t": "どう", "g": "かどうか = ob (oder nicht)", "j": 5, "gr": "g3"},
+        {"t": "か", "gr": "g3"},
+        {"t": "、"},
+        {"t": "まだ", "g": "noch", "j": 5},
+        {"t": "わからない", "b": "わかる", "g": "wissen, verstehen; わからない = (noch) nicht wissen", "j": 5},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "「"},
+        {"t": "？"},
+        {"t": "」"},
+        {"t": "と", "g": "(Zitat) „…“"},
+        {"t": "書いて", "r": "かいて", "ruby": [["書", "か"], ["いて", ""]], "b": "書く", "g": "schreiben", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "二十四日", "r": "にじゅうよんか", "g": "der 24. (Tag des Monats)"},
+        {"t": "と", "g": "(Zitat) „…“"},
+        {"t": "二十五日", "r": "にじゅうごにち", "g": "der 25. (Tag des Monats)"},
+        {"t": "に"},
+        {"t": "働く", "r": "はたらく", "ruby": [["働", "はたら"], ["く", ""]], "g": "arbeiten", "j": 5},
+        {"t": "人", "r": "ひと", "g": "Person", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "時給", "r": "じきゅう", "g": "Stundenlohn"},
+        {"t": "が"},
+        {"t": "百円", "r": "ひゃくえん", "g": "100 Yen", "j": 5},
+        {"t": "高く", "r": "たかく", "ruby": [["高", "たか"], ["く", ""]], "b": "高い", "g": "hoch, teuer; 高くなる = steigen", "j": 5},
+        {"t": "なります", "b": "なる", "g": "werden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "また", "g": "außerdem", "j": 5},
+        {"t": "、"},
+        {"t": "店", "r": "みせ", "g": "Geschäft, Laden", "j": 5},
+        {"t": "は"},
+        {"t": "三十一日", "r": "さんじゅういちにち", "g": "der 31. (Tag des Monats)"},
+        {"t": "から", "g": "von, ab"},
+        {"t": "一月", "r": "いちがつ", "g": "Januar", "j": 5},
+        {"t": "三日", "r": "みっか", "g": "der 3. (Tag des Monats)", "j": 5},
+        {"t": "まで", "g": "bis"},
+        {"t": "休み", "r": "やすみ", "ruby": [["休", "やす"], ["み", ""]], "g": "Ruhetag, geschlossen; Ferien", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "よろしく", "g": "よろしくお願いします = vielen Dank im Voraus (Grußformel)", "j": 3},
+        {"t": "お願い", "r": "おねがい", "ruby": [["お", ""], ["願", "ねが"], ["い", ""]], "b": "お願う", "g": "Bitte"},
+        {"t": "します", "b": "する", "g": "tun, machen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜てもらえませんか",
+      "j": 4,
+      "de": "て-Form + もらえませんか: höfliche Bitte, wörtlich „Kann ich es nicht bekommen, dass Sie … tun?“ – „Könnten Sie bitte …?“. Höflicher als 〜てください.",
+      "ex": "この{漢字|かんじ}の{読|よ}み{方|かた}を{教|おし}えてもらえませんか。",
+      "exDe": "Könnten Sie mir bitte sagen, wie man dieses Kanji liest?"
+    },
+    {
+      "id": "g2",
+      "pattern": "〜ておく",
+      "j": 4,
+      "de": "て-Form + おく: etwas im Voraus erledigen, damit es später bereit ist. 送っておいてください = schicken Sie es bitte schon (bis dahin).",
+      "ex": "{明日|あした}の{会議|かいぎ}の{前|まえ}に、この{資料|しりょう}を{読|よ}んでおきます。",
+      "exDe": "Vor der Sitzung morgen lese ich diese Unterlagen schon durch."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜かどうか",
+      "j": 4,
+      "de": "Kurzform + かどうか: „ob … (oder nicht)“. Bettet eine Ja-Nein-Frage in einen Satz ein. 働けるかどうか = ob man arbeiten kann.",
+      "ex": "{明日|あした}{雨|あめ}が{降|ふ}るかどうか、まだわかりません。",
+      "exDe": "Ob es morgen regnet, weiß man noch nicht."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "十二月に店が{忙|いそが}しくなるのはどうしてですか。",
+      "qDe": "Warum hat der Laden im Dezember viel zu tun?",
+      "options": ["アルバイトの人が休むから", "ケーキを買うお{客|きゃく}さんが多くなるから", "店が三十一日から休みになるから", "{時給|じきゅう}が高くなるから"],
+      "answer": 1,
+      "explain": "Satz 3: ケーキを買うお客さんが多くなるので、店がとても忙しくなります. Die Ruhetage (Satz 8) und der Stundenlohn (Satz 7) sind nicht der Grund.",
+      "evidence": [2]
+    },
+    {
+      "kind": "inhalt",
+      "q": "アルバイトの人は、何をしなければなりませんか。",
+      "qDe": "Was müssen die Aushilfen tun?",
+      "options": ["来週の金曜日までに、{働|はたら}ける日をメールで送る", "来週の金曜日に、店長に電話する", "二十四日と二十五日に、{必|かなら}ず{働|はたら}く", "わからない日は、何も書かない"],
+      "answer": 0,
+      "explain": "Satz 4–5: Sie sollen die Tage, an denen sie arbeiten können, bis nächsten Freitag per E-Mail schicken. Unklare Tage markiert man mit „？“ (Satz 6).",
+      "evidence": [3, 4, 5]
+    },
+    {
+      "kind": "inhalt",
+      "q": "二十四日に{働|はたら}くと、どうなりますか。",
+      "qDe": "Was ist, wenn man am 24. arbeitet?",
+      "options": ["{次|つぎ}の{日|ひ}は休みになる", "ケーキをもらえる", "{時給|じきゅう}が百円高くなる", "一月三日まで休める"],
+      "answer": 2,
+      "explain": "Satz 7: 二十四日と二十五日に働く人は、時給が百円高くなります – der Stundenlohn steigt um 100 Yen.",
+      "evidence": [6]
+    },
+    {
+      "kind": "sprache",
+      "q": "「働く」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 働く?",
+      "options": ["うごく", "はたらく", "はだらく", "どうく"],
+      "answer": 1,
+      "explain": "働く liest man はたらく (arbeiten), Satz 4. Das Kanji enthält 動 aus 動く（うごく, sich bewegen） – daher die falsche Antwort うごく.",
+      "evidence": [3]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "3": "texte/2026/11/2026-11-17-shift-3"
+  }
+}

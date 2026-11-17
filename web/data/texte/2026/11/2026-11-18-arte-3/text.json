@@ -1,0 +1,319 @@
+{
+  "id": "2026-11-18-arte-3",
+  "date": "2026-11-18",
+  "topic": "welt",
+  "type": "nachricht",
+  "stufe": 3,
+  "titleDe": "Museum mit Licht, Klang und Duft in Chita eröffnet",
+  "title": [
+    {"t": "光", "r": "ひかり", "g": "Licht", "j": 4},
+    {"t": "と"},
+    {"t": "音", "r": "おと", "g": "Klang, Geräusch", "j": 4},
+    {"t": "と"},
+    {"t": "香り", "r": "かおり", "ruby": [["香", "かお"], ["り", ""]], "g": "Duft", "j": 3},
+    {"t": "の"},
+    {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+    {"t": "、"},
+    {"t": "知多市", "r": "ちたし", "g": "Chita (Stadt in der Präfektur Aichi)"},
+    {"t": "に"},
+    {"t": "開館", "r": "かいかん", "g": "Eröffnung (eines Museums o. Ä.)", "j": 2}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "光", "r": "ひかり", "g": "Licht", "j": 4},
+        {"t": "や"},
+        {"t": "音", "r": "おと", "g": "Klang, Geräusch", "j": 4},
+        {"t": "、"},
+        {"t": "香り", "r": "かおり", "ruby": [["香", "かお"], ["り", ""]], "g": "Duft", "j": 3},
+        {"t": "を"},
+        {"t": "使った", "r": "つかった", "ruby": [["使", "つか"], ["った", ""]], "b": "使う", "g": "benutzen", "j": 5},
+        {"t": "新しい", "r": "あたらしい", "ruby": [["新", "あたら"], ["しい", ""]], "g": "neu", "j": 5},
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "「"},
+        {"t": "アルテ", "g": "Arte (Teil des Namens „Arte Museum“)"},
+        {"t": "ミュージアム", "g": "Museum (englisches Lehnwort)"},
+        {"t": "名古屋", "r": "なごや", "g": "Nagoya (Großstadt in Mitteljapan)"},
+        {"t": "」"},
+        {"t": "が", "g": "aber"},
+        {"t": "十八日", "r": "じゅうはちにち", "g": "der 18. (Tag)"},
+        {"t": "、"},
+        {"t": "愛知県知多市", "r": "あいちけんちたし", "g": "Chita in der Präfektur Aichi"},
+        {"t": "に"},
+        {"t": "オープン", "g": "Eröffnung; オープンする = eröffnen"},
+        {"t": "した", "b": "する", "g": "machen; 香りがする = es duftet", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "もと", "g": "Ursprung; もとは = ursprünglich", "j": 3},
+        {"t": "は"},
+        {"t": "韓国", "r": "かんこく", "g": "Südkorea", "j": 1},
+        {"t": "で"},
+        {"t": "生まれた", "r": "うまれた", "ruby": [["生", "う"], ["まれた", ""]], "b": "生まれる", "g": "entstehen, geboren werden", "j": 5},
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "で"},
+        {"t": "、"},
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "初めて", "r": "はじめて", "ruby": [["初", "はじ"], ["めて", ""]], "g": "zum ersten Mal", "j": 5},
+        {"t": "、"},
+        {"t": "世界", "r": "せかい", "g": "Welt", "j": 4},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "九つ目", "r": "ここのつめ", "ruby": [["九", "ここの"], ["つ", ""], ["目", "め"]], "g": "der/die/das neunte", "j": 5},
+        {"t": "と", "gr": "g1"},
+        {"t": "なる", "g": "werden; 〜となる = ist, wird (schriftlich)", "j": 5, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "の"},
+        {"t": "中", "r": "なか", "g": "Inneres; 美術館の中 = im Museum", "j": 5},
+        {"t": "に"},
+        {"t": "は"},
+        {"t": "十七", "r": "じゅうなな", "g": "siebzehn"},
+        {"t": "の"},
+        {"t": "部屋", "r": "へや", "g": "Raum, Zimmer", "j": 5},
+        {"t": "が", "g": "aber"},
+        {"t": "あり", "b": "ある", "g": "es gibt, vorhanden sein; 〜にある = liegt in …", "j": 5},
+        {"t": "、"},
+        {"t": "壁", "r": "かべ", "g": "Wand", "j": 4},
+        {"t": "や"},
+        {"t": "床", "r": "ゆか", "g": "Fußboden", "j": 3},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "動く", "r": "うごく", "ruby": [["動", "うご"], ["く", ""]], "g": "sich bewegen", "j": 4},
+        {"t": "大きな", "r": "おおきな", "ruby": [["大", "おお"], ["きな", ""]], "g": "groß", "j": 5},
+        {"t": "絵", "r": "え", "g": "Bild", "j": 5},
+        {"t": "が", "g": "aber"},
+        {"t": "映る", "r": "うつる", "ruby": [["映", "うつ"], ["る", ""]], "g": "erscheinen, projiziert werden", "j": 3},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "それぞれ", "g": "jeweils, jede(r) einzelne", "j": 3},
+        {"t": "の"},
+        {"t": "部屋", "r": "へや", "g": "Raum, Zimmer", "j": 5},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "音楽", "r": "おんがく", "g": "Musik", "j": 5},
+        {"t": "が", "g": "aber"},
+        {"t": "流れ", "r": "ながれ", "ruby": [["流", "なが"], ["れ", ""]], "b": "流れる", "g": "fließen; 音楽が流れる = Musik läuft", "j": 3},
+        {"t": "、"},
+        {"t": "香り", "r": "かおり", "ruby": [["香", "かお"], ["り", ""]], "g": "Duft", "j": 3},
+        {"t": "も"},
+        {"t": "する", "g": "machen; 香りがする = es duftet", "j": 5},
+        {"t": "ため", "g": "weil, da (schriftlich)", "j": 4},
+        {"t": "、"},
+        {"t": "目", "r": "め", "g": "Auge; nach Zahlen: der/die/das …-te", "j": 5},
+        {"t": "に", "gr": "g2"},
+        {"t": "加えて", "r": "くわえて", "ruby": [["加", "くわ"], ["えて", ""]], "b": "加える", "g": "hinzufügen; 〜に加えて = zusätzlich zu …", "j": 3, "gr": "g2"},
+        {"t": "、"},
+        {"t": "耳", "r": "みみ", "g": "Ohr", "j": 5},
+        {"t": "や"},
+        {"t": "鼻", "r": "はな", "g": "Nase", "j": 5},
+        {"t": "でも", "g": "auch (mit …); 耳や鼻でも = auch mit Ohren und Nase", "j": 5},
+        {"t": "作品", "r": "さくひん", "g": "Werk, Kunstwerk", "j": 3},
+        {"t": "を"},
+        {"t": "楽しめる", "r": "たのしめる", "ruby": [["楽", "たの"], ["しめる", ""]], "g": "genießen können"},
+        {"t": "と"},
+        {"t": "いう", "g": "sagen; 〜という = es heißt, dass …", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "名古屋城", "r": "なごやじょう", "g": "Burg Nagoya"},
+        {"t": "など", "g": "und andere, u. a."},
+        {"t": "、"},
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "地域", "r": "ちいき", "g": "Region, Gegend", "j": 3},
+        {"t": "の"},
+        {"t": "文化", "r": "ぶんか", "g": "Kultur", "j": 4},
+        {"t": "を"},
+        {"t": "テーマ", "g": "Thema; 〜をテーマにした = mit … als Thema", "j": 2, "gr": "g4"},
+        {"t": "に", "gr": "g4"},
+        {"t": "した", "b": "する", "g": "machen; 香りがする = es duftet", "j": 5, "gr": "g4"},
+        {"t": "作品", "r": "さくひん", "g": "Werk, Kunstwerk", "j": 3},
+        {"t": "も"},
+        {"t": "ある", "g": "es gibt, vorhanden sein; 〜にある = liegt in …", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "に"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "これ", "g": "dies; これまで = bisher", "j": 5},
+        {"t": "まで"},
+        {"t": "に"},
+        {"t": "世界", "r": "せかい", "g": "Welt", "j": 4},
+        {"t": "で"},
+        {"t": "千二百万人", "r": "せんにひゃくまんにん", "g": "12 Millionen Menschen"},
+        {"t": "以上", "r": "いじょう", "g": "mehr als, über", "j": 4},
+        {"t": "が", "g": "aber"},
+        {"t": "見", "r": "み", "b": "見る", "g": "sehen", "j": 5},
+        {"t": "に"},
+        {"t": "来た", "r": "きた", "ruby": [["来", "き"], ["た", ""]], "b": "来る", "g": "kommen; 見に来る = zum Anschauen kommen", "j": 5},
+        {"t": "と", "gr": "g3"},
+        {"t": "される", "b": "する", "g": "machen; 香りがする = es duftet", "j": 5, "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "名古屋", "r": "なごや", "g": "Nagoya (Großstadt in Mitteljapan)"},
+        {"t": "の"},
+        {"t": "中心", "r": "ちゅうしん", "g": "Zentrum, Mitte", "j": 3},
+        {"t": "から"},
+        {"t": "は"},
+        {"t": "離れている", "r": "はなれている", "ruby": [["離", "はな"], ["れている", ""]], "b": "離れる", "g": "entfernt sein", "j": 3},
+        {"t": "が", "g": "aber"},
+        {"t": "、"},
+        {"t": "新舞子駅", "r": "しんまいこえき", "g": "Bahnhof Shin-Maiko"},
+        {"t": "から"},
+        {"t": "歩いて", "r": "あるいて", "ruby": [["歩", "ある"], ["いて", ""]], "b": "歩く", "g": "zu Fuß gehen", "j": 5},
+        {"t": "三分", "r": "さんぷん", "g": "drei Minuten", "j": 5},
+        {"t": "で"},
+        {"t": "、"},
+        {"t": "電車", "r": "でんしゃ", "g": "Zug", "j": 5},
+        {"t": "で"},
+        {"t": "行きやすい", "r": "いきやすい", "ruby": [["行", "い"], ["きやすい", ""]], "g": "fahren, gehen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "美術館", "r": "びじゅつかん", "g": "Kunstmuseum", "j": 4},
+        {"t": "に"},
+        {"t": "よる", "g": "〜によると = laut …", "j": 5},
+        {"t": "と"},
+        {"t": "、"},
+        {"t": "自然に", "r": "しぜんに", "ruby": [["自然", "しぜん"], ["に", ""]], "b": "自然", "g": "Natur", "j": 3},
+        {"t": "近い", "r": "ちかい", "ruby": [["近", "ちか"], ["い", ""]], "g": "nah", "j": 5},
+        {"t": "こと", "g": "das (macht aus dem Verb ein Nomen)", "j": 4},
+        {"t": "も"},
+        {"t": "、"},
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "場所", "r": "ばしょ", "g": "Ort, Platz", "j": 4},
+        {"t": "を"},
+        {"t": "選んだ", "r": "えらんだ", "ruby": [["選", "えら"], ["んだ", ""]], "b": "選ぶ", "g": "auswählen", "j": 4},
+        {"t": "理由", "r": "りゆう", "g": "Grund", "j": 4},
+        {"t": "の"},
+        {"t": "一つ", "r": "ひとつ", "ruby": [["一", "ひと"], ["つ", ""]], "g": "eins; 理由の一つ = einer der Gründe", "j": 5},
+        {"t": "だ"},
+        {"t": "と"},
+        {"t": "いう", "g": "sagen; 〜という = es heißt, dass …", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜となる",
+      "j": 3,
+      "de": "Schriftlich für „ist“ bei Rang oder Zahl: 九つ目となる = ist (damit) das neunte. Typisch für Nachrichten.",
+      "ex": "{今年|ことし}の{大会|たいかい}は、{十回目|じゅっかいめ}となる。",
+      "exDe": "Das diesjährige Turnier ist das zehnte."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜に加えて",
+      "j": 3,
+      "de": "„zusätzlich zu …“, „neben …“ – fügt etwas hinzu, schriftlicher als 〜だけでなく.",
+      "ex": "{雨|あめ}に{加|くわ}えて、{風|かぜ}も{強|つよ}くなってきた。",
+      "exDe": "Zusätzlich zum Regen wurde auch der Wind stärker."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜とされる",
+      "j": 3,
+      "de": "„gilt als …“, „man geht davon aus, dass …“ – gibt eine allgemein angenommene Angabe wieder.",
+      "ex": "この{寺|てら}は{日本|にほん}で{最|もっと}も{古|ふる}いとされる。",
+      "exDe": "Dieser Tempel gilt als der älteste Japans."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜をテーマにした",
+      "j": 3,
+      "de": "„mit … als Thema“, „zum Thema …“ – beschreibt ein Nomen (Werk, Buch, Ausstellung).",
+      "ex": "{海|うみ}をテーマにした{写真展|しゃしんてん}に{行|い}った。",
+      "exDe": "Ich war in einer Fotoausstellung zum Thema Meer."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "「アルテミュージアム名古屋」について、正しいものはどれか。",
+      "qDe": "Was stimmt über das „Arte Museum Nagoya“?",
+      "options": ["日本で九つ目の美術館だ", "日本で初めてのアルテミュージアムだ", "{韓国|かんこく}で最も新しい美術館だ", "部屋が十八ある"],
+      "answer": 1,
+      "explain": "Satz 2: 日本では初めて、世界では九つ目 – in Japan das erste, weltweit das neunte. Die 18 ist das Datum (Satz 1), Räume gibt es 17 (Satz 3).",
+      "evidence": [0, 1, 2]
+    },
+    {
+      "kind": "inhalt",
+      "q": "この美術館の{特徴|とくちょう}として、合うものはどれか。",
+      "qDe": "Was passt als Merkmal dieses Museums?",
+      "options": ["{映像|えいぞう}を目で見るだけの美術館だ", "{映像|えいぞう}に加えて、音楽や{香|かお}りも楽しめる", "{名古屋城|なごやじょう}の中にある", "部屋が一つしかない"],
+      "answer": 1,
+      "explain": "Satz 3 und 4: Bewegte Bilder erscheinen auf Wänden und Boden, dazu laufen Musik und Düfte – man genießt die Werke auch mit Ohren und Nase.",
+      "evidence": [2, 3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "美術館によると、この場所を選んだ理由の一つは何か。",
+      "qDe": "Was ist laut Museum einer der Gründe für die Wahl des Ortes?",
+      "options": ["名古屋の中心に近いこと", "自然に近いこと", "駅が大きいこと", "{韓国|かんこく}から近いこと"],
+      "answer": 1,
+      "explain": "Satz 8: 自然に近いことも、この場所を選んだ理由の一つ – die Nähe zur Natur. Vom Zentrum Nagoyas ist es dagegen entfernt (Satz 7).",
+      "evidence": [6, 7]
+    },
+    {
+      "kind": "sprache",
+      "q": "「理由」の{読|よ}み{方|かた}はどれか。",
+      "qDe": "Wie liest man 理由?",
+      "options": ["りゆう", "りゅう", "りよう", "りいう"],
+      "answer": 0,
+      "explain": "理由 liest man りゆう (Grund) – mit großem ゆ, nicht wie りゅう (Satz 8).",
+      "evidence": [7]
+    }
+  ],
+  "sources": [
+    {
+      "name": "Chukyo TV (Yahoo!ニュース)",
+      "url": "https://news.yahoo.co.jp/articles/2eab27afc99e99e1598090057b90b42e4bf70bcb"
+    },
+    {
+      "name": "Fashion Press",
+      "url": "https://www.fashion-press.net/news/147691"
+    },
+    {
+      "name": "地球の歩き方",
+      "url": "https://www.arukikata.co.jp/webmagazine/402108/"
+    }
+  ],
+  "versions": {
+    "2": "texte/2026/11/2026-11-18-arte-2"
+  }
+}

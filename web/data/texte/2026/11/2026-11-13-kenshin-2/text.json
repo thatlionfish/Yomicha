@@ -49,7 +49,7 @@
         {"t": "、"},
         {"t": "場所", "r": "ばしょ", "g": "Ort", "j": 4},
         {"t": "は"},
-        {"t": "三階", "r": "さんかい", "g": "dritter Stock (in Japan: 2. OG)"},
+        {"t": "三階", "r": "さんかい", "g": "dritter Stock (in Japan: 2. OG)", "j": 5},
         {"t": "の"},
         {"t": "会議室", "r": "かいぎしつ", "g": "Besprechungsraum", "j": 4},
         {"t": "です"},
