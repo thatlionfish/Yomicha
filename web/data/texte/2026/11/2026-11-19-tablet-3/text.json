@@ -1,0 +1,304 @@
+{
+  "id": "2026-11-19-tablet-3",
+  "date": "2026-11-19",
+  "topic": "jlpt",
+  "type": "meinung",
+  "stufe": 3,
+  "titleDe": "Meinung: Warum Schreiben mit der Hand im Tablet-Zeitalter wichtig bleibt",
+  "title": [
+    {"t": "タブレット", "g": "Tablet (Computer)"},
+    {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+    {"t": "時代", "r": "じだい", "g": "Zeitalter, Zeit", "j": 4},
+    {"t": "に"},
+    {"t": "手", "r": "て", "g": "Hand", "j": 5},
+    {"t": "で", "g": "mit, durch"},
+    {"t": "書く", "r": "かく", "ruby": [["書", "か"], ["く", ""]], "g": "schreiben", "j": 5},
+    {"t": "意味", "r": "いみ", "g": "Sinn, Bedeutung", "j": 5}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "小学校", "r": "しょうがっこう", "g": "Grundschule", "j": 4},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "中学校", "r": "ちゅうがっこう", "g": "Mittelschule (7.–9. Klasse)", "j": 4},
+        {"t": "で", "g": "mit, durch"},
+        {"t": "、"},
+        {"t": "一人", "r": "ひとり", "g": "eine Person, pro Person", "j": 5},
+        {"t": "一台", "r": "いちだい", "g": "ein Gerät (Zählwort für Maschinen)", "j": 5},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "タブレット", "g": "Tablet (Computer)"},
+        {"t": "を"},
+        {"t": "使う", "r": "つかう", "ruby": [["使", "つか"], ["う", ""]], "g": "benutzen", "j": 5},
+        {"t": "授業", "r": "じゅぎょう", "g": "Unterricht", "j": 5},
+        {"t": "が"},
+        {"t": "広がっている", "r": "ひろがっている", "ruby": [["広", "ひろ"], ["がっている", ""]], "b": "広がる", "g": "sich ausbreiten, sich verbreiten", "j": 3},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "宿題", "r": "しゅくだい", "g": "Hausaufgabe", "j": 5},
+        {"t": "を"},
+        {"t": "出し", "r": "だし", "ruby": [["出", "だ"], ["し", ""]], "b": "出す", "g": "abgeben, einreichen", "j": 5},
+        {"t": "たり"},
+        {"t": "、"},
+        {"t": "インターネット", "g": "Internet"},
+        {"t": "で", "g": "mit, durch"},
+        {"t": "調べ", "r": "しらべ", "ruby": [["調", "しら"], ["べ", ""]], "b": "調べる", "g": "nachschlagen, recherchieren", "j": 4},
+        {"t": "たり"},
+        {"t": "する", "g": "tun, machen", "j": 5},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "が"},
+        {"t": "簡単に", "r": "かんたんに", "ruby": [["簡単", "かんたん"], ["に", ""]], "b": "簡単", "g": "einfach, leicht", "j": 4},
+        {"t": "なった", "b": "なる", "g": "werden", "j": 5},
+        {"t": "一方", "r": "いっぽう", "g": "〜一方で = während …, andererseits", "j": 3, "gr": "g1"},
+        {"t": "で", "g": "mit, durch", "gr": "g1"},
+        {"t": "、"},
+        {"t": "心配", "r": "しんぱい", "g": "Sorge; 心配な = besorgniserregend", "j": 4},
+        {"t": "な", "b": "だ"},
+        {"t": "点", "r": "てん", "g": "Punkt, Aspekt", "j": 4},
+        {"t": "も", "g": "auch; 何度も = immer wieder"},
+        {"t": "ある", "g": "es gibt", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "その", "g": "dieser, der genannte", "j": 5},
+        {"t": "一つ", "r": "ひとつ", "ruby": [["一", "ひと"], ["つ", ""]], "g": "eins, einer davon", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "手", "r": "て", "g": "Hand", "j": 5},
+        {"t": "で", "g": "mit, durch"},
+        {"t": "字", "r": "じ", "g": "Schriftzeichen, Schrift", "j": 4},
+        {"t": "を"},
+        {"t": "書く", "r": "かく", "ruby": [["書", "か"], ["く", ""]], "g": "schreiben", "j": 5},
+        {"t": "機会", "r": "きかい", "g": "Gelegenheit", "j": 4},
+        {"t": "が"},
+        {"t": "減った", "r": "へった", "ruby": [["減", "へ"], ["った", ""]], "b": "減る", "g": "abnehmen, weniger werden", "j": 3},
+        {"t": "こと", "g": "Sache, Tatsache", "j": 4},
+        {"t": "だ"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "タブレット", "g": "Tablet (Computer)"},
+        {"t": "で", "g": "mit, durch"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "読み方", "r": "よみかた", "ruby": [["読", "よ"], ["み", ""], ["方", "かた"]], "g": "Lesung, Aussprache (eines Kanji)"},
+        {"t": "を"},
+        {"t": "入力", "r": "にゅうりょく", "g": "Eingabe"},
+        {"t": "すれば", "b": "する", "g": "tun, machen", "j": 5},
+        {"t": "、"},
+        {"t": "正しい", "r": "ただしい", "ruby": [["正", "ただ"], ["しい", ""]], "g": "richtig, korrekt", "j": 4},
+        {"t": "漢字", "r": "かんじ", "g": "Kanji (chinesische Schriftzeichen)", "j": 5},
+        {"t": "が"},
+        {"t": "すぐ", "g": "sofort; すぐに = sofort"},
+        {"t": "に"},
+        {"t": "出て", "r": "でて", "ruby": [["出", "で"], ["て", ""]], "b": "出る", "g": "erscheinen, herauskommen", "j": 5},
+        {"t": "くる", "g": "〜てくる = (kommt) zum Vorschein", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "その", "g": "dieser, der genannte", "j": 5},
+        {"t": "ため", "g": "そのため = deshalb", "j": 4},
+        {"t": "、"},
+        {"t": "漢字", "r": "かんじ", "g": "Kanji (chinesische Schriftzeichen)", "j": 5},
+        {"t": "を"},
+        {"t": "読めて", "r": "よめて", "ruby": [["読", "よ"], ["めて", ""]], "b": "読める", "g": "lesen können"},
+        {"t": "も", "g": "auch; 何度も = immer wieder"},
+        {"t": "書けない", "r": "かけない", "ruby": [["書", "か"], ["けない", ""]], "b": "書ける", "g": "schreiben können"},
+        {"t": "生徒", "r": "せいと", "g": "Schülerin, Schüler", "j": 5},
+        {"t": "が"},
+        {"t": "増えている", "r": "ふえている", "ruby": [["増", "ふ"], ["えている", ""]], "b": "増える", "g": "zunehmen, mehr werden", "j": 4},
+        {"t": "と", "g": "(Zitat) dass …"},
+        {"t": "いう", "g": "〜という = es heißt, angeblich (Hörensagen)", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "何度", "r": "なんど", "g": "wie oft; 何度も = immer wieder, viele Male"},
+        {"t": "も", "g": "auch; 何度も = immer wieder"},
+        {"t": "手", "r": "て", "g": "Hand", "j": 5},
+        {"t": "で", "g": "mit, durch"},
+        {"t": "書く", "r": "かく", "ruby": [["書", "か"], ["く", ""]], "g": "schreiben", "j": 5},
+        {"t": "こと", "g": "Sache, Tatsache", "j": 4},
+        {"t": "で", "b": "だ", "g": "mit, durch"},
+        {"t": "、"},
+        {"t": "字", "r": "じ", "g": "Schriftzeichen, Schrift", "j": 4},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "形", "r": "かたち", "g": "Form, Gestalt", "j": 4},
+        {"t": "を"},
+        {"t": "覚えやすく", "r": "おぼえやすく", "ruby": [["覚", "おぼ"], ["えやすく", ""]], "b": "覚えやすい", "g": "sich merken, lernen"},
+        {"t": "なる", "g": "werden", "j": 5},
+        {"t": "と", "g": "(Zitat) dass …"},
+        {"t": "言われている", "r": "いわれている", "ruby": [["言", "い"], ["われている", ""]], "b": "言う", "g": "sagen; 〜という = es heißt; 〜と言われている = man sagt, dass …", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "もちろん", "g": "natürlich, selbstverständlich", "j": 4},
+        {"t": "、"},
+        {"t": "タブレット", "g": "Tablet (Computer)"},
+        {"t": "が"},
+        {"t": "悪い", "r": "わるい", "ruby": [["悪", "わる"], ["い", ""]], "g": "schlecht", "j": 5},
+        {"t": "わけ", "g": "〜わけではない = es ist nicht so, dass …", "j": 4, "gr": "g2"},
+        {"t": "で", "g": "mit, durch", "gr": "g2"},
+        {"t": "は", "gr": "g2"},
+        {"t": "ない", "g": "nicht; 〜わけではない = es ist nicht so, dass …", "j": 5, "gr": "g2"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "しかし", "g": "jedoch, aber", "j": 5},
+        {"t": "、"},
+        {"t": "便利", "r": "べんり", "g": "praktisch", "j": 5},
+        {"t": "な", "b": "だ"},
+        {"t": "道具", "r": "どうぐ", "g": "Werkzeug, Hilfsmittel", "j": 4},
+        {"t": "が"},
+        {"t": "いつも", "g": "immer", "j": 5},
+        {"t": "学習", "r": "がくしゅう", "g": "Lernen", "j": 3},
+        {"t": "に"},
+        {"t": "役立つ", "r": "やくだつ", "ruby": [["役立", "やくだ"], ["つ", ""]], "g": "nützen, hilfreich sein"},
+        {"t": "とは", "g": "(Zitat) dass …", "gr": "g3"},
+        {"t": "限らない", "r": "かぎらない", "ruby": [["限", "かぎ"], ["らない", ""]], "b": "限る", "g": "〜とは限らない = nicht unbedingt, nicht immer", "j": 3, "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "わたし", "g": "ich", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "学校", "r": "がっこう", "g": "Schule", "j": 5},
+        {"t": "は"},
+        {"t": "紙", "r": "かみ", "g": "Papier", "j": 5},
+        {"t": "に"},
+        {"t": "書く", "r": "かく", "ruby": [["書", "か"], ["く", ""]], "g": "schreiben", "j": 5},
+        {"t": "時間", "r": "じかん", "g": "Zeit", "j": 5},
+        {"t": "も", "g": "auch; 何度も = immer wieder"},
+        {"t": "大切に", "r": "たいせつに", "ruby": [["大切", "たいせつ"], ["に", ""]], "b": "大切", "g": "wichtig; 大切にする = wertschätzen, pflegen", "j": 5},
+        {"t": "するべきだ", "b": "する", "g": "tun, machen", "j": 5, "gr": "g4"},
+        {"t": "と", "g": "(Zitat) dass …"},
+        {"t": "考える", "r": "かんがえる", "ruby": [["考", "かんが"], ["える", ""]], "g": "denken, der Meinung sein", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "目的", "r": "もくてき", "g": "Zweck, Ziel", "j": 3},
+        {"t": "に"},
+        {"t": "合わせて", "r": "あわせて", "ruby": [["合", "あ"], ["わせて", ""]], "b": "合わせる", "g": "anpassen; 〜に合わせて = passend zu …", "j": 3},
+        {"t": "両方", "r": "りょうほう", "g": "beide", "j": 4},
+        {"t": "を"},
+        {"t": "使う", "r": "つかう", "ruby": [["使", "つか"], ["う", ""]], "g": "benutzen", "j": 5},
+        {"t": "こと", "g": "Sache, Tatsache", "j": 4},
+        {"t": "が"},
+        {"t": "、"},
+        {"t": "これから", "g": "von nun an, künftig", "j": 4},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "教育", "r": "きょういく", "g": "Bildung, Erziehung", "j": 4},
+        {"t": "に"},
+        {"t": "は"},
+        {"t": "必要", "r": "ひつよう", "g": "notwendig, nötig", "j": 4},
+        {"t": "だろう", "b": "だ", "g": "wohl, vermutlich"},
+        {"t": "。"}
+      ],
+      "audio": "s10.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜一方（で）",
+      "j": 3,
+      "de": "Kurzform + 一方で: „während …, andererseits …“. Stellt zwei Seiten einer Sache gegenüber: Hier wird manches einfacher, gleichzeitig gibt es Grund zur Sorge. Typisch für Zeitung und Meinungstexte.",
+      "ex": "{都会|とかい}は{便利|べんり}な{一方|いっぽう}で、{家賃|やちん}が{高|たか}い。",
+      "exDe": "Die Stadt ist praktisch, andererseits ist die Miete hoch."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜わけではない",
+      "j": 3,
+      "de": "Kurzform + わけではない: „es ist nicht so, dass …“. Schwächt eine mögliche Schlussfolgerung ab: Wer Handschrift lobt, sagt damit nicht, dass Tablets schlecht sind.",
+      "ex": "{肉|にく}が{嫌|きら}いなわけではないが、{今日|きょう}は{魚|さかな}にする。",
+      "exDe": "Es ist nicht so, dass ich Fleisch nicht mag, aber heute nehme ich Fisch."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜とは限らない",
+      "j": 3,
+      "de": "Kurzform + とは限らない: „nicht unbedingt, nicht immer“. Oft mit いつも, 必ず oder 誰でも davor: Ein praktisches Werkzeug hilft nicht automatisch beim Lernen.",
+      "ex": "{高|たか}い{店|みせ}がいつもおいしいとは{限|かぎ}らない。",
+      "exDe": "Teure Restaurants sind nicht unbedingt immer lecker."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜べきだ",
+      "j": 3,
+      "de": "Wörterbuchform + べきだ: „sollte, müsste“ – eine klare Meinung oder Pflicht. Bei する heißt es するべき oder すべき. In Meinungstexten oft mit と考える: „Ich finde, man sollte …“.",
+      "ex": "{約束|やくそく}は{守|まも}るべきだ。",
+      "exDe": "Versprechen sollte man halten."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "{筆者|ひっしゃ}が心配している点は何か。",
+      "qDe": "Was bereitet der Verfasserin Sorgen?",
+      "options": ["タブレットの値段が高いこと", "手で字を書く機会が{減|へ}ったこと", "宿題が増えたこと", "インターネットで調べられないこと"],
+      "answer": 1,
+      "explain": "Satz 2–3: Es gibt einen besorgniserregenden Punkt, その一つは、手で字を書く機会が減ったことだ. Hausaufgaben und Internet-Recherche sind laut Satz 2 einfacher geworden.",
+      "evidence": [1, 2]
+    },
+    {
+      "kind": "inhalt",
+      "q": "漢字を読めても書けない生徒が増えているのはなぜか。",
+      "qDe": "Warum gibt es mehr Schüler, die Kanji lesen, aber nicht schreiben können?",
+      "options": ["読み方を入力すれば、正しい漢字がすぐに出てくるから", "漢字の{授業|じゅぎょう}がなくなったから", "紙のノートを使ってはいけないから", "インターネットの漢字が正しくないから"],
+      "answer": 0,
+      "explain": "Satz 4–5: Auf dem Tablet erscheint nach Eingabe der Lesung sofort das richtige Kanji, そのため können viele es nur noch lesen.",
+      "evidence": [3, 4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{筆者|ひっしゃ}の考えに合うのはどれか。",
+      "qDe": "Was entspricht der Meinung der Verfasserin?",
+      "options": ["学校ではタブレットを使わないほうがいい", "学校は紙に書く時間も大切にするべきだ", "漢字は読めれば書けなくてもいい", "これからはタブレットだけで学習するべきだ"],
+      "answer": 1,
+      "explain": "Satz 9: 学校は紙に書く時間も大切にするべきだ. Tablets lehnt sie nicht ab (Satz 7: 悪いわけではない), sie will beides passend zum Zweck nutzen (Satz 10).",
+      "evidence": [6, 8, 9]
+    },
+    {
+      "kind": "sprache",
+      "q": "「{学習|がくしゅう}に{役立|やくだ}つ」の「{役立|やくだ}つ」と{同|おな}じ{意味|いみ}の{言葉|ことば}はどれか。",
+      "qDe": "Welcher Ausdruck bedeutet dasselbe wie 役立つ?",
+      "options": ["役に立つ", "気に入る", "間に合う", "手に入る"],
+      "answer": 0,
+      "explain": "役立つ ist die kurze, schriftliche Form von 役に立つ (nützlich sein), Satz 8. 気に入る = gefallen, 間に合う = rechtzeitig sein, 手に入る = bekommen.",
+      "evidence": [7]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "2": "texte/2026/11/2026-11-19-tablet-2"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "id": "2026-11-19-tablet-2",
+  "date": "2026-11-19",
+  "topic": "jlpt",
+  "type": "meinung",
+  "stufe": 2,
+  "titleDe": "Leserbrief: Die Tablets in der Schule",
+  "title": [
+    {"t": "学校", "r": "がっこう", "g": "Schule", "j": 5},
+    {"t": "の"},
+    {"t": "タブレット", "g": "Tablet (Computer)"}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "わたし", "g": "ich", "j": 5},
+        {"t": "は"},
+        {"t": "中学", "r": "ちゅうがく", "g": "Mittelschule (7.–9. Klasse)", "j": 3},
+        {"t": "二年生", "r": "にねんせい", "g": "Schülerin der 2. Klasse", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "去年", "r": "きょねん", "g": "letztes Jahr", "j": 5},
+        {"t": "から", "g": "seit, ab"},
+        {"t": "、"},
+        {"t": "学校", "r": "がっこう", "g": "Schule", "j": 5},
+        {"t": "で"},
+        {"t": "一人", "r": "ひとり", "g": "eine Person, pro Person", "j": 5},
+        {"t": "一台", "r": "いちだい", "g": "ein Gerät (Zählwort für Maschinen)", "j": 5},
+        {"t": "タブレット", "g": "Tablet (Computer)"},
+        {"t": "を"},
+        {"t": "使っています", "r": "つかっています", "ruby": [["使", "つか"], ["っています", ""]], "b": "使う", "g": "benutzen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "タブレット", "g": "Tablet (Computer)"},
+        {"t": "は"},
+        {"t": "とても", "g": "sehr", "j": 5},
+        {"t": "便利", "r": "べんり", "g": "praktisch, bequem", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "宿題", "r": "しゅくだい", "g": "Hausaufgabe", "j": 5},
+        {"t": "を"},
+        {"t": "送っ", "r": "おくっ", "ruby": [["送", "おく"], ["っ", ""]], "b": "送る", "g": "schicken, abgeben (online)", "j": 4},
+        {"t": "たり"},
+        {"t": "、"},
+        {"t": "ビデオ", "g": "Video", "j": 3},
+        {"t": "を"},
+        {"t": "見", "r": "み", "b": "見る", "g": "sehen, anschauen", "j": 5},
+        {"t": "たり"},
+        {"t": "する", "g": "tun, machen; 〜することができる = … können", "j": 5},
+        {"t": "こと", "g": "〜ことができる = … können", "j": 4},
+        {"t": "が"},
+        {"t": "できます", "b": "できる", "g": "können; 〜ことができる = … können", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "でも", "g": "aber", "j": 5},
+        {"t": "、"},
+        {"t": "ノート", "g": "Heft", "j": 5},
+        {"t": "に"},
+        {"t": "字", "r": "じ", "g": "Schriftzeichen, Schrift", "j": 4},
+        {"t": "を"},
+        {"t": "書く", "r": "かく", "ruby": [["書", "か"], ["く", ""]], "g": "schreiben", "j": 5},
+        {"t": "時間", "r": "じかん", "g": "Zeit", "j": 5},
+        {"t": "が"},
+        {"t": "少なく", "r": "すくなく", "ruby": [["少", "すく"], ["なく", ""]], "b": "少ない", "g": "wenig; 少なくなる = weniger werden", "j": 5},
+        {"t": "なりました", "b": "なる", "g": "werden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "先生", "r": "せんせい", "g": "Lehrerin, Lehrer", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "わたしたち", "g": "wir"},
+        {"t": "に"},
+        {"t": "漢字", "r": "かんじ", "g": "Kanji (chinesische Schriftzeichen)", "j": 5},
+        {"t": "も", "g": "auch; AもBも = sowohl A als auch B"},
+        {"t": "タブレット", "g": "Tablet (Computer)"},
+        {"t": "で"},
+        {"t": "練習", "r": "れんしゅう", "g": "Übung", "j": 5, "gr": "g1"},
+        {"t": "させます", "b": "する", "g": "üben lassen (Kausativ von する)", "j": 5, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "毎日", "r": "まいにち", "g": "jeden Tag", "j": 5},
+        {"t": "たくさん", "g": "viel", "j": 5},
+        {"t": "練習", "r": "れんしゅう", "g": "Übung", "j": 5},
+        {"t": "している", "b": "する", "g": "tun, machen; 〜することができる = … können", "j": 5},
+        {"t": "のに", "g": "obwohl", "gr": "g2"},
+        {"t": "、"},
+        {"t": "なかなか", "g": "なかなか〜ない = einfach nicht, kaum", "j": 4},
+        {"t": "覚えられません", "r": "おぼえられません", "ruby": [["覚", "おぼ"], ["えられません", ""]], "b": "覚える", "g": "sich merken, lernen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "わたし", "g": "ich", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "漢字", "r": "かんじ", "g": "Kanji (chinesische Schriftzeichen)", "j": 5},
+        {"t": "は"},
+        {"t": "紙", "r": "かみ", "g": "Papier", "j": 5},
+        {"t": "に"},
+        {"t": "書いて", "r": "かいて", "ruby": [["書", "か"], ["いて", ""]], "b": "書く", "g": "schreiben", "j": 5},
+        {"t": "練習", "r": "れんしゅう", "g": "Übung", "j": 5, "gr": "g3"},
+        {"t": "した", "b": "する", "g": "tun, machen; 〜することができる = … können", "j": 5, "gr": "g3"},
+        {"t": "ほう", "g": "〜たほうがいい = es wäre besser, …", "j": 3, "gr": "g3"},
+        {"t": "が", "gr": "g3"},
+        {"t": "いい", "g": "gut", "j": 5, "gr": "g3"},
+        {"t": "と", "g": "(Zitat) dass …"},
+        {"t": "思います", "r": "おもいます", "ruby": [["思", "おも"], ["います", ""]], "b": "思う", "g": "denken, meinen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "手", "r": "て", "g": "Hand", "j": 5},
+        {"t": "で"},
+        {"t": "書く", "r": "かく", "ruby": [["書", "か"], ["く", ""]], "g": "schreiben", "j": 5},
+        {"t": "と", "g": "wenn (immer dann, wenn …)"},
+        {"t": "、"},
+        {"t": "よく", "g": "gut", "j": 5},
+        {"t": "覚えられる", "r": "おぼえられる", "ruby": [["覚", "おぼ"], ["えられる", ""]], "b": "覚える", "g": "sich merken können (Möglichkeitsform von 覚える)", "j": 5},
+        {"t": "から", "g": "seit, ab"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "タブレット", "g": "Tablet (Computer)"},
+        {"t": "も", "g": "auch; AもBも = sowohl A als auch B"},
+        {"t": "ノート", "g": "Heft", "j": 5},
+        {"t": "も", "g": "auch; AもBも = sowohl A als auch B"},
+        {"t": "使う", "r": "つかう", "ruby": [["使", "つか"], ["う", ""]], "g": "benutzen", "j": 5},
+        {"t": "授業", "r": "じゅぎょう", "g": "Unterricht", "j": 5},
+        {"t": "に"},
+        {"t": "なって", "b": "なる", "g": "werden", "j": 5},
+        {"t": "ほしい", "g": "〜てほしい = ich wünsche mir, dass …", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s10.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜させる（使役）",
+      "j": 4,
+      "de": "Kausativ: Verb + させる / せる = „jemanden etwas tun lassen“ oder „jemanden etwas tun heißen“. Die Person, die etwas tun muss, steht mit に. 先生はわたしたちに練習させます = die Lehrerin lässt uns üben.",
+      "ex": "{母|はは}は{弟|おとうと}に{部屋|へや}を{掃除|そうじ}させました。",
+      "exDe": "Meine Mutter hat meinen kleinen Bruder das Zimmer putzen lassen."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜のに",
+      "j": 4,
+      "de": "Kurzform + のに: „obwohl …“. Drückt aus, dass das Ergebnis anders ist als erwartet, oft mit Enttäuschung. Ich übe jeden Tag viel – und trotzdem kann ich es mir nicht merken.",
+      "ex": "{薬|くすり}を{飲|の}んだのに、まだ{頭|あたま}が{痛|いた}いです。",
+      "exDe": "Obwohl ich eine Tablette genommen habe, habe ich immer noch Kopfschmerzen."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜たほうがいい",
+      "j": 4,
+      "de": "た-Form + ほうがいい: „es wäre besser, …“ – ein Rat oder eine Meinung. Mit と思います klingt es vorsichtiger: „Ich finde, man sollte besser …“.",
+      "ex": "{寒|さむ}いので、コートを{着|き}たほうがいいですよ。",
+      "exDe": "Es ist kalt, du solltest besser einen Mantel anziehen."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "ノートに字を書く時間は、どうなりましたか。",
+      "qDe": "Was ist mit der Zeit passiert, in der man ins Heft schreibt?",
+      "options": ["長くなった", "少なくなった", "前と同じ", "まったくなくなった"],
+      "answer": 1,
+      "explain": "Satz 5: ノートに字を書く時間が少なくなりました – die Zeit ist weniger geworden, aber nicht ganz verschwunden.",
+      "evidence": [4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "タブレットでできることとして、文に書いてあるのはどれですか。",
+      "qDe": "Was kann man laut Text mit dem Tablet machen?",
+      "options": ["{宿題|しゅくだい}を送ること", "漢字をすぐに{覚|おぼ}えること", "紙のノートを作ること", "先生と電話で話すこと"],
+      "answer": 0,
+      "explain": "Satz 4: 宿題を送ったり、ビデオを見たりすることができます. Dass man Kanji damit schnell lernt, steht nicht im Text – im Gegenteil (Satz 7).",
+      "evidence": [3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "この人は、漢字をどうやって{練習|れんしゅう}したほうがいいと思っていますか。",
+      "qDe": "Wie sollte man Kanji nach Meinung der Schreiberin üben?",
+      "options": ["タブレットで{練習|れんしゅう}する", "紙に手で書いて{練習|れんしゅう}する", "ビデオを見て{練習|れんしゅう}する", "毎日先生に聞く"],
+      "answer": 1,
+      "explain": "Satz 8–9: 漢字は紙に書いて練習したほうがいい, denn mit der Hand merkt man sich die Zeichen gut.",
+      "evidence": [7, 8]
+    },
+    {
+      "kind": "sprache",
+      "q": "「練習」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 練習?",
+      "options": ["れんしゅう", "れんしゅ", "ねんしゅう", "れいしゅう"],
+      "answer": 0,
+      "explain": "練習 liest man れんしゅう (Übung), Satz 6. Achtung auf das lange う am Ende: しゅう, nicht しゅ.",
+      "evidence": [5]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "3": "texte/2026/11/2026-11-19-tablet-3"
+  }
+}

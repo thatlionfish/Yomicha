@@ -1,6 +1,26 @@
 {
   "texts": [
     {
+      "id": "2026-11-19-tablet-3",
+      "folder": "texte/2026/11/2026-11-19-tablet-3",
+      "date": "2026-11-19",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "タブレットの時代に手で書く意味",
+      "titleDe": "Meinung: Warum Schreiben mit der Hand im Tablet-Zeitalter wichtig bleibt",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-19-tablet-2",
+      "folder": "texte/2026/11/2026-11-19-tablet-2",
+      "date": "2026-11-19",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "学校のタブレット",
+      "titleDe": "Leserbrief: Die Tablets in der Schule",
+      "minutes": 3
+    },
+    {
       "id": "2026-11-18-arte-3",
       "folder": "texte/2026/11/2026-11-18-arte-3",
       "date": "2026-11-18",
