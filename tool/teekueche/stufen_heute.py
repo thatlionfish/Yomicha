@@ -1,7 +1,7 @@
 """Stufen, für die die Teeküche heute schreibt.
 
-Leonis Wunsch (13.11.2026): **zwei Fassungen pro Text – ihre Stufe und eine
-darüber**. Einen Vorrat gibt es nicht; für Ferien sagt sie Bescheid (Ferienpaket). Ihre Stufe steht in config.json
+Leonis Wunsch (19.11.2026): **eine Fassung pro Text, in ihrer Stufe** (`stufen_fenster`
+[0]). Einen Vorrat gibt es nicht; für Ferien sagt sie Bescheid (Ferienpaket). Ihre Stufe steht in config.json
 (`stufe`); die App kann sie nicht melden, der Lernstand liegt nur auf ihrem
 Gerät. Steigt sie in der App auf, sagt ihr die Startseite, sie soll Claude die
 neue Stufe nennen – dann `stufe` hier nachführen.

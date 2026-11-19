@@ -1,9 +1,9 @@
 {
-  "_info": "Einstellungen der Teeküche. stufe = Leonis aktuelle Stufe: nachführen, wenn sie ihre neue Stufe nennt. Ein Text pro Tag, abwechselnd aktuelles Thema und JLPT-Thema; die Stufen rechnet stufen_heute.py: Leonis Stufe und eine darüber (Wunsch vom 13.11.2026). Keinen Vorrat – für Ferien sagt Leoni Bescheid (Ferienpaket).",
-  "stufe": 2,
+  "_info": "Einstellungen der Teeküche. stufe = Leonis aktuelle Stufe: nachführen, wenn sie ihre neue Stufe nennt. Ein Text pro Tag, abwechselnd aktuelles Thema und JLPT-Thema; die Stufe rechnet stufen_heute.py: nur Leonis Stufe, eine Fassung (Wunsch vom 19.11.2026; Stufe 3 erreicht). Keinen Vorrat – für Ferien sagt Leoni Bescheid (Ferienpaket).",
+  "stufe": 3,
   "zielkurve": {"start": "2026-11-12", "startstufe": 2},
   "texte_pro_tag": 1,
-  "stufen_fenster": [0, 1],
+  "stufen_fenster": [0],
   "audio_fuer_stufen": [0, 1],
   "themen": {
     "welt": 25,

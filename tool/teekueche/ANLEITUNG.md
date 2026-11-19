@@ -1,7 +1,7 @@
 # Teeküche – der tägliche Lauf
 
 Diese Anleitung befolgt Claude jeden Morgen (Montag bis Samstag) als geplante Aufgabe.
-Ziel: **1 neuer Text** pro Tag in **2 Stufen** (Leonis Stufe und eine darüber), geprüft, vertont und veröffentlicht.
+Ziel: **1 neuer Text** pro Tag in **einer Fassung – Leonis Stufe**, geprüft, vertont und veröffentlicht.
 Leoni liest einen Text am Tag (13.11.2026); mehr zu schreiben verbraucht nur ihr Nutzungskontingent.
 
 Arbeitsordner: `C:\dev\Apps\Study\yomicha`. Mit Leoni wird Deutsch gesprochen.
@@ -27,9 +27,9 @@ sucht sie mit der Websuche. So muss Leoni nichts bestätigen: Die Freigabe gilt 
 
 1. Datum prüfen (Zeitzone Tokio). Sonntag → aufhören.
 2. `tool/teekueche/config.json` lesen: `stufe` (Leonis Stufe), `themen` (Anteile), `jlpt_themen`, `textarten`.
-   **Die Stufen für heute** liefert `… lauf.py stufen` (Feld `stufen`):
-   **Leonis Stufe und eine darüber – genau zwei Fassungen pro Text**
-   (ihr Wunsch vom 13.11.2026, auch um das Nutzungskontingent zu schonen). Keine weiteren Stufen schreiben.
+   **Die Stufe für heute** liefert `… lauf.py stufen` (Feld `stufen`):
+   **nur Leonis Stufe – genau eine Fassung pro Text** (ihr Wunsch vom 19.11.2026; sie liest einen Text und
+   braucht keine Fassung darüber). Keine weiteren Stufen schreiben – das schont auch ihr Nutzungskontingent.
    Steht im Ergebnis ein `hinweis` (Zielkurve voraus), Leoni in `web/data/status.json` nach ihrer Stufe fragen.
 3. `web/data/texte/index.json` lesen.
    - Gibt es für heute schon Texte (Ferienpaket), nichts Neues erzeugen.
@@ -171,5 +171,5 @@ Hinweise aus `pruefen.py`, ob veröffentlicht wurde.
 ## Ferienpaket (auf Zuruf)
 
 Sagt Leoni z. B. „Ich bin vom 1. bis 14. August weg“: für jeden Lerntag (Mo–Sa) in diesem Zeitraum
-wie oben 1 Text in 2 Stufen schreiben, mit dem Datum des jeweiligen Tages. Nur zeitlose Themen (keine
+wie oben 1 Text in Leonis Stufe schreiben, mit dem Datum des jeweiligen Tages. Nur zeitlose Themen (keine
 Nachrichten). Die App zeigt Texte erst an ihrem Datum.

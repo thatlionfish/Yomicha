@@ -187,15 +187,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       final stock = textsForStufe([for (final e in visible) if (e.vorrat) e], progress.stufe);
                       // Archiv: alle neuen Texte und die schon gelesenen aus dem Vorrat.
                       final shown = [...regular, ...stock.where((e) => readIds.contains(e.id))];
-                      // Die Teeküche schreibt meine Stufe und eine darüber, kennt meine Stufe aber
-                      // nur aus config.json. Fehlt eine der beiden bei den neuen Texten (z. B. nach
-                      // einem Aufstieg), soll ich ihr die neue Stufe melden.
+                      // Die Teeküche schreibt einen Text in meiner Stufe, kennt die Stufe aber nur aus
+                      // config.json. Hat der neueste Tag keinen Text in meiner Stufe (z. B. nach einem
+                      // Aufstieg), soll ich ihr die neue Stufe melden.
+                      final newest = [for (final e in visible) if (!e.vorrat) e.date]
+                          .fold<DateTime?>(null, (a, b) => a == null || b.isAfter(a) ? b : a);
                       final recentStufen = {
                         for (final e in visible)
-                          if (!e.vorrat && _today.difference(e.date).inDays <= 3) e.stufe,
+                          if (!e.vorrat && newest != null && sameDay(e.date, newest)) e.stufe,
                       };
-                      final wanted = {progress.stufe, if (progress.stufe < 7) progress.stufe + 1};
-                      final noTexts = !rest && recentStufen.isNotEmpty && !recentStufen.containsAll(wanted);
+                      final noTexts = !rest &&
+                          newest != null &&
+                          _today.difference(newest).inDays <= 7 &&
+                          !recentStufen.contains(progress.stufe);
                       final (texts: today, :label) = textsForToday(
                         regular: regular,
                         stock: stock,
@@ -217,7 +221,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                               child: Text(
                                 'Die Teeküche schreibt gerade für Stufe ${(recentStufen.toList()..sort()).join(' und ')}, '
-                                'noch nicht für deine Stufe ${stufe.nr} · ${stufe.name} und eine darüber. '
+                                'noch nicht für deine Stufe ${stufe.nr} · ${stufe.name}. '
                                 'Sag Claude „Meine Stufe ist jetzt ${stufe.nr}“, dann stellt sie sich um.',
                                 style: sans(14.5),
                               ),
