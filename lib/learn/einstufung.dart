@@ -3,11 +3,15 @@ import '../data/progress.dart';
 // --- Laufende Einschätzung (Spezifikation 9.3) ------------------------------
 // Startwerte – nach ein paar Wochen fein abstimmen.
 
-/// Aufstieg: in den letzten 5 Texten der Stufe mindestens 80 % richtig und
-/// höchstens 5 % der Wörter nachgeschlagen.
+/// Aufstieg: in den letzten 5 Texten der Stufe mindestens 80 % richtig im
+/// Prüfungsdurchgang und höchstens einer „zu schwer“. Nachschlagen zählt nicht –
+/// das passiert erst in der Lernrunde und gehört zum Lernen (19.11.2026).
 const aufstiegTexte = 5;
 const aufstiegRichtig = 0.8;
-const aufstiegNachgeschlagen = 0.05;
+
+/// Abkürzung: 3 Texte nacheinander „zu leicht“ mit mindestens 75 % richtig.
+const schnellTexte = 3;
+const schnellRichtig = 0.75;
 
 /// Zurück: 3 Texte nacheinander unter 50 % richtig (oder dreimal „zu schwer“).
 const zurueckTexte = 3;
@@ -58,15 +62,24 @@ StufenVorschlag? stufenVorschlag(Progress p) {
     }
   }
 
+  double share(List<ReadRecord> rs) => rs.fold(0, (n, r) => n + r.correct) / rs.fold(0, (n, r) => n + r.total);
+
+  if (s < 7 && answered.length >= schnellTexte) {
+    final last = answered.sublist(answered.length - schnellTexte);
+    if (last.every((r) => r.rating < 0) && share(last) >= schnellRichtig) {
+      return StufenVorschlag(Richtung.hoch, s, s + 1,
+          'Die letzten $schnellTexte Texte waren dir zu leicht, und im Prüfungsdurchgang waren '
+          '${_pct(share(last))} der Antworten richtig.');
+    }
+  }
+
   if (s < 7 && answered.length >= aufstiegTexte) {
     final last = answered.sublist(answered.length - aufstiegTexte);
-    final right = last.fold(0, (n, r) => n + r.correct) / last.fold(0, (n, r) => n + r.total);
-    final looked = last.fold(0.0, (n, r) => n + r.lookupShare) / last.length;
     final tooHard = last.where((r) => r.rating > 0).length;
-    if (right >= aufstiegRichtig && looked <= aufstiegNachgeschlagen && tooHard < 2) {
+    if (share(last) >= aufstiegRichtig && tooHard < 2) {
       return StufenVorschlag(Richtung.hoch, s, s + 1,
-          'In deinen letzten $aufstiegTexte Texten waren ${_pct(right)} der Antworten richtig, '
-          'und du hast nur ${_pct(looked)} der Wörter nachgeschlagen.');
+          'In deinen letzten $aufstiegTexte Texten waren im Prüfungsdurchgang ${_pct(share(last))} '
+          'der Antworten richtig.');
     }
   }
   return null;

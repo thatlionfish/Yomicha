@@ -11,7 +11,7 @@ class WeekStats {
     required this.texts,
     required this.correct,
     required this.speed,
-    required this.looked,
+    required this.days,
     required this.newWords,
     required this.test,
     required this.testSections,
@@ -29,8 +29,8 @@ class WeekStats {
   /// Lesetempo in Zeichen pro Minute, ohne Vorlesen; null = nicht gemessen.
   final double? speed;
 
-  /// Anteil nachgeschlagener Wörter; null = nichts gelesen.
-  final double? looked;
+  /// Tage, an denen ich gelesen habe.
+  final int days;
 
   /// Neu in „Meine Wörter“.
   final int newWords;
@@ -57,7 +57,7 @@ WeekStats weekStats(Progress p, DateTime monday) {
         ? null
         : answered.fold(0, (n, r) => n + r.correct) / answered.fold(0, (n, r) => n + r.total),
     speed: secs == 0 ? null : timed.fold(0, (n, r) => n + r.chars) * 60 / secs,
-    looked: reads.isEmpty ? null : reads.fold(0.0, (n, r) => n + r.lookupShare) / reads.length,
+    days: {for (final r in reads) r.day}.length,
     newWords: p.myWords.values.where((w) => w.added != null && inWeek(w.added!, monday)).length,
     test: test == null || test.total == 0 ? null : test.correct / test.total,
     testSections: {
@@ -80,7 +80,7 @@ List<WeekStats> lastWeeks(Progress p, DateTime today, {int n = 8}) {
 enum Kennzahl {
   correct('Fragen richtig', higherIsBetter: true),
   speed('Lesetempo', higherIsBetter: true),
-  looked('Nachgeschlagen', higherIsBetter: false),
+  days('Lerntage', higherIsBetter: true),
   texts('Gelesene Texte', higherIsBetter: true),
   newWords('Neue Wörter', higherIsBetter: true),
   test('Wochentest', higherIsBetter: true);
@@ -92,13 +92,13 @@ enum Kennzahl {
   double? of(WeekStats w) => switch (this) {
     correct => w.correct,
     speed => w.speed,
-    looked => w.looked,
+    days => w.days == 0 ? null : w.days.toDouble(),
     texts => w.texts == 0 ? null : w.texts.toDouble(),
     newWords => w.newWords == 0 ? null : w.newWords.toDouble(),
     test => w.test,
   };
 
-  bool get isShare => this == correct || this == looked || this == test;
+  bool get isShare => this == correct || this == test;
 
   /// Wert lesbar: „82 %“, „140 Zeichen/Min“, „3“.
   String format(double? v) {
@@ -127,9 +127,8 @@ enum Kennzahl {
   /// Ab welchem Unterschied es zählt (kleinere Schwankungen sind Zufall).
   double get threshold => switch (this) {
     correct || test => 0.03,
-    looked => 0.01,
     speed => 5,
-    texts || newWords => 1,
+    texts || newWords || days => 1,
   };
 }
 
@@ -172,14 +171,12 @@ String aufstiegStand(Progress p) {
   }
   final last = answered.sublist(answered.length - aufstiegTexte);
   final right = last.fold(0, (n, r) => n + r.correct) / last.fold(0, (n, r) => n + r.total);
-  final looked = last.fold(0.0, (n, r) => n + r.lookupShare) / last.length;
   if (right < aufstiegRichtig) {
-    return 'Für den Aufstieg: in den letzten $aufstiegTexte Texten ${(100 * right).round()} % richtig – '
+    return 'Für den Aufstieg: in den letzten $aufstiegTexte Prüfungsdurchgängen ${(100 * right).round()} % richtig – '
         'Ziel sind ${(100 * aufstiegRichtig).round()} %.';
   }
-  if (looked > aufstiegNachgeschlagen) {
-    return 'Für den Aufstieg: ${(100 * looked).round()} % der Wörter nachgeschlagen – '
-        'Ziel sind höchstens ${(100 * aufstiegNachgeschlagen).round()} %.';
+  if (last.where((r) => r.rating > 0).length >= 2) {
+    return 'Für den Aufstieg: Zuletzt waren dir mehrere Texte zu schwer – bleib noch ein wenig auf dieser Stufe.';
   }
   return 'Du erfüllst die Bedingungen für die nächste Stufe – die App schlägt sie dir vor.';
 }

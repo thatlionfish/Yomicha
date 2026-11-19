@@ -59,15 +59,33 @@ void main() {
       expect(v.grund, contains('95 %'));
     });
 
-    test('Kein Aufstieg bei vielen nachgeschlagenen Wörtern oder „zu schwer“', () async {
+    test('Nachschlagen in der Lernrunde zählt nicht; zweimal „zu schwer“ bremst', () async {
       final p = await _fresh();
       for (var i = 0; i < 5; i++) {
-        p.addRead(_read(lookups: 4)); // 10 %
+        p.addRead(_read(lookups: 12)); // viele Wörter gelernt – kein Hindernis
       }
-      expect(stufenVorschlag(p), isNull);
+      expect(stufenVorschlag(p)!.richtung, Richtung.hoch);
       final q = await _fresh();
       for (var i = 0; i < 5; i++) {
         q.addRead(_read(rating: i < 2 ? 1 : 0));
+      }
+      expect(stufenVorschlag(q), isNull);
+    });
+
+    test('Abkürzung: dreimal „zu leicht“ mit mindestens 75 %', () async {
+      final p = await _fresh();
+      for (var i = 0; i < 2; i++) {
+        p.addRead(_read(rating: -1, correct: 3));
+      }
+      expect(stufenVorschlag(p), isNull);
+      p.addRead(_read(rating: -1, correct: 3));
+      final v = stufenVorschlag(p)!;
+      expect(v.richtung, Richtung.hoch);
+      expect(v.grund, contains('zu leicht'));
+
+      final q = await _fresh();
+      for (var i = 0; i < 3; i++) {
+        q.addRead(_read(rating: -1, correct: 2)); // 50 %: zu leicht empfunden, aber nicht verstanden
       }
       expect(stufenVorschlag(q), isNull);
     });

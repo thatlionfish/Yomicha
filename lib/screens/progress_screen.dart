@@ -49,7 +49,7 @@ class ProgressScreen extends StatelessWidget {
                     kennzahlen: const [
                       Kennzahl.correct,
                       Kennzahl.speed,
-                      Kennzahl.looked,
+                      Kennzahl.days,
                       Kennzahl.test,
                       Kennzahl.texts,
                       Kennzahl.newWords,

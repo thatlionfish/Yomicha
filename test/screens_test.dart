@@ -70,7 +70,7 @@ void main() {
     // Zuerst Woche für Woche, darunter der große Weg.
     expect(find.text('Woche für Woche'), findsOneWidget);
     expect(find.text('Fragen richtig'), findsOneWidget);
-    expect(find.text('Nachgeschlagen'), findsOneWidget);
+    expect(find.text('Lerntage'), findsOneWidget);
     // Antippen des letzten Balkens zeigt die laufende Woche.
     final bars = tester.getRect(find.descendant(of: find.byType(StatTile).first, matching: find.byType(CustomPaint)).last);
     await tester.tapAt(bars.centerRight - const Offset(6, 0));

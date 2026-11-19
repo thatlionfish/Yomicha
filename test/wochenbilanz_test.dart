@@ -48,17 +48,17 @@ void main() {
     expect(weekStats(p, lastMonday).texts, 1);
   });
 
-  test('Besser und schlechter – weniger nachschlagen ist besser', () {
-    WeekStats w(DateTime m, {double? correct, double? looked, double? speed}) => WeekStats(
-      weekStart: m, texts: 3, correct: correct, speed: speed, looked: looked, newWords: 0, test: null, testSections: const {});
+  test('Besser und schlechter, kleine Schwankungen zählen nicht', () {
+    WeekStats w(DateTime m, {double? correct, int days = 0, double? speed}) => WeekStats(
+      weekStart: m, texts: 3, correct: correct, speed: speed, days: days, newWords: 0, test: null, testSections: const {});
     final changes = veraenderungen(
-      w(lastMonday, correct: 0.70, looked: 0.10, speed: 140),
-      w(thisMonday, correct: 0.85, looked: 0.06, speed: 142),
+      w(lastMonday, correct: 0.70, days: 3, speed: 140),
+      w(thisMonday, correct: 0.85, days: 5, speed: 142),
     );
     final by = {for (final c in changes) c.kennzahl: c};
     expect(by[Kennzahl.correct]!.besser, isTrue);
     expect(by[Kennzahl.correct]!.kennzahl.formatDelta(by[Kennzahl.correct]!.delta), '+15 Prozentpunkte');
-    expect(by[Kennzahl.looked]!.besser, isTrue);
+    expect(by[Kennzahl.days]!.besser, isTrue);
     expect(by[Kennzahl.speed]!.spuerbar, isFalse); // 2 Zeichen/Min sind Zufall
     expect(by.containsKey(Kennzahl.test), isFalse); // kein Test in beiden Wochen
   });

@@ -6,6 +6,12 @@ Leoni liest einen Text am Tag (13.11.2026); mehr zu schreiben verbraucht nur ihr
 
 Arbeitsordner: `C:\dev\Apps\Study\yomicha`. Mit Leoni wird Deutsch gesprochen.
 
+**Nur ein Shell-Befehl:** Alles, was eine Shell braucht, läuft über
+`tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py <schritt>` (Liste: `… lauf.py hilfe`).
+Keine anderen Shell-Befehle – kein `Set-Location`, kein `git`, `dart` oder `flutter` direkt, kein `Get-Content`.
+Dateien liest und schreibt die Teeküche mit ihren Datei-Werkzeugen (Lesen, Schreiben, Bearbeiten), im Web
+sucht sie mit der Websuche. So muss Leoni nichts bestätigen: Die Freigabe gilt genau für diesen Befehl.
+
 ## Feste Regeln
 
 - **Sonntag ist Ruhetag:** Ist heute Sonntag, nichts erzeugen und sofort aufhören.
@@ -21,8 +27,7 @@ Arbeitsordner: `C:\dev\Apps\Study\yomicha`. Mit Leoni wird Deutsch gesprochen.
 
 1. Datum prüfen (Zeitzone Tokio). Sonntag → aufhören.
 2. `tool/teekueche/config.json` lesen: `stufe` (Leonis Stufe), `themen` (Anteile), `jlpt_themen`, `textarten`.
-   **Die Stufen für heute** liefert
-   `tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\stufen_heute.py` (Feld `stufen`):
+   **Die Stufen für heute** liefert `… lauf.py stufen` (Feld `stufen`):
    **Leonis Stufe und eine darüber – genau zwei Fassungen pro Text**
    (ihr Wunsch vom 13.11.2026, auch um das Nutzungskontingent zu schonen). Keine weiteren Stufen schreiben.
    Steht im Ergebnis ein `hinweis` (Zielkurve voraus), Leoni in `web/data/status.json` nach ihrer Stufe fragen.
@@ -79,17 +84,32 @@ Für jeden Entwurf:
   Grundform oder `"Satz:Schreibung"` für eine Stelle). Namen mit kurzer Erklärung („Kōenji (Stadtviertel in Tokio)“).
 - **Grammatik:** 2–5 Muster der Stufe, jedes mit Erklärung auf Deutsch, Beispielsatz in Ruby-Schreibweise
   (`{漢字|かんじ}`) mit Übersetzung, und `stellen` (Satz ab 1 und das Textstück).
-- **Fragen:** genau 4 – drei zum Inhalt, eine zur Sprache (Lesung, gleiche Bedeutung oder Grammatik).
-  Je 4 Antworten, eine richtig. Falsche Antworten dürfen im Text vorkommen (typisch JLPT).
-  Erklärung auf Deutsch mit Satznummer, `evidence` = Sätze ab 1. Bei Lesungsfragen das gefragte Wort
-  ohne Furigana schreiben und den Rest selbst in Ruby-Schreibweise.
+- **Fragen – wirklich im Prüfungsstil** (Leonis Wunsch vom 19.11.2026). Leoni liest zuerst den
+  **Prüfungsdurchgang**: Text und alle Fragen auf einer Seite, ohne Nachschlagen, Vorlesen oder Übersetzung.
+  Nur dieses Ergebnis zählt für ihren Aufstieg – die Fragen müssen also echtes Verstehen prüfen:
+  - Genau 4 Fragen mit je 4 Antworten, eine richtig. Frage und Antworten **nur Japanisch**, im Wortlaut der
+    JLPT: „〜とあるが、なぜか。“, „〜とはどういうことか。“, „この文章の内容と合っているものはどれか。“,
+    „筆者の考えに合うのはどれか。“, „このメールで一番伝えたいことは何か。“
+  - Stufe 1–2: drei zum Inhalt, eine zur Sprache (Lesung, gleiche Bedeutung oder Grammatik). **Ab Stufe 3 alle
+    vier zum Verständnis** wie im Leseteil (Gründe, Bezüge, Absicht, Meinung); ab Stufe 5 mindestens eine zum
+    ganzen Text (主張理解: „筆者が最も言いたいことは何か“).
+  - **Nicht durch Wörterabgleich lösbar:** Die richtige Antwort **sagt dasselbe mit anderen Worten** (言い換え)
+    als der Text. Die falschen Antworten nehmen gern Wörter aus dem Text, sagen aber etwas anderes: falscher
+    Grund, vertauschte Personen oder Zeiten, nur halb richtig, zu allgemein, im Text gar nicht gesagt.
+  - Mindestens eine Frage braucht **zwei Sätze zusammen** (Grund und Folge, Bezug von こうした / その / これ).
+  - Die Antworten sind etwa gleich lang; die richtige ist nicht immer die längste und steht nicht immer an
+    derselben Stelle.
+  - **Gegenprobe** vor dem Zerlegen: jede Frage nur mit dem Text beantworten. Lässt sie sich lösen, weil ein
+    auffälliges Wort aus Frage oder Text wortgleich nur in der richtigen Antwort steht, umformulieren.
+  - Erklärung auf Deutsch (Leoni sieht sie erst in der Auswertung) mit Satznummer, `evidence` = Sätze ab 1.
+    Bei Lesungsfragen das gefragte Wort ohne Furigana schreiben und den Rest selbst in Ruby-Schreibweise.
 - **Quellen** bei Nachrichten (Name und Link).
 
 ## 4. Zerlegen und prüfen
 
 ```
-tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\zerlegen.py werkstatt\entwuerfe\<datum>-*.json
-tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\pruefen.py
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py zerlegen werkstatt\entwuerfe\<datum>-<thema>-<stufe>.json ...
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py pruefen
 ```
 
 - `zerlegen.py` meldet `FEHLT …` für fehlende Bedeutungen oder Grammatikstellen: Glossar ergänzen und neu laufen lassen,
@@ -97,6 +117,9 @@ tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\pruefen.py
 - `pruefen.py` meldet `STIL …` bei gesprochener Sprache ab Stufe 3 (und bei mehr als zwei Plauder-Stellen in
   Stufe 1–2): die betroffenen Sätze im Entwurf in Schriftform umschreiben und neu prüfen, bis `OK` steht.
   Hinweise ohne Fehler (z. B. „kaum Schriftsprache der N2“) ebenfalls beheben.
+- `pruefen.py` meldet `FRAGE …`, wenn die richtige Antwort Text wörtlich übernimmt, die falschen aber nicht
+  (dann findet man sie durch Wörterabgleich): die richtige Antwort mit anderen Worten sagen (言い換え) oder die
+  falschen ebenfalls mit Wörtern aus dem Text bauen. Gilt für alle Stufen.
 - `pruefen.py` meldet `LESUNG …`, wenn Sudachi anders liest: im Zusammenhang entscheiden und, falls die
   Text-Lesung falsch ist, im Entwurf unter `lesungen` eintragen (`"Satz:Schreibung": "lesung"`).
 - Stufenregeln (Spezifikation 9.1), sonst umschreiben:
@@ -106,13 +129,13 @@ tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\pruefen.py
 
 ## 5. Aufnahmen
 
-- Bis einschließlich `aufbau_bis` (3.12.2026): `dart run tool/tts.dart` (Aufbau-Zugang, Startguthaben).
-- Danach: `dart run tool/tts.dart --key=../learnwithleoni/werkstatt/azure-speech.env` (Gratis-Zugang F0).
+- `… lauf.py audio` – bis einschließlich `aufbau_bis` (3.12.2026) mit dem Aufbau-Zugang, danach von selbst
+  mit dem Gratis-Zugang F0.
 - Den Schlüssel nie ausgeben. Meldet das Skript eine Kostengrenze oder Fehler, keine weiteren Aufnahmen.
-- **Hörkontrolle** der neuen Texte: `dart run tool/tts.dart --hoerkontrolle` (danach mit demselben `--key=` wie oben).
+- **Hörkontrolle** der neuen Texte: `… lauf.py hoerkontrolle`.
   Azure bewertet jede Satzaufnahme gegen die Lesung des Textes. Bei `ABWEICHUNG` das Wort im Zusammenhang prüfen:
   - Liest die Stimme falsch (z. B. 今日 als こんにち), im Text beim Wort `"say": "<lesung>"` eintragen,
-    die Satzaufnahme löschen und `tts.dart` neu laufen lassen.
+    die Satzaufnahme mit `… lauf.py satz-neu <textordner> sNN.mp3` löschen und `… lauf.py audio` neu laufen lassen.
   - Steht im Text eine unübliche Lesung, die Lesung korrigieren (`lesungen` im Entwurf). Übliche Lesungen
     für Wörter, bei denen Sudachi danebenliegt, stehen in `STANDARD_LESUNGEN` (pruefen.py), z. B. 日本 → にほん.
   - Eigennamen (Orte, Personen) bekommen immer `say`, damit die Stimme sie sicher richtig liest.
@@ -125,25 +148,20 @@ Alte Texte wegräumen (älter als `aufbewahren_tage`, Standard 90). Wortaufnahme
 damit Leonis gespeicherte Wörter ihre Aussprache behalten:
 
 ```
-tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\aufraeumen.py
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py aufraeumen
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py test
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py veroeffentlichen "Teeküche: Text vom <datum>"
 ```
 
-```
-flutter test
-git add -A web/data
-git status --short      # nur web/data darf vorgemerkt sein
-git commit -m "Teeküche: Texte vom <datum>"
-git push
-```
-
-Commit-Nachrichten enden mit der Zeile `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+`veroeffentlichen` merkt nur `web/data` vor, bricht ab, wenn etwas anderes dabei ist, hängt die Zeile
+`Co-Authored-By` an und zieht neue Commits von GitHub nach, falls der Push abgelehnt wird.
 Schlägt `flutter test` fehl: Ursache im Text beheben, nie Tests ändern oder abschalten.
 
 ## 7. Wenn etwas schiefgeht
 
 Kann der Lauf nicht fertig werden (keine Websuche, Kontingent erschöpft, Tests rot), eine Meldung oben in
 `web/data/status.json` eintragen, z. B. `{"datum": "2026-11-13", "text": "Heute keine neuen Texte – die Teeküche konnte nicht laufen."}`,
-nur diese Datei committen und pushen. Die App zeigt dann die neuesten ungelesenen Texte.
+mit `… lauf.py veroeffentlichen "Teeküche: Meldung"` veröffentlichen. Die App zeigt dann die neuesten ungelesenen Texte.
 
 ## 8. Abschluss
 

@@ -12,6 +12,7 @@ Mit --uebernehmen werden die JLPT-Stufen der Liste in die Texte geschrieben.
 
 import json
 import pathlib
+import re
 import sys
 
 from sudachipy import Dictionary, SplitMode
@@ -162,6 +163,34 @@ def stil(doc: dict, tok) -> tuple[int, list[str]]:
     return fehler, hinweise
 
 
+RUBY = re.compile(r"\{([^|{}]+)\|[^{}]+\}")
+KANJI_RE = re.compile(r"[㐀-䶿一-鿿々]")
+
+
+def fragen_hinweise(doc: dict) -> list[str]:
+    """Prüfungsstil (19.11.2026): Die richtige Antwort soll den Text umschreiben (言い換え),
+    nicht wörtlich zitieren – sonst lässt sie sich durch Wörterabgleich finden."""
+    out = []
+    sentences = ["".join(t["t"] for t in s["tokens"]) for s in doc["sentences"]]
+    for n, q in enumerate(doc.get("questions", []), start=1):
+        if q.get("kind") == "sprache":
+            continue
+        opts = [RUBY.sub(r"\1", o) for o in q["options"]]
+        stem = RUBY.sub(r"\1", q["q"])
+        evidence = "".join(sentences[i] for i in q.get("evidence", []) if i < len(sentences))
+        right = opts[q["answer"]]
+        wrong = [o for i, o in enumerate(opts) if i != q["answer"]]
+        copied = sorted({
+            right[i:i + 4] for i in range(len(right) - 3)
+            if KANJI_RE.search(right[i:i + 4]) and right[i:i + 4] in evidence
+            and right[i:i + 4] not in stem and not any(right[i:i + 4] in w for w in wrong)
+        })
+        if copied:
+            out.append(f"FRAGE {n}: Die richtige Antwort übernimmt „{copied[0]}“ wörtlich aus dem Text, "
+                       "die falschen nicht – mit anderen Worten sagen (言い換え).")
+    return out
+
+
 def check(path: pathlib.Path, tok, apply: bool = False) -> int:
     doc = json.loads(path.read_text(encoding="utf-8"))
     stufe = doc["stufe"]
@@ -236,7 +265,7 @@ def check(path: pathlib.Path, tok, apply: bool = False) -> int:
     for n in notes:
         print(f"  Hinweis {n}")
     stil_fehler, stil_hinweise = stil(doc, tok)
-    for n in stil_hinweise:
+    for n in stil_hinweise + fragen_hinweise(doc):
         print(f"  {n}")
     if errors or stil_fehler:
         teile = [f"{errors} Lesung(en) prüfen"] if errors else []
