@@ -180,6 +180,8 @@ void main() {
     await _write(tester, paths);
     await tester.pumpAndSettle();
     expect(find.text('Gut geschrieben'), findsOneWidget);
+    // Schönschrift: mein Zeichen über der Vorlage, mit Note.
+    expect(find.textContaining('Schönschrift'), findsWidgets);
     expect(p.schreiben.kann(first), isTrue);
     expect(p.schreiben.kanjiAm(DateTime.now()), 1);
 

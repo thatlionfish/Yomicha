@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/models.dart';
 import '../data/progress.dart';
 import '../data/repository.dart';
+import '../screens/schoenschreib_screen.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import 'stroke_order.dart';
@@ -232,6 +233,16 @@ class _KanjiDetailsState extends State<KanjiDetails> {
             _label('Strichfolge'),
             const SizedBox(height: 8),
             StrokeOrder(paths: k.paths),
+            const SizedBox(height: 10),
+            OutlinedButton.icon(
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => SchoenschreibScreen(zeichen: widget.kanji, paths: k.paths, bedeutung: meaning),
+                ),
+              ),
+              icon: const Icon(Icons.brush_outlined),
+              label: const Text('Schönschreiben'),
+            ),
           ],
           const SizedBox(height: 18),
           _label('Merkgeschichte'),

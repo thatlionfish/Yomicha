@@ -9,12 +9,14 @@ import '../data/audio_key.dart';
 import '../data/models.dart';
 import '../data/schreib_plan.dart';
 import '../learn/review.dart' show review;
+import '../learn/schoenschrift.dart';
 import '../learn/schreiben.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/beispiel_satz.dart';
 import '../widgets/kanji_card.dart';
 import '../widgets/lern_pause.dart';
+import '../widgets/schoenschrift_kachel.dart';
 import '../widgets/wort_schreiber.dart';
 import 'words_screen.dart' show highlighted;
 
@@ -70,6 +72,9 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
   fsrs.Card? _karte;
   int _fehler = 0;
   int _hinweis = 0;
+
+  /// Schönschrift-Vergleich der zuletzt geschriebenen Zeichen.
+  List<ZeichenNote> _noten = const [];
 
   int _wiederholt = 0;
   int _neueKanji = 0;
@@ -266,6 +271,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
       _karte = null;
       _fehler = 0;
       _hinweis = 0;
+      _noten = const [];
     });
     _load();
   }
@@ -284,8 +290,9 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
     return card;
   }
 
-  void _geschrieben(int fehler, int hinweis) {
+  void _geschrieben(int fehler, int hinweis, List<ZeichenNote> noten) {
     final s = _step!;
+    _noten = noten;
     final now = DateTime.now();
     final st = AppScope.of(context).progress.schreiben;
     switch (s.art) {
@@ -438,6 +445,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
         striche: _striche,
         vorlage: vorlage,
         nurStift: st.stiftGesehen,
+        pinsel: st.pinsel,
         onStift: st.stift,
         hilfe: _hilfe,
         onFertig: _geschrieben,
@@ -679,7 +687,12 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 18),
-                Text(k.text, style: kanjiStyle(72)),
+                if (_noten.isNotEmpty) ...[
+                  SchoenschriftReihe(noten: _noten),
+                  const SizedBox(height: 14),
+                  Text(k.text, style: kanjiStyle(48)),
+                ] else
+                  Text(k.text, style: kanjiStyle(72)),
                 if (w != null) ...[
                   Text(w.r, style: jp(22, color: YoColors.inkSoft)),
                   const SizedBox(height: 6),

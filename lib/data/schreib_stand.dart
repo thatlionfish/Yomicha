@@ -36,6 +36,9 @@ class SchreibStand {
   /// Beim Schreiben die Wörter immer wieder vorlesen.
   bool vorlesen = true;
 
+  /// Pinselstrich: Breite nach Druck und Tempo des Stifts.
+  bool pinsel = true;
+
   /// Kanji, die mir in meinen gelesenen Texten schon begegnet sind, und die
   /// Texte, die dafür schon durchgesehen wurden.
   final Set<String> gelesen = {};
@@ -60,6 +63,7 @@ class SchreibStand {
     stiftGesehen = p.getBool('${_p}stift') ?? false;
     vorwissenGefragt = p.getBool('${_p}vorwissenGefragt') ?? false;
     vorlesen = p.getBool('${_p}vorlesen') ?? true;
+    pinsel = p.getBool('${_p}pinsel') ?? true;
     gelesen
       ..clear()
       ..addAll((p.getString('${_p}gelesen') ?? '').split(''));
@@ -168,6 +172,12 @@ class SchreibStand {
   void setWoerterProTag(int n) {
     woerterProTag = n.clamp(5, 60);
     _prefs?.setInt('${_p}woerterProTag', woerterProTag);
+    _changed();
+  }
+
+  void setPinsel(bool an) {
+    pinsel = an;
+    _prefs?.setBool('${_p}pinsel', an);
     _changed();
   }
 

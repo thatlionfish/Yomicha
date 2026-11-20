@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import '../learn/schoenschrift.dart';
 import '../learn/strich_pruefung.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
@@ -13,6 +14,7 @@ import 'stroke_order.dart';
 ///
 /// Mit dem Apple Pencil: Sobald auf dem Gerät einmal ein Stift geschrieben
 /// hat ([nurStift]), zählen Finger und Handballen im Feld nicht mehr.
+/// [pinsel]: Die Strichbreite folgt Druck und Tempo des Stifts.
 class Schreibfeld extends StatefulWidget {
   const Schreibfeld({
     super.key,
@@ -25,6 +27,7 @@ class Schreibfeld extends StatefulWidget {
     this.onStift,
     this.toleranz = const StrichToleranz(),
     this.anfang = const [],
+    this.pinsel = false,
   });
 
   /// Die Striche des Zeichens in der richtigen Reihenfolge (KanjiVG).
@@ -41,7 +44,9 @@ class Schreibfeld extends StatefulWidget {
   final StrichToleranz toleranz;
 
   /// Schon geschriebene Striche (nach „Rückgängig“ aus dem nächsten Zeichen).
-  final List<List<Offset>> anfang;
+  final List<Tinte> anfang;
+
+  final bool pinsel;
 
   /// Nach jedem Strich: wie er bewertet wurde.
   final void Function(StrichErgebnis ergebnis) onStrich;
@@ -56,10 +61,12 @@ class Schreibfeld extends StatefulWidget {
 class SchreibfeldState extends State<Schreibfeld> {
   late List<Path> _paths;
   late List<List<Offset>> _targets;
-  final List<List<Offset>> _ink = [];
+  final List<Tinte> _ink = [];
   List<Offset>? _current;
+  List<double> _currentW = [];
+  late Pinsel _pinsel = Pinsel(an: widget.pinsel);
   int? _pointer;
-  List<Offset>? _wrong;
+  Tinte? _wrong;
   Timer? _wrongTimer;
   int _next = 0;
   int _fehler = 0;
@@ -72,7 +79,10 @@ class SchreibfeldState extends State<Schreibfeld> {
   bool get fertig => _next >= _paths.length;
 
   /// Die richtigen Striche, so wie ich sie geschrieben habe.
-  List<List<Offset>> get tinte => List.of(_ink);
+  List<Tinte> get tinte => List.of(_ink);
+
+  /// Vergleich mit der Vorlage (Schönschrift), sobald das Zeichen fertig ist.
+  ZeichenNote bewerte(String zeichen) => bewerteZeichen(zeichen, widget.paths, _targets, _ink);
 
   @override
   void initState() {
@@ -108,6 +118,7 @@ class SchreibfeldState extends State<Schreibfeld> {
       _prepare();
       neu();
     }
+    if (oldWidget.pinsel != widget.pinsel) _pinsel = Pinsel(an: widget.pinsel);
   }
 
   @override
@@ -128,8 +139,10 @@ class SchreibfeldState extends State<Schreibfeld> {
     });
   }
 
+  static bool _stift(PointerEvent e) => e.kind == PointerDeviceKind.stylus || e.kind == PointerDeviceKind.invertedStylus;
+
   bool _accept(PointerEvent e) {
-    if (e.kind == PointerDeviceKind.stylus || e.kind == PointerDeviceKind.invertedStylus) {
+    if (_stift(e)) {
       widget.onStift?.call();
       return true;
     }
@@ -140,22 +153,30 @@ class SchreibfeldState extends State<Schreibfeld> {
 
   void _down(PointerDownEvent e, double size) {
     if (fertig || _pointer != null || !_accept(e)) return;
+    final p = _toField(e.localPosition, size);
     setState(() {
       _pointer = e.pointer;
-      _current = [_toField(e.localPosition, size)];
+      _current = [p];
+      _currentW = [_pinsel.start(p, e.timeStamp, druck: _stift(e) ? e.pressure : null)];
     });
   }
 
   void _move(PointerMoveEvent e, double size) {
     if (e.pointer != _pointer) return;
-    setState(() => _current!.add(_toField(e.localPosition, size)));
+    final p = _toField(e.localPosition, size);
+    setState(() {
+      _current!.add(p);
+      _currentW.add(_pinsel.weiter(p, e.timeStamp, druck: _stift(e) ? e.pressure : null));
+    });
   }
 
   void _up(PointerEvent e) {
     if (e.pointer != _pointer) return;
     final drawn = _current ?? const [];
+    final breiten = _currentW;
     _pointer = null;
     _current = null;
+    _currentW = [];
     if (e is PointerCancelEvent || drawn.isEmpty) {
       setState(() {});
       return;
@@ -163,13 +184,13 @@ class SchreibfeldState extends State<Schreibfeld> {
     final r = pruefeStrich(drawn, _targets, _next, toleranz: widget.toleranz);
     setState(() {
       if (r.urteil == StrichUrteil.richtig) {
-        _ink.add(drawn);
+        _ink.add(Tinte(drawn, breiten));
         _next++;
         _miss = 0;
       } else {
         _fehler++;
         _miss++;
-        _wrong = drawn;
+        _wrong = Tinte(drawn, breiten);
         _wrongTimer?.cancel();
         _wrongTimer = Timer(const Duration(milliseconds: 650), () {
           if (mounted) setState(() => _wrong = null);
@@ -200,7 +221,7 @@ class SchreibfeldState extends State<Schreibfeld> {
                 paths: _paths,
                 targets: _targets,
                 ink: _ink,
-                current: _current,
+                current: _current == null ? null : Tinte(_current!, _currentW),
                 wrong: _wrong,
                 next: _next,
                 vorlage: widget.vorlage || widget.hinweis >= 3,
@@ -228,9 +249,9 @@ class _FeldPainter extends CustomPainter {
 
   final List<Path> paths;
   final List<List<Offset>> targets;
-  final List<List<Offset>> ink;
-  final List<Offset>? current;
-  final List<Offset>? wrong;
+  final List<Tinte> ink;
+  final Tinte? current;
+  final Tinte? wrong;
   final int next;
   final bool vorlage;
   final bool naechsterBlass;
@@ -242,14 +263,6 @@ class _FeldPainter extends CustomPainter {
     ..strokeWidth = w
     ..color = c;
 
-  Path _poly(List<Offset> pts) {
-    final p = Path()..moveTo(pts.first.dx, pts.first.dy);
-    for (final q in pts.skip(1)) {
-      p.lineTo(q.dx, q.dy);
-    }
-    if (pts.length == 1) p.lineTo(pts.first.dx + 0.1, pts.first.dy);
-    return p;
-  }
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -278,19 +291,35 @@ class _FeldPainter extends CustomPainter {
       canvas.drawCircle(a, 2.6, Paint()..color = YoColors.lemonGrass);
       canvas.drawCircle(a, 2.6, _stroke(YoColors.chocolate, 0.7));
     }
-    final inkPaint = _stroke(YoColors.chocolate, 4.6);
     for (final s in ink) {
-      canvas.drawPath(_poly(s), inkPaint);
+      zeichneTinte(canvas, s, YoColors.chocolate);
     }
-    if (wrong case final w? when w.isNotEmpty) {
-      canvas.drawPath(_poly(w), _stroke(YoColors.woodAsh, 4.6));
-    }
-    if (current case final c? when c.isNotEmpty) {
-      canvas.drawPath(_poly(c), inkPaint);
-    }
+    if (wrong case final w?) zeichneTinte(canvas, w, YoColors.woodAsh);
+    if (current case final c?) zeichneTinte(canvas, c, YoColors.chocolate);
     canvas.restore();
   }
 
   @override
   bool shouldRepaint(_FeldPainter old) => true;
+}
+
+/// Zeichnet einen Strich mit wechselnder Breite (Pinsel): Stück für Stück mit
+/// runden Enden, jedes Stück so breit wie das Mittel seiner beiden Punkte.
+void zeichneTinte(Canvas canvas, Tinte t, Color farbe) {
+  final pts = t.punkte;
+  if (pts.isEmpty) return;
+  final w = t.breiten;
+  double breite(int i) => i < w.length ? w[i] : grundBreite;
+  final paint = Paint()
+    ..style = PaintingStyle.stroke
+    ..strokeCap = StrokeCap.round
+    ..color = farbe;
+  if (pts.length == 1) {
+    canvas.drawCircle(pts.first, breite(0) / 2, Paint()..color = farbe);
+    return;
+  }
+  for (var i = 1; i < pts.length; i++) {
+    paint.strokeWidth = (breite(i - 1) + breite(i)) / 2;
+    canvas.drawLine(pts[i - 1], pts[i], paint);
+  }
 }

@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../data/models.dart';
+import '../learn/schoenschrift.dart';
 import '../learn/strich_pruefung.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
@@ -25,6 +26,7 @@ class WortSchreiber extends StatefulWidget {
     this.nurStift = false,
     this.onStift,
     this.hilfe,
+    this.pinsel = false,
   });
 
   final String wort;
@@ -37,11 +39,15 @@ class WortSchreiber extends StatefulWidget {
   final bool nurStift;
   final VoidCallback? onStift;
 
+  /// Pinselstrich (Breite nach Druck und Tempo des Stifts).
+  final bool pinsel;
+
   /// Hinweis 1 bei einem Kanji: Bausteine und Geschichte zeigen.
   final Future<void> Function(String kanji)? hilfe;
 
-  /// Das Wort ist fertig: falsche Striche und höchste Hinweisstufe.
-  final void Function(int fehler, int hinweis) onFertig;
+  /// Das Wort ist fertig: falsche Striche, höchste Hinweisstufe und der
+  /// Schönschrift-Vergleich je geschriebenem Zeichen.
+  final void Function(int fehler, int hinweis, List<ZeichenNote> noten) onFertig;
 
   @override
   State<WortSchreiber> createState() => _WortSchreiberState();
@@ -62,10 +68,13 @@ class _WortSchreiberState extends State<WortSchreiber> {
   var _feld = GlobalKey<SchreibfeldState>();
 
   /// Die Striche fertiger Zeichen – für „Rückgängig“ ins vorige Zeichen.
-  final Map<int, List<List<Offset>>> _tinte = {};
+  final Map<int, List<Tinte>> _tinte = {};
+
+  /// Schönschrift-Vergleich je fertigem Zeichen.
+  final Map<int, ZeichenNote> _noten = {};
 
   /// Striche, mit denen das Feld beginnt (nach „Rückgängig“).
-  List<List<Offset>> _anfang = const [];
+  List<Tinte> _anfang = const [];
 
   bool _writable(int i) => widget.striche[_chars[i]]?.isNotEmpty == true;
   bool _isKanji(String c) => isKanji(c) && c != '々';
@@ -77,7 +86,7 @@ class _WortSchreiberState extends State<WortSchreiber> {
     _i = _firstFrom(0);
     if (_i >= _chars.length) {
       _fertig = true;
-      WidgetsBinding.instance.addPostFrameCallback((_) => widget.onFertig(0, 0));
+      WidgetsBinding.instance.addPostFrameCallback((_) => widget.onFertig(0, 0, const []));
     }
   }
 
@@ -121,6 +130,7 @@ class _WortSchreiberState extends State<WortSchreiber> {
     final prev = _previous(_i);
     if (prev == null) return;
     final ink = _tinte[prev] ?? const [];
+    _noten.remove(prev);
     setState(() {
       _i = prev;
       _anfang = ink.isEmpty ? const [] : ink.sublist(0, ink.length - 1);
@@ -157,7 +167,9 @@ class _WortSchreiberState extends State<WortSchreiber> {
     _timer?.cancel();
     _timer = Timer(const Duration(milliseconds: 450), () {
       if (!mounted) return;
-      _tinte[_i] = _feld.currentState?.tinte ?? const [];
+      final f = _feld.currentState;
+      _tinte[_i] = f?.tinte ?? const [];
+      if (f != null) _noten[_i] = f.bewerte(_chars[_i]);
       final next = _firstFrom(_i + 1);
       setState(() {
         _i = next;
@@ -168,7 +180,7 @@ class _WortSchreiberState extends State<WortSchreiber> {
         _meldung = null;
         _fertig = next >= _chars.length;
       });
-      if (_fertig) widget.onFertig(_fehler, _hinweisMax);
+      if (_fertig) widget.onFertig(_fehler, _hinweisMax, [for (final i in _noten.keys.toList()..sort()) _noten[i]!]);
     });
   }
 
@@ -233,6 +245,7 @@ class _WortSchreiberState extends State<WortSchreiber> {
                       key: _feld,
                       paths: widget.striche[_chars[_i]]!,
                       anfang: _anfang,
+                      pinsel: widget.pinsel,
                       vorlage: widget.vorlage,
                       hinweis: _hinweis,
                       nurStift: widget.nurStift,

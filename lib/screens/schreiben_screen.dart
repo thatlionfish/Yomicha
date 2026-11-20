@@ -161,6 +161,13 @@ class _SchreibenScreenState extends State<SchreibenScreen> {
               step: 5,
               onChanged: st.setWoerterProTag,
             ),
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: Text('Pinselstrich', style: sans(15.5)),
+              subtitle: Text('Strichbreite nach Druck und Tempo des Stifts', style: sans(13.5, color: YoColors.inkSoft)),
+              value: st.pinsel,
+              onChanged: st.setPinsel,
+            ),
             const SizedBox(height: 6),
             Text(
               st.stiftGesehen
