@@ -35,6 +35,55 @@ Future<void> showKanjiCard(
   );
 }
 
+/// Die Kanji eines Wortes als Knöpfe; ein Tipp öffnet die Kanji-Karte mit
+/// Bedeutung und Bausteinen – im Text, in der Wiederholung und in „Meine Wörter“.
+class KanjiButtons extends StatelessWidget {
+  const KanjiButtons({
+    super.key,
+    required this.word,
+    required this.repo,
+    required this.progress,
+    this.doc,
+    this.center = false,
+  });
+
+  final String word;
+  final Repository repo;
+  final Progress progress;
+  final TextDoc? doc;
+  final bool center;
+
+  @override
+  Widget build(BuildContext context) {
+    final kanji = kanjiOf(word);
+    if (kanji.isEmpty) return const SizedBox.shrink();
+    return Column(
+      crossAxisAlignment: center ? CrossAxisAlignment.center : CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text('Kanji', style: sans(13.5, weight: 650, color: YoColors.inkSoft)),
+        const SizedBox(height: 6),
+        Wrap(
+          alignment: center ? WrapAlignment.center : WrapAlignment.start,
+          spacing: 10,
+          runSpacing: 10,
+          children: [
+            for (final k in kanji)
+              OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(64, 64),
+                  padding: const EdgeInsets.all(8),
+                ),
+                onPressed: () => showKanjiCard(context, kanji: k, repo: repo, progress: progress, doc: doc),
+                child: Text(k, style: kanjiStyle(32)),
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
 /// Lehrbuchschrift für große Kanji (handschriftgetreue Striche).
 TextStyle kanjiStyle(double size) => TextStyle(
   fontFamily: 'KleeOne',

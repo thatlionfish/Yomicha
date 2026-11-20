@@ -11,10 +11,13 @@ import 'package:yomicha/main.dart';
 import 'package:yomicha/screens/archive_screen.dart';
 import 'package:yomicha/screens/home_screen.dart';
 import 'package:yomicha/screens/progress_screen.dart';
+import 'package:yomicha/screens/review_screen.dart';
 import 'package:yomicha/screens/words_screen.dart';
 import 'package:yomicha/widgets/splash.dart';
 import 'package:yomicha/widgets/word_sheet.dart';
 import 'package:yomicha/widgets/figure.dart';
+import 'package:yomicha/learn/review.dart';
+import 'package:yomicha/widgets/kanji_card.dart';
 import 'package:yomicha/widgets/speak_sheet.dart';
 import 'package:yomicha/widgets/stat_tile.dart';
 
@@ -30,13 +33,33 @@ Future<Progress> _progress() async {
   return p;
 }
 
-Future<void> _pump(WidgetTester tester, Progress p, Widget home) async {
+Future<void> _pump(WidgetTester tester, Progress p, Widget home, {Repository? repo}) async {
   AnimatedFigure.animate = false;
   tester.view.physicalSize = const Size(390 * 3, 844 * 3);
   tester.view.devicePixelRatio = 3;
   addTearDown(tester.view.reset);
-  await tester.pumpWidget(YomichaApp(repo: Repository(), progress: p, home: home));
+  await tester.pumpWidget(YomichaApp(repo: repo ?? Repository(), progress: p, home: home));
   await tester.pump();
+}
+
+/// Kanji-Daten ohne Netz: jedes Kanji heißt „Testkanji“ plus das Zeichen.
+class _KanjiRepo extends Repository {
+  @override
+  Future<KanjiInfo?> kanjiInfo(String kanji) async =>
+      KanjiInfo(kanji: kanji, keyword: 'Testkanji $kanji', strokes: 9, de: 'Bedeutung $kanji');
+  @override
+  Future<Map<String, String>> partNames() async => {};
+  @override
+  Future<Map<String, KanjiInfo>> kanjiFor(Iterable<String> chars) async => {};
+}
+
+Future<void> _openKanji(WidgetTester tester, String kanji) async {
+  final button = find.descendant(of: find.byType(KanjiButtons), matching: find.widgetWithText(OutlinedButton, kanji));
+  await tester.ensureVisible(button);
+  await tester.pump();
+  await tester.tap(button);
+  await tester.pumpAndSettle();
+  expect(find.text('Testkanji $kanji'), findsOneWidget);
 }
 
 void main() {
@@ -61,6 +84,29 @@ void main() {
       await tester.pump();
     }
     expect(find.textContaining('wiederholt'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('Wiederholung: Kanji nach dem Aufdecken antippen', (tester) async {
+    final p = await _progress();
+    final w = p.myWords.values.firstWhere((w) => w.t == '香り');
+    await _pump(tester, p, ReviewScreen(cards: [WordCard(w, p.cardFor(w.key), isNew: true)]), repo: _KanjiRepo());
+    // Vor dem Aufdecken keine Kanji-Hilfe, sonst verrät sie die Bedeutung.
+    expect(find.byType(KanjiButtons), findsNothing);
+    await tester.tap(find.text('Aufdecken'));
+    await tester.pump();
+    expect(find.text('Kanji'), findsOneWidget);
+    await _openKanji(tester, '香');
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('Meine Wörter: Kanji in der Wortkarte antippen', (tester) async {
+    final p = await _progress();
+    await _pump(tester, p, const WordsScreen(), repo: _KanjiRepo());
+    await tester.tap(find.textContaining('眠れます', findRichText: true).first);
+    await tester.pumpAndSettle();
+    expect(find.descendant(of: find.byType(KanjiButtons), matching: find.byType(OutlinedButton)), findsOneWidget);
+    await _openKanji(tester, '眠');
     expect(tester.takeException(), isNull);
   });
 

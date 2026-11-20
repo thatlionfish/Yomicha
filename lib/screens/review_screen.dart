@@ -3,10 +3,12 @@ import 'package:fsrs/fsrs.dart' as fsrs;
 
 import '../app_scope.dart';
 import '../audio/player.dart';
+import '../data/models.dart';
 import '../data/progress.dart';
 import '../learn/review.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
+import '../widgets/kanji_card.dart';
 import '../widgets/kumachan.dart';
 import 'words_screen.dart';
 
@@ -96,6 +98,15 @@ class _ReviewScreenState extends State<ReviewScreen> {
               if (w.sentence != null) ...[
                 const SizedBox(height: 18),
                 Text.rich(highlighted(w.sentence!, w.t, size: 18), textAlign: TextAlign.center),
+              ],
+              if (_shown && kanjiOf(w.t).isNotEmpty) ...[
+                const SizedBox(height: 18),
+                KanjiButtons(
+                  word: w.t,
+                  repo: AppScope.of(context).repo,
+                  progress: AppScope.of(context).progress,
+                  center: true,
+                ),
               ],
             ],
           ),

@@ -113,29 +113,7 @@ class _WordSheet extends StatelessWidget {
             ],
             if (t.kanji.isNotEmpty) ...[
               const SizedBox(height: 18),
-              Text('Kanji', style: sans(13.5, weight: 650, color: YoColors.inkSoft)),
-              const SizedBox(height: 6),
-              Wrap(
-                spacing: 10,
-                runSpacing: 10,
-                children: [
-                  for (final k in t.kanji)
-                    OutlinedButton(
-                      style: OutlinedButton.styleFrom(
-                        minimumSize: const Size(64, 64),
-                        padding: const EdgeInsets.all(8),
-                      ),
-                      onPressed: () => showKanjiCard(
-                        context,
-                        kanji: k,
-                        repo: repo,
-                        progress: progress,
-                        doc: doc,
-                      ),
-                      child: Text(k, style: kanjiStyle(32)),
-                    ),
-                ],
-              ),
+              KanjiButtons(word: t.t, repo: repo, progress: progress, doc: doc),
             ],
             const SizedBox(height: 20),
             ListenableBuilder(

@@ -9,6 +9,7 @@ import '../learn/calendar.dart';
 import '../learn/review.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
+import '../widgets/kanji_card.dart';
 import 'review_screen.dart';
 
 /// Satz mit hervorgehobenem Wort.
@@ -112,14 +113,16 @@ class WordsScreen extends StatelessWidget {
   }
 
   void _details(BuildContext context, MyWord w) {
-    final progress = AppScope.of(context).progress;
+    final scope = AppScope.of(context);
+    final progress = scope.progress;
     final card = progress.cardFor(w.key);
     final status = statusOf(progress, w.key);
     showModalBottomSheet<void>(
       context: context,
+      isScrollControlled: true,
       constraints: const BoxConstraints(maxWidth: 640),
       builder: (sheet) => SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -142,6 +145,10 @@ class WordsScreen extends StatelessWidget {
               if (w.sentence != null) ...[
                 const SizedBox(height: 14),
                 Text.rich(highlighted(w.sentence!, w.t, size: 18)),
+              ],
+              if (kanjiOf(w.t).isNotEmpty) ...[
+                const SizedBox(height: 16),
+                KanjiButtons(word: w.t, repo: scope.repo, progress: progress),
               ],
               const SizedBox(height: 14),
               Text(

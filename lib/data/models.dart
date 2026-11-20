@@ -6,6 +6,12 @@ final _punctRe = RegExp(r'^[、。！？「」『』（）・…,.!?\s]+$');
 
 bool isKanji(String ch) => _kanjiRe.hasMatch(ch);
 
+/// Die Kanji eines Wortes in Lesereihenfolge, ohne Wiederholungen.
+List<String> kanjiOf(String s) => [
+  for (final ch in s.split('').toSet())
+    if (isKanji(ch)) ch,
+];
+
 /// Ein Teil eines Wortes mit seiner Lesung; bei Kana ist die Lesung leer.
 class RubySeg {
   const RubySeg(this.base, this.reading);
@@ -63,10 +69,7 @@ class Token {
   bool get isWord => gloss != null || r != null;
 
   /// Die Kanji des Wortes, ohne Wiederholungen.
-  List<String> get kanji => [
-    for (final ch in t.split('').toSet())
-      if (isKanji(ch)) ch,
-  ];
+  List<String> get kanji => kanjiOf(t);
 
   /// Lesung für die Wortleiste: aus [r] oder aus den Teilen.
   String get reading =>
