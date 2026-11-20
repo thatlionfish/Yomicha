@@ -1,4 +1,31 @@
 {
+"会談|かいだん": {
+"s": "両国の大臣が東京で[会談]を行った。",
+"de": "Die Minister beider Länder führten in Tokio ein Gespräch.",
+"r": "{両国|りょうこく}の{大臣|だいじん}が{東京|とうきょう}で[{会談|かいだん}]を{行|おこな}った。",
+"bedeutung": "Gespräch, Unterredung (offiziell)"
+},
+"位|い": {
+"s": "妹はマラソン大会で[三位]になった。",
+"de": "Meine kleine Schwester wurde beim Marathon Dritte.",
+"r": "{妹|いもうと}はマラソン{大会|たいかい}で[{三位|さんい}]になった。"
+},
+"位|くらい": {
+"s": "駅まで歩いて五分[位]かかる。",
+"de": "Zu Fuß braucht man etwa fünf Minuten bis zum Bahnhof.",
+"r": "{駅|えき}まで{歩|ある}いて{五分|ごふん}[{位|くらい}]かかる。"
+},
+"位置|いち": {
+"s": "地図で駅の[位置]を確認してから出かけた。",
+"de": "Ich habe auf der Karte nachgesehen, wo der Bahnhof liegt, und bin dann losgegangen.",
+"r": "{地図|ちず}で{駅|えき}の[{位置|いち}]を{確認|かくにん}してから{出|で}かけた。"
+},
+"体格|たいかく": {
+"s": "弟はスポーツを始めてから[体格]がよくなった。",
+"de": "Seit mein kleiner Bruder Sport treibt, ist er kräftiger gebaut.",
+"r": "{弟|おとうと}はスポーツを{始|はじ}めてから[{体格|たいかく}]がよくなった。",
+"bedeutung": "Körperbau, Statur"
+},
 "信任|しんにん": {
 "s": "社長は社員の[信任]を得ている。",
 "de": "Der Firmenchef genießt das Vertrauen der Angestellten.",

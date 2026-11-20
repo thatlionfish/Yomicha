@@ -1,0 +1,273 @@
+{
+  "id": "2026-11-21-suitou-3",
+  "date": "2026-11-21",
+  "topic": "jlpt",
+  "type": "essay",
+  "stufe": 3,
+  "titleDe": "Essay: Ein Jahr mit der eigenen Teeflasche",
+  "title": [
+    {"t": "水筒", "r": "すいとう", "g": "Trinkflasche, Thermosflasche", "j": 2},
+    {"t": "を"},
+    {"t": "持ち歩いて", "r": "もちあるいて", "ruby": [["持", "も"], ["ち", ""], ["歩", "ある"], ["いて", ""]], "b": "持ち歩く", "g": "bei sich tragen, mit sich herumtragen"},
+    {"t": "一年", "r": "いちねん", "g": "ein Jahr", "j": 5}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "去年", "r": "きょねん", "g": "letztes Jahr", "j": 5},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "秋", "r": "あき", "g": "Herbst", "j": 5},
+        {"t": "から"},
+        {"t": "、"},
+        {"t": "わたし", "g": "ich", "j": 5},
+        {"t": "は", "g": "(Thema)"},
+        {"t": "家", "r": "いえ", "g": "Zuhause, Haus", "j": 5},
+        {"t": "で", "g": "in, an; mit"},
+        {"t": "いれた", "b": "いれる", "g": "(Tee) aufbrühen, zubereiten", "j": 5},
+        {"t": "お茶", "r": "おちゃ", "ruby": [["お", ""], ["茶", "ちゃ"]], "g": "Tee", "j": 5},
+        {"t": "を"},
+        {"t": "水筒", "r": "すいとう", "g": "Trinkflasche, Thermosflasche", "j": 2},
+        {"t": "に"},
+        {"t": "入れて", "r": "いれて", "ruby": [["入", "い"], ["れて", ""]], "b": "入れる", "g": "hineintun, einfüllen", "j": 5},
+        {"t": "持ち歩く", "r": "もちあるく", "ruby": [["持", "も"], ["ち", ""], ["歩", "ある"], ["く", ""]], "g": "bei sich tragen, mit sich herumtragen"},
+        {"t": "こと", "g": "〜ことにしている = es sich zur Regel gemacht haben", "j": 4, "gr": "g1"},
+        {"t": "に", "gr": "g1"},
+        {"t": "している", "b": "する", "g": "tun, machen", "j": 5, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "それ", "g": "das", "j": 5},
+        {"t": "まで", "g": "bis"},
+        {"t": "は", "g": "(Thema)"},
+        {"t": "、"},
+        {"t": "のど", "g": "Kehle, Hals; のどがかわく = Durst haben", "j": 4},
+        {"t": "が"},
+        {"t": "かわく", "g": "trocken werden; のどがかわく = Durst haben", "j": 4},
+        {"t": "と"},
+        {"t": "、"},
+        {"t": "コンビニ", "g": "Konbini, 24-Stunden-Laden"},
+        {"t": "で", "g": "in, an; mit"},
+        {"t": "ペットボトル", "g": "PET-Flasche, Plastikflasche"},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "お茶", "r": "おちゃ", "ruby": [["お", ""], ["茶", "ちゃ"]], "g": "Tee", "j": 5},
+        {"t": "を"},
+        {"t": "買って", "r": "かって", "ruby": [["買", "か"], ["って", ""]], "b": "買う", "g": "kaufen", "j": 5, "gr": "g2"},
+        {"t": "ばかり", "g": "〜てばかりいる = ständig nur …", "gr": "g2"},
+        {"t": "いた", "b": "いる", "g": "〜ている = (Zustand, Gewohnheit)", "j": 5, "gr": "g2"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "一日", "r": "いちにち", "g": "ein Tag; 一日に = pro Tag", "j": 5},
+        {"t": "に"},
+        {"t": "二本", "r": "にほん", "g": "zwei (Flaschen)", "j": 3},
+        {"t": "買えば", "r": "かえば", "ruby": [["買", "か"], ["えば", ""]], "b": "買う", "g": "kaufen", "j": 5},
+        {"t": "、"},
+        {"t": "一年", "r": "いちねん", "g": "ein Jahr", "j": 5},
+        {"t": "で", "g": "in, an; mit"},
+        {"t": "七百本", "r": "ななひゃっぽん", "g": "siebenhundert (Flaschen)"},
+        {"t": "以上", "r": "いじょう", "g": "mehr als, über", "j": 4},
+        {"t": "に"},
+        {"t": "なる", "g": "werden; 〜になる = ergeben, ausmachen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "リサイクル", "g": "Recycling"},
+        {"t": "される", "b": "する", "g": "werden (Passiv von する)", "j": 5},
+        {"t": "もの", "g": "Ding, Sache", "j": 5},
+        {"t": "も", "g": "auch"},
+        {"t": "多い", "r": "おおい", "ruby": [["多", "おお"], ["い", ""]], "g": "viel, zahlreich", "j": 5},
+        {"t": "が"},
+        {"t": "、"},
+        {"t": "ごみ", "g": "Müll, Abfall", "j": 4},
+        {"t": "と"},
+        {"t": "して", "b": "する", "g": "tun, machen", "j": 5},
+        {"t": "燃やされる", "r": "もやされる", "ruby": [["燃", "も"], ["やされる", ""]], "b": "燃やす", "g": "verbrannt werden", "j": 3},
+        {"t": "もの", "g": "Ding, Sache", "j": 5},
+        {"t": "も", "g": "auch"},
+        {"t": "少なくない", "r": "すくなくない", "ruby": [["少", "すく"], ["なくない", ""]], "b": "少ない", "g": "wenig; 少なくない = nicht wenige", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "水筒", "r": "すいとう", "g": "Trinkflasche, Thermosflasche", "j": 2},
+        {"t": "を"},
+        {"t": "使えば", "r": "つかえば", "ruby": [["使", "つか"], ["えば", ""]], "b": "使う", "g": "benutzen", "j": 5},
+        {"t": "、"},
+        {"t": "そう", "g": "so; そうした = solch, derartig", "j": 5},
+        {"t": "した", "b": "する", "g": "tun, machen", "j": 5},
+        {"t": "ごみ", "g": "Müll, Abfall", "j": 4},
+        {"t": "が"},
+        {"t": "減り", "r": "へり", "ruby": [["減", "へ"], ["り", ""]], "b": "減る", "g": "weniger werden, abnehmen", "j": 3},
+        {"t": "、"},
+        {"t": "お金", "r": "おかね", "ruby": [["お", ""], ["金", "かね"]], "g": "Geld", "j": 5},
+        {"t": "も", "g": "auch"},
+        {"t": "節約", "r": "せつやく", "g": "Sparen; 節約する = sparen", "j": 3},
+        {"t": "できる", "g": "können", "j": 5},
+        {"t": "わけ", "g": "〜わけだ = das heißt also, folglich", "j": 4, "gr": "g3"},
+        {"t": "だ", "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "もちろん", "g": "natürlich, selbstverständlich", "j": 4},
+        {"t": "、"},
+        {"t": "毎朝", "r": "まいあさ", "g": "jeden Morgen", "j": 5},
+        {"t": "お茶", "r": "おちゃ", "ruby": [["お", ""], ["茶", "ちゃ"]], "g": "Tee", "j": 5},
+        {"t": "を"},
+        {"t": "いれて", "b": "いれる", "g": "(Tee) aufbrühen, zubereiten", "j": 5},
+        {"t": "、"},
+        {"t": "夜", "r": "よる", "g": "Abend, Nacht", "j": 5},
+        {"t": "に"},
+        {"t": "水筒", "r": "すいとう", "g": "Trinkflasche, Thermosflasche", "j": 2},
+        {"t": "を"},
+        {"t": "洗う", "r": "あらう", "ruby": [["洗", "あら"], ["う", ""]], "g": "waschen, spülen", "j": 5},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "は", "g": "(Thema)"},
+        {"t": "面倒", "r": "めんどう", "g": "lästig, mühsam", "j": 3},
+        {"t": "な", "b": "だ"},
+        {"t": "とき", "g": "Zeit, Moment; 〜ときもある = manchmal", "j": 5},
+        {"t": "も", "g": "auch"},
+        {"t": "ある", "g": "es gibt, vorkommen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "しかし", "g": "jedoch, aber", "j": 5},
+        {"t": "、"},
+        {"t": "自分", "r": "じぶん", "g": "selbst; 自分で = selbst", "j": 5},
+        {"t": "で", "g": "in, an; mit"},
+        {"t": "好きな", "r": "すきな", "ruby": [["好", "す"], ["きな", ""]], "b": "好き", "g": "Lieblings-, gern mögen", "j": 5},
+        {"t": "茶葉", "r": "ちゃば", "g": "Teeblätter"},
+        {"t": "を"},
+        {"t": "選べる", "r": "えらべる", "ruby": [["選", "えら"], ["べる", ""]], "g": "auswählen können"},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "季節", "r": "きせつ", "g": "Jahreszeit", "j": 4},
+        {"t": "に"},
+        {"t": "合わせて", "r": "あわせて", "ruby": [["合", "あ"], ["わせて", ""]], "b": "合わせる", "g": "anpassen; 〜に合わせて = passend zu …", "j": 3},
+        {"t": "味", "r": "あじ", "g": "Geschmack", "j": 4},
+        {"t": "を"},
+        {"t": "変える", "r": "かえる", "ruby": [["変", "か"], ["える", ""]], "g": "ändern, wechseln", "j": 4},
+        {"t": "楽しみ", "r": "たのしみ", "ruby": [["楽", "たの"], ["しみ", ""]], "g": "Freude, Vergnügen", "j": 4},
+        {"t": "も", "g": "auch"},
+        {"t": "生まれた", "r": "うまれた", "ruby": [["生", "う"], ["まれた", ""]], "b": "生まれる", "g": "entstehen, geboren werden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "小さな", "r": "ちいさな", "ruby": [["小", "ちい"], ["さな", ""]], "g": "klein", "j": 5},
+        {"t": "習慣", "r": "しゅうかん", "g": "Gewohnheit", "j": 4},
+        {"t": "でも", "g": "auch wenn, selbst wenn", "j": 5},
+        {"t": "、"},
+        {"t": "続ければ", "r": "つづければ", "ruby": [["続", "つづ"], ["ければ", ""]], "b": "続ける", "g": "fortsetzen, weitermachen", "j": 4},
+        {"t": "環境", "r": "かんきょう", "g": "Umwelt", "j": 3},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "ため", "g": "〜のためになる = gut sein für …, nützen", "j": 4},
+        {"t": "に"},
+        {"t": "なる", "g": "werden; 〜になる = ergeben, ausmachen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "まず", "g": "zuerst, erst einmal; まずは = für den Anfang", "j": 4},
+        {"t": "は", "g": "(Thema)"},
+        {"t": "一週間", "r": "いっしゅうかん", "g": "eine Woche (lang)", "j": 5},
+        {"t": "、"},
+        {"t": "試して", "r": "ためして", "ruby": [["試", "ため"], ["して", ""]], "b": "試す", "g": "ausprobieren", "j": 3},
+        {"t": "みて", "b": "みる", "g": "〜てみる = (versuchsweise) tun", "j": 5},
+        {"t": "は", "g": "(Thema)"},
+        {"t": "どう", "g": "wie; 〜てはどうだろうか = wie wäre es, wenn …", "j": 5},
+        {"t": "だろう", "b": "だ", "g": "wohl; 〜てはどうだろうか = wie wäre es, wenn …"},
+        {"t": "か", "g": "(Fragepartikel)"},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ことにしている",
+      "j": 3,
+      "de": "Wörterbuchform / ない-Form + ことにしている: „es sich zur Regel gemacht haben, …“. Beschreibt eine bewusst gewählte Gewohnheit. Anders als ことにする (einmaliger Entschluss) betont ことにしている, dass man es seitdem regelmäßig so macht.",
+      "ex": "{健康|けんこう}のために、{毎晩|まいばん}{十一時|じゅういちじ}には{寝|ね}ることにしている。",
+      "exDe": "Meiner Gesundheit zuliebe gehe ich grundsätzlich jeden Abend um elf Uhr ins Bett."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜てばかりいる",
+      "j": 3,
+      "de": "て-Form + ばかりいる: „ständig nur …, immer nur …“. Drückt aus, dass jemand eine Sache dauernd tut – oft mit leiser Kritik. Hier: Früher kaufte die Verfasserin bei Durst jedes Mal Flaschentee.",
+      "ex": "{弟|おとうと}は{勉強|べんきょう}しないで、ゲームをしてばかりいる。",
+      "exDe": "Mein kleiner Bruder lernt nicht, sondern spielt ständig nur Videospiele."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜わけだ",
+      "j": 3,
+      "de": "Kurzform + わけだ: „das heißt also …, folglich …“. Zieht aus dem vorher Gesagten eine logische Schlussfolgerung. Typisch für Essays und Erklärungen: Wer weniger Flaschen kauft, spart eben auch Geld.",
+      "ex": "{毎日|まいにち}{三十分|さんじっぷん}{歩|ある}けば、{一週間|いっしゅうかん}で{三時間|さんじかん}{半|はん}{歩|ある}くわけだ。",
+      "exDe": "Wenn man jeden Tag 30 Minuten geht, geht man also in einer Woche dreieinhalb Stunden."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "「ペットボトルのお茶を買ってばかりいた」とあるが、どういうことか。",
+      "qDe": "„… kaufte ständig nur Flaschentee“ – was ist damit gemeint?",
+      "options": ["コンビニで、{水筒|すいとう}に入れるためのお茶を買っていた", "家でいれたお茶を、ペットボトルに入れて持っていた", "飲み物がほしくなるたびに、店でお茶を買っていた", "のどがかわいても、お茶は買わないようにしていた"],
+      "answer": 2,
+      "explain": "Satz 2: のどがかわくと … 買ってばかりいた – jedes Mal, wenn sie Durst hatte (= 飲み物がほしくなるたびに), kaufte sie im Laden Tee. Tee zu Hause aufbrühen und in die Flasche füllen tut sie erst seit letztem Herbst (Satz 1).",
+      "evidence": [0, 1]
+    },
+    {
+      "kind": "inhalt",
+      "q": "「お金も{節約|せつやく}できるわけだ」とあるが、{筆者|ひっしゃ}がそう考えるのはなぜか。",
+      "qDe": "„… kann man also auch Geld sparen“ – warum denkt die Verfasserin das?",
+      "options": ["{自分|じぶん}で飲み物を用意すれば、毎日買わなくて済むから", "リサイクルされるペットボトルは、安く買えるから", "{水筒|すいとう}を使えば、一年で七百本のお茶がもらえるから", "{季節|きせつ}に合わせて茶葉を変えると、安く手に入るから"],
+      "answer": 0,
+      "explain": "Satz 3 und 5: Wer täglich zwei Flaschen kauft, kommt auf über 700 im Jahr; mit der eigenen Flasche fallen diese Käufe weg (= 毎日買わなくて済む). Von billigeren Recycling-Flaschen, geschenktem Tee oder günstigen Teeblättern steht nichts im Text.",
+      "evidence": [2, 4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{水筒|すいとう}を使うようになって、{筆者|ひっしゃ}にはどんなよい変化があったか。",
+      "qDe": "Welche gute Veränderung gab es für die Verfasserin, seit sie die Flasche benutzt?",
+      "options": ["毎朝コンビニに寄るのが楽しみになった", "{水筒|すいとう}を洗うのが面倒ではなくなった", "ペットボトルを洗ってリサイクルするようになった", "その時期に合うお茶を{自分|じぶん}で決めて味わえるようになった"],
+      "answer": 3,
+      "explain": "Satz 7: Sie kann ihre Lieblingsteeblätter selbst wählen und den Geschmack der Jahreszeit anpassen (= その時期に合うお茶を自分で決める). Das Spülen ist laut Satz 6 manchmal immer noch lästig, und in den Konbini geht sie nicht mehr.",
+      "evidence": [5, 6]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{筆者|ひっしゃ}の考えに合うのはどれか。",
+      "qDe": "Was entspricht der Meinung der Verfasserin?",
+      "options": ["ペットボトルのお茶は、{環境|かんきょう}のために絶対に買うべきではない", "手間がかかっても、{身近|みじか}な工夫を重ねていけば、自然を守る力になる", "{水筒|すいとう}を洗うのは面倒なので、毎日続けるのは難しい", "リサイクルされるなら、ペットボトルを使っても問題はない"],
+      "answer": 1,
+      "explain": "Satz 6 und 8: Auch wenn es manchmal mühsam ist (= 手間がかかっても), nützt eine kleine Gewohnheit (= 身近な工夫) der Umwelt (= 自然を守る力になる), wenn man sie fortsetzt (= 重ねていく). Ein Verbot fordert sie nicht, die Mühe hält sie nicht vom Weitermachen ab, und Satz 4 sagt, dass viele Flaschen trotz Recycling verbrannt werden.",
+      "evidence": [3, 5, 7]
+    }
+  ],
+  "sources": []
+}

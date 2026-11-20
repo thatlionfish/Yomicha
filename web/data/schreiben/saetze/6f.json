@@ -1,0 +1,25 @@
+{
+"演じる|えんじる": {
+"s": "彼女は映画で医者の役を[演じた]。",
+"de": "Sie spielte im Film die Rolle einer Ärztin.",
+"r": "{彼女|かのじょ}は{映画|えいが}で{医者|いしゃ}の{役|やく}を[{演|えん}じた]。",
+"bedeutung": "spielen (eine Rolle), darstellen"
+},
+"演ずる|えんずる": {
+"s": "主人公を[演ずる]のは、まだ若い俳優だ。",
+"de": "Die Hauptfigur spielt ein noch junger Schauspieler.",
+"r": "{主人公|しゅじんこう}を[{演|えん}ずる]のは、まだ{若|わか}い{俳優|はいゆう}だ。",
+"bedeutung": "spielen (eine Rolle), darstellen (schriftlich)"
+},
+"演出|えんしゅつ": {
+"s": "この劇は光の[演出]がとても美しい。",
+"de": "Bei diesem Stück ist die Lichtregie sehr schön.",
+"r": "この{劇|げき}は{光|ひかり}の[{演出|えんしゅつ}]がとても{美|うつく}しい。",
+"bedeutung": "Regie, Inszenierung"
+},
+"演説|えんぜつ": {
+"s": "市長の[演説]を聞きに大勢の人が集まった。",
+"de": "Viele Menschen kamen, um die Rede des Bürgermeisters zu hören.",
+"r": "{市長|しちょう}の[{演説|えんぜつ}]を{聞|き}きに{大勢|おおぜい}の{人|ひと}が{集|あつ}まった。"
+}
+}

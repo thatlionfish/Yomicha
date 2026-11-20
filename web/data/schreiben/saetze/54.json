@@ -1,4 +1,34 @@
 {
+"各|かく": {
+"s": "[各クラス]から代表を一人ずつ選ぶ。",
+"de": "Aus jeder Klasse wird je eine Vertreterin oder ein Vertreter gewählt.",
+"r": "[{各|かく}クラス]から{代表|だいひょう}を{一人|ひとり}ずつ{選|えら}ぶ。"
+},
+"各々|おのおの": {
+"s": "参加者は[各々]好きな席に座った。",
+"de": "Die Teilnehmenden setzten sich jeweils auf einen Platz ihrer Wahl.",
+"r": "{参加者|さんかしゃ}は[{各々|おのおの}]{好|す}きな{席|せき}に{座|すわ}った。"
+},
+"各地|かくち": {
+"s": "週末は全国[各地]で雪が降るらしい。",
+"de": "Am Wochenende soll es überall im Land schneien.",
+"r": "{週末|しゅうまつ}は{全国|ぜんこく}[{各地|かくち}]で{雪|ゆき}が{降|ふ}るらしい。"
+},
+"各自|かくじ": {
+"s": "昼ご飯は[各自]で用意してください。",
+"de": "Das Mittagessen bringt bitte jeder selbst mit.",
+"r": "{昼|ひる}ご{飯|はん}は[{各自|かくじ}]で{用意|ようい}してください。"
+},
+"合格|ごうかく": {
+"s": "一年間努力して、試験に[合格]した。",
+"de": "Nach einem Jahr Mühe habe ich die Prüfung bestanden.",
+"r": "{一年間|いちねんかん}{努力|どりょく}して、{試験|しけん}に[{合格|ごうかく}]した。"
+},
+"同格|どうかく": {
+"s": "この大会では、プロもアマチュアも[同格]に扱われる。",
+"de": "Bei diesem Turnier werden Profis und Amateure gleichrangig behandelt.",
+"r": "この{大会|たいかい}では、プロもアマチュアも[{同格|どうかく}]に{扱|あつか}われる。"
+},
 "告げる|つげる": {
 "s": "彼は何も[告げず]に出ていった。",
 "de": "Er ging, ohne etwas zu sagen.",

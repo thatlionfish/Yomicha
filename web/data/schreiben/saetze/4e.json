@@ -67,6 +67,18 @@
 "r": "{私|わたし}の{家|いえ}は{三|さん}[{丁目|ちょうめ}]にあります。",
 "bedeutung": "Häuserblock (in Adressen, z. B. 3-chōme)"
 },
+"上位|じょうい": {
+"s": "この店は人気ランキングで[上位]に入っている。",
+"de": "Dieses Restaurant steht in der Beliebtheitsrangliste weit oben.",
+"r": "この{店|みせ}は{人気|にんき}ランキングで[{上位|じょうい}]に{入|はい}っている。",
+"bedeutung": "höherer Rang, Spitzenplatz"
+},
+"上演|じょうえん": {
+"s": "この作品は来月まで[上演]される予定だ。",
+"de": "Dieses Stück soll bis nächsten Monat aufgeführt werden.",
+"r": "この{作品|さくひん}は{来月|らいげつ}まで[{上演|じょうえん}]される{予定|よてい}だ。",
+"bedeutung": "Aufführung (auf der Bühne)"
+},
 "両|りょう": {
 "s": "[両手]に荷物を持って歩いた。",
 "de": "Ich ging mit Gepäck in beiden Händen.",
@@ -98,6 +110,12 @@
 "de": "Herr Yamada ist der Verantwortliche dieser Abteilung.",
 "r": "{山田|やまだ}さんはこの{部署|ぶしょ}の[{主任|しゅにん}]だ。",
 "bedeutung": "Leiter, Verantwortlicher"
+},
+"主演|しゅえん": {
+"s": "兄が学校の劇で[主演]することになった。",
+"de": "Mein großer Bruder wird im Schultheaterstück die Hauptrolle spielen.",
+"r": "{兄|あに}が{学校|がっこう}の{劇|げき}で[{主演|しゅえん}]することになった。",
+"bedeutung": "Hauptrolle"
 },
 "了解|りょうかい": {
 "s": "メールの内容、[了解]しました。",
@@ -159,6 +177,17 @@
 "r": "{占|うらな}い{師|し}の[{予言|よげん}]が{当|あ}たった。",
 "bedeutung": "Prophezeiung, Vorhersage"
 },
+"争い|あらそい": {
+"s": "兄弟の小さな[争い]はすぐに終わった。",
+"de": "Der kleine Streit zwischen den Geschwistern war schnell vorbei.",
+"r": "{兄弟|きょうだい}の{小|ちい}さな[{争|あらそ}い]はすぐに{終|お}わった。",
+"bedeutung": "Streit, Konflikt"
+},
+"争う|あらそう": {
+"s": "二つのチームが優勝を[争って]いる。",
+"de": "Zwei Mannschaften kämpfen um den Sieg.",
+"r": "{二|ふた}つのチームが{優勝|ゆうしょう}を[{争|あらそ}って]いる。"
+},
 "二|に": {
 "s": "この薬は一日[二回]飲んでください。",
 "de": "Nehmen Sie dieses Medikament zweimal am Tag.",
@@ -179,6 +208,11 @@
 "de": "Das Gehalt wird jeden Monat am 20. ausgezahlt.",
 "r": "{給料|きゅうりょう}は{毎月|まいつき}[{二十日|はつか}]に{払|はら}われる。"
 },
+"二日|ふつか": {
+"s": "[二日]前から少し熱が続いている。",
+"de": "Seit zwei Tagen habe ich leichtes Fieber.",
+"r": "[{二日|ふつか}]{前|まえ}から{少|すこ}し{熱|ねつ}が{続|つづ}いている。"
+},
 "人|じん": {
 "s": "私の友達は[ドイツ人]です。",
 "de": "Mein Freund ist Deutscher.",
@@ -193,6 +227,12 @@
 "s": "駅の前に[人]がたくさんいる。",
 "de": "Vor dem Bahnhof sind viele Leute.",
 "r": "{駅|えき}の{前|まえ}に[{人|ひと}]がたくさんいる。"
+},
+"人格|じんかく": {
+"s": "子どもの[人格]を大切にする教育が必要だ。",
+"de": "Wir brauchen eine Erziehung, die die Persönlichkeit des Kindes achtet.",
+"r": "{子|こ}どもの[{人格|じんかく}]を{大切|たいせつ}にする{教育|きょういく}が{必要|ひつよう}だ。",
+"bedeutung": "Persönlichkeit, Charakter"
 },
 "任す|まかす": {
 "s": "細かいことは君に[任す]よ。",

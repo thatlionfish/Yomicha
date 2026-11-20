@@ -22,6 +22,11 @@
 "de": "Um einen Laden zu eröffnen, braucht man Kapital.",
 "r": "{店|みせ}を{始|はじ}めるには[{資本|しほん}]が{必要|ひつよう}だ。"
 },
+"資格|しかく": {
+"s": "仕事のために、新しい[資格]を取りたい。",
+"de": "Für die Arbeit möchte ich eine neue Qualifikation erwerben.",
+"r": "{仕事|しごと}のために、{新|あたら}しい[{資格|しかく}]を{取|と}りたい。"
+},
 "資産|しさん": {
 "s": "祖父は大きな[資産]を残した。",
 "de": "Mein Großvater hat ein großes Vermögen hinterlassen.",

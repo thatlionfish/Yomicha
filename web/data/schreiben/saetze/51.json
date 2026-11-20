@@ -9,6 +9,11 @@
 "de": "Einzelheiten finden Sie auf der offiziellen Website.",
 "r": "{詳|くわ}しいことは[{公式|こうしき}]サイトで{確認|かくにん}してください。"
 },
+"公演|こうえん": {
+"s": "劇団の[公演]は来週の土曜日から始まる。",
+"de": "Die Aufführungen der Theatergruppe beginnen nächsten Samstag.",
+"r": "{劇団|げきだん}の[{公演|こうえん}]は{来週|らいしゅう}の{土曜日|どようび}から{始|はじ}まる。"
+},
 "公認|こうにん": {
 "s": "この記録は[公認]されなかった。",
 "de": "Dieser Rekord wurde nicht offiziell anerkannt.",
@@ -57,5 +62,11 @@
 "s": "この本の[内容]を短くまとめてください。",
 "de": "Fassen Sie bitte den Inhalt dieses Buches kurz zusammen.",
 "r": "この{本|ほん}の[{内容|ないよう}]を{短|みじか}くまとめてください。"
+},
+"出演|しゅつえん": {
+"s": "好きな歌手がテレビ番組に[出演]した。",
+"de": "Meine Lieblingssängerin ist in einer Fernsehsendung aufgetreten.",
+"r": "{好|す}きな{歌手|かしゅ}がテレビ{番組|ばんぐみ}に[{出演|しゅつえん}]した。",
+"bedeutung": "Auftritt (in Film, Fernsehen, Bühne)"
 }
 }

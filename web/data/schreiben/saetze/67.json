@@ -1,4 +1,15 @@
 {
+"本|ほん": {
+"s": "寝る前に、いつも[本]を少し読む。",
+"de": "Vor dem Schlafen lese ich immer ein wenig in einem Buch.",
+"r": "{寝|ね}る{前|まえ}に、いつも[{本|ほん}]を{少|すこ}し{読|よ}む。"
+},
+"本格|ほんかく": {
+"s": "来月から新しい工事が[本格的]に始まる。",
+"de": "Ab nächstem Monat beginnen die neuen Bauarbeiten richtig.",
+"r": "{来月|らいげつ}から{新|あたら}しい{工事|こうじ}が[{本格的|ほんかくてき}]に{始|はじ}まる。",
+"bedeutung": "echt, richtig; 本格的 = ernsthaft, in vollem Umfang"
+},
 "果たして|はたして": {
 "s": "[果たして]明日は晴れるだろうか。",
 "de": "Ob es morgen wohl wirklich sonnig wird?",
