@@ -1,7 +1,7 @@
 """Baut die Daten für „Kanji schreiben“ (Spezifikation 19).
 
 Quellen:
-  werkstatt/quellen/jlpt-kanji/kanji-jouyou.json   JLPT-Stufe (jlpt_new) und Häufigkeit
+  werkstatt/quellen/jlpt-kanji/kanji-jouyou.json   alle Jōyō-Kanji: JLPT-Stufe (jlpt_new, jlpt_old), Häufigkeit
   werkstatt/quellen/jlpt-vokabeln/n1..n5.csv       JLPT-Wörter (open-anki-jlpt-decks, MIT)
   werkstatt/quellen/kanjivg/kanjivg-*.xml.gz       Striche der Kana (CC BY-SA 3.0)
   web/data/kanji/*.json                            Kanji-Karten (Bestandteile, Striche)
@@ -78,19 +78,30 @@ def main() -> None:
             cards.update(json.loads(f.read_text(encoding="utf-8")))
     kana = kana_strokes(next((q / "kanjivg").glob("kanjivg-*.xml.gz")))
 
-    # Was gelernt wird: N5–N1 nach der Liste, dazu Leonis Vorwissen in den
-    # Stufen ihrer bisherigen App. Nur Kanji mit Strichdaten.
+    # Was gelernt wird: alle Jōyō-Kanji, N5–N1. Die neue JLPT-Liste (jlpt_new)
+    # hat Lücken: Häufige Kanji wie 結, 保, 基 stehen dort unter N1, obwohl die
+    # alte Liste sie zur Stufe 2 zählt (≈ N3/N2), und 2010 dazugekommene wie
+    # 誰, 頃 fehlen ganz. Deshalb:
+    #   - jlpt_new N5–N2 gilt;
+    #   - sonst die alte Liste (4 → N5, 3 → N4, 2 → N2), wenn sie leichter ist;
+    #   - Jōyō ohne Stufe → N1.
+    # Was ich schon kann, steht in der Stufe meiner bisherigen App, wenn die
+    # neue Liste es erst in der N1 (oder gar nicht) führt – z. B. 舌.
+    # Nur Kanji mit Strichdaten.
     vorwissen = "".join(extra["vorwissen"][n] for n in ("5", "4", "3"))
+    vorwissen_stufe = {c: int(n) for n, chars in extra["vorwissen"].items() for c in chars}
+    alt_zu_neu = {4: 5, 3: 4, 2: 2, 1: 1}
     stufe: dict[str, int] = {}
     for c, v in jouyou.items():
-        if v.get("jlpt_new") in (5, 4, 3, 2, 1):
-            stufe[c] = v["jlpt_new"]
-    # Was ich schon kann, steht in der Stufe meiner bisherigen App, wenn die
-    # Liste es erst in der N1 (oder gar nicht) führt – z. B. 舌.
-    for n, chars in extra["vorwissen"].items():
-        for c in chars:
-            if stufe.get(c, 1) == 1:
-                stufe[c] = int(n)
+        neu = v.get("jlpt_new")
+        if neu in (5, 4, 3, 2):
+            stufe[c] = neu
+        elif c in vorwissen_stufe:
+            stufe[c] = vorwissen_stufe[c]
+        else:
+            stufe[c] = max(neu or 1, alt_zu_neu.get(v.get("jlpt_old"), 1))
+    for c, n in vorwissen_stufe.items():
+        stufe.setdefault(c, n)
     ohne_striche = [c for c in stufe if not cards.get(c, {}).get("paths")]
     for c in ohne_striche:
         del stufe[c]

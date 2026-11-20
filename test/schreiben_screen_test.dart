@@ -144,10 +144,8 @@ void main() {
     expect(find.textContaining('Noch $bisN2 Kanji bis N2'), findsOneWidget);
     expect(find.textContaining('Danach N1:'), findsOneWidget);
 
-    // 又 (ein N1-Bestandteil von 支) hat kein eigenes Wort: als schon gelernt
-    // annehmen, damit nach dem ersten Kanji gleich seine Wörter kommen.
-    expect(plan.reihenfolge.firstWhere((k) => !plan.vorwissen.contains(k)), '又');
-    p.schreiben.lerne('又', DateTime(2026, 1, 5));
+    // Als Erstes 暑 (N4, fehlte in meiner bisherigen App); danach seine Wörter wie 暑い.
+    expect(plan.reihenfolge.firstWhere((k) => !plan.vorwissen.contains(k)), '暑');
     await tester.tap(find.text('Schreiben'));
     await tester.pumpAndSettle();
     final first = plan.reihenfolge.firstWhere((k) => !p.schreiben.kann(k));

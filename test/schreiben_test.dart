@@ -27,9 +27,19 @@ final sunday = DateTime(2026, 11, 22, 9);
 
 void main() {
   test('Plan: N5 bis N1, mein Vorwissen, Wörter mit Okurigana', () {
-    expect(plan.reihenfolge.length, greaterThan(1900));
+    // Alle 2136 Jōyō-Kanji.
+    expect(plan.reihenfolge.length, 2136);
     // Erst alles bis N2 (mit N1-Bestandteilen wie 又 vor 支), dann die N1.
-    expect(plan.bisN2.where((k) => (plan.stufe[k] ?? 1) >= 2).length, 985);
+    expect(plan.bisN2.where((k) => (plan.stufe[k] ?? 1) >= 2).length, greaterThan(1020));
+    // Die neue JLPT-Liste führt 結, 保, 基 unter N1 – die alte zählt sie zur N2.
+    for (final k in ['結', '保', '基', '第', '暖']) {
+      expect(plan.stufe[k], 2, reason: k);
+      expect(plan.bisN2, contains(k));
+    }
+    // Jōyō-Kanji ohne JLPT-Stufe (z. B. seit 2010) kommen in die N1.
+    expect(plan.stufe['誰'], 1);
+    expect(plan.stufe['頃'], 1);
+    expect({for (final w in plan.woerter) w.t}, containsAll(['結婚', '保険']));
     expect(plan.bisN2.indexOf('又'), lessThan(plan.bisN2.indexOf('支')));
     expect(plan.nachN2.every((k) => plan.stufe[k] == 1), isTrue);
     expect(plan.stufe['舌'], 5, reason: 'Vorwissen bleibt in der Stufe meiner bisherigen App');
