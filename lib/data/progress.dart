@@ -2,8 +2,10 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:fsrs/fsrs.dart' as fsrs;
+import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'github_sicherung.dart';
 import 'lern_uhr.dart';
 import 'schreib_stand.dart';
 
@@ -261,6 +263,12 @@ class Progress extends ChangeNotifier {
   /// Wann ich den Lernstand zuletzt als Datei gesichert habe.
   DateTime? lastBackup;
 
+  /// Wöchentliche Sicherung auf GitHub (privates Repository): Schlüssel nur
+  /// auf diesem Gerät, letzte Sicherung und der letzte Fehler.
+  String githubToken = '';
+  DateTime? cloudBackup;
+  String? cloudFehler;
+
   /// Ergebnis der Einstufung zu Beginn; null = noch nicht gemacht.
   EinstufungErgebnis? einstufung;
 
@@ -276,6 +284,8 @@ class Progress extends ChangeNotifier {
   Future<void> load() async {
     final p = _prefs = await SharedPreferences.getInstance();
     lastBackup = DateTime.tryParse(p.getString('${_p}lastBackup') ?? '');
+    githubToken = p.getString('${_p}githubToken') ?? '';
+    cloudBackup = DateTime.tryParse(p.getString('${_p}cloudBackup') ?? '');
     final e = p.getString('${_p}einstufung');
     einstufung = e == null ? null : EinstufungErgebnis.fromJson(jsonDecode(e) as Map<String, dynamic>);
     final pause = p.getString('${_p}vorschlagPause')?.split(':');
@@ -498,7 +508,14 @@ class Progress extends ChangeNotifier {
   // --- Sicherung (Spezifikation 17) ----------------------------------------
 
   /// Bleibt auf dem Gerät: der Azure-Schlüssel gehört nicht in eine Datei.
-  static const _notInBackup = {'azureKey', 'azureRegion', 'lastBackup', 'lernuhr'};
+  static const _notInBackup = {
+    'azureKey',
+    'azureRegion',
+    'lastBackup',
+    'lernuhr',
+    'githubToken',
+    'cloudBackup',
+  };
 
   bool _inBackup(String prefKey) =>
       prefKey.startsWith(_p) && !_notInBackup.contains(prefKey.substring(_p.length));
@@ -516,6 +533,38 @@ class Progress extends ChangeNotifier {
           if (_inBackup(k)) k.substring(_p.length): p.get(k),
       },
     });
+  }
+
+  void setGithubToken(String token) {
+    githubToken = token.trim();
+    cloudFehler = null;
+    _prefs?.setString('${_p}githubToken', githubToken);
+    notifyListeners();
+  }
+
+  /// Sichert den Lernstand in mein privates GitHub-Repository – von selbst
+  /// einmal pro Woche ([nurWennFaellig]) oder sofort. true = gesichert.
+  Future<bool> cloudSichern(
+    DateTime now, {
+    required String geraet,
+    bool nurWennFaellig = true,
+    http.Client? client,
+  }) async {
+    if (githubToken.isEmpty) return false;
+    final last = cloudBackup;
+    if (nurWennFaellig && last != null && now.difference(last) < GithubSicherung.abstand) return false;
+    try {
+      await GithubSicherung(githubToken, client: client).hochladen(geraet, backupJson(now), now);
+    } catch (e) {
+      cloudFehler = e is SicherungsFehler ? e.message : 'Keine Verbindung zu GitHub. Bist du online?';
+      notifyListeners();
+      return false;
+    }
+    cloudBackup = now;
+    cloudFehler = null;
+    _prefs?.setString('${_p}cloudBackup', now.toIso8601String());
+    markBackedUp(now);
+    return true;
   }
 
   void markBackedUp(DateTime now) {

@@ -16,6 +16,7 @@ Schritte:
   hoerkontrolle               Satzaufnahmen der neuen Texte abhören
   satz-neu <ordner> <datei>   eine Satzaufnahme löschen (z. B. nach einer festen Lesung), dann „audio“
   aufraeumen                  alte Texte wegräumen (aufraeumen.py)
+  sicherung                   Leonis Lernstand aus GitHub (privat) auf den PC kopieren – höchstens einmal pro Woche
   test                        flutter test
   veroeffentlichen "<text>"   web/data committen und pushen – nichts anderes
   status                      git status (kurz)
@@ -91,6 +92,47 @@ def satz_neu(folder: str, name: str) -> None:
         print("Diese Aufnahme gibt es nicht.")
 
 
+SICHERUNGS_REPO = "thatlionfish/Yomicha-lernstand"
+SICHERUNGEN = ROOT / "werkstatt" / "sicherungen"
+SICHERUNGEN_BEHALTEN = 12
+
+
+def sicherung(immer: bool = False) -> None:
+    """Kopiert die wöchentlichen Sicherungen der App (privates Repository) nach
+    werkstatt/sicherungen/<datum>/ – nie veröffentlicht. Höchstens einmal pro Woche,
+    die letzten 12 Kopien bleiben."""
+    SICHERUNGEN.mkdir(parents=True, exist_ok=True)
+    alt = sorted(d for d in SICHERUNGEN.iterdir() if d.is_dir())
+    heute = dt.date.today()
+    if alt and not immer:
+        letzte = dt.date.fromisoformat(alt[-1].name)
+        if (heute - letzte).days < 7:
+            print(f"Letzte Kopie vom {letzte} – noch keine neue nötig.")
+            return
+    res = subprocess.run(["gh", "api", f"repos/{SICHERUNGS_REPO}/contents/sicherungen"],
+                         cwd=ROOT, capture_output=True)
+    if res.returncode != 0:
+        print("Noch keine Sicherung auf GitHub (oder kein Zugriff) – nichts kopiert.")
+        return
+    ziel = SICHERUNGEN / heute.isoformat()
+    ziel.mkdir(exist_ok=True)
+    n = 0
+    for e in json.loads(res.stdout.decode("utf-8")):
+        if e.get("type") != "file" or not e["name"].endswith(".json"):
+            continue
+        f = subprocess.run(["gh", "api", "-H", "Accept: application/vnd.github.raw+json",
+                            f"repos/{SICHERUNGS_REPO}/contents/sicherungen/{e['name']}"],
+                           cwd=ROOT, capture_output=True)
+        if f.returncode == 0:
+            (ziel / e["name"]).write_bytes(f.stdout)
+            n += 1
+    for d in sorted(d for d in SICHERUNGEN.iterdir() if d.is_dir())[:-SICHERUNGEN_BEHALTEN]:
+        for x in d.iterdir():
+            x.unlink()
+        d.rmdir()
+    print(f"✓ {n} Sicherung(en) nach {ziel.relative_to(ROOT)} kopiert.")
+
+
 def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stderr.reconfigure(encoding="utf-8")
@@ -114,6 +156,8 @@ def main() -> None:
         run(["dart", "run", "tool/tts.dart", "--hoerkontrolle", *key_args(), *args], check=False)
     elif step == "satz-neu" and len(args) == 2:
         satz_neu(*args)
+    elif step == "sicherung":
+        sicherung(immer="--jetzt" in args)
     elif step == "aufraeumen":
         run([PY, "-I", str(TK / "aufraeumen.py"), *args])
     elif step == "test":

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../app_scope.dart';
 import '../data/backup_file.dart';
+import '../data/github_sicherung.dart';
 import '../data/models.dart';
 import '../data/progress.dart';
 import '../data/stufen.dart';
@@ -44,6 +45,15 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   Future<List<TextEntry>>? _index;
   Future<List<Notice>>? _notices;
+
+  @override
+  void initState() {
+    super.initState();
+    // Einmal pro Woche sichert die App den Lernstand von selbst auf GitHub (Spezifikation 17).
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) AppScope.of(context).progress.cloudSichern(DateTime.now(), geraet: geraetName());
+    });
+  }
 
   @override
   void didChangeDependencies() {
@@ -163,8 +173,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               const SizedBox(width: 10),
                               Expanded(
                                 child: Text(
-                                  progress.lastBackup == null
-                                      ? 'Sichere deinen Lernstand als Datei – er liegt nur auf diesem Gerät.'
+                                  progress.cloudFehler != null
+                                      ? 'Die automatische Sicherung auf GitHub hat nicht geklappt: ${progress.cloudFehler}'
+                                      : progress.lastBackup == null
+                                      ? 'Sichere deinen Lernstand – er liegt nur auf diesem Gerät.'
                                       : 'Deine letzte Sicherung ist vom ${_date(progress.lastBackup!)}. Zeit für eine neue.',
                                   style: sans(14.5),
                                 ),
@@ -338,6 +350,7 @@ class _HomeScreenState extends State<HomeScreen> {
   /// Erinnerung an die Sicherung: wenn es etwas zu sichern gibt und die letzte
   /// Sicherung zwei Wochen oder länger her ist. Sonntags nicht (Ruhetag).
   bool _backupDue(Progress p) {
+    if (p.cloudFehler != null) return true;
     if (isRestDay(_today) || (p.myWords.isEmpty && p.reads.isEmpty)) return false;
     final last = p.lastBackup;
     return last == null || _today.difference(last).inDays >= 14;
@@ -395,6 +408,10 @@ class _HomeScreenState extends State<HomeScreen> {
               Text('Sicherung', style: serif(21)),
               const SizedBox(height: 4),
               const _BackupSettings(),
+              const SizedBox(height: 16),
+              Text('Automatisch jede Woche', style: sans(15.5, weight: 650)),
+              const SizedBox(height: 4),
+              const _CloudSettings(),
               const SizedBox(height: 22),
               Text('Meine Stufe', style: serif(21)),
               const SizedBox(height: 4),
@@ -605,6 +622,186 @@ class _BackupSettingsState extends State<_BackupSettings> {
           },
         ),
       ],
+    );
+  }
+}
+
+/// Wöchentliche Sicherung in meinem privaten GitHub-Repository (Spezifikation 17).
+class _CloudSettings extends StatefulWidget {
+  const _CloudSettings();
+
+  @override
+  State<_CloudSettings> createState() => _CloudSettingsState();
+}
+
+class _CloudSettingsState extends State<_CloudSettings> {
+  late final _token = TextEditingController(text: AppScope.of(context).progress.githubToken);
+  String? _message;
+  var _busy = false;
+
+  static String _geraet(String name) => switch (name) {
+    'ipad' => 'iPad',
+    'iphone' => 'iPhone',
+    'android' => 'Android',
+    'computer' => 'Computer',
+    _ => 'Gerät',
+  };
+
+  @override
+  void dispose() {
+    _token.dispose();
+    super.dispose();
+  }
+
+  Future<void> _jetzt(Progress progress) async {
+    setState(() {
+      _busy = true;
+      _message = null;
+    });
+    final ok = await progress.cloudSichern(DateTime.now(), geraet: geraetName(), nurWennFaellig: false);
+    if (mounted) {
+      setState(() {
+        _busy = false;
+        _message = ok ? 'Gesichert.' : null;
+      });
+    }
+  }
+
+  Future<void> _zurueck(Progress progress) async {
+    setState(() {
+      _busy = true;
+      _message = null;
+    });
+    Map<String, String> alle;
+    try {
+      alle = await GithubSicherung(progress.githubToken).holen();
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _busy = false;
+          _message = e is SicherungsFehler ? e.message : 'Keine Verbindung zu GitHub. Bist du online?';
+        });
+      }
+      return;
+    }
+    if (!mounted) return;
+    setState(() => _busy = false);
+    final eintraege = <(String, String, BackupPreview)>[
+      for (final e in alle.entries)
+        if (_vorschau(e.value) case final v?) (e.key, e.value, v),
+    ]..sort((a, b) => b.$3.saved.compareTo(a.$3.saved));
+    if (eintraege.isEmpty) {
+      setState(() => _message = 'Auf GitHub liegt noch keine Sicherung.');
+      return;
+    }
+    final wahl = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Lernstand zurückholen?'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('Die gewählte Sicherung ersetzt den Lernstand auf diesem Gerät.', style: sans(14.5)),
+            const SizedBox(height: 8),
+            for (final (name, json, v) in eintraege)
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: const Icon(Icons.cloud_download_outlined, color: YoColors.chocolate),
+                title: Text('${_geraet(name)} · ${_date(v.saved)}', style: sans(15.5, weight: 600)),
+                subtitle: Text('${v.words} Wörter, ${v.reads} gelesene Texte', style: sans(13.5, color: YoColors.inkSoft)),
+                onTap: () => Navigator.pop(context, json),
+              ),
+          ],
+        ),
+        actions: [TextButton(onPressed: () => Navigator.pop(context), child: const Text('Abbrechen'))],
+      ),
+    );
+    if (wahl == null) return;
+    await progress.restoreBackup(wahl);
+    if (mounted) {
+      setState(() => _message = 'Zurückgeholt: ${progress.myWords.length} Wörter, ${progress.reads.length} gelesene Texte.');
+    }
+  }
+
+  static BackupPreview? _vorschau(String json) {
+    try {
+      return Progress.previewBackup(json);
+    } on BackupError {
+      return null;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = AppScope.of(context).progress;
+    return ListenableBuilder(
+      listenable: progress,
+      builder: (context, _) {
+        final last = progress.cloudBackup;
+        final status =
+            _message ??
+            progress.cloudFehler ??
+            (progress.githubToken.isEmpty
+                ? 'Noch nicht eingerichtet.'
+                : last == null
+                ? 'Noch keine Sicherung auf GitHub.'
+                : 'Zuletzt auf GitHub gesichert am ${_date(last)}; die nächste kommt von selbst ab dem '
+                      '${_date(last.add(GithubSicherung.abstand))}.');
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              'Einmal pro Woche legt Yomicha deinen Lernstand von selbst in deinem privaten GitHub-Repository '
+              '„Yomicha-lernstand“ ab – beim ersten Öffnen nach sieben Tagen. Dafür braucht es einen Schlüssel, '
+              'der nur dieses Repository lesen und schreiben darf. Er bleibt nur auf diesem Gerät.',
+              style: sans(13.5, color: YoColors.inkSoft),
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              controller: _token,
+              obscureText: true,
+              autocorrect: false,
+              decoration: const InputDecoration(
+                labelText: 'GitHub-Schlüssel',
+                filled: true,
+                fillColor: YoColors.coconutMilk,
+                border: OutlineInputBorder(borderRadius: fieldRadius, borderSide: BorderSide.none),
+              ),
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 10,
+              runSpacing: 8,
+              children: [
+                FilledButton(
+                  onPressed: _busy
+                      ? null
+                      : () {
+                          progress.setGithubToken(_token.text);
+                          setState(() => _message = _token.text.trim().isEmpty ? 'Schlüssel entfernt.' : 'Schlüssel gespeichert.');
+                        },
+                  child: const Text('Speichern'),
+                ),
+                if (progress.githubToken.isNotEmpty) ...[
+                  OutlinedButton.icon(
+                    onPressed: _busy ? null : () => _jetzt(progress),
+                    icon: const Icon(Icons.cloud_upload_outlined),
+                    label: const Text('Jetzt sichern'),
+                  ),
+                  OutlinedButton.icon(
+                    onPressed: _busy ? null : () => _zurueck(progress),
+                    icon: const Icon(Icons.cloud_download_outlined),
+                    label: const Text('Von GitHub zurückholen'),
+                  ),
+                ],
+              ],
+            ),
+            const SizedBox(height: 6),
+            Text(_busy ? 'Einen Moment …' : status, style: sans(13, color: YoColors.inkSoft)),
+          ],
+        );
+      },
     );
   }
 }

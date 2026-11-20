@@ -11,6 +11,8 @@ werkstatt/quellen/
 Kanjischreiben/
 # Entwürfe der Teeküche (veröffentlicht wird nur web/data)
 werkstatt/entwuerfe/
+# Wöchentliche Kopie meines Lernstands (aus dem privaten Repository) – nie veröffentlichen
+werkstatt/sicherungen/
 tool/teekueche/.venv/
 __pycache__/
 

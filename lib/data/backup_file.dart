@@ -10,3 +10,6 @@ Future<String?> pickTextFile() => impl.pickTextFile();
 
 /// Bittet den Browser, den Speicher der App nicht von selbst zu leeren.
 void requestPersistentStorage() => impl.requestPersistentStorage();
+
+/// Name des Geräts für die Sicherung, z. B. „ipad“ oder „iphone“.
+String geraetName() => impl.geraetName();

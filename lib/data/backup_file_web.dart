@@ -72,3 +72,14 @@ void requestPersistentStorage() {
     // Ältere Browser ohne Storage-Schnittstelle.
   }
 }
+
+/// Name des Geräts für die Sicherung: ipad, iphone, android oder computer.
+/// Das iPad meldet sich wie ein Mac, hat aber einen Touchscreen.
+String geraetName() {
+  final nav = web.window.navigator;
+  final ua = nav.userAgent;
+  if (ua.contains('iPad') || (ua.contains('Macintosh') && nav.maxTouchPoints > 1)) return 'ipad';
+  if (ua.contains('iPhone')) return 'iphone';
+  if (ua.contains('Android')) return 'android';
+  return 'computer';
+}

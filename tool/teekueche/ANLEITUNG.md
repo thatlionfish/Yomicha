@@ -181,6 +181,10 @@ nichts mehr offen ist. Die Aufnahmen macht der nächste Schritt (`audio`) von se
 
 ## 6. Aufräumen, testen und veröffentlichen
 
+Zuerst Leonis Lernstand sichern: `… lauf.py sicherung` kopiert die wöchentliche Sicherung der App aus dem
+privaten Repository `Yomicha-lernstand` nach `werkstatt/sicherungen/` (höchstens einmal pro Woche, nie
+veröffentlicht). Steht dort „nichts kopiert“, ist das kein Fehler.
+
 Alte Texte wegräumen (älter als `aufbewahren_tage`, Standard 90). Wortaufnahmen bleiben immer,
 damit Leonis gespeicherte Wörter ihre Aussprache behalten:
 
