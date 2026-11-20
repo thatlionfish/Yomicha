@@ -52,6 +52,43 @@ void main() {
     expect(aus.weiter(const Offset(30, 0), const Duration(milliseconds: 1), druck: 1), grundBreite);
   });
 
+  test('Pinsel: schnell beendet spitz (はらい), langsam beendet rund (とめ)', () {
+    List<double> ziehe(double schritt) {
+      final pinsel = Pinsel();
+      final pts = <Offset>[Offset.zero];
+      final ws = <double>[pinsel.start(Offset.zero, Duration.zero, druck: 0.5)];
+      for (var i = 1; i <= 20; i++) {
+        final q = Offset(i * schritt, 0);
+        pts.add(q);
+        ws.add(pinsel.weiter(q, Duration(milliseconds: i * 16), druck: 0.5));
+      }
+      return pinsel.ende(pts, ws);
+    }
+
+    final schnell = ziehe(6); // 6 Einheiten in 16 ms
+    final langsam = ziehe(1);
+    expect(schnell.last, lessThan(schnell[10] * 0.3));
+    expect(langsam.last, greaterThan(langsam[10] * 0.8));
+  });
+
+  test('Pinselform: geschlossene, gefüllte Kontur um den Strich', () {
+    final pts = [for (var i = 0; i <= 20; i++) Offset(10.0 + i * 4, 50)];
+    final t = Tinte(pts, List.filled(pts.length, 6.0));
+    final path = pinselPfad(t);
+    final r = path.getBounds();
+    // So breit wie der Strich, oben und unten je die halbe Breite.
+    expect(r.top, closeTo(47, 0.6));
+    expect(r.bottom, closeTo(53, 0.6));
+    expect(r.left, closeTo(7, 0.6));
+    expect(r.right, closeTo(93, 0.6));
+    expect(path.contains(const Offset(50, 50)), isTrue);
+    expect(path.contains(const Offset(50, 56)), isFalse);
+    // Einzelner Punkt: ein Kreis.
+    expect(pinselPfad(Tinte(const [Offset(5, 5)], const [4])).getBounds().width, closeTo(4, 0.01));
+    // Derselbe Strich wird nur einmal berechnet.
+    expect(identical(pinselPfad(t), path), isTrue);
+  });
+
   test('Schönschrift: genau wie die Vorlage 100, verschoben weniger mit Hinweis', () {
     final paths = pathsOf('十');
     final targets = targetsOf(paths);

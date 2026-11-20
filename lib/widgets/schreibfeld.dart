@@ -173,7 +173,7 @@ class SchreibfeldState extends State<Schreibfeld> {
   void _up(PointerEvent e) {
     if (e.pointer != _pointer) return;
     final drawn = _current ?? const [];
-    final breiten = _currentW;
+    final breiten = _pinsel.ende(drawn, _currentW);
     _pointer = null;
     _current = null;
     _currentW = [];
@@ -303,23 +303,14 @@ class _FeldPainter extends CustomPainter {
   bool shouldRepaint(_FeldPainter old) => true;
 }
 
-/// Zeichnet einen Strich mit wechselnder Breite (Pinsel): Stück für Stück mit
-/// runden Enden, jedes Stück so breit wie das Mittel seiner beiden Punkte.
+/// Zeichnet einen Strich als gefüllte Pinselform (siehe [pinselPfad]).
 void zeichneTinte(Canvas canvas, Tinte t, Color farbe) {
-  final pts = t.punkte;
-  if (pts.isEmpty) return;
-  final w = t.breiten;
-  double breite(int i) => i < w.length ? w[i] : grundBreite;
-  final paint = Paint()
-    ..style = PaintingStyle.stroke
-    ..strokeCap = StrokeCap.round
-    ..color = farbe;
-  if (pts.length == 1) {
-    canvas.drawCircle(pts.first, breite(0) / 2, Paint()..color = farbe);
-    return;
-  }
-  for (var i = 1; i < pts.length; i++) {
-    paint.strokeWidth = (breite(i - 1) + breite(i)) / 2;
-    canvas.drawLine(pts[i - 1], pts[i], paint);
-  }
+  if (t.punkte.isEmpty) return;
+  canvas.drawPath(
+    pinselPfad(t),
+    Paint()
+      ..style = PaintingStyle.fill
+      ..isAntiAlias = true
+      ..color = farbe,
+  );
 }
