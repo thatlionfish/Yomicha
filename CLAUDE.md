@@ -49,3 +49,5 @@ flutter test tool/render_icon_test.dart          # App-Icon (lib/ui/app_icon.dar
 - Oberfläche Deutsch, Inhalte Japanisch, Erklärungen Deutsch.
 - Japanische Schriften: Zen Old Mincho (Text), Klee One (Kanji-Karten), verkleinert mit `tool/teekueche/schriften.py`.
 - Kanji-Karten neu bauen: `tool/teekueche/kanji_daten.py` (Rohdaten in `werkstatt/quellen/`, nicht veröffentlicht).
+- „Kanji schreiben“ (Spezifikation 19): Lernplan und Wörter neu bauen mit `tool/teekueche/schreiben_daten.py`;
+  deutsche Bedeutungen der Wörter und Korrekturen alter Schreibungen in `tool/teekueche/schreiben_extra.json`.

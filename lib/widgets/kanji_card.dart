@@ -14,6 +14,7 @@ Future<void> showKanjiCard(
   required Repository repo,
   required Progress progress,
   TextDoc? doc,
+  bool kompakt = false,
 }) async {
   final info = await repo.kanjiInfo(kanji);
   final names = await repo.partNames();
@@ -23,14 +24,20 @@ Future<void> showKanjiCard(
     context: context,
     isScrollControlled: true,
     constraints: const BoxConstraints(maxWidth: 640),
-    builder: (_) => _KanjiCard(
-      kanji: kanji,
-      info: info,
-      partInfo: parts,
-      partNames: names,
-      repo: repo,
-      progress: progress,
-      doc: doc,
+    builder: (context) => SafeArea(
+      child: SingleChildScrollView(
+        padding: EdgeInsets.fromLTRB(24, 0, 24, 24 + MediaQuery.viewInsetsOf(context).bottom),
+        child: KanjiDetails(
+          kanji: kanji,
+          info: info,
+          partInfo: parts,
+          partNames: names,
+          repo: repo,
+          progress: progress,
+          doc: doc,
+          kompakt: kompakt,
+        ),
+      ),
     ),
   );
 }
@@ -92,8 +99,12 @@ TextStyle kanjiStyle(double size) => TextStyle(
   color: YoColors.chocolate,
 );
 
-class _KanjiCard extends StatefulWidget {
-  const _KanjiCard({
+/// Inhalt der Kanji-Karte: Bedeutung, Lesungen, Zerlegung, Strichfolge und
+/// meine Geschichte. [kompakt] zeigt nur Zerlegung und Geschichte (Hinweis
+/// beim Schreiben).
+class KanjiDetails extends StatefulWidget {
+  const KanjiDetails({
+    super.key,
     required this.kanji,
     required this.info,
     required this.partInfo,
@@ -101,6 +112,7 @@ class _KanjiCard extends StatefulWidget {
     required this.repo,
     required this.progress,
     this.doc,
+    this.kompakt = false,
   });
 
   final String kanji;
@@ -110,12 +122,13 @@ class _KanjiCard extends StatefulWidget {
   final Repository repo;
   final Progress progress;
   final TextDoc? doc;
+  final bool kompakt;
 
   @override
-  State<_KanjiCard> createState() => _KanjiCardState();
+  State<KanjiDetails> createState() => _KanjiDetailsState();
 }
 
-class _KanjiCardState extends State<_KanjiCard> {
+class _KanjiDetailsState extends State<KanjiDetails> {
   late final _story = TextEditingController(text: widget.progress.stories[widget.kanji] ?? '');
 
   @override
@@ -137,131 +150,132 @@ class _KanjiCardState extends State<_KanjiCard> {
     ];
     final meaning = k == null ? '' : (k.de ?? k.meanings.take(3).join(', '));
 
-    return SafeArea(
-      child: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(24, 0, 24, 24 + MediaQuery.viewInsetsOf(context).bottom),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    final kompakt = widget.kompakt;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (!kompakt) Row(
           children: [
-            Row(
-              children: [
-                Container(
-                  width: 112,
-                  height: 112,
-                  alignment: Alignment.center,
-                  decoration: const BoxDecoration(color: YoColors.vanillaIce, borderRadius: organicRadius),
-                  child: Text(widget.kanji, style: kanjiStyle(80)),
-                ),
-                const SizedBox(width: 18),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(k?.keyword ?? '–', style: serif(26, weight: 460)),
-                      if (meaning.isNotEmpty) Text(meaning, style: sans(16, color: YoColors.inkSoft)),
-                      const SizedBox(height: 8),
-                      if (k != null)
-                        Text(
-                          [
-                            if (k.heisig != null) 'Heisig ${k.heisig}',
-                            if (k.jlpt != null) 'N${k.jlpt}',
-                            '${k.strokes} Striche',
-                          ].join(' · '),
-                          style: sans(13.5, color: YoColors.inkSoft),
-                        ),
-                    ],
-                  ),
-                ),
-              ],
+            Container(
+              width: 112,
+              height: 112,
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(color: YoColors.vanillaIce, borderRadius: organicRadius),
+              child: Text(widget.kanji, style: kanjiStyle(80)),
             ),
-            if (k == null) ...[
-              const SizedBox(height: 16),
-              Text('Für dieses Zeichen gibt es noch keine Karte.', style: sans(15)),
-            ] else ...[
-              const SizedBox(height: 18),
-              _row('On', k.on.join('、')),
-              _row('Kun', k.kun.join('、')),
-              if (k.parts.isNotEmpty) ...[
-                const SizedBox(height: 18),
-                _label('Zerlegung'),
-                const SizedBox(height: 8),
-                Wrap(
-                  crossAxisAlignment: WrapCrossAlignment.center,
-                  spacing: 6,
-                  runSpacing: 8,
-                  children: [
-                    Text('${widget.kanji} =', style: kanjiStyle(24)),
-                    for (var i = 0; i < k.parts.length; i++) ...[
-                      if (i > 0) Text('+', style: sans(18, color: YoColors.inkSoft)),
-                      _PartChip(
-                        part: k.parts[i],
-                        name: _partName(k.parts[i]),
-                        onTap: widget.partInfo.containsKey(k.parts[i])
-                            ? () => showKanjiCard(
-                                context,
-                                kanji: k.parts[i],
-                                repo: widget.repo,
-                                progress: widget.progress,
-                                doc: widget.doc,
-                              )
-                            : null,
-                      ),
-                    ],
-                  ],
-                ),
-              ],
-              if (k.paths.isNotEmpty) ...[
-                const SizedBox(height: 18),
-                _label('Strichfolge'),
-                const SizedBox(height: 8),
-                StrokeOrder(paths: k.paths),
-              ],
-              const SizedBox(height: 18),
-              _label('Merkgeschichte'),
-              if (k.story != null) ...[
-                const SizedBox(height: 6),
-                Text('Vorschlag: ${k.story}', style: sans(15, height: 1.5)),
-              ],
-              const SizedBox(height: 8),
-              TextField(
-                controller: _story,
-                minLines: 2,
-                maxLines: 5,
-                style: sans(15.5),
-                decoration: const InputDecoration(
-                  hintText: 'Meine eigene Geschichte …',
-                  filled: true,
-                  fillColor: YoColors.coconutMilk,
-                  border: OutlineInputBorder(borderRadius: fieldRadius, borderSide: BorderSide.none),
-                ),
-                onChanged: (s) => widget.progress.setStory(widget.kanji, s),
-              ),
-            ],
-            if (words.isNotEmpty) ...[
-              const SizedBox(height: 18),
-              _label('Kommt vor in'),
-              const SizedBox(height: 6),
-              Wrap(
-                spacing: 14,
-                runSpacing: 6,
+            const SizedBox(width: 18),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  for (final t in words)
-                    Text.rich(TextSpan(children: [
-                      TextSpan(text: t.t, style: jp(18)),
-                      TextSpan(text: '  ${t.reading}', style: jp(14, color: YoColors.inkSoft)),
-                    ])),
+                  Text(k?.keyword ?? '–', style: serif(26, weight: 460)),
+                  if (meaning.isNotEmpty) Text(meaning, style: sans(16, color: YoColors.inkSoft)),
+                  const SizedBox(height: 8),
+                  if (k != null)
+                    Text(
+                      [
+                        if (k.heisig != null) 'Heisig ${k.heisig}',
+                        if (k.jlpt != null) 'N${k.jlpt}',
+                        '${k.strokes} Striche',
+                      ].join(' · '),
+                      style: sans(13.5, color: YoColors.inkSoft),
+                    ),
                 ],
               ),
-            ],
-            const SizedBox(height: 18),
-            Text(
-              'Zerlegung und Strichfolge: KanjiVG (CC BY-SA 3.0). Lesungen und Heisig-Nummer: '
-              'KANJIDIC2 (CC BY-SA 4.0). Die Schlüsselwörter sind eigene, nicht Heisigs.',
-              style: sans(12.5, color: YoColors.inkSoft),
             ),
           ],
         ),
-      ),
+        if (k == null) ...[
+          const SizedBox(height: 16),
+          Text('Für dieses Zeichen gibt es noch keine Karte.', style: sans(15)),
+        ] else ...[
+          if (!kompakt) ...[
+            const SizedBox(height: 18),
+            _row('On', k.on.join('、')),
+            _row('Kun', k.kun.join('、')),
+          ],
+          if (k.parts.isNotEmpty) ...[
+            const SizedBox(height: 18),
+            _label('Zerlegung'),
+            const SizedBox(height: 8),
+            Wrap(
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 6,
+              runSpacing: 8,
+              children: [
+                // Als Hinweis beim Schreiben darf das Kanji selbst nicht dastehen.
+                if (!kompakt) Text('${widget.kanji} =', style: kanjiStyle(24)),
+                for (var i = 0; i < k.parts.length; i++) ...[
+                  if (i > 0) Text('+', style: sans(18, color: YoColors.inkSoft)),
+                  _PartChip(
+                    part: k.parts[i],
+                    name: _partName(k.parts[i]),
+                    onTap: widget.partInfo.containsKey(k.parts[i])
+                        ? () => showKanjiCard(
+                            context,
+                            kanji: k.parts[i],
+                            repo: widget.repo,
+                            progress: widget.progress,
+                            doc: widget.doc,
+                          )
+                        : null,
+                  ),
+                ],
+              ],
+            ),
+          ],
+          if (k.paths.isNotEmpty && !kompakt) ...[
+            const SizedBox(height: 18),
+            _label('Strichfolge'),
+            const SizedBox(height: 8),
+            StrokeOrder(paths: k.paths),
+          ],
+          const SizedBox(height: 18),
+          _label('Merkgeschichte'),
+          if (k.story != null) ...[
+            const SizedBox(height: 6),
+            Text('Vorschlag: ${k.story}', style: sans(15, height: 1.5)),
+          ],
+          const SizedBox(height: 8),
+          TextField(
+            controller: _story,
+            minLines: 2,
+            maxLines: 5,
+            style: sans(15.5),
+            decoration: const InputDecoration(
+              hintText: 'Meine eigene Geschichte …',
+              filled: true,
+              fillColor: YoColors.coconutMilk,
+              border: OutlineInputBorder(borderRadius: fieldRadius, borderSide: BorderSide.none),
+            ),
+            onChanged: (s) => widget.progress.setStory(widget.kanji, s),
+          ),
+        ],
+        if (words.isNotEmpty && !kompakt) ...[
+          const SizedBox(height: 18),
+          _label('Kommt vor in'),
+          const SizedBox(height: 6),
+          Wrap(
+            spacing: 14,
+            runSpacing: 6,
+            children: [
+              for (final t in words)
+                Text.rich(TextSpan(children: [
+                  TextSpan(text: t.t, style: jp(18)),
+                  TextSpan(text: '  ${t.reading}', style: jp(14, color: YoColors.inkSoft)),
+                ])),
+            ],
+          ),
+        ],
+        if (!kompakt) ...[
+          const SizedBox(height: 18),
+          Text(
+            'Zerlegung und Strichfolge: KanjiVG (CC BY-SA 3.0). Lesungen und Heisig-Nummer: '
+            'KANJIDIC2 (CC BY-SA 4.0). Die Schlüsselwörter sind eigene, nicht Heisigs.',
+            style: sans(12.5, color: YoColors.inkSoft),
+          ),
+        ],
+      ],
     );
   }
 

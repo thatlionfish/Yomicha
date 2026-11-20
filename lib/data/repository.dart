@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 import 'models.dart';
+import 'schreib_plan.dart';
 
 /// Lädt Texte und Kanji-Daten, die neben der App unter data/ liegen.
 class Repository {
@@ -68,6 +69,32 @@ class Repository {
       return <String, String>{};
     }
   }();
+
+  Future<SchreibPlan>? _plan;
+  Future<Map<String, List<String>>>? _kana;
+
+  /// Lernplan für „Kanji schreiben“.
+  Future<SchreibPlan> schreibPlan() => _plan ??= () async {
+    return SchreibPlan.fromJson(await _json('schreiben/plan.json') as Map<String, dynamic>);
+  }();
+
+  /// Striche der Kana (und von ー, 々) aus KanjiVG.
+  Future<Map<String, List<String>>> kana() => _kana ??= () async {
+    final j = await _json('schreiben/kana.json') as Map<String, dynamic>;
+    return {for (final e in j.entries) e.key: (e.value as List).cast<String>()};
+  }();
+
+  /// Striche für jedes Zeichen eines Wortes (Kanji und Kana); fehlt ein
+  /// Zeichen, steht es nicht in der Map.
+  Future<Map<String, List<String>>> striche(Iterable<String> chars) async {
+    final set = chars.toSet();
+    final kana = await this.kana();
+    final kanji = await kanjiFor(set.where((c) => !kana.containsKey(c)));
+    return {
+      for (final c in set)
+        if (kana[c] case final k?) c: k else if (kanji[c]?.paths case final p? when p.isNotEmpty) c: p,
+    };
+  }
 
   Future<Map<String, KumaMood>>? _kuma;
 

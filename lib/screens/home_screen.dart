@@ -9,6 +9,7 @@ import '../learn/calendar.dart';
 import '../learn/einstufung.dart';
 import '../learn/library.dart';
 import '../learn/review.dart';
+import '../learn/schreiben.dart';
 import '../learn/weekly.dart';
 import '../ui/app_icon.dart';
 import '../ui/colors.dart';
@@ -20,6 +21,7 @@ import 'archive_screen.dart';
 import 'einstufung_screen.dart';
 import 'progress_screen.dart';
 import 'reading_screen.dart';
+import 'schreiben_screen.dart';
 import 'sources_screen.dart';
 import 'weekly_screen.dart';
 import 'words_screen.dart';
@@ -246,6 +248,14 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ?_weeklyTile(progress),
                           _Tile(
+                            icon: Icons.draw_outlined,
+                            title: 'Kanji schreiben',
+                            subtitle: _schreibLine(progress),
+                            onTap: () => Navigator.of(context).push(
+                              MaterialPageRoute<void>(builder: (_) => const SchreibenScreen()),
+                            ),
+                          ),
+                          _Tile(
                             icon: Icons.style_rounded,
                             title: 'Meine Wörter',
                             subtitle: _wordsLine(progress),
@@ -280,6 +290,18 @@ class _HomeScreenState extends State<HomeScreen> {
         },
       ),
     );
+  }
+
+  /// Was beim Schreiben heute dran ist.
+  String _schreibLine(Progress progress) {
+    final st = progress.schreiben;
+    if (!st.vorwissenGefragt && st.gelernt.isEmpty) return 'Neu: mit dem Apple Pencil Kanji schreiben';
+    if (isRestDay(_today)) return 'Sonntag ist Ruhetag';
+    final neu = neueKanjiHeute(st, _today);
+    final due = faelligAnzahl(st, _today);
+    if (neu > 0) return 'Heute: $neu neue Kanji${due > 0 ? ' · $due wiederholen' : ''}';
+    if (due > 0) return 'Heute: $due wiederholen';
+    return 'Heute geschafft · ${st.kanjiAm(_today)} neue Kanji';
   }
 
   /// Wochentest: samstags für die laufende Woche, Montag bis Freitag zum

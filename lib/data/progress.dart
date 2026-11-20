@@ -4,6 +4,8 @@ import 'package:flutter/foundation.dart';
 import 'package:fsrs/fsrs.dart' as fsrs;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'schreib_stand.dart';
+
 /// Furigana-Einstellung (Spezifikation 4.1).
 enum FuriganaMode {
   /// Nur auf Antippen – Kanji oberhalb meiner Stufe haben trotzdem Furigana.
@@ -264,6 +266,9 @@ class Progress extends ChangeNotifier {
   /// Nach „Noch nicht“ beim Stufenvorschlag: (Stufe, gelesene Texte damals).
   (int, int)? vorschlagPause;
 
+  /// Lernstand von „Kanji schreiben“.
+  final schreiben = SchreibStand();
+
   Future<void> load() async {
     final p = _prefs = await SharedPreferences.getInstance();
     lastBackup = DateTime.tryParse(p.getString('${_p}lastBackup') ?? '');
@@ -304,6 +309,7 @@ class Progress extends ChangeNotifier {
     for (final s in p.getStringList('${_p}weekly') ?? const <String>[]) {
       weeklyResults.add(WeeklyResult.fromJson(jsonDecode(s) as Map<String, dynamic>));
     }
+    schreiben.load(p, notifyListeners);
     final speech = p.getString('${_p}speechSeconds');
     if (speech != null) {
       _speechSeconds.addAll((jsonDecode(speech) as Map<String, dynamic>).map((k, v) => MapEntry(k, (v as num).toInt())));
