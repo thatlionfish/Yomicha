@@ -10,6 +10,7 @@ import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/kanji_card.dart';
 import '../widgets/kumachan.dart';
+import '../widgets/lern_pause.dart';
 import 'words_screen.dart';
 
 /// Wiederholung im Zusammenhang (Spezifikation 12): Ich sehe den Satz, in dem
@@ -48,18 +49,22 @@ class _ReviewScreenState extends State<ReviewScreen> {
       _done++;
     }
     setState(() => _shown = false);
+    // Zwischen zwei Karten: Sind 20 Minuten um, kommt jetzt die Pause.
+    progress.lernUhr.pruefe(now);
   }
 
   @override
   Widget build(BuildContext context) {
     final progress = AppScope.of(context).progress;
     final finished = _queue.isEmpty;
-    return Scaffold(
-      appBar: AppBar(title: Text(finished ? 'Geschafft' : 'Wiederholen')),
-      body: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 720),
-          child: finished ? _summary(progress) : _card(context, _queue.first),
+    return LernPause(
+      child: Scaffold(
+        appBar: AppBar(title: Text(finished ? 'Geschafft' : 'Wiederholen')),
+        body: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 720),
+            child: finished ? _summary(progress) : _card(context, _queue.first),
+          ),
         ),
       ),
     );

@@ -9,6 +9,7 @@ import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/exam.dart';
 import '../widgets/furigana.dart';
+import '../widgets/lern_pause.dart';
 import '../widgets/speak_sheet.dart';
 import '../widgets/word_sheet.dart';
 
@@ -206,67 +207,70 @@ class _ReadingScreenState extends State<ReadingScreen> {
     final scope = AppScope.of(context);
     final doc = _doc;
     final study = _phase == _Phase.study;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(switch (_phase) {
-          _Phase.exam => 'Prüfungsdurchgang',
-          _Phase.result => 'Auswertung',
-          _Phase.study => 'Lernrunde',
-        }),
-        actions: [
-          if (_phase != _Phase.result) ...[
-            IconButton(
-              tooltip: 'Schrift kleiner',
-              onPressed: () => setState(() => _fontSize = (_fontSize - 2).clamp(18, 36)),
-              icon: const Icon(Icons.text_decrease_rounded),
-            ),
-            IconButton(
-              tooltip: 'Schrift größer',
-              onPressed: () => setState(() => _fontSize = (_fontSize + 2).clamp(18, 36)),
-              icon: const Icon(Icons.text_increase_rounded),
-            ),
+    return LernPause(
+      sofort: true,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(switch (_phase) {
+            _Phase.exam => 'Prüfungsdurchgang',
+            _Phase.result => 'Auswertung',
+            _Phase.study => 'Lernrunde',
+          }),
+          actions: [
+            if (_phase != _Phase.result) ...[
+              IconButton(
+                tooltip: 'Schrift kleiner',
+                onPressed: () => setState(() => _fontSize = (_fontSize - 2).clamp(18, 36)),
+                icon: const Icon(Icons.text_decrease_rounded),
+              ),
+              IconButton(
+                tooltip: 'Schrift größer',
+                onPressed: () => setState(() => _fontSize = (_fontSize + 2).clamp(18, 36)),
+                icon: const Icon(Icons.text_increase_rounded),
+              ),
+            ],
+            if (study)
+              ListenableBuilder(
+                listenable: scope.progress,
+                builder: (context, _) => PopupMenuButton<FuriganaMode>(
+                  tooltip: 'Furigana',
+                  icon: const Icon(Icons.translate_rounded),
+                  initialValue: scope.progress.furigana,
+                  onSelected: scope.progress.setFurigana,
+                  itemBuilder: (_) => [
+                    for (final m in FuriganaMode.values)
+                      CheckedPopupMenuItem(
+                        value: m,
+                        checked: m == scope.progress.furigana,
+                        child: Text('Furigana: ${m.label}'),
+                      ),
+                  ],
+                ),
+              ),
           ],
-          if (study)
-            ListenableBuilder(
-              listenable: scope.progress,
-              builder: (context, _) => PopupMenuButton<FuriganaMode>(
-                tooltip: 'Furigana',
-                icon: const Icon(Icons.translate_rounded),
-                initialValue: scope.progress.furigana,
-                onSelected: scope.progress.setFurigana,
-                itemBuilder: (_) => [
-                  for (final m in FuriganaMode.values)
-                    CheckedPopupMenuItem(
-                      value: m,
-                      checked: m == scope.progress.furigana,
-                      child: Text('Furigana: ${m.label}'),
+        ),
+        body: _error != null
+            ? Center(child: Padding(padding: const EdgeInsets.all(24), child: Text('$_error')))
+            : doc == null
+            ? const Center(child: CircularProgressIndicator())
+            : Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 720),
+                  child: switch (_phase) {
+                    _Phase.exam => _examBody(doc),
+                    _Phase.result => ExamResult(
+                      doc: doc,
+                      chosen: _chosen,
+                      seconds: _readSeconds ?? 0,
+                      progress: scope.progress,
+                      onStudy: () => setState(() => _phase = _Phase.study),
                     ),
-                ],
+                    _Phase.study => _studyBody(doc),
+                  },
+                ),
               ),
-            ),
-        ],
+        bottomNavigationBar: doc == null || !study || !(_player?.available ?? false) ? null : _audioBar(),
       ),
-      body: _error != null
-          ? Center(child: Padding(padding: const EdgeInsets.all(24), child: Text('$_error')))
-          : doc == null
-          ? const Center(child: CircularProgressIndicator())
-          : Center(
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 720),
-                child: switch (_phase) {
-                  _Phase.exam => _examBody(doc),
-                  _Phase.result => ExamResult(
-                    doc: doc,
-                    chosen: _chosen,
-                    seconds: _readSeconds ?? 0,
-                    progress: scope.progress,
-                    onStudy: () => setState(() => _phase = _Phase.study),
-                  ),
-                  _Phase.study => _studyBody(doc),
-                },
-              ),
-            ),
-      bottomNavigationBar: doc == null || !study || !(_player?.available ?? false) ? null : _audioBar(),
     );
   }
 

@@ -2,17 +2,18 @@
 
 Quellen:
   werkstatt/quellen/jlpt-kanji/kanji-jouyou.json   JLPT-Stufe (jlpt_new) und Häufigkeit
-  werkstatt/quellen/jlpt-vokabeln/n2..n5.csv       JLPT-Wörter (open-anki-jlpt-decks, MIT)
+  werkstatt/quellen/jlpt-vokabeln/n1..n5.csv       JLPT-Wörter (open-anki-jlpt-decks, MIT)
   werkstatt/quellen/kanjivg/kanjivg-*.xml.gz       Striche der Kana (CC BY-SA 3.0)
   web/data/kanji/*.json                            Kanji-Karten (Bestandteile, Striche)
   tool/teekueche/schreiben_extra.json              Leonis Vorwissen, deutsche Bedeutungen
 
 Ergebnis:
-  web/data/schreiben/plan.json   Reihenfolge der Kanji (N5 → N2), Vorwissen, alle Wörter
+  web/data/schreiben/plan.json   Reihenfolge der Kanji (N5 → N1), Vorwissen, alle Wörter
   web/data/schreiben/kana.json   Striche von Hiragana, Katakana, ー und 々
 
 Reihenfolge: Stufe für Stufe, darin nach Häufigkeit; ein Bestandteil, der selbst
-ein Kanji zum Lernen ist, kommt vor dem Kanji, in dem er steckt.
+ein Kanji zum Lernen ist, kommt vor dem Kanji, in dem er steckt – auch ein
+N1-Kanji wie 又 vor 支. Danach kommt der Rest der N1.
 
 Aufruf (aus dem Projektordner):
   tool\\teekueche\\.venv\\Scripts\\python.exe -I tool\\teekueche\\schreiben_daten.py
@@ -77,16 +78,19 @@ def main() -> None:
             cards.update(json.loads(f.read_text(encoding="utf-8")))
     kana = kana_strokes(next((q / "kanjivg").glob("kanjivg-*.xml.gz")))
 
-    # Was gelernt wird: N5–N2 nach der Liste, dazu Leonis Vorwissen in den
+    # Was gelernt wird: N5–N1 nach der Liste, dazu Leonis Vorwissen in den
     # Stufen ihrer bisherigen App. Nur Kanji mit Strichdaten.
     vorwissen = "".join(extra["vorwissen"][n] for n in ("5", "4", "3"))
     stufe: dict[str, int] = {}
     for c, v in jouyou.items():
-        if v.get("jlpt_new") in (5, 4, 3, 2):
+        if v.get("jlpt_new") in (5, 4, 3, 2, 1):
             stufe[c] = v["jlpt_new"]
+    # Was ich schon kann, steht in der Stufe meiner bisherigen App, wenn die
+    # Liste es erst in der N1 (oder gar nicht) führt – z. B. 舌.
     for n, chars in extra["vorwissen"].items():
         for c in chars:
-            stufe.setdefault(c, int(n))
+            if stufe.get(c, 1) == 1:
+                stufe[c] = int(n)
     ohne_striche = [c for c in stufe if not cards.get(c, {}).get("paths")]
     for c in ohne_striche:
         del stufe[c]
@@ -107,19 +111,19 @@ def main() -> None:
         placed.add(c)
         reihenfolge.append(c)
 
-    for n in (5, 4, 3, 2):
+    for n in (5, 4, 3, 2, 1):
         for c in sorted((c for c in stufe if stufe[c] == n), key=lambda c: (freq(c), c)):
             place(c)
     index = {c: i for i, c in enumerate(reihenfolge)}
 
-    # Wörter: alle JLPT-Wörter N5–N2 mit Kanji, die sich ganz schreiben lassen
+    # Wörter: alle JLPT-Wörter N5–N1 mit Kanji, die sich ganz schreiben lassen
     # (jedes Zeichen ist ein Lern-Kanji oder ein Kana mit Strichdaten).
     de = extra.get("de", {})
     korrektur = extra.get("korrektur", {})
     words: dict[str, dict] = {}
     pos = 0
     skipped = 0
-    for n in (5, 4, 3, 2):
+    for n in (5, 4, 3, 2, 1):
         with open(q / "jlpt-vokabeln" / f"n{n}.csv", encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 pos += 1
@@ -159,7 +163,7 @@ def main() -> None:
 
     plan = {
         "version": 1,
-        "hinweis": "Kanji schreiben: Reihenfolge (N5 → N2), Stufe je Kanji, Vorwissen, Bestandteile, Wörter [Schreibung, Lesung, JLPT, englisch, deutsch?].",
+        "hinweis": "Kanji schreiben: Reihenfolge (N5 → N1), Stufe je Kanji, Vorwissen, Bestandteile, Wörter [Schreibung, Lesung, JLPT, englisch, deutsch?].",
         "reihenfolge": "".join(reihenfolge),
         "stufen": "".join(str(stufe[c]) for c in reihenfolge),
         "vorwissen": vorwissen,
@@ -177,7 +181,10 @@ def main() -> None:
     )
 
     offen = [c for c in reihenfolge if c not in vorwissen]
+    letztes_n2 = max(i for i, c in enumerate(reihenfolge) if stufe[c] >= 2)
+    vorgezogen = [c for c in reihenfolge[:letztes_n2] if stufe[c] == 1]
     print(f"Kanji: {len(reihenfolge)} (davon schon gelernt {len(set(vorwissen) & set(reihenfolge))}, offen {len(offen)})")
+    print(f"N1-Bestandteile vor dem Ende der N2: {len(vorgezogen)} ({''.join(vorgezogen[:30])} …)")
     print(f"Ohne Strichdaten weggelassen: {''.join(ohne_striche) or '–'}")
     print(f"Nächste offene: {''.join(offen[:24])}")
     print(f"Wörter: {len(woerter)} (weggelassen, weil ein Zeichen fehlt: {skipped}), deutsch: {sum(len(w) > 4 for w in woerter)}")

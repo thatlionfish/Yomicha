@@ -58,8 +58,14 @@ class _WortSchreiberState extends State<WortSchreiber> {
   String? _meldung;
   Timer? _timer;
 
-  /// Zähler für „Zeichen neu“: ein neuer Schlüssel baut das Feld neu.
-  int _neu = 0;
+  /// Ein neuer Schlüssel baut das Feld neu („Zeichen neu“, nächstes Zeichen).
+  var _feld = GlobalKey<SchreibfeldState>();
+
+  /// Die Striche fertiger Zeichen – für „Rückgängig“ ins vorige Zeichen.
+  final Map<int, List<List<Offset>>> _tinte = {};
+
+  /// Striche, mit denen das Feld beginnt (nach „Rückgängig“).
+  List<List<Offset>> _anfang = const [];
 
   bool _writable(int i) => widget.striche[_chars[i]]?.isNotEmpty == true;
   bool _isKanji(String c) => isKanji(c) && c != '々';
@@ -88,6 +94,43 @@ class _WortSchreiberState extends State<WortSchreiber> {
     return i;
   }
 
+  /// Das vorige Zeichen mit Strichen, null am Anfang des Wortes.
+  int? _previous(int i) {
+    for (var j = i - 1; j >= 0; j--) {
+      if (_writable(j)) return j;
+    }
+    return null;
+  }
+
+  bool get _kannZurueck => !_fertig && ((_feld.currentState?.tinte.isNotEmpty ?? _anfang.isNotEmpty) || _previous(_i) != null);
+
+  /// Letzten richtigen Strich zurücknehmen – am Anfang eines Zeichens den
+  /// letzten Strich des vorigen.
+  void _rueckgaengig() {
+    if (_fertig) return;
+    final f = _feld.currentState;
+    if (f != null && f.tinte.isNotEmpty) {
+      _timer?.cancel();
+      f.rueckgaengig();
+      setState(() {
+        _meldung = null;
+        _miss = 0;
+      });
+      return;
+    }
+    final prev = _previous(_i);
+    if (prev == null) return;
+    final ink = _tinte[prev] ?? const [];
+    setState(() {
+      _i = prev;
+      _anfang = ink.isEmpty ? const [] : ink.sublist(0, ink.length - 1);
+      _feld = GlobalKey<SchreibfeldState>();
+      _hinweis = 0;
+      _miss = 0;
+      _meldung = null;
+    });
+  }
+
   void _onStrich(StrichErgebnis r) {
     setState(() {
       switch (r.urteil) {
@@ -111,11 +154,15 @@ class _WortSchreiberState extends State<WortSchreiber> {
   }
 
   void _onZeichen(int _) {
+    _timer?.cancel();
     _timer = Timer(const Duration(milliseconds: 450), () {
       if (!mounted) return;
+      _tinte[_i] = _feld.currentState?.tinte ?? const [];
       final next = _firstFrom(_i + 1);
       setState(() {
         _i = next;
+        _anfang = const [];
+        _feld = GlobalKey<SchreibfeldState>();
         _hinweis = 0;
         _miss = 0;
         _meldung = null;
@@ -183,8 +230,9 @@ class _WortSchreiberState extends State<WortSchreiber> {
                       child: FittedBox(child: Text(widget.wort, style: kanjiStyle(72))),
                     )
                   : Schreibfeld(
-                      key: ValueKey('${widget.wort}-$_i-$_neu'),
+                      key: _feld,
                       paths: widget.striche[_chars[_i]]!,
+                      anfang: _anfang,
                       vorlage: widget.vorlage,
                       hinweis: _hinweis,
                       nurStift: widget.nurStift,
@@ -200,9 +248,14 @@ class _WortSchreiberState extends State<WortSchreiber> {
           child: Center(child: Text(_meldung ?? '', style: sans(14.5, color: YoColors.inkSoft))),
         ),
         if (!_fertig)
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Wrap(
+            alignment: WrapAlignment.center,
             children: [
+              TextButton.icon(
+                onPressed: _kannZurueck ? _rueckgaengig : null,
+                icon: const Icon(Icons.undo_rounded),
+                label: const Text('Rückgängig'),
+              ),
               if (!widget.vorlage)
                 TextButton.icon(
                   onPressed: _hinweis >= 3 ? null : _hint,
@@ -210,10 +263,15 @@ class _WortSchreiberState extends State<WortSchreiber> {
                   label: Text(_hintLabel),
                 ),
               TextButton.icon(
-                onPressed: () => setState(() {
-                  _neu++;
-                  _miss = 0;
-                }),
+                onPressed: () {
+                  _timer?.cancel();
+                  setState(() {
+                    _anfang = const [];
+                    _feld = GlobalKey<SchreibfeldState>();
+                    _miss = 0;
+                    _meldung = null;
+                  });
+                },
                 icon: const Icon(Icons.refresh_rounded),
                 label: const Text('Zeichen neu'),
               ),

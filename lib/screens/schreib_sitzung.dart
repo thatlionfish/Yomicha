@@ -13,6 +13,7 @@ import '../learn/schreiben.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/kanji_card.dart';
+import '../widgets/lern_pause.dart';
 import '../widgets/wort_schreiber.dart';
 import 'words_screen.dart' show highlighted;
 
@@ -31,9 +32,12 @@ class SchreibSitzung extends StatefulWidget {
 enum _Art { wiederholung, kanjiNeu, wortNeu }
 
 class _Schritt {
-  const _Schritt(this.art, this.karte);
+  const _Schritt(this.art, this.karte, {this.nochmal = false});
   final _Art art;
   final SchreibKarte karte;
+
+  /// Kommt in dieser Runde nochmal dran (Lernschritt) – zählt nicht mit.
+  final bool nochmal;
 }
 
 /// Wann eine Karte wiederkommt, z. B. „10 Min“ oder „3 Tage“.
@@ -69,6 +73,11 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
   int _wiederholt = 0;
   int _neueKanji = 0;
   int _neueWoerter = 0;
+
+  /// Vorlesen: beim Schreiben in Dauerschleife, danach einmal Wort und Satz.
+  Schleife? _schleife;
+  Future<List<TextEntry>>? _index;
+  final Map<String, String?> _satzAudio = {};
 
   late final Map<String, SchreibWort> _byKey = {for (final w in widget.alle) w.key: w};
 
@@ -109,6 +118,16 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
 
   _Schritt? get _step => _pos < _queue.length ? _queue[_pos] : null;
 
+  /// Fortschritt ohne die Karten, die nochmal drankommen: Die Zahl wächst nicht.
+  int get _gesamt => _queue.where((s) => !s.nochmal).length;
+  int get _erledigt => _queue.take(_pos).where((s) => !s.nochmal).length;
+
+  @override
+  void dispose() {
+    _schleife?.stop();
+    super.dispose();
+  }
+
   Future<void> _load() async {
     final s = _step;
     if (s == null) return;
@@ -140,15 +159,92 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
       _loading = false;
       _phase = s.art == _Art.wiederholung && (s.karte.kanji != null || auswahl.length < 2) ? 1 : 0;
     });
-    if (s.art == _Art.wortNeu) _play(s.karte.wort!);
+    if (s.karte.wort case final w?) _satzUrl(w);
+    if (s.art == _Art.wortNeu && !_pause) _play(s.karte.wort!);
+    _ton();
   }
 
+  bool get _pause => AppScope.of(context).progress.lernUhr.pausiert(DateTime.now());
+
+  Vortrag _vortrag(SchreibWort w) =>
+      (url: AppScope.of(context).repo.audioUrl(wordAudioPath(Token(t: w.t, r: w.r))), text: w.r);
+
   void _play(SchreibWort w) {
-    final repo = AppScope.of(context).repo;
-    playClip(repo.audioUrl(wordAudioPath(Token(t: w.t, r: w.r))));
+    _schleife?.stop();
+    final v = _vortrag(w);
+    playClip(v.url, sprich: v.text);
+  }
+
+  /// Die Aufnahme des Satzes, in dem ich das Wort gelesen habe.
+  Future<void> _satzUrl(SchreibWort w) async {
+    if (w.textId == null || w.satz == null || _satzAudio.containsKey(w.key)) return;
+    _satzAudio[w.key] = null;
+    try {
+      final repo = AppScope.of(context).repo;
+      final index = await (_index ??= repo.index());
+      final e = index.where((e) => e.id == w.textId).firstOrNull;
+      if (e == null) return;
+      final doc = await repo.text(e.folder);
+      final s = doc.sentences.where((s) => s.plain == w.satz).firstOrNull;
+      if (s?.audio case final a?) _satzAudio[w.key] = repo.audioUrl('${doc.folder}/$a');
+    } catch (_) {
+      // Ohne Aufnahme liest die Sprachausgabe den Satz.
+    }
+  }
+
+  /// Was beim Schreiben immer wieder vorgelesen wird: das Wort – bei einem
+  /// Kanji seine ersten Wörter (oder eine Lesung, wenn es keine gibt).
+  List<Vortrag> _stuecke(SchreibKarte k) {
+    if (k.wort case final w?) return [_vortrag(w)];
+    final kanji = k.kanji!;
+    final woerter = [
+      for (final w in widget.alle)
+        if (w.kanji.contains(kanji)) w,
+    ].take(3);
+    if (woerter.isNotEmpty) return [for (final w in woerter) _vortrag(w)];
+    final info = _infos[kanji];
+    final lesung = [...?info?.kun, ...?info?.on].map((r) => r.replaceAll('.', '').replaceAll('-', '')).firstOrNull;
+    return lesung == null || lesung.isEmpty ? const [] : [(url: '', text: lesung)];
+  }
+
+  bool get _schreibt => switch ((_step?.art, _phase)) {
+    (_Art.wiederholung, 1) || (_Art.kanjiNeu, 1) || (_Art.kanjiNeu, 2) || (_Art.wortNeu, 1) => true,
+    _ => false,
+  };
+
+  /// Ton passend zur Phase: beim Schreiben die Schleife, sonst still.
+  void _ton() {
+    _schleife?.stop();
+    _schleife = null;
+    final s = _step;
+    if (s == null || _loading || !_schreibt || _pause) return;
+    if (!AppScope.of(context).progress.schreiben.vorlesen) return;
+    _schleife = Schleife(_stuecke(s.karte))..start();
+  }
+
+  void _zu(int phase) {
+    setState(() => _phase = phase);
+    _ton();
+  }
+
+  /// Fertig geschrieben: einmal das Wort und den Beispielsatz.
+  void _nachSchreiben(SchreibKarte k) {
+    _schleife?.stop();
+    _schleife = null;
+    final w = k.wort;
+    if (w == null || _pause) return;
+    final satz = w.satz;
+    _schleife = Schleife([
+      _vortrag(w),
+      if (satz != null && satz.isNotEmpty) (url: _satzAudio[w.key] ?? '', text: satz),
+    ], endlos: false)..start();
   }
 
   void _weiter() {
+    _schleife?.stop();
+    _schleife = null;
+    // Zwischen zwei Karten: Sind 20 Minuten um, kommt jetzt die Pause.
+    AppScope.of(context).progress.lernUhr.pruefe(DateTime.now());
     setState(() {
       _pos++;
       _phase = 0;
@@ -171,7 +267,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
     st.speichere(k.key, card, now);
     if (card.due.difference(now.toUtc()) < const Duration(minutes: 20)) {
       final at = (_pos + 4).clamp(0, _queue.length);
-      _queue.insert(at, _Schritt(_Art.wiederholung, k));
+      _queue.insert(at, _Schritt(_Art.wiederholung, k, nochmal: true));
     }
     return card;
   }
@@ -192,9 +288,9 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
           _hinweis = hinweis;
           _phase = 2;
         });
-        if (s.karte.wort case final w?) _play(w);
+        _nachSchreiben(s.karte);
       case _Art.kanjiNeu when _phase == 1:
-        setState(() => _phase = 2);
+        _zu(2);
       case _Art.kanjiNeu:
         final k = s.karte.kanji!;
         st.lerne(k, now);
@@ -210,10 +306,18 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
           _hinweis = hinweis;
           _phase = 3;
         });
+        _schleife?.stop();
       case _Art.wortNeu:
-        _save(s.karte, fsrs.Rating.good);
-        _neueWoerter++;
-        _weiter();
+        final card = _save(s.karte, fsrs.Rating.good);
+        setState(() {
+          _neueWoerter++;
+          _rating = fsrs.Rating.good;
+          _karte = card;
+          _fehler = fehler;
+          _hinweis = hinweis;
+          _phase = 2;
+        });
+        _nachSchreiben(s.karte);
     }
   }
 
@@ -228,29 +332,59 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
     return info?.de ?? info?.meanings.take(2).join(', ') ?? '';
   }
 
+  String get _zaehler {
+    final s = _step!;
+    if (s.nochmal) return _erledigt >= _gesamt ? 'Nochmal · noch ${_queue.length - _pos}' : 'Nochmal';
+    return '${_erledigt + 1} von $_gesamt';
+  }
+
   @override
   Widget build(BuildContext context) {
     final s = _step;
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Kanji schreiben'),
-        actions: [
-          if (s != null)
-            Padding(
-              padding: const EdgeInsets.only(right: 16),
-              child: Center(child: Text('${_pos + 1} von ${_queue.length}', style: sans(14, color: YoColors.inkSoft))),
+    final st = AppScope.of(context).progress.schreiben;
+    return LernPause(
+      onEnde: _ton,
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Kanji schreiben'),
+          actions: [
+            IconButton(
+              tooltip: st.vorlesen ? 'Vorlesen aus' : 'Vorlesen an',
+              onPressed: () {
+                st.setVorlesen(!st.vorlesen);
+                setState(() {});
+                _ton();
+              },
+              icon: Icon(st.vorlesen ? Icons.volume_up_rounded : Icons.volume_off_rounded),
             ),
-        ],
-      ),
-      body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 720),
-            child: s == null
-                ? _summary()
-                : _loading
-                ? const Center(child: CircularProgressIndicator())
-                : Padding(padding: const EdgeInsets.fromLTRB(20, 4, 20, 16), child: _body(s)),
+            if (s != null)
+              Padding(
+                padding: const EdgeInsets.only(right: 16),
+                child: Center(child: Text(_zaehler, style: sans(14, color: YoColors.inkSoft))),
+              ),
+          ],
+          bottom: s == null
+              ? null
+              : PreferredSize(
+                  preferredSize: const Size.fromHeight(3),
+                  child: LinearProgressIndicator(
+                    value: _gesamt == 0 ? 0 : _erledigt / _gesamt,
+                    minHeight: 3,
+                    backgroundColor: YoColors.sand,
+                    color: YoColors.chocolate,
+                  ),
+                ),
+        ),
+        body: SafeArea(
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 720),
+              child: s == null
+                  ? _summary()
+                  : _loading
+                  ? const Center(child: CircularProgressIndicator())
+                  : Padding(padding: const EdgeInsets.fromLTRB(20, 4, 20, 16), child: _body(s)),
+            ),
           ),
         ),
       ),
@@ -314,7 +448,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
       // --- Neues Wort -------------------------------------------------------
       case (_Art.wortNeu, 0):
         return _wortVorstellung(k.wort!);
-      case (_Art.wortNeu, _):
+      case (_Art.wortNeu, 1):
         return Column(
           children: [
             _prompt(k, lesung: true, label: 'Neues Wort · Nachschreiben'),
@@ -322,6 +456,8 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
             writer(vorlage: true),
           ],
         );
+      case (_Art.wortNeu, _):
+        return _ergebnis(k, neuesWort: true);
     }
     return const SizedBox.shrink();
   }
@@ -334,7 +470,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
       children: [
         Text(label, style: sans(13.5, weight: 650, color: YoColors.inkSoft)),
         const SizedBox(height: 6),
-        Text(_bedeutung(k), style: serif(26, weight: 460), textAlign: TextAlign.center, maxLines: 2),
+        Text(verdecke(_bedeutung(k), k.text), style: serif(26, weight: 460), textAlign: TextAlign.center, maxLines: 2),
         if (lesung && w != null) Text(w.r, style: jp(22, color: YoColors.inkSoft)),
         if (lesung && info != null)
           Text(
@@ -343,7 +479,11 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
           ),
         if (w?.satz case final satz? when satz.contains(w!.t)) ...[
           const SizedBox(height: 6),
-          Text(satz.replaceAll(w.t, '＿' * w.t.length), style: jp(17, color: YoColors.inkSoft), textAlign: TextAlign.center),
+          Text(
+            verdecke(satz.replaceAll(w.t, '＿' * w.t.length), w.t),
+            style: jp(17, color: YoColors.inkSoft),
+            textAlign: TextAlign.center,
+          ),
         ],
       ],
     );
@@ -354,10 +494,14 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
       children: [
         Text('Wie liest man das Wort?', style: sans(13.5, weight: 650, color: YoColors.inkSoft)),
         const SizedBox(height: 6),
-        Text(w.bedeutung, style: serif(28, weight: 460), textAlign: TextAlign.center),
+        Text(verdecke(w.bedeutung, w.t), style: serif(28, weight: 460), textAlign: TextAlign.center),
         if (w.satz case final satz? when satz.contains(w.t)) ...[
           const SizedBox(height: 8),
-          Text(satz.replaceAll(w.t, '＿' * w.t.length), style: jp(18, color: YoColors.inkSoft), textAlign: TextAlign.center),
+          Text(
+            verdecke(satz.replaceAll(w.t, '＿' * w.t.length), w.t),
+            style: jp(18, color: YoColors.inkSoft),
+            textAlign: TextAlign.center,
+          ),
         ],
         const SizedBox(height: 24),
         for (final o in _auswahl)
@@ -388,7 +532,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
                         });
                         if (right) {
                           Timer(const Duration(milliseconds: 500), () {
-                            if (mounted && _phase == 0) setState(() => _phase = 1);
+                            if (mounted && _phase == 0) _zu(1);
                           });
                         }
                       },
@@ -414,7 +558,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
           const SizedBox(height: 8),
           Text('Richtig ist ${w.r}. Die Karte kommt bald wieder.', style: sans(15)),
           const SizedBox(height: 12),
-          FilledButton(onPressed: () => setState(() => _phase = 1), child: const Text('Weiter zum Schreiben')),
+          FilledButton(onPressed: () => _zu(1), child: const Text('Weiter zum Schreiben')),
         ],
       ],
     );
@@ -442,7 +586,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
         const SizedBox(height: 12),
         SizedBox(
           width: double.infinity,
-          child: FilledButton(onPressed: () => setState(() => _phase = 1), child: const Text('Nachfahren')),
+          child: FilledButton(onPressed: () => _zu(1), child: const Text('Nachfahren')),
         ),
       ],
     );
@@ -481,16 +625,17 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
         const SizedBox(height: 12),
         SizedBox(
           width: double.infinity,
-          child: FilledButton(onPressed: () => setState(() => _phase = 1), child: const Text('Nachschreiben')),
+          child: FilledButton(onPressed: () => _zu(1), child: const Text('Nachschreiben')),
         ),
       ],
     );
   }
 
-  Widget _ergebnis(SchreibKarte k, {bool neu = false}) {
+  Widget _ergebnis(SchreibKarte k, {bool neu = false, bool neuesWort = false}) {
     final now = DateTime.now();
     final w = k.wort;
     final (titel, text) = switch (_rating) {
+      _ when neuesWort => ('Neues Wort geschrieben', ''),
       fsrs.Rating.good || fsrs.Rating.easy => ('Gut geschrieben', _fehler == 0 ? 'Alle Striche richtig.' : 'Ein Strich daneben.'),
       fsrs.Rating.hard => ('Mit etwas Hilfe', _hinweis > 0 ? 'Mit Hinweis geschrieben.' : '$_fehler Striche daneben.'),
       _ => ('Nochmal üben', _lesungFalsch ? 'Die Lesung war nicht richtig.' : 'Das Zeichen sitzt noch nicht.'),
@@ -506,7 +651,7 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
                 const SizedBox(height: 4),
                 Text(
                   [
-                    text,
+                    if (text.isNotEmpty) text,
                     if (_karte case final c?) 'Kommt ${wannWieder(c, now)} wieder.',
                     if (neu && _karte == null) 'Du übst es gleich mit dem Wort.',
                   ].join(' '),
@@ -520,8 +665,8 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
                   const SizedBox(height: 6),
                   Text(w.bedeutung, style: sans(18, weight: 560), textAlign: TextAlign.center),
                   IconButton.filledTonal(
-                    tooltip: 'Aussprache',
-                    onPressed: () => _play(w),
+                    tooltip: 'Wort und Satz vorlesen',
+                    onPressed: () => _nachSchreiben(k),
                     icon: const Icon(Icons.volume_up_rounded),
                   ),
                   if (w.satz case final satz?) ...[

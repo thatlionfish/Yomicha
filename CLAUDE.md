@@ -51,3 +51,4 @@ flutter test tool/render_icon_test.dart          # App-Icon (lib/ui/app_icon.dar
 - Kanji-Karten neu bauen: `tool/teekueche/kanji_daten.py` (Rohdaten in `werkstatt/quellen/`, nicht veröffentlicht).
 - „Kanji schreiben“ (Spezifikation 19): Lernplan und Wörter neu bauen mit `tool/teekueche/schreiben_daten.py`;
   deutsche Bedeutungen der Wörter und Korrekturen alter Schreibungen in `tool/teekueche/schreiben_extra.json`.
+  Kommen neue Kanji in den Plan, danach `schriften.py` neu laufen lassen (Klee One braucht alle Plan-Kanji).

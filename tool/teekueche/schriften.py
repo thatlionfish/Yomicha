@@ -50,8 +50,9 @@ def main() -> None:
         text_chars.update(ch for ch in f.read_text(encoding="utf-8") if ord(ch) >= 0x2E80)
     chars |= text_chars
 
-    # Klee One (Lehrbuchschrift) steht nur auf den Kanji-Karten: Kanji N5–N2,
-    # Radikale und die Kanji aus den Texten genügen.
+    # Klee One (Lehrbuchschrift) steht nur auf den Kanji-Karten und beim
+    # Schreiben: Kanji N5–N2, Radikale und die Kanji aus den Texten – dazu über
+    # web/data/schreiben/plan.json alle Kanji des Schreibplans bis N1.
     card_chars = {k for k, v in jouyou.items() if (v.get("jlpt_new") or 0) >= 2}
     card_chars |= {ch for ch in text_chars if ord(ch) >= 0x3400}
     card_chars.update(chr(c) for c in range(0x2E80, 0x2FE0))

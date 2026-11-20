@@ -23,6 +23,7 @@ import 'progress_screen.dart';
 import 'reading_screen.dart';
 import 'schreiben_screen.dart';
 import 'sources_screen.dart';
+import 'tagesplan_screen.dart';
 import 'weekly_screen.dart';
 import 'words_screen.dart';
 
@@ -174,6 +175,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ),
+                  if (!rest) ...[
+                    const SizedBox(height: 18),
+                    _HeuteLernen(
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(builder: (_) => const TagesplanScreen()),
+                      ),
+                    ),
+                  ],
                   const SizedBox(height: 22),
                   if (rest) ...[
                     _RestCard(),
@@ -634,6 +643,44 @@ class _Tile extends StatelessWidget {
               const Icon(Icons.chevron_right_rounded, color: YoColors.inkSoft),
             ],
           ),
+        ),
+      ),
+    ),
+  );
+}
+
+/// Die Taste für mein Tagespensum: alles von heute nacheinander.
+class _HeuteLernen extends StatelessWidget {
+  const _HeuteLernen({required this.onTap});
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Material(
+    color: YoColors.chocolate,
+    shape: const RoundedRectangleBorder(borderRadius: organicRadius),
+    child: InkWell(
+      customBorder: const RoundedRectangleBorder(borderRadius: organicRadius),
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+        child: Row(
+          children: [
+            const Icon(Icons.checklist_rounded, color: YoColors.brightWhite, size: 26),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Heute lernen', style: sans(17, weight: 650, color: YoColors.brightWhite)),
+                  Text(
+                    'Texte, Wörter und Kanji – alles, was heute dran ist, nacheinander',
+                    style: sans(13.5, color: YoColors.vanillaIce),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right_rounded, color: YoColors.brightWhite),
+          ],
         ),
       ),
     ),

@@ -24,6 +24,7 @@ class Schreibfeld extends StatefulWidget {
     this.nurStift = false,
     this.onStift,
     this.toleranz = const StrichToleranz(),
+    this.anfang = const [],
   });
 
   /// Die Striche des Zeichens in der richtigen Reihenfolge (KanjiVG).
@@ -38,6 +39,9 @@ class Schreibfeld extends StatefulWidget {
   final bool nurStift;
   final VoidCallback? onStift;
   final StrichToleranz toleranz;
+
+  /// Schon geschriebene Striche (nach „Rückgängig“ aus dem nächsten Zeichen).
+  final List<List<Offset>> anfang;
 
   /// Nach jedem Strich: wie er bewertet wurde.
   final void Function(StrichErgebnis ergebnis) onStrich;
@@ -67,10 +71,29 @@ class SchreibfeldState extends State<Schreibfeld> {
   int get naechsterStrich => _next;
   bool get fertig => _next >= _paths.length;
 
+  /// Die richtigen Striche, so wie ich sie geschrieben habe.
+  List<List<Offset>> get tinte => List.of(_ink);
+
   @override
   void initState() {
     super.initState();
     _prepare();
+    _ink.addAll(widget.anfang.take(_paths.length));
+    _next = _ink.length;
+  }
+
+  /// Nimmt den letzten richtigen Strich zurück; false, wenn es keinen gibt.
+  bool rueckgaengig() {
+    if (_ink.isEmpty) return false;
+    setState(() {
+      _ink.removeLast();
+      _next = _ink.length;
+      _current = null;
+      _pointer = null;
+      _wrong = null;
+      _miss = 0;
+    });
+    return true;
   }
 
   void _prepare() {

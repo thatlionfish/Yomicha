@@ -138,15 +138,34 @@ void main() {
     await tester.pumpAndSettle();
     expect(p.schreiben.kann('配'), isTrue);
     expect(find.text('Neue Kanji: noch 4 von 4'), findsOneWidget);
-    expect(find.textContaining('Noch 605 Kanji bis N2'), findsOneWidget);
+    // Bis N2 zählen auch die N1-Bestandteile, die davor drankommen (又 vor 支).
+    final bisN2 = plan.bisN2.where((k) => !plan.vorwissen.contains(k)).length;
+    expect(bisN2, greaterThan(605));
+    expect(find.textContaining('Noch $bisN2 Kanji bis N2'), findsOneWidget);
+    expect(find.textContaining('Danach N1:'), findsOneWidget);
 
+    // 又 (ein N1-Bestandteil von 支) hat kein eigenes Wort: als schon gelernt
+    // annehmen, damit nach dem ersten Kanji gleich seine Wörter kommen.
+    expect(plan.reihenfolge.firstWhere((k) => !plan.vorwissen.contains(k)), '又');
+    p.schreiben.lerne('又', DateTime(2026, 1, 5));
     await tester.tap(find.text('Schreiben'));
     await tester.pumpAndSettle();
-    final first = plan.reihenfolge.firstWhere((k) => !plan.vorwissen.contains(k));
+    final first = plan.reihenfolge.firstWhere((k) => !p.schreiben.kann(k));
     expect(find.text('Neues Kanji · 1'), findsOneWidget);
     await tester.tap(find.text('Nachfahren'));
     await tester.pumpAndSettle();
     final paths = (await repo.kanjiInfo(first))!.paths;
+    final zaehler = find.textContaining(RegExp(r'^1 von \d+$'));
+    expect(zaehler, findsOneWidget);
+    final gesamt = tester.widget<Text>(zaehler).data;
+
+    // Rückgängig: Der erste Strich steht, dann ist er wieder weg.
+    await _write(tester, paths.take(1).toList());
+    final feld = tester.state<SchreibfeldState>(find.byType(Schreibfeld));
+    expect(feld.naechsterStrich, 1);
+    await tester.tap(find.text('Rückgängig'));
+    await tester.pump();
+    expect(feld.naechsterStrich, 0);
 
     // Nachfahren mit Vorlage, dann aus dem Kopf.
     await _write(tester, paths);
@@ -177,6 +196,19 @@ void main() {
     await tester.pumpAndSettle();
     expect(p.schreiben.hatKarte('w:${word.key}'), isTrue);
     expect(p.schreiben.neueWoerterAm(DateTime.now()), 1);
+    // Fertig geschrieben: Wort (und Satz) einmal, dann weiter.
+    expect(find.text('Neues Wort geschrieben'), findsOneWidget);
+    // Die Gesamtzahl wächst nicht, auch wenn Karten nochmal drankommen.
+    expect(find.textContaining(RegExp(r'von \d+$')).evaluate().map((e) => (e.widget as Text).data!.split(' ').last),
+        everyElement(gesamt!.split(' ').last));
+
+    // Nach 20 Minuten Lernen kommt zwischen zwei Karten die Pause.
+    p.lernUhr.aktiv(DateTime.now());
+    p.lernUhr.gelernt = const Duration(minutes: 21);
+    await tester.tap(find.text('Weiter'));
+    await tester.pump();
+    expect(find.text('Pause'), findsOneWidget);
+    expect(p.lernUhr.pausiert(DateTime.now()), isTrue);
     expect(tester.takeException(), isNull);
   });
 }

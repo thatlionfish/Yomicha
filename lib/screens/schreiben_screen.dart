@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:fsrs/fsrs.dart' as fsrs;
 
 import '../app_scope.dart';
+import '../data/models.dart';
 import '../data/progress.dart';
+import '../data/repository.dart';
 import '../data/schreib_plan.dart';
 import '../learn/calendar.dart';
 import '../learn/schreiben.dart';
@@ -15,7 +17,7 @@ import 'schreib_sitzung.dart';
 typedef SchreibDaten = ({SchreibPlan plan, Set<String> kana});
 
 /// „Kanji schreiben“ (Spezifikation 19): was heute dran ist, wie weit ich bis
-/// zur N2 bin, alle Kanji N5–N2 im Überblick und die Einstellungen.
+/// zur N2 bin, alle Kanji N5–N1 im Überblick und die Einstellungen.
 class SchreibenScreen extends StatefulWidget {
   const SchreibenScreen({super.key});
 
@@ -29,12 +31,14 @@ class _SchreibenScreenState extends State<SchreibenScreen> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    if (_daten != null) return;
     final repo = AppScope.of(context).repo;
-    _daten ??= () async {
+    _daten = () async {
       final plan = await repo.schreibPlan();
       final kana = await repo.kana();
       return (plan: plan, kana: kana.keys.toSet());
     }();
+    gelesenNachtragen(repo, AppScope.of(context).progress);
   }
 
   @override
@@ -73,8 +77,11 @@ class _SchreibenScreenState extends State<SchreibenScreen> {
     final due = faelligeKarten(st, byKey, now).length;
     final neuKanji = neueKanjiHeute(st, now);
     final neuWoerter = neueWoerter(st, alle, now).length;
-    final offen = plan.reihenfolge.where((k) => !st.kann(k)).length;
+    final offen = plan.bisN2.where((k) => !st.kann(k)).length;
+    final offenN1 = plan.nachN2.where((k) => !st.kann(k)).length;
     final rest = isRestDay(now);
+    final start = rest ? now.add(const Duration(days: 1)) : now;
+    final n2Fertig = fertigAm(offen, st.tagesziel, start);
 
     return Center(
       child: ConstrainedBox(
@@ -129,10 +136,15 @@ class _SchreibenScreenState extends State<SchreibenScreen> {
             Text(
               offen == 0
                   ? 'Alle Kanji bis N2 gelernt.'
-                  : 'Noch $offen Kanji bis N2 · bei ${st.tagesziel} am Tag fertig am '
-                        '${_date(fertigAm(offen, st.tagesziel, rest ? now.add(const Duration(days: 1)) : now))}',
+                  : 'Noch $offen Kanji bis N2 · bei ${st.tagesziel} am Tag fertig am ${_date(n2Fertig)}',
               style: sans(15, color: YoColors.inkSoft),
             ),
+            if (offenN1 > 0)
+              Text(
+                'Danach N1: $offenN1 Kanji · fertig am '
+                '${_date(fertigAm(offenN1, st.tagesziel, offen == 0 ? start : n2Fertig.add(const Duration(days: 1))))}',
+                style: sans(15, color: YoColors.inkSoft),
+              ),
             const SizedBox(height: 20),
             _Uebersicht(plan: plan, progress: progress),
             const SizedBox(height: 24),
@@ -220,13 +232,80 @@ class _VorwissenCard extends StatelessWidget {
   }
 }
 
-enum _KanjiStand { offen, gelernt, sicher }
+/// Kanji aus meinen gelesenen Texten nachtragen (für die Farbe „gelesen“):
+/// nur Texte, die noch nicht durchgesehen wurden – einer nach dem anderen.
+Future<void> gelesenNachtragen(Repository repo, Progress progress) async {
+  final st = progress.schreiben;
+  final offen = {for (final r in progress.reads) r.id}.difference(st.gelesenAus);
+  if (offen.isEmpty) return;
+  try {
+    final index = await repo.index();
+    final neu = <String, Iterable<String>>{};
+    for (final e in index) {
+      if (!offen.contains(e.id)) continue;
+      try {
+        final doc = await repo.text(e.folder);
+        neu[e.id] = {for (final s in doc.sentences) ...kanjiOf(s.plain)};
+      } catch (_) {
+        // Ein Text, der sich nicht laden lässt, kommt beim nächsten Mal dran.
+      }
+    }
+    st.gelesenAusTexten(neu);
+  } catch (_) {
+    // Offline: dann eben später.
+  }
+}
 
-/// Noch nicht gelernte Kanji: blasse Tinte.
+/// Wie weit ich mit einem Kanji bin – vier Stufen von hell nach dunkel.
+enum KanjiStand { offen, gelesen, amLernen, gelernt }
+
+/// Farben der Übersicht: ein Braun von hell nach dunkel wie Tee, der zieht.
+/// „Gelesen“ ist der Sandton, mit dem auch der gelesene Satz markiert wird.
+const _amLernen = Color(0xFFCBB898);
+
+/// Noch nicht begegnet: blasse Tinte ohne Grund.
 const _offenInk = Color(0x9973655A);
 
-/// Alle Kanji N5–N2 nach Stufen; gelernte auf hellem Grund, sichere mit
-/// grünem Strich darunter.
+Color? _fill(KanjiStand s) => switch (s) {
+  KanjiStand.offen => null,
+  KanjiStand.gelesen => YoColors.sand,
+  KanjiStand.amLernen => _amLernen,
+  KanjiStand.gelernt => YoColors.chocolate,
+};
+
+Color _ink(KanjiStand s) => switch (s) {
+  KanjiStand.offen => _offenInk,
+  KanjiStand.gelernt => YoColors.brightWhite,
+  _ => YoColors.chocolate,
+};
+
+/// Stand jedes Kanji: gelernt (Vorwissen oder sicher, Stabilität ab 21 Tagen),
+/// am Lernen (in Yomicha gelernt), gelesen (in meinen Texten), offen.
+Map<String, KanjiStand> kanjiStaende(SchreibPlan plan, Progress progress) {
+  final st = progress.schreiben;
+  final stab = <String, double>{};
+  for (final key in st.kartenKeys) {
+    final c = st.karte(key);
+    if (c.state != fsrs.State.review) continue;
+    final s = c.stability ?? 0;
+    final chars = key.startsWith('k:') ? [key.substring(2)] : kanjiOfWord(key.substring(2).split('|').first);
+    for (final k in chars) {
+      if (s > (stab[k] ?? 0)) stab[k] = s;
+    }
+  }
+  final gelesen = {...st.gelesen, for (final w in progress.myWords.values) ...kanjiOf(w.t)};
+  return {
+    for (final k in plan.reihenfolge)
+      k: switch (st.gelernt[k]) {
+        'v' => KanjiStand.gelernt,
+        final String _ => (stab[k] ?? 0) >= 21 ? KanjiStand.gelernt : KanjiStand.amLernen,
+        null => gelesen.contains(k) ? KanjiStand.gelesen : KanjiStand.offen,
+      },
+  };
+}
+
+/// Alle Kanji N5–N1 nach Stufen, eingefärbt nach meinem Stand; umrandet die,
+/// die als Nächstes drankommen.
 class _Uebersicht extends StatelessWidget {
   const _Uebersicht({required this.plan, required this.progress});
   final SchreibPlan plan;
@@ -235,31 +314,24 @@ class _Uebersicht extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final st = progress.schreiben;
-    // Stabilität je Kanji: aus der Kanji-Karte oder der besten Wort-Karte.
-    final stab = <String, double>{};
-    for (final key in st.kartenKeys) {
-      final c = st.karte(key);
-      if (c.state != fsrs.State.review) continue;
-      final s = c.stability ?? 0;
-      final chars = key.startsWith('k:') ? [key.substring(2)] : kanjiOfWord(key.substring(2).split('|').first);
-      for (final k in chars) {
-        if (s > (stab[k] ?? 0)) stab[k] = s;
-      }
-    }
-    _KanjiStand stand(String k) => !st.kann(k)
-        ? _KanjiStand.offen
-        : (stab[k] ?? 0) >= 21
-        ? _KanjiStand.sicher
-        : _KanjiStand.gelernt;
+    final now = DateTime.now();
+    final stand = kanjiStaende(plan, progress);
+    final heute = neueKanjiHeute(st, now);
+    final naechste = naechsteKanji(plan, st, progress.myWords.values, heute > 0 ? heute : st.tagesziel).toSet();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        for (final n in const [5, 4, 3, 2]) ...[
+        _Legende(naechsteHeute: heute > 0),
+        const SizedBox(height: 16),
+        for (final n in const [5, 4, 3, 2, 1]) ...[
           () {
-            final ks = [for (final k in plan.reihenfolge) if (plan.stufe[k] == n) k];
-            final done = ks.where(st.kann).length;
-            return Text('N$n · $done von ${ks.length}', style: sans(14, weight: 650, color: YoColors.inkSoft));
+            final ks = [
+              for (final k in plan.reihenfolge)
+                if (plan.stufe[k] == n) k,
+            ];
+            final count = {for (final s in KanjiStand.values) s: ks.where((k) => stand[k] == s).length};
+            return _StufenKopf(n: n, gesamt: ks.length, count: count);
           }(),
           const SizedBox(height: 8),
           Wrap(
@@ -267,16 +339,16 @@ class _Uebersicht extends StatelessWidget {
             runSpacing: 4,
             children: [
               for (final k in plan.reihenfolge)
-                if (plan.stufe[k] == n) _cell(context, k, stand(k)),
+                if (plan.stufe[k] == n) _cell(context, k, stand[k]!, naechste.contains(k)),
             ],
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 22),
         ],
       ],
     );
   }
 
-  Widget _cell(BuildContext context, String k, _KanjiStand s) => InkWell(
+  Widget _cell(BuildContext context, String k, KanjiStand s, bool naechstes) => InkWell(
     borderRadius: const BorderRadius.all(Radius.circular(8)),
     onTap: () => showKanjiCard(context, kanji: k, repo: AppScope.of(context).repo, progress: progress),
     child: Container(
@@ -284,16 +356,120 @@ class _Uebersicht extends StatelessWidget {
       height: 36,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: s == _KanjiStand.offen ? null : YoColors.brightWhite,
+        color: _fill(s),
         borderRadius: const BorderRadius.all(Radius.circular(8)),
-        border: s == _KanjiStand.sicher ? const Border(bottom: BorderSide(color: YoColors.lemonGrass, width: 3)) : null,
+        border: naechstes ? Border.all(color: YoColors.chocolate, width: 2) : null,
       ),
       child: Text(
         k,
-        style: kanjiStyle(21).copyWith(color: s == _KanjiStand.offen ? _offenInk : YoColors.chocolate),
+        style: kanjiStyle(21).copyWith(color: naechstes && s == KanjiStand.offen ? YoColors.chocolate : _ink(s)),
       ),
     ),
   );
+}
+
+/// Überschrift einer Stufe mit einem Balken: gelernt, am Lernen, gelesen, offen.
+class _StufenKopf extends StatelessWidget {
+  const _StufenKopf({required this.n, required this.gesamt, required this.count});
+  final int n;
+  final int gesamt;
+  final Map<KanjiStand, int> count;
+
+  @override
+  Widget build(BuildContext context) {
+    final gelernt = count[KanjiStand.gelernt]!;
+    final lernen = count[KanjiStand.amLernen]!;
+    final gelesen = count[KanjiStand.gelesen]!;
+    final teile = [
+      (KanjiStand.gelernt, gelernt),
+      (KanjiStand.amLernen, lernen),
+      (KanjiStand.gelesen, gelesen),
+      (KanjiStand.offen, count[KanjiStand.offen]!),
+    ].where((t) => t.$2 > 0).toList();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.baseline,
+          textBaseline: TextBaseline.alphabetic,
+          children: [
+            Text('N$n', style: serif(20, weight: 500)),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Text(
+                [
+                  '$gesamt Kanji',
+                  if (gelernt > 0) '$gelernt gelernt',
+                  if (lernen > 0) '$lernen am Lernen',
+                  if (gelesen > 0) '$gelesen gelesen',
+                ].join(' · '),
+                style: sans(14, color: YoColors.inkSoft),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 6),
+        ClipRRect(
+          borderRadius: const BorderRadius.all(Radius.circular(4)),
+          child: SizedBox(
+            height: 8,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                for (var i = 0; i < teile.length; i++) ...[
+                  if (i > 0) const SizedBox(width: 2),
+                  Expanded(
+                    flex: teile[i].$2,
+                    child: ColoredBox(color: _fill(teile[i].$1) ?? YoColors.woodAsh.withValues(alpha: 0.45)),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _Legende extends StatelessWidget {
+  const _Legende({required this.naechsteHeute});
+  final bool naechsteHeute;
+
+  @override
+  Widget build(BuildContext context) {
+    Widget chip(KanjiStand? s, String label) => Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          width: 18,
+          height: 18,
+          decoration: BoxDecoration(
+            color: s == null ? null : _fill(s),
+            borderRadius: const BorderRadius.all(Radius.circular(5)),
+            border: s == null
+                ? Border.all(color: YoColors.chocolate, width: 2)
+                : s == KanjiStand.offen
+                ? Border.all(color: YoColors.woodAsh)
+                : null,
+          ),
+        ),
+        const SizedBox(width: 6),
+        Text(label, style: sans(14)),
+      ],
+    );
+    return Wrap(
+      spacing: 16,
+      runSpacing: 8,
+      children: [
+        chip(KanjiStand.offen, 'Noch nicht begegnet'),
+        chip(KanjiStand.gelesen, 'Schon gelesen'),
+        chip(KanjiStand.amLernen, 'Am Lernen'),
+        chip(KanjiStand.gelernt, 'Gelernt'),
+        chip(null, naechsteHeute ? 'Heute dran' : 'Als Nächstes'),
+      ],
+    );
+  }
 }
 
 class _Stepper extends StatelessWidget {

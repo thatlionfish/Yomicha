@@ -33,6 +33,14 @@ class SchreibStand {
   /// Die Frage nach dem bisherigen Stand ist beantwortet.
   bool vorwissenGefragt = false;
 
+  /// Beim Schreiben die Wörter immer wieder vorlesen.
+  bool vorlesen = true;
+
+  /// Kanji, die mir in meinen gelesenen Texten schon begegnet sind, und die
+  /// Texte, die dafür schon durchgesehen wurden.
+  final Set<String> gelesen = {};
+  final Set<String> gelesenAus = {};
+
   void load(SharedPreferences p, void Function() changed) {
     _prefs = p;
     _changed = changed;
@@ -51,6 +59,13 @@ class SchreibStand {
     _extra = heute.length > 2 ? int.tryParse(heute[2]) ?? 0 : 0;
     stiftGesehen = p.getBool('${_p}stift') ?? false;
     vorwissenGefragt = p.getBool('${_p}vorwissenGefragt') ?? false;
+    vorlesen = p.getBool('${_p}vorlesen') ?? true;
+    gelesen
+      ..clear()
+      ..addAll((p.getString('${_p}gelesen') ?? '').split(''));
+    gelesenAus
+      ..clear()
+      ..addAll(p.getStringList('${_p}gelesenAus') ?? const []);
   }
 
   static Map<String, dynamic> _map(String? s) => s == null ? {} : jsonDecode(s) as Map<String, dynamic>;
@@ -153,6 +168,24 @@ class SchreibStand {
   void setWoerterProTag(int n) {
     woerterProTag = n.clamp(5, 60);
     _prefs?.setInt('${_p}woerterProTag', woerterProTag);
+    _changed();
+  }
+
+  void setVorlesen(bool an) {
+    vorlesen = an;
+    _prefs?.setBool('${_p}vorlesen', an);
+    _changed();
+  }
+
+  /// Trägt die Kanji gelesener Texte ein ([texte]: Text → seine Kanji).
+  void gelesenAusTexten(Map<String, Iterable<String>> texte) {
+    if (texte.isEmpty) return;
+    for (final e in texte.entries) {
+      gelesenAus.add(e.key);
+      gelesen.addAll(e.value);
+    }
+    _prefs?.setString('${_p}gelesen', gelesen.join());
+    _prefs?.setStringList('${_p}gelesenAus', gelesenAus.toList());
     _changed();
   }
 

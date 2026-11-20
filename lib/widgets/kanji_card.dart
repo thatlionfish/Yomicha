@@ -131,6 +131,9 @@ class KanjiDetails extends StatefulWidget {
 class _KanjiDetailsState extends State<KanjiDetails> {
   late final _story = TextEditingController(text: widget.progress.stories[widget.kanji] ?? '');
 
+  /// Im Hinweis ([KanjiDetails.kompakt]) steht das Kanji selbst nicht da.
+  String _verdeckt(String text) => widget.kompakt ? text.replaceAll(widget.kanji, '〇') : text;
+
   @override
   void dispose() {
     _story.dispose();
@@ -234,22 +237,27 @@ class _KanjiDetailsState extends State<KanjiDetails> {
           _label('Merkgeschichte'),
           if (k.story != null) ...[
             const SizedBox(height: 6),
-            Text('Vorschlag: ${k.story}', style: sans(15, height: 1.5)),
+            Text('Vorschlag: ${_verdeckt(k.story!)}', style: sans(15, height: 1.5)),
           ],
           const SizedBox(height: 8),
-          TextField(
-            controller: _story,
-            minLines: 2,
-            maxLines: 5,
-            style: sans(15.5),
-            decoration: const InputDecoration(
-              hintText: 'Meine eigene Geschichte …',
-              filled: true,
-              fillColor: YoColors.coconutMilk,
-              border: OutlineInputBorder(borderRadius: fieldRadius, borderSide: BorderSide.none),
+          // Beim Hinweis während des Schreibens: meine Geschichte nur zum Lesen,
+          // das Kanji darin verdeckt.
+          if (kompakt && _story.text.trim().isNotEmpty)
+            Text(_verdeckt(_story.text), style: sans(15.5, height: 1.5))
+          else
+            TextField(
+              controller: _story,
+              minLines: 2,
+              maxLines: 5,
+              style: sans(15.5),
+              decoration: const InputDecoration(
+                hintText: 'Meine eigene Geschichte …',
+                filled: true,
+                fillColor: YoColors.coconutMilk,
+                border: OutlineInputBorder(borderRadius: fieldRadius, borderSide: BorderSide.none),
+              ),
+              onChanged: (s) => widget.progress.setStory(widget.kanji, s),
             ),
-            onChanged: (s) => widget.progress.setStory(widget.kanji, s),
-          ),
         ],
         if (words.isNotEmpty && !kompakt) ...[
           const SizedBox(height: 18),

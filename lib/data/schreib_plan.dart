@@ -9,7 +9,7 @@ class SchreibWort {
     required this.en,
     this.de,
     this.satz,
-    this.ausText = false,
+    this.textId,
   });
 
   /// Schreibung, so wie sie im Text steht (Kanji mit Okurigana).
@@ -24,8 +24,11 @@ class SchreibWort {
   /// Beispielsatz (aus meinem Text oder später aus der Teeküche).
   final String? satz;
 
-  /// Kommt aus einem meiner Texte („Meine Wörter“).
-  final bool ausText;
+  /// Der Text, aus dem ich das Wort gespeichert habe („Meine Wörter“).
+  final String? textId;
+
+  /// Kommt aus einem meiner Texte.
+  bool get ausText => textId != null;
 
   String get key => '$t|$r';
   String get bedeutung => de ?? en;
@@ -49,7 +52,7 @@ class SchreibPlan {
            if (w.t.length == 1 && isKanji(w.t)) w.t,
        };
 
-  /// Alle Kanji von N5 bis N2 in Lernreihenfolge.
+  /// Alle Kanji von N5 bis N1 in Lernreihenfolge (N1 nach der N2).
   final List<String> reihenfolge;
   final Map<String, int> stufe;
 
@@ -59,7 +62,7 @@ class SchreibPlan {
   /// Bestandteile, die selbst Lern-Kanji sind.
   final Map<String, List<String>> teile;
 
-  /// Alle JLPT-Wörter, nach der Reihenfolge ihrer Kanji.
+  /// Alle JLPT-Wörter N5–N1, nach der Reihenfolge ihrer Kanji.
   final List<SchreibWort> woerter;
 
   final Map<String, int> index;
@@ -68,6 +71,14 @@ class SchreibPlan {
   final Set<String> allein;
 
   bool lernKanji(String k) => index.containsKey(k);
+
+  /// Alles bis zum letzten Kanji der N2 – auch N1-Bestandteile, die davor
+  /// gelernt werden (z. B. 又 vor 支). Der Rest ist die N1.
+  late final List<String> bisN2 = reihenfolge.sublist(
+    0,
+    reihenfolge.lastIndexWhere((k) => (stufe[k] ?? 1) >= 2) + 1,
+  );
+  late final List<String> nachN2 = reihenfolge.sublist(bisN2.length);
 
   factory SchreibPlan.fromJson(Map<String, dynamic> j) {
     final order = (j['reihenfolge'] as String).split('');

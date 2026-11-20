@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:fsrs/fsrs.dart' as fsrs;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'lern_uhr.dart';
 import 'schreib_stand.dart';
 
 /// Furigana-Einstellung (Spezifikation 4.1).
@@ -269,6 +270,9 @@ class Progress extends ChangeNotifier {
   /// Lernstand von „Kanji schreiben“.
   final schreiben = SchreibStand();
 
+  /// Nach 20 Minuten Lernen 5 Minuten Pause.
+  final lernUhr = LernUhr();
+
   Future<void> load() async {
     final p = _prefs = await SharedPreferences.getInstance();
     lastBackup = DateTime.tryParse(p.getString('${_p}lastBackup') ?? '');
@@ -310,6 +314,7 @@ class Progress extends ChangeNotifier {
       weeklyResults.add(WeeklyResult.fromJson(jsonDecode(s) as Map<String, dynamic>));
     }
     schreiben.load(p, notifyListeners);
+    lernUhr.load(p, notifyListeners);
     final speech = p.getString('${_p}speechSeconds');
     if (speech != null) {
       _speechSeconds.addAll((jsonDecode(speech) as Map<String, dynamic>).map((k, v) => MapEntry(k, (v as num).toInt())));
@@ -493,7 +498,7 @@ class Progress extends ChangeNotifier {
   // --- Sicherung (Spezifikation 17) ----------------------------------------
 
   /// Bleibt auf dem Gerät: der Azure-Schlüssel gehört nicht in eine Datei.
-  static const _notInBackup = {'azureKey', 'azureRegion', 'lastBackup'};
+  static const _notInBackup = {'azureKey', 'azureRegion', 'lastBackup', 'lernuhr'};
 
   bool _inBackup(String prefKey) =>
       prefKey.startsWith(_p) && !_notInBackup.contains(prefKey.substring(_p.length));

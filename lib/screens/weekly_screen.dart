@@ -12,6 +12,7 @@ import '../ui/colors.dart';
 import '../ui/theme.dart';
 import '../widgets/furigana.dart';
 import '../widgets/kumachan.dart';
+import '../widgets/lern_pause.dart';
 import '../widgets/stat_tile.dart';
 import '../widgets/teeblaetter.dart';
 
@@ -106,31 +107,34 @@ class _WeeklyScreenState extends State<WeeklyScreen> {
   Widget build(BuildContext context) {
     final qs = _qs;
     final done = qs != null && _index >= qs.length;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Wochentest · KW ${isoWeek(widget.weekStart)}'),
-      ),
-      body: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 720),
-          child: _error != null
-              ? Padding(
-                  padding: const EdgeInsets.all(24),
-                  child: Text('$_error'),
-                )
-              : qs == null
-              ? const Center(child: CircularProgressIndicator())
-              : qs.isEmpty
-              ? Padding(
-                  padding: const EdgeInsets.all(24),
-                  child: Text(
-                    'In dieser Woche gab es noch keine Texte für einen Test.',
-                    style: sans(16),
-                  ),
-                )
-              : done
-              ? _summary(context)
-              : _question(qs[_index], qs.length),
+    return LernPause(
+      sofort: true,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Wochentest · KW ${isoWeek(widget.weekStart)}'),
+        ),
+        body: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 720),
+            child: _error != null
+                ? Padding(
+                    padding: const EdgeInsets.all(24),
+                    child: Text('$_error'),
+                  )
+                : qs == null
+                ? const Center(child: CircularProgressIndicator())
+                : qs.isEmpty
+                ? Padding(
+                    padding: const EdgeInsets.all(24),
+                    child: Text(
+                      'In dieser Woche gab es noch keine Texte für einen Test.',
+                      style: sans(16),
+                    ),
+                  )
+                : done
+                ? _summary(context)
+                : _question(qs[_index], qs.length),
+          ),
         ),
       ),
     );

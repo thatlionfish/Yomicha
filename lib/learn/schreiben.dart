@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:fsrs/fsrs.dart' as fsrs;
 
+import '../data/models.dart';
 import '../data/progress.dart';
 import '../data/schreib_plan.dart';
 import '../data/schreib_stand.dart';
@@ -31,7 +32,7 @@ List<SchreibWort> alleWoerter(SchreibPlan plan, Iterable<MyWord> myWords, Set<St
   final mine = <String, SchreibWort>{};
   final sorted = myWords.toList()..sort((a, b) => (a.added ?? DateTime(2000)).compareTo(b.added ?? DateTime(2000)));
   for (final w in sorted) {
-    final sw = SchreibWort(t: w.t, r: w.reading, n: 0, en: w.gloss, de: w.gloss, satz: w.sentence, ausText: w.textId != null);
+    final sw = SchreibWort(t: w.t, r: w.reading, n: 0, en: w.gloss, de: w.gloss, satz: w.sentence, textId: w.textId);
     if (sw.kanji.isEmpty) continue;
     final ok = w.t.split('').every((c) => plan.lernKanji(c) || kana.contains(c));
     if (ok) mine[sw.key] = sw;
@@ -39,7 +40,7 @@ List<SchreibWort> alleWoerter(SchreibPlan plan, Iterable<MyWord> myWords, Set<St
   return [
     for (final w in plan.woerter)
       if (mine.remove(w.key) case final m?)
-        SchreibWort(t: w.t, r: w.r, n: w.n, en: w.en, de: m.de ?? w.de, satz: m.satz ?? w.satz, ausText: m.ausText)
+        SchreibWort(t: w.t, r: w.r, n: w.n, en: w.en, de: m.de ?? w.de, satz: m.satz ?? w.satz, textId: m.textId)
       else
         w,
     ...mine.values,
@@ -70,6 +71,14 @@ List<String> naechsteKanji(SchreibPlan plan, SchreibStand st, Iterable<MyWord> m
     add(k);
   }
   return out;
+}
+
+/// Verdeckt die Kanji von [wort] in einem Hinweistext (Bedeutung, Satz,
+/// Geschichte), damit ich sie beim Schreiben aus dem Kopf nicht abschreibe.
+String verdecke(String text, String wort) {
+  final ks = {for (final k in kanjiOf(wort)) if (k != '々') k};
+  if (ks.isEmpty) return text;
+  return text.split('').map((c) => ks.contains(c) ? '〇' : c).join();
 }
 
 /// Kanji eines Wortes ohne 々.

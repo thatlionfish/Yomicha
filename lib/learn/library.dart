@@ -43,3 +43,28 @@ List<TextEntry> textsForStufe(List<TextEntry> all, int stufe) {
 }
 
 bool sameDay(DateTime a, DateTime b) => a.year == b.year && a.month == b.month && a.day == b.day;
+
+/// Die Texte von heute für meine Stufe – dieselbe Auswahl wie auf der Startseite.
+List<TextEntry> heutigeTexte(
+  List<TextEntry> index, {
+  required int stufe,
+  required Set<String> read,
+  required DateTime today,
+}) {
+  final visible = visibleTexts(index, today);
+  final regular = textsForStufe([
+    for (final e in visible)
+      if (!e.vorrat) e,
+  ], stufe);
+  final stock = textsForStufe([
+    for (final e in visible)
+      if (e.vorrat) e,
+  ], stufe);
+  return textsForToday(
+    regular: regular,
+    stock: stock,
+    read: read,
+    today: today,
+    rest: today.weekday == DateTime.sunday,
+  ).texts;
+}
