@@ -98,6 +98,24 @@ class Repository {
 
   Future<Map<String, KumaMood>>? _kuma;
 
+  final _saetze = <String, Future<Map<String, Beispiel>>>{};
+
+  /// Beispielsatz zu einem Wort aus „Kanji schreiben“ (null, wenn es noch keinen gibt).
+  Future<Beispiel?> beispiel(String wort, String lesung) async {
+    final k = kanjiOf(wort).where((c) => c != '々').firstOrNull;
+    if (k == null) return null;
+    final name = kanjiBucket(k);
+    final bucket = await (_saetze[name] ??= () async {
+      try {
+        final j = await _json('schreiben/saetze/$name.json') as Map<String, dynamic>;
+        return {for (final e in j.entries) e.key: Beispiel.fromJson(e.value as Map<String, dynamic>)};
+      } catch (_) {
+        return <String, Beispiel>{};
+      }
+    }());
+    return bucket['$wort|$lesung'];
+  }
+
   /// Kumachans Stimmungen mit Posen und Sprüchen.
   Future<Map<String, KumaMood>> kumaMoods() => _kuma ??= () async {
     try {

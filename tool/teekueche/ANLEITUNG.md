@@ -127,6 +127,43 @@ tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py pruefen
   - höchstens **4 Themenwörter** ohne Listeneintrag
   - Länge im Bereich der Tabelle
 
+## 4b. Beispielsätze für „Kanji schreiben“
+
+Zu jedem Wort, das Leoni schreiben lernt, ein kurzer Beispielsatz mit Übersetzung und Aufnahme
+(Spezifikation 19, Stufe 2). Jeden Lauf **40 Sätze** für die Wörter, die als Nächstes drankommen:
+
+```
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py saetze 40
+```
+
+Die Liste (`woerter`: Schlüssel, Bedeutung, JLPT-Stufe) in `werkstatt/entwuerfe/saetze.json` beantworten:
+
+```json
+{
+ "支える|ささえる": {"s": "母は一人で家族を[支えて]きた。", "de": "Meine Mutter hat die Familie allein unterstützt."},
+ "支持|しじ": {"s": "多くの人がその案を[支持]している。", "de": "Viele Menschen unterstützen diesen Vorschlag.",
+              "bedeutung": "Unterstützung, Zustimmung"},
+ "日|か": {"s": "旅行は[三日間]の予定だ。", "de": "Die Reise ist für drei Tage geplant."}
+}
+```
+
+- **s:** ein natürlicher Satz, 10–35 Zeichen, Grammatik etwa N3 (für N1-Wörter darf es N2 sein), so wie das
+  Wort in der Prüfung oder im Alltag vorkommt. Das Wort (auch gebeugt: 支えて, 済んだ) **genau einmal in [ ]**.
+  Ist das Wort nur ein Teil eines Wortes (Zähleinheit, Nachsilbe: 三日, ドイツ人, 大好き), das ganze Wort einklammern.
+  Möglichst nur geläufige Kanji, keine echten Personen, nichts Belastendes.
+- **de:** deutsche Übersetzung des ganzen Satzes.
+- **bedeutung:** deutsche Bedeutung des Wortes (kurz, wie im Wörterbuch) – **Pflicht, wenn `saetze` sie englisch zeigt**.
+- **lesungen:** nur, wenn das Werkzeug ein Wort falsch liest (`{"Schreibung": "lesung"}`).
+
+```
+tool\teekueche\.venv\Scripts\python.exe -I tool\teekueche\lauf.py saetze-uebernehmen
+```
+
+Das Werkzeug ergänzt die Lesungen (Sudachi), prüft und legt die Sätze unter `web/data/schreiben/saetze/` ab.
+Jede übernommene Zeile (`✓`) mit Lesungen ansehen: Stimmt eine Lesung nicht (z. B. {方|ほう} statt かた), im
+Entwurf unter `lesungen` eintragen und neu übernehmen. Bei `✗` den Satz verbessern und erneut übernehmen, bis
+nichts mehr offen ist. Die Aufnahmen macht der nächste Schritt (`audio`) von selbst.
+
 ## 5. Aufnahmen
 
 - `… lauf.py audio` – bis einschließlich `aufbau_bis` (3.12.2026) mit dem Aufbau-Zugang, danach von selbst
@@ -165,8 +202,8 @@ mit `… lauf.py veroeffentlichen "Teeküche: Meldung"` veröffentlichen. Die Ap
 
 ## 8. Abschluss
 
-Kurze Zusammenfassung auf Deutsch: welche Texte (Titel, Thema, Stufen), wie viele Zeichen Azure,
-Hinweise aus `pruefen.py`, ob veröffentlicht wurde.
+Kurze Zusammenfassung auf Deutsch: welche Texte (Titel, Thema, Stufen), wie viele Beispielsätze,
+wie viele Zeichen Azure, Hinweise aus `pruefen.py`, ob veröffentlicht wurde.
 
 ## Ferienpaket (auf Zuruf)
 

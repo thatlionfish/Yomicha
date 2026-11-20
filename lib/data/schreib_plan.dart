@@ -37,6 +37,25 @@ class SchreibWort {
   List<String> get kanji => [for (final k in kanjiOf(t)) if (k != '々') k];
 }
 
+/// Beispielsatz zu einem Wort (Spezifikation 19, Stufe 2): Ruby-Schreibweise
+/// ({漢字|かんじ}) mit dem Wort in [ ], dazu die deutsche Übersetzung und – wo
+/// der Plan nur Englisch hat – die deutsche Bedeutung des Wortes.
+class Beispiel {
+  const Beispiel({required this.ruby, required this.de, this.bedeutung});
+  final String ruby;
+  final String de;
+  final String? bedeutung;
+
+  /// Der Satz ohne Lesungen und Markierung.
+  String get text => ruby
+      .replaceAllMapped(RegExp(r'\{([^|{}]+)\|[^{}]+\}'), (m) => m.group(1)!)
+      .replaceAll('[', '')
+      .replaceAll(']', '');
+
+  factory Beispiel.fromJson(Map<String, dynamic> j) =>
+      Beispiel(ruby: j['r'] as String, de: j['de'] as String, bedeutung: j['bedeutung'] as String?);
+}
+
 /// Lernplan für „Kanji schreiben“ (Spezifikation 19), aus
 /// `tool/teekueche/schreiben_daten.py`.
 class SchreibPlan {

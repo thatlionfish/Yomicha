@@ -1,0 +1,37 @@
+{
+"谷|たに": {
+"s": "山と山の間に深い[谷]がある。",
+"de": "Zwischen den Bergen liegt ein tiefes Tal.",
+"r": "{山|やま}と{山|やま}の{間|あいだ}に{深|ふか}い[{谷|たに}]がある。",
+"lesungen": {
+"深い": "ふかい"
+}
+},
+"貝|かい": {
+"s": "海岸できれいな[貝]を拾った。",
+"de": "Am Strand habe ich eine schöne Muschel aufgesammelt.",
+"r": "{海岸|かいがん}できれいな[{貝|かい}]を{拾|ひろ}った。"
+},
+"資料|しりょう": {
+"s": "会議の[資料]をコピーしておいてください。",
+"de": "Bitte kopieren Sie schon einmal die Unterlagen für die Besprechung.",
+"r": "{会議|かいぎ}の[{資料|しりょう}]をコピーしておいてください。"
+},
+"資本|しほん": {
+"s": "店を始めるには[資本]が必要だ。",
+"de": "Um einen Laden zu eröffnen, braucht man Kapital.",
+"r": "{店|みせ}を{始|はじ}めるには[{資本|しほん}]が{必要|ひつよう}だ。"
+},
+"資産|しさん": {
+"s": "祖父は大きな[資産]を残した。",
+"de": "Mein Großvater hat ein großes Vermögen hinterlassen.",
+"r": "{祖父|そふ}は{大|おお}きな[{資産|しさん}]を{残|のこ}した。",
+"bedeutung": "Vermögen"
+},
+"資金|しきん": {
+"s": "新しい事業の[資金]が足りない。",
+"de": "Für das neue Geschäft fehlen die Geldmittel.",
+"r": "{新|あたら}しい{事業|じぎょう}の[{資金|しきん}]が{足|た}りない。",
+"bedeutung": "Geldmittel, Finanzierung"
+}
+}

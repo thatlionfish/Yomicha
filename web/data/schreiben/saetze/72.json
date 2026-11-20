@@ -1,0 +1,8 @@
+{
+"物資|ぶっし": {
+"s": "被災地に[物資]を送った。",
+"de": "Wir haben Hilfsgüter in das Katastrophengebiet geschickt.",
+"r": "{被災地|ひさいち}に[{物資|ぶっし}]を{送|おく}った。",
+"bedeutung": "Güter, Material, Hilfsgüter"
+}
+}

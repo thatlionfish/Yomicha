@@ -10,6 +10,8 @@ Schritte:
   stufen                      Stufen für heute (stufen_heute.py)
   zerlegen <entwurf.json>...  Entwürfe zerlegen (zerlegen.py)
   pruefen [text.json]...      Lesungen, JLPT-Stufen und Stil prüfen (pruefen.py --uebernehmen)
+  saetze [anzahl]             die nächsten Wörter ohne Beispielsatz (saetze.py naechste, Standard 40)
+  saetze-uebernehmen          Beispielsätze aus werkstatt/entwuerfe/saetze.json prüfen und ablegen
   audio                       Aufnahmen erzeugen; bis aufbau_bis mit dem Aufbau-Zugang, danach F0
   hoerkontrolle               Satzaufnahmen der neuen Texte abhören
   satz-neu <ordner> <datei>   eine Satzaufnahme löschen (z. B. nach einer festen Lesung), dann „audio“
@@ -102,6 +104,10 @@ def main() -> None:
         run([PY, "-I", str(TK / "zerlegen.py"), *args])
     elif step == "pruefen":
         run([PY, "-I", str(TK / "pruefen.py"), "--uebernehmen", *args], check=False)
+    elif step == "saetze":
+        run([PY, "-I", str(TK / "saetze.py"), "naechste", *args])
+    elif step == "saetze-uebernehmen":
+        run([PY, "-I", str(TK / "saetze.py"), "uebernehmen"], check=False)
     elif step == "audio":
         run(["dart", "run", "tool/tts.dart", *key_args()])
     elif step == "hoerkontrolle":

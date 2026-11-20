@@ -100,7 +100,10 @@ class FuriganaFlow extends StatelessWidget {
     this.grammarHighlight,
     this.onTap,
     this.color,
+    this.alignment = WrapAlignment.start,
   });
+
+  final WrapAlignment alignment;
 
   /// (Satz-Index, Wörter) – mehrere Sätze ergeben einen Absatz.
   final List<(int, List<Token>)> sentences;
@@ -139,6 +142,7 @@ class FuriganaFlow extends StatelessWidget {
       }
     }
     return Wrap(
+      alignment: alignment,
       crossAxisAlignment: WrapCrossAlignment.end,
       runSpacing: fontSize * 0.22,
       children: children,

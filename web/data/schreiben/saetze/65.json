@@ -1,0 +1,69 @@
+{
+"支える|ささえる": {
+"s": "母は一人で家族を[支えて]きた。",
+"de": "Meine Mutter hat die Familie allein unterstützt.",
+"r": "{母|はは}は{一人|ひとり}で{家族|かぞく}を[{支|ささ}えて]きた。"
+},
+"支出|ししゅつ": {
+"s": "今月は[支出]が収入より多かった。",
+"de": "Diesen Monat waren die Ausgaben höher als die Einnahmen.",
+"r": "{今月|こんげつ}は[{支出|ししゅつ}]が{収入|しゅうにゅう}より{多|おお}かった。"
+},
+"支店|してん": {
+"s": "兄は大阪の[支店]で働いている。",
+"de": "Mein älterer Bruder arbeitet in der Filiale in Osaka.",
+"r": "{兄|あに}は{大阪|おおさか}の[{支店|してん}]で{働|はたら}いている。"
+},
+"支度|したく": {
+"s": "出かける[支度]はもうできた？",
+"de": "Bist du schon fertig zum Ausgehen?",
+"r": "{出|で}かける[{支度|したく}]はもうできた？"
+},
+"支持|しじ": {
+"s": "多くの人がその案を[支持]している。",
+"de": "Viele Menschen unterstützen diesen Vorschlag.",
+"r": "{多|おお}くの{人|ひと}がその{案|あん}を[{支持|しじ}]している。",
+"bedeutung": "Unterstützung, Zustimmung"
+},
+"支配|しはい": {
+"s": "この国は長い間、王に[支配]されていた。",
+"de": "Dieses Land wurde lange von einem König beherrscht.",
+"r": "この{国|くに}は{長|なが}い{間|あいだ}、{王|おう}に[{支配|しはい}]されていた。"
+},
+"方式|ほうしき": {
+"s": "今年から試験の[方式]が変わった。",
+"de": "Seit diesem Jahr hat sich die Art der Prüfung geändert.",
+"r": "{今年|ことし}から{試験|しけん}の[{方式|ほうしき}]が{変|か}わった。",
+"bedeutung": "Methode, Verfahren, System"
+},
+"日|か": {
+"s": "旅行は[三日間]の予定だ。",
+"de": "Die Reise ist für drei Tage geplant.",
+"r": "{旅行|りょこう}は[{三日間|みっかかん}]の{予定|よてい}だ。"
+},
+"日|じつ": {
+"s": "[本日]は休業いたします。",
+"de": "Heute bleibt das Geschäft geschlossen.",
+"r": "[{本日|ほんじつ}]は{休業|きゅうぎょう}いたします。"
+},
+"日|にち": {
+"s": "[毎日]少しずつ日本語を勉強している。",
+"de": "Ich lerne jeden Tag ein bisschen Japanisch.",
+"r": "[{毎日|まいにち}]{少|すこ}しずつ{日本語|にほんご}を{勉強|べんきょう}している。"
+},
+"日|ひ": {
+"s": "冬になると[日]が短くなる。",
+"de": "Im Winter werden die Tage kürzer.",
+"r": "{冬|ふゆ}になると[{日|ひ}]が{短|みじか}くなる。"
+},
+"日にち|ひにち": {
+"s": "パーティーの[日にち]をみんなで決めよう。",
+"de": "Lasst uns gemeinsam den Termin für die Party festlegen.",
+"r": "パーティーの[{日|ひ}にち]をみんなで{決|き}めよう。"
+},
+"日日|ひにち": {
+"s": "試験の[日日]が決まった。",
+"de": "Der Termin der Prüfung steht fest.",
+"r": "{試験|しけん}の[{日日|ひにち}]が{決|き}まった。"
+}
+}

@@ -1,0 +1,14 @@
+{
+"告げる|つげる": {
+"s": "彼は何も[告げず]に出ていった。",
+"de": "Er ging, ohne etwas zu sagen.",
+"r": "{彼|かれ}は{何|なに}も[{告|つ}げず]に{出|で}ていった。",
+"bedeutung": "mitteilen, sagen"
+},
+"告白|こくはく": {
+"s": "彼は彼女に好きだと[告白]した。",
+"de": "Er hat ihr gestanden, dass er sie mag.",
+"r": "{彼|かれ}は{彼女|かのじょ}に{好|す}きだと[{告白|こくはく}]した。",
+"bedeutung": "Geständnis, Liebeserklärung"
+}
+}

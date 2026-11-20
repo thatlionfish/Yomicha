@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fsrs/fsrs.dart' as fsrs;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:yomicha/data/models.dart';
 import 'package:yomicha/data/progress.dart';
 import 'package:yomicha/data/schreib_plan.dart';
 import 'package:yomicha/learn/schreiben.dart';
@@ -151,6 +152,31 @@ void main() {
     expect(a, contains('きゅうけい'));
     expect(a.toSet().length, 4);
     expect(lesungsAuswahl('きゅうけい', const [], 3), a.isEmpty ? isEmpty : isNotEmpty);
+  });
+
+  test('Beispielsätze: jedes Wort im Plan, das Wort genau einmal markiert', () {
+    final keys = {for (final w in plan.woerter) w.key};
+    final dir = Directory('web/data/schreiben/saetze');
+    var n = 0;
+    for (final f in dir.listSync().whereType<File>().where((f) => f.path.endsWith('.json'))) {
+      final j = jsonDecode(f.readAsStringSync()) as Map<String, dynamic>;
+      for (final e in j.entries) {
+        n++;
+        expect(keys, contains(e.key));
+        final b = Beispiel.fromJson(e.value as Map<String, dynamic>);
+        expect('['.allMatches(b.ruby).length, 1, reason: e.key);
+        expect(']'.allMatches(b.ruby).length, 1, reason: e.key);
+        expect(b.de, isNotEmpty, reason: e.key);
+        expect(b.text, isNot(contains('{')), reason: e.key);
+        // Die Kanji des Wortes stehen in der Markierung.
+        final ziel = b.ruby.substring(b.ruby.indexOf('['), b.ruby.indexOf(']'));
+        final wort = e.key.split('|').first;
+        expect(kanjiOf(wort).where((k) => k != '々').every(ziel.contains), isTrue, reason: e.key);
+      }
+    }
+    expect(n, greaterThan(100));
+    final b = Beispiel.fromJson(const {'r': '{母|はは}は[{支|ささ}えて]きた。', 'de': 'x'});
+    expect(b.text, '母は支えてきた。');
   });
 
   test('Hinweistexte verraten das Kanji nicht', () {

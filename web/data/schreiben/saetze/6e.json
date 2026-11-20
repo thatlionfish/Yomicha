@@ -1,0 +1,23 @@
+{
+"済ます|すます": {
+"s": "用事を[済まして]から行くね。",
+"de": "Ich komme, sobald ich meine Besorgungen erledigt habe.",
+"r": "{用事|ようじ}を[{済|す}まして]から{行|い}くね。",
+"bedeutung": "erledigen, abschließen"
+},
+"済ませる|すませる": {
+"s": "昼ご飯は駅の近くで[済ませた]。",
+"de": "Das Mittagessen habe ich schnell in der Nähe des Bahnhofs erledigt.",
+"r": "{昼|ひる}ご{飯|はん}は{駅|えき}の{近|ちか}くで[{済|す}ませた]。"
+},
+"済み|ずみ": {
+"s": "この荷物は支払い[済み]です。",
+"de": "Dieses Paket ist bereits bezahlt.",
+"r": "この{荷物|にもつ}は{支払|しはら}い[{済|ず}み]です。"
+},
+"済む|すむ": {
+"s": "宿題がやっと[済んだ]。",
+"de": "Die Hausaufgaben sind endlich erledigt.",
+"r": "{宿題|しゅくだい}がやっと[{済|す}んだ]。"
+}
+}

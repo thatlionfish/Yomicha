@@ -26,3 +26,9 @@ String kumaAudioPath(String markup) => 'kuma/${audioKey(markup)}.mp3';
 
 /// Bekommt das Wort eine eigene Aufnahme?
 bool wantsWordAudio(Token t) => t.isWord && !t.isPunct && t.gloss != null;
+
+/// Beispielsatz ohne die Markierung des Wortes ([…]).
+String satzOhneZiel(String ruby) => ruby.replaceAll('[', '').replaceAll(']', '');
+
+/// Pfad der Aufnahme eines Beispielsatzes aus „Kanji schreiben“ (Ruby-Schreibweise) unter data/.
+String satzAudioPath(String ruby) => 'schreiben/satz/${audioKey(satzOhneZiel(ruby))}.mp3';

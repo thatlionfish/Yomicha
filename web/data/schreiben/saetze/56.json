@@ -1,0 +1,12 @@
+{
+"国|くに": {
+"s": "夏休みに[国]へ帰るつもりだ。",
+"de": "In den Sommerferien will ich in meine Heimat zurückfahren.",
+"r": "{夏休|なつやす}みに[{国|くに}]へ{帰|かえ}るつもりだ。"
+},
+"国|こく": {
+"s": "[外国]に住んだことがある。",
+"de": "Ich habe schon einmal im Ausland gelebt.",
+"r": "[{外国|がいこく}]に{住|す}んだことがある。"
+}
+}

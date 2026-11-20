@@ -47,6 +47,15 @@ class _FileRepo extends Repository {
   }
   @override
   Future<Map<String, String>> partNames() async => {};
+
+  @override
+  Future<Beispiel?> beispiel(String wort, String lesung) async {
+    final k = kanjiOf(wort).firstWhere((c) => c != '々');
+    final f = File('web/data/schreiben/saetze/${kanjiBucket(k)}.json');
+    if (!f.existsSync()) return null;
+    final j = (jsonDecode(f.readAsStringSync()) as Map<String, dynamic>)['$wort|$lesung'];
+    return j == null ? null : Beispiel.fromJson(j as Map<String, dynamic>);
+  }
 }
 
 /// Schreibt das Zeichen im Schreibfeld mit dem Stift, Strich für Strich richtig.
@@ -185,6 +194,12 @@ void main() {
     final word = neueWoerter(p.schreiben, alle, DateTime.now()).firstWhere((w) => w.kanji.contains(first));
     expect(find.text('Neues Wort'), findsOneWidget);
     expect(find.text(word.t), findsWidgets);
+    // Beispielsatz der Teeküche mit Übersetzung; die deutsche Bedeutung kommt aus dem Satz,
+    // wenn der Plan nur Englisch hat (暑い).
+    final beispiel = await repo.beispiel(word.t, word.r);
+    expect(beispiel, isNotNull, reason: 'Beispielsatz für ${word.key}');
+    expect(find.text(beispiel!.de), findsOneWidget);
+    expect(find.text(word.de ?? beispiel.bedeutung!), findsOneWidget);
     await tester.tap(find.text('Nachschreiben'));
     await tester.pumpAndSettle();
     final striche = await repo.striche(word.t.split(''));

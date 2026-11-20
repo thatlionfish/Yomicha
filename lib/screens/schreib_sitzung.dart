@@ -12,6 +12,7 @@ import '../learn/review.dart' show review;
 import '../learn/schreiben.dart';
 import '../ui/colors.dart';
 import '../ui/theme.dart';
+import '../widgets/beispiel_satz.dart';
 import '../widgets/kanji_card.dart';
 import '../widgets/lern_pause.dart';
 import '../widgets/wort_schreiber.dart';
@@ -79,6 +80,9 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
   Future<List<TextEntry>>? _index;
   final Map<String, String?> _satzAudio = {};
 
+  /// Beispielsätze der Teeküche (Spezifikation 19, Stufe 2), je Wort.
+  final Map<String, Beispiel?> _beispiele = {};
+
   late final Map<String, SchreibWort> _byKey = {for (final w in widget.alle) w.key: w};
 
   @override
@@ -140,6 +144,9 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
     var partInfo = <String, KanjiInfo>{};
     if (s.art == _Art.kanjiNeu) {
       partInfo = await repo.kanjiFor(infos[s.karte.kanji]?.parts ?? const []);
+    }
+    if (s.karte.wort case final w? when !_beispiele.containsKey(w.key)) {
+      _beispiele[w.key] = await repo.beispiel(w.t, w.r);
     }
     var auswahl = const <String>[];
     if (s.karte.wort case final w? when s.art == _Art.wiederholung) {
@@ -234,9 +241,14 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
     final w = k.wort;
     if (w == null || _pause) return;
     final satz = w.satz;
+    final b = _beispiele[w.key];
+    final repo = AppScope.of(context).repo;
     _schleife = Schleife([
       _vortrag(w),
-      if (satz != null && satz.isNotEmpty) (url: _satzAudio[w.key] ?? '', text: satz),
+      if (satz != null && satz.isNotEmpty)
+        (url: _satzAudio[w.key] ?? '', text: satz)
+      else if (b != null)
+        (url: repo.audioUrl(satzAudioPath(b.ruby)), text: b.text),
     ], endlos: false)..start();
   }
 
@@ -327,9 +339,33 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
   }
 
   String _bedeutung(SchreibKarte k) {
-    if (k.wort case final w?) return w.bedeutung;
+    if (k.wort case final w?) return _wb(w);
     final info = _infos[k.kanji];
     return info?.de ?? info?.meanings.take(2).join(', ') ?? '';
+  }
+
+  /// Bedeutung eines Wortes: deutsch aus dem Plan, sonst aus dem Beispielsatz, sonst englisch.
+  String _wb(SchreibWort w) => w.de ?? _beispiele[w.key]?.bedeutung ?? w.en;
+
+  /// Satz zum Wort: mein Satz aus dem Text, sonst der Beispielsatz der Teeküche.
+  /// [luecke]: Das Wort steht als Lücke da (beim Schreiben aus dem Kopf, bei der Lesungsfrage).
+  Widget? _satz(SchreibWort w, {required bool luecke, double size = 18}) {
+    if (w.satz case final satz? when satz.contains(w.t)) {
+      return luecke
+          ? Text(
+              verdecke(satz.replaceAll(w.t, '＿' * w.t.length), w.t),
+              style: jp(size, color: YoColors.inkSoft),
+              textAlign: TextAlign.center,
+            )
+          : Text.rich(highlighted(satz, w.t, size: size), textAlign: TextAlign.center);
+    }
+    if (_beispiele[w.key] case final b?) {
+      return BeispielSatz(beispiel: b, wort: w.t, luecke: luecke, fontSize: size);
+    }
+    if (w.satz case final satz? when !luecke) {
+      return Text.rich(highlighted(satz, w.t, size: size), textAlign: TextAlign.center);
+    }
+    return null;
   }
 
   String get _zaehler {
@@ -477,14 +513,8 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
             [if (info.on.isNotEmpty) info.on.take(2).join('、'), if (info.kun.isNotEmpty) info.kun.take(2).join('、')].join('　·　'),
             style: jp(19, color: YoColors.inkSoft),
           ),
-        if (w?.satz case final satz? when satz.contains(w!.t)) ...[
-          const SizedBox(height: 6),
-          Text(
-            verdecke(satz.replaceAll(w.t, '＿' * w.t.length), w.t),
-            style: jp(17, color: YoColors.inkSoft),
-            textAlign: TextAlign.center,
-          ),
-        ],
+        if (w != null)
+          if (_satz(w, luecke: true, size: 17) case final satz?) ...[const SizedBox(height: 6), satz],
       ],
     );
   }
@@ -494,15 +524,8 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
       children: [
         Text('Wie liest man das Wort?', style: sans(13.5, weight: 650, color: YoColors.inkSoft)),
         const SizedBox(height: 6),
-        Text(verdecke(w.bedeutung, w.t), style: serif(28, weight: 460), textAlign: TextAlign.center),
-        if (w.satz case final satz? when satz.contains(w.t)) ...[
-          const SizedBox(height: 8),
-          Text(
-            verdecke(satz.replaceAll(w.t, '＿' * w.t.length), w.t),
-            style: jp(18, color: YoColors.inkSoft),
-            textAlign: TextAlign.center,
-          ),
-        ],
+        Text(verdecke(_wb(w), w.t), style: serif(28, weight: 460), textAlign: TextAlign.center),
+        if (_satz(w, luecke: true) case final satz?) ...[const SizedBox(height: 8), satz],
         const SizedBox(height: 24),
         for (final o in _auswahl)
           Padding(
@@ -605,17 +628,14 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
                 Text(w.t, style: kanjiStyle(64)),
                 Text(w.r, style: jp(24, color: YoColors.inkSoft)),
                 const SizedBox(height: 8),
-                Text(w.bedeutung, style: serif(24, weight: 460), textAlign: TextAlign.center),
+                Text(_wb(w), style: serif(24, weight: 460), textAlign: TextAlign.center),
                 const SizedBox(height: 8),
                 IconButton.filledTonal(
-                  tooltip: 'Aussprache',
-                  onPressed: () => _play(w),
+                  tooltip: 'Wort und Satz vorlesen',
+                  onPressed: () => _nachSchreiben(SchreibKarte.wort(w)),
                   icon: const Icon(Icons.volume_up_rounded),
                 ),
-                if (w.satz case final satz?) ...[
-                  const SizedBox(height: 14),
-                  Text.rich(highlighted(satz, w.t, size: 19), textAlign: TextAlign.center),
-                ],
+                if (_satz(w, luecke: false, size: 19) case final satz?) ...[const SizedBox(height: 14), satz],
                 const SizedBox(height: 18),
                 KanjiButtons(word: w.t, repo: scope.repo, progress: scope.progress, center: true),
               ],
@@ -663,16 +683,13 @@ class _SchreibSitzungState extends State<SchreibSitzung> {
                 if (w != null) ...[
                   Text(w.r, style: jp(22, color: YoColors.inkSoft)),
                   const SizedBox(height: 6),
-                  Text(w.bedeutung, style: sans(18, weight: 560), textAlign: TextAlign.center),
+                  Text(_wb(w), style: sans(18, weight: 560), textAlign: TextAlign.center),
                   IconButton.filledTonal(
                     tooltip: 'Wort und Satz vorlesen',
                     onPressed: () => _nachSchreiben(k),
                     icon: const Icon(Icons.volume_up_rounded),
                   ),
-                  if (w.satz case final satz?) ...[
-                    const SizedBox(height: 10),
-                    Text.rich(highlighted(satz, w.t, size: 18), textAlign: TextAlign.center),
-                  ],
+                  if (_satz(w, luecke: false) case final satz?) ...[const SizedBox(height: 10), satz],
                 ] else
                   Text(_bedeutung(k), style: sans(18, weight: 560)),
               ],

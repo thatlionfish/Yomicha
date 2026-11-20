@@ -1,0 +1,18 @@
+{
+"式|しき": {
+"s": "来月、姉の結婚[式]がある。",
+"de": "Nächsten Monat ist die Hochzeit meiner älteren Schwester.",
+"r": "{来月|らいげつ}、{姉|あね}の{結婚|けっこん}[{式|しき}]がある。"
+},
+"式場|しきじょう": {
+"s": "結婚式の[式場]を予約した。",
+"de": "Wir haben den Saal für die Hochzeit reserviert.",
+"r": "{結婚式|けっこんしき}の[{式場|しきじょう}]を{予約|よやく}した。",
+"bedeutung": "Saal für Zeremonien"
+},
+"形式|けいしき": {
+"s": "レポートは決められた[形式]で書くこと。",
+"de": "Der Bericht ist in der vorgegebenen Form zu schreiben.",
+"r": "レポートは{決|き}められた[{形式|けいしき}]で{書|か}くこと。"
+}
+}

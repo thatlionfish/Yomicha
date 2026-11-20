@@ -1,0 +1,61 @@
+{
+"公共|こうきょう": {
+"s": "[公共]の場所ではたばこを吸わないでください。",
+"de": "Bitte rauchen Sie nicht an öffentlichen Orten.",
+"r": "[{公共|こうきょう}]の{場所|ばしょ}ではたばこを{吸|す}わないでください。"
+},
+"公式|こうしき": {
+"s": "詳しいことは[公式]サイトで確認してください。",
+"de": "Einzelheiten finden Sie auf der offiziellen Website.",
+"r": "{詳|くわ}しいことは[{公式|こうしき}]サイトで{確認|かくにん}してください。"
+},
+"公認|こうにん": {
+"s": "この記録は[公認]されなかった。",
+"de": "Dieser Rekord wurde nicht offiziell anerkannt.",
+"r": "この{記録|きろく}は[{公認|こうにん}]されなかった。",
+"bedeutung": "offizielle Anerkennung"
+},
+"共に|ともに": {
+"s": "家族と[共に]新しい年を迎えた。",
+"de": "Ich habe das neue Jahr zusammen mit meiner Familie begrüßt.",
+"r": "{家族|かぞく}と[{共|とも}に]{新|あたら}しい{年|とし}を{迎|むか}えた。"
+},
+"共同|きょうどう": {
+"s": "このキッチンは学生たちが[共同]で使っている。",
+"de": "Diese Küche benutzen die Studenten gemeinsam.",
+"r": "このキッチンは{学生|がくせい}たちが[{共同|きょうどう}]で{使|つか}っている。"
+},
+"共和|きょうわ": {
+"s": "フランスは[共和国]だ。",
+"de": "Frankreich ist eine Republik.",
+"r": "フランスは[{共和国|きょうわこく}]だ。",
+"bedeutung": "Republik, republikanisch"
+},
+"共学|きょうがく": {
+"s": "私が通った高校は男女[共学]だった。",
+"de": "Meine Oberschule war für Jungen und Mädchen gemeinsam.",
+"r": "{私|わたし}が{通|かよ}った{高校|こうこう}は{男女|だんじょ}[{共学|きょうがく}]だった。",
+"bedeutung": "gemeinsamer Unterricht (Jungen und Mädchen)"
+},
+"共感|きょうかん": {
+"s": "彼の意見に[共感]した。",
+"de": "Seine Meinung hat mich angesprochen.",
+"r": "{彼|かれ}の{意見|いけん}に[{共感|きょうかん}]した。",
+"bedeutung": "Mitgefühl, Zustimmung"
+},
+"共産|きょうさん": {
+"s": "授業で[共産主義]の歴史を学んだ。",
+"de": "Im Unterricht haben wir die Geschichte des Kommunismus gelernt.",
+"r": "{授業|じゅぎょう}で[{共産主義|きょうさんしゅぎ}]の{歴史|れきし}を{学|まな}んだ。"
+},
+"共通|きょうつう": {
+"s": "二人には[共通]の趣味がある。",
+"de": "Die beiden haben ein gemeinsames Hobby.",
+"r": "{二人|ふたり}には[{共通|きょうつう}]の{趣味|しゅみ}がある。"
+},
+"内容|ないよう": {
+"s": "この本の[内容]を短くまとめてください。",
+"de": "Fassen Sie bitte den Inhalt dieses Buches kurz zusammen.",
+"r": "この{本|ほん}の[{内容|ないよう}]を{短|みじか}くまとめてください。"
+}
+}

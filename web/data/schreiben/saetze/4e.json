@@ -1,0 +1,220 @@
+{
+"一|いち": {
+"s": "クラスで[一番]背が高いのは田中さんだ。",
+"de": "Der Größte in der Klasse ist Tanaka.",
+"r": "クラスで[{一番|いちばん}]{背|せ}が{高|たか}いのは{田中|たなか}さんだ。"
+},
+"一|ひと": {
+"s": "少し疲れたから[一休み]しよう。",
+"de": "Ich bin etwas müde, lass uns eine kurze Pause machen.",
+"r": "{少|すこ}し{疲|つか}れたから[{一休|ひとやす}み]しよう。"
+},
+"一つ|ひとつ": {
+"s": "りんごを[一つ]ください。",
+"de": "Einen Apfel, bitte.",
+"r": "りんごを[{一|ひと}つ]ください。"
+},
+"一人|ひとり": {
+"s": "週末は[一人]で映画を見に行った。",
+"de": "Am Wochenende bin ich allein ins Kino gegangen.",
+"r": "{週末|しゅうまつ}は[{一人|ひとり}]で{映画|えいが}を{見|み}に{行|い}った。"
+},
+"一人一人|ひとりひとり": {
+"s": "先生は学生[一人一人]に声をかけた。",
+"de": "Die Lehrerin hat jeden einzelnen Studenten angesprochen.",
+"r": "{先生|せんせい}は{学生|がくせい}[{一人一人|ひとりひとり}]に{声|こえ}をかけた。"
+},
+"一斉|いっせい": {
+"s": "ベルが鳴ると、生徒たちは[一斉]に立ち上がった。",
+"de": "Als die Glocke läutete, standen die Schüler alle gleichzeitig auf.",
+"r": "ベルが{鳴|な}ると、{生徒|せいと}たちは[{一斉|いっせい}]に{立|た}ち{上|あ}がった。",
+"bedeutung": "gleichzeitig, alle auf einmal"
+},
+"一日|いちにち": {
+"s": "[一日]に三回、薬を飲んでください。",
+"de": "Nehmen Sie das Medikament dreimal am Tag.",
+"r": "[{一日|いちにち}]に{三回|さんかい}、{薬|くすり}を{飲|の}んでください。"
+},
+"一日|ついたち": {
+"s": "四月[一日]から新しい仕事が始まる。",
+"de": "Ab dem 1. April beginnt meine neue Arbeit.",
+"r": "{四月|しがつ}[{一日|ついたち}]から{新|あたら}しい{仕事|しごと}が{始|はじ}まる。"
+},
+"一昨年|いっさくねん": {
+"s": "[一昨年]、初めて日本へ行った。",
+"de": "Vorletztes Jahr war ich zum ersten Mal in Japan.",
+"r": "[{一昨年|いっさくねん}]、{初|はじ}めて{日本|にほん}へ{行|い}った。"
+},
+"一昨日|いっさくじつ": {
+"s": "[一昨日]、新しい店が開店いたしました。",
+"de": "Vorgestern hat ein neues Geschäft eröffnet.",
+"r": "[{一昨日|いっさくじつ}]、{新|あたら}しい{店|みせ}が{開店|かいてん}いたしました。"
+},
+"一昨日|おととい": {
+"s": "[一昨日]から熱が下がらない。",
+"de": "Seit vorgestern geht das Fieber nicht herunter.",
+"r": "[{一昨日|おととい}]から{熱|ねつ}が{下|さ}がらない。"
+},
+"丁度|ちょうど": {
+"s": "駅に着いたら、[丁度]電車が来た。",
+"de": "Als ich am Bahnhof ankam, kam gerade der Zug.",
+"r": "{駅|えき}に{着|つ}いたら、[{丁度|ちょうど}]{電車|でんしゃ}が{来|き}た。",
+"bedeutung": "genau, gerade"
+},
+"丁目|ちょうめ": {
+"s": "私の家は三[丁目]にあります。",
+"de": "Mein Haus liegt im dritten Häuserblock (3-chōme).",
+"r": "{私|わたし}の{家|いえ}は{三|さん}[{丁目|ちょうめ}]にあります。",
+"bedeutung": "Häuserblock (in Adressen, z. B. 3-chōme)"
+},
+"両|りょう": {
+"s": "[両手]に荷物を持って歩いた。",
+"de": "Ich ging mit Gepäck in beiden Händen.",
+"r": "[{両手|りょうて}]に{荷物|にもつ}を{持|も}って{歩|ある}いた。"
+},
+"両側|りょうがわ": {
+"s": "道の[両側]に桜の木が並んでいる。",
+"de": "Auf beiden Seiten der Straße stehen Kirschbäume.",
+"r": "{道|みち}の[{両側|りょうがわ}]に{桜|さくら}の{木|き}が{並|なら}んでいる。"
+},
+"両方|りょうほう": {
+"s": "コーヒーと紅茶、[両方]好きです。",
+"de": "Ich mag beides, Kaffee und Schwarztee.",
+"r": "コーヒーと{紅茶|こうちゃ}、[{両方|りょうほう}]{好|す}きです。"
+},
+"両立|りょうりつ": {
+"s": "仕事と勉強を[両立]させるのは大変だ。",
+"de": "Arbeit und Studium unter einen Hut zu bringen, ist anstrengend.",
+"r": "{仕事|しごと}と{勉強|べんきょう}を[{両立|りょうりつ}]させるのは{大変|たいへん}だ。",
+"bedeutung": "Vereinbarkeit, beides schaffen"
+},
+"両親|りょうしん": {
+"s": "年末は[両親]の家で過ごす予定だ。",
+"de": "Zum Jahresende will ich bei meinen Eltern sein.",
+"r": "{年末|ねんまつ}は[{両親|りょうしん}]の{家|いえ}で{過|す}ごす{予定|よてい}だ。"
+},
+"主任|しゅにん": {
+"s": "山田さんはこの部署の[主任]だ。",
+"de": "Herr Yamada ist der Verantwortliche dieser Abteilung.",
+"r": "{山田|やまだ}さんはこの{部署|ぶしょ}の[{主任|しゅにん}]だ。",
+"bedeutung": "Leiter, Verantwortlicher"
+},
+"了解|りょうかい": {
+"s": "メールの内容、[了解]しました。",
+"de": "Den Inhalt der Mail habe ich verstanden.",
+"r": "メールの{内容|ないよう}、[{了解|りょうかい}]しました。",
+"bedeutung": "verstanden, einverstanden"
+},
+"予て|かねて": {
+"s": "[予て]から行きたかった店に行った。",
+"de": "Ich war in dem Laden, in den ich schon lange gehen wollte.",
+"r": "[{予|かね}て]から{行|い}きたかった{店|みせ}に{行|い}った。",
+"bedeutung": "schon lange, seit langem"
+},
+"予め|あらかじめ": {
+"s": "質問があれば、[予め]メールで送ってください。",
+"de": "Wenn Sie Fragen haben, schicken Sie sie bitte vorab per Mail.",
+"r": "{質問|しつもん}があれば、[{予|あらかじ}め]メールで{送|おく}ってください。",
+"bedeutung": "im Voraus, vorab"
+},
+"予報|よほう": {
+"s": "明日の[予報]は晴れだ。",
+"de": "Die Vorhersage für morgen ist sonnig.",
+"r": "{明日|あした}の[{予報|よほう}]は{晴|は}れだ。"
+},
+"予定|よてい": {
+"s": "週末は何か[予定]がありますか。",
+"de": "Haben Sie am Wochenende etwas vor?",
+"r": "{週末|しゅうまつ}は{何|なに}か[{予定|よてい}]がありますか。"
+},
+"予想|よそう": {
+"s": "結果は[予想]より良かった。",
+"de": "Das Ergebnis war besser als erwartet.",
+"r": "{結果|けっか}は[{予想|よそう}]より{良|よ}かった。"
+},
+"予感|よかん": {
+"s": "何か良いことが起こる[予感]がする。",
+"de": "Ich habe das Gefühl, dass etwas Gutes passieren wird.",
+"r": "{何|なに}か{良|よ}いことが{起|お}こる[{予感|よかん}]がする。",
+"bedeutung": "Vorahnung"
+},
+"予期|よき": {
+"s": "[予期]しない問題が起きた。",
+"de": "Es ist ein unerwartetes Problem aufgetreten.",
+"r": "[{予期|よき}]しない{問題|もんだい}が{起|お}きた。"
+},
+"予約|よやく": {
+"s": "レストランを七時に[予約]した。",
+"de": "Ich habe das Restaurant für sieben Uhr reserviert.",
+"r": "レストランを{七時|しちじ}に[{予約|よやく}]した。"
+},
+"予習|よしゅう": {
+"s": "授業の前に[予習]をしておこう。",
+"de": "Vor dem Unterricht bereite ich mich vor.",
+"r": "{授業|じゅぎょう}の{前|まえ}に[{予習|よしゅう}]をしておこう。"
+},
+"予言|よげん": {
+"s": "占い師の[予言]が当たった。",
+"de": "Die Prophezeiung der Wahrsagerin hat sich erfüllt.",
+"r": "{占|うらな}い{師|し}の[{予言|よげん}]が{当|あ}たった。",
+"bedeutung": "Prophezeiung, Vorhersage"
+},
+"二|に": {
+"s": "この薬は一日[二回]飲んでください。",
+"de": "Nehmen Sie dieses Medikament zweimal am Tag.",
+"r": "この{薬|くすり}は{一日|いちにち}[{二回|にかい}]{飲|の}んでください。"
+},
+"二つ|ふたつ": {
+"s": "ケーキを[二つ]買って帰った。",
+"de": "Ich habe zwei Stück Kuchen gekauft und mit nach Hause genommen.",
+"r": "ケーキを[{二|ふた}つ]{買|か}って{帰|かえ}った。"
+},
+"二人|ふたり": {
+"s": "週末は[二人]で海へ行った。",
+"de": "Am Wochenende sind wir zu zweit ans Meer gefahren.",
+"r": "{週末|しゅうまつ}は[{二人|ふたり}]で{海|うみ}へ{行|い}った。"
+},
+"二十日|はつか": {
+"s": "給料は毎月[二十日]に払われる。",
+"de": "Das Gehalt wird jeden Monat am 20. ausgezahlt.",
+"r": "{給料|きゅうりょう}は{毎月|まいつき}[{二十日|はつか}]に{払|はら}われる。"
+},
+"人|じん": {
+"s": "私の友達は[ドイツ人]です。",
+"de": "Mein Freund ist Deutscher.",
+"r": "{私|わたし}の{友達|ともだち}は[ドイツ{人|じん}]です。"
+},
+"人|にん": {
+"s": "このクラスには学生が三十[人]いる。",
+"de": "In dieser Klasse sind dreißig Studenten.",
+"r": "このクラスには{学生|がくせい}が{三十|さんじゅう}[{人|にん}]いる。"
+},
+"人|ひと": {
+"s": "駅の前に[人]がたくさんいる。",
+"de": "Vor dem Bahnhof sind viele Leute.",
+"r": "{駅|えき}の{前|まえ}に[{人|ひと}]がたくさんいる。"
+},
+"任す|まかす": {
+"s": "細かいことは君に[任す]よ。",
+"de": "Die Einzelheiten überlasse ich dir.",
+"r": "{細|こま}かいことは{君|きみ}に[{任|まか}す]よ。",
+"bedeutung": "überlassen, anvertrauen"
+},
+"任せる|まかせる": {
+"s": "その仕事は私に[任せて]ください。",
+"de": "Überlassen Sie diese Arbeit bitte mir.",
+"r": "その{仕事|しごと}は{私|わたし}に[{任|まか}せて]ください。"
+},
+"任務|にんむ": {
+"s": "彼は大切な[任務]を果たした。",
+"de": "Er hat eine wichtige Aufgabe erfüllt.",
+"r": "{彼|かれ}は{大切|たいせつ}な[{任務|にんむ}]を{果|は}たした。",
+"bedeutung": "Aufgabe, Auftrag"
+},
+"任命|にんめい": {
+"s": "彼女は新しい大臣に[任命]された。",
+"de": "Sie wurde zur neuen Ministerin ernannt.",
+"r": "{彼女|かのじょ}は{新|あたら}しい{大臣|だいじん}に[{任命|にんめい}]された。",
+"bedeutung": "Ernennung"
+}
+}

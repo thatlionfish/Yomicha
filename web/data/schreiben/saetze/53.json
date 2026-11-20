@@ -1,0 +1,55 @@
+{
+"お参り|おまいり": {
+"s": "正月に家族で神社へ[お参り]に行った。",
+"de": "Zu Neujahr bin ich mit der Familie zum Schrein gegangen.",
+"r": "{正月|しょうがつ}に{家族|かぞく}で{神社|じんじゃ}へ[お{参|まい}り]に{行|い}った。"
+},
+"十|じゅう": {
+"s": "[十時]に駅で会いましょう。",
+"de": "Treffen wir uns um zehn Uhr am Bahnhof.",
+"r": "[{十時|じゅうじ}]に{駅|えき}で{会|あ}いましょう。"
+},
+"十|とお": {
+"s": "子どもが指で[十]まで数えた。",
+"de": "Das Kind hat mit den Fingern bis zehn gezählt.",
+"r": "{子|こ}どもが{指|ゆび}で[{十|とお}]まで{数|かぞ}えた。"
+},
+"十日|とおか": {
+"s": "誕生日は五月[十日]です。",
+"de": "Mein Geburtstag ist am 10. Mai.",
+"r": "{誕生日|たんじょうび}は{五月|ごがつ}[{十日|とおか}]です。"
+},
+"原則|げんそく": {
+"s": "この部屋は[原則]として飲食禁止です。",
+"de": "In diesem Raum ist Essen und Trinken grundsätzlich verboten.",
+"r": "この{部屋|へや}は[{原則|げんそく}]として{飲食|いんしょく}{禁止|きんし}です。",
+"bedeutung": "Grundsatz, Prinzip"
+},
+"参る|まいる": {
+"s": "明日、私がそちらへ[参ります]。",
+"de": "Morgen komme ich zu Ihnen.",
+"r": "{明日|あした}、{私|わたし}がそちらへ[{参|まい}ります]。"
+},
+"参上|さんじょう": {
+"s": "ご注文の品をお届けに[参上]しました。",
+"de": "Ich bin gekommen, um Ihnen die bestellte Ware zu bringen.",
+"r": "ご{注文|ちゅうもん}の{品|しな}をお{届|とど}けに[{参上|さんじょう}]しました。",
+"bedeutung": "aufwarten, vorsprechen (bescheiden)"
+},
+"参加|さんか": {
+"s": "来週のボランティア活動に[参加]するつもりだ。",
+"de": "Ich habe vor, nächste Woche bei einer Freiwilligenaktion mitzumachen.",
+"r": "{来週|らいしゅう}のボランティア{活動|かつどう}に[{参加|さんか}]するつもりだ。"
+},
+"参考|さんこう": {
+"s": "この本はレポートを書くときに[参考]になる。",
+"de": "Dieses Buch ist hilfreich, wenn man einen Bericht schreibt.",
+"r": "この{本|ほん}はレポートを{書|か}くときに[{参考|さんこう}]になる。"
+},
+"参議院|さんぎいん": {
+"s": "[参議院]の選挙が行われた。",
+"de": "Es fand die Wahl zum Oberhaus statt.",
+"r": "[{参議院|さんぎいん}]の{選挙|せんきょ}が{行|おこな}われた。",
+"bedeutung": "Oberhaus (des japanischen Parlaments)"
+}
+}

@@ -9,6 +9,9 @@
 //   dart run tool/tts.dart --force               # alles neu erzeugen
 //   dart run tool/tts.dart --key=werkstatt/azure-speech.env   # anderer Zugang
 //   dart run tool/tts.dart --jlpt                # dazu der JLPT-Wortschatz N5–N2 (Aufbaupaket)
+//   dart run tool/tts.dart --schreiben           # dazu alle Wörter aus „Kanji schreiben“ (N5–N1)
+//
+// Immer dabei: die Beispielsätze aus web/data/schreiben/saetze/ → web/data/schreiben/satz/<schlüssel>.mp3
 //   dart run tool/tts.dart --hoerkontrolle       # Satzaufnahmen abhören (neue Texte; --alle: alle)
 //
 // Standard ist der Aufbau-Zugang werkstatt/azure-aufbau.env (S0, Startguthaben).
@@ -103,11 +106,38 @@ Future<void> main(List<String> args) async {
     stdout.writeln('JLPT-Wortschatz: ${words.length - before} Wörter dazu');
   }
 
+  // Alle Wörter aus „Kanji schreiben“ (N5–N1, Spezifikation 19): Schreibung|Lesung wie in der App.
+  if (args.contains('--schreiben')) {
+    final plan = jsonDecode(File('web/data/schreiben/plan.json').readAsStringSync()) as Map<String, dynamic>;
+    final before = words.length;
+    for (final w in (plan['woerter'] as List).cast<List<dynamic>>()) {
+      final t = Token(t: w[0] as String, r: w[1] as String);
+      words.putIfAbsent(wordAudioKey(t), () => t);
+    }
+    stdout.writeln('Schreibwörter: ${words.length - before} Wörter dazu');
+  }
+
   for (final t in words.values) {
     final out = File('web/data/${wordAudioPath(t)}');
     // Wörter allein: mit fester Lesung, damit z. B. 葉 nicht als よう gelesen wird.
     final text = t.hasKanji ? '<sub alias="${_esc(t.reading)}">${_esc(t.t)}</sub>' : _esc(t.t);
     await _make(out, _ssml(text, '-10%'), _billable(t.reading), dry: dry, force: force);
+  }
+
+  // Beispielsätze für „Kanji schreiben“ (Spezifikation 19): einmal je Satz, mit
+  // fester Lesung aus der Ruby-Schreibweise. Neue Sätze schreibt die Teeküche.
+  final saetze = Directory('web/data/schreiben/saetze');
+  if (saetze.existsSync()) {
+    final files = saetze.listSync().whereType<File>().where((f) => f.path.endsWith('.json')).toList()
+      ..sort((a, b) => a.path.compareTo(b.path));
+    for (final f in files) {
+      final data = jsonDecode(await f.readAsString()) as Map<String, dynamic>;
+      for (final e in data.values.cast<Map<String, dynamic>>()) {
+        final ruby = satzOhneZiel(e['r'] as String);
+        final out = File('web/data/${satzAudioPath(ruby)}');
+        await _make(out, _ssml(_rubyToSsml(ruby), '-10%'), _billable(ruby), dry: dry, force: force);
+      }
+    }
   }
 
   // Kumachans Sprüche: helle Stimme, etwas höher (Spezifikation 13).

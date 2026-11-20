@@ -52,3 +52,5 @@ flutter test tool/render_icon_test.dart          # App-Icon (lib/ui/app_icon.dar
 - „Kanji schreiben“ (Spezifikation 19): Lernplan und Wörter neu bauen mit `tool/teekueche/schreiben_daten.py`;
   deutsche Bedeutungen der Wörter und Korrekturen alter Schreibungen in `tool/teekueche/schreiben_extra.json`.
   Kommen neue Kanji in den Plan, danach `schriften.py` neu laufen lassen (Klee One braucht alle Plan-Kanji).
+  Beispielsätze: `tool/teekueche/saetze.py` (naechste, uebernehmen, pruefen, neu-bauen), Daten in
+  `web/data/schreiben/saetze/`, Aufnahmen macht `tool/tts.dart` (Ordner `web/data/schreiben/satz/`).
