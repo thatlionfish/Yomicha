@@ -6,11 +6,13 @@ import 'strich_pruefung.dart';
 /// Schönschreiben (Spezifikation 19): Pinselstrich und Vergleich mit der Vorlage.
 
 /// Ein geschriebener Strich: Punkte im Feld 109 × 109 und die Breite des
-/// Pinsels an jedem Punkt.
+/// Pinsels an jedem Punkt. [spitz]: Der Strich wurde schnell beendet und
+/// läuft spitz aus (はらい); sonst ist das Ende rund (とめ).
 class Tinte {
-  const Tinte(this.punkte, this.breiten);
+  const Tinte(this.punkte, this.breiten, {this.spitz = false});
   final List<Offset> punkte;
   final List<double> breiten;
+  final bool spitz;
 }
 
 /// Breite der gleichmäßigen Linie (ohne Pinsel) im Feld 109 × 109.
@@ -58,19 +60,9 @@ class Pinsel {
     return _w;
   }
 
-  /// Strich fertig: Wurde er schnell beendet, läuft er über das letzte Stück
-  /// spitz aus (はらい); langsam beendet bleibt das Ende rund (とめ).
-  List<double> ende(List<Offset> punkte, List<double> breiten) {
-    if (!an || punkte.length < 3 || _tempo < 0.18) return breiten;
-    final out = List.of(breiten);
-    final lang = max(6.0, strichLaenge(punkte) * 0.3);
-    var rest = 0.0;
-    for (var i = punkte.length - 1; i >= 0 && rest < lang; i--) {
-      out[i] *= 0.1 + 0.9 * pow(rest / lang, 0.75);
-      if (i > 0) rest += (punkte[i] - punkte[i - 1]).distance;
-    }
-    return out;
-  }
+  /// Strich fertig: Wurde er schnell beendet, läuft er spitz aus (はらい);
+  /// langsam beendet bleibt das Ende rund (とめ).
+  bool get spitzesEnde => an && _tempo >= 0.18;
 
   /// Druckkurve: Der Pencil meldet 0–1 und schwankt; die Wurzel-artige Kurve
   /// (Gamma 0,6) hebt leichten Druck an, damit der Strich nicht abreißt.
@@ -80,94 +72,180 @@ class Pinsel {
 
 final _pfade = Expando<Path>('pinselPfad');
 
-/// Der Umriss eines Strichs als gefüllte Form: Punkte ausdünnen, Mittellinie
-/// und Breiten glätten (Chaikin), links und rechts um die halbe Breite
-/// versetzen, Anfang und Ende rund – ein spitz auslaufendes Ende ist einfach
-/// sehr schmal. So fließt der Strich wie mit dem Pinsel statt perlig.
-Path pinselPfad(Tinte t) => _pfade[t] ??= _baueUmriss(t.punkte, t.breiten);
+/// Der Umriss eines Strichs als gefüllte, glatte Form (wie mit dem Pinsel):
+/// 1. Mittellinie als Kurve durch die Stiftpunkte (Catmull-Rom), dicht und
+///    gleichmäßig neu abgetastet – auch wenn der Stift nur wenige Punkte meldet;
+/// 2. Linie und Breite sanft geglättet (gaußsch), damit nichts zittert;
+/// 3. beim spitzen Ende (はらい) läuft die Breite über das letzte Drittel aus;
+/// 4. Ränder als Kurven, Anfang und Ende exakte Halbkreise.
+Path pinselPfad(Tinte t) => _pfade[t] ??= _baueUmriss(t.punkte, t.breiten, t.spitz);
 
-Path _baueUmriss(List<Offset> punkte, List<double> breiten) {
+/// Abstand der neu abgetasteten Punkte (Feldeinheiten).
+const _schritt = 0.5;
+
+Path _baueUmriss(List<Offset> punkte, List<double> breiten, bool spitz) {
   double b(int i) => i < breiten.length ? breiten[i] : grundBreite;
-  // 1. Ausdünnen: Punkte näher als 0,8 Einheiten zusammenfassen.
+  // Ausdünnen: Punkte näher als einen halben Schritt zusammenfassen.
   final pts = <Offset>[];
   final ws = <double>[];
   for (var i = 0; i < punkte.length; i++) {
-    if (pts.isEmpty || (punkte[i] - pts.last).distance >= 0.8 || i == punkte.length - 1) {
-      if (pts.length > 1 && i == punkte.length - 1 && (punkte[i] - pts.last).distance < 0.8) {
-        pts.removeLast();
-        ws.removeLast();
+    if (pts.isNotEmpty && (punkte[i] - pts.last).distance < _schritt) {
+      if (i == punkte.length - 1 && pts.length > 1) {
+        pts[pts.length - 1] = punkte[i];
+        ws[ws.length - 1] = b(i);
       }
-      pts.add(punkte[i]);
-      ws.add(b(i));
+      continue;
     }
+    pts.add(punkte[i]);
+    ws.add(b(i));
   }
   if (pts.isEmpty) return Path();
   if (pts.length == 1) return Path()..addOval(Rect.fromCircle(center: pts.first, radius: ws.first / 2));
 
-  // 2. Glätten: zweimal Chaikin (Ecken abschneiden), Enden bleiben.
-  var cp = pts;
-  var cw = ws;
-  for (var r = 0; r < 2; r++) {
-    final np = <Offset>[cp.first];
-    final nw = <double>[cw.first];
-    for (var i = 0; i < cp.length - 1; i++) {
-      np
-        ..add(cp[i] * 0.75 + cp[i + 1] * 0.25)
-        ..add(cp[i] * 0.25 + cp[i + 1] * 0.75);
-      nw
-        ..add(cw[i] * 0.75 + cw[i + 1] * 0.25)
-        ..add(cw[i] * 0.25 + cw[i + 1] * 0.75);
+  // 1. Kurve durch die Punkte (zentripetales Catmull-Rom), fein unterteilt.
+  final dicht = <Offset>[pts.first];
+  final dichtW = <double>[ws.first];
+  for (var i = 0; i < pts.length - 1; i++) {
+    final p1 = pts[i], p2 = pts[i + 1];
+    final p0 = i > 0 ? pts[i - 1] : p1 * 2 - p2;
+    final p3 = i + 2 < pts.length ? pts[i + 2] : p2 * 2 - p1;
+    final schritte = max(2, ((p2 - p1).distance / (_schritt / 2)).ceil());
+    for (var k = 1; k <= schritte; k++) {
+      final u = k / schritte;
+      dicht.add(_catmullRom(p0, p1, p2, p3, u));
+      dichtW.add(ws[i] + (ws[i + 1] - ws[i]) * u);
     }
-    np.add(cp.last);
-    nw.add(cw.last);
-    cp = np;
-    cw = nw;
   }
-  // Breiten zusätzlich gleitend mitteln, damit die Kontur nicht wellig wird.
-  final glatt = [
-    for (var i = 0; i < cw.length; i++)
-      (cw[max(0, i - 2)] + cw[max(0, i - 1)] + cw[i] + cw[min(cw.length - 1, i + 1)] + cw[min(cw.length - 1, i + 2)]) / 5,
-  ];
-  // Die Enden behalten ihre eigene Breite (spitz oder rund).
-  glatt[0] = cw.first;
-  glatt[glatt.length - 1] = cw.last;
 
-  // 3. Normalen und Ränder.
-  final n = cp.length;
+  // Gleichmäßig nach Weglänge neu abtasten.
+  final c = <Offset>[dicht.first];
+  final w = <double>[dichtW.first];
+  var rest = _schritt;
+  for (var i = 1; i < dicht.length; i++) {
+    var a = dicht[i - 1];
+    var aw = dichtW[i - 1];
+    final z = dicht[i];
+    final zw = dichtW[i];
+    var seg = (z - a).distance;
+    while (seg >= rest) {
+      final f = rest / seg;
+      a = a + (z - a) * f;
+      aw = aw + (zw - aw) * f;
+      c.add(a);
+      w.add(aw);
+      seg = (z - a).distance;
+      rest = _schritt;
+    }
+    rest -= seg;
+  }
+  if ((c.last - dicht.last).distance > 1e-3) {
+    c.add(dicht.last);
+    w.add(dichtW.last);
+  }
+  final n = c.length;
+  if (n < 2) return Path()..addOval(Rect.fromCircle(center: c.first, radius: w.first / 2));
+
+  // 2. Glätten: Linie leicht (σ ≈ 0,8 Einheiten), Breite kräftig (σ ≈ 3 Einheiten).
+  final xs = _gauss([for (final q in c) q.dx], 0.8 / _schritt);
+  final ys = _gauss([for (final q in c) q.dy], 0.8 / _schritt);
+  final mitte = [for (var i = 0; i < n; i++) Offset(xs[i], ys[i])];
+  mitte[0] = c.first;
+  mitte[n - 1] = c.last;
+  final breite = _gauss(w, 3 / _schritt);
+
+  // 3. Spitzes Ende (はらい): über das letzte Drittel (6–22 Einheiten) auslaufen.
+  if (spitz) {
+    final lang = ((n - 1) * _schritt * 0.33).clamp(6.0, 22.0);
+    for (var i = n - 1; i >= 0; i--) {
+      final d = (n - 1 - i) * _schritt;
+      if (d >= lang) break;
+      breite[i] *= 0.06 + 0.94 * pow(d / lang, 0.8);
+    }
+  }
+
+  // Richtung und Ränder.
+  final dirs = <Offset>[];
   final links = <Offset>[];
   final rechts = <Offset>[];
-  final dirs = <Offset>[];
   for (var i = 0; i < n; i++) {
-    var d = cp[min(n - 1, i + 1)] - cp[max(0, i - 1)];
+    var d = mitte[min(n - 1, i + 2)] - mitte[max(0, i - 2)];
     if (d.distance < 1e-6) d = dirs.isEmpty ? const Offset(1, 0) : dirs.last;
     d = d / d.distance;
     dirs.add(d);
-    final norm = Offset(-d.dy, d.dx) * (glatt[i] / 2);
-    links.add(cp[i] + norm);
-    rechts.add(cp[i] - norm);
+    final nrm = Offset(-d.dy, d.dx) * (breite[i] / 2);
+    links.add(mitte[i] + nrm);
+    rechts.add(mitte[i] - nrm);
   }
 
-  // 4. Umriss: linker Rand, rundes Ende, rechter Rand zurück, runder Anfang.
+  // 4. Umriss mit Kurven: linker Rand, Halbkreis vorn, rechter Rand zurück, Halbkreis hinten.
   final path = Path()..moveTo(links.first.dx, links.first.dy);
-  for (final q in links.skip(1)) {
-    path.lineTo(q.dx, q.dy);
+  void rand(List<Offset> r) {
+    for (var i = 1; i < r.length - 1; i++) {
+      final m = (r[i] + r[i + 1]) / 2;
+      path.quadraticBezierTo(r[i].dx, r[i].dy, m.dx, m.dy);
+    }
+    path.lineTo(r.last.dx, r.last.dy);
   }
-  void kappe(Offset c, Offset d, double r, {required bool vorn}) {
-    // Halbkreis um c: vorn von links über die Spitze nach rechts, hinten umgekehrt.
-    final nrm = Offset(-d.dy, d.dx);
-    for (var k = 1; k < 8; k++) {
-      final a = pi * k / 8;
-      final q = vorn ? c + (nrm * cos(a) + d * sin(a)) * r : c + (-nrm * cos(a) - d * sin(a)) * r;
-      path.lineTo(q.dx, q.dy);
+
+  void halbkreis(Offset mp, Offset d, double r, {required bool vorn}) {
+    // Zwei Viertelkreise als exakte Kegelschnitte (Gewicht √½).
+    final nrm = Offset(-d.dy, d.dx) * r;
+    final dir = d * r;
+    const g = 0.7071067811865476;
+    if (vorn) {
+      final spitze = mp + dir;
+      final e1 = mp + nrm + dir, e2 = mp + dir - nrm, ziel = mp - nrm;
+      path
+        ..conicTo(e1.dx, e1.dy, spitze.dx, spitze.dy, g)
+        ..conicTo(e2.dx, e2.dy, ziel.dx, ziel.dy, g);
+    } else {
+      final hinten = mp - dir;
+      final e1 = mp - nrm - dir, e2 = mp - dir + nrm, ziel = mp + nrm;
+      path
+        ..conicTo(e1.dx, e1.dy, hinten.dx, hinten.dy, g)
+        ..conicTo(e2.dx, e2.dy, ziel.dx, ziel.dy, g);
     }
   }
 
-  kappe(cp.last, dirs.last, glatt.last / 2, vorn: true);
-  for (final q in rechts.reversed) {
-    path.lineTo(q.dx, q.dy);
-  }
-  kappe(cp.first, dirs.first, glatt.first / 2, vorn: false);
+  rand(links);
+  halbkreis(mitte.last, dirs.last, breite.last / 2, vorn: true);
+  rand(rechts.reversed.toList());
+  halbkreis(mitte.first, dirs.first, breite.first / 2, vorn: false);
   return path..close();
+}
+
+Offset _catmullRom(Offset p0, Offset p1, Offset p2, Offset p3, double u) {
+  double knoten(Offset a, Offset b) => max(1e-4, sqrt((b - a).distance));
+  const t0 = 0.0;
+  final t1 = t0 + knoten(p0, p1);
+  final t2 = t1 + knoten(p1, p2);
+  final t3 = t2 + knoten(p2, p3);
+  final t = t1 + (t2 - t1) * u;
+  final a1 = p0 * ((t1 - t) / (t1 - t0)) + p1 * ((t - t0) / (t1 - t0));
+  final a2 = p1 * ((t2 - t) / (t2 - t1)) + p2 * ((t - t1) / (t2 - t1));
+  final a3 = p2 * ((t3 - t) / (t3 - t2)) + p3 * ((t - t2) / (t3 - t2));
+  final b1 = a1 * ((t2 - t) / (t2 - t0)) + a2 * ((t - t0) / (t2 - t0));
+  final b2 = a2 * ((t3 - t) / (t3 - t1)) + a3 * ((t - t1) / (t3 - t1));
+  return b1 * ((t2 - t) / (t2 - t1)) + b2 * ((t - t1) / (t2 - t1));
+}
+
+/// Gaußsche Glättung mit σ in Punkten; an den Rändern wird der Randwert fortgesetzt.
+List<double> _gauss(List<double> v, double sigma) {
+  if (v.length < 3 || sigma <= 0) return List.of(v);
+  final r = (sigma * 3).ceil();
+  final gewicht = [for (var k = -r; k <= r; k++) exp(-(k * k) / (2 * sigma * sigma))];
+  return [
+    for (var i = 0; i < v.length; i++)
+      () {
+        var s = 0.0, g = 0.0;
+        for (var k = -r; k <= r; k++) {
+          final j = (i + k).clamp(0, v.length - 1);
+          s += v[j] * gewicht[k + r];
+          g += gewicht[k + r];
+        }
+        return s / g;
+      }(),
+  ];
 }
 
 /// Note eines Strichs aus seinem mittleren Abstand zur Vorlage (Feld 109):

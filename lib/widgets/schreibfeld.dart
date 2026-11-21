@@ -173,7 +173,8 @@ class SchreibfeldState extends State<Schreibfeld> {
   void _up(PointerEvent e) {
     if (e.pointer != _pointer) return;
     final drawn = _current ?? const [];
-    final breiten = _pinsel.ende(drawn, _currentW);
+    final breiten = _currentW;
+    final spitz = _pinsel.spitzesEnde;
     _pointer = null;
     _current = null;
     _currentW = [];
@@ -184,13 +185,13 @@ class SchreibfeldState extends State<Schreibfeld> {
     final r = pruefeStrich(drawn, _targets, _next, toleranz: widget.toleranz);
     setState(() {
       if (r.urteil == StrichUrteil.richtig) {
-        _ink.add(Tinte(drawn, breiten));
+        _ink.add(Tinte(drawn, breiten, spitz: spitz));
         _next++;
         _miss = 0;
       } else {
         _fehler++;
         _miss++;
-        _wrong = Tinte(drawn, breiten);
+        _wrong = Tinte(drawn, breiten, spitz: spitz);
         _wrongTimer?.cancel();
         _wrongTimer = Timer(const Duration(milliseconds: 650), () {
           if (mounted) setState(() => _wrong = null);

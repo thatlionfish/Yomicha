@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -53,22 +54,41 @@ void main() {
   });
 
   test('Pinsel: schnell beendet spitz (はらい), langsam beendet rund (とめ)', () {
-    List<double> ziehe(double schritt) {
-      final pinsel = Pinsel();
-      final pts = <Offset>[Offset.zero];
-      final ws = <double>[pinsel.start(Offset.zero, Duration.zero, druck: 0.5)];
+    bool ziehe(double schritt) {
+      final pinsel = Pinsel()..start(Offset.zero, Duration.zero, druck: 0.5);
       for (var i = 1; i <= 20; i++) {
-        final q = Offset(i * schritt, 0);
-        pts.add(q);
-        ws.add(pinsel.weiter(q, Duration(milliseconds: i * 16), druck: 0.5));
+        pinsel.weiter(Offset(i * schritt, 0), Duration(milliseconds: i * 16), druck: 0.5);
       }
-      return pinsel.ende(pts, ws);
+      return pinsel.spitzesEnde;
     }
 
-    final schnell = ziehe(6); // 6 Einheiten in 16 ms
-    final langsam = ziehe(1);
-    expect(schnell.last, lessThan(schnell[10] * 0.3));
-    expect(langsam.last, greaterThan(langsam[10] * 0.8));
+    expect(ziehe(6), isTrue); // 6 Einheiten in 16 ms
+    expect(ziehe(1), isFalse);
+    expect(Pinsel(an: false).spitzesEnde, isFalse);
+
+    // In der Form: spitz läuft das Ende schmal aus, rund bleibt es breit.
+    final pts = [for (var i = 0; i <= 20; i++) Offset(10.0 + i * 4, 50)];
+    final ws = List.filled(pts.length, 6.0);
+    final spitz = pinselPfad(Tinte(pts, ws, spitz: true));
+    final rund = pinselPfad(Tinte(pts, ws));
+    expect(spitz.contains(const Offset(87, 52)), isFalse);
+    expect(rund.contains(const Offset(87, 52)), isTrue);
+    expect(spitz.contains(const Offset(40, 52)), isTrue);
+    expect(spitz.getBounds().right, lessThan(90.5));
+  });
+
+  test('Pinselform: glatt auch bei wenigen, groben Stiftpunkten', () {
+    // Ein Bogen aus nur fünf Punkten (schnell gezogen): Die Kontur folgt einer
+    // Kurve durch die Punkte, ohne Knick und ohne Lücke.
+    final pts = [for (var i = 0; i <= 4; i++) Offset(20.0 + i * 15, 60 - 20 * sin(i * pi / 4))];
+    final path = pinselPfad(Tinte(pts, List.filled(pts.length, 6.0)));
+    for (var i = 0; i < 4; i++) {
+      final mitte = (pts[i] + pts[i + 1]) / 2;
+      expect(path.contains(mitte), isTrue, reason: 'zwischen Punkt $i und ${i + 1}');
+    }
+    for (final q in pts) {
+      expect(path.contains(q), isTrue);
+    }
   });
 
   test('Pinselform: geschlossene, gefüllte Kontur um den Strich', () {
