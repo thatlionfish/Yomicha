@@ -71,6 +71,10 @@ class SchreibfeldState extends State<Schreibfeld> {
   int _next = 0;
   int _fehler = 0;
 
+  /// Zählt Änderungen an den fertigen Strichen – nur dann wird die untere
+  /// Ebene neu gezeichnet, nicht bei jeder Bewegung des Stifts.
+  int _stand = 0;
+
   /// Falsche Versuche am aktuellen Strich – ab zwei zeigt das Feld ihn blass.
   int _miss = 0;
 
@@ -96,6 +100,7 @@ class SchreibfeldState extends State<Schreibfeld> {
   bool rueckgaengig() {
     if (_ink.isEmpty) return false;
     setState(() {
+      _stand++;
       _ink.removeLast();
       _next = _ink.length;
       _current = null;
@@ -130,6 +135,7 @@ class SchreibfeldState extends State<Schreibfeld> {
   /// Alles löschen und von vorn schreiben (die Fehler bleiben gezählt).
   void neu() {
     setState(() {
+      _stand++;
       _ink.clear();
       _current = null;
       _pointer = null;
@@ -174,7 +180,8 @@ class SchreibfeldState extends State<Schreibfeld> {
     if (e.pointer != _pointer) return;
     final drawn = _current ?? const [];
     final breiten = _currentW;
-    final spitz = _pinsel.spitzesEnde;
+    // Spitz nur, wenn schnell abgehoben und die Vorlage hier ausläuft (はらい, はね).
+    final spitz = _pinsel.spitzesEnde && _next < _targets.length && darfAuslaufen(_targets[_next]);
     _pointer = null;
     _current = null;
     _currentW = [];
@@ -186,6 +193,7 @@ class SchreibfeldState extends State<Schreibfeld> {
     setState(() {
       if (r.urteil == StrichUrteil.richtig) {
         _ink.add(Tinte(drawn, breiten, spitz: spitz));
+        _stand++;
         _next++;
         _miss = 0;
       } else {
@@ -216,18 +224,32 @@ class SchreibfeldState extends State<Schreibfeld> {
           onPointerCancel: _up,
           child: DecoratedBox(
             decoration: const BoxDecoration(color: YoColors.brightWhite, borderRadius: organicRadius),
-            child: CustomPaint(
-              size: Size.square(size),
-              painter: _FeldPainter(
-                paths: _paths,
-                targets: _targets,
-                ink: _ink,
-                current: _current == null ? null : Tinte(_current!, _currentW),
-                wrong: _wrong,
-                next: _next,
-                vorlage: widget.vorlage || widget.hinweis >= 3,
-                naechsterBlass: widget.vorlage || widget.hinweis >= 2 || _miss >= 2,
-              ),
+            child: Stack(
+              children: [
+                // Hilfslinien, Vorlage und fertige Striche: nur neu, wenn sich etwas ändert.
+                RepaintBoundary(
+                  child: CustomPaint(
+                    size: Size.square(size),
+                    painter: _FeldPainter(
+                      paths: _paths,
+                      targets: _targets,
+                      ink: _ink,
+                      stand: _stand,
+                      next: _next,
+                      vorlage: widget.vorlage || widget.hinweis >= 3,
+                      naechsterBlass: widget.vorlage || widget.hinweis >= 2 || _miss >= 2,
+                    ),
+                  ),
+                ),
+                // Der Strich, der gerade entsteht (und ein falscher, der verblasst).
+                CustomPaint(
+                  size: Size.square(size),
+                  painter: _StiftPainter(
+                    current: _current == null ? null : Tinte(_current!, _currentW),
+                    wrong: _wrong,
+                  ),
+                ),
+              ],
             ),
           ),
         ),
@@ -241,8 +263,7 @@ class _FeldPainter extends CustomPainter {
     required this.paths,
     required this.targets,
     required this.ink,
-    required this.current,
-    required this.wrong,
+    required this.stand,
     required this.next,
     required this.vorlage,
     required this.naechsterBlass,
@@ -251,8 +272,7 @@ class _FeldPainter extends CustomPainter {
   final List<Path> paths;
   final List<List<Offset>> targets;
   final List<Tinte> ink;
-  final Tinte? current;
-  final Tinte? wrong;
+  final int stand;
   final int next;
   final bool vorlage;
   final bool naechsterBlass;
@@ -277,10 +297,12 @@ class _FeldPainter extends CustomPainter {
       canvas.drawLine(Offset(y, 54.5), Offset(y + 2, 54.5), grid);
     }
 
+    // Vorlage nur für Striche, die noch fehlen – nie unter fertiger Tinte,
+    // sonst schaut sie als heller Rand heraus.
     final done = next >= paths.length;
-    if (vorlage || done) {
-      for (var i = 0; i < paths.length; i++) {
-        if (i >= ink.length || done) canvas.drawPath(paths[i], _stroke(YoColors.sand, done ? 3.2 : 4.2));
+    if (vorlage && !done) {
+      for (var i = ink.length; i < paths.length; i++) {
+        canvas.drawPath(paths[i], _stroke(YoColors.sand, 4.2));
       }
     }
     if (!done && naechsterBlass) {
@@ -295,13 +317,35 @@ class _FeldPainter extends CustomPainter {
     for (final s in ink) {
       zeichneTinte(canvas, s, YoColors.chocolate);
     }
+    canvas.restore();
+  }
+
+  @override
+  bool shouldRepaint(_FeldPainter old) =>
+      old.stand != stand ||
+      old.next != next ||
+      old.vorlage != vorlage ||
+      old.naechsterBlass != naechsterBlass ||
+      !identical(old.paths, paths);
+}
+
+class _StiftPainter extends CustomPainter {
+  _StiftPainter({required this.current, required this.wrong});
+  final Tinte? current;
+  final Tinte? wrong;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (current == null && wrong == null) return;
+    canvas.save();
+    canvas.scale(size.width / feld);
     if (wrong case final w?) zeichneTinte(canvas, w, YoColors.woodAsh);
     if (current case final c?) zeichneTinte(canvas, c, YoColors.chocolate);
     canvas.restore();
   }
 
   @override
-  bool shouldRepaint(_FeldPainter old) => true;
+  bool shouldRepaint(_StiftPainter old) => true;
 }
 
 /// Zeichnet einen Strich als gefüllte Pinselform (siehe [pinselPfad]).

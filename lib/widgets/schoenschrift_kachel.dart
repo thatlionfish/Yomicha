@@ -7,9 +7,10 @@ import '../ui/theme.dart';
 import 'schreibfeld.dart' show zeichneTinte;
 import 'stroke_order.dart';
 
-/// Mein Zeichen über der Vorlage (Spezifikation 19, Schönschreiben): Vorlage
-/// blass, meine Striche darüber; der Strich, der am meisten abweicht, ist in
-/// der Vorlage dunkler und hat einen Punkt am Anfang. Darunter die Note.
+/// Mein Zeichen über der Vorlage (Spezifikation 19, Schönschreiben): die
+/// Vorlage als dünne Linie, meine Striche darüber; der Strich, der am meisten
+/// abweicht, ist in der Vorlage dunkler und hat einen Punkt am Anfang.
+/// Darunter die Note.
 class SchoenschriftKachel extends StatelessWidget {
   const SchoenschriftKachel({super.key, required this.note, this.size = 120, this.mitText = true});
   final ZeichenNote note;
@@ -66,11 +67,13 @@ class _KachelPainter extends CustomPainter {
       canvas.drawLine(Offset(54.5, y), Offset(54.5, y + 2), line);
       canvas.drawLine(Offset(y, 54.5), Offset(y + 2, 54.5), line);
     }
+    // Die Vorlage als dünne Linie unter der Tinte: Sie ist nur dort zu sehen,
+    // wo mein Strich von ihr abweicht – kein heller Rand um die Tinte.
     final paths = [for (final d in note.paths) parseSvgPath(d)];
     for (var i = 0; i < paths.length; i++) {
       line
-        ..color = i == schlecht ? YoColors.woodAsh : YoColors.sand
-        ..strokeWidth = i == schlecht ? 6.5 : 5.5;
+        ..color = i == schlecht ? YoColors.inkSoft : YoColors.woodAsh
+        ..strokeWidth = i == schlecht ? 2.2 : 1.6;
       canvas.drawPath(paths[i], line);
     }
     for (final t in note.tinte) {

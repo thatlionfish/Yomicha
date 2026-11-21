@@ -18,8 +18,9 @@ class Tinte {
 /// Breite der gleichmäßigen Linie (ohne Pinsel) im Feld 109 × 109.
 const grundBreite = 4.6;
 
-/// Mittlere Breite des Pinselstrichs – kräftiger als die Linie, wie ein Pinsel.
-const pinselBreite = 6.4;
+/// Mittlere Breite des Pinselstrichs – kräftiger als die Linie, aber so, dass
+/// auch Kanji mit vielen Strichen (場, 曜) offen und lesbar bleiben.
+const pinselBreite = 5.0;
 
 /// Pinsel: Die Breite folgt dem Druck des Stifts (fester → breiter) und dem
 /// Tempo (schnell → dünner). Stark geglättet, damit der Strich ruhig fließt,
@@ -34,7 +35,7 @@ class Pinsel {
   Duration? _t;
 
   static const minBreite = 1.2;
-  static const maxBreite = 11.0;
+  static const maxBreite = 8.0;
 
   /// Breite am ersten Punkt eines Strichs (Ansatz, 起筆: etwas kräftiger).
   double start(Offset p, Duration t, {double? druck}) {
@@ -54,7 +55,7 @@ class Pinsel {
     _t = t;
     // Tempo in Feldeinheiten pro Millisekunde, geglättet.
     _tempo = _tempo * 0.6 + (dist / ms) * 0.4;
-    final faktorTempo = (1.2 - _tempo * 1.4).clamp(0.5, 1.2);
+    final faktorTempo = (1.12 - _tempo * 0.8).clamp(0.75, 1.12);
     final ziel = pinselBreite * _druck(druck) * faktorTempo;
     _w = (_w * 0.85 + ziel * 0.15).clamp(minBreite, maxBreite);
     return _w;
@@ -67,7 +68,19 @@ class Pinsel {
   /// Druckkurve: Der Pencil meldet 0–1 und schwankt; die Wurzel-artige Kurve
   /// (Gamma 0,6) hebt leichten Druck an, damit der Strich nicht abreißt.
   /// Maus und Finger melden keinen echten Druck (0 oder 1).
-  static double _druck(double? p) => p == null || p <= 0 ? 1.0 : 0.55 + 0.85 * pow(p.clamp(0.0, 1.0), 0.6);
+  static double _druck(double? p) => p == null || p <= 0 ? 1.0 : 0.65 + 0.6 * pow(p.clamp(0.0, 1.0), 0.6);
+}
+
+/// Darf dieser Strich spitz auslaufen? Nur wenn auch die Vorlage so endet:
+/// schräg nach unten (はらい, ㇒ ㇏) oder nach oben (はね, ㇀). Waagerechte und
+/// senkrechte Striche enden rund (とめ), auch wenn ich schnell abhebe.
+bool darfAuslaufen(List<Offset> vorlage) {
+  if (vorlage.length < 2) return false;
+  // Richtung ganz am Ende (ein Haken ist kurz – nur die letzten beiden Punkte).
+  var d = vorlage.last - vorlage[vorlage.length - 2];
+  if (d.distance < 1e-6) return false;
+  d = d / d.distance;
+  return (d.dx.abs() > 0.35 && d.dy > 0.2) || d.dy < -0.3;
 }
 
 final _pfade = Expando<Path>('pinselPfad');
@@ -101,6 +114,14 @@ Path _baueUmriss(List<Offset> punkte, List<double> breiten, bool spitz) {
   }
   if (pts.isEmpty) return Path();
   if (pts.length == 1) return Path()..addOval(Rect.fromCircle(center: pts.first, radius: ws.first / 2));
+  // Schnell geschrieben = wenige, weit auseinanderliegende Punkte: dann stärker glätten.
+  var weg = 0.0;
+  for (var i = 1; i < pts.length; i++) {
+    weg += (pts[i] - pts[i - 1]).distance;
+  }
+  final abstand = weg / (pts.length - 1);
+  final sigmaLinie = (abstand * 0.22).clamp(0.8, 3.0);
+  final sigmaBreite = (abstand * 0.6).clamp(3.0, 8.0);
 
   // 1. Kurve durch die Punkte (zentripetales Catmull-Rom), fein unterteilt.
   final dicht = <Offset>[pts.first];
@@ -145,13 +166,13 @@ Path _baueUmriss(List<Offset> punkte, List<double> breiten, bool spitz) {
   final n = c.length;
   if (n < 2) return Path()..addOval(Rect.fromCircle(center: c.first, radius: w.first / 2));
 
-  // 2. Glätten: Linie leicht (σ ≈ 0,8 Einheiten), Breite kräftig (σ ≈ 3 Einheiten).
-  final xs = _gauss([for (final q in c) q.dx], 0.8 / _schritt);
-  final ys = _gauss([for (final q in c) q.dy], 0.8 / _schritt);
+  // 2. Glätten: Linie leicht, Breite kräftig – bei schnellen Strichen stärker.
+  final xs = _gauss([for (final q in c) q.dx], sigmaLinie / _schritt);
+  final ys = _gauss([for (final q in c) q.dy], sigmaLinie / _schritt);
   final mitte = [for (var i = 0; i < n; i++) Offset(xs[i], ys[i])];
   mitte[0] = c.first;
   mitte[n - 1] = c.last;
-  final breite = _gauss(w, 3 / _schritt);
+  final breite = _gauss(w, sigmaBreite / _schritt);
 
   // 3. Spitzes Ende (はらい): über das letzte Drittel (6–22 Einheiten) auslaufen.
   if (spitz) {
@@ -211,7 +232,38 @@ Path _baueUmriss(List<Offset> punkte, List<double> breiten, bool spitz) {
   halbkreis(mitte.last, dirs.last, breite.last / 2, vorn: true);
   rand(rechts.reversed.toList());
   halbkreis(mitte.first, dirs.first, breite.first / 2, vorn: false);
-  return path..close();
+  path.close();
+
+  // 5. Enge Biegungen und Ecken: Dort überschlägt sich der innere Rand, und
+  //    die Überschneidung hebt sich auf – eine weiße Lücke im Strich. Kreise in
+  //    derselben Umlaufrichtung füllen sie (alles bleibt eine Form, ohne Naht).
+  var flaeche = 0.0;
+  final umriss = [...links, ...rechts.reversed];
+  for (var i = 0; i < umriss.length; i++) {
+    final a = umriss[i], z = umriss[(i + 1) % umriss.length];
+    flaeche += a.dx * z.dy - z.dx * a.dy;
+  }
+  for (var i = 1; i < n - 1; i++) {
+    final d0 = dirs[i - 1], d1 = dirs[i + 1];
+    final winkel = acos((d0.dx * d1.dx + d0.dy * d1.dy).clamp(-1.0, 1.0));
+    if (winkel < 1e-3) continue;
+    final radius = 2 * _schritt / winkel; // Krümmungsradius der Mittellinie
+    if (radius < breite[i] * 0.75) _kreis(path, mitte[i], breite[i] / 2, positiv: flaeche > 0);
+  }
+  return path;
+}
+
+/// Kreis als zwei Halbkreise aus Kegelschnitten, in der gewünschten Umlaufrichtung.
+void _kreis(Path path, Offset c, double r, {required bool positiv}) {
+  const g = 0.7071067811865476;
+  final s = positiv ? 1.0 : -1.0;
+  path
+    ..moveTo(c.dx + r, c.dy)
+    ..conicTo(c.dx + r, c.dy + s * r, c.dx, c.dy + s * r, g)
+    ..conicTo(c.dx - r, c.dy + s * r, c.dx - r, c.dy, g)
+    ..conicTo(c.dx - r, c.dy - s * r, c.dx, c.dy - s * r, g)
+    ..conicTo(c.dx + r, c.dy - s * r, c.dx + r, c.dy, g)
+    ..close();
 }
 
 Offset _catmullRom(Offset p0, Offset p1, Offset p2, Offset p3, double u) {

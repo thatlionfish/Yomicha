@@ -77,6 +77,44 @@ void main() {
     expect(spitz.getBounds().right, lessThan(90.5));
   });
 
+  test('Spitz auslaufen nur bei はらい und はね, nicht bei waagerecht oder senkrecht', () {
+    List<Offset> linie(Offset a, Offset b) => [for (var i = 0; i <= 10; i++) a + (b - a) * (i / 10)];
+    expect(darfAuslaufen(linie(const Offset(20, 50), const Offset(80, 50))), isFalse); // ㇐
+    expect(darfAuslaufen(linie(const Offset(50, 20), const Offset(50, 80))), isFalse); // ㇑
+    expect(darfAuslaufen(linie(const Offset(60, 20), const Offset(20, 80))), isTrue); // ㇒
+    expect(darfAuslaufen(linie(const Offset(40, 40), const Offset(80, 80))), isTrue); // ㇏
+    expect(darfAuslaufen([...linie(const Offset(50, 20), const Offset(50, 80)), const Offset(46, 76), const Offset(42, 72)]), isTrue); // 亅
+    // Echte Vorlagen: 木 – waagerecht und senkrecht rund, die beiden Schrägen spitz.
+    final mu = targetsOf(pathsOf('木'));
+    expect([for (final t in mu) darfAuslaufen(t)], [false, false, true, true]);
+    // 小: der Haken (亅) läuft aus.
+    expect(darfAuslaufen(targetsOf(pathsOf('小')).first), isTrue);
+  });
+
+  test('Pinselform: keine weißen Lücken an scharfen Ecken (z. B. ㇕)', () {
+    // Waagerecht nach rechts, dann scharf nach unten – breiter Pinsel.
+    final pts = <Offset>[
+      for (var x = 10.0; x <= 50; x += 2) Offset(x, 30),
+      for (var y = 32.0; y <= 80; y += 2) Offset(50, y),
+    ];
+    final path = pinselPfad(Tinte(pts, List.filled(pts.length, 9.0)));
+    // Alles im Umkreis von 3 Einheiten um die Mittellinie ist gefüllt,
+    // auch innen an der Ecke, wo sich der Rand überschlägt.
+    for (var x = 12.0; x <= 50; x += 1) {
+      for (final dy in [-3.0, 0.0, 3.0]) {
+        expect(path.contains(Offset(x, 30 + dy)), isTrue, reason: 'waagerecht bei ($x, ${30 + dy})');
+      }
+    }
+    for (var y = 30.0; y <= 78; y += 1) {
+      for (final dx in [-3.0, 0.0, 3.0]) {
+        expect(path.contains(Offset(50 + dx, y)), isTrue, reason: 'senkrecht bei (${50 + dx}, $y)');
+      }
+    }
+    // Außerhalb bleibt frei.
+    expect(path.contains(const Offset(30, 40)), isFalse);
+    expect(path.contains(const Offset(60, 60)), isFalse);
+  });
+
   test('Pinselform: glatt auch bei wenigen, groben Stiftpunkten', () {
     // Ein Bogen aus nur fünf Punkten (schnell gezogen): Die Kontur folgt einer
     // Kurve durch die Punkte, ohne Knick und ohne Lücke.
