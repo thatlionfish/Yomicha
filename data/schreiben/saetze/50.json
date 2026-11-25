@@ -14,5 +14,17 @@
 "s": "地震に[備えて]、水を買っておいた。",
 "de": "Für den Fall eines Erdbebens habe ich Wasser gekauft.",
 "r": "{地震|じしん}に[{備|そな}えて]、{水|みず}を{買|か}っておいた。"
+},
+"働き|はたらき": {
+"s": "この薬には痛みを抑える[働き]がある。",
+"de": "Dieses Medikament hat eine schmerzlindernde Wirkung.",
+"r": "この{薬|くすり}には{痛|いた}みを{抑|おさ}える[{働|はたら}き]がある。",
+"bedeutung": "Wirkung, Funktion; Arbeit, Leistung"
+},
+"働く|はたらく": {
+"s": "母は病院で[働いて]いる。",
+"de": "Meine Mutter arbeitet im Krankenhaus.",
+"r": "{母|はは}は{病院|びょういん}で[{働|はたら}いて]いる。",
+"bedeutung": "arbeiten"
 }
 }

@@ -36,6 +36,36 @@
 "de": "An Regentagen findet der Sportunterricht in der Turnhalle statt.",
 "r": "{雨|あめ}の{日|ひ}の[{体育|たいいく}]は{体育館|たいいくかん}で{行|おこな}う。"
 },
+"例|れい": {
+"s": "先生は[例]を挙げて説明してくれた。",
+"de": "Die Lehrkraft hat es uns anhand eines Beispiels erklärt.",
+"r": "{先生|せんせい}は[{例|れい}]を{挙|あ}げて{説明|せつめい}してくれた。",
+"bedeutung": "Beispiel, Fall"
+},
+"例え|たとえ": {
+"s": "彼の説明は[例え]が上手でわかりやすい。",
+"de": "Seine Erklärungen sind verständlich, weil er gute Vergleiche findet.",
+"r": "{彼|かれ}の{説明|せつめい}は[{例|たと}え]が{上手|じょうず}でわかりやすい。",
+"bedeutung": "Vergleich, Gleichnis, Beispiel"
+},
+"例えば|たとえば": {
+"s": "体にいい物、[例えば]野菜をもっと食べよう。",
+"de": "Essen wir mehr Gesundes, zum Beispiel Gemüse.",
+"r": "{体|からだ}にいい{物|もの}、[{例|たと}えば]{野菜|やさい}をもっと{食|た}べよう。",
+"bedeutung": "zum Beispiel"
+},
+"例える|たとえる": {
+"s": "人生はよく旅に[例えられる]。",
+"de": "Das Leben wird oft mit einer Reise verglichen.",
+"r": "{人生|じんせい}はよく{旅|たび}に[{例|たと}えられる]。",
+"bedeutung": "vergleichen (bildlich)"
+},
+"例外|れいがい": {
+"s": "この規則には[例外]がない。",
+"de": "Von dieser Regel gibt es keine Ausnahme.",
+"r": "この{規則|きそく}には[{例外|れいがい}]がない。",
+"bedeutung": "Ausnahme"
+},
 "供|とも": {
 "s": "部長の[お供]で大阪へ出張した。",
 "de": "Ich bin als Begleitung des Abteilungsleiters nach Osaka gereist.",

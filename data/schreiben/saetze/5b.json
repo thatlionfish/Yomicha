@@ -24,6 +24,12 @@
 "de": "Ich habe mit einem Lineal eine gerade Linie gezogen.",
 "r": "[{定規|じょうぎ}]を{使|つか}ってまっすぐな{線|せん}を{引|ひ}いた。"
 },
+"実例|じつれい": {
+"s": "[実例]を見れば、使い方がよくわかる。",
+"de": "Wenn man sich echte Beispiele ansieht, versteht man die Verwendung gut.",
+"r": "[{実例|じつれい}]を{見|み}れば、{使|つか}い{方|かた}がよくわかる。",
+"bedeutung": "konkretes Beispiel, Beispiel aus der Praxis"
+},
 "害|がい": {
 "s": "たばこは体に[害]がある。",
 "de": "Rauchen schadet dem Körper.",

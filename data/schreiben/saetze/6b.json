@@ -19,5 +19,35 @@
 "s": "兄は来月から[正規]の社員になる。",
 "de": "Mein älterer Bruder wird ab nächstem Monat fest angestellt.",
 "r": "{兄|あに}は{来月|らいげつ}から[{正規|せいき}]の{社員|しゃいん}になる。"
+},
+"残す|のこす": {
+"s": "ご飯を[残さない]で全部食べた。",
+"de": "Ich habe den Reis ganz aufgegessen, ohne etwas übrig zu lassen.",
+"r": "ご{飯|はん}を[{残|のこ}さない]で{全部|ぜんぶ}{食|た}べた。",
+"bedeutung": "übrig lassen, hinterlassen"
+},
+"残らず|のこらず": {
+"s": "子供たちはケーキを一つ[残らず]食べてしまった。",
+"de": "Die Kinder haben den Kuchen restlos aufgegessen, nicht ein Stück blieb übrig.",
+"r": "{子供|こども}たちはケーキを{一|ひと}つ[{残|のこ}らず]{食|た}べてしまった。",
+"bedeutung": "restlos, ohne Ausnahme"
+},
+"残り|のこり": {
+"s": "昨日の[残り]のカレーを昼に食べた。",
+"de": "Mittags habe ich den Rest des Currys von gestern gegessen.",
+"r": "{昨日|きのう}の[{残|のこ}り]のカレーを{昼|ひる}に{食|た}べた。",
+"bedeutung": "Rest, Übriggebliebenes"
+},
+"残る|のこる": {
+"s": "仕事が終わらず、会社に夜まで[残った]。",
+"de": "Die Arbeit wurde nicht fertig, und ich blieb bis abends in der Firma.",
+"r": "{仕事|しごと}が{終|お}わらず、{会社|かいしゃ}に{夜|よる}まで[{残|のこ}った]。",
+"bedeutung": "bleiben, übrig bleiben"
+},
+"残念|ざんねん": {
+"s": "雨で花火が中止になって[残念]だ。",
+"de": "Schade, dass das Feuerwerk wegen des Regens ausfällt.",
+"r": "{雨|あめ}で{花火|はなび}が{中止|ちゅうし}になって[{残念|ざんねん}]だ。",
+"bedeutung": "schade, bedauerlich"
 }
 }

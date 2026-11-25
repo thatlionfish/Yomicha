@@ -4,5 +4,29 @@
 "de": "Ich zahle jeden Monat den Kredit zurück.",
 "r": "{毎月|まいつき}、ローンを[{返済|へんさい}]している。",
 "bedeutung": "Rückzahlung"
+},
+"追いかける|おいかける": {
+"s": "忘れ物に気づいて、友達を[追いかけた]。",
+"de": "Als ich bemerkte, dass etwas vergessen worden war, lief ich meiner Freundin nach.",
+"r": "{忘|わす}れ{物|もの}に{気|き}づいて、{友達|ともだち}を[{追|お}いかけた]。",
+"bedeutung": "nachlaufen, verfolgen"
+},
+"追い付く|おいつく": {
+"s": "走って、先に出た友達に[追い付いた]。",
+"de": "Ich bin gerannt und habe meinen Freund eingeholt, der vorgegangen war.",
+"r": "{走|はし}って、{先|さき}に{出|で}た{友達|ともだち}に[{追|お}い{付|つ}いた]。",
+"bedeutung": "einholen, aufholen"
+},
+"追う|おう": {
+"s": "犬がボールを[追って]走っていった。",
+"de": "Der Hund rannte dem Ball hinterher.",
+"r": "{犬|いぬ}がボールを[{追|お}って]{走|はし}っていった。",
+"bedeutung": "verfolgen, hinterherlaufen"
+},
+"追加|ついか": {
+"s": "飲み物をもう一つ[追加]で注文した。",
+"de": "Wir haben noch ein Getränk nachbestellt.",
+"r": "{飲|の}み{物|もの}をもう{一|ひと}つ[{追加|ついか}]で{注文|ちゅうもん}した。",
+"bedeutung": "Ergänzung, Hinzufügung"
 }
 }

@@ -1,0 +1,44 @@
+{
+"商|しょう": {
+"s": "十を二で割ると、[商]は五になる。",
+"de": "Teilt man zehn durch zwei, ist der Quotient fünf.",
+"r": "{十|じゅう}を{二|に}で{割|わ}ると、[{商|しょう}]は{五|ご}になる。",
+"bedeutung": "Handel; (Mathematik) Quotient"
+},
+"商人|しょうにん": {
+"s": "昔、この町には多くの[商人]が住んでいた。",
+"de": "Früher lebten in dieser Stadt viele Kaufleute.",
+"r": "{昔|むかし}、この{町|まち}には{多|おお}くの[{商人|しょうにん}]が{住|す}んでいた。",
+"bedeutung": "Händler, Kaufmann"
+},
+"商品|しょうひん": {
+"s": "新しい[商品]が店に並んでいる。",
+"de": "Neue Waren liegen im Laden aus.",
+"r": "{新|あたら}しい[{商品|しょうひん}]が{店|みせ}に{並|なら}んでいる。",
+"bedeutung": "Ware, Produkt"
+},
+"商売|しょうばい": {
+"s": "祖父は魚を売る[商売]をしていた。",
+"de": "Mein Großvater hat mit Fisch gehandelt.",
+"r": "{祖父|そふ}は{魚|さかな}を{売|う}る[{商売|しょうばい}]をしていた。",
+"bedeutung": "Handel, Geschäft"
+},
+"商店|しょうてん": {
+"s": "駅前には小さな[商店]が並んでいる。",
+"de": "Vor dem Bahnhof reiht sich ein kleines Geschäft an das andere.",
+"r": "{駅前|えきまえ}には{小|ちい}さな[{商店|しょうてん}]が{並|なら}んでいる。",
+"bedeutung": "Laden, Geschäft"
+},
+"商業|しょうぎょう": {
+"s": "この地区は[商業]が盛んだ。",
+"de": "In diesem Viertel blüht der Handel.",
+"r": "この{地区|ちく}は[{商業|しょうぎょう}]が{盛|さか}んだ。",
+"bedeutung": "Handel, Gewerbe"
+},
+"商社|しょうしゃ": {
+"s": "姉は東京の[商社]で働いている。",
+"de": "Meine ältere Schwester arbeitet bei einem Handelshaus in Tokio.",
+"r": "{姉|あね}は{東京|とうきょう}の[{商社|しょうしゃ}]で{働|はたら}いている。",
+"bedeutung": "Handelsfirma, Handelshaus"
+}
+}

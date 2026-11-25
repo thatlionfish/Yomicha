@@ -1,0 +1,355 @@
+{
+  "id": "2026-11-26-asagohan-2",
+  "date": "2026-11-26",
+  "topic": "jlpt",
+  "type": "meinung",
+  "stufe": 2,
+  "titleDe": "Meinung: Wenigstens ein kleines Frühstück",
+  "title": [
+    {"t": "朝ごはん", "r": "あさごはん", "ruby": [["朝", "あさ"], ["ごはん", ""]], "g": "Frühstück", "j": 5},
+    {"t": "を"},
+    {"t": "少し", "r": "すこし", "ruby": [["少", "すこ"], ["し", ""]], "g": "ein wenig; 少しでも = wenigstens ein bisschen", "j": 5},
+    {"t": "でも", "g": "(auch) nur; 少しでも = wenigstens ein bisschen", "j": 5}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "以前", "r": "いぜん", "g": "früher; 以前の私 = ich früher", "j": 3},
+        {"t": "の"},
+        {"t": "私", "r": "わたし", "g": "ich", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "朝ごはん", "r": "あさごはん", "ruby": [["朝", "あさ"], ["ごはん", ""]], "g": "Frühstück", "j": 5},
+        {"t": "を"},
+        {"t": "ほとんど", "g": "fast; mit Verneinung: fast nie, kaum", "j": 4},
+        {"t": "食べません", "r": "たべません", "ruby": [["食", "た"], ["べません", ""]], "b": "食べる", "g": "essen", "j": 5},
+        {"t": "でし", "b": "です"},
+        {"t": "た"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "少し", "r": "すこし", "ruby": [["少", "すこ"], ["し", ""]], "g": "ein wenig; 少しでも = wenigstens ein bisschen", "j": 5},
+        {"t": "でも", "g": "(auch) nur; 少しでも = wenigstens ein bisschen", "j": 5},
+        {"t": "長く", "r": "ながく", "ruby": [["長", "なが"], ["く", ""]], "b": "長い", "g": "lange", "j": 5},
+        {"t": "寝ていたかった", "r": "ねていたかった", "ruby": [["寝", "ね"], ["ていたかった", ""]], "b": "寝る", "g": "schlafen, ins Bett gehen", "j": 5},
+        {"t": "から"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "でも", "g": "aber", "j": 5},
+        {"t": "、"},
+        {"t": "食べない", "r": "たべない", "ruby": [["食", "た"], ["べない", ""]], "b": "食べる", "g": "essen", "j": 5},
+        {"t": "と"},
+        {"t": "、"},
+        {"t": "授業", "r": "じゅぎょう", "g": "Unterricht", "j": 5},
+        {"t": "で"},
+        {"t": "頭", "r": "あたま", "g": "Kopf", "j": 5},
+        {"t": "が"},
+        {"t": "よく", "g": "gut", "j": 5},
+        {"t": "働きません", "r": "はたらきません", "ruby": [["働", "はたら"], ["きません", ""]], "b": "働く", "g": "arbeiten; 頭が働く = der Kopf ist wach, man kann gut denken", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "おなか", "g": "Bauch; おなかがすく = Hunger bekommen", "j": 5},
+        {"t": "が"},
+        {"t": "すいた", "b": "すく", "g": "leer werden; おなかがすく = Hunger bekommen", "j": 4, "gr": "g1"},
+        {"t": "せい", "g": "Schuld; 〜せいで = wegen (etwas Unangenehmem)", "j": 5, "gr": "g1"},
+        {"t": "で", "gr": "g1"},
+        {"t": "、"},
+        {"t": "昼ご飯", "r": "ひるごはん", "ruby": [["昼", "ひる"], ["ご", ""], ["飯", "はん"]], "g": "Mittagessen", "j": 5},
+        {"t": "の"},
+        {"t": "こと", "g": "Sache; 昼ご飯のこと = das Mittagessen (als Gedanke)", "j": 4},
+        {"t": "ばかり", "g": "nur, ständig"},
+        {"t": "考えて", "r": "かんがえて", "ruby": [["考", "かんが"], ["えて", ""]], "b": "考える", "g": "denken, nachdenken", "j": 4, "gr": "g2"},
+        {"t": "しまいました", "b": "しまう", "g": "(unabsichtlich, leider) …", "j": 4, "gr": "g2"},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "そこ", "g": "dort; そこで = deshalb, also", "j": 5},
+        {"t": "で"},
+        {"t": "、"},
+        {"t": "この", "g": "dies(e); この春から = seit diesem Frühling", "j": 5},
+        {"t": "春", "r": "はる", "g": "Frühling", "j": 5},
+        {"t": "から"},
+        {"t": "、"},
+        {"t": "寝る", "r": "ねる", "ruby": [["寝", "ね"], ["る", ""]], "g": "schlafen, ins Bett gehen", "j": 5},
+        {"t": "前", "r": "まえ", "g": "vor; 寝る前に = vor dem Schlafengehen", "j": 5},
+        {"t": "に"},
+        {"t": "おにぎり", "g": "Onigiri (Reisbällchen)"},
+        {"t": "を"},
+        {"t": "作る", "r": "つくる", "ruby": [["作", "つく"], ["る", ""]], "g": "machen, zubereiten", "j": 5},
+        {"t": "こと", "g": "〜ことにする = sich entschließen zu …", "j": 4},
+        {"t": "に"},
+        {"t": "しました", "b": "する", "g": "machen; 〜ことにする = sich entschließen zu …", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "朝", "r": "あさ", "g": "Morgen, morgens", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "それ", "g": "das (hier: die Onigiri)", "j": 5},
+        {"t": "と"},
+        {"t": "温かい", "r": "あたたかい", "ruby": [["温", "あたた"], ["かい", ""]], "g": "warm", "j": 3},
+        {"t": "みそ", "g": "Miso (Paste aus vergorenen Sojabohnen)", "j": 4},
+        {"t": "しる", "g": "Suppe; みそしる = Misosuppe", "j": 5},
+        {"t": "を"},
+        {"t": "食べる", "r": "たべる", "ruby": [["食", "た"], ["べる", ""]], "g": "essen", "j": 5},
+        {"t": "だけ", "g": "nur"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "食べる", "r": "たべる", "ruby": [["食", "た"], ["べる", ""]], "g": "essen", "j": 5},
+        {"t": "時間", "r": "じかん", "g": "Zeit", "j": 5},
+        {"t": "は"},
+        {"t": "十分", "r": "じゅっぷん", "g": "zehn Minuten", "j": 4},
+        {"t": "ぐらい", "g": "ungefähr"},
+        {"t": "です"},
+        {"t": "が"},
+        {"t": "、"},
+        {"t": "授業中", "r": "じゅぎょうちゅう", "g": "während des Unterrichts", "j": 5},
+        {"t": "に"},
+        {"t": "眠く", "r": "ねむく", "ruby": [["眠", "ねむ"], ["く", ""]], "b": "眠い", "g": "müde, schläfrig", "j": 4, "gr": "g3"},
+        {"t": "ならなく", "b": "なる", "g": "werden", "j": 5, "gr": "g3"},
+        {"t": "なりました", "b": "なる", "g": "werden", "j": 5, "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "朝ごはん", "r": "あさごはん", "ruby": [["朝", "あさ"], ["ごはん", ""]], "g": "Frühstück", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "立派な", "r": "りっぱな", "ruby": [["立派", "りっぱ"], ["な", ""]], "b": "立派", "g": "großartig, aufwendig"},
+        {"t": "料理", "r": "りょうり", "g": "Gericht, Essen", "j": 5},
+        {"t": "で", "b": "だ"},
+        {"t": "なくて", "b": "ない", "g": "nicht …; 〜でなくてもいい = muss nicht … sein", "j": 5},
+        {"t": "も"},
+        {"t": "いい", "g": "gut; 〜なくてもいい = muss nicht … sein", "j": 5},
+        {"t": "と"},
+        {"t": "思います", "r": "おもいます", "ruby": [["思", "おも"], ["います", ""]], "b": "思う", "g": "denken, finden", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "パン", "g": "Brot, Brötchen", "j": 5},
+        {"t": "一つ", "r": "ひとつ", "ruby": [["一", "ひと"], ["つ", ""]], "g": "ein Stück", "j": 5},
+        {"t": "や"},
+        {"t": "バナナ", "g": "Banane", "gr": "g4"},
+        {"t": "一本", "r": "いっぽん", "g": "ein (längliches) Stück", "gr": "g4", "j": 5},
+        {"t": "なら", "b": "だ", "gr": "g4"},
+        {"t": "、"},
+        {"t": "忙しい", "r": "いそがしい", "ruby": [["忙", "いそが"], ["しい", ""]], "g": "beschäftigt", "j": 5},
+        {"t": "人", "r": "ひと", "g": "Mensch", "j": 5},
+        {"t": "も"},
+        {"t": "用意", "r": "ようい", "g": "Vorbereitung; 用意する = vorbereiten, bereitlegen", "j": 4},
+        {"t": "できる", "g": "können", "j": 5},
+        {"t": "でしょう", "b": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "大切な", "r": "たいせつな", "ruby": [["大切", "たいせつ"], ["な", ""]], "b": "大切", "g": "wichtig", "j": 5},
+        {"t": "の"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "毎朝", "r": "まいあさ", "g": "jeden Morgen", "j": 5},
+        {"t": "少し", "r": "すこし", "ruby": [["少", "すこ"], ["し", ""]], "g": "ein wenig; 少しでも = wenigstens ein bisschen", "j": 5},
+        {"t": "でも", "g": "(auch) nur; 少しでも = wenigstens ein bisschen", "j": 5},
+        {"t": "何か", "r": "なにか", "ruby": [["何", "なに"], ["か", ""]], "g": "etwas", "j": 3},
+        {"t": "食べる", "r": "たべる", "ruby": [["食", "た"], ["べる", ""]], "g": "essen", "j": 5},
+        {"t": "こと", "g": "das (Tun); 食べること = dass man isst", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s10.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜せいで",
+      "j": 3,
+      "de": "Satz in der た-Form (oder Nomen + の) + せいで: „weil … (leider)“. Der Grund führt zu etwas Unangenehmem. Mit etwas Gutem nimmt man おかげで.",
+      "ex": "{雨|あめ}が{降|ふ}ったせいで、{試合|しあい}がなくなりました。",
+      "exDe": "Weil es geregnet hat, ist das Spiel leider ausgefallen."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜てしまう",
+      "j": 4,
+      "de": "て-Form + しまう: etwas passiert ungewollt oder man bedauert es. 考えてしまいました = ich musste ständig daran denken (obwohl ich nicht wollte).",
+      "ex": "{電車|でんしゃ}の{中|なか}で{寝|ね}てしまいました。",
+      "exDe": "Ich bin leider in der Bahn eingeschlafen."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜なくなる",
+      "j": 4,
+      "de": "ない-Form ohne い + くなる: „nicht mehr …“ (eine Veränderung). 眠くならなくなりました = ich werde nicht mehr müde.",
+      "ex": "{最近|さいきん}、{兄|あに}はテレビを{見|み}なくなりました。",
+      "exDe": "In letzter Zeit sieht mein großer Bruder nicht mehr fern."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜なら",
+      "j": 4,
+      "de": "Nomen + なら: „wenn es (nur) … ist“. Man greift etwas als Beispiel oder Bedingung heraus.",
+      "ex": "{日曜日|にちようび}なら、{時間|じかん}があります。",
+      "exDe": "Wenn es Sonntag ist, habe ich Zeit."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "この{文章|ぶんしょう}を書いた人は、前はほとんど朝ごはんを食べませんでしたが、それはなぜですか。",
+      "qDe": "Die Person, die den Text geschrieben hat, hat früher kaum gefrühstückt – warum?",
+      "options": ["朝の{授業|じゅぎょう}が早くて、おにぎりを作れなかったから", "朝は、できるだけ長くねむっていたかったから", "朝は、いつもおなかがすいていなかったから", "昼ご飯を、たくさん食べたいと考えていたから"],
+      "answer": 1,
+      "explain": "Satz 2 nennt den Grund zu Satz 1: Sie wollte wenigstens ein bisschen länger schlafen. 少しでも長く寝ていたかった wird in der richtigen Antwort mit できるだけ長くねむっていたかった gesagt.",
+      "evidence": [0, 1],
+      "why": [
+        {
+          "de": "Von einem frühen Unterricht oder davon, dass keine Zeit für Onigiri war, steht nichts da. Onigiri macht die Person erst seit diesem Frühling.",
+          "ja": "{授業|じゅぎょう}が早いことは書いてありません。おにぎりはこの春から作っています。",
+          "stellen": [[4, "この春から"]]
+        },
+        {
+          "de": "Richtig: できるだけ長くねむっていたかった sagt dasselbe wie 少しでも長く寝ていたかった.",
+          "ja": "{文章|ぶんしょう}の「少しでも長く{寝|ね}ていたかった」と同じ意味です。",
+          "stellen": [[1, "少しでも長く寝ていたかった"]]
+        },
+        {
+          "de": "Im Gegenteil: Ohne Frühstück bekam die Person Hunger.",
+          "ja": "{反対|はんたい}です。食べないと、おなかがすきました。",
+          "stellen": [[3, "おなかがすいたせいで"]]
+        },
+        {
+          "de": "Ans Mittagessen musste die Person wegen des Hungers denken. Das war die Folge, nicht der Grund.",
+          "ja": "昼ご飯のことを考えたのは、おなかがすいたからです。食べなかった{理由|りゆう}ではありません。",
+          "stellen": [[3, "昼ご飯のことばかり考えてしまいました"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "今の朝ごはんについて、本文の{内容|ないよう}と{合|あ}っているものはどれですか。",
+      "qDe": "Was stimmt laut Text über das Frühstück heute?",
+      "options": ["朝早く起きて、ごはんと料理を{十分|じゅうぶん}に作っている", "{忙|いそが}しいので、パン一つとバナナ一本ですませている", "朝は食べないで、昼にみそしるを飲んでいる", "前の{晩|ばん}に{自分|じぶん}で{準備|じゅんび}したものも食べている"],
+      "answer": 3,
+      "explain": "Satz 5 und 6 zusammen: Die Onigiri macht die Person vor dem Schlafengehen, morgens isst sie sie (それ) mit Misosuppe. 前の晩に自分で準備したもの umschreibt 寝る前におにぎりを作る.",
+      "evidence": [4, 5],
+      "why": [
+        {
+          "de": "Die Onigiri werden schon abends gemacht. 十分 steht im Text für die zehn Minuten zum Essen, nicht für „reichlich“.",
+          "ja": "おにぎりは{寝|ね}る前に作ります。朝早く作るのではありません。",
+          "stellen": [[4, "寝る前におにぎりを作る"]]
+        },
+        {
+          "de": "Brot und Banane sind nur ein Vorschlag für beschäftigte Leute – nicht das, was die Person selbst isst.",
+          "ja": "パンとバナナは、{忙|いそが}しい人のための{例|れい}です。",
+          "stellen": [[8, "忙しい人も用意できるでしょう"]]
+        },
+        {
+          "de": "Die Misosuppe isst die Person morgens, und sie frühstückt jetzt jeden Tag etwas.",
+          "ja": "みそしるは、朝に食べています。",
+          "stellen": [[5, "朝は、それと温かいみそしるを食べる"]]
+        },
+        {
+          "de": "Richtig: 前の晩に自分で準備したもの meint die Onigiri, die vor dem Schlafen gemacht werden; それ greift sie am Morgen wieder auf.",
+          "ja": "{寝|ね}る前に作ったおにぎりを、朝に食べています。",
+          "stellen": [[4, "寝る前におにぎりを作る"], [5, "それ"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "この{文章|ぶんしょう}を書いた人の考えに{合|あ}うものはどれですか。",
+      "qDe": "Was passt zur Meinung der Person, die den Text geschrieben hat?",
+      "options": ["かんたんなものでも、一日の始まりに食べたほうがいい", "朝ごはんは、時間をかけて{立派|りっぱ}な料理を作るべきだ", "{忙|いそが}しい人は、朝ごはんより{寝|ね}る時間を大切にしたほうがいい", "{授業中|じゅぎょうちゅう}にねむくならないように、早く{寝|ね}たほうがいい"],
+      "answer": 0,
+      "explain": "Satz 8 bis 10: Es muss kein aufwendiges Essen sein; wichtig ist, jeden Morgen wenigstens ein bisschen zu essen. かんたんなものでも、一日の始まりに食べる ist dasselbe mit anderen Worten.",
+      "evidence": [7, 8, 9],
+      "why": [
+        {
+          "de": "Richtig: かんたんなもの steht für das Brötchen oder die Banane, 一日の始まりに食べる für 毎朝少しでも何か食べる.",
+          "ja": "「毎朝少しでも何か食べる」ことが大切だと書いてあります。",
+          "stellen": [[9, "毎朝少しでも何か食べること"]]
+        },
+        {
+          "de": "Genau das Gegenteil: Es muss kein aufwendiges Gericht sein.",
+          "ja": "{立派|りっぱ}な料理でなくてもいいと書いてあります。",
+          "stellen": [[7, "立派な料理でなくてもいい"]]
+        },
+        {
+          "de": "Länger zu schlafen war früher der Grund, nicht zu frühstücken. Heute findet die Person, dass man morgens etwas essen soll.",
+          "ja": "{忙|いそが}しい人も何か食べるのがいいと考えています。",
+          "stellen": [[8, "忙しい人も用意できる"]]
+        },
+        {
+          "de": "Dass man früher ins Bett gehen soll, steht nicht im Text. Gegen die Müdigkeit half das Frühstück.",
+          "ja": "早く{寝|ね}ることは書いてありません。",
+          "stellen": [[6, "授業中に眠くならなくなりました"]]
+        }
+      ]
+    },
+    {
+      "kind": "sprache",
+      "q": "「用意」の{読|よ}み{方|かた}として{最|もっと}もよいものはどれですか。",
+      "qDe": "Was ist die beste Lesung für 用意?",
+      "options": ["よい", "ゆうい", "ようい", "よういい"],
+      "answer": 2,
+      "explain": "用意 liest man ようい (Vorbereitung; 用意する = vorbereiten): 用 mit langem よう, 意 kurz い.",
+      "evidence": [8],
+      "why": [
+        {
+          "de": "Hier fehlt der lange Vokal: 用 liest man よう, nicht よ.",
+          "ja": "「用（よう）」は長い音です。",
+          "stellen": [[8, "用意"]]
+        },
+        {
+          "de": "用 heißt よう, nicht ゆう. ゆう liest man zum Beispiel in 有名（ゆうめい）.",
+          "ja": "「用」は「ゆう」ではなく「よう」です。",
+          "stellen": [[8, "用意"]]
+        },
+        {
+          "de": "Richtig: よう (用) + い (意).",
+          "ja": "「用（よう）」と「意（い）」で「ようい」です。",
+          "stellen": [[8, "用意"]]
+        },
+        {
+          "de": "意 ist kurz: nur ein い.",
+          "ja": "「意（い）」は短い音です。",
+          "stellen": [[8, "用意"]]
+        }
+      ]
+    }
+  ],
+  "sources": []
+}

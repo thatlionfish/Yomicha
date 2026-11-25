@@ -4,6 +4,12 @@
 "de": "Es wäre wirklich eine große Hilfe, wenn du mir hilfst.",
 "r": "{手伝|てつだ}ってもらえると{本当|ほんとう}に[{有難|ありがた}い]。"
 },
+"期限|きげん": {
+"s": "レポートの提出[期限]は金曜日だ。",
+"de": "Die Abgabefrist für den Bericht ist Freitag.",
+"r": "レポートの{提出|ていしゅつ}[{期限|きげん}]は{金曜日|きんようび}だ。",
+"bedeutung": "Frist, Termin"
+},
 "本|ほん": {
 "s": "寝る前に、いつも[本]を少し読む。",
 "de": "Vor dem Schlafen lese ich immer ein wenig in einem Buch.",

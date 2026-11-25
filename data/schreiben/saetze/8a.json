@@ -1,4 +1,10 @@
 {
+"記念|きねん": {
+"s": "旅行の[記念]に写真を撮った。",
+"de": "Zur Erinnerung an die Reise haben wir ein Foto gemacht.",
+"r": "{旅行|りょこう}の[{記念|きねん}]に{写真|しゃしん}を{撮|と}った。",
+"bedeutung": "Andenken, Gedenken, Jubiläum"
+},
 "訪ねる|たずねる": {
 "s": "久しぶりに昔の先生を[訪ねた]。",
 "de": "Nach langer Zeit habe ich meinen früheren Lehrer besucht.",

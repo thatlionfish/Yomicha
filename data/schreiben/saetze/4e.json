@@ -160,11 +160,29 @@
 "r": "{兄|あに}が{学校|がっこう}の{劇|げき}で[{主演|しゅえん}]することになった。",
 "bedeutung": "Hauptrolle"
 },
+"乗せる|のせる": {
+"s": "父は私を車に[乗せて]駅まで送ってくれた。",
+"de": "Mein Vater hat mich im Auto mitgenommen und zum Bahnhof gebracht.",
+"r": "{父|ちち}は{私|わたし}を{車|くるま}に[{乗|の}せて]{駅|えき}まで{送|おく}ってくれた。",
+"bedeutung": "mitnehmen (im Fahrzeug), auf etwas legen"
+},
+"乗り物|のりもの": {
+"s": "弟は[乗り物]の本が大好きだ。",
+"de": "Mein kleiner Bruder liebt Bücher über Fahrzeuge.",
+"r": "{弟|おとうと}は[{乗|の}り{物|もの}]の{本|ほん}が{大好|だいす}きだ。",
+"bedeutung": "Fahrzeug, Verkehrsmittel"
+},
 "乗る|のる": {
 "s": "毎朝七時の電車に[乗る]。",
 "de": "Jeden Morgen nehme ich den Zug um sieben.",
 "r": "{毎朝|まいあさ}{七時|しちじ}の{電車|でんしゃ}に[{乗|の}る]。",
 "bedeutung": "einsteigen, fahren (mit)"
+},
+"乗車|じょうしゃ": {
+"s": "[乗車]する前に、切符を買ってください。",
+"de": "Bitte kaufen Sie vor dem Einsteigen eine Fahrkarte.",
+"r": "[{乗車|じょうしゃ}]する{前|まえ}に、{切符|きっぷ}を{買|か}ってください。",
+"bedeutung": "Einsteigen (in Zug oder Bus), Mitfahren"
 },
 "了解|りょうかい": {
 "s": "メールの内容、[了解]しました。",

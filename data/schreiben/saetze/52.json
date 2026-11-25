@@ -11,6 +11,18 @@
 "r": "このナイフの[{刃|は}]はよく{切|き}れる。",
 "bedeutung": "Klinge, Schneide"
 },
+"列|れつ": {
+"s": "店の前に長い[列]ができている。",
+"de": "Vor dem Laden hat sich eine lange Schlange gebildet.",
+"r": "{店|みせ}の{前|まえ}に{長|なが}い[{列|れつ}]ができている。",
+"bedeutung": "Reihe, Schlange"
+},
+"列車|れっしゃ": {
+"s": "大雪のため、[列車]が一時間遅れた。",
+"de": "Wegen des starken Schneefalls hatte der Zug eine Stunde Verspätung.",
+"r": "{大雪|おおゆき}のため、[{列車|れっしゃ}]が{一時間|いちじかん}{遅|おく}れた。",
+"bedeutung": "Zug (Eisenbahn)"
+},
 "判|はん": {
 "s": "この雑誌は[判]が大きい。",
 "de": "Diese Zeitschrift hat ein großes Format.",
@@ -48,6 +60,12 @@
 "de": "Die Interessen beider Länder stimmten überein, und die Gespräche kamen voran.",
 "r": "{両国|りょうこく}の[{利害|りがい}]が{一致|いっち}して、{話|はな}し{合|あ}いが{進|すす}んだ。"
 },
+"制限|せいげん": {
+"s": "この道は速度が[制限]されている。",
+"de": "Auf dieser Straße ist die Geschwindigkeit begrenzt.",
+"r": "この{道|みち}は{速度|そくど}が[{制限|せいげん}]されている。",
+"bedeutung": "Beschränkung, Begrenzung"
+},
 "割と|わりと": {
 "s": "この店の料理は[割と]安くておいしい。",
 "de": "Das Essen in diesem Restaurant ist ziemlich günstig und lecker.",
@@ -77,5 +95,11 @@
 "s": "学生証を見せると[割引]が受けられる。",
 "de": "Wenn man den Studentenausweis zeigt, bekommt man einen Rabatt.",
 "r": "{学生証|がくせいしょう}を{見|み}せると[{割引|わりびき}]が{受|う}けられる。"
+},
+"労働|ろうどう": {
+"s": "長時間の[労働]は体によくない。",
+"de": "Langes Arbeiten ist nicht gut für den Körper.",
+"r": "{長時間|ちょうじかん}の[{労働|ろうどう}]は{体|からだ}によくない。",
+"bedeutung": "Arbeit (körperlich, als Leistung)"
 }
 }

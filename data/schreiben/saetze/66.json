@@ -19,6 +19,12 @@
 "de": "Der Stundenplan für das neue Semester wurde verteilt.",
 "r": "{新|あたら}しい{学期|がっき}の[{時間割|じかんわり}]が{配|くば}られた。"
 },
+"景色|けしき": {
+"s": "山の上から見た[景色]はすばらしかった。",
+"de": "Die Aussicht vom Berg war herrlich.",
+"r": "{山|やま}の{上|うえ}から{見|み}た[{景色|けしき}]はすばらしかった。",
+"bedeutung": "Landschaft, Aussicht"
+},
 "暑い|あつい": {
 "s": "今年の夏は本当に[暑い]ね。",
 "de": "Der Sommer ist dieses Jahr wirklich heiß, nicht wahr?",

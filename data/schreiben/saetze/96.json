@@ -1,4 +1,28 @@
 {
+"限り|かぎり": {
+"s": "私が知る[限り]、あの店は今日休みだ。",
+"de": "Soweit ich weiß, hat der Laden heute geschlossen.",
+"r": "{私|わたし}が{知|し}る[{限|かぎ}り]、あの{店|みせ}は{今日|きょう}{休|やす}みだ。",
+"bedeutung": "Grenze; 〜限り = soweit, solange"
+},
+"限る|かぎる": {
+"s": "参加できるのは学生に[限られて]いる。",
+"de": "Teilnehmen dürfen nur Studierende.",
+"r": "{参加|さんか}できるのは{学生|がくせい}に[{限|かぎ}られて]いる。",
+"bedeutung": "beschränken, begrenzen"
+},
+"限度|げんど": {
+"s": "いくら冗談でも[限度]がある。",
+"de": "Auch beim Scherzen gibt es eine Grenze.",
+"r": "いくら{冗談|じょうだん}でも[{限度|げんど}]がある。",
+"bedeutung": "Grenze, Höchstmaß"
+},
+"限界|げんかい": {
+"s": "もう体力の[限界]だと感じた。",
+"de": "Ich spürte, dass ich körperlich an meiner Grenze war.",
+"r": "もう{体力|たいりょく}の[{限界|げんかい}]だと{感|かん}じた。",
+"bedeutung": "Grenze (des Möglichen)"
+},
 "難|なん": {
 "s": "このかばんは、少し重いのが[難]だ。",
 "de": "Der Nachteil dieser Tasche ist, dass sie etwas schwer ist.",
