@@ -1,0 +1,271 @@
+{
+  "id": "2026-11-17-shift-3",
+  "date": "2026-11-17",
+  "topic": "jlpt",
+  "type": "email",
+  "stufe": 3,
+  "titleDe": "E-Mail: Schichtwünsche für Dezember abgeben",
+  "title": [
+    {"t": "十二月", "r": "じゅうにがつ", "g": "Dezember"},
+    {"t": "の"},
+    {"t": "シフト", "g": "Schicht, Schichtplan (bei der Arbeit)"},
+    {"t": "希望", "r": "きぼう", "g": "Wunsch; シフト希望 = Schichtwunsch", "j": 3},
+    {"t": "の"},
+    {"t": "提出", "r": "ていしゅつ", "g": "Abgabe, Einreichen", "j": 3},
+    {"t": "に"},
+    {"t": "ついて", "b": "つく", "g": "について = über, zu, bezüglich", "j": 5}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "アルバイト", "g": "Aushilfsjob, Teilzeitkraft", "j": 4},
+        {"t": "の"},
+        {"t": "みなさん", "g": "alle (Anrede)", "j": 5},
+        {"t": "、"},
+        {"t": "いつも", "g": "immer", "j": 5},
+        {"t": "お疲れさま", "r": "おつかれさま", "ruby": [["お", ""], ["疲", "つか"], ["れさま", ""]], "g": "お疲れさまです = Danke für Ihre Arbeit (Gruß unter Kollegen)"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "店長", "r": "てんちょう", "g": "Filialleiter, Ladenchefin"},
+        {"t": "の"},
+        {"t": "森", "r": "もり", "g": "Mori (Familienname)", "j": 4, "say": "もり"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "十二月", "r": "じゅうにがつ", "g": "Dezember"},
+        {"t": "は"},
+        {"t": "クリスマスケーキ", "g": "Weihnachtstorte"},
+        {"t": "の"},
+        {"t": "予約", "r": "よやく", "g": "Vorbestellung, Reservierung", "j": 4},
+        {"t": "が"},
+        {"t": "増える", "r": "ふえる", "ruby": [["増", "ふ"], ["える", ""]], "g": "zunehmen, mehr werden", "j": 4},
+        {"t": "ため", "g": "weil, wegen (schriftlich)", "j": 4},
+        {"t": "、"},
+        {"t": "例年", "r": "れいねん", "g": "die Jahre davor, ein normales Jahr; 例年より = als in anderen Jahren"},
+        {"t": "より", "g": "als (beim Vergleich)"},
+        {"t": "忙しく", "r": "いそがしく", "ruby": [["忙", "いそが"], ["しく", ""]], "b": "忙しい", "g": "beschäftigt, viel zu tun; 忙しくなる = viel zu tun bekommen", "j": 5},
+        {"t": "なる", "g": "werden", "j": 5},
+        {"t": "はず", "g": "〜はずだ = müsste, sollte eigentlich (sichere Erwartung)", "j": 4, "gr": "g1"},
+        {"t": "です", "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "そこ", "g": "dort; そこで = deshalb", "j": 5},
+        {"t": "で"},
+        {"t": "、"},
+        {"t": "今年", "r": "ことし", "g": "dieses Jahr", "j": 5},
+        {"t": "は"},
+        {"t": "アルバイト", "g": "Aushilfsjob, Teilzeitkraft", "j": 4},
+        {"t": "を"},
+        {"t": "二人", "r": "ふたり", "g": "zwei Personen", "j": 5},
+        {"t": "増やしました", "r": "ふやしました", "ruby": [["増", "ふ"], ["やしました", ""]], "b": "増やす", "g": "erhöhen, vermehren; アルバイトを増やす = mehr Aushilfen einstellen", "j": 3},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "しかし", "g": "jedoch, aber", "j": 5},
+        {"t": "、"},
+        {"t": "仕事", "r": "しごと", "g": "Arbeit", "j": 5},
+        {"t": "に"},
+        {"t": "慣れる", "r": "なれる", "ruby": [["慣", "な"], ["れる", ""]], "g": "sich gewöhnen; 仕事に慣れる = sich einarbeiten", "j": 4},
+        {"t": "まで", "g": "bis"},
+        {"t": "に"},
+        {"t": "は"},
+        {"t": "時間", "r": "じかん", "g": "Zeit", "j": 5},
+        {"t": "が"},
+        {"t": "かかる", "g": "(Zeit) brauchen, dauern", "j": 5},
+        {"t": "ので", "g": "weil, da"},
+        {"t": "、"},
+        {"t": "経験", "r": "けいけん", "g": "Erfahrung", "j": 4},
+        {"t": "の"},
+        {"t": "ある", "g": "haben, es gibt; 経験のある = erfahren", "j": 5},
+        {"t": "方", "r": "かた", "g": "Person (höflich)", "j": 5},
+        {"t": "に"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "できるだけ", "g": "so viel wie möglich", "j": 4},
+        {"t": "多く", "r": "おおく", "ruby": [["多", "おお"], ["く", ""]], "b": "多い", "g": "viel; 多く = viel, oft", "j": 5},
+        {"t": "シフト", "g": "Schicht, Schichtplan (bei der Arbeit)"},
+        {"t": "に"},
+        {"t": "入って", "r": "はいって", "ruby": [["入", "はい"], ["って", ""]], "b": "入る", "g": "eintreten; シフトに入る = eine Schicht übernehmen", "j": 5, "gr": "g2"},
+        {"t": "いただけない", "b": "いただける", "g": "〜ていただけないでしょうか = könnten Sie vielleicht …?", "gr": "g2"},
+        {"t": "でしょう", "b": "です", "g": "wohl, vermutlich; 〜でしょうか = (höfliche Frage)", "gr": "g2"},
+        {"t": "か", "gr": "g2"},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "働ける", "r": "はたらける", "ruby": [["働", "はたら"], ["ける", ""]], "g": "arbeiten können (Möglichkeitsform von 働く)"},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "と"},
+        {"t": "時間", "r": "じかん", "g": "Zeit", "j": 5},
+        {"t": "を"},
+        {"t": "、"},
+        {"t": "来週", "r": "らいしゅう", "g": "nächste Woche", "j": 5},
+        {"t": "の"},
+        {"t": "金曜日", "r": "きんようび", "g": "Freitag", "j": 5},
+        {"t": "まで", "g": "bis"},
+        {"t": "に"},
+        {"t": "この", "g": "dieser", "j": 5},
+        {"t": "メール", "g": "E-Mail"},
+        {"t": "に"},
+        {"t": "返信", "r": "へんしん", "g": "Antwort (auf eine Nachricht)"},
+        {"t": "して", "b": "する", "g": "tun, machen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "二十四日", "r": "にじゅうよんか", "g": "der 24. (Tag des Monats)"},
+        {"t": "と"},
+        {"t": "二十五日", "r": "にじゅうごにち", "g": "der 25. (Tag des Monats)"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "時給", "r": "じきゅう", "g": "Stundenlohn"},
+        {"t": "が"},
+        {"t": "百円", "r": "ひゃくえん", "g": "100 Yen", "j": 5},
+        {"t": "上がります", "r": "あがります", "ruby": [["上", "あ"], ["がります", ""]], "b": "上がる", "g": "steigen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "なお", "g": "außerdem, übrigens (in Mitteilungen)", "j": 3},
+        {"t": "、"},
+        {"t": "急", "r": "きゅう", "g": "plötzlich; 急に = kurzfristig, plötzlich", "j": 4},
+        {"t": "に", "b": "だ"},
+        {"t": "休む", "r": "やすむ", "ruby": [["休", "やす"], ["む", ""]], "g": "fehlen, freinehmen", "j": 5},
+        {"t": "場合", "r": "ばあい", "g": "Fall; 〜場合は = falls …", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "メール", "g": "E-Mail"},
+        {"t": "の"},
+        {"t": "代わり", "r": "かわり", "ruby": [["代", "か"], ["わり", ""]], "g": "Ersatz; 〜の代わりに = statt …", "j": 4, "gr": "g3"},
+        {"t": "に", "gr": "g3"},
+        {"t": "、"},
+        {"t": "必ず", "r": "かならず", "ruby": [["必", "かなら"], ["ず", ""]], "g": "unbedingt, auf jeden Fall", "j": 4},
+        {"t": "電話", "r": "でんわ", "g": "Telefon, Anruf", "j": 5},
+        {"t": "で"},
+        {"t": "連絡", "r": "れんらく", "g": "Bescheid, Meldung", "j": 4},
+        {"t": "して", "b": "する", "g": "tun, machen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "店", "r": "みせ", "g": "Geschäft, Laden", "j": 5},
+        {"t": "は"},
+        {"t": "三十一日", "r": "さんじゅういちにち", "g": "der 31. (Tag des Monats)"},
+        {"t": "から", "g": "von, ab"},
+        {"t": "一月", "r": "いちがつ", "g": "Januar", "j": 5},
+        {"t": "三日", "r": "みっか", "g": "der 3. (Tag des Monats)", "j": 5},
+        {"t": "まで", "g": "bis"},
+        {"t": "休業", "r": "きゅうぎょう", "g": "Betriebsruhe, geschlossen", "j": 2},
+        {"t": "と"},
+        {"t": "なります", "b": "なる", "g": "werden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "よろしく", "g": "よろしくお願いします = vielen Dank im Voraus (Grußformel)", "j": 3},
+        {"t": "お願い", "r": "おねがい", "ruby": [["お", ""], ["願", "ねが"], ["い", ""]], "b": "お願う", "g": "Bitte"},
+        {"t": "します", "b": "する", "g": "tun, machen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s10.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜はずだ",
+      "j": 3,
+      "de": "Kurzform + はずだ / はずです: „müsste, sollte eigentlich …“. Der Sprecher ist sich aus gutem Grund ziemlich sicher. Hier: Weil mehr Torten bestellt werden, wird es sicher voller als sonst.",
+      "ex": "{田中|たなか}さんは{八時|はちじ}に{出|で}たので、もう{駅|えき}に{着|つ}いているはずです。",
+      "exDe": "Herr Tanaka ist um acht losgegangen, er müsste schon am Bahnhof sein."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜ていただけないでしょうか",
+      "j": 3,
+      "de": "て-Form + いただけないでしょうか: sehr höfliche Bitte, „Könnten Sie vielleicht …?“. Noch höflicher als 〜てもらえませんか; typisch für E-Mails an Kolleginnen und Kunden.",
+      "ex": "{資料|しりょう}をもう{一度|いちど}{送|おく}っていただけないでしょうか。",
+      "exDe": "Könnten Sie mir die Unterlagen vielleicht noch einmal schicken?"
+    },
+    {
+      "id": "g3",
+      "pattern": "〜の代わりに",
+      "j": 3,
+      "de": "Nomen + の代わりに: „statt …, anstelle von …“. メールの代わりに電話で = statt per E-Mail lieber per Telefon.",
+      "ex": "{今日|きょう}は{米|こめ}の{代|か}わりにパンを{食|た}べました。",
+      "exDe": "Heute habe ich statt Reis Brot gegessen."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "十二月が例年より忙しくなるのはなぜか。",
+      "qDe": "Warum wird der Dezember voller als in anderen Jahren?",
+      "options": ["アルバイトが二人増えるから", "クリスマスケーキの予約が増えるから", "店が三十一日から休業するから", "時給が百円上がるから"],
+      "answer": 1,
+      "explain": "Satz 3: クリスマスケーキの予約が増えるため – mehr Vorbestellungen sind der Grund. Die zwei zusätzlichen Aushilfen (Satz 4) sind die Reaktion darauf, nicht der Grund.",
+      "evidence": [2, 3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "店長は、経験のあるアルバイトに何を頼んでいるか。",
+      "qDe": "Worum bittet der Chef die erfahrenen Aushilfen?",
+      "options": ["新しいアルバイトに仕事を教えること", "できるだけ多くシフトに入ること", "二十四日と二十五日に必ず働くこと", "新しいアルバイトに電話すること"],
+      "answer": 1,
+      "explain": "Satz 5: 経験のある方には、できるだけ多くシフトに入っていただけないでしょうか – so viele Schichten wie möglich. Die Neuen brauchen Zeit zum Einarbeiten.",
+      "evidence": [4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "急に休むときは、どうしなければならないか。",
+      "qDe": "Was muss man tun, wenn man kurzfristig fehlt?",
+      "options": ["メールで店長に{連絡|れんらく}する", "金曜日までにメールに返信する", "電話で{連絡|れんらく}する", "代わりに働く人を探す"],
+      "answer": 2,
+      "explain": "Satz 8: 急に休む場合は、メールの代わりに、必ず電話で連絡してください – nicht per E-Mail, sondern per Telefon.",
+      "evidence": [7]
+    },
+    {
+      "kind": "sprache",
+      "q": "「シフトに{入|はい}っていただけないでしょうか」と{同|おな}じ{意味|いみ}の{文|ぶん}はどれか。",
+      "qDe": "Welcher Satz bedeutet dasselbe wie „シフトに入っていただけないでしょうか“?",
+      "options": ["シフトに入ってはいけません", "シフトに入ってくれませんか", "シフトに入ったことがありますか", "シフトに入らなくてもいいです"],
+      "answer": 1,
+      "explain": "〜ていただけないでしょうか ist eine sehr höfliche Bitte (Satz 5). Weniger höflich, aber gleich in der Bedeutung: 〜てくれませんか = Würdest du bitte …?",
+      "evidence": [4]
+    }
+  ],
+  "sources": [],
+  "versions": {
+    "2": "texte/2026/11/2026-11-17-shift-2"
+  }
+}

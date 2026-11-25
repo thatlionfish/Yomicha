@@ -1,0 +1,22 @@
+{
+"難|なん": {
+"s": "このかばんは、少し重いのが[難]だ。",
+"de": "Der Nachteil dieser Tasche ist, dass sie etwas schwer ist.",
+"r": "このかばんは、{少|すこ}し{重|おも}いのが[{難|なん}]だ。"
+},
+"難い|がたい": {
+"s": "彼がうそをついたとは[信じ難い]。",
+"de": "Es ist schwer zu glauben, dass er gelogen hat.",
+"r": "{彼|かれ}がうそをついたとは[{信|しん}じ{難|がた}い]。"
+},
+"難しい|むずかしい": {
+"s": "この問題は思ったより[難しかった]。",
+"de": "Diese Aufgabe war schwieriger als gedacht.",
+"r": "この{問題|もんだい}は{思|おも}ったより[{難|むずか}しかった]。"
+},
+"電球|でんきゅう": {
+"s": "台所の[電球]が切れてしまった。",
+"de": "Die Glühbirne in der Küche ist durchgebrannt.",
+"r": "{台所|だいどころ}の[{電球|でんきゅう}]が{切|き}れてしまった。"
+}
+}

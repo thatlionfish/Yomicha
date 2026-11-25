@@ -1,0 +1,262 @@
+{
+  "id": "2026-11-13-gomi-2",
+  "date": "2026-11-13",
+  "topic": "jlpt",
+  "type": "infoblatt",
+  "stufe": 2,
+  "titleDe": "Den Müll richtig rausbringen",
+  "title": [
+    {"t": "ごみ", "g": "Müll", "j": 4},
+    {"t": "の"},
+    {"t": "正しい", "r": "ただしい", "ruby": [["正", "ただ"], ["しい", ""]], "g": "richtig", "j": 4},
+    {"t": "出し方", "r": "だしかた", "ruby": [["出", "だ"], ["し", ""], ["方", "かた"]], "g": "Art, (den Müll) rauszubringen"}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "市", "r": "し", "g": "Stadt (Verwaltung)", "j": 4},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "を"},
+        {"t": "三つ", "r": "みっつ", "ruby": [["三", "みっ"], ["つ", ""]], "g": "drei (Stück)", "j": 5},
+        {"t": "に"},
+        {"t": "分けて", "r": "わけて", "ruby": [["分", "わ"], ["けて", ""]], "b": "分ける", "g": "trennen, aufteilen", "j": 3},
+        {"t": "出す", "r": "だす", "ruby": [["出", "だ"], ["す", ""]], "g": "(Müll) rausbringen", "j": 5},
+        {"t": "こと", "g": "〜ことになっている = es ist geregelt, dass …", "j": 4, "gr": "g1"},
+        {"t": "に", "gr": "g1"},
+        {"t": "なっています", "b": "なる", "g": "werden", "j": 5, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "燃える", "r": "もえる", "ruby": [["燃", "も"], ["える", ""]], "g": "brennen; 燃えるごみ = brennbarer Müll", "j": 3},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "月曜日", "r": "げつようび", "g": "Montag", "j": 5},
+        {"t": "と", "g": "wenn"},
+        {"t": "木曜日", "r": "もくようび", "g": "Donnerstag", "j": 5},
+        {"t": "に"},
+        {"t": "出して", "r": "だして", "ruby": [["出", "だ"], ["して", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "台所", "r": "だいどころ", "g": "Küche", "j": 5},
+        {"t": "の"},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "、"},
+        {"t": "よごれた", "b": "よごれる", "g": "schmutzig werden; よごれた = schmutzig", "j": 4},
+        {"t": "紙", "r": "かみ", "g": "Papier", "j": 5},
+        {"t": "など", "g": "und Ähnliches"},
+        {"t": "が"},
+        {"t": "燃える", "r": "もえる", "ruby": [["燃", "も"], ["える", ""]], "g": "brennen; 燃えるごみ = brennbarer Müll", "j": 3},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "ビン", "g": "Flasche (aus Glas)"},
+        {"t": "、"},
+        {"t": "カン", "g": "Dose"},
+        {"t": "、"},
+        {"t": "ペットボトル", "g": "PET-Flasche, Plastikflasche"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "毎週", "r": "まいしゅう", "g": "jede Woche", "j": 5},
+        {"t": "水曜日", "r": "すいようび", "g": "Mittwoch", "j": 5},
+        {"t": "に"},
+        {"t": "集めます", "r": "あつめます", "ruby": [["集", "あつ"], ["めます", ""]], "b": "集める", "g": "sammeln, abholen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "中", "r": "なか", "g": "Inneres", "j": 5},
+        {"t": "を"},
+        {"t": "水", "r": "みず", "g": "Wasser", "j": 5},
+        {"t": "で"},
+        {"t": "洗って", "r": "あらって", "ruby": [["洗", "あら"], ["って", ""]], "b": "洗う", "g": "waschen, ausspülen", "j": 5},
+        {"t": "から", "g": "〜てから = nachdem …; 〜からです = weil …"},
+        {"t": "、"},
+        {"t": "青い", "r": "あおい", "ruby": [["青", "あお"], ["い", ""]], "g": "blau", "j": 5},
+        {"t": "ふくろ", "g": "Tüte, Sack", "j": 3},
+        {"t": "に"},
+        {"t": "入れて", "r": "いれて", "ruby": [["入", "い"], ["れて", ""]], "b": "入れる", "g": "hineintun", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "新聞", "r": "しんぶん", "g": "Zeitung", "j": 5},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "雑誌", "r": "ざっし", "g": "Zeitschrift", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "月", "r": "つき", "g": "Monat; 月に一回 = einmal im Monat", "j": 4},
+        {"t": "に"},
+        {"t": "一回", "r": "いちかい", "g": "einmal"},
+        {"t": "、"},
+        {"t": "金曜日", "r": "きんようび", "g": "Freitag", "j": 5},
+        {"t": "に"},
+        {"t": "出します", "r": "だします", "ruby": [["出", "だ"], ["します", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "集める", "r": "あつめる", "ruby": [["集", "あつ"], ["める", ""]], "g": "sammeln, abholen", "j": 4},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "の"},
+        {"t": "朝", "r": "あさ", "g": "Morgen", "j": 5},
+        {"t": "8時", "r": "はちじ", "g": "acht Uhr"},
+        {"t": "まで"},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "決まった", "r": "きまった", "ruby": [["決", "き"], ["まった", ""]], "b": "決まる", "g": "festgelegt werden; 決まった = festgelegt", "j": 4},
+        {"t": "場所", "r": "ばしょ", "g": "Ort, Platz", "j": 4},
+        {"t": "に"},
+        {"t": "出すように", "r": "だすように", "ruby": [["出", "だ"], ["すように", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5, "gr": "g2"},
+        {"t": "して", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "前の日", "r": "まえのひ", "ruby": [["前", "まえ"], ["の", ""], ["日", "ひ"]], "g": "der Tag davor"},
+        {"t": "の"},
+        {"t": "夜", "r": "よる", "g": "Abend, Nacht", "j": 5},
+        {"t": "に"},
+        {"t": "出す", "r": "だす", "ruby": [["出", "だ"], ["す", ""]], "g": "(Müll) rausbringen", "j": 5},
+        {"t": "と", "g": "wenn"},
+        {"t": "、"},
+        {"t": "カラス", "g": "Krähe"},
+        {"t": "に"},
+        {"t": "食べられる", "r": "たべられる", "ruby": [["食", "た"], ["べられる", ""]], "b": "食べる", "g": "essen, fressen; 食べられる = gefressen werden", "j": 5, "gr": "g3"},
+        {"t": "こと", "g": "〜ことになっている = es ist geregelt, dass …", "j": 4, "gr": "g4"},
+        {"t": "が", "gr": "g4"},
+        {"t": "ある", "g": "〜ことがある = es kommt vor, dass …", "j": 5, "gr": "g4"},
+        {"t": "から", "g": "〜てから = nachdem …; 〜からです = weil …"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "わからない", "b": "わかる", "g": "verstehen, wissen", "j": 5},
+        {"t": "とき", "g": "wenn", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "市役所", "r": "しやくしょ", "g": "Rathaus"},
+        {"t": "に"},
+        {"t": "聞いて", "r": "きいて", "ruby": [["聞", "き"], ["いて", ""]], "b": "聞く", "g": "fragen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ことになっている",
+      "j": 4,
+      "de": "„es ist geregelt, dass …“ – eine Regel, die andere festgelegt haben.",
+      "ex": "この{寮|りょう}では、{夜|よる}{十時|じゅうじ}までに{帰|かえ}ることになっている。",
+      "exDe": "In diesem Wohnheim muss man laut Regel bis 22 Uhr zurück sein."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜ようにしてください",
+      "j": 4,
+      "de": "„Achten Sie bitte darauf, dass …“ – eine freundliche, aber klare Bitte.",
+      "ex": "{遅|おく}れないようにしてください。",
+      "exDe": "Achten Sie bitte darauf, nicht zu spät zu kommen."
+    },
+    {
+      "id": "g3",
+      "pattern": "受身（〜られる）",
+      "j": 4,
+      "de": "Passiv: „… wird (von jemandem) …“. Oft für etwas Unangenehmes, das einem passiert.",
+      "ex": "{雨|あめ}に{降|ふ}られました。",
+      "exDe": "Ich bin in den Regen gekommen."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜ことがある",
+      "j": 4,
+      "de": "Wörterbuchform + ことがある: „es kommt (manchmal) vor, dass …“.",
+      "ex": "{朝|あさ}ごはんを{食|た}べないことがある。",
+      "exDe": "Manchmal frühstücke ich nicht."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "{燃|も}えるごみはどれですか。",
+      "qDe": "Was ist brennbarer Müll?",
+      "options": ["ビン", "カン", "{台所|だいどころ}のごみ", "ペットボトル"],
+      "answer": 2,
+      "explain": "Satz 3: 台所のごみや、よごれた紙などが燃えるごみです. Flaschen, Dosen und PET-Flaschen werden mittwochs abgeholt (Satz 4).",
+      "evidence": [2, 3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "ペットボトルは、どうやって出しますか。",
+      "qDe": "Wie bringt man PET-Flaschen raus?",
+      "options": ["{洗|あら}わないで、そのまま出す", "中を{洗|あら}って、青いふくろに入れる", "ひもでまとめる", "金曜日に出す"],
+      "answer": 1,
+      "explain": "Satz 5: 中を水で洗ってから、青いふくろに入れてください.",
+      "evidence": [4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "前の日の夜にごみを出してはいけないのは、どうしてですか。",
+      "qDe": "Warum soll man den Müll nicht am Vorabend rausbringen?",
+      "options": ["{市役所|しやくしょ}が{閉|し}まっているから", "カラスに食べられることがあるから", "8時に集めるから", "ふくろがないから"],
+      "answer": 1,
+      "explain": "Satz 8 nennt den Grund mit 〜からです: カラスに食べられることがあるからです.",
+      "evidence": [7]
+    },
+    {
+      "kind": "sprache",
+      "q": "「燃える」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 燃える?",
+      "options": ["もえる", "やける", "ねんえる", "もやえる"],
+      "answer": 0,
+      "explain": "燃える liest man もえる (brennen). 焼ける (やける) heißt „gebacken/verbrannt werden“.",
+      "evidence": [1]
+    }
+  ],
+  "sources": [],
+  "vorrat": true,
+  "versions": {
+    "1": "texte/2026/11/2026-11-13-gomi-1",
+    "3": "texte/2026/11/2026-11-13-gomi-3",
+    "4": "texte/2026/11/2026-11-13-gomi-4"
+  }
+}

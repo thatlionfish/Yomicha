@@ -1,0 +1,38 @@
+{
+"お宅|おたく": {
+"s": "明日の三時に[お宅]へ伺います。",
+"de": "Ich komme morgen um drei Uhr zu Ihnen nach Hause.",
+"r": "{明日|あした}の{三時|さんじ}に[お{宅|たく}]へ{伺|うかが}います。"
+},
+"子供|こども": {
+"s": "公園で[子供]たちが元気に遊んでいる。",
+"de": "Im Park spielen Kinder munter.",
+"r": "{公園|こうえん}で[{子供|こども}]たちが{元気|げんき}に{遊|あそ}んでいる。"
+},
+"学術|がくじゅつ": {
+"s": "この本は[学術]的な内容で、少し難しい。",
+"de": "Dieses Buch ist wissenschaftlich und etwas schwierig.",
+"r": "この{本|ほん}は[{学術|がくじゅつ}]{的|てき}な{内容|ないよう}で、{少|すこ}し{難|むずか}しい。"
+},
+"宅|たく": {
+"s": "母に[宅配便]で荷物を送った。",
+"de": "Ich habe meiner Mutter ein Paket per Lieferdienst geschickt.",
+"r": "{母|はは}に[{宅配便|たくはいびん}]で{荷物|にもつ}を{送|おく}った。"
+},
+"定規|じょうぎ": {
+"s": "[定規]を使ってまっすぐな線を引いた。",
+"de": "Ich habe mit einem Lineal eine gerade Linie gezogen.",
+"r": "[{定規|じょうぎ}]を{使|つか}ってまっすぐな{線|せん}を{引|ひ}いた。"
+},
+"害|がい": {
+"s": "たばこは体に[害]がある。",
+"de": "Rauchen schadet dem Körper.",
+"r": "たばこは{体|からだ}に[{害|がい}]がある。"
+},
+"対談|たいだん": {
+"s": "雑誌に作家と歌手の[対談]が載っている。",
+"de": "In der Zeitschrift steht ein Gespräch zwischen einem Autor und einer Sängerin.",
+"r": "{雑誌|ざっし}に{作家|さっか}と{歌手|かしゅ}の[{対談|たいだん}]が{載|の}っている。",
+"bedeutung": "Gespräch, Zwiegespräch (zu zweit, veröffentlicht)"
+}
+}

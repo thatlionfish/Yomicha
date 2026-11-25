@@ -1,0 +1,43 @@
+{
+"席|せき": {
+"s": "電車でお年寄りに[席]をゆずった。",
+"de": "Im Zug habe ich einem älteren Menschen meinen Platz angeboten.",
+"r": "{電車|でんしゃ}でお{年寄|としよ}りに[{席|せき}]をゆずった。"
+},
+"帰宅|きたく": {
+"s": "昨日は仕事で[帰宅]が遅くなった。",
+"de": "Gestern bin ich wegen der Arbeit spät nach Hause gekommen.",
+"r": "{昨日|きのう}は{仕事|しごと}で[{帰宅|きたく}]が{遅|おそ}くなった。"
+},
+"常に|つねに": {
+"s": "彼女は[常に]周りの人に優しい。",
+"de": "Sie ist stets freundlich zu den Menschen um sie herum.",
+"r": "{彼女|かのじょ}は[{常|つね}に]{周|まわ}りの{人|ひと}に{優|やさ}しい。"
+},
+"平常|へいじょう": {
+"s": "雪がやんで、電車は[平常]どおりに動いている。",
+"de": "Der Schnee hat aufgehört, und die Züge fahren wieder wie gewohnt.",
+"r": "{雪|ゆき}がやんで、{電車|でんしゃ}は[{平常|へいじょう}]どおりに{動|うご}いている。",
+"bedeutung": "normal, wie gewohnt"
+},
+"年|とし": {
+"s": "祖母は[年]のわりに元気だ。",
+"de": "Meine Großmutter ist für ihr Alter sehr fit.",
+"r": "{祖母|そぼ}は[{年|とし}]のわりに{元気|げんき}だ。"
+},
+"年|ねん": {
+"s": "日本に来て[三年]になる。",
+"de": "Ich bin jetzt seit drei Jahren in Japan.",
+"r": "{日本|にほん}に{来|き}て[{三年|さんねん}]になる。"
+},
+"年中|ねんじゅう": {
+"s": "姉は[年中]忙しそうにしている。",
+"de": "Meine ältere Schwester wirkt das ganze Jahr über beschäftigt.",
+"r": "{姉|あね}は[{年中|ねんじゅう}]{忙|いそが}しそうにしている。"
+},
+"広告|こうこく": {
+"s": "駅に新しい映画の[広告]が出ている。",
+"de": "Am Bahnhof hängt Werbung für einen neuen Film.",
+"r": "{駅|えき}に{新|あたら}しい{映画|えいが}の[{広告|こうこく}]が{出|で}ている。"
+}
+}

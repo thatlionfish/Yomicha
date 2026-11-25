@@ -1,0 +1,28 @@
+{
+"昨|さく": {
+"s": "[昨年]の夏は雨が多かった。",
+"de": "Im letzten Sommer hat es viel geregnet.",
+"r": "[{昨年|さくねん}]の{夏|なつ}は{雨|あめ}が{多|おお}かった。"
+},
+"昨夜|ゆうべ": {
+"s": "[昨夜]はよく眠れなかった。",
+"de": "Letzte Nacht konnte ich nicht gut schlafen.",
+"r": "[{昨夜|ゆうべ}]はよく{眠|ねむ}れなかった。"
+},
+"昨日|きのう": {
+"s": "[昨日]は早く寝た。",
+"de": "Gestern bin ich früh schlafen gegangen.",
+"r": "[{昨日|きのう}]は{早|はや}く{寝|ね}た。"
+},
+"時間割|じかんわり": {
+"s": "新しい学期の[時間割]が配られた。",
+"de": "Der Stundenplan für das neue Semester wurde verteilt.",
+"r": "{新|あたら}しい{学期|がっき}の[{時間割|じかんわり}]が{配|くば}られた。"
+},
+"暑い|あつい": {
+"s": "今年の夏は本当に[暑い]ね。",
+"de": "Der Sommer ist dieses Jahr wirklich heiß, nicht wahr?",
+"r": "{今年|ことし}の{夏|なつ}は{本当|ほんとう}に[{暑|あつ}い]ね。",
+"bedeutung": "heiß (Wetter)"
+}
+}

@@ -1,0 +1,382 @@
+{
+  "id": "2026-11-23-mio-3",
+  "date": "2026-11-23",
+  "topic": "welt",
+  "type": "nachricht",
+  "stufe": 3,
+  "titleDe": "Die Raumsonde „Mio“ kreist jetzt um den Merkur",
+  "title": [
+    {"t": "探査機", "r": "たんさき", "g": "Raumsonde"},
+    {"t": "「"},
+    {"t": "みお", "g": "Mio (Name der japanischen Merkur-Sonde)"},
+    {"t": "」"},
+    {"t": "、"},
+    {"t": "水星", "r": "すいせい", "g": "Merkur (Planet)"},
+    {"t": "の"},
+    {"t": "周り", "r": "まわり", "ruby": [["周", "まわ"], ["り", ""]], "g": "Umgebung; 〜の周り = um … herum", "j": 4},
+    {"t": "を"},
+    {"t": "回り", "r": "まわり", "ruby": [["回", "まわ"], ["り", ""]], "b": "回る", "g": "kreisen, sich drehen", "j": 4},
+    {"t": "始める", "r": "はじめる", "ruby": [["始", "はじ"], ["める", ""]], "g": "anfangen; 回り始める = zu kreisen beginnen", "j": 4}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "と"},
+        {"t": "ヨーロッパ", "g": "Europa", "j": 3},
+        {"t": "の"},
+        {"t": "水星", "r": "すいせい", "g": "Merkur (Planet)"},
+        {"t": "探査", "r": "たんさ", "g": "Erkundung, Erforschung"},
+        {"t": "計画", "r": "けいかく", "g": "Plan, Projekt", "j": 4},
+        {"t": "で"},
+        {"t": "、"},
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "の"},
+        {"t": "探査機", "r": "たんさき", "g": "Raumsonde"},
+        {"t": "「"},
+        {"t": "みお", "g": "Mio (Name der japanischen Merkur-Sonde)"},
+        {"t": "」"},
+        {"t": "が"},
+        {"t": "二十二日", "r": "にじゅうににち", "g": "der 22. (Tag)"},
+        {"t": "、"},
+        {"t": "水星", "r": "すいせい", "g": "Merkur (Planet)"},
+        {"t": "の"},
+        {"t": "周り", "r": "まわり", "ruby": [["周", "まわ"], ["り", ""]], "g": "Umgebung; 〜の周り = um … herum", "j": 4},
+        {"t": "を"},
+        {"t": "回り", "r": "まわり", "ruby": [["回", "まわ"], ["り", ""]], "b": "回る", "g": "kreisen, sich drehen", "j": 4},
+        {"t": "始めた", "r": "はじめた", "ruby": [["始", "はじ"], ["めた", ""]], "b": "始める", "g": "anfangen; 回り始める = zu kreisen beginnen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "「"},
+        {"t": "みお", "g": "Mio (Name der japanischen Merkur-Sonde)"},
+        {"t": "」"},
+        {"t": "は"},
+        {"t": "2018年", "r": "にれいいちはちねん", "g": "das Jahr 2018"},
+        {"t": "に"},
+        {"t": "打ち上げられて", "r": "うちあげられて", "ruby": [["打", "う"], ["ち", ""], ["上", "あ"], ["げられて", ""]], "b": "打ち上げる", "g": "(eine Rakete) starten, ins All schießen"},
+        {"t": "から"},
+        {"t": "、"},
+        {"t": "約八年", "r": "やくはちねん", "g": "etwa acht Jahre", "j": 5},
+        {"t": "かけて", "b": "かける", "g": "(Zeit) aufwenden; 八年かけて = in acht Jahren", "j": 5},
+        {"t": "水星", "r": "すいせい", "g": "Merkur (Planet)"},
+        {"t": "まで"},
+        {"t": "飛んで", "r": "とんで", "ruby": [["飛", "と"], ["んで", ""]], "b": "飛ぶ", "g": "fliegen", "j": 5},
+        {"t": "きた", "b": "くる", "g": "kommen; 〜てくる = bis hierher …", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "JAXA", "g": "JAXA (Japanische Raumfahrtagentur)"},
+        {"t": "に", "gr": "g1"},
+        {"t": "よる", "g": "sich stützen auf; 〜によると = laut …", "j": 5, "gr": "g1"},
+        {"t": "と", "gr": "g1"},
+        {"t": "、"},
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "時間", "r": "じかん", "g": "Zeit; 日本時間 = japanische Zeit", "j": 5},
+        {"t": "の"},
+        {"t": "二十二日", "r": "にじゅうににち", "g": "der 22. (Tag)"},
+        {"t": "朝", "r": "あさ", "g": "Morgen", "j": 5},
+        {"t": "、"},
+        {"t": "一緒", "r": "いっしょ", "g": "zusammen; 一緒に = gemeinsam", "j": 5},
+        {"t": "に"},
+        {"t": "飛ぶ", "r": "とぶ", "ruby": [["飛", "と"], ["ぶ", ""]], "g": "fliegen", "j": 5},
+        {"t": "ヨーロッパ", "g": "Europa", "j": 3},
+        {"t": "の"},
+        {"t": "探査機", "r": "たんさき", "g": "Raumsonde"},
+        {"t": "の"},
+        {"t": "エンジン", "g": "Triebwerk, Motor", "j": 3},
+        {"t": "を"},
+        {"t": "約三十七分間", "r": "やくさんじゅうななふんかん", "g": "etwa 37 Minuten lang"},
+        {"t": "使い", "r": "つかい", "ruby": [["使", "つか"], ["い", ""]], "b": "使う", "g": "benutzen", "j": 5},
+        {"t": "、"},
+        {"t": "速度", "r": "そくど", "g": "Geschwindigkeit", "j": 3},
+        {"t": "を"},
+        {"t": "落とした", "r": "おとした", "ruby": [["落", "お"], ["とした", ""]], "b": "落とす", "g": "senken, fallen lassen; 速度を落とす = abbremsen"},
+        {"t": "と"},
+        {"t": "いう", "g": "sagen; 〜という = es heißt, dass …", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "水星", "r": "すいせい", "g": "Merkur (Planet)"},
+        {"t": "は"},
+        {"t": "太陽", "r": "たいよう", "g": "Sonne", "j": 3},
+        {"t": "に"},
+        {"t": "近い", "r": "ちかい", "ruby": [["近", "ちか"], ["い", ""]], "g": "nah", "j": 5},
+        {"t": "ため", "g": "weil, wegen", "j": 4},
+        {"t": "、"},
+        {"t": "太陽", "r": "たいよう", "g": "Sonne", "j": 3},
+        {"t": "の"},
+        {"t": "強い", "r": "つよい", "ruby": [["強", "つよ"], ["い", ""]], "g": "stark", "j": 5},
+        {"t": "重力", "r": "じゅうりょく", "g": "Schwerkraft", "j": 2},
+        {"t": "に"},
+        {"t": "引かれて", "r": "ひかれて", "ruby": [["引", "ひ"], ["かれて", ""]], "b": "引く", "g": "ziehen; 引かれる = angezogen werden", "j": 5},
+        {"t": "速度", "r": "そくど", "g": "Geschwindigkeit", "j": 3},
+        {"t": "が"},
+        {"t": "上がりやすく", "r": "あがりやすく", "ruby": [["上", "あ"], ["がりやすく", ""]], "b": "上がりやすい", "g": "steigen"},
+        {"t": "、"},
+        {"t": "うまく", "b": "うまい", "g": "gut, geschickt, erfolgreich", "j": 4},
+        {"t": "速度", "r": "そくど", "g": "Geschwindigkeit", "j": 3},
+        {"t": "を"},
+        {"t": "落とす", "r": "おとす", "ruby": [["落", "お"], ["とす", ""]], "g": "senken, fallen lassen; 速度を落とす = abbremsen", "j": 4},
+        {"t": "の"},
+        {"t": "は"},
+        {"t": "難しい", "r": "むずかしい", "ruby": [["難", "むずか"], ["しい", ""]], "g": "schwierig", "j": 5},
+        {"t": "と", "gr": "g2"},
+        {"t": "言われている", "r": "いわれている", "ruby": [["言", "い"], ["われている", ""]], "b": "言う", "g": "sagen; 〜という = es heißt, dass …", "j": 5, "gr": "g2"},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "アメリカ", "g": "die USA, Amerika", "j": 4},
+        {"t": "以外", "r": "いがい", "g": "außer; 〜以外の = andere als …", "j": 4},
+        {"t": "の"},
+        {"t": "国", "r": "くに", "g": "Land, Staat", "j": 5},
+        {"t": "の"},
+        {"t": "探査機", "r": "たんさき", "g": "Raumsonde"},
+        {"t": "が"},
+        {"t": "水星", "r": "すいせい", "g": "Merkur (Planet)"},
+        {"t": "を"},
+        {"t": "回る", "r": "まわる", "ruby": [["回", "まわ"], ["る", ""]], "g": "kreisen, sich drehen", "j": 4},
+        {"t": "の"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "今回", "r": "こんかい", "g": "diesmal", "j": 3},
+        {"t": "が"},
+        {"t": "初めて", "r": "はじめて", "ruby": [["初", "はじ"], ["めて", ""]], "g": "zum ersten Mal", "j": 5},
+        {"t": "だ"},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "二つ", "r": "ふたつ", "ruby": [["二", "ふた"], ["つ", ""]], "g": "zwei (Stück)", "j": 5},
+        {"t": "の"},
+        {"t": "探査機", "r": "たんさき", "g": "Raumsonde"},
+        {"t": "は"},
+        {"t": "十二月", "r": "じゅうにがつ", "g": "Dezember"},
+        {"t": "に"},
+        {"t": "分かれ", "r": "わかれ", "ruby": [["分", "わ"], ["かれ", ""]], "b": "分かれる", "g": "sich trennen", "j": 3},
+        {"t": "、"},
+        {"t": "それぞれ", "g": "jeweils, jede(r) für sich", "j": 3},
+        {"t": "観測", "r": "かんそく", "g": "Beobachtung, Messung", "j": 2},
+        {"t": "の"},
+        {"t": "準備", "r": "じゅんび", "g": "Vorbereitung", "j": 4},
+        {"t": "を"},
+        {"t": "進める", "r": "すすめる", "ruby": [["進", "すす"], ["める", ""]], "g": "vorantreiben, fortsetzen", "j": 3},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "「"},
+        {"t": "みお", "g": "Mio (Name der japanischen Merkur-Sonde)"},
+        {"t": "」"},
+        {"t": "は"},
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "の"},
+        {"t": "探査機", "r": "たんさき", "g": "Raumsonde"},
+        {"t": "と", "gr": "g3"},
+        {"t": "して", "b": "する", "g": "(in 〜として) als", "j": 5, "gr": "g3"},
+        {"t": "、"},
+        {"t": "来年", "r": "らいねん", "g": "nächstes Jahr", "j": 5},
+        {"t": "四月", "r": "しがつ", "g": "April", "j": 3},
+        {"t": "から"},
+        {"t": "水星", "r": "すいせい", "g": "Merkur (Planet)"},
+        {"t": "の"},
+        {"t": "磁場", "r": "じば", "g": "Magnetfeld"},
+        {"t": "など", "g": "und andere(s), unter anderem"},
+        {"t": "を"},
+        {"t": "調べる", "r": "しらべる", "ruby": [["調", "しら"], ["べる", ""]], "g": "untersuchen", "j": 4},
+        {"t": "予定", "r": "よてい", "g": "Plan; 〜予定だ = es ist geplant, dass …", "j": 4},
+        {"t": "だ"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜によると",
+      "j": 3,
+      "de": "„laut …, nach Angaben von …“ – nennt die Quelle einer Information. Am Satzende steht oft 〜という oder 〜そうだ.",
+      "ex": "{天気予報|てんきよほう}によると、{明日|あした}は{雪|ゆき}が{降|ふ}るそうだ。",
+      "exDe": "Laut Wetterbericht soll es morgen schneien."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜と言われている",
+      "j": 3,
+      "de": "„man sagt, dass …; es gilt als …“ – gibt eine allgemeine Meinung oder bekannte Tatsache wieder, ohne eine bestimmte Person zu nennen.",
+      "ex": "{緑茶|りょくちゃ}は{体|からだ}にいいと{言|い}われている。",
+      "exDe": "Grüner Tee gilt als gesund."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜として",
+      "j": 3,
+      "de": "„als …“ – nennt die Rolle oder Eigenschaft, in der jemand oder etwas handelt.",
+      "ex": "{彼女|かのじょ}はクラスの{代表|だいひょう}として{会議|かいぎ}に{出|で}た。",
+      "exDe": "Sie nahm als Vertreterin der Klasse an der Sitzung teil."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "「みお」について、本文の内容と合っているものはどれか。",
+      "qDe": "Welche Aussage über „Mio“ stimmt mit dem Text überein?",
+      "options": ["2018年に{水星|すいせい}の{周|まわ}りを回り始めた。", "{自分|じぶん}のエンジンを使って、速度を落とした。", "出発してから{水星|すいせい}に着くまで、八年ほどかかった。", "アメリカの{探査機|たんさき}と一緒に{水星|すいせい}まで飛んできた。"],
+      "answer": 2,
+      "explain": "Satz 2: Mio wurde 2018 gestartet und brauchte etwa acht Jahre bis zum Merkur. 2018 war der Start, nicht der Beginn der Umkreisung; gebremst wurde mit dem Triebwerk der europäischen Sonde (Satz 3), nicht mit einer amerikanischen.",
+      "evidence": [1, 2],
+      "why": [
+        {
+          "de": "2018 ist das Jahr, in dem Mio gestartet ist – nicht der Beginn der Umkreisung. Um den Merkur kreist sie erst seit dem 22., etwa acht Jahre später.",
+          "ja": "2018年は打ち上げられた年です。{水星|すいせい}の{周|まわ}りを回り始めたのは、約八年後の二十二日です。",
+          "stellen": [[1, "2018年に打ち上げられて"], [0, "二十二日、水星の周りを回り始めた"]]
+        },
+        {
+          "de": "Gebremst wurde nicht mit Mios eigenem Triebwerk, sondern mit dem der europäischen Sonde, die mitfliegt.",
+          "ja": "速度を落とすのに使ったのは、一緒に飛ぶヨーロッパの{探査機|たんさき}のエンジンです。「みお」のエンジンではありません。",
+          "stellen": [[2, "一緒に飛ぶヨーロッパの探査機のエンジン"]]
+        },
+        {
+          "de": "Nach dem Start 2018 ist Mio „約八年かけて“ bis zum Merkur geflogen. „八年ほどかかった“ sagt dasselbe mit anderen Worten (約 ≈ ほど).",
+          "ja": "本文の「約八年かけて」は、「八年ほどかかった」と同じ意味です。",
+          "stellen": [[1, "約八年かけて水星まで飛んできた"]]
+        },
+        {
+          "de": "Mitgeflogen ist eine europäische Sonde. Die USA kommen nur vor, weil zum ersten Mal ein anderes Land als sie den Merkur umkreist.",
+          "ja": "一緒に飛んできたのはヨーロッパの{探査機|たんさき}です。アメリカの{探査機|たんさき}ではありません。",
+          "stellen": [[2, "一緒に飛ぶヨーロッパの探査機"], [4, "アメリカ以外の国"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "「うまく速度を落とすのは難しい」とあるが、それはなぜか。",
+      "qDe": "Im Text heißt es „richtig abzubremsen ist schwierig“. Warum?",
+      "options": ["太陽に{引|ひ}っ{張|ぱ}られて、どんどん速くなってしまうから。", "{水星|すいせい}は太陽から遠く、重力が{弱|よわ}いから。", "エンジンを{三十七分間|さんじゅうななふんかん}しか使えないから。", "ヨーロッパの{探査機|たんさき}と{分|わ}かれなければならないから。"],
+      "answer": 0,
+      "explain": "Satz 4: Merkur liegt nah an der Sonne; ihre starke Schwerkraft zieht die Sonde an, sodass sie immer schneller wird. Die 37 Minuten (Satz 3) sind nur die Dauer des Bremsmanövers, die Trennung (Satz 6) kommt erst später.",
+      "evidence": [3],
+      "why": [
+        {
+          "de": "Der Merkur liegt nah an der Sonne. Ihre starke Schwerkraft zieht die Sonde an, sodass sie leicht schneller wird. „引っ張られて、どんどん速くなる“ umschreibt „引かれて速度が上がりやすく“.",
+          "ja": "太陽の強い重力に引かれて、速度が上がりやすいからです。本文の「引かれて」を「{引|ひ}っ{張|ぱ}られて」と言いかえています。",
+          "stellen": [[3, "太陽の強い重力に引かれて速度が上がりやすく"]]
+        },
+        {
+          "de": "Genau umgekehrt: Der Merkur ist nah an der Sonne, und ihre Schwerkraft ist stark – nicht weit weg und nicht schwach.",
+          "ja": "本文は反対です。{水星|すいせい}は太陽に近くて、太陽の重力は強いと書いてあります。",
+          "stellen": [[3, "太陽に近いため"], [3, "太陽の強い重力"]]
+        },
+        {
+          "de": "Die rund 37 Minuten sagen nur, wie lange das Triebwerk beim Bremsen lief. Dass man es nicht länger benutzen kann, steht nirgends.",
+          "ja": "{三十七分間|さんじゅうななふんかん}は、エンジンを使った時間です。それしか使えないとは書いてありません。",
+          "stellen": [[2, "約三十七分間使い"]]
+        },
+        {
+          "de": "Die Trennung der beiden Sonden kommt erst im Dezember und hat nichts damit zu tun, warum das Bremsen schwer ist.",
+          "ja": "二つの{探査機|たんさき}が{分|わ}かれるのは十二月です。速度を落とすのが難しい理由ではありません。",
+          "stellen": [[5, "十二月に分かれ"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "「今回が初めてだ」とあるが、どういうことか。",
+      "qDe": "Im Text heißt es „diesmal zum ersten Mal“. Was ist damit gemeint?",
+      "options": ["日本とヨーロッパが{協力|きょうりょく}して、{探査機|たんさき}を作ったこと。", "{探査機|たんさき}が、太陽の強い重力に引かれたこと。", "アメリカの{探査機|たんさき}が、{水星|すいせい}の{磁場|じば}を調べたこと。", "アメリカではない国が送った{探査機|たんさき}が、{水星|すいせい}のまわりを飛び始めたこと。"],
+      "answer": 3,
+      "explain": "Satz 5: Zum ersten Mal kreist die Sonde eines anderen Landes als der USA um den Merkur. Dass Japan und Europa gemeinsam ein Projekt haben (Satz 1), ist nicht das „erste Mal“; amerikanische Sonden waren schon vorher dort.",
+      "evidence": [4],
+      "why": [
+        {
+          "de": "Japan und Europa arbeiten zwar zusammen, aber „初めて“ bezieht sich nicht darauf, sondern darauf, wessen Sonde den Merkur umkreist.",
+          "ja": "日本とヨーロッパの計画なのは本当ですが、「初めて」なのは{協力|きょうりょく}したことではありません。",
+          "stellen": [[0, "日本とヨーロッパの水星探査計画"], [4, "アメリカ以外の国の探査機が水星を回る"]]
+        },
+        {
+          "de": "Dass die Schwerkraft der Sonne die Sonde anzieht, erklärt, warum das Bremsen schwer ist. Es ist nicht das, was zum ersten Mal passiert.",
+          "ja": "太陽の重力の話は、速度を落とすのが難しい理由です。「初めて」の話ではありません。",
+          "stellen": [[3, "太陽の強い重力に引かれて"]]
+        },
+        {
+          "de": "Vertauscht: Gemeint sind Länder außer den USA (アメリカ以外). Und das Magnetfeld will Mio erst ab April untersuchen – von einer amerikanischen Messung ist keine Rede.",
+          "ja": "「アメリカ以外」は、アメリカではない国という意味です。アメリカが{磁場|じば}を調べた話はありません。",
+          "stellen": [[4, "アメリカ以外の国"], [6, "来年四月から水星の磁場などを調べる予定"]]
+        },
+        {
+          "de": "Zum ersten Mal umkreist die Sonde eines Landes, das nicht die USA ist, den Merkur. 以外 heißt „außer“, hier umschrieben als „アメリカではない国“.",
+          "ja": "「アメリカ以外の国」は「アメリカではない国」という意味です。その国の{探査機|たんさき}が{水星|すいせい}を回るのは、今回が最初です。",
+          "stellen": [[4, "アメリカ以外の国の探査機が水星を回るのは、今回が初めて"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "「みお」のこれからについて、正しいものはどれか。",
+      "qDe": "Was ist über die nächsten Schritte von „Mio“ richtig?",
+      "options": ["十二月から、{水星|すいせい}の{磁場|じば}を調べ始める。", "ヨーロッパの{探査機|たんさき}から{離|はな}れたあと、春になったら{観測|かんそく}を始める。", "ヨーロッパの{探査機|たんさき}と同じ{軌道|きどう}で、ずっと一緒に{観測|かんそく}する。", "来年四月に、日本へ帰る{準備|じゅんび}を進める。"],
+      "answer": 1,
+      "explain": "Sätze 6 und 7 zusammen: Im Dezember trennen sich die beiden Sonden und bereiten sich getrennt vor; ab April nächsten Jahres untersucht Mio dann den Merkur. Im Dezember beginnt nur die Vorbereitung, nicht die Untersuchung.",
+      "evidence": [5, 6],
+      "why": [
+        {
+          "de": "Im Dezember beginnt nur die Vorbereitung. Das Magnetfeld wird erst ab April nächsten Jahres untersucht.",
+          "ja": "十二月に始めるのは{観測|かんそく}の{準備|じゅんび}です。{磁場|じば}を調べるのは来年四月からです。",
+          "stellen": [[5, "観測の準備を進める"], [6, "来年四月から"]]
+        },
+        {
+          "de": "Im Dezember trennen sich die Sonden, ab April untersucht Mio den Merkur. „離れたあと“ steht für 分かれ, „春になったら“ für 来年四月から.",
+          "ja": "十二月に二つは{分|わ}かれます。そして、来年の春（四月）から「みお」は{水星|すいせい}を調べます。",
+          "stellen": [[5, "十二月に分かれ"], [6, "来年四月から水星の磁場などを調べる予定"]]
+        },
+        {
+          "de": "Falsch ist „ずっと一緒に“: Die beiden Sonden trennen sich im Dezember und arbeiten danach jede für sich (それぞれ).",
+          "ja": "二つの{探査機|たんさき}は十二月に{分|わ}かれるので、ずっと一緒ではありません。",
+          "stellen": [[5, "十二月に分かれ、それぞれ"]]
+        },
+        {
+          "de": "Von einer Rückkehr nach Japan steht nichts im Text. Ab April wird am Merkur geforscht.",
+          "ja": "日本へ帰る話は本文にありません。四月からは{水星|すいせい}を調べる予定です。",
+          "stellen": [[6, "来年四月から水星の磁場などを調べる予定"]]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "Nikkei: JAXAの探査機「みお」、水星軌道入り",
+      "url": "https://www.nikkei.com/article/DGXZQOSG185I80Y6A111C2000000/"
+    },
+    {
+      "name": "Sankei (Yahoo!ニュース): 日本の探査機「みお」が水星に到着",
+      "url": "https://news.yahoo.co.jp/articles/cd3bb1e6a9fa3d68f6af2650831bbbabd1163737"
+    },
+    {
+      "name": "ESA: Latest updates – BepiColombo's arrival at Mercury",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury"
+    },
+    {
+      "name": "JAXA: 水星磁気圏探査機「みお」",
+      "url": "https://mio.isas.jaxa.jp/mission/"
+    }
+  ]
+}

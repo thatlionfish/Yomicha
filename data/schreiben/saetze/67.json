@@ -1,0 +1,62 @@
+{
+"有難い|ありがたい": {
+"s": "手伝ってもらえると本当に[有難い]。",
+"de": "Es wäre wirklich eine große Hilfe, wenn du mir hilfst.",
+"r": "{手伝|てつだ}ってもらえると{本当|ほんとう}に[{有難|ありがた}い]。"
+},
+"本|ほん": {
+"s": "寝る前に、いつも[本]を少し読む。",
+"de": "Vor dem Schlafen lese ich immer ein wenig in einem Buch.",
+"r": "{寝|ね}る{前|まえ}に、いつも[{本|ほん}]を{少|すこ}し{読|よ}む。"
+},
+"本人|ほんにん": {
+"s": "この書類は[本人]が書かなければならない。",
+"de": "Dieses Formular muss die Person selbst ausfüllen.",
+"r": "この{書類|しょるい}は[{本人|ほんにん}]が{書|か}かなければならない。"
+},
+"本国|ほんごく": {
+"s": "彼は来月、[本国]へ帰る予定だ。",
+"de": "Er wird nächsten Monat in sein Heimatland zurückkehren.",
+"r": "{彼|かれ}は{来月|らいげつ}、[{本国|ほんごく}]へ{帰|かえ}る{予定|よてい}だ。",
+"bedeutung": "Heimatland"
+},
+"本格|ほんかく": {
+"s": "来月から新しい工事が[本格的]に始まる。",
+"de": "Ab nächstem Monat beginnen die neuen Bauarbeiten richtig.",
+"r": "{来月|らいげつ}から{新|あたら}しい{工事|こうじ}が[{本格的|ほんかくてき}]に{始|はじ}まる。",
+"bedeutung": "echt, richtig; 本格的 = ernsthaft, in vollem Umfang"
+},
+"果たして|はたして": {
+"s": "[果たして]明日は晴れるだろうか。",
+"de": "Ob es morgen wohl wirklich sonnig wird?",
+"r": "[{果|は}たして]{明日|あした}は{晴|は}れるだろうか。"
+},
+"果たす|はたす": {
+"s": "彼は約束をきちんと[果たした]。",
+"de": "Er hat sein Versprechen gewissenhaft gehalten.",
+"r": "{彼|かれ}は{約束|やくそく}をきちんと[{果|は}たした]。",
+"bedeutung": "erfüllen, ausführen"
+},
+"果て|はて": {
+"s": "宇宙の[果て]はどこにあるのだろう。",
+"de": "Wo wohl das Ende des Weltalls ist?",
+"r": "{宇宙|うちゅう}の[{果|は}て]はどこにあるのだろう。",
+"bedeutung": "Ende, äußerste Grenze"
+},
+"果てる|はてる": {
+"s": "長い旅で、みんな疲れ[果てて]いた。",
+"de": "Nach der langen Reise waren alle völlig erschöpft.",
+"r": "{長|なが}い{旅|たび}で、みんな{疲|つか}れ[{果|は}てて]いた。",
+"bedeutung": "enden; völlig (erschöpft) sein"
+},
+"果実|かじつ": {
+"s": "この[果実]はジャムに使われる。",
+"de": "Diese Frucht wird für Marmelade verwendet.",
+"r": "この[{果実|かじつ}]はジャムに{使|つか}われる。"
+},
+"果物|くだもの": {
+"s": "朝は[果物]を食べることにしている。",
+"de": "Morgens esse ich immer Obst.",
+"r": "{朝|あさ}は[{果物|くだもの}]を{食|た}べることにしている。"
+}
+}

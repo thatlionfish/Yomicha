@@ -1,0 +1,18 @@
+{
+"側|がわ": {
+"s": "道の[右側]を歩いてください。",
+"de": "Bitte gehen Sie auf der rechten Straßenseite.",
+"r": "{道|みち}の[{右側|みぎがわ}]を{歩|ある}いてください。"
+},
+"側面|そくめん": {
+"s": "問題を別の[側面]から考えてみよう。",
+"de": "Lass uns das Problem von einer anderen Seite betrachten.",
+"r": "{問題|もんだい}を{別|べつ}の[{側面|そくめん}]から{考|かんが}えてみよう。",
+"bedeutung": "Seite, Aspekt"
+},
+"備える|そなえる": {
+"s": "地震に[備えて]、水を買っておいた。",
+"de": "Für den Fall eines Erdbebens habe ich Wasser gekauft.",
+"r": "{地震|じしん}に[{備|そな}えて]、{水|みず}を{買|か}っておいた。"
+}
+}

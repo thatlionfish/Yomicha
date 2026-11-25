@@ -1,0 +1,271 @@
+{
+  "id": "2026-11-20-sweater-3",
+  "date": "2026-11-20",
+  "topic": "mode",
+  "type": "infoblatt",
+  "stufe": 3,
+  "titleDe": "Infoblatt: Damit der Winterpullover lange hält",
+  "title": [
+    {"t": "冬", "r": "ふゆ", "g": "Winter", "j": 5},
+    {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+    {"t": "セーター", "g": "Pullover", "j": 5},
+    {"t": "を"},
+    {"t": "長く", "r": "ながく", "ruby": [["長", "なが"], ["く", ""]], "b": "長い", "g": "lange", "j": 5},
+    {"t": "着る", "r": "きる", "ruby": [["着", "き"], ["る", ""]], "g": "(Kleidung) tragen, anziehen", "j": 5},
+    {"t": "ため", "g": "〜ために = um … zu, damit; 〜ため = weil", "j": 4},
+    {"t": "に"}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "寒く", "r": "さむく", "ruby": [["寒", "さむ"], ["く", ""]], "b": "寒い", "g": "kalt", "j": 5},
+        {"t": "なり", "b": "なる", "g": "werden", "j": 5},
+        {"t": "、"},
+        {"t": "ウール", "g": "Wolle", "j": 2},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "セーター", "g": "Pullover", "j": 5},
+        {"t": "を"},
+        {"t": "着る", "r": "きる", "ruby": [["着", "き"], ["る", ""]], "g": "(Kleidung) tragen, anziehen", "j": 5},
+        {"t": "季節", "r": "きせつ", "g": "Jahreszeit", "j": 4},
+        {"t": "に"},
+        {"t": "なりました", "b": "なる", "g": "werden", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "ウール", "g": "Wolle", "j": 2},
+        {"t": "は"},
+        {"t": "暖かくて", "r": "あたたかくて", "ruby": [["暖", "あたた"], ["かくて", ""]], "b": "暖かい", "g": "warm", "j": 5},
+        {"t": "軽い", "r": "かるい", "ruby": [["軽", "かる"], ["い", ""]], "g": "leicht (Gewicht)", "j": 5},
+        {"t": "です"},
+        {"t": "が"},
+        {"t": "、"},
+        {"t": "洗い方", "r": "あらいかた", "ruby": [["洗", "あら"], ["い", ""], ["方", "かた"]], "g": "Art zu waschen; 洗い方を間違える = falsch waschen"},
+        {"t": "を"},
+        {"t": "間違える", "r": "まちがえる", "ruby": [["間違", "まちが"], ["える", ""]], "g": "falsch machen, sich irren", "j": 4},
+        {"t": "と"},
+        {"t": "、"},
+        {"t": "縮んで", "r": "ちぢんで", "ruby": [["縮", "ちぢ"], ["んで", ""]], "b": "縮む", "g": "einlaufen, schrumpfen", "j": 2},
+        {"t": "しまう", "g": "〜てしまう = (ungewollt) passieren", "j": 4},
+        {"t": "こと", "g": "〜ことがある = es kommt vor, dass …", "j": 4},
+        {"t": "が"},
+        {"t": "あります", "b": "ある", "g": "es gibt, vorhanden sein", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "洗う", "r": "あらう", "ruby": [["洗", "あら"], ["う", ""]], "g": "waschen", "j": 5},
+        {"t": "際", "r": "さい", "g": "〜際は = wenn, beim … (förmlich)", "j": 3, "gr": "g2"},
+        {"t": "は", "gr": "g2"},
+        {"t": "、"},
+        {"t": "まず", "g": "zuerst", "j": 4},
+        {"t": "服", "r": "ふく", "g": "Kleidung, Kleidungsstück", "j": 5},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "内側", "r": "うちがわ", "g": "Innenseite"},
+        {"t": "に"},
+        {"t": "ある", "g": "es gibt, vorhanden sein", "j": 5},
+        {"t": "表示", "r": "ひょうじ", "g": "Etikett, Angabe (Pflegeetikett)", "j": 3},
+        {"t": "を"},
+        {"t": "確認", "r": "かくにん", "g": "Überprüfung; 確認する = nachsehen, prüfen", "j": 3},
+        {"t": "して", "b": "する", "g": "tun, machen", "j": 5},
+        {"t": "、"},
+        {"t": "その", "g": "dieser, der genannte", "j": 5},
+        {"t": "とおり", "g": "〜とおりに = genau so wie …; そのとおりに = genau so", "j": 4, "gr": "g1"},
+        {"t": "に", "gr": "g1"},
+        {"t": "洗って", "r": "あらって", "ruby": [["洗", "あら"], ["って", ""]], "b": "洗う", "g": "waschen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "家", "r": "いえ", "g": "Zuhause, Haus", "j": 5},
+        {"t": "で"},
+        {"t": "洗って", "r": "あらって", "ruby": [["洗", "あら"], ["って", ""]], "b": "洗う", "g": "waschen", "j": 5},
+        {"t": "も", "g": "〜てもいい = dürfen"},
+        {"t": "いい", "g": "gut; 〜てもいい = dürfen", "j": 5},
+        {"t": "場合", "r": "ばあい", "g": "Fall; 〜場合は = falls, wenn", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "三十度", "r": "さんじゅうど", "g": "30 Grad"},
+        {"t": "ぐらい", "g": "etwa, ungefähr"},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "水", "r": "みず", "g": "Wasser", "j": 5},
+        {"t": "と"},
+        {"t": "ウール", "g": "Wolle", "j": 2},
+        {"t": "に"},
+        {"t": "合った", "r": "あった", "ruby": [["合", "あ"], ["った", ""]], "b": "合う", "g": "passen; ウールに合った洗剤 = ein für Wolle geeignetes Waschmittel", "j": 4},
+        {"t": "洗剤", "r": "せんざい", "g": "Waschmittel", "j": 3},
+        {"t": "を"},
+        {"t": "使い", "r": "つかい", "ruby": [["使", "つか"], ["い", ""]], "b": "使う", "g": "benutzen", "j": 5},
+        {"t": "、"},
+        {"t": "強く", "r": "つよく", "ruby": [["強", "つよ"], ["く", ""]], "b": "強い", "g": "kräftig, fest", "j": 5},
+        {"t": "こすらず", "b": "こする", "g": "reiben, rubbeln", "j": 2},
+        {"t": "に"},
+        {"t": "、"},
+        {"t": "押すように", "r": "おすように", "ruby": [["押", "お"], ["すように", ""]], "b": "押す", "g": "drücken", "j": 5},
+        {"t": "やさしく", "b": "やさしい", "g": "sanft, behutsam", "j": 5},
+        {"t": "洗います", "r": "あらいます", "ruby": [["洗", "あら"], ["います", ""]], "b": "洗う", "g": "waschen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "干す", "r": "ほす", "ruby": [["干", "ほ"], ["す", ""]], "g": "(Wäsche) aufhängen, trocknen", "j": 2},
+        {"t": "とき", "g": "wenn, beim …", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "ハンガー", "g": "Kleiderbügel", "j": 1},
+        {"t": "に"},
+        {"t": "かける", "g": "hängen (auf etwas); ハンガーにかける = auf einen Bügel hängen; ブラシをかける = bürsten", "j": 5},
+        {"t": "と"},
+        {"t": "形", "r": "かたち", "g": "Form", "j": 4},
+        {"t": "が"},
+        {"t": "伸びて", "r": "のびて", "ruby": [["伸", "の"], ["びて", ""]], "b": "伸びる", "g": "sich dehnen, ausleiern", "j": 3},
+        {"t": "しまう", "g": "〜てしまう = (ungewollt) passieren", "j": 4},
+        {"t": "ため", "g": "〜ために = um … zu, damit; 〜ため = weil", "j": 4},
+        {"t": "、"},
+        {"t": "平らな", "r": "たいらな", "ruby": [["平", "たい"], ["らな", ""]], "b": "平ら", "g": "flach, eben", "j": 3},
+        {"t": "所", "r": "ところ", "g": "Ort, Stelle", "j": 5},
+        {"t": "に"},
+        {"t": "置いて", "r": "おいて", "ruby": [["置", "お"], ["いて", ""]], "b": "置く", "g": "legen, hinlegen", "j": 5},
+        {"t": "乾かしましょう", "r": "かわかしましょう", "ruby": [["乾", "かわ"], ["かしましょう", ""]], "b": "乾かす", "g": "trocknen (lassen)", "j": 3},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "また", "g": "außerdem", "j": 5},
+        {"t": "、"},
+        {"t": "セーター", "g": "Pullover", "j": 5},
+        {"t": "は"},
+        {"t": "着る", "r": "きる", "ruby": [["着", "き"], ["る", ""]], "g": "(Kleidung) tragen, anziehen", "j": 5},
+        {"t": "たび", "g": "〜たびに = jedes Mal, wenn …", "j": 3, "gr": "g3"},
+        {"t": "に", "gr": "g3"},
+        {"t": "洗う", "r": "あらう", "ruby": [["洗", "あら"], ["う", ""]], "g": "waschen", "j": 5},
+        {"t": "必要", "r": "ひつよう", "g": "Notwendigkeit; 必要はない = nicht nötig", "j": 4},
+        {"t": "は"},
+        {"t": "ありません", "b": "ある", "g": "es gibt, vorhanden sein", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "一日", "r": "いちにち", "g": "einen Tag (lang)", "j": 5},
+        {"t": "着たら", "r": "きたら", "ruby": [["着", "き"], ["たら", ""]], "b": "着る", "g": "(Kleidung) tragen, anziehen", "j": 5},
+        {"t": "、"},
+        {"t": "ブラシ", "g": "Bürste", "j": 2},
+        {"t": "を"},
+        {"t": "かけて", "b": "かける", "g": "hängen (auf etwas); ハンガーにかける = auf einen Bügel hängen; ブラシをかける = bürsten", "j": 5},
+        {"t": "、"},
+        {"t": "風通し", "r": "かぜとおし", "ruby": [["風通", "かぜとお"], ["し", ""]], "g": "Luftzirkulation; 風通しのいい所 = ein luftiger Ort"},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "いい", "g": "gut; 〜てもいい = dürfen", "j": 5},
+        {"t": "所", "r": "ところ", "g": "Ort, Stelle", "j": 5},
+        {"t": "で"},
+        {"t": "休ませる", "r": "やすませる", "ruby": [["休", "やす"], ["ませる", ""]], "b": "休む", "g": "ruhen lassen", "j": 5},
+        {"t": "だけ", "g": "nur; 〜だけで = schon allein mit …"},
+        {"t": "で"},
+        {"t": "十分", "r": "じゅうぶん", "g": "genug, ausreichend", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "自分", "r": "じぶん", "g": "selbst; 自分で = selbst", "j": 5},
+        {"t": "で"},
+        {"t": "洗う", "r": "あらう", "ruby": [["洗", "あら"], ["う", ""]], "g": "waschen", "j": 5},
+        {"t": "の", "g": "(macht aus einem Satz ein Nomen) das …"},
+        {"t": "が"},
+        {"t": "心配", "r": "しんぱい", "g": "Sorge; 心配な = besorgt", "j": 4},
+        {"t": "な", "b": "だ"},
+        {"t": "方", "r": "かた", "g": "Person (höflich); 心配な方 = wer sich Sorgen macht", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "店員", "r": "てんいん", "g": "Verkäuferin, Verkäufer; Personal", "j": 4},
+        {"t": "に"},
+        {"t": "ご相談", "r": "ごそうだん", "ruby": [["ご", ""], ["相談", "そうだん"]], "g": "Beratung (höflich); ご相談ください = bitte fragen Sie uns", "j": 4},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜とおり（に）",
+      "j": 3,
+      "de": "Wörterbuchform / た-Form + とおりに, Nomen + のとおりに oder どおりに: „genau so wie …“. そのとおりに = „genau so (wie dort angegeben)“ – typisch für Anleitungen.",
+      "ex": "{説明書|せつめいしょ}に{書|か}いてあるとおりに{組|く}み{立|た}ててください。",
+      "exDe": "Bauen Sie es bitte genau so zusammen, wie es in der Anleitung steht."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜際（は）",
+      "j": 3,
+      "de": "Wörterbuchform / た-Form / Nomen + の + 際（さい）は: „wenn, beim …“ – förmliches とき. Steht oft in Anleitungen, Aushängen und Mitteilungen.",
+      "ex": "お{帰|かえ}りの{際|さい}は、{忘|わす}れ{物|もの}にご{注意|ちゅうい}ください。",
+      "exDe": "Achten Sie beim Nachhausegehen bitte darauf, nichts liegen zu lassen."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜たびに",
+      "j": 3,
+      "de": "Wörterbuchform / Nomen + の + たびに: „jedes Mal, wenn …“. Betont, dass etwas sich jedes Mal wiederholt. Hier: Man muss den Pullover nicht nach jedem Tragen waschen.",
+      "ex": "この{歌|うた}を{聞|き}くたびに、{子|こ}どものころを{思|おも}い{出|だ}す。",
+      "exDe": "Jedes Mal, wenn ich dieses Lied höre, denke ich an meine Kindheit."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "「{縮|ちぢ}んでしまうことがあります」とあるが、それはどんなときか。",
+      "qDe": "Wann kann der Pullover laut Text einlaufen?",
+      "options": ["{暖|あたた}かくて{軽|かる}いセーターを着たとき", "ウールに合った{洗剤|せんざい}で洗ったとき", "正しくない方法で洗ったとき", "平らな所に置いて{乾|かわ}かしたとき"],
+      "answer": 2,
+      "explain": "Satz 2: 洗い方を間違えると、縮んでしまう – wer falsch wäscht (= 正しくない方法で洗う), riskiert, dass die Wolle einläuft. Wollwaschmittel und flaches Trocknen werden in Satz 4–5 gerade empfohlen.",
+      "evidence": [1]
+    },
+    {
+      "kind": "inhalt",
+      "q": "セーターを{干|ほ}すとき、ハンガーを使わないほうがいいのはなぜか。",
+      "qDe": "Warum sollte man den Pullover beim Trocknen nicht auf einen Bügel hängen?",
+      "options": ["つるして{干|ほ}すと、セーターの大きさや形が変わるから", "ハンガーにかけると、ウールが{縮|ちぢ}んでしまうから", "ハンガーにかけると、{乾|かわ}くまでに時間がかかるから", "風通しのいい所にハンガーをかけられないから"],
+      "answer": 0,
+      "explain": "Satz 5: ハンガーにかけると形が伸びてしまうため – auf dem Bügel dehnt sich der Pullover (= 大きさや形が変わる). Vom Einlaufen spricht Satz 2, aber als Folge falschen Waschens, nicht des Bügels.",
+      "evidence": [1, 4]
+    },
+    {
+      "kind": "inhalt",
+      "q": "「着るたびに洗う必要はありません」とあるが、着たあとはどうすればいいと言っているか。",
+      "qDe": "Was soll man nach dem Tragen laut Text tun, statt jedes Mal zu waschen?",
+      "options": ["三十度ぐらいの水で、毎回やさしく洗う", "すぐに店に持っていって、洗ってもらう", "ハンガーにかけて、平らな所で休ませる", "ほこりを落として、空気がよく通る場所に置いておく"],
+      "answer": 3,
+      "explain": "Satz 6–7: Nach einem Tag Tragen genügt es, ihn zu bürsten (= ほこりを落とす) und an einem luftigen Ort (風通しのいい所 = 空気がよく通る場所) ruhen zu lassen. Das Geschäft bietet nur Beratung an (Satz 8), und vom Bügel rät Satz 5 ab.",
+      "evidence": [5, 6]
+    },
+    {
+      "kind": "inhalt",
+      "q": "この{文章|ぶんしょう}の内容と合っているものはどれか。",
+      "qDe": "Was stimmt mit dem Inhalt des Textes überein?",
+      "options": ["ウールのセーターは、家で洗ってはいけない", "自宅で{洗濯|せんたく}できるかどうかは、服に付いている説明を見て判断する", "洗う前には、必ず店員に相談しなければならない", "強くこすって洗えば、セーターの形は{伸|の}びない"],
+      "answer": 1,
+      "explain": "Satz 3–4: Vor dem Waschen das Etikett innen (表示 = 服に付いている説明) prüfen und sich danach richten; nur 家で洗ってもいい場合 wäscht man zu Hause. Zu Hause waschen ist also nicht verboten, die Beratung ist ein Angebot für Unsichere (Satz 8), und kräftiges Reiben soll man gerade vermeiden (Satz 4).",
+      "evidence": [2, 3, 7]
+    }
+  ],
+  "sources": []
+}

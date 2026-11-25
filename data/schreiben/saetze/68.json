@@ -1,0 +1,17 @@
+{
+"格|かく": {
+"s": "このホテルは駅前の店より[格]が上だ。",
+"de": "Dieses Hotel ist eine Klasse höher als die Häuser am Bahnhof.",
+"r": "このホテルは{駅前|えきまえ}の{店|みせ}より[{格|かく}]が{上|うえ}だ。"
+},
+"格別|かくべつ": {
+"s": "山の上で飲むお茶の味は[格別]だ。",
+"de": "Tee auf dem Berggipfel schmeckt ganz besonders gut.",
+"r": "{山|やま}の{上|うえ}で{飲|の}むお{茶|ちゃ}の{味|あじ}は[{格別|かくべつ}]だ。"
+},
+"格好|かっこう": {
+"s": "山に登るなら、動きやすい[格好]で来てください。",
+"de": "Wenn wir auf den Berg steigen, kommen Sie bitte in bequemer Kleidung.",
+"r": "{山|やま}に{登|のぼ}るなら、{動|うご}きやすい[{格好|かっこう}]で{来|き}てください。"
+}
+}

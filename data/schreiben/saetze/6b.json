@@ -1,0 +1,23 @@
+{
+"欠席|けっせき": {
+"s": "熱があったので、授業を[欠席]した。",
+"de": "Weil ich Fieber hatte, habe ich im Unterricht gefehlt.",
+"r": "{熱|ねつ}があったので、{授業|じゅぎょう}を[{欠席|けっせき}]した。"
+},
+"正常|せいじょう": {
+"s": "検査の結果、体はすべて[正常]だった。",
+"de": "Laut Untersuchung war körperlich alles normal.",
+"r": "{検査|けんさ}の{結果|けっか}、{体|からだ}はすべて[{正常|せいじょう}]だった。",
+"bedeutung": "normal (Zustand)"
+},
+"正式|せいしき": {
+"s": "新しい店の名前が[正式]に決まった。",
+"de": "Der Name des neuen Ladens steht offiziell fest.",
+"r": "{新|あたら}しい{店|みせ}の{名前|なまえ}が[{正式|せいしき}]に{決|き}まった。"
+},
+"正規|せいき": {
+"s": "兄は来月から[正規]の社員になる。",
+"de": "Mein älterer Bruder wird ab nächstem Monat fest angestellt.",
+"r": "{兄|あに}は{来月|らいげつ}から[{正規|せいき}]の{社員|しゃいん}になる。"
+}
+}

@@ -1,0 +1,50 @@
+{
+"報告|ほうこく": {
+"s": "部長に会議の結果を[報告]した。",
+"de": "Ich habe dem Abteilungsleiter das Ergebnis der Besprechung berichtet.",
+"r": "{部長|ぶちょう}に{会議|かいぎ}の{結果|けっか}を[{報告|ほうこく}]した。"
+},
+"増える|ふえる": {
+"s": "最近、外国人の観光客が[増えて]いる。",
+"de": "In letzter Zeit kommen immer mehr ausländische Touristen.",
+"r": "{最近|さいきん}、{外国人|がいこくじん}の{観光客|かんこうきゃく}が[{増|ふ}えて]いる。"
+},
+"増し|まし": {
+"s": "雨の日は料金が二割[増し]になる。",
+"de": "An Regentagen kostet es zwanzig Prozent mehr.",
+"r": "{雨|あめ}の{日|ひ}は{料金|りょうきん}が{二割|にわり}[{増|ま}し]になる。",
+"bedeutung": "Aufschlag, mehr"
+},
+"増す|ます": {
+"s": "雨で川の水が[増した]。",
+"de": "Durch den Regen ist der Fluss angestiegen.",
+"r": "{雨|あめ}で{川|かわ}の{水|みず}が[{増|ま}した]。"
+},
+"増やす|ふやす": {
+"s": "毎日の練習時間を[増やした]。",
+"de": "Ich habe meine tägliche Übungszeit erhöht.",
+"r": "{毎日|まいにち}の{練習|れんしゅう}{時間|じかん}を[{増|ふ}やした]。"
+},
+"増加|ぞうか": {
+"s": "この町の人口は[増加]している。",
+"de": "Die Bevölkerung dieser Stadt wächst.",
+"r": "この{町|まち}の{人口|じんこう}は[{増加|ぞうか}]している。"
+},
+"増大|ぞうだい": {
+"s": "ストレスが[増大]すると病気になりやすい。",
+"de": "Wenn der Stress zunimmt, wird man leichter krank.",
+"r": "ストレスが[{増大|ぞうだい}]すると{病気|びょうき}になりやすい。"
+},
+"増強|ぞうきょう": {
+"s": "会社は人員を[増強]した。",
+"de": "Die Firma hat ihr Personal aufgestockt.",
+"r": "{会社|かいしゃ}は{人員|じんいん}を[{増強|ぞうきょう}]した。",
+"bedeutung": "Verstärkung, Aufstockung"
+},
+"増進|ぞうしん": {
+"s": "適度な運動は食欲を[増進]させる。",
+"de": "Mäßige Bewegung steigert den Appetit.",
+"r": "{適度|てきど}な{運動|うんどう}は{食欲|しょくよく}を[{増進|ぞうしん}]させる。",
+"bedeutung": "Förderung, Steigerung"
+}
+}

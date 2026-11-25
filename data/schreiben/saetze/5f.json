@@ -1,0 +1,53 @@
+{
+"式|しき": {
+"s": "来月、姉の結婚[式]がある。",
+"de": "Nächsten Monat ist die Hochzeit meiner älteren Schwester.",
+"r": "{来月|らいげつ}、{姉|あね}の{結婚|けっこん}[{式|しき}]がある。"
+},
+"式場|しきじょう": {
+"s": "結婚式の[式場]を予約した。",
+"de": "Wir haben den Saal für die Hochzeit reserviert.",
+"r": "{結婚式|けっこんしき}の[{式場|しきじょう}]を{予約|よやく}した。",
+"bedeutung": "Saal für Zeremonien"
+},
+"形式|けいしき": {
+"s": "レポートは決められた[形式]で書くこと。",
+"de": "Der Bericht ist in der vorgegebenen Form zu schreiben.",
+"r": "レポートは{決|き}められた[{形式|けいしき}]で{書|か}くこと。"
+},
+"役|やく": {
+"s": "劇で王様の[役]をすることになった。",
+"de": "Ich soll im Theaterstück die Rolle des Königs spielen.",
+"r": "{劇|げき}で{王様|おうさま}の[{役|やく}]をすることになった。"
+},
+"役に立つ|やくにたつ": {
+"s": "この辞書は勉強にとても[役に立つ]。",
+"de": "Dieses Wörterbuch ist beim Lernen sehr nützlich.",
+"r": "この{辞書|じしょ}は{勉強|べんきょう}にとても[{役|やく}に{立|た}つ]。"
+},
+"役人|やくにん": {
+"s": "町の[役人]が工事の説明に来た。",
+"de": "Ein Beamter der Stadt kam, um die Bauarbeiten zu erklären.",
+"r": "{町|まち}の[{役人|やくにん}]が{工事|こうじ}の{説明|せつめい}に{来|き}た。"
+},
+"役割|やくわり": {
+"s": "家族の中でそれぞれの[役割]を決めた。",
+"de": "Wir haben in der Familie die Aufgaben jedes Einzelnen festgelegt.",
+"r": "{家族|かぞく}の{中|なか}でそれぞれの[{役割|やくわり}]を{決|き}めた。"
+},
+"役所|やくしょ": {
+"s": "引っ越したら、[役所]に届けを出さなければならない。",
+"de": "Wenn man umzieht, muss man sich beim Amt melden.",
+"r": "{引|ひ}っ{越|こ}したら、[{役所|やくしょ}]に{届|とど}けを{出|だ}さなければならない。"
+},
+"役目|やくめ": {
+"s": "子どもを守るのは大人の[役目]だ。",
+"de": "Kinder zu schützen ist die Aufgabe der Erwachsenen.",
+"r": "{子|こ}どもを{守|まも}るのは{大人|おとな}の[{役目|やくめ}]だ。"
+},
+"役者|やくしゃ": {
+"s": "あの[役者]は泣く演技がとても上手だ。",
+"de": "Dieser Schauspieler kann sehr gut weinen (spielen).",
+"r": "あの[{役者|やくしゃ}]は{泣|な}く{演技|えんぎ}がとても{上手|じょうず}だ。"
+}
+}

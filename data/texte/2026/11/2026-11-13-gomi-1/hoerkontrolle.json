@@ -1,0 +1,43 @@
+{
+ "s01.mp3": "ok",
+ "s02.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "つよ",
+   "うび"
+  ],
+  "gehoert": "げともくようびともくようびは、だいどころのごみとかみのごみのひです。"
+ },
+ "s03.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "ビン",
+   "カン"
+  ],
+  "gehoert": "すいようびは、ビンとカンとペットボトルのひです。"
+ },
+ "s04.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "カン"
+  ],
+  "gehoert": "ビンやカンはなかをみずであらってからだします。"
+ },
+ "s05.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "きんよ",
+   "うび"
+  ],
+  "gehoert": "ふるいしんぶんやざっしだしは、つきにいちかいきんようびにだします。"
+ },
+ "s06.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "あさはち"
+  ],
+  "gehoert": "ごみは、あさはちじまでにだします。"
+ },
+ "s07.mp3": "ok",
+ "s08.mp3": "ok"
+}

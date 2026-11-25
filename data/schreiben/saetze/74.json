@@ -1,0 +1,15 @@
+{
+"球|きゅう": {
+"s": "弟は小学生のころから[野球]を続けている。",
+"de": "Mein kleiner Bruder spielt seit der Grundschule Baseball.",
+"r": "{弟|おとうと}は{小学生|しょうがくせい}のころから[{野球|やきゅう}]を{続|つづ}けている。"
+},
+"球|たま": {
+"s": "子どもたちが公園で[球]を投げて遊んでいる。",
+"de": "Die Kinder spielen im Park und werfen sich einen Ball zu.",
+"r": "{子|こ}どもたちが{公園|こうえん}で[{球|たま}]を{投|な}げて{遊|あそ}んでいる。",
+"lesungen": {
+"球": "たま"
+}
+}
+}

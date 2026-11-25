@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- Wird beim Bauen durch --base-href ersetzt (GitHub Pages: /Yomicha/). -->
+  <base href="/Yomicha/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Yomicha – kurze japanische Texte bis zur JLPT N2.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F1EEE6">
+
+  <!-- iPhone und iPad: als App vom Home-Bildschirm -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Yomicha">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Yomicha</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body { margin: 0; background: #F1EEE6; }
+    /* Startbild, bis Flutter läuft; dieselbe Größe wie lib/widgets/splash.dart. */
+    #splash { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: #F1EEE6; }
+    #splash img { width: min(260px, 60vmin); height: auto; }
+  </style>
+</head>
+<body>
+  <div id="splash"><img src="icons/Icon-512.png" alt="Yomicha"></div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var s = document.getElementById('splash');
+      if (s) s.remove();
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

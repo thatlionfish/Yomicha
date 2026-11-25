@@ -1,0 +1,36 @@
+{
+    "name": "Yomicha",
+    "short_name": "Yomicha",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F1EEE6",
+    "theme_color": "#F1EEE6",
+    "description": "Kurze japanische Texte bis zur JLPT N2.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "lang": "de",
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

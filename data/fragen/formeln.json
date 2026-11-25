@@ -1,0 +1,729 @@
+{
+ "hinweis": "Kurs „Prüfungsfragen verstehen“: feste Frageformeln der N2, gebaut mit tool/teekueche/fragen_daten.py.",
+ "teile": {
+  "allgemein": "Aufgabenstellung",
+  "wortschatz": "Kanji und Wortschatz (文字・語彙)",
+  "grammatik": "Grammatik (文法)",
+  "lesen": "Lesen (読解)",
+  "hoeren": "Hören (聴解)"
+ },
+ "formeln": [
+  {
+   "id": "anweisung-lesen",
+   "teil": "allgemein",
+   "ja": "{次|つぎ}の{文章|ぶんしょう}を{読|よ}んで、{後|あと}の{質問|しつもん}に{答|こた}えなさい。",
+   "de": "Lies den folgenden Text und beantworte die Fragen danach.",
+   "tipp": "-なさい ist die Befehlsform der Aufgabenstellung: „Tu …!“",
+   "schluessel": [
+    {
+     "w": "次",
+     "r": "つぎ",
+     "de": "folgend, nächst"
+    },
+    {
+     "w": "文章",
+     "r": "ぶんしょう",
+     "de": "Text"
+    },
+    {
+     "w": "質問",
+     "r": "しつもん",
+     "de": "Frage"
+    },
+    {
+     "w": "答えなさい",
+     "r": "こたえなさい",
+     "de": "beantworte! (Befehl)"
+    }
+   ]
+  },
+  {
+   "id": "anweisung-waehlen",
+   "teil": "allgemein",
+   "ja": "{答|こた}えは、1・2・3・4から{最|もっと}もよいものを{一|ひと}つ{選|えら}びなさい。",
+   "de": "Wähle als Antwort aus 1, 2, 3 und 4 die beste aus.",
+   "tipp": "最もよいもの heißt nicht „die einzig richtige“, sondern „die beste“ – manchmal passen zwei halb, eine ganz.",
+   "schluessel": [
+    {
+     "w": "最も",
+     "r": "もっとも",
+     "de": "am meisten, am besten"
+    },
+    {
+     "w": "一つ",
+     "r": "ひとつ",
+     "de": "eins, eine"
+    },
+    {
+     "w": "選びなさい",
+     "r": "えらびなさい",
+     "de": "wähle! (Befehl)"
+    }
+   ]
+  },
+  {
+   "id": "kanji-lesung",
+   "teil": "wortschatz",
+   "ja": "＿＿の{言葉|ことば}の{読|よ}み{方|かた}として{最|もっと}もよいものを{選|えら}びなさい。",
+   "de": "Wähle die beste Lesung für das unterstrichene Wort.",
+   "tipp": "Achte auf Fallen: stimmhaft oder nicht (か/が), langer Vokal (こう/こ), kleines っ.",
+   "schluessel": [
+    {
+     "w": "言葉",
+     "r": "ことば",
+     "de": "Wort"
+    },
+    {
+     "w": "読み方",
+     "r": "よみかた",
+     "de": "Lesung, Leseweise"
+    },
+    {
+     "w": "として",
+     "r": "として",
+     "de": "als"
+    }
+   ]
+  },
+  {
+   "id": "kanji-schreibung",
+   "teil": "wortschatz",
+   "ja": "＿＿の{言葉|ことば}を{漢字|かんじ}で{書|か}くとき、{最|もっと}もよいものを{選|えら}びなさい。",
+   "de": "Wähle, wie man das unterstrichene Wort am besten in Kanji schreibt.",
+   "tipp": "Die falschen Antworten haben oft ein Kanji, das gleich klingt oder ähnlich aussieht.",
+   "schluessel": [
+    {
+     "w": "漢字",
+     "r": "かんじ",
+     "de": "Kanji"
+    },
+    {
+     "w": "書くとき",
+     "r": "かくとき",
+     "de": "wenn man schreibt"
+    }
+   ]
+  },
+  {
+   "id": "luecke",
+   "teil": "wortschatz",
+   "ja": "（　）に{入|い}れるのに{最|もっと}もよいものを{選|えら}びなさい。",
+   "de": "Wähle, was am besten in die Klammer passt.",
+   "tipp": "Erst den ganzen Satz lesen, dann einsetzen – oft entscheidet das Wort direkt vor oder nach der Lücke.",
+   "schluessel": [
+    {
+     "w": "入れる",
+     "r": "いれる",
+     "de": "einsetzen, hineintun"
+    },
+    {
+     "w": "のに",
+     "r": "のに",
+     "de": "um zu, für (hier: zum Einsetzen)"
+    }
+   ]
+  },
+  {
+   "id": "bedeutung-nah",
+   "teil": "wortschatz",
+   "ja": "＿＿の{言葉|ことば}に{意味|いみ}が{最|もっと}も{近|ちか}いものを{選|えら}びなさい。",
+   "de": "Wähle das Wort, dessen Bedeutung dem unterstrichenen am nächsten kommt.",
+   "tipp": "Gesucht ist ein Synonym (言い換え): Setz jede Antwort an die Stelle des unterstrichenen Wortes.",
+   "schluessel": [
+    {
+     "w": "意味",
+     "r": "いみ",
+     "de": "Bedeutung"
+    },
+    {
+     "w": "近い",
+     "r": "ちかい",
+     "de": "nah, ähnlich"
+    }
+   ]
+  },
+  {
+   "id": "gebrauch",
+   "teil": "wortschatz",
+   "ja": "{次|つぎ}の{言葉|ことば}の{使|つか}い{方|かた}として{最|もっと}もよいものを{選|えら}びなさい。",
+   "de": "Wähle den Satz, in dem das Wort am besten (richtig) gebraucht wird.",
+   "tipp": "Alle vier Sätze enthalten das Wort – nur einer benutzt es natürlich.",
+   "schluessel": [
+    {
+     "w": "使い方",
+     "r": "つかいかた",
+     "de": "Gebrauch, Verwendung"
+    }
+   ]
+  },
+  {
+   "id": "stern",
+   "teil": "grammatik",
+   "ja": "{次|つぎ}の{文|ぶん}の★に{入|はい}る{最|もっと}もよいものを{選|えら}びなさい。",
+   "de": "Wähle, was an die Stelle ★ im Satz kommt.",
+   "tipp": "Erst die vier Teile in die richtige Reihenfolge bringen, dann ablesen, welches Teil am ★ steht.",
+   "schluessel": [
+    {
+     "w": "文",
+     "r": "ぶん",
+     "de": "Satz"
+    },
+    {
+     "w": "入る",
+     "r": "はいる",
+     "de": "hineinkommen, (hin)passen"
+    }
+   ]
+  },
+  {
+   "id": "textgrammatik",
+   "teil": "grammatik",
+   "ja": "{次|つぎ}の{文章|ぶんしょう}を{読|よ}んで、{文章|ぶんしょう}{全体|ぜんたい}の{内容|ないよう}を{考|かんが}えて、（　）に{入|はい}る{最|もっと}もよいものを{選|えら}びなさい。",
+   "de": "Lies den Text und wähle mit Blick auf den ganzen Text, was in die Lücke passt.",
+   "tipp": "Hier zählt der Zusammenhang: Verbindungswörter (しかし, つまり …) und worauf sich これ/その beziehen.",
+   "schluessel": [
+    {
+     "w": "全体",
+     "r": "ぜんたい",
+     "de": "das Ganze, gesamt"
+    },
+    {
+     "w": "内容",
+     "r": "ないよう",
+     "de": "Inhalt"
+    },
+    {
+     "w": "考えて",
+     "r": "かんがえて",
+     "de": "bedenkend, mit Blick auf"
+    }
+   ]
+  },
+  {
+   "id": "inhalt-passt",
+   "teil": "lesen",
+   "ja": "{本文|ほんぶん}の{内容|ないよう}と{合|あ}っているものはどれか。",
+   "de": "Was stimmt mit dem Inhalt des Textes überein?",
+   "tipp": "Die richtige Antwort sagt dasselbe wie der Text, aber mit anderen Worten (言い換え). Wörtlich übernommene Antworten sind oft Fallen.",
+   "schluessel": [
+    {
+     "w": "本文",
+     "r": "ほんぶん",
+     "de": "der Text (der Aufgabe)"
+    },
+    {
+     "w": "内容",
+     "r": "ないよう",
+     "de": "Inhalt"
+    },
+    {
+     "w": "合っている",
+     "r": "あっている",
+     "de": "übereinstimmen, passen"
+    },
+    {
+     "w": "どれか",
+     "r": "どれか",
+     "de": "welche(s)? (Frageform)"
+    }
+   ]
+  },
+  {
+   "id": "inhalt-passt-nicht",
+   "teil": "lesen",
+   "ja": "{本文|ほんぶん}の{内容|ないよう}と{合|あ}っていないものはどれか。",
+   "de": "Was stimmt NICHT mit dem Inhalt des Textes überein?",
+   "tipp": "Achtung Verneinung: ないもの = das, was NICHT passt. Drei Antworten stehen im Text, eine nicht.",
+   "schluessel": [
+    {
+     "w": "合っていない",
+     "r": "あっていない",
+     "de": "nicht übereinstimmen"
+    },
+    {
+     "w": "もの",
+     "r": "もの",
+     "de": "das, was …"
+    }
+   ]
+  },
+  {
+   "id": "nicht-geschrieben",
+   "teil": "lesen",
+   "ja": "{本文|ほんぶん}に{書|か}かれていないものはどれか。",
+   "de": "Was steht NICHT im Text?",
+   "tipp": "Verneinung beachten: 書かれていない = nicht geschrieben.",
+   "schluessel": [
+    {
+     "w": "書かれていない",
+     "r": "かかれていない",
+     "de": "nicht geschrieben (Passiv, verneint)"
+    }
+   ]
+  },
+  {
+   "id": "autor-meinung",
+   "teil": "lesen",
+   "ja": "{筆者|ひっしゃ}の{考|かんが}えに{合|あ}うものはどれか。",
+   "de": "Was entspricht der Meinung des Autors?",
+   "tipp": "筆者 ist der Autor oder die Autorin des Textes. Die Meinung steht meist am Ende des Textes.",
+   "schluessel": [
+    {
+     "w": "筆者",
+     "r": "ひっしゃ",
+     "de": "Autor, Verfasserin (des Textes)"
+    },
+    {
+     "w": "考え",
+     "r": "かんがえ",
+     "de": "Meinung, Gedanke"
+    },
+    {
+     "w": "合う",
+     "r": "あう",
+     "de": "passen, entsprechen"
+    }
+   ]
+  },
+  {
+   "id": "autor-hauptsache",
+   "teil": "lesen",
+   "ja": "{筆者|ひっしゃ}が{最|もっと}も{言|い}いたいことは{何|なに}か。",
+   "de": "Was will der Autor vor allem sagen?",
+   "tipp": "Gesucht ist die Hauptaussage – nicht ein Detail, das nur im Text vorkommt.",
+   "schluessel": [
+    {
+     "w": "筆者",
+     "r": "ひっしゃ",
+     "de": "Autor, Verfasserin (des Textes)"
+    },
+    {
+     "w": "最も",
+     "r": "もっとも",
+     "de": "am meisten"
+    },
+    {
+     "w": "言いたいこと",
+     "r": "いいたいこと",
+     "de": "das, was man sagen will"
+    }
+   ]
+  },
+  {
+   "id": "autor-wie-denkt",
+   "teil": "lesen",
+   "ja": "{筆者|ひっしゃ}は、このことについてどのように{考|かんが}えているか。",
+   "de": "Wie denkt der Autor darüber?",
+   "tipp": "どのように = wie, auf welche Weise. Achte auf Wörter wie と思う, べきだ, のではないか.",
+   "schluessel": [
+    {
+     "w": "について",
+     "r": "について",
+     "de": "über, bezüglich"
+    },
+    {
+     "w": "どのように",
+     "r": "どのように",
+     "de": "wie, auf welche Weise"
+    }
+   ]
+  },
+  {
+   "id": "laut-autor",
+   "teil": "lesen",
+   "ja": "{筆者|ひっしゃ}によると、{大切|たいせつ}なことは{何|なに}か。",
+   "de": "Was ist laut dem Autor wichtig?",
+   "tipp": "によると = laut, gemäß. Nicht deine Meinung zählt, sondern die im Text.",
+   "schluessel": [
+    {
+     "w": "によると",
+     "r": "によると",
+     "de": "laut, gemäß"
+    },
+    {
+     "w": "大切",
+     "r": "たいせつ",
+     "de": "wichtig"
+    }
+   ]
+  },
+  {
+   "id": "autor-sagt",
+   "teil": "lesen",
+   "ja": "この{文章|ぶんしょう}で{筆者|ひっしゃ}が{述|の}べていることは{何|なに}か。",
+   "de": "Was legt der Autor in diesem Text dar?",
+   "tipp": "述べる = darlegen, sagen (schriftlich). Häufig in Fragen zu längeren Texten.",
+   "schluessel": [
+    {
+     "w": "述べている",
+     "r": "のべている",
+     "de": "darlegen, äußern"
+    }
+   ]
+  },
+  {
+   "id": "toaruga-bedeutung",
+   "teil": "lesen",
+   "ja": "＿＿とあるが、どういうことか。",
+   "de": "Im Text heißt es „…“ – was ist damit gemeint?",
+   "tipp": "とあるが = „es steht da …, aber“. Die Antwort steht fast immer kurz vor oder nach der unterstrichenen Stelle.",
+   "schluessel": [
+    {
+     "w": "とあるが",
+     "r": "とあるが",
+     "de": "im Text heißt es „…“ (und)"
+    },
+    {
+     "w": "どういうことか",
+     "r": "どういうことか",
+     "de": "was bedeutet das?"
+    }
+   ]
+  },
+  {
+   "id": "toaruga-warum",
+   "teil": "lesen",
+   "ja": "＿＿とあるが、それはなぜか。",
+   "de": "Im Text heißt es „…“ – warum ist das so?",
+   "tipp": "Suche nach Gründen: から, ので, ため, のだ in der Nähe der Stelle.",
+   "schluessel": [
+    {
+     "w": "とあるが",
+     "r": "とあるが",
+     "de": "im Text heißt es „…“ (und)"
+    },
+    {
+     "w": "なぜ",
+     "r": "なぜ",
+     "de": "warum"
+    }
+   ]
+  },
+  {
+   "id": "verweis",
+   "teil": "lesen",
+   "ja": "＿＿は{何|なに}を{指|さ}しているか。",
+   "de": "Worauf bezieht sich „…“?",
+   "tipp": "Bei これ, それ, この〜 steht das Gemeinte meist im Satz davor.",
+   "schluessel": [
+    {
+     "w": "指している",
+     "r": "さしている",
+     "de": "sich beziehen auf, zeigen auf"
+    }
+   ]
+  },
+  {
+   "id": "grund",
+   "teil": "lesen",
+   "ja": "＿＿の{理由|りゆう}として{最|もっと}も{適当|てきとう}なものはどれか。",
+   "de": "Was ist der passendste Grund für „…“?",
+   "tipp": "適当 heißt in Prüfungsfragen „passend, geeignet“ – nicht „nachlässig“ wie im Alltag.",
+   "schluessel": [
+    {
+     "w": "理由",
+     "r": "りゆう",
+     "de": "Grund"
+    },
+    {
+     "w": "適当",
+     "r": "てきとう",
+     "de": "passend, geeignet"
+    }
+   ]
+  },
+  {
+   "id": "warum-leicht",
+   "teil": "lesen",
+   "ja": "そうなるのは、どうしてですか。",
+   "de": "Warum ist das so?",
+   "tipp": "Höfliche, leichte Form der Warum-Frage (Stufe 1–2). どうして = warum.",
+   "schluessel": [
+    {
+     "w": "どうして",
+     "r": "どうして",
+     "de": "warum"
+    }
+   ]
+  },
+  {
+   "id": "was-fuer",
+   "teil": "lesen",
+   "ja": "{古着|ふるぎ}とは、どんなものですか。",
+   "de": "Was ist mit „Secondhand-Kleidung“ gemeint – was für eine Sache ist das?",
+   "tipp": "〜とは fragt nach einer Erklärung oder Definition: „Was ist … ?“",
+   "schluessel": [
+    {
+     "w": "とは",
+     "r": "とは",
+     "de": "was ist … (Definition)"
+    },
+    {
+     "w": "どんな",
+     "r": "どんな",
+     "de": "was für ein"
+    }
+   ]
+  },
+  {
+   "id": "richtig",
+   "teil": "lesen",
+   "ja": "このことについて、{正|ただ}しいものはどれか。",
+   "de": "Was ist dazu richtig?",
+   "tipp": "正しい = richtig. Gegenteil in Fallen-Fragen: 正しくないもの = was falsch ist.",
+   "schluessel": [
+    {
+     "w": "正しい",
+     "r": "ただしい",
+     "de": "richtig"
+    }
+   ]
+  },
+  {
+   "id": "a-und-b",
+   "teil": "lesen",
+   "ja": "AとBの{筆者|ひっしゃ}は、このことについてどのように{述|の}べているか。",
+   "de": "Wie äußern sich die Autoren von Text A und Text B dazu?",
+   "tipp": "Zwei Texte zum selben Thema (統合理解): Finde, worin sie sich einig sind und worin nicht.",
+   "schluessel": [
+    {
+     "w": "AとB",
+     "r": "AとB",
+     "de": "Text A und Text B"
+    },
+    {
+     "w": "述べている",
+     "r": "のべている",
+     "de": "darlegen, äußern"
+    }
+   ]
+  },
+  {
+   "id": "beide-texte",
+   "teil": "lesen",
+   "ja": "AとBのどちらの{文章|ぶんしょう}にも{触|ふ}れられている{点|てん}は{何|なに}か。",
+   "de": "Welcher Punkt wird in beiden Texten (A und B) angesprochen?",
+   "tipp": "どちらにも = in beiden. Antworten, die nur in einem Text stehen, sind falsch.",
+   "schluessel": [
+    {
+     "w": "どちら",
+     "r": "どちら",
+     "de": "welcher (von zweien)"
+    },
+    {
+     "w": "触れられている",
+     "r": "ふれられている",
+     "de": "wird erwähnt, angesprochen"
+    },
+    {
+     "w": "点",
+     "r": "てん",
+     "de": "Punkt"
+    }
+   ]
+  },
+  {
+   "id": "aushang",
+   "teil": "lesen",
+   "ja": "{右|みぎ}のページは、{市民|しみん}プールの{案内|あんない}である。",
+   "de": "Die rechte Seite ist eine Information (ein Aushang) zum städtischen Schwimmbad.",
+   "tipp": "Informationssuche (情報検索): erst die Frage lesen, dann im Aushang nur die passenden Bedingungen suchen.",
+   "schluessel": [
+    {
+     "w": "右",
+     "r": "みぎ",
+     "de": "rechts"
+    },
+    {
+     "w": "案内",
+     "r": "あんない",
+     "de": "Information, Aushang, Führung"
+    }
+   ]
+  },
+  {
+   "id": "anmelden",
+   "teil": "lesen",
+   "ja": "{田中|たなか}さんが{申|もう}し{込|こ}めるものはどれか。",
+   "de": "Wofür kann sich Herr Tanaka anmelden?",
+   "tipp": "Bedingungen abhaken: Alter, Tag, Uhrzeit, Preis – eine Antwort erfüllt alle.",
+   "schluessel": [
+    {
+     "w": "申し込める",
+     "r": "もうしこめる",
+     "de": "sich anmelden können"
+    }
+   ]
+  },
+  {
+   "id": "muss-tun",
+   "teil": "lesen",
+   "ja": "{田中|たなか}さんがしなければならないことはどれか。",
+   "de": "Was muss Herr Tanaka tun?",
+   "tipp": "しなければならない = muss tun. Achte im Aushang auf 必ず (unbedingt) und 〜こと (Pflicht).",
+   "schluessel": [
+    {
+     "w": "しなければならない",
+     "r": "しなければならない",
+     "de": "muss tun"
+    }
+   ]
+  },
+  {
+   "id": "im-fall",
+   "teil": "lesen",
+   "ja": "{雨|あめ}の{場合|ばあい}、どうすればよいか。",
+   "de": "Was soll man tun, wenn es regnet?",
+   "tipp": "場合 = Fall. In Aushängen stehen Ausnahmen oft klein am Ende.",
+   "schluessel": [
+    {
+     "w": "場合",
+     "r": "ばあい",
+     "de": "Fall, im Fall von"
+    },
+    {
+     "w": "どうすればよいか",
+     "r": "どうすればよいか",
+     "de": "was soll man tun?"
+    }
+   ]
+  },
+  {
+   "id": "hoeren-als-naechstes",
+   "teil": "hoeren",
+   "ja": "{男|おとこ}の{人|ひと}はこのあと{何|なに}をしますか。",
+   "de": "Was macht der Mann als Nächstes?",
+   "tipp": "Aufgaben verstehen (課題理解): Pläne ändern sich im Gespräch oft – zählt, was am Ende beschlossen wird.",
+   "schluessel": [
+    {
+     "w": "男の人",
+     "r": "おとこのひと",
+     "de": "der Mann"
+    },
+    {
+     "w": "このあと",
+     "r": "このあと",
+     "de": "danach, als Nächstes"
+    }
+   ]
+  },
+  {
+   "id": "hoeren-zuerst",
+   "teil": "hoeren",
+   "ja": "{女|おんな}の{人|ひと}はまず{何|なに}をしなければなりませんか。",
+   "de": "Was muss die Frau zuerst tun?",
+   "tipp": "まず = zuerst. Merke dir die Reihenfolge, die im Gespräch genannt wird.",
+   "schluessel": [
+    {
+     "w": "女の人",
+     "r": "おんなのひと",
+     "de": "die Frau"
+    },
+    {
+     "w": "まず",
+     "r": "まず",
+     "de": "zuerst"
+    }
+   ]
+  },
+  {
+   "id": "hoeren-grund",
+   "teil": "hoeren",
+   "ja": "{女|おんな}の{人|ひと}はどうして{引|ひ}っ{越|こ}すと{言|い}っていますか。",
+   "de": "Warum, sagt die Frau, zieht sie um?",
+   "tipp": "Punkte verstehen (ポイント理解): Die Frage nennt genau, worauf du achten sollst – hier den Grund.",
+   "schluessel": [
+    {
+     "w": "と言っていますか",
+     "r": "といっていますか",
+     "de": "sagt sie / sagt er (dass …)?"
+    }
+   ]
+  },
+  {
+   "id": "hoeren-worueber",
+   "teil": "hoeren",
+   "ja": "{二人|ふたり}は{何|なに}について{話|はな}していますか。",
+   "de": "Worüber sprechen die beiden?",
+   "tipp": "Überblick (概要理解): Nicht an Einzelheiten festhalten – worum geht es insgesamt?",
+   "schluessel": [
+    {
+     "w": "二人",
+     "r": "ふたり",
+     "de": "die beiden"
+    },
+    {
+     "w": "何について",
+     "r": "なにについて",
+     "de": "worüber"
+    }
+   ]
+  },
+  {
+   "id": "hoeren-meinung",
+   "teil": "hoeren",
+   "ja": "{男|おとこ}の{人|ひと}は、{新|あたら}しい{制度|せいど}についてどう{思|おも}っていますか。",
+   "de": "Was hält der Mann von dem neuen System?",
+   "tipp": "どう思っていますか = was denkt er darüber. Achte auf Wendungen wie けど, ただ, とはいえ.",
+   "schluessel": [
+    {
+     "w": "どう思っていますか",
+     "r": "どうおもっていますか",
+     "de": "was denkt er/sie darüber?"
+    }
+   ]
+  },
+  {
+   "id": "hoeren-nichts-gedruckt",
+   "teil": "hoeren",
+   "ja": "{問題|もんだい}{用|よう}{紙|し}に{何|なに}も{印刷|いんさつ}されていません。",
+   "de": "Auf dem Aufgabenblatt ist nichts gedruckt.",
+   "tipp": "Bei diesem Hörteil gibt es keine Bilder und keine Antworten auf dem Blatt – Notizen machen hilft.",
+   "schluessel": [
+    {
+     "w": "問題用紙",
+     "r": "もんだいようし",
+     "de": "Aufgabenblatt"
+    },
+    {
+     "w": "印刷",
+     "r": "いんさつ",
+     "de": "Druck, gedruckt"
+    }
+   ]
+  },
+  {
+   "id": "hoeren-reaktion",
+   "teil": "hoeren",
+   "ja": "まず{文|ぶん}を{聞|き}いてください。それから、それに{対|たい}する{返事|へんじ}を{聞|き}いて、{最|もっと}もよいものを{一|ひと}つ{選|えら}んでください。",
+   "de": "Hör zuerst den Satz. Hör dann die Antworten darauf und wähle die passendste.",
+   "tipp": "Schnelle Reaktion (即時応答): kurze Alltagssätze – achte auf Höflichkeit und wer was tun will.",
+   "schluessel": [
+    {
+     "w": "それに対する",
+     "r": "それにたいする",
+     "de": "darauf (bezogen)"
+    },
+    {
+     "w": "返事",
+     "r": "へんじ",
+     "de": "Antwort, Erwiderung"
+    }
+   ]
+  },
+  {
+   "id": "hoeren-beide-waehlen",
+   "teil": "hoeren",
+   "ja": "{二人|ふたり}はどれを{選|えら}びましたか。",
+   "de": "Welche haben die beiden gewählt?",
+   "tipp": "Gesamtverständnis (統合理解): Mehrere Möglichkeiten werden genannt – höre bis zum Schluss, was gewählt wird.",
+   "schluessel": [
+    {
+     "w": "選びました",
+     "r": "えらびました",
+     "de": "gewählt haben"
+    }
+   ]
+  }
+ ]
+}

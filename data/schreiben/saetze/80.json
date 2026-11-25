@@ -1,0 +1,44 @@
+{
+"職|しょく": {
+"s": "姉は今、新しい[職]を探している。",
+"de": "Meine ältere Schwester sucht gerade eine neue Stelle.",
+"r": "{姉|あね}は{今|いま}、{新|あたら}しい[{職|しょく}]を{探|さが}している。"
+},
+"職人|しょくにん": {
+"s": "祖父は家具を作る[職人]だった。",
+"de": "Mein Großvater war Handwerker und baute Möbel.",
+"r": "{祖父|そふ}は{家具|かぐ}を{作|つく}る[{職人|しょくにん}]だった。"
+},
+"職務|しょくむ": {
+"s": "社員は自分の[職務]をきちんと果たすべきだ。",
+"de": "Angestellte sollten ihre Aufgaben ordentlich erfüllen.",
+"r": "{社員|しゃいん}は{自分|じぶん}の[{職務|しょくむ}]をきちんと{果|は}たすべきだ。",
+"bedeutung": "Dienstpflichten, Aufgaben"
+},
+"職員|しょくいん": {
+"s": "市の[職員]が説明に来た。",
+"de": "Ein Mitarbeiter der Stadt kam, um es zu erklären.",
+"r": "{市|し}の[{職員|しょくいん}]が{説明|せつめい}に{来|き}た。",
+"bedeutung": "Angestellte(r), Mitarbeiter(in)"
+},
+"職場|しょくば": {
+"s": "新しい[職場]は駅から近い。",
+"de": "Der neue Arbeitsplatz liegt nah am Bahnhof.",
+"r": "{新|あたら}しい[{職場|しょくば}]は{駅|えき}から{近|ちか}い。"
+},
+"職業|しょくぎょう": {
+"s": "将来の[職業]について、親と話した。",
+"de": "Ich habe mit meinen Eltern über meinen zukünftigen Beruf gesprochen.",
+"r": "{将来|しょうらい}の[{職業|しょくぎょう}]について、{親|おや}と{話|はな}した。"
+},
+"育つ|そだつ": {
+"s": "わたしは海の近くの町で[育った]。",
+"de": "Ich bin in einer Stadt am Meer aufgewachsen.",
+"r": "わたしは{海|うみ}の{近|ちか}くの{町|まち}で[{育|そだ}った]。"
+},
+"育てる|そだてる": {
+"s": "ベランダでトマトを[育てて]いる。",
+"de": "Ich ziehe auf dem Balkon Tomaten.",
+"r": "ベランダでトマトを[{育|そだ}てて]いる。"
+}
+}

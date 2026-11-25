@@ -1,0 +1,81 @@
+{
+"刀|かたな": {
+"s": "博物館で古い[刀]を見た。",
+"de": "Im Museum habe ich ein altes Schwert gesehen.",
+"r": "{博物館|はくぶつかん}で{古|ふる}い[{刀|かたな}]を{見|み}た。",
+"bedeutung": "Schwert"
+},
+"刃|は": {
+"s": "このナイフの[刃]はよく切れる。",
+"de": "Die Klinge dieses Messers ist sehr scharf.",
+"r": "このナイフの[{刃|は}]はよく{切|き}れる。",
+"bedeutung": "Klinge, Schneide"
+},
+"判|はん": {
+"s": "この雑誌は[判]が大きい。",
+"de": "Diese Zeitschrift hat ein großes Format.",
+"r": "この{雑誌|ざっし}は[{判|はん}]が{大|おお}きい。"
+},
+"判事|はんじ": {
+"s": "父は[判事]として長く働いた。",
+"de": "Mein Vater hat lange als Richter gearbeitet.",
+"r": "{父|ちち}は[{判事|はんじ}]として{長|なが}く{働|はたら}いた。"
+},
+"判子|はんこ": {
+"s": "ここに[判子]をお願いします。",
+"de": "Hier bitte Ihren Stempel.",
+"r": "ここに[{判子|はんこ}]をお{願|ねが}いします。"
+},
+"判定|はんてい": {
+"s": "試合はビデオで[判定]された。",
+"de": "Das Spiel wurde per Video entschieden.",
+"r": "{試合|しあい}はビデオで[{判定|はんてい}]された。",
+"bedeutung": "Entscheidung, Beurteilung"
+},
+"判断|はんだん": {
+"s": "どちらがいいか、自分で[判断]してください。",
+"de": "Entscheiden Sie bitte selbst, was besser ist.",
+"r": "どちらがいいか、{自分|じぶん}で[{判断|はんだん}]してください。"
+},
+"判決|はんけつ": {
+"s": "裁判所は今日[判決]を出した。",
+"de": "Das Gericht hat heute das Urteil verkündet.",
+"r": "{裁判所|さいばんしょ}は{今日|きょう}[{判決|はんけつ}]を{出|だ}した。",
+"bedeutung": "Urteil (Gericht)"
+},
+"利害|りがい": {
+"s": "両国の[利害]が一致して、話し合いが進んだ。",
+"de": "Die Interessen beider Länder stimmten überein, und die Gespräche kamen voran.",
+"r": "{両国|りょうこく}の[{利害|りがい}]が{一致|いっち}して、{話|はな}し{合|あ}いが{進|すす}んだ。"
+},
+"割と|わりと": {
+"s": "この店の料理は[割と]安くておいしい。",
+"de": "Das Essen in diesem Restaurant ist ziemlich günstig und lecker.",
+"r": "この{店|みせ}の{料理|りょうり}は[{割|わり}と]{安|やす}くておいしい。"
+},
+"割る|わる": {
+"s": "卵を二つ[割って]、よく混ぜてください。",
+"de": "Schlagen Sie zwei Eier auf und verrühren Sie sie gut.",
+"r": "{卵|たまご}を{二|ふた}つ[{割|わ}って]、よく{混|ま}ぜてください。"
+},
+"割れる|われる": {
+"s": "落としたコップが[割れて]しまった。",
+"de": "Das Glas, das ich fallen ließ, ist zerbrochen.",
+"r": "{落|お}としたコップが[{割|わ}れて]しまった。"
+},
+"割合|わりあい": {
+"s": "クラスの女子の[割合]は半分ほどだ。",
+"de": "Der Anteil der Mädchen in der Klasse liegt bei etwa der Hälfte.",
+"r": "クラスの{女子|じょし}の[{割合|わりあい}]は{半分|はんぶん}ほどだ。"
+},
+"割合に|わりあいに": {
+"s": "今日は冬にしては[割合に]暖かい。",
+"de": "Heute ist es für den Winter verhältnismäßig warm.",
+"r": "{今日|きょう}は{冬|ふゆ}にしては[{割合|わりあい}に]{暖|あたた}かい。"
+},
+"割引|わりびき": {
+"s": "学生証を見せると[割引]が受けられる。",
+"de": "Wenn man den Studentenausweis zeigt, bekommt man einen Rabatt.",
+"r": "{学生証|がくせいしょう}を{見|み}せると[{割引|わりびき}]が{受|う}けられる。"
+}
+}

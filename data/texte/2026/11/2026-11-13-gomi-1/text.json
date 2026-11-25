@@ -1,0 +1,233 @@
+{
+  "id": "2026-11-13-gomi-1",
+  "date": "2026-11-13",
+  "topic": "jlpt",
+  "type": "infoblatt",
+  "stufe": 1,
+  "titleDe": "Die Tage für den Müll",
+  "title": [
+    {"t": "ごみ", "g": "Müll", "j": 4},
+    {"t": "を"},
+    {"t": "出す", "r": "だす", "ruby": [["出", "だ"], ["す", ""]], "g": "(Müll) rausbringen", "j": 5},
+    {"t": "日", "r": "ひ", "g": "Tag", "j": 4}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "この", "g": "dieser, diese", "j": 5},
+        {"t": "町", "r": "まち", "g": "Stadt, Ort", "j": 5, "say": "まち"},
+        {"t": "の"},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "の"},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "を"},
+        {"t": "、"},
+        {"t": "見て", "r": "みて", "ruby": [["見", "み"], ["て", ""]], "b": "見る", "g": "ansehen", "j": 5, "gr": "g1"},
+        {"t": "みましょう", "b": "みる", "g": "〜てみましょう = schauen wir mal …", "j": 5, "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "月曜日", "r": "げつようび", "g": "Montag", "j": 5},
+        {"t": "と", "g": "wenn (dann immer)"},
+        {"t": "木曜日", "r": "もくようび", "g": "Donnerstag", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "台所", "r": "だいどころ", "g": "Küche", "j": 5},
+        {"t": "の"},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "と", "g": "wenn (dann immer)"},
+        {"t": "紙", "r": "かみ", "g": "Papier", "j": 5},
+        {"t": "の"},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "の"},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "水曜日", "r": "すいようび", "g": "Mittwoch", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "ビン", "g": "Flasche (aus Glas)"},
+        {"t": "と", "g": "wenn (dann immer)"},
+        {"t": "カン", "g": "Dose"},
+        {"t": "と", "g": "wenn (dann immer)"},
+        {"t": "ペットボトル", "g": "PET-Flasche, Plastikflasche"},
+        {"t": "の"},
+        {"t": "日", "r": "ひ", "g": "Tag", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "ビン", "g": "Flasche (aus Glas)"},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "カン", "g": "Dose"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "中", "r": "なか", "g": "Inneres; 中を = innen", "j": 5},
+        {"t": "を"},
+        {"t": "水", "r": "みず", "g": "Wasser", "j": 5},
+        {"t": "で"},
+        {"t": "洗って", "r": "あらって", "ruby": [["洗", "あら"], ["って", ""]], "b": "洗う", "g": "waschen, ausspülen", "j": 5, "gr": "g2"},
+        {"t": "から", "g": "〜てから = nachdem …", "gr": "g2"},
+        {"t": "出します", "r": "だします", "ruby": [["出", "だ"], ["します", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "新聞", "r": "しんぶん", "g": "Zeitung", "j": 5},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "雑誌", "r": "ざっし", "g": "Zeitschrift", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "月", "r": "つき", "g": "Monat; 月に一回 = einmal im Monat", "j": 4},
+        {"t": "に"},
+        {"t": "一回", "r": "いちかい", "g": "einmal"},
+        {"t": "、"},
+        {"t": "金曜日", "r": "きんようび", "g": "Freitag", "j": 5},
+        {"t": "に"},
+        {"t": "出します", "r": "だします", "ruby": [["出", "だ"], ["します", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "朝", "r": "あさ", "g": "Morgen", "j": 5},
+        {"t": "8時", "r": "はちじ", "g": "acht Uhr"},
+        {"t": "まで", "g": "bis; 〜までに = bis spätestens"},
+        {"t": "に"},
+        {"t": "出します", "r": "だします", "ruby": [["出", "だ"], ["します", ""]], "b": "出す", "g": "(Müll) rausbringen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "夜", "r": "よる", "g": "Abend, Nacht", "j": 5},
+        {"t": "に"},
+        {"t": "出す", "r": "だす", "ruby": [["出", "だ"], ["す", ""]], "g": "(Müll) rausbringen", "j": 5, "gr": "g3"},
+        {"t": "と", "g": "wenn (dann immer)", "gr": "g3"},
+        {"t": "、"},
+        {"t": "鳥", "r": "とり", "g": "Vogel", "j": 5},
+        {"t": "や", "g": "und (unter anderem)"},
+        {"t": "猫", "r": "ねこ", "g": "Katze", "j": 5},
+        {"t": "が"},
+        {"t": "来て", "r": "きて", "ruby": [["来", "き"], ["て", ""]], "b": "来る", "g": "kommen", "j": 5},
+        {"t": "、"},
+        {"t": "ごみ", "g": "Müll", "j": 4},
+        {"t": "を"},
+        {"t": "食べます", "r": "たべます", "ruby": [["食", "た"], ["べます", ""]], "b": "食べる", "g": "essen, fressen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "みんな", "g": "alle", "j": 5},
+        {"t": "で"},
+        {"t": "町", "r": "まち", "g": "Stadt, Ort", "j": 5, "say": "まち"},
+        {"t": "を"},
+        {"t": "きれいに", "b": "きれい", "g": "sauber, schön", "j": 5},
+        {"t": "しましょう", "b": "する", "g": "machen; きれいにする = sauber machen", "j": 5, "gr": "g4"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜てみましょう",
+      "j": 5,
+      "de": "て-Form + みましょう: „lasst uns mal … (ausprobieren)“.",
+      "ex": "この{本|ほん}を{読|よ}んでみましょう。",
+      "exDe": "Lesen wir mal dieses Buch."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜てから",
+      "j": 5,
+      "de": "て-Form + から: „nachdem …“, „erst …, dann …“.",
+      "ex": "{手|て}を{洗|あら}ってから{食|た}べます。",
+      "exDe": "Ich esse, nachdem ich mir die Hände gewaschen habe."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜と",
+      "j": 4,
+      "de": "Wörterbuchform + と: „wenn …, dann (immer) …“ – eine feste Folge.",
+      "ex": "{春|はる}になると、{花|はな}が{咲|さ}きます。",
+      "exDe": "Wenn es Frühling wird, blühen die Blumen."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜ましょう",
+      "j": 5,
+      "de": "Verbstamm + ましょう: „lasst uns …“ – ein Vorschlag an alle.",
+      "ex": "いっしょに{行|い}きましょう。",
+      "exDe": "Lass uns zusammen gehen."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "ビンとカンは、{何曜|なんよう}日に出しますか。",
+      "qDe": "An welchem Tag bringt man Flaschen und Dosen raus?",
+      "options": ["{月曜日|げつようび}", "{水曜日|すいようび}", "{木曜日|もくようび}", "{金曜日|きんようび}"],
+      "answer": 1,
+      "explain": "Satz 3: 水曜日は、ビンとカンとペットボトルの日です. Montag und Donnerstag sind für Küchen- und Papiermüll (Satz 2).",
+      "evidence": [2, 1]
+    },
+    {
+      "kind": "inhalt",
+      "q": "ビンやカンを出す前に、何をしますか。",
+      "qDe": "Was macht man, bevor man Flaschen und Dosen rausbringt?",
+      "options": ["中を水で{洗|あら}う", "{紙|かみ}に書く", "{鳥|とり}にあげる", "{夜|よる}に出す"],
+      "answer": 0,
+      "explain": "Satz 4: 中を水で洗ってから出します – innen mit Wasser ausspülen.",
+      "evidence": [3]
+    },
+    {
+      "kind": "inhalt",
+      "q": "{夜|よる}にごみを出すと、どうなりますか。",
+      "qDe": "Was passiert, wenn man den Müll abends rausbringt?",
+      "options": ["{町|まち}がきれいになる", "{鳥|とり}や{猫|ねこ}がごみを食べる", "{朝|あさ}8時に{集|あつ}める", "ごみが{少|すく}なくなる"],
+      "answer": 1,
+      "explain": "Satz 7: 夜に出すと、鳥や猫が来て、ごみを食べます.",
+      "evidence": [6]
+    },
+    {
+      "kind": "sprache",
+      "q": "「台所」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 台所?",
+      "options": ["だいしょ", "だいどころ", "たいところ", "だいところ"],
+      "answer": 1,
+      "explain": "台所 liest man だいどころ (Küche) – mit getrübtem ど.",
+      "evidence": [1]
+    }
+  ],
+  "sources": [],
+  "vorrat": true,
+  "versions": {
+    "2": "texte/2026/11/2026-11-13-gomi-2",
+    "3": "texte/2026/11/2026-11-13-gomi-3",
+    "4": "texte/2026/11/2026-11-13-gomi-4"
+  }
+}

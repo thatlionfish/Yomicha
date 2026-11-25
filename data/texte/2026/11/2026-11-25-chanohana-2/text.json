@@ -1,0 +1,362 @@
+{
+  "id": "2026-11-25-chanohana-2",
+  "date": "2026-11-25",
+  "topic": "tee",
+  "type": "email",
+  "stufe": 2,
+  "titleDe": "E-Mail: Ich habe Teeblüten gesehen",
+  "title": [
+    {"t": "茶", "r": "ちゃ", "g": "Tee (die Pflanze); 茶の花 = Teeblüte", "j": 3},
+    {"t": "の"},
+    {"t": "花", "r": "はな", "g": "Blüte, Blume", "j": 5},
+    {"t": "を"},
+    {"t": "見ました", "r": "みました", "ruby": [["見", "み"], ["ました", ""]], "b": "見る", "g": "sehen", "j": 5}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "エマさん", "g": "Emma (Vorname)"},
+        {"t": "、"},
+        {"t": "お元気", "r": "おげんき", "ruby": [["お", ""], ["元気", "げんき"]], "g": "gesund, munter; お元気ですか = Wie geht es dir?", "j": 5},
+        {"t": "です"},
+        {"t": "か"},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "週末", "r": "しゅうまつ", "g": "Wochenende"},
+        {"t": "、"},
+        {"t": "静岡", "r": "しずおか", "g": "Shizuoka (Präfektur in Mitteljapan, bekannt für ihren Tee)"},
+        {"t": "の"},
+        {"t": "おばあちゃん", "g": "Oma"},
+        {"t": "の"},
+        {"t": "家", "r": "いえ", "g": "Haus, Zuhause", "j": 5},
+        {"t": "へ"},
+        {"t": "行きました", "r": "いきました", "ruby": [["行", "い"], ["きました", ""]], "b": "行く", "g": "gehen, fahren; 行ってくる = hinfahren (und wiederkommen)", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "おばあちゃん", "g": "Oma"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "家", "r": "いえ", "g": "Haus, Zuhause", "j": 5},
+        {"t": "の"},
+        {"t": "裏", "r": "うら", "g": "Rückseite; 家の裏 = hinter dem Haus", "j": 4},
+        {"t": "に"},
+        {"t": "茶", "r": "ちゃ", "g": "Tee (die Pflanze); 茶の花 = Teeblüte", "j": 3},
+        {"t": "畑", "r": "はたけ", "g": "Feld", "j": 3},
+        {"t": "を"},
+        {"t": "持っています", "r": "もっています", "ruby": [["持", "も"], ["っています", ""]], "b": "持つ", "g": "haben, besitzen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "畑", "r": "はたけ", "g": "Feld", "j": 3},
+        {"t": "に"},
+        {"t": "白くて", "r": "しろくて", "ruby": [["白", "しろ"], ["くて", ""]], "b": "白い", "g": "weiß", "j": 5},
+        {"t": "丸い", "r": "まるい", "ruby": [["丸", "まる"], ["い", ""]], "g": "rund", "j": 5},
+        {"t": "花", "r": "はな", "g": "Blüte, Blume", "j": 5},
+        {"t": "が"},
+        {"t": "たくさん", "g": "viel, viele", "j": 5},
+        {"t": "咲いていました", "r": "さいていました", "ruby": [["咲", "さ"], ["いていました", ""]], "b": "咲く", "g": "blühen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "お茶", "r": "おちゃ", "ruby": [["お", ""], ["茶", "ちゃ"]], "g": "Tee", "j": 5},
+        {"t": "の"},
+        {"t": "葉", "r": "は", "g": "Blatt", "j": 4},
+        {"t": "は"},
+        {"t": "知っています", "r": "しっています", "ruby": [["知", "し"], ["っています", ""]], "b": "知る", "g": "kennen, wissen; 知っています = kenne", "j": 5},
+        {"t": "が"},
+        {"t": "、"},
+        {"t": "花", "r": "はな", "g": "Blüte, Blume", "j": 5},
+        {"t": "は"},
+        {"t": "一度", "r": "いちど", "g": "einmal; 一度も〜ない = kein einziges Mal", "j": 4},
+        {"t": "も"},
+        {"t": "見た", "r": "みた", "ruby": [["見", "み"], ["た", ""]], "b": "見る", "g": "sehen", "j": 5, "gr": "g1"},
+        {"t": "こと", "g": "(etwas) Getanes; 見たことがない = noch nie gesehen haben", "j": 4, "gr": "g1"},
+        {"t": "が", "gr": "g1"},
+        {"t": "ありません", "b": "ある", "g": "es gibt; 〜たことがある = etwas schon einmal getan haben", "j": 5, "gr": "g1"},
+        {"t": "でし", "b": "です", "gr": "g1"},
+        {"t": "た", "gr": "g1"},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "この", "g": "dies(e); この花 = diese Blüte", "j": 5},
+        {"t": "花", "r": "はな", "g": "Blüte, Blume", "j": 5},
+        {"t": "は"},
+        {"t": "秋", "r": "あき", "g": "Herbst", "j": 5},
+        {"t": "の"},
+        {"t": "終わり", "r": "おわり", "ruby": [["終", "お"], ["わり", ""]], "g": "Ende", "j": 4},
+        {"t": "から"},
+        {"t": "冬", "r": "ふゆ", "g": "Winter", "j": 5},
+        {"t": "の"},
+        {"t": "初め", "r": "はじめ", "ruby": [["初", "はじ"], ["め", ""]], "g": "Anfang", "j": 5},
+        {"t": "まで", "gr": "g2"},
+        {"t": "しか", "gr": "g2"},
+        {"t": "咲きません", "r": "さきません", "ruby": [["咲", "さ"], ["きません", ""]], "b": "咲く", "g": "blühen", "j": 5, "gr": "g2"},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "花", "r": "はな", "g": "Blüte, Blume", "j": 5},
+        {"t": "が"},
+        {"t": "多く", "r": "おおく", "ruby": [["多", "おお"], ["く", ""]], "b": "多い", "g": "viel, zahlreich; 多く咲く = zahlreich blühen", "j": 5},
+        {"t": "咲く", "r": "さく", "ruby": [["咲", "さ"], ["く", ""]], "g": "blühen", "j": 5},
+        {"t": "と"},
+        {"t": "、"},
+        {"t": "木", "r": "き", "g": "Baum, Strauch (hier: Teestrauch)", "j": 5},
+        {"t": "が"},
+        {"t": "疲れて", "r": "つかれて", "ruby": [["疲", "つか"], ["れて", ""]], "b": "疲れる", "g": "müde werden, erschöpft sein", "j": 5},
+        {"t": "しまう", "g": "(ganz, leider) …; 疲れてしまう = erschöpft werden (leider)", "j": 4},
+        {"t": "そう", "g": "angeblich, wie man sagt (〜そうです = habe gehört, dass …)", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "だから", "g": "deshalb", "j": 4},
+        {"t": "、"},
+        {"t": "農家", "r": "のうか", "g": "Bauernhof, Bauer; 農家の人 = die Bauern", "j": 3},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch, Leute", "j": 5},
+        {"t": "は"},
+        {"t": "あまり", "g": "nicht besonders (mit Verneinung)", "j": 5},
+        {"t": "喜ばない", "r": "よろこばない", "ruby": [["喜", "よろこ"], ["ばない", ""]], "b": "喜ぶ", "g": "sich freuen", "j": 4},
+        {"t": "と"},
+        {"t": "、"},
+        {"t": "おばあちゃん", "g": "Oma"},
+        {"t": "が"},
+        {"t": "教えて", "r": "おしえて", "ruby": [["教", "おし"], ["えて", ""]], "b": "教える", "g": "erzählen, beibringen", "j": 5, "gr": "g3"},
+        {"t": "くれました", "b": "くれる", "g": "(für mich) tun; 教えてくれました = hat mir erzählt", "j": 4, "gr": "g3"},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "帰る", "r": "かえる", "ruby": [["帰", "かえ"], ["る", ""]], "g": "nach Hause fahren, zurückfahren", "j": 5},
+        {"t": "とき", "g": "als, wenn", "j": 5},
+        {"t": "、"},
+        {"t": "春", "r": "はる", "g": "Frühling", "j": 5},
+        {"t": "に"},
+        {"t": "作った", "r": "つくった", "ruby": [["作", "つく"], ["った", ""]], "b": "作る", "g": "herstellen, machen", "j": 5},
+        {"t": "お茶", "r": "おちゃ", "ruby": [["お", ""], ["茶", "ちゃ"]], "g": "Tee", "j": 5},
+        {"t": "を"},
+        {"t": "くれました", "b": "くれる", "g": "(für mich) tun; 教えてくれました = hat mir erzählt", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "エマさん", "g": "Emma (Vorname)"},
+        {"t": "に"},
+        {"t": "も"},
+        {"t": "送ろう", "r": "おくろう", "ruby": [["送", "おく"], ["ろう", ""]], "b": "送る", "g": "schicken", "j": 4, "gr": "g4"},
+        {"t": "と", "gr": "g4"},
+        {"t": "思っています", "r": "おもっています", "ruby": [["思", "おも"], ["っています", ""]], "b": "思う", "g": "denken; 送ろうと思っています = ich habe vor zu schicken", "j": 4, "gr": "g4"},
+        {"t": "。"}
+      ],
+      "audio": "s10.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "来年", "r": "らいねん", "g": "nächstes Jahr", "j": 5},
+        {"t": "の"},
+        {"t": "春", "r": "はる", "g": "Frühling", "j": 5},
+        {"t": "、"},
+        {"t": "いっしょ", "g": "zusammen; いっしょに = gemeinsam", "j": 5},
+        {"t": "に"},
+        {"t": "お茶", "r": "おちゃ", "ruby": [["お", ""], ["茶", "ちゃ"]], "g": "Tee", "j": 5},
+        {"t": "を"},
+        {"t": "つみ", "b": "つむ", "g": "pflücken (Teeblätter)", "j": 3},
+        {"t": "に"},
+        {"t": "行きません", "r": "いきません", "ruby": [["行", "い"], ["きません", ""]], "b": "行く", "g": "gehen, fahren; 行ってくる = hinfahren (und wiederkommen)", "j": 5},
+        {"t": "か"},
+        {"t": "。"}
+      ],
+      "audio": "s11.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜たことがある",
+      "j": 4,
+      "de": "た-Form + ことがある: „schon einmal … haben“ (Erfahrung). Verneint mit 一度も: 一度も見たことがありませんでした = hatte noch nie gesehen.",
+      "ex": "{私|わたし}は{富士山|ふじさん}に{登|のぼ}ったことがあります。",
+      "exDe": "Ich bin schon einmal auf den Fuji gestiegen."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜しか〜ない",
+      "j": 4,
+      "de": "Nomen + しか + Verneinung: „nur …“ (mit dem Gefühl: nicht mehr). 冬の初めまでしか咲きません = blüht nur bis zum Winteranfang.",
+      "ex": "{財布|さいふ}に{百円|ひゃくえん}しかありません。",
+      "exDe": "Ich habe nur hundert Yen im Portemonnaie."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜てくれる",
+      "j": 4,
+      "de": "て-Form + くれる: jemand tut etwas für mich (oder für uns). 教えてくれました = hat mir (freundlicherweise) erzählt.",
+      "ex": "{友|とも}だちが{駅|えき}まで{送|おく}ってくれました。",
+      "exDe": "Ein Freund hat mich bis zum Bahnhof gebracht."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜（よ）うと思っている",
+      "j": 4,
+      "de": "Willensform (送ろう) + と思っている: „ich habe vor zu …“. Ein Plan, über den man schon eine Weile nachdenkt.",
+      "ex": "{夏休|なつやす}みに{北海道|ほっかいどう}へ{行|い}こうと{思|おも}っています。",
+      "exDe": "In den Sommerferien habe ich vor, nach Hokkaidō zu fahren."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "このメールを書いた人について、本文の{内容|ないよう}と{合|あ}っているものはどれですか。",
+      "qDe": "Was stimmt laut Text über die Person, die diese E-Mail geschrieben hat?",
+      "options": ["先週、おばあちゃんが{静岡|しずおか}から{遊|あそ}びに来た", "おばあちゃんの家の近くで、お茶の{葉|は}を買った", "{週末|しゅうまつ}に、おばあちゃんの住む町へ出かけた", "{静岡|しずおか}で、おばあちゃんと茶{畑|はたけ}を始めた"],
+      "answer": 2,
+      "explain": "Satz 2: Sie war am Wochenende bei ihrer Oma in Shizuoka – also in der Stadt, in der ihre Oma wohnt. Die Oma kam nicht zu Besuch, und das Teefeld hat die Oma schon (Satz 3), es wurde nicht neu angelegt. Gekauft hat sie nichts; die Oma hat ihr Tee mitgegeben (Satz 9).",
+      "evidence": [1, 2],
+      "why": [
+        {
+          "de": "Vertauscht: Nicht die Oma kam zu Besuch – wer die E-Mail schreibt, ist zur Oma gefahren.",
+          "ja": "{遊|あそ}びに来たのはおばあちゃんではありません。書いた人がおばあちゃんの家へ行きました。",
+          "stellen": [[1, "おばあちゃんの家へ行きました"]]
+        },
+        {
+          "de": "Gekauft wurde nichts. Den Tee gab es zum Abschied von der Oma geschenkt (くれました).",
+          "ja": "お茶は買っていません。帰るとき、おばあちゃんがくれました。",
+          "stellen": [[8, "お茶をくれました"]]
+        },
+        {
+          "de": "Am Wochenende ging es zur Oma nach Shizuoka. „おばあちゃんの住む町へ出かけた“ umschreibt „おばあちゃんの家へ行きました“.",
+          "ja": "「{静岡|しずおか}のおばあちゃんの家へ行きました」を「おばあちゃんの住む町へ出かけた」と言いかえています。",
+          "stellen": [[1, "週末、静岡のおばあちゃんの家へ行きました"]]
+        },
+        {
+          "de": "Das Teefeld hat die Oma schon (持っています). Die beiden haben nichts Neues angefangen.",
+          "ja": "茶{畑|はたけ}は、もうおばあちゃんが持っています。いっしょに始めたのではありません。",
+          "stellen": [[2, "茶畑を持っています"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "茶の花について、本文の{内容|ないよう}と{合|あ}っているものはどれですか。",
+      "qDe": "Was stimmt laut Text über die Teeblüten?",
+      "options": ["春から夏まで、長い間{咲|さ}いている", "一年の中で、{寒|さむ}くなるころの{短|みじか}い間だけ見られる", "白くて{丸|まる}いので、お茶の{葉|は}とよく{間違|まちが}える", "書いた人は、前に何度も見たことがある"],
+      "answer": 1,
+      "explain": "Satz 6: Sie blühen nur vom Ende des Herbstes bis zum Anfang des Winters – also kurz, wenn es kalt wird. Im Frühling wird Tee gemacht (Satz 9), nicht geblüht. Nach Satz 5 hatte sie die Blüten noch nie gesehen.",
+      "evidence": [4, 5],
+      "why": [
+        {
+          "de": "Falsche Jahreszeit und Dauer: Die Blüten gibt es nur vom Ende des Herbstes bis zum Anfang des Winters. Im Frühling wird der Tee gemacht.",
+          "ja": "花が{咲|さ}くのは秋の終わりから冬の{初|はじ}めまでだけです。春はお茶を作る{季節|きせつ}です。",
+          "stellen": [[5, "秋の終わりから冬の初めまでしか咲きません"], [8, "春に作ったお茶"]]
+        },
+        {
+          "de": "„秋の終わりから冬の初めまでしか咲きません“ – also nur kurz, wenn es kalt wird. しか…ません heißt „nur“.",
+          "ja": "「秋の終わりから冬の{初|はじ}めまでしか」は、{寒|さむ}くなるころの{短|みじか}い間だけという意味です。",
+          "stellen": [[5, "秋の終わりから冬の初めまでしか咲きません"]]
+        },
+        {
+          "de": "Weiß und rund sind die Blüten zwar – dass man sie mit Blättern verwechselt, steht aber nirgends.",
+          "ja": "花は白くて{丸|まる}いですが、{葉|は}と{間違|まちが}えるとは書いてありません。",
+          "stellen": [[3, "白くて丸い花"]]
+        },
+        {
+          "de": "Im Text steht das Gegenteil: noch kein einziges Mal gesehen (一度も…ありませんでした).",
+          "ja": "「一度も見たことがありませんでした」は、前に見たことがないという意味です。",
+          "stellen": [[4, "花は一度も見たことがありませんでした"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "「{農家|のうか}の人はあまり{喜|よろこ}ばない」とありますが、それはなぜですか。",
+      "qDe": "Im Text heißt es „die Bauern freuen sich nicht besonders“ – warum?",
+      "options": ["花を見に来る人が多くて、{畑|はたけ}が{疲|つか}れるから", "花の色が白くて、お茶の色が悪くなるから", "冬の{初|はじ}めは{寒|さむ}くて、花がすぐなくなるから", "花が多いと、木の元気がなくなるから"],
+      "answer": 3,
+      "explain": "Satz 7 und 8 zusammen: Wenn viele Blüten blühen, wird der Strauch erschöpft – deshalb (だから) freuen sich die Bauern nicht. Von Besuchern oder von der Farbe des Tees steht nichts im Text.",
+      "evidence": [6, 7],
+      "why": [
+        {
+          "de": "Von Besuchern, die wegen der Blüten kommen, steht nichts im Text. Und müde wird der Strauch, nicht das Feld.",
+          "ja": "花を見に来る人の話はありません。{疲|つか}れるのは{畑|はたけ}ではなく、木です。",
+          "stellen": [[6, "木が疲れてしまう"]]
+        },
+        {
+          "de": "Über die Farbe des Tees sagt der Text nichts. Weiß sind nur die Blüten.",
+          "ja": "お茶の色の話は本文にありません。白いのは花です。",
+          "stellen": [[3, "白くて丸い花"]]
+        },
+        {
+          "de": "Dieser Satz sagt, wann die Blüten blühen – nicht, dass die Kälte sie schnell verschwinden lässt. Den Grund nennt der Satz danach.",
+          "ja": "「冬の{初|はじ}めまでしか{咲|さ}きません」は花の{季節|きせつ}の話です。{農家|のうか}の人が{喜|よろこ}ばない{理由|りゆう}ではありません。",
+          "stellen": [[5, "冬の初めまでしか咲きません"], [6, "花が多く咲くと、木が疲れてしまう"]]
+        },
+        {
+          "de": "Blühen viele Blüten, wird der Strauch erschöpft – „だから“ freuen sich die Bauern nicht. „木の元気がなくなる“ umschreibt „木が疲れてしまう“.",
+          "ja": "「だから」の前の文が{理由|りゆう}です。「木が{疲|つか}れる」は「木の元気がなくなる」と同じ意味です。",
+          "stellen": [[6, "花が多く咲くと、木が疲れてしまう"], [7, "だから"]]
+        }
+      ]
+    },
+    {
+      "kind": "sprache",
+      "q": "「農家」の{読|よ}み{方|かた}として{最|もっと}もよいものはどれですか。",
+      "qDe": "Was ist die beste Lesung für 農家?",
+      "options": ["のうけ", "のか", "のうか", "のうが"],
+      "answer": 2,
+      "explain": "農家 liest man のうか (Bauer, Bauernhof), Satz 8. 家 wird in Wörtern oft か gelesen, wie in 作家（さっか, Schriftsteller）.",
+      "evidence": [7],
+      "why": [
+        {
+          "de": "家 liest man in diesem Wort か, nicht け.",
+          "ja": "この言葉の「家」は「か」と読みます。「け」ではありません。",
+          "stellen": [[7, "農家"]]
+        },
+        {
+          "de": "Das lange う fehlt: 農 ist のう.",
+          "ja": "「農」は「のう」と長く読みます。",
+          "stellen": [[7, "農家"]]
+        },
+        {
+          "de": "農家 liest man のうか (Bauer, Bauernhof). 家 wird in solchen Wörtern oft か gelesen, wie in 作家（さっか）.",
+          "ja": "「農（のう）」と「家（か）」で「のうか」です。「作家（さっか）」の「家」と同じ読み方です。",
+          "stellen": [[7, "農家"]]
+        },
+        {
+          "de": "Der zweite Teil hat keine zwei Striche ゛: か, nicht が.",
+          "ja": "「家」は「が」とにごらないで、「か」と読みます。",
+          "stellen": [[7, "農家"]]
+        }
+      ]
+    }
+  ],
+  "sources": []
+}

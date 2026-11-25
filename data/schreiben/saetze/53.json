@@ -1,0 +1,82 @@
+{
+"お参り|おまいり": {
+"s": "正月に家族で神社へ[お参り]に行った。",
+"de": "Zu Neujahr bin ich mit der Familie zum Schrein gegangen.",
+"r": "{正月|しょうがつ}に{家族|かぞく}で{神社|じんじゃ}へ[お{参|まい}り]に{行|い}った。"
+},
+"十|じゅう": {
+"s": "[十時]に駅で会いましょう。",
+"de": "Treffen wir uns um zehn Uhr am Bahnhof.",
+"r": "[{十時|じゅうじ}]に{駅|えき}で{会|あ}いましょう。"
+},
+"十|とお": {
+"s": "子どもが指で[十]まで数えた。",
+"de": "Das Kind hat mit den Fingern bis zehn gezählt.",
+"r": "{子|こ}どもが{指|ゆび}で[{十|とお}]まで{数|かぞ}えた。"
+},
+"十日|とおか": {
+"s": "誕生日は五月[十日]です。",
+"de": "Mein Geburtstag ist am 10. Mai.",
+"r": "{誕生日|たんじょうび}は{五月|ごがつ}[{十日|とおか}]です。"
+},
+"原則|げんそく": {
+"s": "この部屋は[原則]として飲食禁止です。",
+"de": "In diesem Raum ist Essen und Trinken grundsätzlich verboten.",
+"r": "この{部屋|へや}は[{原則|げんそく}]として{飲食|いんしょく}{禁止|きんし}です。",
+"bedeutung": "Grundsatz, Prinzip"
+},
+"参る|まいる": {
+"s": "明日、私がそちらへ[参ります]。",
+"de": "Morgen komme ich zu Ihnen.",
+"r": "{明日|あした}、{私|わたし}がそちらへ[{参|まい}ります]。"
+},
+"参上|さんじょう": {
+"s": "ご注文の品をお届けに[参上]しました。",
+"de": "Ich bin gekommen, um Ihnen die bestellte Ware zu bringen.",
+"r": "ご{注文|ちゅうもん}の{品|しな}をお{届|とど}けに[{参上|さんじょう}]しました。",
+"bedeutung": "aufwarten, vorsprechen (bescheiden)"
+},
+"参加|さんか": {
+"s": "来週のボランティア活動に[参加]するつもりだ。",
+"de": "Ich habe vor, nächste Woche bei einer Freiwilligenaktion mitzumachen.",
+"r": "{来週|らいしゅう}のボランティア{活動|かつどう}に[{参加|さんか}]するつもりだ。"
+},
+"参考|さんこう": {
+"s": "この本はレポートを書くときに[参考]になる。",
+"de": "Dieses Buch ist hilfreich, wenn man einen Bericht schreibt.",
+"r": "この{本|ほん}はレポートを{書|か}くときに[{参考|さんこう}]になる。"
+},
+"参議院|さんぎいん": {
+"s": "[参議院]の選挙が行われた。",
+"de": "Es fand die Wahl zum Oberhaus statt.",
+"r": "[{参議院|さんぎいん}]の{選挙|せんきょ}が{行|おこな}われた。",
+"bedeutung": "Oberhaus (des japanischen Parlaments)"
+},
+"収める|おさめる": {
+"s": "その映画は大きな成功を[収めた]。",
+"de": "Der Film war ein großer Erfolg.",
+"r": "その{映画|えいが}は{大|おお}きな{成功|せいこう}を[{収|おさ}めた]。"
+},
+"収入|しゅうにゅう": {
+"s": "父の[収入]で家族四人が生活している。",
+"de": "Die vierköpfige Familie lebt vom Einkommen des Vaters.",
+"r": "{父|ちち}の[{収入|しゅうにゅう}]で{家族|かぞく}{四人|よんにん}が{生活|せいかつ}している。"
+},
+"取り消す|とりけす": {
+"s": "ホテルの予約を[取り消した]。",
+"de": "Ich habe die Hotelreservierung storniert.",
+"r": "ホテルの{予約|よやく}を[{取|と}り{消|け}した]。"
+},
+"句|く": {
+"s": "この[句]は有名な詩の一部だ。",
+"de": "Dieser Vers ist Teil eines berühmten Gedichts.",
+"r": "この[{句|く}]は{有名|ゆうめい}な{詩|し}の{一部|いちぶ}だ。",
+"bedeutung": "Phrase, Vers"
+},
+"句読点|くとうてん": {
+"s": "作文では[句読点]を正しく使おう。",
+"de": "Im Aufsatz sollten wir die Satzzeichen richtig setzen.",
+"r": "{作文|さくぶん}では[{句読点|くとうてん}]を{正|ただ}しく{使|つか}おう。",
+"bedeutung": "Satzzeichen (Punkt und Komma)"
+}
+}

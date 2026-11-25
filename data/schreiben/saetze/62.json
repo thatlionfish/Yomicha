@@ -1,0 +1,90 @@
+{
+"成果|せいか": {
+"s": "毎日の練習の[成果]が出てきた。",
+"de": "Das tägliche Üben zeigt langsam Wirkung.",
+"r": "{毎日|まいにち}の{練習|れんしゅう}の[{成果|せいか}]が{出|で}てきた。",
+"bedeutung": "Ergebnis, Erfolg"
+},
+"戦争|せんそう": {
+"s": "祖父は子どものころの[戦争]の話をしてくれた。",
+"de": "Mein Großvater hat mir vom Krieg in seiner Kindheit erzählt.",
+"r": "{祖父|そふ}は{子|こ}どものころの[{戦争|せんそう}]の{話|はなし}をしてくれた。"
+},
+"手術|しゅじゅつ": {
+"s": "父の[手術]は無事に終わった。",
+"de": "Die Operation meines Vaters ist gut verlaufen.",
+"r": "{父|ちち}の[{手術|しゅじゅつ}]は{無事|ぶじ}に{終|お}わった。"
+},
+"打ち切る|うちきる": {
+"s": "人気がなくて、番組は三か月で[打ち切られた]。",
+"de": "Weil sie nicht beliebt war, wurde die Sendung nach drei Monaten abgesetzt.",
+"r": "{人気|にんき}がなくて、{番組|ばんぐみ}は{三|さん}か{月|げつ}で[{打|う}ち{切|き}られた]。",
+"bedeutung": "abbrechen, einstellen"
+},
+"打ち合わせ|うちあわせ": {
+"s": "午後から新しい企画の[打ち合わせ]がある。",
+"de": "Am Nachmittag haben wir eine Besprechung zum neuen Projekt.",
+"r": "{午後|ごご}から{新|あたら}しい{企画|きかく}の[{打|う}ち{合|あ}わせ]がある。"
+},
+"打ち明ける|うちあける": {
+"s": "悩みを友達に[打ち明けた]ら、気持ちが楽になった。",
+"de": "Als ich meiner Freundin meine Sorgen anvertraute, ging es mir besser.",
+"r": "{悩|なや}みを{友達|ともだち}に[{打|う}ち{明|あ}けた]ら、{気持|きも}ちが{楽|らく}になった。",
+"bedeutung": "anvertrauen, gestehen"
+},
+"打ち消す|うちけす": {
+"s": "会社はそのうわさを強く[打ち消した]。",
+"de": "Die Firma hat das Gerücht entschieden dementiert.",
+"r": "{会社|かいしゃ}はそのうわさを{強|つよ}く[{打|う}ち{消|け}した]。"
+},
+"打ち込む|うちこむ": {
+"s": "彼女は毎日ピアノの練習に[打ち込んで]いる。",
+"de": "Sie widmet sich jeden Tag ganz dem Klavierüben.",
+"r": "{彼女|かのじょ}は{毎日|まいにち}ピアノの{練習|れんしゅう}に[{打|う}ち{込|こ}んで]いる。",
+"bedeutung": "sich einer Sache ganz widmen"
+},
+"打つ|うつ": {
+"s": "パソコンでメールを[打つ]のが速くなった。",
+"de": "Ich tippe E-Mails am Computer inzwischen schneller.",
+"r": "パソコンでメールを[{打|う}つ]のが{速|はや}くなった。"
+},
+"打つ|ぶつ": {
+"s": "子どもをむやみに[打つ]のはよくない。",
+"de": "Es ist nicht gut, Kinder grundlos zu schlagen.",
+"r": "{子|こ}どもをむやみに[{打|ぶ}つ]のはよくない。"
+},
+"打開|だかい": {
+"s": "両国は問題の[打開]に向けて話し合った。",
+"de": "Die beiden Länder verhandelten über einen Ausweg aus dem Problem.",
+"r": "{両国|りょうこく}は{問題|もんだい}の[{打開|だかい}]に{向|む}けて{話|はな}し{合|あ}った。",
+"bedeutung": "Durchbruch, Ausweg"
+},
+"投げる|なげる": {
+"s": "子どもが公園でボールを[投げて]いる。",
+"de": "Die Kinder werfen im Park einen Ball.",
+"r": "{子|こ}どもが{公園|こうえん}でボールを[{投|な}げて]いる。"
+},
+"投げ出す|なげだす": {
+"s": "難しくても、途中で仕事を[投げ出して]はいけない。",
+"de": "Auch wenn es schwer ist, darf man die Arbeit nicht mittendrin hinwerfen.",
+"r": "{難|むずか}しくても、{途中|とちゅう}で{仕事|しごと}を[{投|な}げ{出|だ}して]はいけない。",
+"bedeutung": "aufgeben, hinwerfen"
+},
+"投入|とうにゅう": {
+"s": "会社は新しい商品に多くの資金を[投入]した。",
+"de": "Die Firma hat viel Geld in das neue Produkt gesteckt.",
+"r": "{会社|かいしゃ}は{新|あたら}しい{商品|しょうひん}に{多|おお}くの{資金|しきん}を[{投入|とうにゅう}]した。",
+"bedeutung": "Einsatz, Investition (von Mitteln)"
+},
+"投書|とうしょ": {
+"s": "新聞に町のごみ問題について[投書]した。",
+"de": "Ich habe der Zeitung einen Leserbrief über das Müllproblem der Stadt geschrieben.",
+"r": "{新聞|しんぶん}に{町|まち}のごみ{問題|もんだい}について[{投書|とうしょ}]した。"
+},
+"投資|とうし": {
+"s": "父は若いころから株に[投資]している。",
+"de": "Mein Vater investiert seit seiner Jugend in Aktien.",
+"r": "{父|ちち}は{若|わか}いころから{株|かぶ}に[{投資|とうし}]している。",
+"bedeutung": "Investition"
+}
+}

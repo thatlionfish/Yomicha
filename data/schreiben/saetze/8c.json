@@ -1,0 +1,58 @@
+{
+"谷|たに": {
+"s": "山と山の間に深い[谷]がある。",
+"de": "Zwischen den Bergen liegt ein tiefes Tal.",
+"r": "{山|やま}と{山|やま}の{間|あいだ}に{深|ふか}い[{谷|たに}]がある。",
+"lesungen": {
+"深い": "ふかい"
+}
+},
+"貝|かい": {
+"s": "海岸できれいな[貝]を拾った。",
+"de": "Am Strand habe ich eine schöne Muschel aufgesammelt.",
+"r": "{海岸|かいがん}できれいな[{貝|かい}]を{拾|ひろ}った。"
+},
+"費|ひ": {
+"s": "会社が[交通費]を払ってくれる。",
+"de": "Die Firma bezahlt mir die Fahrtkosten.",
+"r": "{会社|かいしゃ}が[{交通費|こうつうひ}]を{払|はら}ってくれる。"
+},
+"費用|ひよう": {
+"s": "旅行の[費用]は一人五万円ぐらいだ。",
+"de": "Die Reisekosten betragen etwa 50.000 Yen pro Person.",
+"r": "{旅行|りょこう}の[{費用|ひよう}]は{一人|ひとり}{五万円|ごまんえん}ぐらいだ。"
+},
+"資料|しりょう": {
+"s": "会議の[資料]をコピーしておいてください。",
+"de": "Bitte kopieren Sie schon einmal die Unterlagen für die Besprechung.",
+"r": "{会議|かいぎ}の[{資料|しりょう}]をコピーしておいてください。"
+},
+"資本|しほん": {
+"s": "店を始めるには[資本]が必要だ。",
+"de": "Um einen Laden zu eröffnen, braucht man Kapital.",
+"r": "{店|みせ}を{始|はじ}めるには[{資本|しほん}]が{必要|ひつよう}だ。"
+},
+"資格|しかく": {
+"s": "仕事のために、新しい[資格]を取りたい。",
+"de": "Für die Arbeit möchte ich eine neue Qualifikation erwerben.",
+"r": "{仕事|しごと}のために、{新|あたら}しい[{資格|しかく}]を{取|と}りたい。"
+},
+"資産|しさん": {
+"s": "祖父は大きな[資産]を残した。",
+"de": "Mein Großvater hat ein großes Vermögen hinterlassen.",
+"r": "{祖父|そふ}は{大|おお}きな[{資産|しさん}]を{残|のこ}した。",
+"bedeutung": "Vermögen"
+},
+"資金|しきん": {
+"s": "新しい事業の[資金]が足りない。",
+"de": "Für das neue Geschäft fehlen die Geldmittel.",
+"r": "{新|あたら}しい{事業|じぎょう}の[{資金|しきん}]が{足|た}りない。",
+"bedeutung": "Geldmittel, Finanzierung"
+},
+"質疑|しつぎ": {
+"s": "発表のあとで[質疑]の時間がある。",
+"de": "Nach dem Vortrag gibt es Zeit für Fragen.",
+"r": "{発表|はっぴょう}のあとで[{質疑|しつぎ}]の{時間|じかん}がある。",
+"bedeutung": "Fragen (und Antworten), Rückfragen"
+}
+}

@@ -1,0 +1,29 @@
+{
+"長|ちょう": {
+"s": "兄は今年、[課長]になった。",
+"de": "Mein älterer Bruder ist dieses Jahr Abteilungsleiter geworden.",
+"r": "{兄|あに}は{今年|ことし}、[{課長|かちょう}]になった。"
+},
+"長|なが": {
+"s": "寒いので[長袖]のシャツを着た。",
+"de": "Weil es kalt war, zog ich ein langärmeliges Hemd an.",
+"r": "{寒|さむ}いので[{長袖|ながそで}]のシャツを{着|き}た。"
+},
+"長々|ながなが": {
+"s": "校長の話が[長々]と続いた。",
+"de": "Die Rede des Schulleiters zog sich endlos hin.",
+"r": "{校長|こうちょう}の{話|はなし}が[{長々|ながなが}]と{続|つづ}いた。",
+"bedeutung": "endlos lang, langatmig"
+},
+"長い|ながい": {
+"s": "今年の冬休みはあまり[長く]ない。",
+"de": "Die Winterferien sind dieses Jahr nicht besonders lang.",
+"r": "{今年|ことし}の{冬休|ふゆやす}みはあまり[{長|なが}く]ない。"
+},
+"関与|かんよ": {
+"s": "彼はその計画に[関与]していない。",
+"de": "Er ist an diesem Plan nicht beteiligt.",
+"r": "{彼|かれ}はその{計画|けいかく}に[{関与|かんよ}]していない。",
+"bedeutung": "Beteiligung; 関与する = beteiligt sein"
+}
+}

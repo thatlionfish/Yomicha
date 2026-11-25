@@ -1,0 +1,308 @@
+{
+  "texts": [
+    {
+      "id": "2026-11-25-chanohana-2",
+      "folder": "texte/2026/11/2026-11-25-chanohana-2",
+      "date": "2026-11-25",
+      "topic": "tee",
+      "stufe": 2,
+      "title": "茶の花を見ました",
+      "titleDe": "E-Mail: Ich habe Teeblüten gesehen",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-24-mochitsuki-2",
+      "folder": "texte/2026/11/2026-11-24-mochitsuki-2",
+      "date": "2026-11-24",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "もちつき大会のお知らせ",
+      "titleDe": "Aushang: Einladung zum Mochi-Stampfen",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-23-mio-3",
+      "folder": "texte/2026/11/2026-11-23-mio-3",
+      "date": "2026-11-23",
+      "topic": "welt",
+      "stufe": 3,
+      "title": "探査機「みお」、水星の周りを回り始める",
+      "titleDe": "Die Raumsonde „Mio“ kreist jetzt um den Merkur",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-21-suitou-3",
+      "folder": "texte/2026/11/2026-11-21-suitou-3",
+      "date": "2026-11-21",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "水筒を持ち歩いて一年",
+      "titleDe": "Essay: Ein Jahr mit der eigenen Teeflasche",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-20-sweater-3",
+      "folder": "texte/2026/11/2026-11-20-sweater-3",
+      "date": "2026-11-20",
+      "topic": "mode",
+      "stufe": 3,
+      "title": "冬のセーターを長く着るために",
+      "titleDe": "Infoblatt: Damit der Winterpullover lange hält",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-19-tablet-3",
+      "folder": "texte/2026/11/2026-11-19-tablet-3",
+      "date": "2026-11-19",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "タブレットの時代に手で書く意味",
+      "titleDe": "Meinung: Warum Schreiben mit der Hand im Tablet-Zeitalter wichtig bleibt",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-19-tablet-2",
+      "folder": "texte/2026/11/2026-11-19-tablet-2",
+      "date": "2026-11-19",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "学校のタブレット",
+      "titleDe": "Leserbrief: Die Tablets in der Schule",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-18-arte-3",
+      "folder": "texte/2026/11/2026-11-18-arte-3",
+      "date": "2026-11-18",
+      "topic": "welt",
+      "stufe": 3,
+      "title": "光と音と香りの美術館、知多市に開館",
+      "titleDe": "Museum mit Licht, Klang und Duft in Chita eröffnet",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-18-arte-2",
+      "folder": "texte/2026/11/2026-11-18-arte-2",
+      "date": "2026-11-18",
+      "topic": "welt",
+      "stufe": 2,
+      "title": "光と音とにおいの美術館",
+      "titleDe": "Ein Museum mit Licht, Klang und Duft",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-17-shift-3",
+      "folder": "texte/2026/11/2026-11-17-shift-3",
+      "date": "2026-11-17",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "十二月のシフト希望の提出について",
+      "titleDe": "E-Mail: Schichtwünsche für Dezember abgeben",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-17-shift-2",
+      "folder": "texte/2026/11/2026-11-17-shift-2",
+      "date": "2026-11-17",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "十二月のシフトについて",
+      "titleDe": "E-Mail: Die Schichten im Dezember",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-16-irekata-3",
+      "folder": "texte/2026/11/2026-11-16-irekata-3",
+      "date": "2026-11-16",
+      "topic": "tee",
+      "stufe": 3,
+      "title": "日本茶の入れ方教室のご案内",
+      "titleDe": "Aushang: Einladung zum Kurs „Japanischen Tee richtig zubereiten“",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-16-irekata-2",
+      "folder": "texte/2026/11/2026-11-16-irekata-2",
+      "date": "2026-11-16",
+      "topic": "tee",
+      "stufe": 2,
+      "title": "お茶の入れ方教室のお知らせ",
+      "titleDe": "Aushang: Kurs „Tee richtig zubereiten“",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-14-hitoritabi-3",
+      "folder": "texte/2026/11/2026-11-14-hitoritabi-3",
+      "date": "2026-11-14",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "一人旅で気づいたこと",
+      "titleDe": "Was ich auf einer Reise allein bemerkt habe",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-14-hitoritabi-2",
+      "folder": "texte/2026/11/2026-11-14-hitoritabi-2",
+      "date": "2026-11-14",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "はじめての一人旅",
+      "titleDe": "Meine erste Reise allein",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-sekki-4",
+      "folder": "texte/2026/11/2026-11-13-sekki-4",
+      "date": "2026-11-13",
+      "topic": "welt",
+      "stufe": 4,
+      "title": "日本で最も古い石器、広島の山で調査続く",
+      "titleDe": "Japans ältestes Steinwerkzeug: Untersuchungen in den Bergen Hiroshimas gehen weiter",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-sekki-3",
+      "folder": "texte/2026/11/2026-11-13-sekki-3",
+      "date": "2026-11-13",
+      "topic": "welt",
+      "stufe": 3,
+      "title": "日本で最も古い石器、広島で調査続く",
+      "titleDe": "Japans ältestes Steinwerkzeug: Die Untersuchungen in Hiroshima gehen weiter",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-sekki-2",
+      "folder": "texte/2026/11/2026-11-13-sekki-2",
+      "date": "2026-11-13",
+      "topic": "welt",
+      "stufe": 2,
+      "title": "日本でいちばん古い石器",
+      "titleDe": "Das älteste Steinwerkzeug Japans",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-sekki-1",
+      "folder": "texte/2026/11/2026-11-13-sekki-1",
+      "date": "2026-11-13",
+      "topic": "welt",
+      "stufe": 1,
+      "title": "広島の古い石の道具",
+      "titleDe": "Ein altes Steinwerkzeug aus Hiroshima",
+      "minutes": 2
+    },
+    {
+      "id": "2026-11-13-kenshin-4",
+      "folder": "texte/2026/11/2026-11-13-kenshin-4",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 4,
+      "title": "定期健康診断の実施について",
+      "titleDe": "Zur jährlichen Gesundheitsuntersuchung",
+      "minutes": 4
+    },
+    {
+      "id": "2026-11-13-kenshin-3",
+      "folder": "texte/2026/11/2026-11-13-kenshin-3",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "健康診断の日程について",
+      "titleDe": "Zum Termin der Gesundheitsuntersuchung",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-13-kenshin-2",
+      "folder": "texte/2026/11/2026-11-13-kenshin-2",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "健康診断のお知らせ",
+      "titleDe": "Mitteilung zur Gesundheitsuntersuchung",
+      "minutes": 2
+    },
+    {
+      "id": "2026-11-13-kenshin-1",
+      "folder": "texte/2026/11/2026-11-13-kenshin-1",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 1,
+      "title": "来週の水曜日のこと",
+      "titleDe": "Wegen nächstem Mittwoch",
+      "minutes": 2
+    },
+    {
+      "id": "2026-11-13-gomi-4",
+      "folder": "texte/2026/11/2026-11-13-gomi-4",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 4,
+      "title": "家庭ごみの分け方について",
+      "titleDe": "Hausmüll richtig trennen",
+      "minutes": 5,
+      "vorrat": true
+    },
+    {
+      "id": "2026-11-13-gomi-3",
+      "folder": "texte/2026/11/2026-11-13-gomi-3",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 3,
+      "title": "ごみの分け方と出し方",
+      "titleDe": "Müll trennen und rausbringen",
+      "minutes": 4,
+      "vorrat": true
+    },
+    {
+      "id": "2026-11-13-gomi-2",
+      "folder": "texte/2026/11/2026-11-13-gomi-2",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 2,
+      "title": "ごみの正しい出し方",
+      "titleDe": "Den Müll richtig rausbringen",
+      "minutes": 3,
+      "vorrat": true
+    },
+    {
+      "id": "2026-11-13-gomi-1",
+      "folder": "texte/2026/11/2026-11-13-gomi-1",
+      "date": "2026-11-13",
+      "topic": "jlpt",
+      "stufe": 1,
+      "title": "ごみを出す日",
+      "titleDe": "Die Tage für den Müll",
+      "minutes": 2,
+      "vorrat": true
+    },
+    {
+      "id": "2026-11-12-hojicha-2",
+      "folder": "texte/2026/11/2026-11-12-hojicha-2",
+      "date": "2026-11-12",
+      "topic": "tee",
+      "stufe": 2,
+      "title": "ほうじ茶の季節",
+      "titleDe": "Die Zeit für Hōjicha",
+      "minutes": 2
+    },
+    {
+      "id": "2026-11-12-furugi-3",
+      "folder": "texte/2026/11/2026-11-12-furugi-3",
+      "date": "2026-11-12",
+      "topic": "mode",
+      "stufe": 3,
+      "title": "古着の人気が高まる理由",
+      "titleDe": "Warum Secondhand-Mode immer beliebter wird",
+      "minutes": 3
+    },
+    {
+      "id": "2026-11-12-furugi-2",
+      "folder": "texte/2026/11/2026-11-12-furugi-2",
+      "date": "2026-11-12",
+      "topic": "mode",
+      "stufe": 2,
+      "title": "古着が好きな若者",
+      "titleDe": "Junge Leute lieben Secondhand-Mode",
+      "minutes": 2
+    }
+  ]
+}

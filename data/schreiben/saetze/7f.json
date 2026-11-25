@@ -1,0 +1,12 @@
+{
+"美容|びよう": {
+"s": "姉は[美容]のために毎朝野菜ジュースを飲む。",
+"de": "Meine Schwester trinkt jeden Morgen Gemüsesaft für ihre Schönheit.",
+"r": "{姉|あね}は[{美容|びよう}]のために{毎朝|まいあさ}{野菜|やさい}ジュースを{飲|の}む。"
+},
+"美術館|びじゅつかん": {
+"s": "週末に友だちと[美術館]へ行った。",
+"de": "Am Wochenende war ich mit einer Freundin im Kunstmuseum.",
+"r": "{週末|しゅうまつ}に{友|とも}だちと[{美術館|びじゅつかん}]へ{行|い}った。"
+}
+}

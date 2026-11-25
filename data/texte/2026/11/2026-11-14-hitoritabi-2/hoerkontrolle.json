@@ -1,0 +1,35 @@
+{
+ "s01.mp3": "ok",
+ "s02.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "ちいさなまち"
+  ],
+  "gehoert": "いったのは、やまのなかにあるちいさなまちです。"
+ },
+ "s03.mp3": "ok",
+ "s04.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "まど"
+  ],
+  "gehoert": "でんしゃのなかでは、まどのそとのやまやかわをみながら、おべんとうをたべました。"
+ },
+ "s05.mp3": "ok",
+ "s06.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "りょかん"
+  ],
+  "gehoert": "よるは、えきのちかくのりょかんにとまりました。"
+ },
+ "s07.mp3": "ok",
+ "s08.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "りょかん"
+  ],
+  "gehoert": "でも、りょかんをかはんで、ばんごはんをたべたとき、だれかとはなしたいとおもいました。"
+ },
+ "s09.mp3": "ok"
+}

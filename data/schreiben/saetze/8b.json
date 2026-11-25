@@ -1,0 +1,17 @@
+{
+"警備|けいび": {
+"s": "大きな会場には[警備]の人が多い。",
+"de": "In großen Veranstaltungshallen gibt es viel Sicherheitspersonal.",
+"r": "{大|おお}きな{会場|かいじょう}には[{警備|けいび}]の{人|ひと}が{多|おお}い。"
+},
+"警告|けいこく": {
+"s": "画面に[警告]が出て、パソコンが止まった。",
+"de": "Auf dem Bildschirm erschien eine Warnung, und der Computer hielt an.",
+"r": "{画面|がめん}に[{警告|けいこく}]が{出|で}て、パソコンが{止|と}まった。"
+},
+"警官|けいかん": {
+"s": "道に迷って、[警官]に駅の場所を聞いた。",
+"de": "Ich hatte mich verlaufen und einen Polizisten nach dem Weg zum Bahnhof gefragt.",
+"r": "{道|みち}に{迷|まよ}って、[{警官|けいかん}]に{駅|えき}の{場所|ばしょ}を{聞|き}いた。"
+}
+}

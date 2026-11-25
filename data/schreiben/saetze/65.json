@@ -1,0 +1,147 @@
+{
+"支える|ささえる": {
+"s": "母は一人で家族を[支えて]きた。",
+"de": "Meine Mutter hat die Familie allein unterstützt.",
+"r": "{母|はは}は{一人|ひとり}で{家族|かぞく}を[{支|ささ}えて]きた。"
+},
+"支出|ししゅつ": {
+"s": "今月は[支出]が収入より多かった。",
+"de": "Diesen Monat waren die Ausgaben höher als die Einnahmen.",
+"r": "{今月|こんげつ}は[{支出|ししゅつ}]が{収入|しゅうにゅう}より{多|おお}かった。"
+},
+"支店|してん": {
+"s": "兄は大阪の[支店]で働いている。",
+"de": "Mein älterer Bruder arbeitet in der Filiale in Osaka.",
+"r": "{兄|あに}は{大阪|おおさか}の[{支店|してん}]で{働|はたら}いている。"
+},
+"支度|したく": {
+"s": "出かける[支度]はもうできた？",
+"de": "Bist du schon fertig zum Ausgehen?",
+"r": "{出|で}かける[{支度|したく}]はもうできた？"
+},
+"支持|しじ": {
+"s": "多くの人がその案を[支持]している。",
+"de": "Viele Menschen unterstützen diesen Vorschlag.",
+"r": "{多|おお}くの{人|ひと}がその{案|あん}を[{支持|しじ}]している。",
+"bedeutung": "Unterstützung, Zustimmung"
+},
+"支配|しはい": {
+"s": "この国は長い間、王に[支配]されていた。",
+"de": "Dieses Land wurde lange von einem König beherrscht.",
+"r": "この{国|くに}は{長|なが}い{間|あいだ}、{王|おう}に[{支配|しはい}]されていた。"
+},
+"教職|きょうしょく": {
+"s": "母は三十年間、[教職]についていた。",
+"de": "Meine Mutter war dreißig Jahre lang im Schuldienst.",
+"r": "{母|はは}は{三十年間|さんじゅうねんかん}、[{教職|きょうしょく}]についていた。",
+"bedeutung": "Lehrberuf, Schuldienst"
+},
+"教育|きょういく": {
+"s": "子どもの[教育]にはお金がかかる。",
+"de": "Die Ausbildung von Kindern kostet Geld.",
+"r": "{子|こ}どもの[{教育|きょういく}]にはお{金|かね}がかかる。"
+},
+"敬う|うやまう": {
+"s": "お年寄りを[敬う]気持ちが大切だ。",
+"de": "Es ist wichtig, ältere Menschen zu achten.",
+"r": "お{年寄|としよ}りを[{敬|うやま}う]{気持|きも}ちが{大切|たいせつ}だ。"
+},
+"敬意|けいい": {
+"s": "先生に[敬意]を持って話す。",
+"de": "Man spricht mit Respekt zum Lehrer.",
+"r": "{先生|せんせい}に[{敬意|けいい}]を{持|も}って{話|はな}す。"
+},
+"敬語|けいご": {
+"s": "アルバイトで[敬語]の使い方を覚えた。",
+"de": "Beim Nebenjob habe ich gelernt, die Höflichkeitssprache zu benutzen.",
+"r": "アルバイトで[{敬語|けいご}]の{使|つか}い{方|かた}を{覚|おぼ}えた。"
+},
+"文句|もんく": {
+"s": "弟は毎朝ご飯に[文句]を言う。",
+"de": "Mein kleiner Bruder meckert jeden Morgen über das Essen.",
+"r": "{弟|おとうと}は{毎朝|まいあさ}ご{飯|はん}に[{文句|もんく}]を{言|い}う。",
+"bedeutung": "Beschwerde, Gemecker",
+"lesungen": {
+"言う": "いう"
+}
+},
+"断つ|たつ": {
+"s": "健康のために、酒を[断つ]ことにした。",
+"de": "Meiner Gesundheit zuliebe habe ich beschlossen, auf Alkohol zu verzichten.",
+"r": "{健康|けんこう}のために、{酒|さけ}を[{断|た}つ]ことにした。"
+},
+"断る|ことわる": {
+"s": "忙しかったので、友達の誘いを[断った]。",
+"de": "Weil ich viel zu tun hatte, habe ich die Einladung meines Freundes abgelehnt.",
+"r": "{忙|いそが}しかったので、{友達|ともだち}の{誘|さそ}いを[{断|ことわ}った]。"
+},
+"断定|だんてい": {
+"s": "まだ原因を[断定]することはできない。",
+"de": "Die Ursache lässt sich noch nicht mit Sicherheit feststellen.",
+"r": "まだ{原因|げんいん}を[{断定|だんてい}]することはできない。"
+},
+"断水|だんすい": {
+"s": "工事のため、明日の午前中は[断水]になります。",
+"de": "Wegen Bauarbeiten wird morgen Vormittag das Wasser abgestellt.",
+"r": "{工事|こうじ}のため、{明日|あした}の{午前中|ごぜんちゅう}は[{断水|だんすい}]になります。"
+},
+"方式|ほうしき": {
+"s": "今年から試験の[方式]が変わった。",
+"de": "Seit diesem Jahr hat sich die Art der Prüfung geändert.",
+"r": "{今年|ことし}から{試験|しけん}の[{方式|ほうしき}]が{変|か}わった。",
+"bedeutung": "Methode, Verfahren, System"
+},
+"日|か": {
+"s": "旅行は[三日間]の予定だ。",
+"de": "Die Reise ist für drei Tage geplant.",
+"r": "{旅行|りょこう}は[{三日間|みっかかん}]の{予定|よてい}だ。"
+},
+"日|じつ": {
+"s": "[本日]は休業いたします。",
+"de": "Heute bleibt das Geschäft geschlossen.",
+"r": "[{本日|ほんじつ}]は{休業|きゅうぎょう}いたします。"
+},
+"日|にち": {
+"s": "[毎日]少しずつ日本語を勉強している。",
+"de": "Ich lerne jeden Tag ein bisschen Japanisch.",
+"r": "[{毎日|まいにち}]{少|すこ}しずつ{日本語|にほんご}を{勉強|べんきょう}している。"
+},
+"日|ひ": {
+"s": "冬になると[日]が短くなる。",
+"de": "Im Winter werden die Tage kürzer.",
+"r": "{冬|ふゆ}になると[{日|ひ}]が{短|みじか}くなる。"
+},
+"日にち|ひにち": {
+"s": "パーティーの[日にち]をみんなで決めよう。",
+"de": "Lasst uns gemeinsam den Termin für die Party festlegen.",
+"r": "パーティーの[{日|ひ}にち]をみんなで{決|き}めよう。"
+},
+"日中|にっちゅう": {
+"s": "[日中]はまだ暖かいが、夜は寒い。",
+"de": "Tagsüber ist es noch warm, aber nachts ist es kalt.",
+"r": "[{日中|にっちゅう}]はまだ{暖|あたた}かいが、{夜|よる}は{寒|さむ}い。"
+},
+"日常|にちじょう": {
+"s": "スマホは[日常]の生活に欠かせない。",
+"de": "Das Smartphone ist aus dem Alltag nicht mehr wegzudenken.",
+"r": "スマホは[{日常|にちじょう}]の{生活|せいかつ}に{欠|か}かせない。"
+},
+"日日|ひにち": {
+"s": "試験の[日日]が決まった。",
+"de": "Der Termin der Prüfung steht fest.",
+"r": "{試験|しけん}の[{日日|ひにち}]が{決|き}まった。"
+},
+"日本|にっぽん": {
+"s": "観客は「がんばれ、[日本]」と大きな声で応援した。",
+"de": "Die Zuschauer feuerten laut mit „Los, Japan!“ an.",
+"r": "{観客|かんきゃく}は「がんばれ、[{日本|にっぽん}]」と{大|おお}きな{声|こえ}で{応援|おうえん}した。",
+"lesungen": {
+"日本": "にっぽん"
+}
+},
+"日本|にほん": {
+"s": "[日本]の夏は暑くて湿気が多い。",
+"de": "Der Sommer in Japan ist heiß und schwül.",
+"r": "[{日本|にほん}]の{夏|なつ}は{暑|あつ}くて{湿気|しっけ}が{多|おお}い。"
+}
+}

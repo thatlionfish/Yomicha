@@ -1,0 +1,359 @@
+{
+  "id": "2026-11-24-mochitsuki-2",
+  "date": "2026-11-24",
+  "topic": "jlpt",
+  "type": "aushang",
+  "stufe": 2,
+  "titleDe": "Aushang: Einladung zum Mochi-Stampfen",
+  "title": [
+    {"t": "もちつき", "g": "Mochi-Stampfen (gedämpften Klebreis zu Reiskuchen schlagen)"},
+    {"t": "大会", "r": "たいかい", "g": "Veranstaltung, Treffen; もちつき大会 = Mochi-Stampf-Fest", "j": 3},
+    {"t": "の"},
+    {"t": "お知らせ", "r": "おしらせ", "ruby": [["お", ""], ["知", "し"], ["らせ", ""]], "g": "Mitteilung, Aushang"}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "さくら", "g": "Kirschblüte (hier Teil des Ortsnamens)", "j": 3},
+        {"t": "町", "r": "まち", "g": "Stadtviertel, Stadt", "j": 5},
+        {"t": "で"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "十二月", "r": "じゅうにがつ", "g": "Dezember"},
+        {"t": "十三日", "r": "じゅうさんにち", "g": "der 13. (Tag des Monats)"},
+        {"t": "の"},
+        {"t": "日曜日", "r": "にちようび", "g": "Sonntag", "j": 5},
+        {"t": "に"},
+        {"t": "「"},
+        {"t": "もちつき", "g": "Mochi-Stampfen (gedämpften Klebreis zu Reiskuchen schlagen)"},
+        {"t": "大会", "r": "たいかい", "g": "Veranstaltung, Treffen; もちつき大会 = Mochi-Stampf-Fest", "j": 3},
+        {"t": "」"},
+        {"t": "を"},
+        {"t": "行います", "r": "おこないます", "ruby": [["行", "おこな"], ["います", ""]], "b": "行う", "g": "durchführen, veranstalten", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "場所", "r": "ばしょ", "g": "Ort", "j": 4},
+        {"t": "は"},
+        {"t": "さくら", "g": "Kirschblüte (hier Teil des Ortsnamens)", "j": 3},
+        {"t": "公園", "r": "こうえん", "g": "Park", "j": 5},
+        {"t": "で"},
+        {"t": "、"},
+        {"t": "時間", "r": "じかん", "g": "Zeit, Uhrzeit", "j": 5},
+        {"t": "は"},
+        {"t": "午前", "r": "ごぜん", "g": "Vormittag", "j": 5},
+        {"t": "11時", "r": "じゅういちじ", "g": "elf Uhr"},
+        {"t": "から"},
+        {"t": "12時半", "r": "じゅうにじはん", "g": "halb eins (12:30 Uhr)"},
+        {"t": "まで", "g": "bis"},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "もちつき", "g": "Mochi-Stampfen (gedämpften Klebreis zu Reiskuchen schlagen)"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "年", "r": "ねん", "g": "Jahr", "j": 5},
+        {"t": "の"},
+        {"t": "終わり", "r": "おわり", "ruby": [["終", "お"], ["わり", ""]], "g": "Ende; 年の終わり = Jahresende", "j": 4},
+        {"t": "に"},
+        {"t": "近所", "r": "きんじょ", "g": "Nachbarschaft; 近所の人 = Nachbarn", "j": 4},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch, Person", "j": 5},
+        {"t": "と"},
+        {"t": "する", "g": "machen, tun", "j": 5},
+        {"t": "日本", "r": "にほん", "g": "Japan", "j": 3},
+        {"t": "の"},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt", "j": 5},
+        {"t": "習慣", "r": "しゅうかん", "g": "Brauch, Gewohnheit", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "大きな", "r": "おおきな", "ruby": [["大", "おお"], ["きな", ""]], "g": "groß", "j": 5},
+        {"t": "木", "r": "き", "g": "Holz; Baum", "j": 5},
+        {"t": "の"},
+        {"t": "道具", "r": "どうぐ", "g": "Werkzeug, Gerät", "j": 4},
+        {"t": "を"},
+        {"t": "使って", "r": "つかって", "ruby": [["使", "つか"], ["って", ""]], "b": "使う", "g": "benutzen, verwenden", "j": 5},
+        {"t": "、"},
+        {"t": "温かい", "r": "あたたかい", "ruby": [["温", "あたた"], ["かい", ""]], "g": "warm", "j": 3},
+        {"t": "ご飯", "r": "ごはん", "ruby": [["ご", ""], ["飯", "はん"]], "g": "gekochter Reis", "j": 5},
+        {"t": "を"},
+        {"t": "つきます", "b": "つく", "g": "stampfen, schlagen (Mochi)", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "子ども", "r": "こども", "ruby": [["子", "こ"], ["ども", ""]], "g": "Kind", "j": 5, "gr": "g3"},
+        {"t": "も", "gr": "g3"},
+        {"t": "大人", "r": "おとな", "g": "Erwachsener", "j": 5, "gr": "g3"},
+        {"t": "も", "gr": "g3"},
+        {"t": "、"},
+        {"t": "だれ", "g": "wer; だれでも = jeder, egal wer", "j": 5},
+        {"t": "でも", "g": "だれでも = jeder, egal wer", "j": 5},
+        {"t": "つく", "g": "stampfen, schlagen (Mochi)", "j": 5},
+        {"t": "こと", "g": "〜ことができる = … können; 〜ことも〜こともできる = man kann sowohl … als auch …", "j": 4},
+        {"t": "が"},
+        {"t": "できます", "b": "できる", "g": "können; 〜ことができる = … können", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "ついた", "b": "つく", "g": "stampfen, schlagen (Mochi)", "j": 5},
+        {"t": "もの", "g": "Ding, Sache; ついたもの = das Gestampfte", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "その", "g": "dieser, jener", "j": 5},
+        {"t": "場", "r": "ば", "g": "Ort, Stelle", "j": 3},
+        {"t": "で"},
+        {"t": "食べる", "r": "たべる", "ruby": [["食", "た"], ["べる", ""]], "g": "essen", "j": 5, "gr": "g3"},
+        {"t": "こと", "g": "〜ことができる = … können; 〜ことも〜こともできる = man kann sowohl … als auch …", "j": 4, "gr": "g3"},
+        {"t": "も", "gr": "g3"},
+        {"t": "、"},
+        {"t": "家", "r": "いえ", "g": "Zuhause, Haus", "j": 5},
+        {"t": "に"},
+        {"t": "持って", "r": "もって", "ruby": [["持", "も"], ["って", ""]], "b": "持つ", "g": "halten, tragen; 持って帰る = mit nach Hause nehmen", "j": 5},
+        {"t": "帰る", "r": "かえる", "ruby": [["帰", "かえ"], ["る", ""]], "g": "nach Hause gehen, zurückkehren", "j": 5},
+        {"t": "こと", "g": "〜ことができる = … können; 〜ことも〜こともできる = man kann sowohl … als auch …", "j": 4},
+        {"t": "も"},
+        {"t": "できます", "b": "できる", "g": "können; 〜ことができる = … können", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "お金", "r": "おかね", "ruby": [["お", ""], ["金", "かね"]], "g": "Geld", "j": 5},
+        {"t": "は"},
+        {"t": "かかりません", "b": "かかる", "g": "kosten (Geld)", "j": 5},
+        {"t": "が"},
+        {"t": "、"},
+        {"t": "数", "r": "かず", "g": "Anzahl, Menge", "j": 3},
+        {"t": "が"},
+        {"t": "足りなく", "r": "たりなく", "ruby": [["足", "た"], ["りなく", ""]], "b": "足りる", "g": "ausreichen; 足りなくなる = knapp werden, nicht mehr reichen", "j": 4},
+        {"t": "ならないように", "b": "なる", "g": "werden", "j": 5, "gr": "g1"},
+        {"t": "、"},
+        {"t": "十日", "r": "とうか", "g": "der 10. (Tag des Monats)", "j": 5},
+        {"t": "まで", "g": "bis"},
+        {"t": "に"},
+        {"t": "町内会", "r": "ちょうないかい", "g": "Nachbarschaftsverein (des Stadtviertels)"},
+        {"t": "に"},
+        {"t": "電話", "r": "でんわ", "g": "Telefon; 電話する = anrufen", "j": 5},
+        {"t": "して", "b": "する", "g": "machen, tun", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "汚れて", "r": "よごれて", "ruby": [["汚", "よご"], ["れて", ""]], "b": "汚れる", "g": "schmutzig werden", "j": 4, "gr": "g2"},
+        {"t": "も", "gr": "g2"},
+        {"t": "いい", "g": "gut; 〜てもいい = darf …", "j": 5, "gr": "g2"},
+        {"t": "服", "r": "ふく", "g": "Kleidung", "j": 5},
+        {"t": "で"},
+        {"t": "来て", "r": "きて", "ruby": [["来", "き"], ["て", ""]], "b": "来る", "g": "kommen", "j": 5},
+        {"t": "ください", "b": "くださる", "g": "〜てください = bitte …", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "雨", "r": "あめ", "g": "Regen", "j": 5},
+        {"t": "の"},
+        {"t": "時", "r": "とき", "g": "Uhr (Uhrzeit)", "j": 5},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "次", "r": "つぎ", "g": "nächster", "j": 5},
+        {"t": "の"},
+        {"t": "週", "r": "しゅう", "g": "Woche; 次の週 = die Woche darauf", "j": 3},
+        {"t": "の"},
+        {"t": "日曜日", "r": "にちようび", "g": "Sonntag", "j": 5},
+        {"t": "に"},
+        {"t": "行う", "r": "おこなう", "ruby": [["行", "おこな"], ["う", ""]], "g": "durchführen, veranstalten", "j": 4, "gr": "g4"},
+        {"t": "予定", "r": "よてい", "g": "Plan; 〜予定です = es ist geplant, dass …", "j": 4, "gr": "g4"},
+        {"t": "です", "gr": "g4"},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ないように",
+      "j": 4,
+      "de": "ない-Form + ように: „damit nicht …“. Sagt, was man mit einer Handlung verhindern will. 足りなくならないように = damit die Menge nicht knapp wird.",
+      "ex": "{遅|おく}れないように、{早|はや}く{家|いえ}を{出|で}ます。",
+      "exDe": "Damit ich nicht zu spät komme, gehe ich früh von zu Hause los."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜てもいい",
+      "j": 4,
+      "de": "て-Form + もいい: „darf …, es ist in Ordnung, wenn …“. 汚れてもいい服 = Kleidung, die schmutzig werden darf.",
+      "ex": "この{部屋|へや}で{写真|しゃしん}を{撮|と}ってもいいです。",
+      "exDe": "In diesem Raum darf man fotografieren."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜も〜も",
+      "j": 4,
+      "de": "Nomen + も、Nomen + も: „sowohl … als auch …“. Mit こと: 食べることも、持って帰ることもできます = man kann sie essen und auch mitnehmen.",
+      "ex": "{兄|あに}も{姉|あね}も{東京|とうきょう}に{住|す}んでいます。",
+      "exDe": "Sowohl mein älterer Bruder als auch meine ältere Schwester wohnen in Tokio."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜予定です",
+      "j": 4,
+      "de": "Wörterbuchform oder Nomen + の + 予定です: „es ist geplant, dass …“. Typisch für Aushänge und Mitteilungen.",
+      "ex": "{来月|らいげつ}、{京都|きょうと}へ{行|い}く{予定|よてい}です。",
+      "exDe": "Nächsten Monat habe ich vor, nach Kyōto zu fahren."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "「もちつき大会」について、正しいものはどれですか。",
+      "qDe": "Was stimmt über das Mochi-Stampf-Fest?",
+      "options": ["十三日の夕方に、駅の中で行う", "十日の朝に、{公園|こうえん}で行う", "十三日のお昼ごろに、{公園|こうえん}で行う", "十日のお昼ごろに、駅の前で行う"],
+      "answer": 2,
+      "explain": "Satz 1 und 2: am 13. Dezember im Sakura-Park, von 11 bis 12:30 Uhr – also um die Mittagszeit. Vom Bahnhof steht nichts im Text. Der 10. ist nur der letzte Tag zum Anrufen (Satz 7).",
+      "evidence": [0, 1],
+      "why": [
+        {
+          "de": "Das Datum stimmt, aber Zeit und Ort nicht: Das Fest ist von 11 bis 12:30 Uhr im Sakura-Park – nicht am Abend und nicht im Bahnhof.",
+          "ja": "日にちは正しいですが、時間は午前11時から12時半まで、{場所|ばしょ}は{公園|こうえん}です。",
+          "stellen": [[1, "さくら公園"], [1, "午前11時から12時半まで"]]
+        },
+        {
+          "de": "Der 10. ist nur der letzte Tag zum Anrufen (十日までに). Das Fest selbst ist am 13.",
+          "ja": "十日は電話をする{最後|さいご}の日です。大会は十三日に行います。",
+          "stellen": [[6, "十日までに町内会に電話してください"], [0, "十二月十三日"]]
+        },
+        {
+          "de": "13. Dezember, Sakura-Park, 11 bis 12:30 Uhr – also um die Mittagszeit (お昼ごろ).",
+          "ja": "午前11時から12時半までは「お昼ごろ」です。{場所|ばしょ}はさくら{公園|こうえん}です。",
+          "stellen": [[0, "十二月十三日"], [1, "さくら公園"], [1, "午前11時から12時半まで"]]
+        },
+        {
+          "de": "Auch hier ist der 10. nur die Anmeldefrist. Von einem Bahnhof steht nichts im Text.",
+          "ja": "十日は大会の日ではありません。駅の話も本文にありません。",
+          "stellen": [[6, "十日までに"], [1, "さくら公園"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "大会に行きたい人は、何をしなければなりませんか。",
+      "qDe": "Was muss tun, wer zum Fest gehen möchte?",
+      "options": ["十日までに、お金を{町内会|ちょうないかい}に{払|はら}っておく", "十日までに、行くことを{町内会|ちょうないかい}に知らせる", "十三日に、{自分|じぶん}のおもちを持って行く", "十三日に、新しい服を着て行く"],
+      "answer": 1,
+      "explain": "Satz 7: 十日までに町内会に電話してください – man meldet sich telefonisch an. Geld kostet es nicht (Satz 7), und man soll Kleidung tragen, die schmutzig werden darf (Satz 8).",
+      "evidence": [6, 7],
+      "why": [
+        {
+          "de": "Geld muss man nicht bezahlen (お金はかかりません). Bis zum 10. soll man nur anrufen.",
+          "ja": "お金はかからないので、{払|はら}わなくてもいいです。",
+          "stellen": [[6, "お金はかかりません"]]
+        },
+        {
+          "de": "Man soll bis zum 10. beim Nachbarschaftsverein anrufen, also Bescheid geben, dass man kommt – damit es für alle reicht.",
+          "ja": "十日までに{町内会|ちょうないかい}に電話して、行くことを知らせます。{数|かず}が足りなくならないようにするためです。",
+          "stellen": [[6, "十日までに町内会に電話してください"], [6, "数が足りなくならないように"]]
+        },
+        {
+          "de": "Eigene Mochi braucht man nicht: Sie werden dort gestampft, und man darf sie sogar mit nach Hause nehmen.",
+          "ja": "おもちは{公園|こうえん}で作ります。持って行かなくてもいいです。{反対|はんたい}に、持って帰ることができます。",
+          "stellen": [[5, "家に持って帰ることもできます"]]
+        },
+        {
+          "de": "Gerade nicht neu: Man soll Kleidung tragen, die ruhig schmutzig werden darf (汚れてもいい服).",
+          "ja": "本文には「{汚|よご}れてもいい服」と書いてあります。新しい服はいりません。",
+          "stellen": [[7, "汚れてもいい服で来てください"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "十三日に雨が{降|ふ}ったら、大会はどうなりますか。",
+      "qDe": "Was passiert mit dem Fest, wenn es am 13. regnet?",
+      "options": ["その日の午後になる", "{次|つぎ}の{日|ひ}の十四日になる", "一週間あとの二十日になる", "大会はなくなる"],
+      "answer": 2,
+      "explain": "Satz 9: bei Regen am Sonntag der Woche darauf. Nach Satz 1 ist der 13. ein Sonntag, also eine Woche später der 20.",
+      "evidence": [0, 8],
+      "why": [
+        {
+          "de": "Nicht am selben Nachmittag: Bei Regen findet es erst in der Woche darauf statt.",
+          "ja": "雨の時は、その日の午後ではなく、{次|つぎ}の週に行います。",
+          "stellen": [[8, "次の週の日曜日"]]
+        },
+        {
+          "de": "次の週 heißt „nächste Woche“, nicht „nächster Tag“ (次の日). Außerdem wäre der 14. ein Montag.",
+          "ja": "「{次|つぎ}の週」は「{次|つぎ}の{日|ひ}」とちがいます。十四日は月曜日です。",
+          "stellen": [[8, "次の週の日曜日"]]
+        },
+        {
+          "de": "Bei Regen am Sonntag der nächsten Woche. Der 13. ist ein Sonntag, eine Woche später ist also der 20.",
+          "ja": "十三日は日曜日です。{次|つぎ}の週の日曜日は、一週間あとの二十日です。",
+          "stellen": [[0, "十三日の日曜日"], [8, "次の週の日曜日"]]
+        },
+        {
+          "de": "Das Fest fällt nicht aus: Es soll eine Woche später stattfinden (行う予定です).",
+          "ja": "大会はなくなりません。{次|つぎ}の週の日曜日に行う{予定|よてい}です。",
+          "stellen": [[8, "次の週の日曜日に行う予定です"]]
+        }
+      ]
+    },
+    {
+      "kind": "sprache",
+      "q": "「習慣」の{読|よ}み{方|かた}はどれですか。",
+      "qDe": "Wie liest man 習慣?",
+      "options": ["しゅかん", "しゅうがん", "しゅうけん", "しゅうかん"],
+      "answer": 3,
+      "explain": "習慣 liest man しゅうかん (Brauch, Gewohnheit), Satz 3. Das 習 kennst du aus 練習（れんしゅう）.",
+      "evidence": [2],
+      "why": [
+        {
+          "de": "Hier fehlt das lange う: 習 ist しゅう, nicht しゅ. しゅかん wäre ein anderes Wort (主観, „eigene Sicht“).",
+          "ja": "「習」は「しゅう」と長く読みます。「しゅかん」は別の言葉です。",
+          "stellen": [[2, "習慣"]]
+        },
+        {
+          "de": "慣 liest man かん – ohne die zwei Striche ゛, also nicht がん.",
+          "ja": "「慣」は「かん」です。「がん」とにごりません。",
+          "stellen": [[2, "習慣"]]
+        },
+        {
+          "de": "慣 liest man かん, nicht けん.",
+          "ja": "「慣」は「けん」ではなく「かん」と読みます。",
+          "stellen": [[2, "習慣"]]
+        },
+        {
+          "de": "習慣 liest man しゅうかん (Brauch, Gewohnheit). 習 しゅう kennst du aus 練習（れんしゅう）.",
+          "ja": "「練習（れんしゅう）」の「習」と「慣（かん）」で、「しゅうかん」です。",
+          "stellen": [[2, "習慣"]]
+        }
+      ]
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,27 @@
+{
+"消える|きえる": {
+"s": "急に部屋の電気が[消えた]。",
+"de": "Plötzlich ging im Zimmer das Licht aus.",
+"r": "{急|きゅう}に{部屋|へや}の{電気|でんき}が[{消|き}えた]。"
+},
+"消しゴム|けしごむ": {
+"s": "[消しゴム]を貸してもらえますか。",
+"de": "Kannst du mir deinen Radiergummi leihen?",
+"r": "[{消|け}しゴム]を{貸|か}してもらえますか。"
+},
+"消す|けす": {
+"s": "寝る前にテレビを[消して]ください。",
+"de": "Mach bitte vor dem Schlafengehen den Fernseher aus.",
+"r": "{寝|ね}る{前|まえ}にテレビを[{消|け}して]ください。"
+},
+"消化|しょうか": {
+"s": "おかゆは[消化]にいい食べ物だ。",
+"de": "Reisbrei ist ein leicht verdauliches Essen.",
+"r": "おかゆは[{消化|しょうか}]にいい{食|た}べ{物|もの}だ。"
+},
+"消費|しょうひ": {
+"s": "冬は電気の[消費]が多くなる。",
+"de": "Im Winter steigt der Stromverbrauch.",
+"r": "{冬|ふゆ}は{電気|でんき}の[{消費|しょうひ}]が{多|おお}くなる。"
+}
+}
