@@ -114855,7 +114855,7 @@ o=A.a([new A.ch("wght",650)],s)
 p=A.r(q.a,m,m,m,m,new A.q(!0,B.p,m,"Nunito",m,m,16,p,m,m,m,m,1.45,m,m,m,m,m,m,m,m,m,m,m,o,m),m,m)
 o=B.ak[B.e.ar(3,0,8)]
 n=A.a([new A.ch("wght",420)],s)
-B.b.t(j,A.a([p,B.bK,A.r(q.b,m,m,m,m,new A.q(!0,B.p,m,"Nunito",m,m,15,o,m,m,m,m,1.5,m,m,m,m,m,m,m,m,m,m,m,n,m),m,m),B.aE],k))}j.push(A.r("Code: MIT. Daten und Texte: CC BY-SA 4.0. Yomicha sammelt keine Daten; der Lernstand bleibt auf deinen Ger\xe4ten.",m,m,m,m,A.a_(13.5,B.j,1.45,420),m,m))
+B.b.t(j,A.a([p,B.bK,A.r(q.b,m,m,m,m,new A.q(!0,B.p,m,"Nunito",m,m,15,o,m,m,m,m,1.5,m,m,m,m,m,m,m,m,m,m,m,n,m),m,m),B.aE],k))}j.push(A.r("Daten und Texte: CC BY-SA 4.0. Yomicha sammelt keine Daten; der Lernstand bleibt auf deinen Ger\xe4ten.",m,m,m,m,A.a_(13.5,B.j,1.45,420),m,m))
 return A.hu(l,A.c4(new A.ce(B.c3,A.dX(j,m,B.cg),m),m,m),m)}}
 A.iI.prototype={}
 A.aVN.prototype={
