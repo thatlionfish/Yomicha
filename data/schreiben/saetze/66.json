@@ -19,6 +19,12 @@
 "de": "Der Stundenplan für das neue Semester wurde verteilt.",
 "r": "{新|あたら}しい{学期|がっき}の[{時間割|じかんわり}]が{配|くば}られた。"
 },
+"景気|けいき": {
+"s": "最近は[景気]がよくなってきたと言われる。",
+"de": "Es heißt, die Wirtschaftslage habe sich in letzter Zeit gebessert.",
+"r": "{最近|さいきん}は[{景気|けいき}]がよくなってきたと{言|い}われる。",
+"bedeutung": "Konjunktur, Wirtschaftslage"
+},
 "景色|けしき": {
 "s": "山の上から見た[景色]はすばらしかった。",
 "de": "Die Aussicht vom Berg war herrlich.",

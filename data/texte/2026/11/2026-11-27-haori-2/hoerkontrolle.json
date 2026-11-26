@@ -1,0 +1,24 @@
+{
+ "s01.mp3": "ok",
+ "s02.mp3": "ok",
+ "s03.mp3": "ok",
+ "s04.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "ふかいみどり"
+  ],
+  "gehoert": "ふかいみどりいろで、いまみてもとてもきれいです。"
+ },
+ "s05.mp3": "ok",
+ "s06.mp3": {
+  "status": "abweichung",
+  "woerter": [
+   "き"
+  ],
+  "gehoert": "するとそぼがようふくのうえにきてもいいのよとおしえてくれました。"
+ },
+ "s07.mp3": "ok",
+ "s08.mp3": "ok",
+ "s09.mp3": "ok",
+ "s10.mp3": "ok"
+}

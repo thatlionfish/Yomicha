@@ -121,6 +121,12 @@
 "de": "Tagsüber ist es noch warm, aber nachts ist es kalt.",
 "r": "[{日中|にっちゅう}]はまだ{暖|あたた}かいが、{夜|よる}は{寒|さむ}い。"
 },
+"日差し|ひざし": {
+"s": "春の暖かい[日差し]が部屋に入ってくる。",
+"de": "Warmes Frühlingssonnenlicht fällt ins Zimmer.",
+"r": "{春|はる}の{暖|あたた}かい[{日差|ひざ}し]が{部屋|へや}に{入|はい}ってくる。",
+"bedeutung": "Sonnenlicht, Sonnenstrahlen"
+},
 "日常|にちじょう": {
 "s": "スマホは[日常]の生活に欠かせない。",
 "de": "Das Smartphone ist aus dem Alltag nicht mehr wegzudenken.",

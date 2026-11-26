@@ -55,6 +55,12 @@
 "de": "Seit vorgestern geht das Fieber nicht herunter.",
 "r": "[{一昨日|おととい}]から{熱|ねつ}が{下|さ}がらない。"
 },
+"一種|いっしゅ": {
+"s": "抹茶は緑茶の[一種]です。",
+"de": "Matcha ist eine Art grüner Tee.",
+"r": "{抹茶|まっちゃ}は{緑茶|りょくちゃ}の[{一種|いっしゅ}]です。",
+"bedeutung": "eine Art, eine Sorte"
+},
 "丁度|ちょうど": {
 "s": "駅に着いたら、[丁度]電車が来た。",
 "de": "Als ich am Bahnhof ankam, kam gerade der Zug.",
@@ -285,6 +291,20 @@
 "de": "Seit zwei Tagen habe ich leichtes Fieber.",
 "r": "[{二日|ふつか}]{前|まえ}から{少|すこ}し{熱|ねつ}が{続|つづ}いている。"
 },
+"交差|こうさ": {
+"s": "この町では、二本の線路が[交差]している。",
+"de": "In diesem Ort kreuzen sich zwei Bahnstrecken.",
+"r": "この{町|まち}では、{二本|にほん}の{線路|せんろ}が[{交差|こうさ}]している。",
+"bedeutung": "Kreuzung, das Sich-Kreuzen",
+"lesungen": {
+"本": "ほん"
+}
+},
+"交差点|こうさてん": {
+"s": "次の[交差点]を右に曲がってください。",
+"de": "Bitte biegen Sie an der nächsten Kreuzung rechts ab.",
+"r": "{次|つぎ}の[{交差点|こうさてん}]を{右|みぎ}に{曲|ま}がってください。"
+},
 "人|じん": {
 "s": "私の友達は[ドイツ人]です。",
 "de": "Mein Freund ist Deutscher.",
@@ -300,11 +320,23 @@
 "de": "Vor dem Bahnhof sind viele Leute.",
 "r": "{駅|えき}の{前|まえ}に[{人|ひと}]がたくさんいる。"
 },
+"人差指|ひとさしゆび": {
+"s": "[人差指]でボタンを軽く押してください。",
+"de": "Drücken Sie bitte mit dem Zeigefinger leicht auf den Knopf.",
+"r": "[{人差指|ひとさしゆび}]でボタンを{軽|かる}く{押|お}してください。",
+"bedeutung": "Zeigefinger"
+},
 "人格|じんかく": {
 "s": "子どもの[人格]を大切にする教育が必要だ。",
 "de": "Wir brauchen eine Erziehung, die die Persönlichkeit des Kindes achtet.",
 "r": "{子|こ}どもの[{人格|じんかく}]を{大切|たいせつ}にする{教育|きょういく}が{必要|ひつよう}だ。",
 "bedeutung": "Persönlichkeit, Charakter"
+},
+"人種|じんしゅ": {
+"s": "[人種]の違いを超えて、皆が一緒に歌った。",
+"de": "Über alle Unterschiede der Herkunft hinweg sangen alle gemeinsam.",
+"r": "[{人種|じんしゅ}]の{違|ちが}いを{超|こ}えて、{皆|みな}が{一緒|いっしょ}に{歌|うた}った。",
+"bedeutung": "Menschengruppe nach äußerer Herkunft („Rasse“)"
 },
 "任す|まかす": {
 "s": "細かいことは君に[任す]よ。",

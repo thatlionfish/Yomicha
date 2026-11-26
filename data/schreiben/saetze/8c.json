@@ -12,6 +12,23 @@
 "de": "Am Strand habe ich eine schöne Muschel aufgesammelt.",
 "r": "{海岸|かいがん}できれいな[{貝|かい}]を{拾|ひろ}った。"
 },
+"負う|おう": {
+"s": "会長は大きな責任を[負って]いる。",
+"de": "Der Vorsitzende trägt eine große Verantwortung.",
+"r": "{会長|かいちょう}は{大|おお}きな{責任|せきにん}を[{負|お}って]いる。",
+"bedeutung": "(Verantwortung) tragen; auf sich nehmen, schulden"
+},
+"負け|まけ": {
+"s": "今回は私の[負け]だと、兄は笑って認めた。",
+"de": "„Diesmal habe ich verloren“, gab mein großer Bruder lachend zu.",
+"r": "{今回|こんかい}は{私|わたし}の[{負|ま}け]だと、{兄|あに}は{笑|わら}って{認|みと}めた。",
+"bedeutung": "Niederlage"
+},
+"負ける|まける": {
+"s": "弟とのゲームで、また[負けて]しまった。",
+"de": "Beim Spiel gegen meinen kleinen Bruder habe ich schon wieder verloren.",
+"r": "{弟|おとうと}とのゲームで、また[{負|ま}けて]しまった。"
+},
 "費|ひ": {
 "s": "会社が[交通費]を払ってくれる。",
 "de": "Die Firma bezahlt mir die Fahrtkosten.",

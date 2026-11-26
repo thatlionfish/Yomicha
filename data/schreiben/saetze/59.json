@@ -44,6 +44,23 @@
 "de": "Laut Wettervorhersage soll es morgen schneien.",
 "r": "[{天気予報|てんきよほう}]によると、{明日|あした}は{雪|ゆき}らしい。"
 },
+"失う|うしなう": {
+"s": "自信を[失わないで]、もう一度やってみよう。",
+"de": "Verlier nicht das Selbstvertrauen und versuch es noch einmal.",
+"r": "{自信|じしん}を[{失|うしな}わないで]、もう{一度|いちど}やってみよう。",
+"bedeutung": "verlieren"
+},
+"失業|しつぎょう": {
+"s": "国は[失業]した人への支援を増やした。",
+"de": "Der Staat hat die Hilfe für Menschen, die arbeitslos geworden sind, ausgebaut.",
+"r": "{国|くに}は[{失業|しつぎょう}]した{人|ひと}への{支援|しえん}を{増|ふ}やした。",
+"bedeutung": "Arbeitslosigkeit, Verlust der Stelle"
+},
+"失礼|しつれい": {
+"s": "それでは、お先に[失礼]します。",
+"de": "Dann verabschiede ich mich schon einmal.",
+"r": "それでは、お{先|さき}に[{失礼|しつれい}]します。"
+},
 "女優|じょゆう": {
 "s": "姉は[女優]になるのが夢だ。",
 "de": "Meine ältere Schwester träumt davon, Schauspielerin zu werden.",

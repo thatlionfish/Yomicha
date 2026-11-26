@@ -19,5 +19,15 @@
 "s": "宿題がやっと[済んだ]。",
 "de": "Die Hausaufgaben sind endlich erledigt.",
 "r": "{宿題|しゅくだい}がやっと[{済|す}んだ]。"
+},
+"渡す|わたす": {
+"s": "駅で友達に旅行のお土産を[渡した]。",
+"de": "Am Bahnhof habe ich meiner Freundin das Reisemitbringsel gegeben.",
+"r": "{駅|えき}で{友達|ともだち}に{旅行|りょこう}のお{土産|みやげ}を[{渡|わた}した]。"
+},
+"渡る|わたる": {
+"s": "信号が青になってから、道を[渡り]ましょう。",
+"de": "Überqueren wir die Straße erst, wenn die Ampel grün ist.",
+"r": "{信号|しんごう}が{青|あお}になってから、{道|みち}を[{渡|わた}り]ましょう。"
 }
 }

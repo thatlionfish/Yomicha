@@ -10,6 +10,12 @@
 "r": "{結婚式|けっこんしき}の[{式場|しきじょう}]を{予約|よやく}した。",
 "bedeutung": "Saal für Zeremonien"
 },
+"引退|いんたい": {
+"s": "その選手は今年で[引退]するそうだ。",
+"de": "Ich habe gehört, dass dieser Sportler nach diesem Jahr aufhört.",
+"r": "その{選手|せんしゅ}は{今年|ことし}で[{引退|いんたい}]するそうだ。",
+"bedeutung": "Rücktritt, Karriereende, Ruhestand"
+},
 "形式|けいしき": {
 "s": "レポートは決められた[形式]で書くこと。",
 "de": "Der Bericht ist in der vorgegebenen Form zu schreiben.",

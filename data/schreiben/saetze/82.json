@@ -1,0 +1,13 @@
+{
+"若々しい|わかわかしい": {
+"s": "祖母は七十歳だが、とても[若々しい]。",
+"de": "Meine Großmutter ist siebzig, wirkt aber sehr jugendlich.",
+"r": "{祖母|そぼ}は{七十歳|ななじゅうさい}だが、とても[{若々|わかわか}しい]。",
+"bedeutung": "jugendlich, jung wirkend"
+},
+"若い|わかい": {
+"s": "この店は[若い]人たちに人気がある。",
+"de": "Dieser Laden ist bei jungen Leuten beliebt.",
+"r": "この{店|みせ}は[{若|わか}い]{人|ひと}たちに{人気|にんき}がある。"
+}
+}

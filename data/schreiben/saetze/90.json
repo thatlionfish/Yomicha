@@ -1,8 +1,43 @@
 {
+"退く|どく": {
+"s": "そこは通り道だから、少し[退いて]ください。",
+"de": "Da ist der Durchgang, bitte geh ein Stück zur Seite.",
+"r": "そこは{通|とお}り{道|みち}だから、{少|すこ}し[{退|ど}いて]ください。",
+"bedeutung": "zur Seite gehen, Platz machen",
+"lesungen": {
+"退い": "どい"
+}
+},
+"退ける|どける": {
+"s": "机の上の本を[退けて]、地図を広げた。",
+"de": "Ich räumte die Bücher vom Tisch und breitete die Karte aus.",
+"r": "{机|つくえ}の{上|うえ}の{本|ほん}を[{退|ど}けて]、{地図|ちず}を{広|ひろ}げた。",
+"bedeutung": "wegräumen, zur Seite schieben",
+"lesungen": {
+"退け": "どけ"
+}
+},
+"退学|たいがく": {
+"s": "兄は大学を[退学]して、働き始めた。",
+"de": "Mein großer Bruder hat die Universität verlassen und angefangen zu arbeiten.",
+"r": "{兄|あに}は{大学|だいがく}を[{退学|たいがく}]して、{働|はたら}き{始|はじ}めた。",
+"bedeutung": "Schulabbruch, Abgang von Schule oder Uni"
+},
+"退院|たいいん": {
+"s": "祖父は来週[退院]する予定です。",
+"de": "Mein Großvater soll nächste Woche aus dem Krankenhaus entlassen werden.",
+"r": "{祖父|そふ}は{来週|らいしゅう}[{退院|たいいん}]する{予定|よてい}です。"
+},
 "通常|つうじょう": {
 "s": "[通常]、荷物は三日で届く。",
 "de": "Normalerweise kommt das Paket in drei Tagen an.",
 "r": "[{通常|つうじょう}]、{荷物|にもつ}は{三日|みっか}で{届|とど}く。",
 "bedeutung": "gewöhnlich, normalerweise"
+},
+"過失|かしつ": {
+"s": "大事なファイルを消したのは、私の[過失]です。",
+"de": "Dass die wichtige Datei gelöscht wurde, war mein Versehen.",
+"r": "{大事|だいじ}なファイルを{消|け}したのは、{私|わたし}の[{過失|かしつ}]です。",
+"bedeutung": "Versehen, Fehler, Fahrlässigkeit"
 }
 }

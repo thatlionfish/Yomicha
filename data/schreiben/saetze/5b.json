@@ -19,6 +19,12 @@
 "de": "Ich habe meiner Mutter ein Paket per Lieferdienst geschickt.",
 "r": "{母|はは}に[{宅配便|たくはいびん}]で{荷物|にもつ}を{送|おく}った。"
 },
+"守る|まもる": {
+"s": "友達との約束はきちんと[守りたい]。",
+"de": "Verabredungen mit Freunden möchte ich zuverlässig einhalten.",
+"r": "{友達|ともだち}との{約束|やくそく}はきちんと[{守|まも}りたい]。",
+"bedeutung": "schützen; (Regeln, Versprechen) einhalten"
+},
 "定規|じょうぎ": {
 "s": "[定規]を使ってまっすぐな線を引いた。",
 "de": "Ich habe mit einem Lineal eine gerade Linie gezogen.",
@@ -34,6 +40,12 @@
 "s": "たばこは体に[害]がある。",
 "de": "Rauchen schadet dem Körper.",
 "r": "たばこは{体|からだ}に[{害|がい}]がある。"
+},
+"寸法|すんぽう": {
+"s": "棚を買う前に、部屋の[寸法]を測った。",
+"de": "Bevor ich das Regal gekauft habe, habe ich das Zimmer ausgemessen.",
+"r": "{棚|たな}を{買|か}う{前|まえ}に、{部屋|へや}の[{寸法|すんぽう}]を{測|はか}った。",
+"bedeutung": "Maße, Abmessungen"
 },
 "対談|たいだん": {
 "s": "雑誌に作家と歌手の[対談]が載っている。",

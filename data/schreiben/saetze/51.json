@@ -19,6 +19,12 @@
 "de": "Unsere Mannschaft hat das Turnier gewonnen.",
 "r": "{私|わたし}たちのチームが{大会|たいかい}で[{優勝|ゆうしょう}]した。"
 },
+"光景|こうけい": {
+"s": "朝の海で見た美しい[光景]が忘れられない。",
+"de": "Den schönen Anblick, den ich morgens am Meer gesehen habe, kann ich nicht vergessen.",
+"r": "{朝|あさ}の{海|うみ}で{見|み}た{美|うつく}しい[{光景|こうけい}]が{忘|わす}れられない。",
+"bedeutung": "Anblick, Szene"
+},
 "公共|こうきょう": {
 "s": "[公共]の場所ではたばこを吸わないでください。",
 "de": "Bitte rauchen Sie nicht an öffentlichen Orten.",

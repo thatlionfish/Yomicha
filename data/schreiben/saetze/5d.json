@@ -1,0 +1,36 @@
+{
+"差|さ": {
+"s": "この町は、昼と夜の気温の[差]が大きい。",
+"de": "In dieser Stadt ist der Temperaturunterschied zwischen Tag und Nacht groß.",
+"r": "この{町|まち}は、{昼|ひる}と{夜|よる}の{気温|きおん}の[{差|さ}]が{大|おお}きい。",
+"bedeutung": "Unterschied, Abstand"
+},
+"差し上げる|さしあげる": {
+"s": "先生に旅行のお土産を[差し上げた]。",
+"de": "Ich habe meiner Lehrkraft ein Reisemitbringsel überreicht.",
+"r": "{先生|せんせい}に{旅行|りょこう}のお{土産|みやげ}を[{差|さ}し{上|あ}げた]。"
+},
+"差し引き|さしひき": {
+"s": "[差し引き]、手元に残ったのは三万円だ。",
+"de": "Nach allen Abzügen sind mir 30.000 Yen geblieben.",
+"r": "[{差|さ}し{引|ひ}き]、{手元|てもと}に{残|のこ}ったのは{三万円|さんまんえん}だ。",
+"bedeutung": "Abzug; Saldo, was unterm Strich bleibt"
+},
+"差し支え|さしつかえ": {
+"s": "[差し支え]がなければ、お名前を教えてください。",
+"de": "Wenn es Ihnen nichts ausmacht, nennen Sie mir bitte Ihren Namen.",
+"r": "[{差|さ}し{支|つか}え]がなければ、お{名前|なまえ}を{教|おし}えてください。",
+"bedeutung": "Hindernis; 差し支えがなければ = wenn nichts dagegen spricht"
+},
+"差す|さす": {
+"s": "雨が降り出したので、傘を[差した]。",
+"de": "Weil es zu regnen anfing, habe ich den Schirm aufgespannt.",
+"r": "{雨|あめ}が{降|ふ}り{出|だ}したので、{傘|かさ}を[{差|さ}した]。"
+},
+"差別|さべつ": {
+"s": "年齢による[差別]をなくそうという声がある。",
+"de": "Es gibt Stimmen, die Benachteiligung wegen des Alters abschaffen wollen.",
+"r": "{年齢|ねんれい}による[{差別|さべつ}]をなくそうという{声|こえ}がある。",
+"bedeutung": "Diskriminierung, Benachteiligung"
+}
+}

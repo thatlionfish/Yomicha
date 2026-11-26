@@ -1,0 +1,365 @@
+{
+  "id": "2026-11-27-haori-2",
+  "date": "2026-11-27",
+  "topic": "mode",
+  "type": "essay",
+  "stufe": 2,
+  "feinstufe": 2.3,
+  "titleDe": "Essay: Der Haori meiner Großmutter",
+  "title": [
+    {"t": "祖母", "r": "そぼ", "g": "(meine) Großmutter", "j": 4},
+    {"t": "の"},
+    {"t": "羽織", "r": "はおり", "g": "Haori (kurze Jacke, die man über dem Kimono trägt)"}
+  ],
+  "sentences": [
+    {
+      "tokens": [
+        {"t": "先月", "r": "せんげつ", "g": "letzten Monat", "j": 5},
+        {"t": "、"},
+        {"t": "祖母", "r": "そぼ", "g": "(meine) Großmutter", "j": 4},
+        {"t": "の"},
+        {"t": "家", "r": "いえ", "g": "Haus, Zuhause", "j": 5},
+        {"t": "で", "b": "だ"},
+        {"t": "、"},
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt (bei Dingen)", "j": 5},
+        {"t": "羽織", "r": "はおり", "g": "Haori (kurze Jacke, die man über dem Kimono trägt)"},
+        {"t": "を"},
+        {"t": "もらいました", "b": "もらう", "g": "bekommen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s01.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "羽織", "r": "はおり", "g": "Haori (kurze Jacke, die man über dem Kimono trägt)"},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "着物", "r": "きもの", "g": "Kimono", "j": 4},
+        {"t": "の"},
+        {"t": "上", "r": "うえ", "g": "oben; 〜の上に着る = über … anziehen", "j": 5},
+        {"t": "に"},
+        {"t": "着る", "r": "きる", "ruby": [["着", "き"], ["る", ""]], "g": "(Kleidung am Oberkörper) anziehen, tragen", "j": 5},
+        {"t": "短い", "r": "みじかい", "ruby": [["短", "みじか"], ["い", ""]], "g": "kurz", "j": 5},
+        {"t": "上着", "r": "うわぎ", "g": "Jacke, Oberteil", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s02.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "祖母", "r": "そぼ", "g": "(meine) Großmutter", "j": 4},
+        {"t": "が"},
+        {"t": "若い", "r": "わかい", "ruby": [["若", "わか"], ["い", ""]], "g": "jung", "j": 5, "gr": "g1"},
+        {"t": "ころ", "g": "Zeit; 若いころ = als sie jung war", "j": 5, "gr": "g1"},
+        {"t": "、"},
+        {"t": "よく", "g": "oft", "j": 5},
+        {"t": "着ていた", "r": "きていた", "ruby": [["着", "き"], ["ていた", ""]], "b": "着る", "g": "(Kleidung am Oberkörper) anziehen, tragen", "j": 5},
+        {"t": "そう", "g": "〜そうです = ich habe gehört, dass …", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s03.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "深い", "r": "ふかい", "ruby": [["深", "ふか"], ["い", ""]], "g": "tief; 深い緑色 = ein dunkles, sattes Grün", "j": 4},
+        {"t": "緑色", "r": "みどりいろ", "g": "grüne Farbe, Grün"},
+        {"t": "で", "b": "だ"},
+        {"t": "、"},
+        {"t": "今", "r": "いま", "g": "jetzt, heute", "j": 5},
+        {"t": "見て", "r": "みて", "ruby": [["見", "み"], ["て", ""]], "b": "見る", "g": "sehen, ansehen", "j": 5},
+        {"t": "も"},
+        {"t": "とても", "g": "sehr", "j": 5},
+        {"t": "きれい", "g": "schön", "j": 5},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s04.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "私", "r": "わたし", "g": "ich", "j": 5},
+        {"t": "は"},
+        {"t": "着物", "r": "きもの", "g": "Kimono", "j": 4},
+        {"t": "を"},
+        {"t": "持っていない", "r": "もっていない", "ruby": [["持", "も"], ["っていない", ""]], "b": "持つ", "g": "haben, besitzen", "j": 5},
+        {"t": "ので", "g": "weil"},
+        {"t": "、"},
+        {"t": "少し", "r": "すこし", "ruby": [["少", "すこ"], ["し", ""]], "g": "ein wenig", "j": 5},
+        {"t": "困りました", "r": "こまりました", "ruby": [["困", "こま"], ["りました", ""]], "b": "困る", "g": "ratlos sein, nicht weiterwissen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s05.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "する", "g": "すると = daraufhin", "j": 5},
+        {"t": "と"},
+        {"t": "祖母", "r": "そぼ", "g": "(meine) Großmutter", "j": 4},
+        {"t": "が"},
+        {"t": "「"},
+        {"t": "洋服", "r": "ようふく", "g": "(westliche) Kleidung", "j": 5},
+        {"t": "の"},
+        {"t": "上", "r": "うえ", "g": "oben; 〜の上に着る = über … anziehen", "j": 5},
+        {"t": "に"},
+        {"t": "着て", "r": "きて", "ruby": [["着", "き"], ["て", ""]], "b": "着る", "g": "(Kleidung am Oberkörper) anziehen, tragen", "j": 5},
+        {"t": "も"},
+        {"t": "いい", "g": "gut; 〜てもいい = man darf, man kann ruhig", "j": 5},
+        {"t": "の"},
+        {"t": "よ", "g": "…のよ: freundlich erklärend (so spricht hier die Großmutter)"},
+        {"t": "」"},
+        {"t": "と"},
+        {"t": "教えて", "r": "おしえて", "ruby": [["教", "おし"], ["えて", ""]], "b": "教える", "g": "sagen, beibringen, erklären", "j": 5},
+        {"t": "くれました", "b": "くれる", "g": "(jemand tut etwas für mich)", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s06.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "日曜日", "r": "にちようび", "g": "Sonntag", "j": 5},
+        {"t": "、"},
+        {"t": "その", "g": "dieser, der (erwähnte)", "j": 5},
+        {"t": "羽織", "r": "はおり", "g": "Haori (kurze Jacke, die man über dem Kimono trägt)"},
+        {"t": "を"},
+        {"t": "白い", "r": "しろい", "ruby": [["白", "しろ"], ["い", ""]], "g": "weiß", "j": 5},
+        {"t": "シャツ", "g": "Hemd, Bluse", "j": 5, "gr": "g2"},
+        {"t": "と", "gr": "g2"},
+        {"t": "ジーンズ", "g": "Jeans", "j": 3, "gr": "g2"},
+        {"t": "に", "gr": "g2"},
+        {"t": "合わせて", "r": "あわせて", "ruby": [["合", "あ"], ["わせて", ""]], "b": "合わせる", "g": "kombinieren, zusammen tragen", "j": 3, "gr": "g2"},
+        {"t": "、"},
+        {"t": "町", "r": "まち", "g": "Stadt, Ort", "j": 5},
+        {"t": "へ"},
+        {"t": "出かけました", "r": "でかけました", "ruby": [["出", "で"], ["かけました", ""]], "b": "出かける", "g": "ausgehen, losgehen", "j": 5},
+        {"t": "。"}
+      ],
+      "audio": "s07.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "少し", "r": "すこし", "ruby": [["少", "すこ"], ["し", ""]], "g": "ein wenig", "j": 5},
+        {"t": "はずかしかった", "b": "はずかしい", "g": "peinlich; はずかしかった = ich war ein bisschen verlegen", "j": 4, "gr": "g3"},
+        {"t": "のです", "g": "(erklärend) 〜のですが = zwar …, aber", "gr": "g3"},
+        {"t": "が", "gr": "g3"},
+        {"t": "、"},
+        {"t": "店", "r": "みせ", "g": "Laden, Geschäft", "j": 5},
+        {"t": "の"},
+        {"t": "人", "r": "ひと", "g": "Mensch; 店の人 = jemand aus dem Laden", "j": 5},
+        {"t": "に"},
+        {"t": "「"},
+        {"t": "すてき", "g": "toll, schick, hübsch", "j": 3},
+        {"t": "です"},
+        {"t": "ね"},
+        {"t": "」"},
+        {"t": "と"},
+        {"t": "ほめられました", "b": "ほめる", "g": "loben; ほめられる = ein Kompliment bekommen", "j": 4},
+        {"t": "。"}
+      ],
+      "audio": "s08.mp3"
+    },
+    {
+      "p": true,
+      "tokens": [
+        {"t": "古い", "r": "ふるい", "ruby": [["古", "ふる"], ["い", ""]], "g": "alt (bei Dingen)", "j": 5},
+        {"t": "もの", "g": "Sache, Ding", "j": 5},
+        {"t": "も"},
+        {"t": "、"},
+        {"t": "合わせ方", "r": "あわせかた", "ruby": [["合", "あ"], ["わせ", ""], ["方", "かた"]], "g": "Art zu kombinieren", "j": 3},
+        {"t": "を"},
+        {"t": "変える", "r": "かえる", "ruby": [["変", "か"], ["える", ""]], "g": "ändern", "j": 4},
+        {"t": "と"},
+        {"t": "、"},
+        {"t": "新しく", "r": "あたらしく", "ruby": [["新", "あたら"], ["しく", ""]], "b": "新しい", "g": "neu", "j": 5, "gr": "g4"},
+        {"t": "見えます", "r": "みえます", "ruby": [["見", "み"], ["えます", ""]], "b": "見える", "g": "aussehen, wirken", "j": 4, "gr": "g4"},
+        {"t": "。"}
+      ],
+      "audio": "s09.mp3"
+    },
+    {
+      "tokens": [
+        {"t": "今度", "r": "こんど", "g": "nächstes Mal, demnächst", "j": 4},
+        {"t": "は"},
+        {"t": "、"},
+        {"t": "この", "g": "dies(e)", "j": 5},
+        {"t": "羽織", "r": "はおり", "g": "Haori (kurze Jacke, die man über dem Kimono trägt)"},
+        {"t": "を"},
+        {"t": "着て", "r": "きて", "ruby": [["着", "き"], ["て", ""]], "b": "着る", "g": "(Kleidung am Oberkörper) anziehen, tragen", "j": 5},
+        {"t": "、"},
+        {"t": "祖母", "r": "そぼ", "g": "(meine) Großmutter", "j": 4},
+        {"t": "に"},
+        {"t": "会い", "r": "あい", "ruby": [["会", "あ"], ["い", ""]], "b": "会う", "g": "treffen, besuchen", "j": 5},
+        {"t": "に"},
+        {"t": "行く", "r": "いく", "ruby": [["行", "い"], ["く", ""]], "g": "gehen", "j": 5},
+        {"t": "つもり", "g": "Absicht; 〜つもりです = ich habe vor, …", "j": 4},
+        {"t": "です"},
+        {"t": "。"}
+      ],
+      "audio": "s10.mp3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g1",
+      "pattern": "〜ころ",
+      "j": 4,
+      "de": "Adjektiv oder Nomen + の + ころ: „zu der Zeit, als …“. 若いころ = als (sie) jung war. Man meint einen Lebensabschnitt, keinen genauen Zeitpunkt.",
+      "ex": "{子|こ}どものころ、{毎日|まいにち}{公園|こうえん}で{遊|あそ}びました。",
+      "exDe": "Als Kind habe ich jeden Tag im Park gespielt."
+    },
+    {
+      "id": "g2",
+      "pattern": "〜に合わせて",
+      "j": 3,
+      "de": "Nomen + に合わせて: „passend zu …“, „abgestimmt auf …“. Bei Kleidung: etwas zu etwas anderem kombinieren.",
+      "ex": "{季節|きせつ}に{合|あ}わせて、{部屋|へや}の{花|はな}を{変|か}えます。",
+      "exDe": "Passend zur Jahreszeit wechsle ich die Blumen im Zimmer."
+    },
+    {
+      "id": "g3",
+      "pattern": "〜のですが",
+      "j": 4,
+      "de": "Satz in der einfachen Form (hier い-Adjektiv in der Vergangenheit) + のですが: leitet höflich zum nächsten Teil über, oft mit „zwar …, aber“.",
+      "ex": "{行|い}きたかったのですが、{時間|じかん}がありませんでした。",
+      "exDe": "Ich wäre zwar gern gegangen, aber ich hatte keine Zeit."
+    },
+    {
+      "id": "g4",
+      "pattern": "〜く見える",
+      "j": 4,
+      "de": "い-Adjektiv ohne い + く + 見える: „… aussehen“. 新しく見える = neu aussehen. Bei な-Adjektiven: きれいに見える.",
+      "ex": "この{色|いろ}の{服|ふく}を{着|き}ると、{顔|かお}が{明|あか}るく{見|み}えます。",
+      "exDe": "In Kleidung dieser Farbe wirkt das Gesicht heller."
+    }
+  ],
+  "questions": [
+    {
+      "kind": "inhalt",
+      "q": "「少し{困|こま}りました」とあるが、それはなぜですか。",
+      "qDe": "Im Text steht „Ich war ein wenig ratlos“ – warum?",
+      "options": ["もらった{羽織|はおり}がとても古くて、着るのがこわかったから", "{祖母|そぼ}に聞いても、{羽織|はおり}の着方がよくわからなかったから", "ふつう{羽織|はおり}の下に着る服が、{自分|じぶん}にはなかったから", "{羽織|はおり}の色が、{自分|じぶん}の着物の色に{合|あ}わないと思ったから"],
+      "answer": 2,
+      "explain": "Satz 2 und 5 zusammen: Einen Haori trägt man über dem Kimono, und die Person hat keinen Kimono. ふつう羽織の下に着る服 umschreibt 着物.",
+      "evidence": [1, 4],
+      "why": [
+        {
+          "de": "Der Haori ist zwar alt, aber von Angst davor steht nichts im Text. Die Person findet ihn schön.",
+          "ja": "古いですが、こわいとは書いてありません。とてもきれいだと書いてあります。",
+          "stellen": [[3, "今見てもとてもきれいです"]]
+        },
+        {
+          "de": "Dass die Person nach dem Anziehen gefragt und es nicht verstanden hat, steht nicht da. Die Großmutter gibt sofort einen Tipp.",
+          "ja": "着方を聞いたことは書いてありません。",
+          "stellen": [[5, "祖母が「洋服の上に着てもいいのよ」と教えてくれました"]]
+        },
+        {
+          "de": "Richtig: ふつう羽織の下に着る服 ist der Kimono – und genau den hat die Person nicht.",
+          "ja": "{羽織|はおり}は着物の上に着ますが、この人は着物を持っていません。",
+          "stellen": [[1, "着物の上に着る"], [4, "着物を持っていない"]]
+        },
+        {
+          "de": "Die Person besitzt gar keinen Kimono, also kann die Farbe auch nicht dazu unpassend sein.",
+          "ja": "この人は着物を持っていません。",
+          "stellen": [[4, "着物を持っていない"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "本文の{内容|ないよう}と{合|あ}っているものはどれですか。",
+      "qDe": "Was stimmt mit dem Inhalt des Textes überein?",
+      "options": ["{祖母|そぼ}は、{羽織|はおり}は着物といっしょに着なければならないと言いました", "出かけたところで、着ているものについていいことを言われました", "この人は日曜日に、町の店で{緑色|みどりいろ}の古い{羽織|はおり}を買いました", "{祖母|そぼ}は今も、この{羽織|はおり}を着て、よく町の店へ出かけています"],
+      "answer": 1,
+      "explain": "Satz 7 und 8: Die Person geht mit dem Haori in die Stadt, und jemand aus einem Laden sagt „すてきですね“. いいことを言われました umschreibt ほめられました.",
+      "evidence": [6, 7],
+      "why": [
+        {
+          "de": "Das Gegenteil: Die Großmutter sagt, man dürfe den Haori auch über westlicher Kleidung tragen.",
+          "ja": "{祖母|そぼ}は、洋服の上に着てもいいと言いました。",
+          "stellen": [[5, "洋服の上に着てもいいのよ"]]
+        },
+        {
+          "de": "Richtig: いいことを言われました sagt dasselbe wie 「すてきですね」とほめられました.",
+          "ja": "店の人は「すてきですね」とほめました。",
+          "stellen": [[7, "「すてきですね」とほめられました"]]
+        },
+        {
+          "de": "Der Haori wurde nicht gekauft: Die Person hat ihn bei der Großmutter bekommen.",
+          "ja": "{羽織|はおり}は買ったのではありません。{祖母|そぼ}の家でもらいました。",
+          "stellen": [[0, "祖母の家で、古い羽織をもらいました"]]
+        },
+        {
+          "de": "Die Großmutter hat ihn oft getragen, als sie jung war – nicht heute. Jetzt gehört er der Person.",
+          "ja": "{祖母|そぼ}がよく着ていたのは、{若|わか}いころです。",
+          "stellen": [[2, "祖母が若いころ、よく着ていた"]]
+        }
+      ]
+    },
+    {
+      "kind": "inhalt",
+      "q": "この{文章|ぶんしょう}を書いた人の考えに{合|あ}うものはどれですか。",
+      "qDe": "Was passt zur Ansicht der Person, die den Text geschrieben hat?",
+      "options": ["古い服は、{昔|むかし}と同じ着方を{変|か}えないで着たほうがいい", "新しく見える服がほしいときは、{緑色|みどりいろ}の服を{選|えら}ぶといい", "前からある服も、いっしょに着る服をかえれば楽しめる", "{若|わか}い人は、古い着物よりも新しい洋服を着たほうがいい"],
+      "answer": 2,
+      "explain": "Satz 9: Auch alte Dinge sehen neu aus, wenn man die Art des Kombinierens ändert. 前からある服 steht für 古いもの, いっしょに着る服をかえれば für 合わせ方を変えると.",
+      "evidence": [8],
+      "why": [
+        {
+          "de": "Genau das Gegenteil: Die Person findet, dass man die Art zu kombinieren ändern kann.",
+          "ja": "{反対|はんたい}です。{合|あ}わせ{方|かた}を{変|か}えると、新しく見えると書いてあります。",
+          "stellen": [[8, "合わせ方を変える"]]
+        },
+        {
+          "de": "Die grüne Farbe gehört nur zu diesem Haori. Dass Grün etwas neu aussehen lässt, steht nicht im Text.",
+          "ja": "{緑色|みどりいろ}だから新しく見える、とは書いてありません。",
+          "stellen": [[3, "深い緑色"]]
+        },
+        {
+          "de": "Richtig: Alte Kleidung macht wieder Freude, wenn man sie mit anderen Sachen trägt – wie den Haori mit Hemd und Jeans.",
+          "ja": "「{合|あ}わせ{方|かた}を{変|か}えると、新しく見える」と同じ考えです。",
+          "stellen": [[8, "古いものも、合わせ方を変えると、新しく見えます"]]
+        },
+        {
+          "de": "Junge Leute und neue Kleidung werden nicht verglichen. 若いころ spricht von der Jugend der Großmutter.",
+          "ja": "{若|わか}い人と新しい洋服のことは書いてありません。",
+          "stellen": [[2, "祖母が若いころ"]]
+        }
+      ]
+    },
+    {
+      "kind": "sprache",
+      "q": "「若い」の{読|よ}み{方|かた}として{最|もっと}もよいものはどれですか。",
+      "qDe": "Was ist die beste Lesung für 若い?",
+      "options": ["わかい", "にがい", "ふかい", "ながい"],
+      "answer": 0,
+      "explain": "若い liest man わかい (jung). にがい ist 苦い (bitter), ふかい ist 深い (tief), ながい ist 長い (lang).",
+      "evidence": [2],
+      "why": [
+        {
+          "de": "Richtig: 若い = わかい, jung.",
+          "ja": "「若い」は「わかい」と読みます。",
+          "stellen": [[2, "若い"]]
+        },
+        {
+          "de": "にがい schreibt man 苦い und heißt bitter. Das Zeichen sieht 若 sehr ähnlich.",
+          "ja": "「にがい」は「苦い」と書きます。形がよくにています。",
+          "stellen": [[2, "若い"]]
+        },
+        {
+          "de": "ふかい ist 深い (tief) – das Wort kommt im Text bei der Farbe vor.",
+          "ja": "「ふかい」は「深い」と書きます。",
+          "stellen": [[3, "深い"]]
+        },
+        {
+          "de": "ながい ist 長い (lang).",
+          "ja": "「ながい」は「長い」と書きます。",
+          "stellen": [[2, "若い"]]
+        }
+      ]
+    }
+  ],
+  "sources": []
+}

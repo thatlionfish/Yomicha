@@ -101,5 +101,11 @@
 "de": "Langes Arbeiten ist nicht gut für den Körper.",
 "r": "{長時間|ちょうじかん}の[{労働|ろうどう}]は{体|からだ}によくない。",
 "bedeutung": "Arbeit (körperlich, als Leistung)"
+},
+"勝負|しょうぶ": {
+"s": "この試合は、最後まで[勝負]がわからなかった。",
+"de": "Bei diesem Spiel war bis zum Schluss offen, wer gewinnt.",
+"r": "この{試合|しあい}は、{最後|さいご}まで[{勝負|しょうぶ}]がわからなかった。",
+"bedeutung": "Sieg oder Niederlage; Wettkampf, Partie"
 }
 }

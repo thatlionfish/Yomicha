@@ -1,4 +1,10 @@
 {
+"月末|げつまつ": {
+"s": "家賃は[月末]までに払ってください。",
+"de": "Bitte zahlen Sie die Miete bis zum Monatsende.",
+"r": "{家賃|やちん}は[{月末|げつまつ}]までに{払|はら}ってください。",
+"bedeutung": "Monatsende"
+},
 "有難い|ありがたい": {
 "s": "手伝ってもらえると本当に[有難い]。",
 "de": "Es wäre wirklich eine große Hilfe, wenn du mir hilfst.",
@@ -9,6 +15,27 @@
 "de": "Die Abgabefrist für den Bericht ist Freitag.",
 "r": "レポートの{提出|ていしゅつ}[{期限|きげん}]は{金曜日|きんようび}だ。",
 "bedeutung": "Frist, Termin"
+},
+"末|すえ": {
+"s": "長い話し合いの[末]、ようやく案が決まった。",
+"de": "Nach langen Beratungen stand endlich der Plan fest.",
+"r": "{長|なが}い{話|はな}し{合|あ}いの[{末|すえ}]、ようやく{案|あん}が{決|き}まった。",
+"bedeutung": "Ende; 〜の末 = nach (langem) …"
+},
+"末|まつ": {
+"s": "[学期末]には、試験がたくさんある。",
+"de": "Am Ende des Semesters gibt es viele Prüfungen.",
+"r": "[{学期|がっき}{末|まつ}]には、{試験|しけん}がたくさんある。",
+"bedeutung": "Ende (eines Zeitraums)",
+"lesungen": {
+"学期末": "がっきまつ"
+}
+},
+"末っ子|すえっこ": {
+"s": "私は三人兄弟の[末っ子]です。",
+"de": "Ich bin das jüngste von drei Geschwistern.",
+"r": "{私|わたし}は{三人|さんにん}{兄弟|きょうだい}の[{末|すえ}っ{子|こ}]です。",
+"bedeutung": "jüngstes Kind"
 },
 "本|ほん": {
 "s": "寝る前に、いつも[本]を少し読む。",

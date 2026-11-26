@@ -1,4 +1,10 @@
 {
+"物差し|ものさし": {
+"s": "[物差し]を使って、紙の長さを測った。",
+"de": "Mit dem Lineal habe ich die Länge des Papiers gemessen.",
+"r": "[{物差|ものさ}し]を{使|つか}って、{紙|かみ}の{長|なが}さを{測|はか}った。",
+"bedeutung": "Lineal; Maßstab"
+},
 "物資|ぶっし": {
 "s": "被災地に[物資]を送った。",
 "de": "Wir haben Hilfsgüter in das Katastrophengebiet geschickt.",
