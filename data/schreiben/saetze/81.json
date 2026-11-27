@@ -1,7 +1,64 @@
 {
+"自ずから|おのずから": {
+"s": "読んでいれば意味は[自ずから]分かる。",
+"de": "Liest man weiter, erschließt sich der Sinn von selbst.",
+"r": "{読|よ}んでいれば{意味|いみ}は[{自|おの}ずから]{分|わ}かる。",
+"bedeutung": "von selbst"
+},
+"自ら|みずから": {
+"s": "社長が[自ら]客を案内した。",
+"de": "Der Chef führte die Gäste persönlich herum.",
+"r": "{社長|しゃちょう}が[{自|みずか}ら]{客|きゃく}を{案内|あんない}した。",
+"bedeutung": "selbst, persönlich"
+},
+"自主|じしゅ": {
+"s": "社員の[自主]性を大切にしている。",
+"de": "Man legt Wert auf die Eigeninitiative der Belegschaft.",
+"r": "{社員|しゃいん}の[{自主|じしゅ}]{性|せい}を{大切|たいせつ}にしている。",
+"bedeutung": "Eigenständigkeit"
+},
+"自分|じぶん": {
+"s": "[自分]の部屋は自分でそうじする。",
+"de": "Mein eigenes Zimmer putze ich selbst.",
+"r": "[{自分|じぶん}]の{部屋|へや}は{自分|じぶん}でそうじする。"
+},
+"自動|じどう": {
+"s": "この店の入口は[自動]ドアだ。",
+"de": "Der Laden hat eine automatische Tür.",
+"r": "この{店|みせ}の{入口|いりぐち}は[{自動|じどう}]ドアだ。",
+"bedeutung": "automatisch"
+},
+"自動車|じどうしゃ": {
+"s": "[自動車]の工場を見学した。",
+"de": "Wir haben eine Autofabrik besichtigt.",
+"r": "[{自動車|じどうしゃ}]の{工場|こうじょう}を{見学|けんがく}した。"
+},
 "自宅|じたく": {
 "s": "今日は[自宅]で仕事をしている。",
 "de": "Heute arbeite ich von zu Hause aus.",
 "r": "{今日|きょう}は[{自宅|じたく}]で{仕事|しごと}をしている。"
+},
+"自立|じりつ": {
+"s": "卒業したら親から[自立]したい。",
+"de": "Nach dem Abschluss will ich auf eigenen Beinen stehen.",
+"r": "{卒業|そつぎょう}したら{親|おや}から[{自立|じりつ}]したい。",
+"bedeutung": "Selbstständigkeit"
+},
+"自習|じしゅう": {
+"s": "午後は図書室で[自習]した。",
+"de": "Nachmittags habe ich in der Schulbibliothek selbst gelernt.",
+"r": "{午後|ごご}は{図書室|としょしつ}で[{自習|じしゅう}]した。",
+"bedeutung": "Selbststudium"
+},
+"自転|じてん": {
+"s": "地球は一日に一回[自転]する。",
+"de": "Die Erde dreht sich einmal am Tag um sich selbst.",
+"r": "{地球|ちきゅう}は{一日|いちにち}に{一回|いっかい}[{自転|じてん}]する。",
+"bedeutung": "Eigendrehung"
+},
+"自転車|じてんしゃ": {
+"s": "[自転車]で町を回ってみた。",
+"de": "Ich bin mit dem Rad durch die Stadt gefahren.",
+"r": "[{自転車|じてんしゃ}]で{町|まち}を{回|まわ}ってみた。"
 }
 }

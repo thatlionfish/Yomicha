@@ -1,8 +1,67 @@
 {
+"車|くるま": {
+"s": "休みの日は[車]で出かけることが多い。",
+"de": "An freien Tagen fahre ich oft mit dem Auto weg.",
+"r": "{休|やす}みの{日|ひ}は[{車|くるま}]で{出|で}かけることが{多|おお}い。"
+},
+"車|しゃ": {
+"s": "この列[車]は次の駅で止まります。",
+"de": "Dieser Zug hält an der nächsten Station.",
+"r": "この{列|れつ}[{車|しゃ}]は{次|つぎ}の{駅|えき}で{止|と}まります。",
+"bedeutung": "Wagen, Fahrzeug (in Zusammensetzungen)",
+"lesungen": {
+"車": "しゃ"
+}
+},
+"転々|てんてん": {
+"s": "兄は仕事を[転々]と変えた。",
+"de": "Mein Bruder wechselte von Job zu Job.",
+"r": "{兄|あに}は{仕事|しごと}を[{転々|てんてん}]と{変|か}えた。",
+"bedeutung": "von einem zum anderen"
+},
+"転がす|ころがす": {
+"s": "子どもが雪の玉を[転がして]いる。",
+"de": "Ein Kind rollt eine Schneekugel.",
+"r": "{子|こ}どもが{雪|ゆき}の{玉|たま}を[{転|ころ}がして]いる。",
+"bedeutung": "rollen (etwas)"
+},
+"転がる|ころがる": {
+"s": "ボールが道に[転がって]きた。",
+"de": "Ein Ball rollte auf die Straße.",
+"r": "ボールが{道|みち}に[{転|ころ}がって]きた。",
+"bedeutung": "rollen"
+},
+"転じる|てんじる": {
+"s": "彼は営業から開発に仕事を[転じた]。",
+"de": "Er wechselte vom Vertrieb in die Entwicklung.",
+"r": "{彼|かれ}は{営業|えいぎょう}から{開発|かいはつ}に{仕事|しごと}を[{転|てん}じた]。",
+"bedeutung": "wechseln, sich wenden"
+},
+"転ずる|てんずる": {
+"s": "風が西から北に向きを[転ずる]。",
+"de": "Der Wind dreht von West auf Nord.",
+"r": "{風|かぜ}が{西|にし}から{北|きた}に{向|む}きを[{転|てん}ずる]。",
+"bedeutung": "wenden, drehen"
+},
+"転ぶ|ころぶ": {
+"s": "雪道で[転んで]ひざを打った。",
+"de": "Auf dem verschneiten Weg bin ich aufs Knie gefallen.",
+"r": "{雪道|ゆきみち}で[{転|ころ}んで]ひざを{打|う}った。",
+"bedeutung": "hinfallen",
+"lesungen": {
+"雪道": "ゆきみち"
+}
+},
 "転任|てんにん": {
 "s": "父は来月、福岡へ[転任]する。",
 "de": "Mein Vater wird nächsten Monat nach Fukuoka versetzt.",
 "r": "{父|ちち}は{来月|らいげつ}、{福岡|ふくおか}へ[{転任|てんにん}]する。",
 "bedeutung": "Versetzung (auf einen anderen Posten)"
+},
+"転校|てんこう": {
+"s": "父の仕事で何度も[転校]した。",
+"de": "Wegen Vaters Beruf habe ich oft die Schule gewechselt.",
+"r": "{父|ちち}の{仕事|しごと}で{何度|なんど}も[{転校|てんこう}]した。",
+"bedeutung": "Schulwechsel"
 }
 }

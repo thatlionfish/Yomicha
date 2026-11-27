@@ -1,4 +1,40 @@
 {
+"業|ぎょう": {
+"s": "父はサービス[業]で働いている。",
+"de": "Mein Vater arbeitet in der Dienstleistungsbranche.",
+"r": "{父|ちち}はサービス[{業|ぎょう}]で{働|はたら}いている。",
+"bedeutung": "Branche, Gewerbe",
+"lesungen": {
+"業": "ぎょう"
+}
+},
+"業者|ぎょうしゃ": {
+"s": "引っ越しは[業者]に頼んだ。",
+"de": "Den Umzug habe ich einer Firma übertragen.",
+"r": "{引|ひ}っ{越|こ}しは[{業者|ぎょうしゃ}]に{頼|たの}んだ。",
+"bedeutung": "Anbieter, Unternehmer"
+},
+"楽|らく": {
+"s": "靴を脱ぐと足が[楽]になった。",
+"de": "Ohne Schuhe fühlten sich die Füße wohl.",
+"r": "{靴|くつ}を{脱|ぬ}ぐと{足|あし}が[{楽|らく}]になった。",
+"bedeutung": "bequem, leicht"
+},
+"楽しい|たのしい": {
+"s": "友だちとの旅行はとても[楽しかった]。",
+"de": "Die Reise mit Freunden hat viel Spaß gemacht.",
+"r": "{友|とも}だちとの{旅行|りょこう}はとても[{楽|たの}しかった]。"
+},
+"楽しみ|たのしみ": {
+"s": "来週の祭りを[楽しみ]にしている。",
+"de": "Ich freue mich auf das Fest nächste Woche.",
+"r": "{来週|らいしゅう}の{祭|まつ}りを[{楽|たの}しみ]にしている。"
+},
+"楽しむ|たのしむ": {
+"s": "休みの日は料理を[楽しんで]いる。",
+"de": "An freien Tagen koche ich mit Vergnügen.",
+"r": "{休|やす}みの{日|ひ}は{料理|りょうり}を[{楽|たの}しんで]いる。"
+},
 "構いません|かまいません": {
 "s": "窓を開けても[構いません]か。",
 "de": "Macht es Ihnen etwas aus, wenn ich das Fenster öffne?",

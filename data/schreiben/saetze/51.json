@@ -1,4 +1,21 @@
 {
+"お元気で|おげんきで": {
+"s": "では、[お元気で]。",
+"de": "Also, alles Gute!",
+"r": "では、[お{元気|げんき}で]。",
+"bedeutung": "Alles Gute (Abschied)"
+},
+"お兄さん|おにいさん": {
+"s": "[お兄さん]は何の仕事をしていますか。",
+"de": "Was macht Ihr älterer Bruder beruflich?",
+"r": "[お{兄|にい}さん]は{何|なん}の{仕事|しごと}をしていますか。"
+},
+"お先に|おさきに": {
+"s": "今日は[お先に]失礼します。",
+"de": "Ich verabschiede mich heute schon.",
+"r": "{今日|きょう}は[お{先|さき}に]{失礼|しつれい}します。",
+"bedeutung": "vor Ihnen, zuerst"
+},
 "優|ゆう": {
 "s": "数学の成績は[優]だった。",
 "de": "In Mathematik hatte ich die Note „sehr gut“.",
@@ -19,11 +36,208 @@
 "de": "Unsere Mannschaft hat das Turnier gewonnen.",
 "r": "{私|わたし}たちのチームが{大会|たいかい}で[{優勝|ゆうしょう}]した。"
 },
+"元|もと": {
+"s": "使った物は[元]の場所にもどす。",
+"de": "Benutztes kommt an seinen Platz zurück.",
+"r": "{使|つか}った{物|もの}は[{元|もと}]の{場所|ばしょ}にもどす。",
+"bedeutung": "Ursprung",
+"lesungen": {
+"元": "もと"
+}
+},
+"元々|もともと": {
+"s": "兄は[元々]体が丈夫だ。",
+"de": "Mein Bruder ist von Natur aus robust.",
+"r": "{兄|あに}は[{元々|もともと}]{体|からだ}が{丈夫|じょうぶ}だ。",
+"bedeutung": "von Haus aus"
+},
+"元年|がんねん": {
+"s": "令和[元年]に生まれた。",
+"de": "Er wurde im ersten Jahr der Reiwa-Zeit geboren.",
+"r": "{令和|れいわ}[{元年|がんねん}]に{生|う}まれた。",
+"bedeutung": "erstes Jahr einer Ära"
+},
+"元日|がんじつ": {
+"s": "[元日]の朝は家族でお雑煮を食べる。",
+"de": "Am Neujahrstag essen wir gemeinsam Neujahrssuppe.",
+"r": "[{元日|がんじつ}]の{朝|あさ}は{家族|かぞく}でお{雑煮|ぞうに}を{食|た}べる。",
+"bedeutung": "Neujahrstag"
+},
+"元来|がんらい": {
+"s": "人は[元来]自由なものだ。",
+"de": "Der Mensch ist von Natur aus frei.",
+"r": "{人|ひと}は[{元来|がんらい}]{自由|じゆう}なものだ。",
+"bedeutung": "ursprünglich, von Natur"
+},
+"元気|げんき": {
+"s": "祖母は年を取っても[元気]だ。",
+"de": "Meine Großmutter ist auch im Alter munter.",
+"r": "{祖母|そぼ}は{年|とし}を{取|と}っても[{元気|げんき}]だ。"
+},
+"兄|あに": {
+"s": "[兄]は私より三つ上だ。",
+"de": "Mein Bruder ist drei Jahre älter als ich.",
+"r": "[{兄|あに}]は{私|わたし}より{三|みっ}つ{上|うえ}だ。"
+},
+"兄弟|きょうだい": {
+"s": "私は三人[兄弟]の一番下だ。",
+"de": "Ich bin das jüngste von drei Geschwistern.",
+"r": "{私|わたし}は{三人|さんにん}[{兄弟|きょうだい}]の{一番|いちばん}{下|した}だ。"
+},
+"先|さき": {
+"s": "どうぞお[先]に帰ってください。",
+"de": "Gehen Sie bitte schon vor nach Hause.",
+"r": "どうぞお[{先|さき}]に{帰|かえ}ってください。"
+},
+"先|せん": {
+"s": "[先]週の会議で決まった。",
+"de": "Das wurde in der Besprechung letzte Woche beschlossen.",
+"r": "[{先|せん}]{週|しゅう}の{会議|かいぎ}で{決|き}まった。",
+"bedeutung": "vorig",
+"lesungen": {
+"先": "せん"
+}
+},
+"先々月|せんせんげつ": {
+"s": "[先々月]に引っ越してきました。",
+"de": "Ich bin vorletzten Monat hergezogen.",
+"r": "[{先々月|せんせんげつ}]に{引|ひ}っ{越|こ}してきました。",
+"bedeutung": "vorletzten Monat"
+},
+"先々週|せんせんしゅう": {
+"s": "[先々週]から風邪が治らない。",
+"de": "Seit vorletzter Woche werde ich die Erkältung nicht los.",
+"r": "[{先々週|せんせんしゅう}]から{風邪|かぜ}が{治|なお}らない。",
+"bedeutung": "vorletzte Woche"
+},
+"先だって|せんだって": {
+"s": "[先だって]はお世話になりました。",
+"de": "Vielen Dank für neulich.",
+"r": "[{先|せん}だって]はお{世話|せわ}になりました。",
+"bedeutung": "neulich"
+},
+"先代|せんだい": {
+"s": "この店は[先代]から続いている。",
+"de": "Der Laden besteht seit der vorigen Generation.",
+"r": "この{店|みせ}は[{先代|せんだい}]から{続|つづ}いている。",
+"bedeutung": "Vorgänger(generation)"
+},
+"先日|せんじつ": {
+"s": "[先日]はお世話になりました。",
+"de": "Vielen Dank für neulich.",
+"r": "[{先日|せんじつ}]はお{世話|せわ}になりました。",
+"bedeutung": "neulich, vor einigen Tagen"
+},
+"先月|せんげつ": {
+"s": "[先月]、ひっこしをしました。",
+"de": "Letzten Monat bin ich umgezogen.",
+"r": "[{先月|せんげつ}]、ひっこしをしました。"
+},
+"先生|せんせい": {
+"s": "分からないところを[先生]に聞いた。",
+"de": "Ich habe die Lehrerin gefragt, was ich nicht verstand.",
+"r": "{分|わ}からないところを[{先生|せんせい}]に{聞|き}いた。"
+},
+"先着|せんちゃく": {
+"s": "[先着]百名に記念品を差し上げます。",
+"de": "Die ersten hundert erhalten ein Andenken.",
+"r": "[{先着|せんちゃく}]{百名|ひゃくめい}に{記念品|きねんひん}を{差|さ}し{上|あ}げます。",
+"bedeutung": "Reihenfolge des Eintreffens"
+},
+"先行|せんこう": {
+"s": "うわさばかりが[先行]している。",
+"de": "Die Gerüchte eilen den Tatsachen voraus.",
+"r": "うわさばかりが[{先行|せんこう}]している。",
+"bedeutung": "Vorausgehen"
+},
+"先週|せんしゅう": {
+"s": "[先週]借りた本を返した。",
+"de": "Ich habe das letzte Woche geliehene Buch zurückgegeben.",
+"r": "[{先週|せんしゅう}]{借|か}りた{本|ほん}を{返|かえ}した。"
+},
 "光景|こうけい": {
 "s": "朝の海で見た美しい[光景]が忘れられない。",
 "de": "Den schönen Anblick, den ich morgens am Meer gesehen habe, kann ich nicht vergessen.",
 "r": "{朝|あさ}の{海|うみ}で{見|み}た{美|うつく}しい[{光景|こうけい}]が{忘|わす}れられない。",
 "bedeutung": "Anblick, Szene"
+},
+"入る|はいる": {
+"s": "寒いので早く部屋に[入ろう]。",
+"de": "Es ist kalt, lass uns schnell ins Zimmer gehen.",
+"r": "{寒|さむ}いので{早|はや}く{部屋|へや}に[{入|はい}ろう]。"
+},
+"入れる|いれる": {
+"s": "コーヒーに砂糖を[入れる]。",
+"de": "Ich gebe Zucker in den Kaffee.",
+"r": "コーヒーに{砂糖|さとう}を[{入|い}れる]。"
+},
+"入れ物|いれもの": {
+"s": "のこった料理を[入れ物]に移した。",
+"de": "Ich habe die Reste in ein Gefäß umgefüllt.",
+"r": "のこった{料理|りょうり}を[{入|い}れ{物|もの}]に{移|うつ}した。",
+"bedeutung": "Behälter"
+},
+"入口|いりぐち": {
+"s": "[入口]でくつを脱いでください。",
+"de": "Bitte ziehen Sie am Eingang die Schuhe aus.",
+"r": "[{入口|いりぐち}]でくつを{脱|ぬ}いでください。"
+},
+"入場|にゅうじょう": {
+"s": "[入場]は午前十時からです。",
+"de": "Einlass ist ab zehn Uhr.",
+"r": "[{入場|にゅうじょう}]は{午前|ごぜん}{十時|じゅうじ}からです。",
+"bedeutung": "Einlass, Eintritt"
+},
+"入学|にゅうがく": {
+"s": "[入学]のお祝いに辞書をもらった。",
+"de": "Zur Aufnahme habe ich ein Wörterbuch geschenkt bekommen.",
+"r": "[{入学|にゅうがく}]のお{祝|いわ}いに{辞書|じしょ}をもらった。"
+},
+"入手|にゅうしゅ": {
+"s": "めずらしい切手を[入手]した。",
+"de": "Ich habe eine seltene Marke ergattert.",
+"r": "めずらしい{切手|きって}を[{入手|にゅうしゅ}]した。",
+"bedeutung": "Erwerb"
+},
+"入社|にゅうしゃ": {
+"s": "姉の[入社]を家族で祝った。",
+"de": "Wir haben den Firmeneintritt meiner Schwester gefeiert.",
+"r": "{姉|あね}の[{入社|にゅうしゃ}]を{家族|かぞく}で{祝|いわ}った。",
+"bedeutung": "Eintritt in eine Firma"
+},
+"入院|にゅういん": {
+"s": "祖父はけがで[入院]している。",
+"de": "Mein Großvater liegt wegen einer Verletzung im Krankenhaus.",
+"r": "{祖父|そふ}はけがで[{入院|にゅういん}]している。"
+},
+"八|はち": {
+"s": "このバスにはあと[八]人乗れる。",
+"de": "In diesen Bus passen noch acht Leute.",
+"r": "このバスにはあと[{八|はち}]{人|にん}{乗|の}れる。",
+"lesungen": {
+"人": "にん"
+}
+},
+"八つ|やっつ": {
+"s": "卵を[八つ]使ってケーキを作る。",
+"de": "Ich nehme acht Eier für den Kuchen.",
+"r": "{卵|たまご}を[{八|やっ}つ]{使|つか}ってケーキを{作|つく}る。"
+},
+"八日|ようか": {
+"s": "来月の[八日]は空いていますか。",
+"de": "Haben Sie nächsten Monat am Achten Zeit?",
+"r": "{来月|らいげつ}の[{八日|ようか}]は{空|あ}いていますか。"
+},
+"八百屋|やおや": {
+"s": "[八百屋]で大根と玉ねぎを買った。",
+"de": "Beim Gemüsehändler habe ich Rettich und Zwiebeln gekauft.",
+"r": "[{八百屋|やおや}]で{大根|だいこん}と{玉|たま}ねぎを{買|か}った。"
+},
+"公|おおやけ": {
+"s": "その事件は[公]になった。",
+"de": "Der Vorfall wurde öffentlich.",
+"r": "その{事件|じけん}は[{公|おおやけ}]になった。",
+"bedeutung": "Öffentlichkeit"
 },
 "公共|こうきょう": {
 "s": "[公共]の場所ではたばこを吸わないでください。",
@@ -40,16 +254,52 @@
 "de": "Einzelheiten finden Sie auf der offiziellen Website.",
 "r": "{詳|くわ}しいことは[{公式|こうしき}]サイトで{確認|かくにん}してください。"
 },
+"公正|こうせい": {
+"s": "審判には[公正]さが求められる。",
+"de": "Von Schiedsrichtern wird Fairness verlangt.",
+"r": "{審判|しんぱん}には[{公正|こうせい}]さが{求|もと}められる。",
+"bedeutung": "Fairness, Gerechtigkeit"
+},
 "公演|こうえん": {
 "s": "劇団の[公演]は来週の土曜日から始まる。",
 "de": "Die Aufführungen der Theatergruppe beginnen nächsten Samstag.",
 "r": "{劇団|げきだん}の[{公演|こうえん}]は{来週|らいしゅう}の{土曜日|どようび}から{始|はじ}まる。"
+},
+"公用|こうよう": {
+"s": "この車は[公用]にだけ使う。",
+"de": "Dieser Wagen ist nur für Dienstzwecke.",
+"r": "この{車|くるま}は[{公用|こうよう}]にだけ{使|つか}う。",
+"bedeutung": "dienstlicher Gebrauch"
+},
+"公立|こうりつ": {
+"s": "弟は[公立]の中学校に通っている。",
+"de": "Mein Bruder besucht eine öffentliche Mittelschule.",
+"r": "{弟|おとうと}は[{公立|こうりつ}]の{中学校|ちゅうがっこう}に{通|かよ}っている。",
+"bedeutung": "öffentlich (Einrichtung)"
 },
 "公認|こうにん": {
 "s": "この記録は[公認]されなかった。",
 "de": "Dieser Rekord wurde nicht offiziell anerkannt.",
 "r": "この{記録|きろく}は[{公認|こうにん}]されなかった。",
 "bedeutung": "offizielle Anerkennung"
+},
+"六|ろく": {
+"s": "家族は[六]人です。",
+"de": "Meine Familie besteht aus sechs Personen.",
+"r": "{家族|かぞく}は[{六|ろく}]{人|にん}です。",
+"lesungen": {
+"人": "にん"
+}
+},
+"六つ|むっつ": {
+"s": "パンを[六つ]に分けた。",
+"de": "Ich habe das Brot in sechs Teile geteilt.",
+"r": "パンを[{六|むっ}つ]に{分|わ}けた。"
+},
+"六日|むいか": {
+"s": "結果は[六日]後に分かる。",
+"de": "Das Ergebnis steht in sechs Tagen fest.",
+"r": "{結果|けっか}は[{六日|むいか}]{後|あと}に{分|わ}かる。"
 },
 "共に|ともに": {
 "s": "家族と[共に]新しい年を迎えた。",
@@ -94,15 +344,197 @@
 "de": "Fassen Sie bitte den Inhalt dieses Buches kurz zusammen.",
 "r": "この{本|ほん}の[{内容|ないよう}]を{短|みじか}くまとめてください。"
 },
+"円|えん": {
+"s": "切手は一まい百[円]です。",
+"de": "Eine Briefmarke kostet hundert Yen.",
+"r": "{切手|きって}は{一|いち}まい{百|ひゃく}[{円|えん}]です。"
+},
+"円|まる": {
+"s": "正しいと思う番号に[円]をつけてください。",
+"de": "Kreisen Sie die richtige Nummer ein.",
+"r": "{正|ただ}しいと{思|おも}う{番号|ばんごう}に[{円|まる}]をつけてください。",
+"bedeutung": "Kreis",
+"lesungen": {
+"円": "まる"
+}
+},
+"写し|うつし": {
+"s": "書類の[写し]を一まい取った。",
+"de": "Ich habe eine Kopie des Dokuments gemacht.",
+"r": "{書類|しょるい}の[{写|うつ}し]を{一|いち}まい{取|と}った。",
+"bedeutung": "Kopie, Abschrift"
+},
+"写す|うつす": {
+"s": "黒板の字をノートに[写した]。",
+"de": "Ich habe das Tafelbild ins Heft abgeschrieben.",
+"r": "{黒板|こくばん}の{字|じ}をノートに[{写|うつ}した]。"
+},
+"写る|うつる": {
+"s": "この写真には富士山がきれいに[写って]いる。",
+"de": "Auf diesem Foto ist der Fuji schön zu sehen.",
+"r": "この{写真|しゃしん}には{富士山|ふじやま}がきれいに[{写|うつ}って]いる。",
+"bedeutung": "abgebildet sein"
+},
+"写生|しゃせい": {
+"s": "公園で花の[写生]をした。",
+"de": "Im Park habe ich Blumen nach der Natur gezeichnet.",
+"r": "{公園|こうえん}で{花|はな}の[{写生|しゃせい}]をした。",
+"bedeutung": "Zeichnen nach der Natur"
+},
+"写真|しゃしん": {
+"s": "ここで[写真]をとってもいいですか。",
+"de": "Darf man hier fotografieren?",
+"r": "ここで[{写真|しゃしん}]をとってもいいですか。"
+},
+"冬|ふゆ": {
+"s": "[冬]になると、このあたりは雪が多い。",
+"de": "Im Winter schneit es hier viel.",
+"r": "[{冬|ふゆ}]になると、このあたりは{雪|ゆき}が{多|おお}い。"
+},
+"出|で": {
+"s": "急に雨がふって、人の[出]が少なかった。",
+"de": "Wegen des plötzlichen Regens waren wenig Leute unterwegs.",
+"r": "{急|きゅう}に{雨|あめ}がふって、{人|ひと}の[{出|で}]が{少|すく}なかった。"
+},
+"出かける|でかける": {
+"s": "朝ご飯を食べてから[出かけた]。",
+"de": "Nach dem Frühstück bin ich losgegangen.",
+"r": "{朝|あさ}ご{飯|はん}を{食|た}べてから[{出|で}かけた]。"
+},
+"出くわす|でくわす": {
+"s": "旅先で知人に[出くわした]。",
+"de": "Auf Reisen lief ich zufällig einem Bekannten über den Weg.",
+"r": "{旅先|たびさき}で{知人|ちじん}に[{出|で}くわした]。",
+"bedeutung": "zufällig treffen"
+},
+"出す|だす": {
+"s": "宿題は金曜日までに[出して]ください。",
+"de": "Gebt die Hausaufgabe bitte bis Freitag ab.",
+"r": "{宿題|しゅくだい}は{金曜日|きんようび}までに[{出|だ}して]ください。"
+},
+"出る|でる": {
+"s": "毎朝七時に家を[出る]。",
+"de": "Jeden Morgen gehe ich um sieben aus dem Haus.",
+"r": "{毎朝|まいあさ}{七時|しちじ}に{家|いえ}を[{出|で}る]。"
+},
+"出世|しゅっせ": {
+"s": "兄は会社で早く[出世]した。",
+"de": "Mein Bruder machte in der Firma schnell Karriere.",
+"r": "{兄|あに}は{会社|かいしゃ}で{早|はや}く[{出世|しゅっせ}]した。",
+"bedeutung": "Karriere, Aufstieg"
+},
+"出会い|であい": {
+"s": "旅先での[出会い]は忘れられない。",
+"de": "Begegnungen auf Reisen vergisst man nicht.",
+"r": "{旅先|たびさき}での[{出会|であ}い]は{忘|わす}れられない。",
+"bedeutung": "Begegnung"
+},
+"出会う|であう": {
+"s": "ここで昔の先生に[出会った]。",
+"de": "Hier bin ich zufällig meinem alten Lehrer begegnet.",
+"r": "ここで{昔|むかし}の{先生|せんせい}に[{出会|であ}った]。",
+"bedeutung": "begegnen"
+},
+"出入り|でいり": {
+"s": "この建物は人の[出入り]が多い。",
+"de": "In diesem Gebäude herrscht ein Kommen und Gehen.",
+"r": "この{建物|たてもの}は{人|ひと}の[{出入|でい}り]が{多|おお}い。",
+"bedeutung": "Kommen und Gehen"
+},
+"出入り口|でいりぐち": {
+"s": "[出入り口]はこの先にあります。",
+"de": "Der Ein- und Ausgang ist weiter vorn.",
+"r": "[{出入|でい}り{口|ぐち}]はこの{先|さき}にあります。",
+"bedeutung": "Ein- und Ausgang"
+},
+"出入口|でいりぐち": {
+"s": "[出入口]の前に車を止めないでください。",
+"de": "Bitte nicht vor Ein- und Ausgang parken.",
+"r": "[{出入口|でいりぐち}]の{前|まえ}に{車|くるま}を{止|と}めないでください。",
+"bedeutung": "Ein- und Ausgang"
+},
+"出動|しゅつどう": {
+"s": "火事で消防車が[出動]した。",
+"de": "Wegen eines Brandes rückte die Feuerwehr aus.",
+"r": "{火事|かじ}で{消防車|しょうぼうしゃ}が[{出動|しゅつどう}]した。",
+"bedeutung": "Einsatz, Ausrücken"
+},
+"出口|でぐち": {
+"s": "駅の[出口]で友だちを待っている。",
+"de": "Ich warte am Bahnhofsausgang auf eine Freundin.",
+"r": "{駅|えき}の[{出口|でぐち}]で{友|とも}だちを{待|ま}っている。"
+},
+"出品|しゅっぴん": {
+"s": "町の展覧会に絵を[出品]した。",
+"de": "Ich habe ein Bild zur Stadtausstellung eingereicht.",
+"r": "{町|まち}の{展覧会|てんらんかい}に{絵|え}を[{出品|しゅっぴん}]した。",
+"bedeutung": "Einreichen, Ausstellen"
+},
+"出場|しゅつじょう": {
+"s": "弟は全国大会への[出場]が決まった。",
+"de": "Mein Bruder hat sich für die Landesmeisterschaft qualifiziert.",
+"r": "{弟|おとうと}は{全国大会|ぜんこくたいかい}への[{出場|しゅつじょう}]が{決|き}まった。",
+"bedeutung": "Teilnahme (am Wettkampf)"
+},
 "出席|しゅっせき": {
 "s": "来週の会議に[出席]する予定だ。",
 "de": "Ich habe vor, nächste Woche an der Sitzung teilzunehmen.",
 "r": "{来週|らいしゅう}の{会議|かいぎ}に[{出席|しゅっせき}]する{予定|よてい}だ。"
+},
+"出来上がり|できあがり": {
+"s": "料理の[出来上がり]が楽しみだ。",
+"de": "Ich bin gespannt, wie das Essen wird.",
+"r": "{料理|りょうり}の[{出来上|できあ}がり]が{楽|たの}しみだ。",
+"bedeutung": "Fertigstellung, Ergebnis"
+},
+"出来上がる|できあがる": {
+"s": "注文した服が[出来上がった]。",
+"de": "Die bestellte Kleidung ist fertig.",
+"r": "{注文|ちゅうもん}した{服|ふく}が[{出来上|できあ}がった]。",
+"bedeutung": "fertig werden"
+},
+"出来事|できごと": {
+"s": "今日あった[出来事]を日記に書く。",
+"de": "Ich schreibe die Ereignisse des Tages ins Tagebuch.",
+"r": "{今日|きょう}あった[{出来事|できごと}]を{日記|にっき}に{書|か}く。",
+"bedeutung": "Ereignis, Vorfall"
 },
 "出演|しゅつえん": {
 "s": "好きな歌手がテレビ番組に[出演]した。",
 "de": "Meine Lieblingssängerin ist in einer Fernsehsendung aufgetreten.",
 "r": "{好|す}きな{歌手|かしゅ}がテレビ{番組|ばんぐみ}に[{出演|しゅつえん}]した。",
 "bedeutung": "Auftritt (in Film, Fernsehen, Bühne)"
+},
+"出生|しゅっしょう": {
+"s": "[出生]した病院で記録を調べた。",
+"de": "Ich habe im Geburtskrankenhaus nach Unterlagen gesucht.",
+"r": "[{出生|しゅっしょう}]した{病院|びょういん}で{記録|きろく}を{調|しら}べた。",
+"bedeutung": "Geburt"
+},
+"出生|しゅっせい": {
+"s": "[出生]地を書類に記入した。",
+"de": "Ich habe den Geburtsort ins Formular eingetragen.",
+"r": "[{出生|しゅっせい}]{地|ち}を{書類|しょるい}に{記入|きにゅう}した。",
+"bedeutung": "Geburt (andere Lesung)",
+"lesungen": {
+"出生": "しゅっせい"
+}
+},
+"出発|しゅっぱつ": {
+"s": "[出発]の時間が一時間おくれた。",
+"de": "Die Abfahrt hat sich um eine Stunde verzögert.",
+"r": "[{出発|しゅっぱつ}]の{時間|じかん}が{一時間|いちじかん}おくれた。"
+},
+"出社|しゅっしゃ": {
+"s": "明日は八時に[出社]します。",
+"de": "Morgen bin ich um acht in der Firma.",
+"r": "{明日|あした}は{八時|はちじ}に[{出社|しゅっしゃ}]します。",
+"bedeutung": "zur Arbeit kommen"
+},
+"出題|しゅつだい": {
+"s": "試験はこの本から[出題]される。",
+"de": "Die Prüfungsfragen kommen aus diesem Buch.",
+"r": "{試験|しけん}はこの{本|ほん}から[{出題|しゅつだい}]される。",
+"bedeutung": "Aufgabenstellung"
 }
 }

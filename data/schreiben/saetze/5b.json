@@ -1,13 +1,98 @@
 {
+"お子さん|おこさん": {
+"s": "[お子さん]はおいくつですか。",
+"de": "Wie alt ist Ihr Kind?",
+"r": "[お{子|こ}さん]はおいくつですか。"
+},
 "お宅|おたく": {
 "s": "明日の三時に[お宅]へ伺います。",
 "de": "Ich komme morgen um drei Uhr zu Ihnen nach Hause.",
 "r": "{明日|あした}の{三時|さんじ}に[お{宅|たく}]へ{伺|うかが}います。"
 },
+"ローマ字|ろーまじ": {
+"s": "名前を[ローマ字]で書いてください。",
+"de": "Schreiben Sie Ihren Namen bitte in lateinischer Schrift.",
+"r": "{名前|なまえ}を[ローマ{字|じ}]で{書|か}いてください。",
+"bedeutung": "lateinische Umschrift"
+},
+"子|こ": {
+"s": "公園で[子]どもたちが遊んでいる。",
+"de": "Im Park spielen Kinder.",
+"r": "{公園|こうえん}で[{子|こ}]どもたちが{遊|あそ}んでいる。"
+},
 "子供|こども": {
 "s": "公園で[子供]たちが元気に遊んでいる。",
 "de": "Im Park spielen Kinder munter.",
 "r": "{公園|こうえん}で[{子供|こども}]たちが{元気|げんき}に{遊|あそ}んでいる。"
+},
+"字|じ": {
+"s": "彼は[字]がとてもきれいだ。",
+"de": "Er hat eine sehr schöne Handschrift.",
+"r": "{彼|かれ}は[{字|じ}]がとてもきれいだ。"
+},
+"字体|じたい": {
+"s": "この本は読みやすい[字体]を使っている。",
+"de": "Dieses Buch nutzt eine gut lesbare Schrift.",
+"r": "この{本|ほん}は{読|よ}みやすい[{字体|じたい}]を{使|つか}っている。",
+"bedeutung": "Schriftart"
+},
+"学|がく": {
+"s": "祖母は[学]のある人として知られていた。",
+"de": "Meine Großmutter galt als gebildet.",
+"r": "{祖母|そぼ}は[{学|がく}]のある{人|ひと}として{知|し}られていた。",
+"bedeutung": "Gelehrsamkeit, Bildung"
+},
+"学ぶ|まなぶ": {
+"s": "失敗から[学ぶ]ことは多い。",
+"de": "Aus Fehlern lernt man viel.",
+"r": "{失敗|しっぱい}から[{学|まな}ぶ]ことは{多|おお}い。",
+"bedeutung": "lernen"
+},
+"学会|がっかい": {
+"s": "先生は[学会]で研究を発表した。",
+"de": "Die Professorin stellte auf der Tagung ihre Forschung vor.",
+"r": "{先生|せんせい}は[{学会|がっかい}]で{研究|けんきゅう}を{発表|はっぴょう}した。",
+"bedeutung": "wissenschaftliche Tagung"
+},
+"学力|がくりょく": {
+"s": "毎日の勉強で[学力]がついた。",
+"de": "Durch tägliches Lernen sind meine Leistungen gestiegen.",
+"r": "{毎日|まいにち}の{勉強|べんきょう}で[{学力|がくりょく}]がついた。",
+"bedeutung": "schulische Leistung"
+},
+"学問|がくもん": {
+"s": "[学問]に王道はないと言われる。",
+"de": "Man sagt, zum Wissen führe kein Königsweg.",
+"r": "[{学問|がくもん}]に{王道|おうどう}はないと{言|い}われる。",
+"bedeutung": "Wissenschaft, Studium"
+},
+"学年|がくねん": {
+"s": "新しい[学年]は四月に始まる。",
+"de": "Das neue Schuljahr beginnt im April.",
+"r": "{新|あたら}しい[{学年|がくねん}]は{四月|しがつ}に{始|はじ}まる。",
+"bedeutung": "Schuljahr, Jahrgang"
+},
+"学校|がっこう": {
+"s": "[学校]まで自転車で通っている。",
+"de": "Ich fahre mit dem Rad zur Schule.",
+"r": "[{学校|がっこう}]まで{自転車|じてんしゃ}で{通|かよ}っている。"
+},
+"学生|がくせい": {
+"s": "[学生]は半分の料金で入れる。",
+"de": "Studierende kommen zum halben Preis hinein.",
+"r": "[{学生|がくせい}]は{半分|はんぶん}の{料金|りょうきん}で{入|い}れる。"
+},
+"学習|がくしゅう": {
+"s": "パソコンで外国語を[学習]している。",
+"de": "Ich lerne am Computer eine Fremdsprache.",
+"r": "パソコンで{外国語|がいこくご}を[{学習|がくしゅう}]している。",
+"bedeutung": "Lernen"
+},
+"学者|がくしゃ": {
+"s": "有名な[学者]の講演を聞いた。",
+"de": "Ich habe den Vortrag eines berühmten Gelehrten gehört.",
+"r": "{有名|ゆうめい}な[{学者|がくしゃ}]の{講演|こうえん}を{聞|き}いた。",
+"bedeutung": "Gelehrte(r)"
 },
 "学術|がくじゅつ": {
 "s": "この本は[学術]的な内容で、少し難しい。",
@@ -25,6 +110,22 @@
 "r": "{友達|ともだち}との{約束|やくそく}はきちんと[{守|まも}りたい]。",
 "bedeutung": "schützen; (Regeln, Versprechen) einhalten"
 },
+"安い|やすい": {
+"s": "この店は野菜が[安くて]新しい。",
+"de": "In diesem Laden ist das Gemüse billig und frisch.",
+"r": "この{店|みせ}は{野菜|やさい}が[{安|やす}くて]{新|あたら}しい。"
+},
+"安っぽい|やすっぽい": {
+"s": "このおもちゃは色が[安っぽい]。",
+"de": "Die Farben dieses Spielzeugs wirken billig.",
+"r": "このおもちゃは{色|いろ}が[{安|やす}っぽい]。",
+"bedeutung": "billig wirkend"
+},
+"安心|あんしん": {
+"s": "母の声を聞いて[安心]した。",
+"de": "Als ich die Stimme meiner Mutter hörte, war ich beruhigt.",
+"r": "{母|はは}の{声|こえ}を{聞|き}いて[{安心|あんしん}]した。"
+},
 "定規|じょうぎ": {
 "s": "[定規]を使ってまっすぐな線を引いた。",
 "de": "Ich habe mit einem Lineal eine gerade Linie gezogen.",
@@ -36,10 +137,79 @@
 "r": "[{実例|じつれい}]を{見|み}れば、{使|つか}い{方|かた}がよくわかる。",
 "bedeutung": "konkretes Beispiel, Beispiel aus der Praxis"
 },
+"室|しつ": {
+"s": "この宿には客間が二[室]ある。",
+"de": "Die Herberge hat zwei Gästezimmer.",
+"r": "この{宿|やど}には{客間|きゃくま}が{二|に}[{室|しつ}]ある。",
+"bedeutung": "Zählwort für Zimmer",
+"lesungen": {
+"室": "しつ"
+}
+},
 "害|がい": {
 "s": "たばこは体に[害]がある。",
 "de": "Rauchen schadet dem Körper.",
 "r": "たばこは{体|からだ}に[{害|がい}]がある。"
+},
+"家|いえ": {
+"s": "週末は[家]でゆっくり過ごした。",
+"de": "Das Wochenende habe ich gemütlich zu Hause verbracht.",
+"r": "{週末|しゅうまつ}は[{家|いえ}]でゆっくり{過|す}ごした。"
+},
+"家|か": {
+"s": "弟は将来、画[家]になりたいそうだ。",
+"de": "Mein Bruder will angeblich Maler werden.",
+"r": "{弟|おとうと}は{将来|しょうらい}、{画|が}[{家|か}]になりたいそうだ。"
+},
+"家|け": {
+"s": "佐藤[家]の庭はいつもきれいだ。",
+"de": "Der Garten der Familie Sato ist immer schön.",
+"r": "{佐藤|さとう}[{家|け}]の{庭|にわ}はいつもきれいだ。",
+"bedeutung": "Familie …",
+"lesungen": {
+"家": "け"
+}
+},
+"家主|やぬし": {
+"s": "[家主]に水道の故障を知らせた。",
+"de": "Ich habe dem Hauseigentümer den Wasserschaden gemeldet.",
+"r": "[{家主|やぬし}]に{水道|すいどう}の{故障|こしょう}を{知|し}らせた。",
+"bedeutung": "Hauseigentümer"
+},
+"家事|かじ": {
+"s": "夫と[家事]を分けている。",
+"de": "Ich teile mir die Hausarbeit mit meinem Mann.",
+"r": "{夫|おっと}と[{家事|かじ}]を{分|わ}けている。",
+"bedeutung": "Hausarbeit"
+},
+"家出|いえで": {
+"s": "子どものころ[家出]をしたことがある。",
+"de": "Als Kind bin ich einmal von zu Hause weggelaufen.",
+"r": "{子|こ}どものころ[{家出|いえで}]をしたことがある。",
+"bedeutung": "Weglaufen von zu Hause"
+},
+"家屋|かおく": {
+"s": "台風で多くの[家屋]がこわれた。",
+"de": "Der Taifun beschädigte viele Häuser.",
+"r": "{台風|たいふう}で{多|おお}くの[{家屋|かおく}]がこわれた。",
+"bedeutung": "Wohngebäude"
+},
+"家族|かぞく": {
+"s": "夏には[家族]で旅行する。",
+"de": "Im Sommer verreisen wir als Familie.",
+"r": "{夏|なつ}には[{家族|かぞく}]で{旅行|りょこう}する。"
+},
+"家来|けらい": {
+"s": "王は[家来]を連れて出かけた。",
+"de": "Der König ging mit seinem Gefolge aus.",
+"r": "{王|おう}は[{家来|けらい}]を{連|つ}れて{出|で}かけた。",
+"bedeutung": "Gefolgsmann"
+},
+"家計|かけい": {
+"s": "値上げは[家計]に大きくひびく。",
+"de": "Preiserhöhungen treffen die Haushaltskasse hart.",
+"r": "{値上|ねあ}げは[{家計|かけい}]に{大|おお}きくひびく。",
+"bedeutung": "Haushaltsfinanzen"
 },
 "寸法|すんぽう": {
 "s": "棚を買う前に、部屋の[寸法]を測った。",

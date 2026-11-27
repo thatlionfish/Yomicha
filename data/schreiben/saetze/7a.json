@@ -4,5 +4,131 @@
 "de": "Wenn der Frühling kommt, säen wir Blumensamen im Garten.",
 "r": "{春|はる}になったら、{庭|にわ}に{花|はな}の[{種|たね}]をまこう。",
 "bedeutung": "Samen, Kern; Stoff (für etwas), Ursache"
+},
+"空|から": {
+"s": "[空]のびんは箱に入れてください。",
+"de": "Legen Sie leere Flaschen bitte in die Kiste.",
+"r": "[{空|から}]のびんは{箱|ばこ}に{入|い}れてください。",
+"bedeutung": "leer",
+"lesungen": {
+"空": "から"
+}
+},
+"空|くう": {
+"s": "[空]腹では集中できない。",
+"de": "Mit leerem Magen kann man sich nicht konzentrieren.",
+"r": "[{空|くう}]{腹|はら}では{集中|しゅうちゅう}できない。",
+"bedeutung": "leer",
+"lesungen": {
+"空": "くう"
+}
+},
+"空|そら": {
+"s": "青い[空]に白い雲がうかんでいる。",
+"de": "Am blauen Himmel schweben weiße Wolken.",
+"r": "{青|あお}い[{空|そら}]に{白|しろ}い{雲|くも}がうかんでいる。"
+},
+"空き|あき": {
+"s": "今週は予約の[空き]がありません。",
+"de": "Diese Woche ist kein Termin mehr frei.",
+"r": "{今週|こんしゅう}は{予約|よやく}の[{空|あ}き]がありません。",
+"bedeutung": "freier Platz, Lücke"
+},
+"空く|あく": {
+"s": "となりの席が[空いたら]すわろう。",
+"de": "Wenn der Nachbarplatz frei wird, setzen wir uns.",
+"r": "となりの{席|せき}が[{空|あ}いたら]すわろう。"
+},
+"空く|すく": {
+"s": "朝から何も食べていないのでおなかが[空いた]。",
+"de": "Seit morgens nichts gegessen – ich habe Hunger.",
+"r": "{朝|あさ}から{何|なに}も{食|た}べていないのでおなかが[{空|す}いた]。",
+"lesungen": {
+"空い": "すい"
+}
+},
+"空しい|むなしい": {
+"s": "努力がむだになって[空しい]。",
+"de": "Die Mühe war umsonst, das fühlt sich leer an.",
+"r": "{努力|どりょく}がむだになって[{空|むな}しい]。",
+"bedeutung": "vergeblich, leer"
+},
+"空っぽ|からっぽ": {
+"s": "気がつくと財布が[空っぽ]だった。",
+"de": "Plötzlich merkte ich, dass das Portemonnaie leer war.",
+"r": "{気|き}がつくと{財布|さいふ}が[{空|から}っぽ]だった。",
+"bedeutung": "ganz leer"
+},
+"空ろ|うつろ": {
+"s": "彼は[空ろ]な目で外を見ていた。",
+"de": "Er sah mit leerem Blick hinaus.",
+"r": "{彼|かれ}は[{空|うつ}ろ]な{目|め}で{外|そと}を{見|み}ていた。",
+"bedeutung": "leer, abwesend"
+},
+"空中|くうちゅう": {
+"s": "花火が[空中]で大きく開いた。",
+"de": "Das Feuerwerk entfaltete sich groß in der Luft.",
+"r": "{花火|はなび}が[{空中|くうちゅう}]で{大|おお}きく{開|ひら}いた。",
+"bedeutung": "in der Luft"
+},
+"空気|くうき": {
+"s": "山の[空気]はとてもおいしい。",
+"de": "Die Bergluft ist herrlich.",
+"r": "{山|やま}の[{空気|くうき}]はとてもおいしい。"
+},
+"空間|くうかん": {
+"s": "部屋に広い[空間]を作った。",
+"de": "Ich habe im Zimmer viel freien Raum geschaffen.",
+"r": "{部屋|へや}に{広|ひろ}い[{空間|くうかん}]を{作|つく}った。",
+"bedeutung": "Raum"
+},
+"立ち上がる|たちあがる": {
+"s": "名前を呼ばれて[立ち上がった]。",
+"de": "Als mein Name fiel, stand ich auf.",
+"r": "{名前|なまえ}を{呼|よ}ばれて[{立|た}ち{上|あ}がった]。",
+"bedeutung": "aufstehen"
+},
+"立ち去る|たちさる": {
+"s": "彼は何も言わずに[立ち去った]。",
+"de": "Er ging wortlos fort.",
+"r": "{彼|かれ}は{何|なに}も{言|い}わずに[{立|た}ち{去|さ}った]。",
+"bedeutung": "fortgehen"
+},
+"立ち止まる|たちどまる": {
+"s": "花屋の前で[立ち止まった]。",
+"de": "Vor dem Blumenladen blieb ich stehen.",
+"r": "{花屋|はなや}の{前|まえ}で[{立|た}ち{止|ど}まった]。",
+"bedeutung": "stehen bleiben"
+},
+"立つ|たつ": {
+"s": "長い間[立って]いたので足が痛い。",
+"de": "Vom langen Stehen tun mir die Beine weh.",
+"r": "{長|なが}い{間|あいだ}[{立|た}って]いたので{足|あし}が{痛|いた}い。"
+},
+"立てる|たてる": {
+"s": "ふでを使い終わったら箱に[立てて]おく。",
+"de": "Nach Gebrauch stelle ich den Pinsel in die Schachtel.",
+"r": "ふでを{使|つか}い{終|お}わったら{箱|ばこ}に[{立|た}てて]おく。"
+},
+"立体|りったい": {
+"s": "紙で[立体]の模型を作った。",
+"de": "Ich habe aus Papier ein räumliches Modell gebaut.",
+"r": "{紙|かみ}で[{立体|りったい}]の{模型|もけい}を{作|つく}った。",
+"bedeutung": "räumlicher Körper"
+},
+"立場|たちば": {
+"s": "相手の[立場]になって考える。",
+"de": "Ich versetze mich in die Lage des anderen.",
+"r": "{相手|あいて}の[{立場|たちば}]になって{考|かんが}える。",
+"bedeutung": "Standpunkt, Lage"
+},
+"立方|りっぽう": {
+"s": "一[立方]メートルの水は約一トンだ。",
+"de": "Ein Kubikmeter Wasser wiegt etwa eine Tonne.",
+"r": "{一|いち}[{立方|りっぽう}]メートルの{水|みず}は{約|やく}{一|いち}トンだ。",
+"bedeutung": "Kubik-",
+"lesungen": {
+"一": "いち"
+}
 }
 }

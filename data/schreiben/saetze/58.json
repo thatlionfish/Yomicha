@@ -1,8 +1,29 @@
 {
+"堂々|どうどう": {
+"s": "彼は人前で[堂々]と意見を述べた。",
+"de": "Er sagte selbstsicher vor allen seine Meinung.",
+"r": "{彼|かれ}は{人前|ひとまえ}で[{堂々|どうどう}]と{意見|いけん}を{述|の}べた。",
+"bedeutung": "würdevoll, selbstsicher"
+},
 "報告|ほうこく": {
 "s": "部長に会議の結果を[報告]した。",
 "de": "Ich habe dem Abteilungsleiter das Ergebnis der Besprechung berichtet.",
 "r": "{部長|ぶちょう}に{会議|かいぎ}の{結果|けっか}を[{報告|ほうこく}]した。"
+},
+"場|じょう": {
+"s": "冬は家族でスキー[場]へ行く。",
+"de": "Im Winter fahren wir ins Skigebiet.",
+"r": "{冬|ふゆ}は{家族|かぞく}でスキー[{場|じょう}]へ{行|い}く。",
+"bedeutung": "Platz, Gelände",
+"lesungen": {
+"場": "じょう"
+}
+},
+"場|ば": {
+"s": "その[場]で返事をするのは難しい。",
+"de": "An Ort und Stelle zu antworten ist schwer.",
+"r": "その[{場|ば}]で{返事|へんじ}をするのは{難|むずか}しい。",
+"bedeutung": "Ort, Stelle"
 },
 "増える|ふえる": {
 "s": "最近、外国人の観光客が[増えて]いる。",
@@ -46,5 +67,72 @@
 "de": "Mäßige Bewegung steigert den Appetit.",
 "r": "{適度|てきど}な{運動|うんどう}は{食欲|しょくよく}を[{増進|ぞうしん}]させる。",
 "bedeutung": "Förderung, Steigerung"
+},
+"売り上げ|うりあげ": {
+"s": "今月は店の[売り上げ]がのびた。",
+"de": "Diesen Monat ist der Umsatz gestiegen.",
+"r": "{今月|こんげつ}は{店|みせ}の[{売|う}り{上|あ}げ]がのびた。",
+"bedeutung": "Umsatz"
+},
+"売り出し|うりだし": {
+"s": "デパートで冬物の[売り出し]が始まった。",
+"de": "Im Kaufhaus hat der Winterverkauf begonnen.",
+"r": "デパートで{冬物|ふゆもの}の[{売|う}り{出|だ}し]が{始|はじ}まった。",
+"bedeutung": "Verkaufsaktion"
+},
+"売り出す|うりだす": {
+"s": "新しい型の車が[売り出された]。",
+"de": "Ein neues Automodell kam auf den Markt.",
+"r": "{新|あたら}しい{型|かた}の{車|くるま}が[{売|う}り{出|だ}された]。",
+"bedeutung": "auf den Markt bringen"
+},
+"売り切れ|うりきれ": {
+"s": "人気のパンはもう[売り切れ]だ。",
+"de": "Das beliebte Brot ist schon ausverkauft.",
+"r": "{人気|にんき}のパンはもう[{売|う}り{切|き}れ]だ。",
+"bedeutung": "ausverkauft"
+},
+"売り切れる|うりきれる": {
+"s": "切符はすぐに[売り切れる]そうだ。",
+"de": "Die Karten sollen schnell ausverkauft sein.",
+"r": "{切符|きっぷ}はすぐに[{売|う}り{切|き}れる]そうだ。",
+"bedeutung": "ausverkauft sein"
+},
+"売り場|うりば": {
+"s": "くつの[売り場]は三階です。",
+"de": "Die Schuhabteilung ist im zweiten Stock.",
+"r": "くつの[{売|う}り{場|ば}]は{三階|さんがい}です。",
+"lesungen": {
+"階": "がい"
+}
+},
+"売る|うる": {
+"s": "駅の前で果物を[売って]いる。",
+"de": "Vor dem Bahnhof wird Obst verkauft.",
+"r": "{駅|えき}の{前|まえ}で{果物|くだもの}を[{売|う}って]いる。"
+},
+"売れる|うれる": {
+"s": "この本は若者によく[売れて]いる。",
+"de": "Dieses Buch verkauft sich bei jungen Leuten gut.",
+"r": "この{本|ほん}は{若者|わかもの}によく[{売|う}れて]いる。",
+"bedeutung": "sich verkaufen"
+},
+"売れ行き|うれゆき": {
+"s": "新しい商品の[売れ行き]はいい。",
+"de": "Die neue Ware verkauft sich gut.",
+"r": "{新|あたら}しい{商品|しょうひん}の[{売|う}れ{行|ゆ}き]はいい。",
+"bedeutung": "Absatz, Verkauf"
+},
+"売店|ばいてん": {
+"s": "[売店]でお茶と新聞を買った。",
+"de": "Am Kiosk habe ich Tee und eine Zeitung gekauft.",
+"r": "[{売店|ばいてん}]でお{茶|ちゃ}と{新聞|しんぶん}を{買|か}った。",
+"bedeutung": "Verkaufsstand"
+},
+"売買|ばいばい": {
+"s": "土地の[売買]には書類が必要だ。",
+"de": "Für den Handel mit Grundstücken braucht man Papiere.",
+"r": "{土地|とち}の[{売買|ばいばい}]には{書類|しょるい}が{必要|ひつよう}だ。",
+"bedeutung": "Kauf und Verkauf"
 }
 }

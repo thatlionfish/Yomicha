@@ -1,4 +1,25 @@
 {
+"持ち上げる|もちあげる": {
+"s": "子どもを高く[持ち上げた]。",
+"de": "Ich habe das Kind hochgehoben.",
+"r": "{子|こ}どもを{高|たか}く[{持|も}ち{上|あ}げた]。",
+"bedeutung": "hochheben"
+},
+"持ち切り|もちきり": {
+"s": "町はそのうわさで[持ち切り]だ。",
+"de": "Die ganze Stadt redet nur über dieses Gerücht.",
+"r": "{町|まち}はそのうわさで[{持|も}ち{切|き}り]だ。",
+"bedeutung": "das Hauptgesprächsthema"
+},
+"持つ|もつ": {
+"s": "そのかばん、重そうですね。一つ[持ちましょう]か。",
+"de": "Die Tasche sieht schwer aus. Soll ich sie tragen?",
+"r": "そのかばん、{重|おも}そうですね。{一|ひと}つ[{持|も}ちましょう]か。",
+"lesungen": {
+"重そう": "おもそう",
+"重": "おも"
+}
+},
 "持参|じさん": {
 "s": "当日はお弁当を[持参]してください。",
 "de": "Bitte bringen Sie am Tag selbst ein Lunchpaket mit.",

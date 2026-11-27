@@ -1,0 +1,18 @@
+{
+"黒|くろ": {
+"s": "[黒]のペンで記入してください。",
+"de": "Bitte füllen Sie mit schwarzem Stift aus.",
+"r": "[{黒|くろ}]のペンで{記入|きにゅう}してください。"
+},
+"黒い|くろい": {
+"s": "[黒い]ねこが道を横切った。",
+"de": "Eine schwarze Katze lief über die Straße.",
+"r": "[{黒|くろ}い]ねこが{道|みち}を{横切|よこぎ}った。"
+},
+"黒字|くろじ": {
+"s": "今年は店の経営が[黒字]になった。",
+"de": "Dieses Jahr schreibt der Laden schwarze Zahlen.",
+"r": "{今年|ことし}は{店|みせ}の{経営|けいえい}が[{黒字|くろじ}]になった。",
+"bedeutung": "Gewinn, schwarze Zahlen"
+}
+}

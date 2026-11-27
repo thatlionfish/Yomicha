@@ -1,4 +1,49 @@
 {
+"考え|かんがえ": {
+"s": "私の[考え]を聞いてください。",
+"de": "Hören Sie sich bitte meine Meinung an.",
+"r": "{私|わたし}の[{考|かんが}え]を{聞|き}いてください。",
+"bedeutung": "Gedanke, Ansicht"
+},
+"考える|かんがえる": {
+"s": "将来のことをよく[考えて]みた。",
+"de": "Ich habe gründlich über die Zukunft nachgedacht.",
+"r": "{将来|しょうらい}のことをよく[{考|かんが}えて]みた。"
+},
+"考古学|こうこがく": {
+"s": "大学で[考古学]を学びたい。",
+"de": "Ich möchte Archäologie studieren.",
+"r": "{大学|だいがく}で[{考古学|こうこがく}]を{学|まな}びたい。",
+"bedeutung": "Archäologie"
+},
+"者|しゃ": {
+"s": "兄は大学の研究[者]だ。",
+"de": "Mein Bruder ist Forscher an der Universität.",
+"r": "{兄|あに}は{大学|だいがく}の{研究|けんきゅう}[{者|しゃ}]だ。",
+"bedeutung": "Person (die etwas tut)",
+"lesungen": {
+"者": "しゃ"
+}
+},
+"者|もの": {
+"s": "私はこの町の[者]ではありません。",
+"de": "Ich bin nicht von hier.",
+"r": "{私|わたし}はこの{町|まち}の[{者|もの}]ではありません。",
+"bedeutung": "Person",
+"lesungen": {
+"者": "もの"
+}
+},
+"聞く|きく": {
+"s": "駅までの道を近くの人に[聞いた]。",
+"de": "Ich habe jemanden nach dem Weg zum Bahnhof gefragt.",
+"r": "{駅|えき}までの{道|みち}を{近|ちか}くの{人|ひと}に[{聞|き}いた]。"
+},
+"聞こえる|きこえる": {
+"s": "となりの部屋から話し声が[聞こえる]。",
+"de": "Aus dem Nebenzimmer hört man Stimmen.",
+"r": "となりの{部屋|へや}から{話|はな}し{声|ごえ}が[{聞|き}こえる]。"
+},
 "職|しょく": {
 "s": "姉は今、新しい[職]を探している。",
 "de": "Meine ältere Schwester sucht gerade eine neue Stelle.",
@@ -30,6 +75,23 @@
 "s": "将来の[職業]について、親と話した。",
 "de": "Ich habe mit meinen Eltern über meinen zukünftigen Beruf gesprochen.",
 "r": "{将来|しょうらい}の[{職業|しょくぎょう}]について、{親|おや}と{話|はな}した。"
+},
+"肉|にく": {
+"s": "[肉]より魚をよく食べる。",
+"de": "Ich esse öfter Fisch als Fleisch.",
+"r": "[{肉|にく}]より{魚|さかな}をよく{食|た}べる。"
+},
+"肉体|にくたい": {
+"s": "[肉体]の疲れは寝れば取れる。",
+"de": "Körperliche Müdigkeit vergeht mit Schlaf.",
+"r": "[{肉体|にくたい}]の{疲|つか}れは{寝|ね}れば{取|と}れる。",
+"bedeutung": "Körper"
+},
+"肉親|にくしん": {
+"s": "[肉親]と別れてくらすのはつらい。",
+"de": "Getrennt von Blutsverwandten zu leben ist hart.",
+"r": "[{肉親|にくしん}]と{別|わか}れてくらすのはつらい。",
+"bedeutung": "Blutsverwandte"
 },
 "育つ|そだつ": {
 "s": "わたしは海の近くの町で[育った]。",

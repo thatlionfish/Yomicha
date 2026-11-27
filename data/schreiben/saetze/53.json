@@ -4,6 +4,27 @@
 "de": "Zu Neujahr bin ich mit der Familie zum Schrein gegangen.",
 "r": "{正月|しょうがつ}に{家族|かぞく}で{神社|じんじゃ}へ[お{参|まい}り]に{行|い}った。"
 },
+"北|きた": {
+"s": "台風は[北]へ進んでいる。",
+"de": "Der Taifun zieht nach Norden.",
+"r": "{台風|たいふう}は[{北|きた}]へ{進|すす}んでいる。"
+},
+"医学|いがく": {
+"s": "姉は大学で[医学]を学んでいる。",
+"de": "Meine Schwester studiert Medizin.",
+"r": "{姉|あね}は{大学|だいがく}で[{医学|いがく}]を{学|まな}んでいる。"
+},
+"医者|いしゃ": {
+"s": "[医者]にしばらく休むように言われた。",
+"de": "Der Arzt riet mir, eine Weile zu pausieren.",
+"r": "[{医者|いしゃ}]にしばらく{休|やす}むように{言|い}われた。"
+},
+"医院|いいん": {
+"s": "近くの[医院]でみてもらった。",
+"de": "Ich war bei einer Arztpraxis in der Nähe.",
+"r": "{近|ちか}くの[{医院|いいん}]でみてもらった。",
+"bedeutung": "Arztpraxis"
+},
 "十|じゅう": {
 "s": "[十時]に駅で会いましょう。",
 "de": "Treffen wir uns um zehn Uhr am Bahnhof.",
@@ -14,16 +35,74 @@
 "de": "Das Kind hat mit den Fingern bis zehn gezählt.",
 "r": "{子|こ}どもが{指|ゆび}で[{十|とお}]まで{数|かぞ}えた。"
 },
+"十分|じゅうぶん": {
+"s": "時間は[十分]あるから急がなくていい。",
+"de": "Wir haben genug Zeit, du musst nicht hetzen.",
+"r": "{時間|じかん}は[{十分|じゅうぶん}]あるから{急|いそ}がなくていい。"
+},
 "十日|とおか": {
 "s": "誕生日は五月[十日]です。",
 "de": "Mein Geburtstag ist am 10. Mai.",
 "r": "{誕生日|たんじょうび}は{五月|ごがつ}[{十日|とおか}]です。"
+},
+"千|せん": {
+"s": "この切手は一まい[千]円もする。",
+"de": "Diese Marke kostet ganze tausend Yen.",
+"r": "この{切手|きって}は{一|いち}まい[{千|せん}]{円|えん}もする。"
+},
+"午前|ごぜん": {
+"s": "銀行へは[午前]中に行きたい。",
+"de": "Zur Bank möchte ich noch am Vormittag.",
+"r": "{銀行|ぎんこう}へは[{午前|ごぜん}]{中|なか}に{行|い}きたい。"
+},
+"午後|ごご": {
+"s": "[午後]から雨になるそうだ。",
+"de": "Ab dem Nachmittag soll es regnen.",
+"r": "[{午後|ごご}]から{雨|あめ}になるそうだ。"
+},
+"半|はん": {
+"s": "映画は七時[半]に終わる。",
+"de": "Der Film endet um halb acht.",
+"r": "{映画|えいが}は{七時|しちじ}[{半|はん}]に{終|お}わる。"
+},
+"半ば|なかば": {
+"s": "三月の[半ば]に引っ越す予定だ。",
+"de": "Mitte März will ich umziehen.",
+"r": "{三月|さんがつ}の[{半|なか}ば]に{引|ひ}っ{越|こ}す{予定|よてい}だ。",
+"bedeutung": "Mitte, Hälfte"
+},
+"半分|はんぶん": {
+"s": "ケーキを[半分]に切って分けた。",
+"de": "Ich habe den Kuchen halbiert und geteilt.",
+"r": "ケーキを[{半分|はんぶん}]に{切|き}って{分|わ}けた。"
+},
+"南|みなみ": {
+"s": "この部屋は[南]向きで明るい。",
+"de": "Das Zimmer geht nach Süden und ist hell.",
+"r": "この{部屋|へや}は[{南|みなみ}]{向|む}きで{明|あか}るい。"
+},
+"南北|なんぼく": {
+"s": "この国は[南北]に長い。",
+"de": "Dieses Land erstreckt sich lang von Nord nach Süd.",
+"r": "この{国|くに}は[{南北|なんぼく}]に{長|なが}い。",
+"bedeutung": "Süden und Norden"
 },
 "原則|げんそく": {
 "s": "この部屋は[原則]として飲食禁止です。",
 "de": "In diesem Raum ist Essen und Trinken grundsätzlich verboten.",
 "r": "この{部屋|へや}は[{原則|げんそく}]として{飲食|いんしょく}{禁止|きんし}です。",
 "bedeutung": "Grundsatz, Prinzip"
+},
+"去る|さる": {
+"s": "台風が[去って]、空が晴れた。",
+"de": "Der Taifun zog ab und der Himmel klarte auf.",
+"r": "{台風|たいふう}が[{去|さ}って]、{空|そら}が{晴|は}れた。",
+"bedeutung": "weggehen, vorübergehen"
+},
+"去年|きょねん": {
+"s": "[去年]の夏は一度も海へ行かなかった。",
+"de": "Letzten Sommer war ich nicht ein Mal am Meer.",
+"r": "[{去年|きょねん}]の{夏|なつ}は{一度|いちど}も{海|うみ}へ{行|い}かなかった。"
 },
 "参る|まいる": {
 "s": "明日、私がそちらへ[参ります]。",
@@ -52,6 +131,18 @@
 "r": "[{参議院|さんぎいん}]の{選挙|せんきょ}が{行|おこな}われた。",
 "bedeutung": "Oberhaus (des japanischen Parlaments)"
 },
+"友|とも": {
+"s": "彼とは長年の[友]だ。",
+"de": "Mit ihm bin ich seit vielen Jahren befreundet.",
+"r": "{彼|かれ}とは{長年|ながねん}の[{友|とも}]だ。",
+"bedeutung": "Freund, Gefährte"
+},
+"友人|ゆうじん": {
+"s": "[友人]の結婚式に出席した。",
+"de": "Ich war auf der Hochzeit eines Freundes.",
+"r": "[{友人|ゆうじん}]の{結婚式|けっこんしき}に{出席|しゅっせき}した。",
+"bedeutung": "Freund, Freundin (förmlich)"
+},
 "収める|おさめる": {
 "s": "その映画は大きな成功を[収めた]。",
 "de": "Der Film war ein großer Erfolg.",
@@ -67,6 +158,31 @@
 "de": "Ich habe die Hotelreservierung storniert.",
 "r": "ホテルの{予約|よやく}を[{取|と}り{消|け}した]。"
 },
+"口|くち": {
+"s": "歯医者で大きく[口]を開けた。",
+"de": "Beim Zahnarzt habe ich den Mund weit aufgemacht.",
+"r": "{歯医者|はいしゃ}で{大|おお}きく[{口|くち}]を{開|あ}けた。"
+},
+"古|ふる": {
+"s": "大学の近くの[古]本屋によく行く。",
+"de": "Ich gehe oft in das Antiquariat bei der Uni.",
+"r": "{大学|だいがく}の{近|ちか}くの[{古|ふる}]{本屋|ほんや}によく{行|い}く。",
+"bedeutung": "alt, gebraucht",
+"lesungen": {
+"古": "ふる"
+}
+},
+"古い|ふるい": {
+"s": "京都には[古い]寺がたくさんある。",
+"de": "In Kyoto gibt es viele alte Tempel.",
+"r": "{京都|きょうと}には[{古|ふる}い]{寺|てら}がたくさんある。"
+},
+"古代|こだい": {
+"s": "[古代]の町の跡が見つかった。",
+"de": "Man fand die Reste einer antiken Stadt.",
+"r": "[{古代|こだい}]の{町|まち}の{跡|あと}が{見|み}つかった。",
+"bedeutung": "Altertum"
+},
 "句|く": {
 "s": "この[句]は有名な詩の一部だ。",
 "de": "Dieser Vers ist Teil eines berühmten Gedichts.",
@@ -78,5 +194,26 @@
 "de": "Im Aufsatz sollten wir die Satzzeichen richtig setzen.",
 "r": "{作文|さくぶん}では[{句読点|くとうてん}]を{正|ただ}しく{使|つか}おう。",
 "bedeutung": "Satzzeichen (Punkt und Komma)"
+},
+"台|だい": {
+"s": "家には車が二[台]ある。",
+"de": "Wir haben zu Hause zwei Autos.",
+"r": "{家|いえ}には{車|くるま}が{二|に}[{台|だい}]ある。"
+},
+"台本|だいほん": {
+"s": "役者が[台本]を覚えている。",
+"de": "Die Schauspieler lernen das Drehbuch.",
+"r": "{役者|やくしゃ}が[{台本|だいほん}]を{覚|おぼ}えている。",
+"bedeutung": "Drehbuch, Textbuch"
+},
+"台風|たいふう": {
+"s": "[台風]で電車が止まった。",
+"de": "Wegen des Taifuns standen die Züge.",
+"r": "[{台風|たいふう}]で{電車|でんしゃ}が{止|と}まった。"
+},
+"右|みぎ": {
+"s": "次の角を[右]に曲がってください。",
+"de": "Biegen Sie an der nächsten Ecke rechts ab.",
+"r": "{次|つぎ}の{角|かど}を[{右|みぎ}]に{曲|ま}がってください。"
 }
 }

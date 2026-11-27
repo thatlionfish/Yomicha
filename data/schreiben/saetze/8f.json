@@ -1,4 +1,26 @@
 {
+"近々|ちかぢか": {
+"s": "[近々]そちらへうかがいます。",
+"de": "Ich komme demnächst bei Ihnen vorbei.",
+"r": "[{近々|ちかぢか}]そちらへうかがいます。",
+"bedeutung": "demnächst"
+},
+"近い|ちかい": {
+"s": "私の家は学校から[近い]。",
+"de": "Mein Haus ist nah an der Schule.",
+"r": "{私|わたし}の{家|いえ}は{学校|がっこう}から[{近|ちか}い]。"
+},
+"近く|ちかく": {
+"s": "この[近く]に郵便局はありますか。",
+"de": "Gibt es hier in der Nähe ein Postamt?",
+"r": "この[{近|ちか}く]に{郵便局|ゆうびんきょく}はありますか。"
+},
+"近代|きんだい": {
+"s": "これは[近代]の建築を代表する建物だ。",
+"de": "Dies ist ein typisches Bauwerk der Moderne.",
+"r": "これは[{近代|きんだい}]の{建築|けんちく}を{代表|だいひょう}する{建物|たてもの}だ。",
+"bedeutung": "Neuzeit, Moderne"
+},
 "返済|へんさい": {
 "s": "毎月、ローンを[返済]している。",
 "de": "Ich zahle jeden Monat den Kredit zurück.",

@@ -1,4 +1,21 @@
 {
+"お世話になりました|おせわになりました": {
+"s": "長い間[お世話になりました]。",
+"de": "Vielen Dank für alles in der langen Zeit.",
+"r": "{長|なが}い{間|あいだ}[お{世話|せわ}になりました]。",
+"bedeutung": "Danke für Ihre Betreuung"
+},
+"お代わり|おかわり": {
+"s": "ご飯の[お代わり]はいかがですか。",
+"de": "Möchten Sie noch etwas Reis?",
+"r": "ご{飯|はん}の[お{代|か}わり]はいかがですか。",
+"bedeutung": "Nachschlag"
+},
+"ご主人|ごしゅじん": {
+"s": "[ご主人]はお元気ですか。",
+"de": "Geht es Ihrem Mann gut?",
+"r": "[ご{主人|しゅじん}]はお{元気|げんき}ですか。"
+},
 "一|いち": {
 "s": "クラスで[一番]背が高いのは田中さんだ。",
 "de": "Der Größte in der Klasse ist Tanaka.",
@@ -24,11 +41,70 @@
 "de": "Die Lehrerin hat jeden einzelnen Studenten angesprochen.",
 "r": "{先生|せんせい}は{学生|がくせい}[{一人一人|ひとりひとり}]に{声|こえ}をかけた。"
 },
+"一休み|ひとやすみ": {
+"s": "ここで[一休み]してお茶を飲もう。",
+"de": "Machen wir hier eine Pause und trinken Tee.",
+"r": "ここで[{一休|ひとやす}み]してお{茶|ちゃ}を{飲|の}もう。",
+"bedeutung": "kurze Pause"
+},
+"一体|いったい": {
+"s": "これは[一体]どういうことですか。",
+"de": "Was in aller Welt soll das bedeuten?",
+"r": "これは[{一体|いったい}]どういうことですか。",
+"bedeutung": "überhaupt, in aller Welt"
+},
+"一切|いっさい": {
+"s": "その件には[一切]関係がない。",
+"de": "Damit habe ich überhaupt nichts zu tun.",
+"r": "その{件|けん}には[{一切|いっさい}]{関係|かんけい}がない。",
+"bedeutung": "überhaupt, gänzlich"
+},
+"一別|いちべつ": {
+"s": "[一別]以来、お変わりありませんか。",
+"de": "Wie ist es Ihnen seit unserem Abschied ergangen?",
+"r": "[{一別|いちべつ}]{以来|いらい}、お{変|か}わりありませんか。",
+"bedeutung": "Abschied"
+},
+"一同|いちどう": {
+"s": "社員[一同]、お待ちしております。",
+"de": "Die gesamte Belegschaft erwartet Sie.",
+"r": "{社員|しゃいん}[{一同|いちどう}]、お{待|ま}ちしております。",
+"bedeutung": "alle zusammen"
+},
+"一家|いっか": {
+"s": "[一家]そろって旅行に出かけた。",
+"de": "Die ganze Familie ist verreist.",
+"r": "[{一家|いっか}]そろって{旅行|りょこう}に{出|で}かけた。",
+"bedeutung": "Familie, Haushalt"
+},
+"一度|いちど": {
+"s": "もう[一度]説明していただけますか。",
+"de": "Könnten Sie es noch einmal erklären?",
+"r": "もう[{一度|いちど}]{説明|せつめい}していただけますか。"
+},
+"一度に|いちどに": {
+"s": "[一度に]全部は覚えられない。",
+"de": "Alles auf einmal kann ich mir nicht merken.",
+"r": "[{一度|いちど}に]{全部|ぜんぶ}は{覚|おぼ}えられない。",
+"bedeutung": "auf einmal"
+},
+"一心|いっしん": {
+"s": "母の無事を[一心]にいのった。",
+"de": "Ich betete inständig für das Wohl meiner Mutter.",
+"r": "{母|はは}の{無事|ぶじ}を[{一心|いっしん}]にいのった。",
+"bedeutung": "von ganzem Herzen"
+},
 "一斉|いっせい": {
 "s": "ベルが鳴ると、生徒たちは[一斉]に立ち上がった。",
 "de": "Als die Glocke läutete, standen die Schüler alle gleichzeitig auf.",
 "r": "ベルが{鳴|な}ると、{生徒|せいと}たちは[{一斉|いっせい}]に{立|た}ち{上|あ}がった。",
 "bedeutung": "gleichzeitig, alle auf einmal"
+},
+"一方|いっぽう": {
+"s": "兄は静かだ。[一方]、弟はよく話す。",
+"de": "Der Ältere ist still, der Jüngere dagegen redet viel.",
+"r": "{兄|あに}は{静|しず}かだ。[{一方|いっぽう}]、{弟|おとうと}はよく{話|はな}す。",
+"bedeutung": "andererseits"
 },
 "一日|いちにち": {
 "s": "[一日]に三回、薬を飲んでください。",
@@ -55,11 +131,60 @@
 "de": "Seit vorgestern geht das Fieber nicht herunter.",
 "r": "[{一昨日|おととい}]から{熱|ねつ}が{下|さ}がらない。"
 },
+"一時|いちじ": {
+"s": "事故で電車が[一時]止まった。",
+"de": "Wegen eines Unfalls stand der Zug vorübergehend.",
+"r": "{事故|じこ}で{電車|でんしゃ}が[{一時|いちじ}]{止|と}まった。"
+},
+"一月|ひとつき": {
+"s": "[一月]に二回、料理を習っている。",
+"de": "Zweimal im Monat lerne ich kochen.",
+"r": "[{一月|ひとつき}]に{二回|にかい}、{料理|りょうり}を{習|なら}っている。"
+},
+"一気|いっき": {
+"s": "コップの水を[一気]に飲んだ。",
+"de": "Ich habe das Glas Wasser in einem Zug geleert.",
+"r": "コップの{水|みず}を[{一気|いっき}]に{飲|の}んだ。",
+"bedeutung": "in einem Zug"
+},
+"一生|いっしょう": {
+"s": "この日の景色は[一生]忘れない。",
+"de": "Diesen Anblick vergesse ich mein Leben lang nicht.",
+"r": "この{日|ひ}の{景色|けしき}は[{一生|いっしょう}]{忘|わす}れない。",
+"bedeutung": "das ganze Leben"
+},
+"一目|いちもく": {
+"s": "彼は料理では先輩にも[一目]置かれている。",
+"de": "Beim Kochen zollen ihm selbst Ältere Respekt.",
+"r": "{彼|かれ}は{料理|りょうり}では{先輩|せんぱい}にも[{一目|いちもく}]{置|お}かれている。",
+"bedeutung": "(一目置く = Respekt zollen)",
+"lesungen": {
+"一目": "いちもく"
+}
+},
 "一種|いっしゅ": {
 "s": "抹茶は緑茶の[一種]です。",
 "de": "Matcha ist eine Art grüner Tee.",
 "r": "{抹茶|まっちゃ}は{緑茶|りょくちゃ}の[{一種|いっしゅ}]です。",
 "bedeutung": "eine Art, eine Sorte"
+},
+"一見|いっけん": {
+"s": "それは[一見]やさしそうに見える。",
+"de": "Auf den ersten Blick sieht es leicht aus.",
+"r": "それは[{一見|いっけん}]やさしそうに{見|み}える。",
+"bedeutung": "auf den ersten Blick"
+},
+"一言|ひとこと": {
+"s": "最後に[一言]お礼を言わせてください。",
+"de": "Zum Schluss möchte ich ein Wort des Dankes sagen.",
+"r": "{最後|さいご}に[{一言|ひとこと}]お{礼|れい}を{言|い}わせてください。",
+"bedeutung": "ein Wort, kurze Bemerkung"
+},
+"一通り|ひととおり": {
+"s": "資料に[一通り]目を通した。",
+"de": "Ich habe die Unterlagen einmal durchgesehen.",
+"r": "{資料|しりょう}に[{一通|ひととお}り]{目|め}を{通|とお}した。",
+"bedeutung": "im Großen und Ganzen, einmal durch"
 },
 "丁度|ちょうど": {
 "s": "駅に着いたら、[丁度]電車が来た。",
@@ -73,11 +198,143 @@
 "r": "{私|わたし}の{家|いえ}は{三|さん}[{丁目|ちょうめ}]にあります。",
 "bedeutung": "Häuserblock (in Adressen, z. B. 3-chōme)"
 },
+"七|しち": {
+"s": "サイコロの一と[七]は同じ面にない。",
+"de": "Eins und sieben gibt es nicht auf derselben Würfelseite.",
+"r": "サイコロの{一|いち}と[{七|しち}]は{同|おな}じ{面|めん}にない。"
+},
+"七つ|ななつ": {
+"s": "空の箱が[七つ]ある。",
+"de": "Es gibt sieben leere Schachteln.",
+"r": "{空|そら}の{箱|ばこ}が[{七|なな}つ]ある。"
+},
+"七日|なのか": {
+"s": "[七日]の朝に出発します。",
+"de": "Ich fahre am Morgen des Siebten ab.",
+"r": "[{七日|なのか}]の{朝|あさ}に{出発|しゅっぱつ}します。"
+},
+"万|まん": {
+"s": "このくつは一[万]円でした。",
+"de": "Diese Schuhe kosteten zehntausend Yen.",
+"r": "このくつは{一|いち}[{万|まん}]{円|えん}でした。"
+},
+"万一|まんいち": {
+"s": "[万一]の時はここに電話してください。",
+"de": "Im Notfall rufen Sie bitte hier an.",
+"r": "[{万一|まんいち}]の{時|とき}はここに{電話|でんわ}してください。",
+"bedeutung": "im unwahrscheinlichen Fall"
+},
+"万人|ばんにん": {
+"s": "この味は[万人]に好まれる。",
+"de": "Diesen Geschmack mag jeder.",
+"r": "この{味|あじ}は[{万人|ばんにん}]に{好|この}まれる。",
+"bedeutung": "alle Menschen"
+},
+"三|さん": {
+"s": "かごにりんごが[三]こ入っている。",
+"de": "Im Korb liegen drei Äpfel.",
+"r": "かごにりんごが[{三|さん}]こ{入|はい}っている。"
+},
+"三つ|みっつ": {
+"s": "同じペンを[三つ]買った。",
+"de": "Ich habe drei gleiche Stifte gekauft.",
+"r": "{同|おな}じペンを[{三|みっ}つ]{買|か}った。"
+},
+"三日|みっか": {
+"s": "雨は[三日]も続いている。",
+"de": "Der Regen hält schon drei Tage an.",
+"r": "{雨|あめ}は[{三日|みっか}]も{続|つづ}いている。"
+},
+"三日月|みかづき": {
+"s": "西の空に[三日月]が出ている。",
+"de": "Am Westhimmel steht eine Mondsichel.",
+"r": "{西|にし}の{空|そら}に[{三日月|みかづき}]が{出|で}ている。"
+},
+"上|うえ": {
+"s": "ねこがたなの[上]で寝ている。",
+"de": "Die Katze schläft oben auf dem Regal.",
+"r": "ねこがたなの[{上|うえ}]で{寝|ね}ている。"
+},
+"上|うわ": {
+"s": "本を読むとき[上]目づかいになる癖がある。",
+"de": "Beim Lesen schaue ich gewohnheitsmäßig von unten hoch.",
+"r": "{本|ほん}を{読|よ}むとき[{上|うわ}]{目|め}づかいになる{癖|くせ}がある。",
+"bedeutung": "oben, Ober-"
+},
+"上|かみ": {
+"s": "京都では北へ行くことを[上]へ行くと言う。",
+"de": "In Kyoto sagt man für „nach Norden“ „nach oben“.",
+"r": "{京都|きょうと}では{北|きた}へ{行|い}くことを[{上|かみ}]へ{行|い}くと{言|い}う。",
+"bedeutung": "oberer Teil, flussaufwärts",
+"lesungen": {
+"言う": "いう"
+}
+},
+"上|じょう": {
+"s": "この小説は[上]と下の二冊に分かれている。",
+"de": "Dieser Roman ist in zwei Bände geteilt.",
+"r": "この{小説|しょうせつ}は[{上|じょう}]と{下|げ}の{二冊|にさつ}に{分|わ}かれている。",
+"bedeutung": "oberer Band",
+"lesungen": {
+"下": "げ"
+}
+},
+"上がり|あがり": {
+"s": "今日の仕事はこれで[上がり]です。",
+"de": "Damit ist die Arbeit für heute beendet.",
+"r": "{今日|きょう}の{仕事|しごと}はこれで[{上|あ}がり]です。",
+"bedeutung": "Anstieg"
+},
+"上がる|あがる": {
+"s": "かいだんを[上がる]と右に受付があります。",
+"de": "Oben an der Treppe ist rechts der Empfang.",
+"r": "かいだんを[{上|あ}がる]と{右|みぎ}に{受付|うけつけ}があります。"
+},
+"上げる|あげる": {
+"s": "質問がある人は手を[上げて]ください。",
+"de": "Wer eine Frage hat, hebe bitte die Hand.",
+"r": "{質問|しつもん}がある{人|ひと}は{手|て}を[{上|あ}げて]ください。"
+},
+"上り|のぼり": {
+"s": "[上り]の電車は朝こんでいる。",
+"de": "Die Züge stadteinwärts sind morgens voll.",
+"r": "[{上|のぼ}り]の{電車|でんしゃ}は{朝|あさ}こんでいる。",
+"bedeutung": "Fahrt aufwärts, stadteinwärts"
+},
+"上る|のぼる": {
+"s": "朝早く丘に[上って]景色を見た。",
+"de": "Früh am Morgen stieg ich auf den Hügel und sah mich um.",
+"r": "{朝|あさ}{早|はや}く{丘|おか}に[{上|のぼ}って]{景色|けしき}を{見|み}た。",
+"bedeutung": "hinaufsteigen"
+},
+"上下|じょうげ": {
+"s": "エレベーターが[上下]に動く。",
+"de": "Der Aufzug fährt auf und ab.",
+"r": "エレベーターが[{上下|じょうげ}]に{動|うご}く。",
+"bedeutung": "oben und unten, auf und ab"
+},
+"上京|じょうきょう": {
+"s": "高校を出てすぐ[上京]した。",
+"de": "Nach der Oberschule ging ich gleich nach Tokio.",
+"r": "{高校|こうこう}を{出|で}てすぐ[{上京|じょうきょう}]した。",
+"bedeutung": "Umzug oder Reise nach Tokio"
+},
 "上位|じょうい": {
 "s": "この店は人気ランキングで[上位]に入っている。",
 "de": "Dieses Restaurant steht in der Beliebtheitsrangliste weit oben.",
 "r": "この{店|みせ}は{人気|にんき}ランキングで[{上位|じょうい}]に{入|はい}っている。",
 "bedeutung": "höherer Rang, Spitzenplatz"
+},
+"上品|じょうひん": {
+"s": "祖母は[上品]な話し方をする。",
+"de": "Meine Großmutter spricht vornehm.",
+"r": "{祖母|そぼ}は[{上品|じょうひん}]な{話|はな}し{方|かた}をする。",
+"bedeutung": "vornehm"
+},
+"上手|じょうず": {
+"s": "妹は絵をかくのが[上手]だ。",
+"de": "Meine Schwester kann gut zeichnen.",
+"r": "{妹|いもうと}は{絵|え}をかくのが[{上手|じょうず}]だ。"
 },
 "上演|じょうえん": {
 "s": "この作品は来月まで[上演]される予定だ。",
@@ -85,15 +342,252 @@
 "r": "この{作品|さくひん}は{来月|らいげつ}まで[{上演|じょうえん}]される{予定|よてい}だ。",
 "bedeutung": "Aufführung (auf der Bühne)"
 },
+"上着|うわぎ": {
+"s": "寒いので[上着]を持って行こう。",
+"de": "Es ist kalt, ich nehme eine Jacke mit.",
+"r": "{寒|さむ}いので[{上着|うわぎ}]を{持|も}って{行|い}こう。"
+},
+"上空|じょうくう": {
+"s": "飛行機は町の[上空]を通った。",
+"de": "Das Flugzeug flog über die Stadt.",
+"r": "{飛行機|ひこうき}は{町|まち}の[{上空|じょうくう}]を{通|とお}った。",
+"bedeutung": "Himmel über"
+},
+"下|か": {
+"s": "雪の重みで屋根の[下]がきしんだ。",
+"de": "Unter der Schneelast knarrte es unter dem Dach.",
+"r": "{雪|ゆき}の{重|おも}みで{屋根|やね}の[{下|か}]がきしんだ。",
+"bedeutung": "unten",
+"lesungen": {
+"下": "した"
+}
+},
+"下|げ": {
+"s": "この本は上と[下]に分かれている。",
+"de": "Dieses Buch ist in einen oberen und unteren Band geteilt.",
+"r": "この{本|ほん}は{上|じょう}と[{下|げ}]に{分|わ}かれている。",
+"bedeutung": "unterer Band",
+"lesungen": {
+"下": "げ",
+"上": "じょう"
+}
+},
+"下|した": {
+"s": "つくえの[下]にかぎが落ちていた。",
+"de": "Der Schlüssel lag unter dem Tisch.",
+"r": "つくえの[{下|した}]にかぎが{落|お}ちていた。"
+},
+"下|しも": {
+"s": "村はこの川の[下]のほうにある。",
+"de": "Das Dorf liegt flussabwärts an diesem Fluss.",
+"r": "{村|むら}はこの{川|かわ}の[{下|しも}]のほうにある。",
+"bedeutung": "unten, flussabwärts"
+},
+"下がる|さがる": {
+"s": "夜になって気温が[下がった]。",
+"de": "Am Abend ist die Temperatur gefallen.",
+"r": "{夜|よる}になって{気温|きおん}が[{下|さ}がった]。"
+},
+"下げる|さげる": {
+"s": "音を少し[下げて]くれませんか。",
+"de": "Kannst du den Ton etwas leiser stellen?",
+"r": "{音|おと}を{少|すこ}し[{下|さ}げて]くれませんか。"
+},
+"下さい|ください": {
+"s": "すみません、お水を[下さい]。",
+"de": "Entschuldigung, ein Wasser bitte.",
+"r": "すみません、お{水|みず}を[{下|くだ}さい]。"
+},
+"下り|くだり": {
+"s": "[下り]の電車はすいている。",
+"de": "Der Zug stadtauswärts ist leer.",
+"r": "[{下|くだ}り]の{電車|でんしゃ}はすいている。",
+"bedeutung": "Fahrt abwärts, stadtauswärts"
+},
+"下りる|おりる": {
+"s": "次の駅で電車を[下ります]。",
+"de": "An der nächsten Station steige ich aus.",
+"r": "{次|つぎ}の{駅|えき}で{電車|でんしゃ}を[{下|お}ります]。"
+},
+"下る|くだる": {
+"s": "山道をゆっくり[下った]。",
+"de": "Ich bin den Bergpfad langsam hinabgegangen.",
+"r": "{山道|さんどう}をゆっくり[{下|くだ}った]。",
+"bedeutung": "hinuntergehen"
+},
+"下ろす|おろす": {
+"s": "重い荷物を車から[下ろした]。",
+"de": "Ich habe das schwere Gepäck aus dem Auto geladen.",
+"r": "{重|おも}い{荷物|にもつ}を{車|くるま}から[{下|お}ろした]。",
+"bedeutung": "herunterlassen, abladen"
+},
+"下品|げひん": {
+"s": "大声で笑うのは[下品]だと言われた。",
+"de": "Man sagte mir, lautes Lachen sei unfein.",
+"r": "{大声|おおごえ}で{笑|わら}うのは[{下品|げひん}]だと{言|い}われた。",
+"bedeutung": "unfein, vulgär"
+},
+"下地|したじ": {
+"s": "この仕事には学生時代の経験が[下地]にある。",
+"de": "Diese Arbeit baut auf Erfahrungen aus dem Studium auf.",
+"r": "この{仕事|しごと}には{学生時代|がくせいじだい}の{経験|けいけん}が[{下地|したじ}]にある。",
+"bedeutung": "Grundlage"
+},
+"下心|したごころ": {
+"s": "親切の裏に[下心]があるようだ。",
+"de": "Hinter der Freundlichkeit scheint eine Absicht zu stecken.",
+"r": "{親切|しんせつ}の{裏|うら}に[{下心|したごころ}]があるようだ。",
+"bedeutung": "Hintergedanke"
+},
+"下手|へた": {
+"s": "私は歌が[下手]だが、歌うのは好きだ。",
+"de": "Ich singe schlecht, aber gern.",
+"r": "{私|わたし}は{歌|うた}が[{下手|へた}]だが、{歌|うた}うのは{好|す}きだ。"
+},
+"下書き|したがき": {
+"s": "作文は先に[下書き]をする。",
+"de": "Beim Aufsatz mache ich erst einen Entwurf.",
+"r": "{作文|さくぶん}は{先|さき}に[{下書|したが}き]をする。",
+"bedeutung": "Entwurf"
+},
+"下水|げすい": {
+"s": "大雨で[下水]があふれた。",
+"de": "Nach dem Starkregen lief die Kanalisation über.",
+"r": "{大雨|おおあめ}で[{下水|げすい}]があふれた。",
+"bedeutung": "Abwasser, Kanalisation"
+},
+"下火|したび": {
+"s": "流行もそろそろ[下火]になった。",
+"de": "Die Mode flaut allmählich ab.",
+"r": "{流行|りゅうこう}もそろそろ[{下火|したび}]になった。",
+"bedeutung": "abflauend"
+},
+"下町|したまち": {
+"s": "[下町]には古い店が残っている。",
+"de": "Im alten Stadtviertel gibt es noch alte Läden.",
+"r": "[{下町|したまち}]には{古|ふる}い{店|みせ}が{残|のこ}っている。",
+"bedeutung": "Altstadtviertel"
+},
+"下着|したぎ": {
+"s": "旅行には[下着]を多めに持って行く。",
+"de": "Auf Reisen nehme ich reichlich Unterwäsche mit.",
+"r": "{旅行|りょこう}には[{下着|したぎ}]を{多|おお}めに{持|も}って{行|い}く。"
+},
+"下車|げしゃ": {
+"s": "途中の駅で[下車]した。",
+"de": "An einem Bahnhof unterwegs bin ich ausgestiegen.",
+"r": "{途中|とちゅう}の{駅|えき}で[{下車|げしゃ}]した。",
+"bedeutung": "Aussteigen"
+},
+"不|ふ": {
+"s": "「便利」の反対は「[不]便」だ。",
+"de": "Das Gegenteil von „praktisch“ ist „unpraktisch“.",
+"r": "「{便利|べんり}」の{反対|はんたい}は「[{不|ふ}]{便|べん}」だ。",
+"bedeutung": "un-, nicht- (Vorsilbe)",
+"lesungen": {
+"便": "べん"
+}
+},
+"不|ぶ": {
+"s": "彼は[不]器用だが、仕事は丁寧だ。",
+"de": "Er ist ungeschickt, arbeitet aber sorgfältig.",
+"r": "{彼|かれ}は[{不|ぶ}]{器用|きよう}だが、{仕事|しごと}は{丁寧|ていねい}だ。",
+"bedeutung": "un- (Vorsilbe, gelesen ぶ)"
+},
+"不安|ふあん": {
+"s": "一人の生活には[不安]もある。",
+"de": "Das Leben allein bringt auch Sorgen.",
+"r": "{一人|ひとり}の{生活|せいかつ}には[{不安|ふあん}]もある。",
+"bedeutung": "Unruhe, Angst"
+},
+"不意|ふい": {
+"s": "[不意]の雨に降られた。",
+"de": "Der Regen überraschte mich.",
+"r": "[{不意|ふい}]の{雨|あめ}に{降|ふ}られた。",
+"bedeutung": "unerwartet"
+},
+"不明|ふめい": {
+"s": "原因はまだ[不明]だ。",
+"de": "Die Ursache ist noch unklar.",
+"r": "{原因|げんいん}はまだ[{不明|ふめい}]だ。",
+"bedeutung": "unklar"
+},
+"不服|ふふく": {
+"s": "彼は判定に[不服]を言った。",
+"de": "Er beschwerte sich über das Urteil.",
+"r": "{彼|かれ}は{判定|はんてい}に[{不服|ふふく}]を{言|い}った。",
+"bedeutung": "Unzufriedenheit, Einspruch"
+},
+"不正|ふせい": {
+"s": "会社の[不正]が明らかになった。",
+"de": "Unregelmäßigkeiten der Firma kamen ans Licht.",
+"r": "{会社|かいしゃ}の[{不正|ふせい}]が{明|あき}らかになった。",
+"bedeutung": "Unrecht, Betrug"
+},
 "不規則|ふきそく": {
 "s": "[不規則]な生活は体によくない。",
 "de": "Ein unregelmäßiger Lebenswandel ist nicht gut für den Körper.",
 "r": "[{不規則|ふきそく}]な{生活|せいかつ}は{体|からだ}によくない。"
 },
+"不足|ふそく": {
+"s": "この地域は医者が[不足]している。",
+"de": "In dieser Gegend fehlt es an Ärzten.",
+"r": "この{地域|ちいき}は{医者|いしゃ}が[{不足|ふそく}]している。",
+"bedeutung": "Mangel"
+},
+"不通|ふつう": {
+"s": "大雪で電車が[不通]になった。",
+"de": "Wegen starken Schnees fuhren keine Züge.",
+"r": "{大雪|おおゆき}で{電車|でんしゃ}が[{不通|ふつう}]になった。",
+"bedeutung": "Unterbrechung des Verkehrs"
+},
+"不運|ふうん": {
+"s": "[不運]にも出発の日に熱が出た。",
+"de": "Unglücklicherweise bekam ich am Abreisetag Fieber.",
+"r": "[{不運|ふうん}]にも{出発|しゅっぱつ}の{日|ひ}に{熱|ねつ}が{出|で}た。",
+"bedeutung": "Pech"
+},
 "与える|あたえる": {
 "s": "長い雨は野菜に大きな影響を[与えた]。",
 "de": "Der lange Regen hatte großen Einfluss auf das Gemüse.",
 "r": "{長|なが}い{雨|あめ}は{野菜|やさい}に{大|おお}きな{影響|えいきょう}を[{与|あた}えた]。"
+},
+"世|よ": {
+"s": "その歌手は[世]に広く知られている。",
+"de": "Die Sängerin ist weithin bekannt.",
+"r": "その{歌手|かしゅ}は[{世|よ}]に{広|ひろ}く{知|し}られている。",
+"bedeutung": "Welt, Öffentlichkeit",
+"lesungen": {
+"世": "よ"
+}
+},
+"世の中|よのなか": {
+"s": "便利な[世の中]になったものだ。",
+"de": "Was für eine bequeme Zeit ist das geworden.",
+"r": "{便利|べんり}な[{世|よ}の{中|なか}]になったものだ。",
+"bedeutung": "die Welt, die Gesellschaft"
+},
+"世代|せだい": {
+"s": "この歌はどの[世代]にも人気だ。",
+"de": "Das Lied ist bei jeder Generation beliebt.",
+"r": "この{歌|うた}はどの[{世代|せだい}]にも{人気|にんき}だ。",
+"bedeutung": "Generation"
+},
+"世界|せかい": {
+"s": "いつか[世界]中を旅してみたい。",
+"de": "Irgendwann möchte ich durch die ganze Welt reisen.",
+"r": "いつか[{世界|せかい}]{中|なか}を{旅|たび}してみたい。"
+},
+"世話|せわ": {
+"s": "旅行の間、ねこの[世話]を頼まれた。",
+"de": "Ich wurde gebeten, während der Reise die Katze zu versorgen.",
+"r": "{旅行|りょこう}の{間|あいだ}、ねこの[{世話|せわ}]を{頼|たの}まれた。"
+},
+"世間|せけん": {
+"s": "彼は[世間]のことをよく知らない。",
+"de": "Er weiß wenig von der Welt.",
+"r": "{彼|かれ}は[{世間|せけん}]のことをよく{知|し}らない。",
+"bedeutung": "Gesellschaft, Leute"
 },
 "両|りょう": {
 "s": "[両手]に荷物を持って歩いた。",
@@ -144,16 +638,111 @@
 "de": "Dieses Rätsel lässt sich nicht so leicht lösen.",
 "r": "このパズルは[{中々|なかなか}]{解|と}けない。"
 },
+"中世|ちゅうせい": {
+"s": "これは[中世]の城の跡だ。",
+"de": "Dies sind die Reste einer mittelalterlichen Burg.",
+"r": "これは[{中世|ちゅうせい}]の{城|しろ}の{跡|あと}だ。",
+"bedeutung": "Mittelalter"
+},
+"中古|ちゅうこ": {
+"s": "[中古]の自転車を安く買った。",
+"de": "Ich habe billig ein gebrauchtes Rad gekauft.",
+"r": "[{中古|ちゅうこ}]の{自転車|じてんしゃ}を{安|やす}く{買|か}った。",
+"bedeutung": "gebraucht, aus zweiter Hand"
+},
+"中味|なかみ": {
+"s": "箱の[中味]を確かめてください。",
+"de": "Prüfen Sie bitte den Inhalt der Schachtel.",
+"r": "{箱|ばこ}の[{中味|なかみ}]を{確|たし}かめてください。",
+"bedeutung": "Inhalt"
+},
+"中学|ちゅうがく": {
+"s": "弟は来年[中学]に入る。",
+"de": "Mein Bruder kommt nächstes Jahr auf die Mittelschule.",
+"r": "{弟|おとうと}は{来年|らいねん}[{中学|ちゅうがく}]に{入|はい}る。",
+"bedeutung": "Mittelschule"
+},
+"中学校|ちゅうがっこう": {
+"s": "[中学校]の友だちと今も会っている。",
+"de": "Ich treffe noch heute Freunde aus der Mittelschule.",
+"r": "[{中学校|ちゅうがっこう}]の{友|とも}だちと{今|いま}も{会|あ}っている。"
+},
 "中年|ちゅうねん": {
 "s": "店には[中年]の男性が一人いた。",
 "de": "Im Laden war ein Mann mittleren Alters.",
 "r": "{店|みせ}には[{中年|ちゅうねん}]の{男性|だんせい}が{一人|ひとり}いた。"
+},
+"中心|ちゅうしん": {
+"s": "町の[中心]に大きな広場がある。",
+"de": "In der Mitte der Stadt ist ein großer Platz.",
+"r": "{町|まち}の[{中心|ちゅうしん}]に{大|おお}きな{広場|ひろば}がある。",
+"bedeutung": "Zentrum, Mitte"
+},
+"中止|ちゅうし": {
+"s": "雨で試合は[中止]になった。",
+"de": "Das Spiel wurde wegen Regens abgesagt.",
+"r": "{雨|あめ}で{試合|しあい}は[{中止|ちゅうし}]になった。",
+"bedeutung": "Absage, Abbruch"
+},
+"中立|ちゅうりつ": {
+"s": "審判は[中立]でなければならない。",
+"de": "Schiedsrichter müssen neutral sein.",
+"r": "{審判|しんぱん}は[{中立|ちゅうりつ}]でなければならない。",
+"bedeutung": "Neutralität"
+},
+"中間|ちゅうかん": {
+"s": "来週は[中間]試験がある。",
+"de": "Nächste Woche sind Zwischenprüfungen.",
+"r": "{来週|らいしゅう}は[{中間|ちゅうかん}]{試験|しけん}がある。",
+"bedeutung": "Mitte, Zwischen-"
+},
+"主|しゅ": {
+"s": "一家の[主]として責任を感じる。",
+"de": "Als Familienoberhaupt fühle ich Verantwortung.",
+"r": "{一家|いっか}の[{主|しゅ}]として{責任|せきにん}を{感|かん}じる。",
+"bedeutung": "Oberhaupt",
+"lesungen": {
+"主": "しゅ"
+}
+},
+"主|ぬし": {
+"s": "この家の[主]は旅行中だ。",
+"de": "Der Hausherr ist auf Reisen.",
+"r": "この{家|いえ}の[{主|ぬし}]は{旅行|りょこう}{中|ちゅう}だ。",
+"bedeutung": "Besitzer, Herr",
+"lesungen": {
+"主": "ぬし"
+}
+},
+"主に|おもに": {
+"s": "客は[主に]近所の人たちだ。",
+"de": "Die Gäste sind hauptsächlich Leute aus der Nachbarschaft.",
+"r": "{客|きゃく}は[{主|おも}に]{近所|きんじょ}の{人|ひと}たちだ。",
+"bedeutung": "hauptsächlich"
+},
+"主人|しゅじん": {
+"s": "[主人]は今、出かけております。",
+"de": "Mein Mann ist gerade außer Haus.",
+"r": "[{主人|しゅじん}]は{今|いま}、{出|で}かけております。",
+"bedeutung": "Ehemann"
+},
+"主人公|しゅじんこう": {
+"s": "物語の[主人公]は少年だ。",
+"de": "Die Hauptfigur der Geschichte ist ein Junge.",
+"r": "{物語|ものがたり}の[{主人公|しゅじんこう}]は{少年|しょうねん}だ。",
+"bedeutung": "Hauptfigur"
 },
 "主任|しゅにん": {
 "s": "山田さんはこの部署の[主任]だ。",
 "de": "Herr Yamada ist der Verantwortliche dieser Abteilung.",
 "r": "{山田|やまだ}さんはこの{部署|ぶしょ}の[{主任|しゅにん}]だ。",
 "bedeutung": "Leiter, Verantwortlicher"
+},
+"主体|しゅたい": {
+"s": "この活動は学生が[主体]だ。",
+"de": "Diese Aktivität wird von Studierenden getragen.",
+"r": "この{活動|かつどう}は{学生|がくせい}が[{主体|しゅたい}]だ。",
+"bedeutung": "Hauptträger"
 },
 "主役|しゅやく": {
 "s": "彼女は初めて映画の[主役]に選ばれた。",
@@ -165,6 +754,27 @@
 "de": "Mein großer Bruder wird im Schultheaterstück die Hauptrolle spielen.",
 "r": "{兄|あに}が{学校|がっこう}の{劇|げき}で[{主演|しゅえん}]することになった。",
 "bedeutung": "Hauptrolle"
+},
+"主語|しゅご": {
+"s": "日本語では[主語]がよく省かれる。",
+"de": "Im Japanischen wird das Subjekt oft weggelassen.",
+"r": "{日本語|にほんご}では[{主語|しゅご}]がよく{省|はぶ}かれる。",
+"bedeutung": "Subjekt"
+},
+"主題|しゅだい": {
+"s": "映画の[主題]は家族の愛だ。",
+"de": "Das Thema des Films ist die Liebe in der Familie.",
+"r": "{映画|えいが}の[{主題|しゅだい}]は{家族|かぞく}の{愛|あい}だ。",
+"bedeutung": "Hauptthema"
+},
+"主食|しゅしょく": {
+"s": "日本では米を[主食]にしている。",
+"de": "In Japan ist Reis das Hauptnahrungsmittel.",
+"r": "{日本|にほん}では{米|こめ}を[{主食|しゅしょく}]にしている。",
+"bedeutung": "Grundnahrungsmittel",
+"lesungen": {
+"米": "こめ"
+}
 },
 "乗せる|のせる": {
 "s": "父は私を車に[乗せて]駅まで送ってくれた。",
@@ -189,6 +799,32 @@
 "de": "Bitte kaufen Sie vor dem Einsteigen eine Fahrkarte.",
 "r": "[{乗車|じょうしゃ}]する{前|まえ}に、{切符|きっぷ}を{買|か}ってください。",
 "bedeutung": "Einsteigen (in Zug oder Bus), Mitfahren"
+},
+"九|きゅう": {
+"s": "野球は一チーム[九]人でする。",
+"de": "Beim Baseball spielen neun in einer Mannschaft.",
+"r": "{野球|やきゅう}は{一|いち}チーム[{九|きゅう}]{人|にん}でする。",
+"lesungen": {
+"人": "にん"
+}
+},
+"九|く": {
+"s": "次のバスは[九]時に出る。",
+"de": "Der nächste Bus fährt um neun.",
+"r": "{次|つぎ}のバスは[{九|く}]{時|じ}に{出|で}る。",
+"lesungen": {
+"時": "じ"
+}
+},
+"九つ|ここのつ": {
+"s": "もち帰り用に[九つ]注文した。",
+"de": "Ich habe neun Stück zum Mitnehmen bestellt.",
+"r": "もち{帰|かえ}り{用|よう}に[{九|ここの}つ]{注文|ちゅうもん}した。"
+},
+"九日|ここのか": {
+"s": "試合は来月の[九日]だ。",
+"de": "Das Spiel ist am Neunten nächsten Monats.",
+"r": "{試合|しあい}は{来月|らいげつ}の[{九日|ここのか}]だ。"
 },
 "了解|りょうかい": {
 "s": "メールの内容、[了解]しました。",
@@ -266,6 +902,23 @@
 "de": "Zwei Mannschaften kämpfen um den Sieg.",
 "r": "{二|ふた}つのチームが{優勝|ゆうしょう}を[{争|あらそ}って]いる。"
 },
+"事|こと": {
+"s": "言いたい[事]ははっきり言おう。",
+"de": "Was man sagen will, sollte man klar sagen.",
+"r": "{言|い}いたい[{事|こと}]ははっきり{言|い}おう。"
+},
+"事前|じぜん": {
+"s": "[事前]に予約をお願いします。",
+"de": "Bitte reservieren Sie vorab.",
+"r": "[{事前|じぜん}]に{予約|よやく}をお{願|ねが}いします。",
+"bedeutung": "im Voraus"
+},
+"事業|じぎょう": {
+"s": "会社は新しい[事業]を始めた。",
+"de": "Die Firma hat ein neues Geschäftsfeld begonnen.",
+"r": "{会社|かいしゃ}は{新|あたら}しい[{事業|じぎょう}]を{始|はじ}めた。",
+"bedeutung": "Unternehmung, Geschäft"
+},
 "二|に": {
 "s": "この薬は一日[二回]飲んでください。",
 "de": "Nehmen Sie dieses Medikament zweimal am Tag.",
@@ -290,6 +943,27 @@
 "s": "[二日]前から少し熱が続いている。",
 "de": "Seit zwei Tagen habe ich leichtes Fieber.",
 "r": "[{二日|ふつか}]{前|まえ}から{少|すこ}し{熱|ねつ}が{続|つづ}いている。"
+},
+"五|ご": {
+"s": "[五]番の窓口へどうぞ。",
+"de": "Bitte gehen Sie zu Schalter fünf.",
+"r": "[{五|ご}]{番|ばん}の{窓口|まどぐち}へどうぞ。"
+},
+"五つ|いつつ": {
+"s": "みかんを[五つ]もらった。",
+"de": "Ich habe fünf Mandarinen bekommen.",
+"r": "みかんを[{五|いつ}つ]もらった。"
+},
+"五十音|ごじゅうおん": {
+"s": "辞書は[五十音]の順に並んでいる。",
+"de": "Das Wörterbuch ist nach den fünfzig Lauten geordnet.",
+"r": "{辞書|じしょ}は[{五十音|ごじゅうおん}]の{順|じゅん}に{並|なら}んでいる。",
+"bedeutung": "die japanische Lauttafel"
+},
+"五日|いつか": {
+"s": "休みは[五日]しかない。",
+"de": "Ich habe nur fünf Tage frei.",
+"r": "{休|やす}みは[{五日|いつか}]しかない。"
 },
 "交差|こうさ": {
 "s": "この町では、二本の線路が[交差]している。",
@@ -320,6 +994,29 @@
 "de": "Vor dem Bahnhof sind viele Leute.",
 "r": "{駅|えき}の{前|まえ}に[{人|ひと}]がたくさんいる。"
 },
+"人事|じんじ": {
+"s": "四月に[人事]の発表がある。",
+"de": "Im April werden die Personalien bekannt gegeben.",
+"r": "{四月|しがつ}に[{人事|じんじ}]の{発表|はっぴょう}がある。",
+"bedeutung": "Personalangelegenheiten"
+},
+"人体|じんたい": {
+"s": "授業で[人体]の仕組みを習った。",
+"de": "Im Unterricht ging es um den Aufbau des Körpers.",
+"r": "{授業|じゅぎょう}で[{人体|じんたい}]の{仕組|しく}みを{習|なら}った。",
+"bedeutung": "menschlicher Körper"
+},
+"人口|じんこう": {
+"s": "この市の[人口]は年々へっている。",
+"de": "Die Einwohnerzahl dieser Stadt sinkt von Jahr zu Jahr.",
+"r": "この{市|し}の[{人口|じんこう}]は{年々|ねんねん}へっている。"
+},
+"人工|じんこう": {
+"s": "公園に[人工]の池がある。",
+"de": "Im Park ist ein künstlicher Teich.",
+"r": "{公園|こうえん}に[{人工|じんこう}]の{池|いけ}がある。",
+"bedeutung": "künstlich"
+},
 "人差指|ひとさしゆび": {
 "s": "[人差指]でボタンを軽く押してください。",
 "de": "Drücken Sie bitte mit dem Zeigefinger leicht auf den Knopf.",
@@ -332,11 +1029,291 @@
 "r": "{子|こ}どもの[{人格|じんかく}]を{大切|たいせつ}にする{教育|きょういく}が{必要|ひつよう}だ。",
 "bedeutung": "Persönlichkeit, Charakter"
 },
+"人気|にんき": {
+"s": "この店は若い人に[人気]がある。",
+"de": "Dieser Laden ist bei jungen Leuten beliebt.",
+"r": "この{店|みせ}は{若|わか}い{人|ひと}に[{人気|にんき}]がある。",
+"bedeutung": "Beliebtheit"
+},
+"人気|ひとけ": {
+"s": "夜の公園は[人気]がなかった。",
+"de": "Nachts war im Park keine Menschenseele.",
+"r": "{夜|よる}の{公園|こうえん}は[{人気|ひとけ}]がなかった。",
+"bedeutung": "Anzeichen von Menschen",
+"lesungen": {
+"人気": "ひとけ"
+}
+},
+"人物|じんぶつ": {
+"s": "この小説には面白い[人物]が出てくる。",
+"de": "In diesem Roman treten interessante Figuren auf.",
+"r": "この{小説|しょうせつ}には{面白|おもしろ}い[{人物|じんぶつ}]が{出|で}てくる。",
+"bedeutung": "Person, Figur"
+},
+"人生|じんせい": {
+"s": "[人生]には色々な出会いがある。",
+"de": "Im Leben gibt es allerlei Begegnungen.",
+"r": "[{人生|じんせい}]には{色々|いろいろ}な{出会|であ}いがある。",
+"bedeutung": "(menschliches) Leben"
+},
+"人目|ひとめ": {
+"s": "[人目]を気にせず自分らしく生きたい。",
+"de": "Ich will ich selbst sein, ohne auf Blicke zu achten.",
+"r": "[{人目|ひとめ}]を{気|き}にせず{自分|じぶん}らしく{生|い}きたい。",
+"bedeutung": "Blicke der Leute"
+},
 "人種|じんしゅ": {
 "s": "[人種]の違いを超えて、皆が一緒に歌った。",
 "de": "Über alle Unterschiede der Herkunft hinweg sangen alle gemeinsam.",
 "r": "[{人種|じんしゅ}]の{違|ちが}いを{超|こ}えて、{皆|みな}が{一緒|いっしょ}に{歌|うた}った。",
 "bedeutung": "Menschengruppe nach äußerer Herkunft („Rasse“)"
+},
+"人質|ひとじち": {
+"s": "犯人は客を[人質]にした。",
+"de": "Der Täter nahm einen Kunden als Geisel.",
+"r": "{犯人|はんにん}は{客|きゃく}を[{人質|ひとじち}]にした。",
+"bedeutung": "Geisel"
+},
+"人通り|ひとどおり": {
+"s": "夜はこの道の[人通り]が少ない。",
+"de": "Nachts ist auf dieser Straße wenig los.",
+"r": "{夜|よる}はこの{道|みち}の[{人通|ひとどお}り]が{少|すく}ない。",
+"bedeutung": "Passantenverkehr"
+},
+"人間|にんげん": {
+"s": "[人間]はだれでも間違える。",
+"de": "Jeder Mensch macht Fehler.",
+"r": "[{人間|にんげん}]はだれでも{間違|まちが}える。",
+"bedeutung": "Mensch"
+},
+"今|いま": {
+"s": "[今]、電車の中にいます。",
+"de": "Ich bin gerade im Zug.",
+"r": "[{今|いま}]、{電車|でんしゃ}の{中|なか}にいます。"
+},
+"今|こん": {
+"s": "[今]学期は授業が多い。",
+"de": "In diesem Halbjahr habe ich viel Unterricht.",
+"r": "[{今|こん}]{学期|がっき}は{授業|じゅぎょう}が{多|おお}い。",
+"bedeutung": "dieser, laufend",
+"lesungen": {
+"今": "こん"
+}
+},
+"今に|いまに": {
+"s": "努力すれば[今に]分かるようになる。",
+"de": "Wenn du dich bemühst, wirst du es bald verstehen.",
+"r": "{努力|どりょく}すれば[{今|いま}に]{分|わ}かるようになる。",
+"bedeutung": "bald, demnächst"
+},
+"今にも|いまにも": {
+"s": "空は[今にも]雨がふりそうだ。",
+"de": "Es sieht aus, als regne es jeden Moment.",
+"r": "{空|そら}は[{今|いま}にも]{雨|あめ}がふりそうだ。",
+"bedeutung": "jeden Moment"
+},
+"今夜|こんや": {
+"s": "[今夜]は星がよく見えそうだ。",
+"de": "Heute Nacht sieht man wohl gut die Sterne.",
+"r": "[{今夜|こんや}]は{星|ほし}がよく{見|み}えそうだ。"
+},
+"今年|ことし": {
+"s": "[今年]の夏はとても暑かった。",
+"de": "Der Sommer dieses Jahres war sehr heiß.",
+"r": "[{今年|ことし}]の{夏|なつ}はとても{暑|あつ}かった。"
+},
+"今度|こんど": {
+"s": "[今度]の日曜日にまた会いましょう。",
+"de": "Treffen wir uns nächsten Sonntag wieder.",
+"r": "[{今度|こんど}]の{日曜日|にちようび}にまた{会|あ}いましょう。"
+},
+"今後|こんご": {
+"s": "[今後]ともよろしくお願いします。",
+"de": "Auch weiterhin auf gute Zusammenarbeit.",
+"r": "[{今後|こんご}]ともよろしくお{願|ねが}いします。",
+"bedeutung": "von nun an"
+},
+"今日|きょう": {
+"s": "[今日]は朝からいい天気だ。",
+"de": "Heute ist seit dem Morgen schönes Wetter.",
+"r": "[{今日|きょう}]は{朝|あさ}からいい{天気|てんき}だ。"
+},
+"今日|こんにち": {
+"s": "[今日]の社会では情報があふれている。",
+"de": "In der heutigen Gesellschaft quellen Informationen über.",
+"r": "[{今日|こんにち}]の{社会|しゃかい}では{情報|じょうほう}があふれている。",
+"bedeutung": "heutzutage, Gegenwart",
+"lesungen": {
+"今日": "こんにち"
+}
+},
+"今月|こんげつ": {
+"s": "[今月]は出張が二回ある。",
+"de": "Diesen Monat habe ich zwei Dienstreisen.",
+"r": "[{今月|こんげつ}]は{出張|しゅっちょう}が{二回|にかい}ある。"
+},
+"今朝|けさ": {
+"s": "[今朝]は寒くて起きられなかった。",
+"de": "Heute früh war es so kalt, dass ich nicht aus dem Bett kam.",
+"r": "[{今朝|けさ}]は{寒|さむ}くて{起|お}きられなかった。"
+},
+"今週|こんしゅう": {
+"s": "[今週]は毎日残業だった。",
+"de": "Diese Woche habe ich jeden Tag Überstunden gemacht.",
+"r": "[{今週|こんしゅう}]は{毎日|まいにち}{残業|ざんぎょう}だった。"
+},
+"仕える|つかえる": {
+"s": "昔、彼の家は王に[仕えた]。",
+"de": "Früher diente seine Familie dem König.",
+"r": "{昔|むかし}、{彼|かれ}の{家|いえ}は{王|おう}に[{仕|つか}えた]。",
+"bedeutung": "dienen"
+},
+"仕上|しあげ": {
+"s": "最後の[仕上]に色をぬった。",
+"de": "Als letzten Schliff habe ich Farbe aufgetragen.",
+"r": "{最後|さいご}の[{仕上|しあげ}]に{色|いろ}をぬった。",
+"bedeutung": "letzter Schliff"
+},
+"仕上がり|しあがり": {
+"s": "ケーキの[仕上がり]はきれいだった。",
+"de": "Der Kuchen ist schön geworden.",
+"r": "ケーキの[{仕上|しあ}がり]はきれいだった。",
+"bedeutung": "Ergebnis, Ausführung"
+},
+"仕上がる|しあがる": {
+"s": "注文した服は来週[仕上がる]。",
+"de": "Die bestellte Kleidung wird nächste Woche fertig.",
+"r": "{注文|ちゅうもん}した{服|ふく}は{来週|らいしゅう}[{仕上|しあ}がる]。",
+"bedeutung": "fertig werden"
+},
+"仕上げる|しあげる": {
+"s": "今週中に作品を[仕上げる]。",
+"de": "Ich stelle das Werk diese Woche fertig.",
+"r": "{今週|こんしゅう}{中|ちゅう}に{作品|さくひん}を[{仕上|しあ}げる]。",
+"bedeutung": "fertigstellen"
+},
+"仕事|しごと": {
+"s": "今日は[仕事]がいそがしかった。",
+"de": "Heute war auf der Arbeit viel zu tun.",
+"r": "{今日|きょう}は[{仕事|しごと}]がいそがしかった。"
+},
+"仕入れる|しいれる": {
+"s": "店は毎朝、市場で魚を[仕入れる]。",
+"de": "Der Laden kauft jeden Morgen Fisch auf dem Markt ein.",
+"r": "{店|みせ}は{毎朝|まいあさ}、{市場|いちば}で{魚|さかな}を[{仕入|しい}れる]。",
+"bedeutung": "Ware einkaufen",
+"lesungen": {
+"市場": "いちば"
+}
+},
+"仕切る|しきる": {
+"s": "広い部屋をカーテンで[仕切る]。",
+"de": "Ich teile den großen Raum mit einem Vorhang.",
+"r": "{広|ひろ}い{部屋|へや}をカーテンで[{仕切|しき}る]。",
+"bedeutung": "abteilen"
+},
+"仕方|しかた": {
+"s": "母にアイロンの[仕方]を習った。",
+"de": "Meine Mutter hat mir das Bügeln beigebracht.",
+"r": "{母|はは}にアイロンの[{仕方|しかた}]を{習|なら}った。"
+},
+"仕方がない|しかたがない": {
+"s": "雨だから中止も[仕方がない]。",
+"de": "Bei Regen ist die Absage eben nicht zu ändern.",
+"r": "{雨|あめ}だから{中止|ちゅうし}も[{仕方|しかた}がない]。",
+"bedeutung": "da kann man nichts machen"
+},
+"仕立てる|したてる": {
+"s": "母は私の服を[仕立てて]くれた。",
+"de": "Meine Mutter hat mir Kleidung genäht.",
+"r": "{母|はは}は{私|わたし}の{服|ふく}を[{仕立|した}てて]くれた。",
+"bedeutung": "schneidern, herrichten"
+},
+"代|だい": {
+"s": "二十[代]のうちに海外で暮らしたい。",
+"de": "Ich möchte noch in meinen Zwanzigern im Ausland leben.",
+"r": "{二十|にじゅう}[{代|だい}]のうちに{海外|かいがい}で{暮|く}らしたい。"
+},
+"代える|かえる": {
+"s": "砂糖のかわりにはちみつで[代える]。",
+"de": "Statt Zucker nehme ich Honig.",
+"r": "{砂糖|さとう}のかわりにはちみつで[{代|か}える]。",
+"bedeutung": "ersetzen"
+},
+"代る|かわる": {
+"s": "社長に[代って]ごあいさつします。",
+"de": "Ich grüße Sie anstelle des Firmenchefs.",
+"r": "{社長|しゃちょう}に[{代|かわ}って]ごあいさつします。",
+"bedeutung": "vertreten, an die Stelle treten",
+"lesungen": {
+"代っ": "かわっ"
+}
+},
+"代る代る|かわるがわる": {
+"s": "兄弟が[代る代る]祖母を見まった。",
+"de": "Die Brüder besuchten die Großmutter abwechselnd.",
+"r": "{兄弟|きょうだい}が[{代|かわ}る{代|がわ}る]{祖母|そぼ}を{見|み}まった。",
+"bedeutung": "abwechselnd"
+},
+"代わり|かわり": {
+"s": "父の[代わり]に私が出席した。",
+"de": "Ich habe anstelle meines Vaters teilgenommen.",
+"r": "{父|ちち}の[{代|か}わり]に{私|わたし}が{出席|しゅっせき}した。"
+},
+"代理|だいり": {
+"s": "部長の[代理]で会議に出た。",
+"de": "Ich nahm als Vertretung des Abteilungsleiters teil.",
+"r": "{部長|ぶちょう}の[{代理|だいり}]で{会議|かいぎ}に{出|で}た。",
+"bedeutung": "Vertretung"
+},
+"代用|だいよう": {
+"s": "はしがないのでフォークで[代用]した。",
+"de": "Ohne Stäbchen nahm ich ersatzweise eine Gabel.",
+"r": "はしがないのでフォークで[{代用|だいよう}]した。",
+"bedeutung": "Ersatz"
+},
+"代金|だいきん": {
+"s": "[代金]は後でお支払いください。",
+"de": "Bitte zahlen Sie den Betrag später.",
+"r": "[{代金|だいきん}]は{後|あと}でお{支払|しはら}いください。",
+"bedeutung": "Preis, Entgelt"
+},
+"以上|いじょう": {
+"s": "ここまで一時間[以上]かかった。",
+"de": "Bis hierher habe ich über eine Stunde gebraucht.",
+"r": "ここまで{一時間|いちじかん}[{以上|いじょう}]かかった。"
+},
+"以下|いか": {
+"s": "十才[以下]の子どもは無料です。",
+"de": "Kinder bis zehn Jahre sind frei.",
+"r": "{十才|じゅっさい}[{以下|いか}]の{子|こ}どもは{無料|むりょう}です。",
+"lesungen": {
+"十": "じゅっ",
+"十才": "じゅっさい"
+}
+},
+"以前|いぜん": {
+"s": "[以前]ここは畑だった。",
+"de": "Früher war hier ein Acker.",
+"r": "[{以前|いぜん}]ここは{畑|はたけ}だった。",
+"bedeutung": "früher"
+},
+"以外|いがい": {
+"s": "私[以外]はみんな来ていた。",
+"de": "Außer mir waren schon alle da.",
+"r": "{私|わたし}[{以外|いがい}]はみんな{来|き}ていた。"
+},
+"以後|いご": {
+"s": "九時[以後]は電話に出られません。",
+"de": "Nach neun Uhr bin ich nicht erreichbar.",
+"r": "{九時|くじ}[{以後|いご}]は{電話|でんわ}に{出|で}られません。",
+"bedeutung": "nach, von … an"
+},
+"以来|いらい": {
+"s": "卒業[以来]、彼には会っていない。",
+"de": "Seit dem Abschluss habe ich ihn nicht gesehen.",
+"r": "{卒業|そつぎょう}[{以来|いらい}]、{彼|かれ}には{会|あ}っていない。",
+"bedeutung": "seit"
 },
 "任す|まかす": {
 "s": "細かいことは君に[任す]よ。",

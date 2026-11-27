@@ -1,8 +1,50 @@
 {
+"高|こう": {
+"s": "この店は[高]品質の紙を売っている。",
+"de": "Dieser Laden verkauft Papier von hoher Qualität.",
+"r": "この{店|みせ}は[{高|こう}]{品質|ひんしつ}の{紙|かみ}を{売|う}っている。",
+"bedeutung": "hoch-",
+"lesungen": {
+"高": "こう"
+}
+},
+"高い|たかい": {
+"s": "この辺は家賃が[高い]。",
+"de": "In dieser Gegend sind die Mieten hoch.",
+"r": "この{辺|へん}は{家賃|やちん}が[{高|たか}い]。"
+},
+"高まる|たかまる": {
+"s": "新製品への期待が[高まって]いる。",
+"de": "Die Erwartung an das neue Produkt wächst.",
+"r": "{新製品|しんせいひん}への{期待|きたい}が[{高|たか}まって]いる。",
+"bedeutung": "steigen, wachsen"
+},
+"高める|たかめる": {
+"s": "練習を重ねて技術を[高める]。",
+"de": "Durch Übung steigert man das Können.",
+"r": "{練習|れんしゅう}を{重|かさ}ねて{技術|ぎじゅつ}を[{高|たか}める]。",
+"bedeutung": "steigern, erhöhen"
+},
 "高尚|こうしょう": {
 "s": "祖父は[高尚]な趣味を持っている。",
 "de": "Mein Großvater hat ein anspruchsvolles Hobby.",
 "r": "{祖父|そふ}は[{高尚|こうしょう}]な{趣味|しゅみ}を{持|も}っている。",
 "bedeutung": "vornehm, anspruchsvoll"
+},
+"高度|こうど": {
+"s": "飛行機は[高度]を上げていった。",
+"de": "Das Flugzeug gewann an Höhe.",
+"r": "{飛行機|ひこうき}は[{高度|こうど}]を{上|あ}げていった。",
+"bedeutung": "Höhe"
+},
+"高校|こうこう": {
+"s": "[高校]を出てすぐに働き始めた。",
+"de": "Nach der Oberschule habe ich gleich angefangen zu arbeiten.",
+"r": "[{高校|こうこう}]を{出|で}てすぐに{働|はたら}き{始|はじ}めた。"
+},
+"高校生|こうこうせい": {
+"s": "バスは[高校生]でいっぱいだった。",
+"de": "Der Bus war voller Oberschüler.",
+"r": "バスは[{高校生|こうこうせい}]でいっぱいだった。"
 }
 }

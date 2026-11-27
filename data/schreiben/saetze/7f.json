@@ -8,5 +8,16 @@
 "s": "週末に友だちと[美術館]へ行った。",
 "de": "Am Wochenende war ich mit einer Freundin im Kunstmuseum.",
 "r": "{週末|しゅうまつ}に{友|とも}だちと[{美術館|びじゅつかん}]へ{行|い}った。"
+},
+"習う|ならう": {
+"s": "週に一回、ピアノを[習って]いる。",
+"de": "Einmal pro Woche nehme ich Klavierunterricht.",
+"r": "{週|しゅう}に{一回|いっかい}、ピアノを[{習|なら}って]いる。"
+},
+"習字|しゅうじ": {
+"s": "子どものころ[習字]を習っていた。",
+"de": "Als Kind habe ich Schönschreiben gelernt.",
+"r": "{子|こ}どものころ[{習字|しゅうじ}]を{習|なら}っていた。",
+"bedeutung": "Schönschreiben"
 }
 }

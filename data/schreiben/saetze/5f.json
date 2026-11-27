@@ -1,4 +1,16 @@
 {
+"お待たせしました|おまたせしました": {
+"s": "[お待たせしました]。こちらへどうぞ。",
+"de": "Danke fürs Warten. Hier entlang bitte.",
+"r": "[お{待|ま}たせしました]。こちらへどうぞ。",
+"bedeutung": "Entschuldigen Sie die Wartezeit"
+},
+"お待ちください|おまちください": {
+"s": "担当の者が参りますので[お待ちください]。",
+"de": "Bitte warten Sie, die zuständige Person kommt.",
+"r": "{担当|たんとう}の{者|もの}が{参|まい}りますので[お{待|ま}ちください]。",
+"bedeutung": "Bitte warten Sie"
+},
 "式|しき": {
 "s": "来月、姉の結婚[式]がある。",
 "de": "Nächsten Monat ist die Hochzeit meiner älteren Schwester.",
@@ -15,6 +27,73 @@
 "de": "Ich habe gehört, dass dieser Sportler nach diesem Jahr aufhört.",
 "r": "その{選手|せんしゅ}は{今年|ことし}で[{引退|いんたい}]するそうだ。",
 "bedeutung": "Rücktritt, Karriereende, Ruhestand"
+},
+"弟|おとうと": {
+"s": "[弟]は高校でサッカーをしている。",
+"de": "Mein jüngerer Bruder spielt in der Oberschule Fußball.",
+"r": "[{弟|おとうと}]は{高校|こうこう}でサッカーをしている。"
+},
+"弟子|でし": {
+"s": "彼は有名な料理人の[弟子]だ。",
+"de": "Er ist Schüler eines bekannten Kochs.",
+"r": "{彼|かれ}は{有名|ゆうめい}な{料理人|りょうりにん}の[{弟子|でし}]だ。",
+"bedeutung": "Schüler(in) eines Meisters"
+},
+"強|きょう": {
+"s": "一時間[強]かかった。",
+"de": "Es dauerte gut eine Stunde.",
+"r": "{一時間|いちじかん}[{強|きょう}]かかった。",
+"bedeutung": "etwas mehr als",
+"lesungen": {
+"強": "きょう"
+}
+},
+"強い|つよい": {
+"s": "今日は風がとても[強い]。",
+"de": "Heute weht ein sehr starker Wind.",
+"r": "{今日|きょう}は{風|かぜ}がとても[{強|つよ}い]。"
+},
+"強いて|しいて": {
+"s": "[強いて]言えば、青のほうが好きだ。",
+"de": "Wenn ich wählen muss, mag ich Blau lieber.",
+"r": "[{強|し}いて]{言|い}えば、{青|あお}のほうが{好|す}きだ。",
+"bedeutung": "wenn es sein muss"
+},
+"強いる|しいる": {
+"s": "人に酒を[強いて]はいけない。",
+"de": "Man darf niemanden zum Trinken zwingen.",
+"r": "{人|ひと}に{酒|さけ}を[{強|し}いて]はいけない。",
+"bedeutung": "zwingen"
+},
+"強まる|つよまる": {
+"s": "夜になって風が[強まった]。",
+"de": "Am Abend nahm der Wind zu.",
+"r": "{夜|よる}になって{風|かぜ}が[{強|つよ}まった]。",
+"bedeutung": "stärker werden"
+},
+"強める|つよめる": {
+"s": "雨で会社は注意を[強めた]。",
+"de": "Wegen des Regens mahnte die Firma verstärkt zur Vorsicht.",
+"r": "{雨|あめ}で{会社|かいしゃ}は{注意|ちゅうい}を[{強|つよ}めた]。",
+"bedeutung": "verstärken"
+},
+"強力|きょうりょく": {
+"s": "この洗剤はよごれに[強力]だ。",
+"de": "Dieses Waschmittel wirkt stark gegen Schmutz.",
+"r": "この{洗剤|せんざい}はよごれに[{強力|きょうりょく}]だ。",
+"bedeutung": "kraftvoll, stark"
+},
+"強気|つよき": {
+"s": "今日の相手はとても[強気]だ。",
+"de": "Der Gegner tritt heute sehr selbstbewusst auf.",
+"r": "{今日|きょう}の{相手|あいて}はとても[{強気|つよき}]だ。",
+"bedeutung": "forsch, selbstbewusst"
+},
+"強行|きょうこう": {
+"s": "雨の中で試合を[強行]した。",
+"de": "Man zog das Spiel trotz Regens durch.",
+"r": "{雨|あめ}の{中|なか}で{試合|しあい}を[{強行|きょうこう}]した。",
+"bedeutung": "Durchsetzen mit Gewalt"
 },
 "形式|けいしき": {
 "s": "レポートは決められた[形式]で書くこと。",
@@ -55,5 +134,83 @@
 "s": "あの[役者]は泣く演技がとても上手だ。",
 "de": "Dieser Schauspieler kann sehr gut weinen (spielen).",
 "r": "あの[{役者|やくしゃ}]は{泣|な}く{演技|えんぎ}がとても{上手|じょうず}だ。"
+},
+"待つ|まつ": {
+"s": "友だちを三十分も[待った]。",
+"de": "Ich habe eine halbe Stunde auf eine Freundin gewartet.",
+"r": "{友|とも}だちを{三十分|さんじゅうぷん}も[{待|ま}った]。",
+"lesungen": {
+"十": "じゅっ",
+"分": "ぷん"
+}
+},
+"後|あと": {
+"s": "仕事の[後]で食事に行きませんか。",
+"de": "Wollen wir nach der Arbeit essen gehen?",
+"r": "{仕事|しごと}の[{後|あと}]で{食事|しょくじ}に{行|い}きませんか。"
+},
+"後|ご": {
+"s": "卒業[後]は地元で働くつもりだ。",
+"de": "Nach dem Abschluss will ich in der Heimat arbeiten.",
+"r": "{卒業|そつぎょう}[{後|ご}]は{地元|じもと}で{働|はたら}くつもりだ。",
+"bedeutung": "nach (zeitlich)"
+},
+"後|のち": {
+"s": "天気は晴れ、[後]くもりでしょう。",
+"de": "Das Wetter: heiter, später wolkig.",
+"r": "{天気|てんき}は{晴|は}れ、[{後|のち}]くもりでしょう。",
+"bedeutung": "später, danach",
+"lesungen": {
+"後": "のち"
+}
+},
+"後ろ|うしろ": {
+"s": "[後ろ]の席にまだ空きがある。",
+"de": "Hinten sind noch Plätze frei.",
+"r": "[{後|うし}ろ]の{席|せき}にまだ{空|あ}きがある。"
+},
+"後者|こうしゃ": {
+"s": "前者は安く、[後者]は丈夫だ。",
+"de": "Ersteres ist billig, letzteres robust.",
+"r": "{前者|ぜんしゃ}は{安|やす}く、[{後者|こうしゃ}]は{丈夫|じょうぶ}だ。",
+"bedeutung": "letzterer"
+},
+"心|こころ": {
+"s": "その話を聞いて[心]が温かくなった。",
+"de": "Bei dieser Geschichte wurde mir warm ums Herz.",
+"r": "その{話|はなし}を{聞|き}いて[{心|こころ}]が{温|あたた}かくなった。"
+},
+"心|しん": {
+"s": "相手を思う[心]を忘れない。",
+"de": "Ich vergesse nie, an andere zu denken.",
+"r": "{相手|あいて}を{思|おも}う[{心|しん}]を{忘|わす}れない。",
+"bedeutung": "Herz, Sinn",
+"lesungen": {
+"心": "こころ"
+}
+},
+"心中|しんじゅう": {
+"s": "これは[心中]をえがいた古い物語だ。",
+"de": "Eine alte Geschichte über den gemeinsamen Freitod zweier Liebender.",
+"r": "これは[{心中|しんじゅう}]をえがいた{古|ふる}い{物語|ものがたり}だ。",
+"bedeutung": "gemeinsamer Freitod"
+},
+"心地|ここち": {
+"s": "風が[心地]よい午後だ。",
+"de": "Ein Nachmittag mit angenehmem Wind.",
+"r": "{風|かぜ}が[{心地|ここち}]よい{午後|ごご}だ。",
+"bedeutung": "Gefühl, Befinden"
+},
+"心強い|こころづよい": {
+"s": "あなたがいれば[心強い]。",
+"de": "Mit dir fühle ich mich sicher.",
+"r": "あなたがいれば[{心強|こころづよ}い]。",
+"bedeutung": "ermutigend"
+},
+"心理|しんり": {
+"s": "子どもの[心理]を研究している。",
+"de": "Ich erforsche die Psyche von Kindern.",
+"r": "{子|こ}どもの[{心理|しんり}]を{研究|けんきゅう}している。",
+"bedeutung": "Psychologie, Gemütslage"
 }
 }

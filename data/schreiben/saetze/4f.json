@@ -1,9 +1,98 @@
 {
+"お休み|おやすみ": {
+"s": "では、[お休み]なさい。",
+"de": "Dann gute Nacht.",
+"r": "では、[お{休|やす}み]なさい。",
+"bedeutung": "Ruhetag"
+},
+"お使い|おつかい": {
+"s": "母に[お使い]をたのまれた。",
+"de": "Meine Mutter hat mich zum Einkaufen geschickt.",
+"r": "{母|はは}に[お{使|つか}い]をたのまれた。",
+"bedeutung": "Botengang, Besorgung"
+},
+"休み|やすみ": {
+"s": "今度の[休み]に温泉へ行こう。",
+"de": "Lass uns in den nächsten Ferien zu den heißen Quellen fahren.",
+"r": "{今度|こんど}の[{休|やす}み]に{温泉|おんせん}へ{行|い}こう。"
+},
+"休む|やすむ": {
+"s": "熱があるので会社を[休んだ]。",
+"de": "Ich hatte Fieber und bin der Arbeit ferngeblieben.",
+"r": "{熱|ねつ}があるので{会社|かいしゃ}を[{休|やす}んだ]。"
+},
+"休める|やすめる": {
+"s": "時々は目を[休めた]ほうがいい。",
+"de": "Man sollte die Augen ab und zu ausruhen.",
+"r": "{時々|ときどき}は{目|め}を[{休|やす}めた]ほうがいい。",
+"bedeutung": "ruhen lassen"
+},
+"休学|きゅうがく": {
+"s": "留学のため一年間[休学]した。",
+"de": "Für das Auslandsjahr habe ich ein Jahr pausiert.",
+"r": "{留学|りゅうがく}のため{一年間|いちねんかん}[{休学|きゅうがく}]した。",
+"bedeutung": "Beurlaubung vom Studium"
+},
+"休業|きゅうぎょう": {
+"s": "年末年始は[休業]いたします。",
+"de": "Zum Jahreswechsel haben wir geschlossen.",
+"r": "{年末年始|ねんまつねんし}は[{休業|きゅうぎょう}]いたします。",
+"bedeutung": "Geschäftsruhe"
+},
+"会|かい": {
+"s": "今夜は新しい社員を迎える[会]がある。",
+"de": "Heute Abend gibt es ein Treffen zur Begrüßung der Neuen.",
+"r": "{今夜|こんや}は{新|あたら}しい{社員|しゃいん}を{迎|むか}える[{会|かい}]がある。"
+},
+"会う|あう": {
+"s": "駅で偶然、昔の友だちに[会った]。",
+"de": "Am Bahnhof traf ich zufällig eine alte Freundin.",
+"r": "{駅|えき}で{偶然|ぐうぜん}、{昔|むかし}の{友|とも}だちに[{会|あ}った]。"
+},
+"会員|かいいん": {
+"s": "このジムは[会員]だけが使える。",
+"de": "Dieses Studio dürfen nur Mitglieder nutzen.",
+"r": "このジムは[{会員|かいいん}]だけが{使|つか}える。",
+"bedeutung": "Mitglied"
+},
+"会場|かいじょう": {
+"s": "試験の[会場]は駅の近くだ。",
+"de": "Der Prüfungsort liegt in der Nähe des Bahnhofs.",
+"r": "{試験|しけん}の[{会場|かいじょう}]は{駅|えき}の{近|ちか}くだ。"
+},
+"会社|かいしゃ": {
+"s": "兄は東京の[会社]で働いている。",
+"de": "Mein Bruder arbeitet in einer Firma in Tokio.",
+"r": "{兄|あに}は{東京|とうきょう}の[{会社|かいしゃ}]で{働|はたら}いている。"
+},
+"会見|かいけん": {
+"s": "市長が記者[会見]を開いた。",
+"de": "Der Bürgermeister gab eine Pressekonferenz.",
+"r": "{市長|しちょう}が{記者|きしゃ}[{会見|かいけん}]を{開|ひら}いた。",
+"bedeutung": "Pressekonferenz, Interview"
+},
+"会計|かいけい": {
+"s": "店の[会計]は入口の近くです。",
+"de": "Die Kasse ist nahe beim Eingang.",
+"r": "{店|みせ}の[{会計|かいけい}]は{入口|いりぐち}の{近|ちか}くです。",
+"bedeutung": "Abrechnung, Kasse"
+},
+"会話|かいわ": {
+"s": "日本語の[会話]を練習している。",
+"de": "Ich übe japanische Konversation.",
+"r": "{日本語|にほんご}の[{会話|かいわ}]を{練習|れんしゅう}している。"
+},
 "会談|かいだん": {
 "s": "両国の大臣が東京で[会談]を行った。",
 "de": "Die Minister beider Länder führten in Tokio ein Gespräch.",
 "r": "{両国|りょうこく}の{大臣|だいじん}が{東京|とうきょう}で[{会談|かいだん}]を{行|おこな}った。",
 "bedeutung": "Gespräch, Unterredung (offiziell)"
+},
+"会館|かいかん": {
+"s": "市民[会館]でコンサートがある。",
+"de": "Im Bürgerzentrum gibt es ein Konzert.",
+"r": "{市民|しみん}[{会館|かいかん}]でコンサートがある。",
+"bedeutung": "Versammlungshaus"
 },
 "位|い": {
 "s": "妹はマラソン大会で[三位]になった。",
@@ -20,10 +109,38 @@
 "de": "Ich habe auf der Karte nachgesehen, wo der Bahnhof liegt, und bin dann losgegangen.",
 "r": "{地図|ちず}で{駅|えき}の[{位置|いち}]を{確認|かくにん}してから{出|で}かけた。"
 },
+"住|じゅう": {
+"s": "[住]まいをさがすのに苦労した。",
+"de": "Eine Wohnung zu finden war mühsam.",
+"r": "[{住|じゅう}]まいをさがすのに{苦労|くろう}した。",
+"bedeutung": "Wohnen, Wohnung"
+},
+"住まい|すまい": {
+"s": "新しい[住まい]は駅から近い。",
+"de": "Die neue Wohnung liegt nah am Bahnhof.",
+"r": "{新|あたら}しい[{住|す}まい]は{駅|えき}から{近|ちか}い。",
+"bedeutung": "Wohnung"
+},
+"住む|すむ": {
+"s": "兄は今、京都に[住んで]いる。",
+"de": "Mein Bruder wohnt jetzt in Kyoto.",
+"r": "{兄|あに}は{今|いま}、{京都|きょうと}に[{住|す}んで]いる。"
+},
 "住宅|じゅうたく": {
 "s": "駅の近くに新しい[住宅]が増えている。",
 "de": "In der Nähe des Bahnhofs entstehen immer mehr neue Wohnhäuser.",
 "r": "{駅|えき}の{近|ちか}くに{新|あたら}しい[{住宅|じゅうたく}]が{増|ふ}えている。"
+},
+"体|からだ": {
+"s": "[体]をこわさないように気をつけてね。",
+"de": "Pass auf, dass du nicht krank wirst.",
+"r": "[{体|からだ}]をこわさないように{気|き}をつけてね。"
+},
+"体力|たいりょく": {
+"s": "[体力]をつけるために走っている。",
+"de": "Ich laufe, um Kondition aufzubauen.",
+"r": "[{体力|たいりょく}]をつけるために{走|はし}っている。",
+"bedeutung": "körperliche Kraft"
 },
 "体格|たいかく": {
 "s": "弟はスポーツを始めてから[体格]がよくなった。",
@@ -35,6 +152,164 @@
 "s": "雨の日の[体育]は体育館で行う。",
 "de": "An Regentagen findet der Sportunterricht in der Turnhalle statt.",
 "r": "{雨|あめ}の{日|ひ}の[{体育|たいいく}]は{体育館|たいいくかん}で{行|おこな}う。"
+},
+"体重|たいじゅう": {
+"s": "最近、[体重]が少しふえた。",
+"de": "Neuerdings habe ich etwas zugenommen.",
+"r": "{最近|さいきん}、[{体重|たいじゅう}]が{少|すこ}しふえた。",
+"bedeutung": "Körpergewicht"
+},
+"体験|たいけん": {
+"s": "農家の仕事を[体験]した。",
+"de": "Ich habe die Arbeit auf einem Bauernhof erlebt.",
+"r": "{農家|のうか}の{仕事|しごと}を[{体験|たいけん}]した。",
+"bedeutung": "eigene Erfahrung"
+},
+"何|なん": {
+"s": "箱の中に[何]が入っていますか。",
+"de": "Was ist in der Schachtel?",
+"r": "{箱|ばこ}の{中|なか}に[{何|なん}]が{入|はい}っていますか。"
+},
+"何々|なになに": {
+"s": "手紙には[何々]を送れと書いてあった。",
+"de": "Im Brief stand, man solle dies und das schicken.",
+"r": "{手紙|てがみ}には[{何々|なになに}]を{送|おく}れと{書|か}いてあった。",
+"bedeutung": "dies und das"
+},
+"何か|なにか": {
+"s": "[何か]温かい物が飲みたい。",
+"de": "Ich möchte etwas Warmes trinken.",
+"r": "[{何|なに}か]{温|あたた}かい{物|もの}が{飲|の}みたい。",
+"bedeutung": "irgendetwas"
+},
+"何しろ|なにしろ": {
+"s": "[何しろ]時間がないので急いでいる。",
+"de": "Wir haben schlicht keine Zeit, darum eilen wir.",
+"r": "[{何|なに}しろ]{時間|じかん}がないので{急|いそ}いでいる。",
+"bedeutung": "jedenfalls, nämlich"
+},
+"何だか|なんだか": {
+"s": "今日は[何だか]楽しそうだね。",
+"de": "Du wirkst heute irgendwie fröhlich.",
+"r": "{今日|きょう}は[{何|なん}だか]{楽|たの}しそうだね。",
+"bedeutung": "irgendwie"
+},
+"何で|なんで": {
+"s": "[何で]昨日は来なかったの。",
+"de": "Warum bist du gestern nicht gekommen?",
+"r": "[{何|なん}で]{昨日|きのう}は{来|こ}なかったの。",
+"bedeutung": "warum"
+},
+"何でも|なんでも": {
+"s": "好きな物を[何でも]注文していいよ。",
+"de": "Du darfst bestellen, was du willst.",
+"r": "{好|す}きな{物|もの}を[{何|なん}でも]{注文|ちゅうもん}していいよ。",
+"bedeutung": "alles, was auch immer"
+},
+"何とか|なんとか": {
+"s": "[何とか]締め切りに間に合った。",
+"de": "Irgendwie habe ich die Frist geschafft.",
+"r": "[{何|なん}とか]{締|し}め{切|き}りに{間|ま}に{合|あ}った。",
+"bedeutung": "irgendwie"
+},
+"何とも|なんとも": {
+"s": "そのうわさは[何とも]言えない。",
+"de": "Zu dem Gerücht kann man schwer etwas sagen.",
+"r": "そのうわさは[{何|なん}とも]{言|い}えない。",
+"bedeutung": "(nicht) irgendwie"
+},
+"何分|なにぶん": {
+"s": "[何分]初めてなので、よろしくお願いします。",
+"de": "Es ist mein erstes Mal, haben Sie bitte Nachsicht.",
+"r": "[{何分|なにぶん}]{初|はじ}めてなので、よろしくお{願|ねが}いします。",
+"bedeutung": "immerhin, nun einmal"
+},
+"何気ない|なにげない": {
+"s": "[何気ない]一言に元気をもらった。",
+"de": "Ein beiläufiges Wort hat mich aufgemuntert.",
+"r": "[{何気|なにげ}ない]{一言|ひとこと}に{元気|げんき}をもらった。",
+"bedeutung": "beiläufig"
+},
+"作|さく": {
+"s": "これはこの画家の代表[作]だ。",
+"de": "Dies ist das Hauptwerk dieses Malers.",
+"r": "これはこの{画家|がか}の{代表|だいひょう}[{作|さく}]だ。",
+"bedeutung": "Werk"
+},
+"作り|つくり": {
+"s": "この家は[作り]がしっかりしている。",
+"de": "Dieses Haus ist solide gebaut.",
+"r": "この{家|いえ}は[{作|つく}り]がしっかりしている。",
+"bedeutung": "Bauweise"
+},
+"作る|つくる": {
+"s": "週末はよくパンを[作る]。",
+"de": "Am Wochenende backe ich oft Brot.",
+"r": "{週末|しゅうまつ}はよくパンを[{作|つく}る]。"
+},
+"作品|さくひん": {
+"s": "美術館で子どもたちの[作品]を見た。",
+"de": "Im Museum habe ich Werke von Kindern gesehen.",
+"r": "{美術館|びじゅつかん}で{子|こ}どもたちの[{作品|さくひん}]を{見|み}た。",
+"bedeutung": "Werk"
+},
+"作家|さっか": {
+"s": "好きな[作家]の新しい本が出た。",
+"de": "Von meinem Lieblingsautor ist ein neues Buch erschienen.",
+"r": "{好|す}きな[{作家|さっか}]の{新|あたら}しい{本|ほん}が{出|で}た。",
+"bedeutung": "Schriftsteller(in)"
+},
+"作文|さくぶん": {
+"s": "夏休みについて[作文]を書いた。",
+"de": "Ich habe einen Aufsatz über die Sommerferien geschrieben.",
+"r": "{夏休|なつやす}みについて[{作文|さくぶん}]を{書|か}いた。"
+},
+"作業|さぎょう": {
+"s": "[作業]の前に手順を確かめる。",
+"de": "Vor der Arbeit prüfe ich den Ablauf.",
+"r": "[{作業|さぎょう}]の{前|まえ}に{手順|てじゅん}を{確|たし}かめる。",
+"bedeutung": "Arbeit, Arbeitsvorgang"
+},
+"作物|さくもつ": {
+"s": "寒さで[作物]がよく育たない。",
+"de": "Wegen der Kälte gedeihen die Feldfrüchte schlecht.",
+"r": "{寒|さむ}さで[{作物|さくもつ}]がよく{育|そだ}たない。",
+"bedeutung": "Feldfrucht"
+},
+"作用|さよう": {
+"s": "この薬には痛みを止める[作用]がある。",
+"de": "Dieses Mittel wirkt schmerzstillend.",
+"r": "この{薬|くすり}には{痛|いた}みを{止|と}める[{作用|さよう}]がある。",
+"bedeutung": "Wirkung"
+},
+"作者|さくしゃ": {
+"s": "この本の[作者]に会ってみたい。",
+"de": "Ich würde den Autor dieses Buches gern treffen.",
+"r": "この{本|ほん}の[{作者|さくしゃ}]に{会|あ}ってみたい。",
+"bedeutung": "Verfasser(in)"
+},
+"使い道|つかいみち": {
+"s": "もらったお金の[使い道]を考えた。",
+"de": "Ich habe überlegt, wofür ich das Geld nutze.",
+"r": "もらったお{金|かね}の[{使|つか}い{道|みち}]を{考|かんが}えた。",
+"bedeutung": "Verwendung"
+},
+"使う|つかう": {
+"s": "この機械はだれでも簡単に[使える]。",
+"de": "Dieses Gerät kann jeder leicht benutzen.",
+"r": "この{機械|きかい}はだれでも{簡単|かんたん}に[{使|つか}える]。"
+},
+"使用|しよう": {
+"s": "会議室の[使用]には予約が必要だ。",
+"de": "Für die Nutzung des Besprechungsraums braucht man eine Reservierung.",
+"r": "{会議室|かいぎしつ}の[{使用|しよう}]には{予約|よやく}が{必要|ひつよう}だ。",
+"bedeutung": "Benutzung"
+},
+"使用人|しようにん": {
+"s": "その店は[使用人]を三人やとっている。",
+"de": "Der Laden beschäftigt drei Angestellte.",
+"r": "その{店|みせ}は[{使用人|しようにん}]を{三人|さんにん}やとっている。",
+"bedeutung": "Angestellter, Bediensteter"
 },
 "例|れい": {
 "s": "先生は[例]を挙げて説明してくれた。",

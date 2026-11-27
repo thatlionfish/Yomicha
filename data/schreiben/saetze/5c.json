@@ -1,7 +1,159 @@
 {
+"小|こ": {
+"s": "店は[小]部屋を三つ用意した。",
+"de": "Das Lokal hat drei kleine Räume vorbereitet.",
+"r": "{店|みせ}は[{小|こ}]{部屋|へや}を{三|みっ}つ{用意|ようい}した。",
+"bedeutung": "klein-",
+"lesungen": {
+"小": "こ"
+}
+},
+"小|しょう": {
+"s": "サイズは[小]でお願いします。",
+"de": "Bitte in der Größe klein.",
+"r": "サイズは[{小|しょう}]でお{願|ねが}いします。",
+"bedeutung": "klein (Größe)",
+"lesungen": {
+"小": "しょう"
+}
+},
+"小さい|ちいさい": {
+"s": "字が[小さい]ので読みにくい。",
+"de": "Die Schrift ist klein und schwer zu lesen.",
+"r": "{字|じ}が[{小|ちい}さい]ので{読|よ}みにくい。"
+},
+"小さな|ちいさな": {
+"s": "[小さな]村で生まれ育った。",
+"de": "Ich bin in einem kleinen Dorf aufgewachsen.",
+"r": "[{小|ちい}さな]{村|むら}で{生|う}まれ{育|そだ}った。"
+},
+"小切手|こぎって": {
+"s": "社長は代金を[小切手]ではらった。",
+"de": "Der Chef bezahlte den Betrag per Scheck.",
+"r": "{社長|しゃちょう}は{代金|だいきん}を[{小切手|こぎって}]ではらった。",
+"bedeutung": "Scheck"
+},
+"小売|こうり": {
+"s": "この会社は[小売]の店を増やしている。",
+"de": "Die Firma baut ihre Einzelhandelsläden aus.",
+"r": "この{会社|かいしゃ}は[{小売|こうり}]の{店|みせ}を{増|ふ}やしている。",
+"bedeutung": "Einzelhandel"
+},
+"小学校|しょうがっこう": {
+"s": "母は[小学校]で教えている。",
+"de": "Meine Mutter unterrichtet an einer Grundschule.",
+"r": "{母|はは}は[{小学校|しょうがっこう}]で{教|おし}えている。"
+},
+"小学生|しょうがくせい": {
+"s": "[小学生]が元気に学校へ向かう。",
+"de": "Die Grundschulkinder gehen munter zur Schule.",
+"r": "[{小学生|しょうがくせい}]が{元気|げんき}に{学校|がっこう}へ{向|む}かう。",
+"bedeutung": "Grundschüler(in)"
+},
+"小屋|こや": {
+"s": "山の[小屋]で一晩過ごした。",
+"de": "Ich habe eine Nacht in einer Berghütte verbracht.",
+"r": "{山|やま}の[{小屋|こや}]で{一晩|ひとばん}{過|す}ごした。",
+"bedeutung": "Hütte",
+"lesungen": {
+"一晩": "ひとばん",
+"一": "ひと"
+}
+},
+"小母さん|おばさん": {
+"s": "近所の[小母さん]があいさつしてくれた。",
+"de": "Die Frau aus der Nachbarschaft hat mich gegrüßt.",
+"r": "{近所|きんじょ}の[{小母|おば}さん]があいさつしてくれた。",
+"bedeutung": "Frau, Tante"
+},
+"小父さん|おじさん": {
+"s": "となりの[小父さん]がお菓子をくれた。",
+"de": "Der Nachbar hat mir Süßigkeiten geschenkt.",
+"r": "となりの[{小父|おじ}さん]がお{菓子|かし}をくれた。",
+"bedeutung": "Onkel, Herr (mittleren Alters)"
+},
+"小鳥|ことり": {
+"s": "朝、[小鳥]の鳴き声が聞こえた。",
+"de": "Am Morgen hörte ich kleine Vögel zwitschern.",
+"r": "{朝|あさ}、[{小鳥|ことり}]の{鳴|な}き{声|ごえ}が{聞|き}こえた。"
+},
+"少々|しょうしょう": {
+"s": "[少々]お待ちください。",
+"de": "Bitte warten Sie einen Augenblick.",
+"r": "[{少々|しょうしょう}]お{待|ま}ちください。",
+"bedeutung": "ein wenig (höflich)"
+},
+"少し|すこし": {
+"s": "塩を[少し]足してください。",
+"de": "Geben Sie bitte ein wenig Salz dazu.",
+"r": "{塩|しお}を[{少|すこ}し]{足|た}してください。"
+},
+"少しも|すこしも": {
+"s": "その話は[少しも]知らなかった。",
+"de": "Davon wusste ich überhaupt nichts.",
+"r": "その{話|はなし}は[{少|すこ}しも]{知|し}らなかった。",
+"bedeutung": "(nicht) im Geringsten"
+},
+"少ない|すくない": {
+"s": "今年は雨が[少ない]。",
+"de": "Dieses Jahr gibt es wenig Regen.",
+"r": "{今年|ことし}は{雨|あめ}が[{少|すく}ない]。"
+},
+"少なくとも|すくなくとも": {
+"s": "完成には[少なくとも]一週間かかる。",
+"de": "Bis zur Fertigstellung dauert es mindestens eine Woche.",
+"r": "{完成|かんせい}には[{少|すく}なくとも]{一週間|いっしゅうかん}かかる。",
+"bedeutung": "mindestens",
+"lesungen": {
+"一": "いっ",
+"一週間": "いっしゅうかん"
+}
+},
+"少女|しょうじょ": {
+"s": "絵の中の[少女]がほほえんでいる。",
+"de": "Das Mädchen auf dem Bild lächelt.",
+"r": "{絵|え}の{中|なか}の[{少女|しょうじょ}]がほほえんでいる。",
+"bedeutung": "junges Mädchen"
+},
+"少年|しょうねん": {
+"s": "[少年]は夢中で本を読んでいた。",
+"de": "Der Junge las ganz vertieft.",
+"r": "[{少年|しょうねん}]は{夢中|むちゅう}で{本|ほん}を{読|よ}んでいた。",
+"bedeutung": "Junge"
+},
 "局|きょく": {
 "s": "駅前の[郵便局]は九時に開く。",
 "de": "Die Post vor dem Bahnhof öffnet um neun Uhr.",
 "r": "{駅前|えきまえ}の[{郵便局|ゆうびんきょく}]は{九時|くじ}に{開|ひら}く。"
+},
+"屋|や": {
+"s": "駅前の[パン屋]は朝七時に開く。",
+"de": "Die Bäckerei am Bahnhof öffnet um sieben.",
+"r": "{駅前|えきまえ}の[パン{屋|や}]は{朝|あさ}{七時|しちじ}に{開|あ}く。",
+"lesungen": {
+"開く": "あく"
+}
+},
+"屋上|おくじょう": {
+"s": "デパートの[屋上]に小さな庭がある。",
+"de": "Auf dem Dach des Kaufhauses ist ein kleiner Garten.",
+"r": "デパートの[{屋上|おくじょう}]に{小|ちい}さな{庭|にわ}がある。"
+},
+"屋外|おくがい": {
+"s": "[屋外]での活動は中止になった。",
+"de": "Die Aktivitäten im Freien wurden abgesagt.",
+"r": "[{屋外|おくがい}]での{活動|かつどう}は{中止|ちゅうし}になった。",
+"bedeutung": "im Freien"
+},
+"山|さん": {
+"s": "休みに富士[山]に登った。",
+"de": "In den Ferien habe ich den Fuji bestiegen.",
+"r": "{休|やす}みに{富士|ふじ}[{山|さん}]に{登|のぼ}った。",
+"bedeutung": "Berg … (in Namen)"
+},
+"山|やま": {
+"s": "晴れた日は遠くの[山]がよく見える。",
+"de": "An klaren Tagen sieht man die fernen Berge gut.",
+"r": "{晴|は}れた{日|ひ}は{遠|とお}くの[{山|やま}]がよく{見|み}える。"
 }
 }

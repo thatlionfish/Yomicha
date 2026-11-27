@@ -1,0 +1,99 @@
+{
+"赤|あか": {
+"s": "信号が[赤]の時はわたれない。",
+"de": "Bei Rot darf man nicht über die Straße.",
+"r": "{信号|しんごう}が[{赤|あか}]の{時|とき}はわたれない。"
+},
+"赤い|あかい": {
+"s": "[赤い]ぼうしの子が手をふっている。",
+"de": "Ein Kind mit roter Mütze winkt.",
+"r": "[{赤|あか}い]ぼうしの{子|こ}が{手|て}をふっている。"
+},
+"赤ちゃん|あかちゃん": {
+"s": "[赤ちゃん]がすやすや眠っている。",
+"de": "Das Baby schläft friedlich.",
+"r": "[{赤|あか}ちゃん]がすやすや{眠|ねむ}っている。"
+},
+"赤らむ|あからむ": {
+"s": "ほめられて顔が[赤らんだ]。",
+"de": "Beim Lob wurde ich rot.",
+"r": "ほめられて{顔|かお}が[{赤|あか}らんだ]。",
+"bedeutung": "erröten"
+},
+"赤字|あかじ": {
+"s": "会社は三年続けて[赤字]だ。",
+"de": "Die Firma macht seit drei Jahren Verlust.",
+"r": "{会社|かいしゃ}は{三年|さんねん}{続|つづ}けて[{赤字|あかじ}]だ。",
+"bedeutung": "Verlust, rote Zahlen"
+},
+"赤道|せきどう": {
+"s": "[赤道]に近い国は一年中暑い。",
+"de": "Länder am Äquator sind das ganze Jahr heiß.",
+"r": "[{赤道|せきどう}]に{近|ちか}い{国|くに}は{一年|いちねん}{中|じゅう}{暑|あつ}い。",
+"bedeutung": "Äquator",
+"lesungen": {
+"中": "じゅう",
+"一年中": "いちねんじゅう"
+}
+},
+"走る|はしる": {
+"s": "ろうかを[走って]はいけません。",
+"de": "Auf dem Flur darf man nicht rennen.",
+"r": "ろうかを[{走|はし}って]はいけません。"
+},
+"走行|そうこう": {
+"s": "車の[走行]中は立たないでください。",
+"de": "Bitte während der Fahrt nicht aufstehen.",
+"r": "{車|くるま}の[{走行|そうこう}]{中|なか}は{立|た}たないでください。",
+"bedeutung": "Fahrt (eines Fahrzeugs)"
+},
+"起きる|おきる": {
+"s": "休みの日は九時ごろ[起きる]。",
+"de": "An freien Tagen stehe ich gegen neun auf.",
+"r": "{休|やす}みの{日|ひ}は{九時|くじ}ごろ[{起|お}きる]。"
+},
+"起こす|おこす": {
+"s": "明日は六時に[起こして]ください。",
+"de": "Weck mich morgen bitte um sechs.",
+"r": "{明日|あした}は{六時|ろくじ}に[{起|お}こして]ください。"
+},
+"起こる|おこる": {
+"s": "近所で小さな事件が[起こった]。",
+"de": "In der Nachbarschaft gab es einen kleinen Vorfall.",
+"r": "{近所|きんじょ}で{小|ちい}さな{事件|じけん}が[{起|お}こった]。",
+"bedeutung": "sich ereignen"
+},
+"足|あし": {
+"s": "たくさん歩いて[足]がつかれた。",
+"de": "Vom vielen Gehen sind meine Beine müde.",
+"r": "たくさん{歩|ある}いて[{足|あし}]がつかれた。"
+},
+"足|そく": {
+"s": "くつ下を二[足]買った。",
+"de": "Ich habe zwei Paar Socken gekauft.",
+"r": "くつ{下|した}を{二|に}[{足|そく}]{買|か}った。",
+"bedeutung": "Zählwort für Paare (Schuhe, Socken)"
+},
+"足す|たす": {
+"s": "味がうすいので塩を[足した]。",
+"de": "Es war fade, also habe ich Salz zugegeben.",
+"r": "{味|あじ}がうすいので{塩|しお}を[{足|た}した]。"
+},
+"足りる|たりる": {
+"s": "旅行のお金が少し[足りない]。",
+"de": "Für die Reise fehlt noch etwas Geld.",
+"r": "{旅行|りょこう}のお{金|かね}が{少|すこ}し[{足|た}りない]。"
+},
+"足る|たる": {
+"s": "彼の努力はほめるに[足る]。",
+"de": "Sein Einsatz verdient Lob.",
+"r": "{彼|かれ}の{努力|どりょく}はほめるに[{足|た}る]。",
+"bedeutung": "wert sein, genügen"
+},
+"足元|あしもと": {
+"s": "暗いので[足元]に気をつけて。",
+"de": "Es ist dunkel, pass auf, wohin du trittst.",
+"r": "{暗|くら}いので[{足元|あしもと}]に{気|き}をつけて。",
+"bedeutung": "zu den Füßen, Schritt"
+}
+}

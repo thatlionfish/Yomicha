@@ -30,6 +30,48 @@
 "de": "Dieses Land wurde lange von einem König beherrscht.",
 "r": "この{国|くに}は{長|なが}い{間|あいだ}、{王|おう}に[{支配|しはい}]されていた。"
 },
+"教|きょう": {
+"s": "この国ではキリスト[教]を信じる人が多い。",
+"de": "In diesem Land sind viele Menschen Christen.",
+"r": "この{国|くに}ではキリスト[{教|きょう}]を{信|しん}じる{人|ひと}が{多|おお}い。",
+"bedeutung": "Religion, Lehre",
+"lesungen": {
+"教": "きょう"
+}
+},
+"教え|おしえ": {
+"s": "父の[教え]を今も守っている。",
+"de": "Ich befolge noch heute, was mein Vater mich lehrte.",
+"r": "{父|ちち}の[{教|おし}え]を{今|いま}も{守|まも}っている。",
+"bedeutung": "Lehre"
+},
+"教える|おしえる": {
+"s": "駅までの道を[教えて]いただけますか。",
+"de": "Könnten Sie mir den Weg zum Bahnhof erklären?",
+"r": "{駅|えき}までの{道|みち}を[{教|おし}えて]いただけますか。"
+},
+"教わる|おそわる": {
+"s": "祖母に漬物の作り方を[教わった]。",
+"de": "Von meiner Großmutter habe ich das Einlegen gelernt.",
+"r": "{祖母|そぼ}に{漬物|つけもの}の{作|つく}り{方|かた}を[{教|おそ}わった]。",
+"bedeutung": "beigebracht bekommen"
+},
+"教会|きょうかい": {
+"s": "町の古い[教会]で式を挙げた。",
+"de": "Sie haben in der alten Kirche der Stadt geheiratet.",
+"r": "{町|まち}の{古|ふる}い[{教会|きょうかい}]で{式|しき}を{挙|あ}げた。"
+},
+"教室|きょうしつ": {
+"s": "[教室]の窓からグラウンドが見える。",
+"de": "Vom Klassenzimmerfenster sieht man den Sportplatz.",
+"r": "[{教室|きょうしつ}]の{窓|まど}からグラウンドが{見|み}える。"
+},
+"教習|きょうしゅう": {
+"s": "車の[教習]を受けている。",
+"de": "Ich nehme Fahrstunden.",
+"r": "{車|くるま}の[{教習|きょうしゅう}]を{受|う}けている。",
+"bedeutung": "Ausbildung, Unterricht"
+},
 "教職|きょうしょく": {
 "s": "母は三十年間、[教職]についていた。",
 "de": "Meine Mutter war dreißig Jahre lang im Schuldienst.",
@@ -56,6 +98,18 @@
 "de": "Beim Nebenjob habe ich gelernt, die Höflichkeitssprache zu benutzen.",
 "r": "アルバイトで[{敬語|けいご}]の{使|つか}い{方|かた}を{覚|おぼ}えた。"
 },
+"文|ぶん": {
+"s": "短い[文]で答えてください。",
+"de": "Antworten Sie bitte in kurzen Sätzen.",
+"r": "{短|みじか}い[{文|ぶん}]で{答|こた}えてください。",
+"bedeutung": "Satz"
+},
+"文体|ぶんたい": {
+"s": "この作家の[文体]は読みやすい。",
+"de": "Der Stil dieses Autors liest sich leicht.",
+"r": "この{作家|さっか}の[{文体|ぶんたい}]は{読|よ}みやすい。",
+"bedeutung": "Schreibstil"
+},
 "文句|もんく": {
 "s": "弟は毎朝ご飯に[文句]を言う。",
 "de": "Mein kleiner Bruder meckert jeden Morgen über das Essen.",
@@ -64,6 +118,64 @@
 "lesungen": {
 "言う": "いう"
 }
+},
+"文字|もじ": {
+"s": "小さい[文字]は読みにくい。",
+"de": "Kleine Buchstaben sind schwer zu lesen.",
+"r": "{小|ちい}さい[{文字|もじ}]は{読|よ}みにくい。",
+"bedeutung": "Schriftzeichen, Buchstabe"
+},
+"文字|もんじ": {
+"s": "古い[文字]の読み方を研究している。",
+"de": "Ich erforsche, wie man alte Schriftzeichen liest.",
+"r": "{古|ふる}い[{文字|もんじ}]の{読|よ}み{方|かた}を{研究|けんきゅう}している。",
+"bedeutung": "Schriftzeichen (ältere Lesung)",
+"lesungen": {
+"文字": "もんじ"
+}
+},
+"文学|ぶんがく": {
+"s": "大学では日本の[文学]を学んだ。",
+"de": "An der Universität habe ich japanische Literatur studiert.",
+"r": "{大学|だいがく}では{日本|にほん}の[{文学|ぶんがく}]を{学|まな}んだ。"
+},
+"文明|ぶんめい": {
+"s": "川のそばで古い[文明]が生まれた。",
+"de": "An den Flüssen entstanden alte Zivilisationen.",
+"r": "{川|かわ}のそばで{古|ふる}い[{文明|ぶんめい}]が{生|う}まれた。",
+"bedeutung": "Zivilisation"
+},
+"文書|ぶんしょ": {
+"s": "大切な[文書]は金庫にしまう。",
+"de": "Wichtige Schriftstücke kommen in den Tresor.",
+"r": "{大切|たいせつ}な[{文書|ぶんしょ}]は{金庫|きんこ}にしまう。",
+"bedeutung": "Schriftstück"
+},
+"文語|ぶんご": {
+"s": "古い[文語]で書かれた手紙だ。",
+"de": "Ein Brief in alter Schriftsprache.",
+"r": "{古|ふる}い[{文語|ぶんご}]で{書|か}かれた{手紙|てがみ}だ。",
+"bedeutung": "Schriftsprache"
+},
+"料|りょう": {
+"s": "銀行の手数[料]は百円だ。",
+"de": "Die Bankgebühr beträgt hundert Yen.",
+"r": "{銀行|ぎんこう}の{手数|てすう}[{料|りょう}]は{百円|ひゃくえん}だ。",
+"bedeutung": "Gebühr",
+"lesungen": {
+"料": "りょう"
+}
+},
+"料理|りょうり": {
+"s": "父は休みの日に[料理]をする。",
+"de": "Mein Vater kocht an freien Tagen.",
+"r": "{父|ちち}は{休|やす}みの{日|ひ}に[{料理|りょうり}]をする。"
+},
+"料金|りょうきん": {
+"s": "電気の[料金]が上がった。",
+"de": "Die Stromgebühren sind gestiegen.",
+"r": "{電気|でんき}の[{料金|りょうきん}]が{上|あ}がった。",
+"bedeutung": "Gebühr"
 },
 "断つ|たつ": {
 "s": "健康のために、酒を[断つ]ことにした。",
@@ -85,11 +197,100 @@
 "de": "Wegen Bauarbeiten wird morgen Vormittag das Wasser abgestellt.",
 "r": "{工事|こうじ}のため、{明日|あした}の{午前中|ごぜんちゅう}は[{断水|だんすい}]になります。"
 },
+"新しい|あたらしい": {
+"s": "[新しい]くつをはいて出かけた。",
+"de": "Ich bin in neuen Schuhen ausgegangen.",
+"r": "[{新|あたら}しい]くつをはいて{出|で}かけた。"
+},
+"新た|あらた": {
+"s": "[新た]な気持ちで一年を始める。",
+"de": "Mit frischem Mut beginne ich das Jahr.",
+"r": "[{新|あら}た]な{気持|きも}ちで{一年|いちねん}を{始|はじ}める。",
+"bedeutung": "neu, frisch"
+},
+"新人|しんじん": {
+"s": "[新人]の社員に仕事を教える。",
+"de": "Ich arbeite neue Mitarbeitende ein.",
+"r": "[{新人|しんじん}]の{社員|しゃいん}に{仕事|しごと}を{教|おし}える。",
+"bedeutung": "Neuling"
+},
+"新入生|しんにゅうせい": {
+"s": "大学は[新入生]でにぎやかだ。",
+"de": "An der Uni wimmelt es von Erstsemestern.",
+"r": "{大学|だいがく}は[{新入生|しんにゅうせい}]でにぎやかだ。",
+"bedeutung": "neue Schüler und Studierende"
+},
+"新聞|しんぶん": {
+"s": "父は毎朝[新聞]を読んでいる。",
+"de": "Mein Vater liest jeden Morgen die Zeitung.",
+"r": "{父|ちち}は{毎朝|まいあさ}[{新聞|しんぶん}]を{読|よ}んでいる。"
+},
+"新聞社|しんぶんしゃ": {
+"s": "父は[新聞社]に勤めている。",
+"de": "Mein Vater arbeitet bei einem Zeitungsverlag.",
+"r": "{父|ちち}は[{新聞社|しんぶんしゃ}]に{勤|つと}めている。"
+},
+"方|かた": {
+"s": "あちらの[方]はどなたですか。",
+"de": "Wer ist die Person dort drüben?",
+"r": "あちらの[{方|かた}]はどなたですか。"
+},
+"方|ほう": {
+"s": "駅は北の[方]にあります。",
+"de": "Der Bahnhof liegt in nördlicher Richtung.",
+"r": "{駅|えき}は{北|きた}の[{方|ほう}]にあります。",
+"bedeutung": "Richtung, Seite",
+"lesungen": {
+"方": "ほう"
+}
+},
+"方々|かたがた": {
+"s": "お待ちの[方々]はこちらへどうぞ。",
+"de": "Die Wartenden bitte hierher.",
+"r": "お{待|ま}ちの[{方々|かたがた}]はこちらへどうぞ。",
+"bedeutung": "die Damen und Herren"
+},
+"方々|ほうぼう": {
+"s": "[方々]をさがしたが見つからなかった。",
+"de": "Ich habe überall gesucht, aber nichts gefunden.",
+"r": "[{方々|ほうぼう}]をさがしたが{見|み}つからなかった。",
+"bedeutung": "überall, hier und da",
+"lesungen": {
+"方々": "ほうぼう"
+}
+},
 "方式|ほうしき": {
 "s": "今年から試験の[方式]が変わった。",
 "de": "Seit diesem Jahr hat sich die Art der Prüfung geändert.",
 "r": "{今年|ことし}から{試験|しけん}の[{方式|ほうしき}]が{変|か}わった。",
 "bedeutung": "Methode, Verfahren, System"
+},
+"方言|ほうげん": {
+"s": "祖父の話す[方言]は分かりにくい。",
+"de": "Den Dialekt meines Großvaters versteht man schwer.",
+"r": "{祖父|そふ}の{話|はな}す[{方言|ほうげん}]は{分|わ}かりにくい。",
+"bedeutung": "Dialekt"
+},
+"旅|たび": {
+"s": "一人で北海道へ[旅]に出た。",
+"de": "Ich bin allein nach Hokkaido aufgebrochen.",
+"r": "{一人|ひとり}で{北海道|ほっかいどう}へ[{旅|たび}]に{出|で}た。",
+"bedeutung": "Reise"
+},
+"旅行|りょこう": {
+"s": "来月の[旅行]がとても楽しみだ。",
+"de": "Ich freue mich sehr auf die Reise nächsten Monat.",
+"r": "{来月|らいげつ}の[{旅行|りょこう}]がとても{楽|たの}しみだ。"
+},
+"旅館|りょかん": {
+"s": "温泉の[旅館]に一泊した。",
+"de": "Ich habe eine Nacht in einem Gasthaus an heißen Quellen verbracht.",
+"r": "{温泉|おんせん}の[{旅館|りょかん}]に{一泊|いっぱく}した。",
+"lesungen": {
+"一": "いっ",
+"泊": "ぱく",
+"一泊": "いっぱく"
+}
 },
 "日|か": {
 "s": "旅行は[三日間]の予定だ。",
@@ -116,16 +317,39 @@
 "de": "Lasst uns gemeinsam den Termin für die Party festlegen.",
 "r": "パーティーの[{日|ひ}にち]をみんなで{決|き}めよう。"
 },
+"日の入り|ひのいり": {
+"s": "[日の入り]の時間が早くなった。",
+"de": "Die Sonne geht jetzt früher unter.",
+"r": "[{日|ひ}の{入|い}り]の{時間|じかん}が{早|はや}くなった。",
+"bedeutung": "Sonnenuntergang"
+},
+"日の出|ひので": {
+"s": "山の上で[日の出]を見た。",
+"de": "Auf dem Berg habe ich den Sonnenaufgang gesehen.",
+"r": "{山|やま}の{上|うえ}で[{日|ひ}の{出|で}]を{見|み}た。"
+},
 "日中|にっちゅう": {
 "s": "[日中]はまだ暖かいが、夜は寒い。",
 "de": "Tagsüber ist es noch warm, aber nachts ist es kalt.",
 "r": "[{日中|にっちゅう}]はまだ{暖|あたた}かいが、{夜|よる}は{寒|さむ}い。"
+},
+"日夜|にちや": {
+"s": "研究者は[日夜]努力している。",
+"de": "Die Forschenden mühen sich Tag und Nacht.",
+"r": "{研究者|けんきゅうしゃ}は[{日夜|にちや}]{努力|どりょく}している。",
+"bedeutung": "Tag und Nacht"
 },
 "日差し|ひざし": {
 "s": "春の暖かい[日差し]が部屋に入ってくる。",
 "de": "Warmes Frühlingssonnenlicht fällt ins Zimmer.",
 "r": "{春|はる}の{暖|あたた}かい[{日差|ひざ}し]が{部屋|へや}に{入|はい}ってくる。",
 "bedeutung": "Sonnenlicht, Sonnenstrahlen"
+},
+"日帰り|ひがえり": {
+"s": "週末に[日帰り]で温泉へ行った。",
+"de": "Am Wochenende war ich einen Tag an den heißen Quellen.",
+"r": "{週末|しゅうまつ}に[{日帰|ひがえ}り]で{温泉|おんせん}へ{行|い}った。",
+"bedeutung": "Tagesausflug"
 },
 "日常|にちじょう": {
 "s": "スマホは[日常]の生活に欠かせない。",
@@ -136,6 +360,16 @@
 "s": "試験の[日日]が決まった。",
 "de": "Der Termin der Prüfung steht fest.",
 "r": "{試験|しけん}の[{日日|ひにち}]が{決|き}まった。"
+},
+"日時|にちじ": {
+"s": "試験の[日時]はメールで知らせます。",
+"de": "Datum und Uhrzeit der Prüfung teilen wir per Mail mit.",
+"r": "{試験|しけん}の[{日時|にちじ}]はメールで{知|し}らせます。"
+},
+"日曜日|にちようび": {
+"s": "[日曜日]は朝ゆっくり起きる。",
+"de": "Sonntags stehe ich gemütlich auf.",
+"r": "[{日曜日|にちようび}]は{朝|あさ}ゆっくり{起|お}きる。"
 },
 "日本|にっぽん": {
 "s": "観客は「がんばれ、[日本]」と大きな声で応援した。",
@@ -149,5 +383,43 @@
 "s": "[日本]の夏は暑くて湿気が多い。",
 "de": "Der Sommer in Japan ist heiß und schwül.",
 "r": "[{日本|にほん}]の{夏|なつ}は{暑|あつ}くて{湿気|しっけ}が{多|おお}い。"
+},
+"日用品|にちようひん": {
+"s": "駅前の店で[日用品]を買った。",
+"de": "Im Laden am Bahnhof habe ich Dinge für den Alltag gekauft.",
+"r": "{駅前|えきまえ}の{店|みせ}で[{日用品|にちようひん}]を{買|か}った。",
+"bedeutung": "Gegenstände des täglichen Bedarfs"
+},
+"早い|はやい": {
+"s": "今朝はいつもより[早く]目がさめた。",
+"de": "Heute früh bin ich früher als sonst aufgewacht.",
+"r": "{今朝|けさ}はいつもより[{早|はや}く]{目|め}がさめた。"
+},
+"早める|はやめる": {
+"s": "雨のため出発の時間を[早めた]。",
+"de": "Wegen des Regens sind wir früher aufgebrochen.",
+"r": "{雨|あめ}のため{出発|しゅっぱつ}の{時間|じかん}を[{早|はや}めた]。",
+"bedeutung": "vorverlegen, beschleunigen"
+},
+"早口|はやくち": {
+"s": "緊張すると[早口]になる。",
+"de": "Wenn ich nervös bin, rede ich schnell.",
+"r": "{緊張|きんちょう}すると[{早口|はやくち}]になる。",
+"bedeutung": "schnelles Sprechen"
+},
+"早急|さっきゅう": {
+"s": "[早急]な対応が必要だ。",
+"de": "Rasches Handeln ist nötig.",
+"r": "[{早急|さっきゅう}]な{対応|たいおう}が{必要|ひつよう}だ。",
+"bedeutung": "dringend (andere Lesung)",
+"lesungen": {
+"早急": "さっきゅう"
+}
+},
+"早急|そうきゅう": {
+"s": "[早急]に返事をいただきたい。",
+"de": "Ich bitte um baldige Antwort.",
+"r": "[{早急|そうきゅう}]に{返事|へんじ}をいただきたい。",
+"bedeutung": "umgehend"
 }
 }

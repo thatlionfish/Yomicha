@@ -1,4 +1,10 @@
 {
+"お前|おまえ": {
+"s": "[お前]、また遅刻したのか。",
+"de": "Du, bist du schon wieder zu spät?",
+"r": "[お{前|まえ}]、また{遅刻|ちこく}したのか。",
+"bedeutung": "du (derb, unter Männern oder zu Untergebenen)"
+},
 "刀|かたな": {
 "s": "博物館で古い[刀]を見た。",
 "de": "Im Museum habe ich ein altes Schwert gesehen.",
@@ -10,6 +16,116 @@
 "de": "Die Klinge dieses Messers ist sehr scharf.",
 "r": "このナイフの[{刃|は}]はよく{切|き}れる。",
 "bedeutung": "Klinge, Schneide"
+},
+"分|ふん": {
+"s": "駅まで歩いて[十分]ぐらいだ。",
+"de": "Zu Fuß sind es etwa zehn Minuten zum Bahnhof.",
+"r": "{駅|えき}まで{歩|ある}いて[{十分|じゅうふん}]ぐらいだ。"
+},
+"分|ぶ": {
+"s": "三割五[分]の値引きがある。",
+"de": "Es gibt 35 Prozent Rabatt.",
+"r": "{三割|さんわり}{五|ご}[{分|ぶ}]の{値引|ねび}きがある。",
+"bedeutung": "Prozent (in 割・分), ein Zehntel",
+"lesungen": {
+"五分": "ごぶ"
+}
+},
+"分|ぶん": {
+"s": "自分の[分]は自分ではらいます。",
+"de": "Meinen Anteil zahle ich selbst.",
+"r": "{自分|じぶん}の[{分|ぶん}]は{自分|じぶん}ではらいます。"
+},
+"分かる|わかる": {
+"s": "先生の説明はよく[分かる]。",
+"de": "Die Erklärungen der Lehrerin verstehe ich gut.",
+"r": "{先生|せんせい}の{説明|せつめい}はよく[{分|わ}かる]。"
+},
+"分かれる|わかれる": {
+"s": "道はこの先で二つに[分かれる]。",
+"de": "Weiter vorn teilt sich der Weg.",
+"r": "{道|みち}はこの{先|さき}で{二|ふた}つに[{分|わ}かれる]。"
+},
+"分ける|わける": {
+"s": "おかしを三人で[分けた]。",
+"de": "Wir haben die Süßigkeiten zu dritt geteilt.",
+"r": "おかしを{三人|さんにん}で[{分|わ}けた]。"
+},
+"分子|ぶんし": {
+"s": "分数の上の数を[分子]と言う。",
+"de": "Die obere Zahl eines Bruchs heißt Zähler.",
+"r": "{分数|ぶんすう}の{上|うえ}の{数|かず}を[{分子|ぶんし}]と{言|い}う。",
+"bedeutung": "Zähler (Bruch)",
+"lesungen": {
+"言う": "いう"
+}
+},
+"分業|ぶんぎょう": {
+"s": "工場では[分業]が進んでいる。",
+"de": "In der Fabrik ist die Arbeitsteilung weit fortgeschritten.",
+"r": "{工場|こうじょう}では[{分業|ぶんぎょう}]が{進|すす}んでいる。",
+"bedeutung": "Arbeitsteilung"
+},
+"分母|ぶんぼ": {
+"s": "分数の下の数を[分母]と言う。",
+"de": "Die untere Zahl eines Bruchs heißt Nenner.",
+"r": "{分数|ぶんすう}の{下|した}の{数|かず}を[{分母|ぶんぼ}]と{言|い}う。",
+"bedeutung": "Nenner",
+"lesungen": {
+"言う": "いう"
+}
+},
+"分野|ぶんや": {
+"s": "彼は医学の[分野]で有名だ。",
+"de": "Er ist auf dem Gebiet der Medizin bekannt.",
+"r": "{彼|かれ}は{医学|いがく}の[{分野|ぶんや}]で{有名|ゆうめい}だ。",
+"bedeutung": "Fachgebiet"
+},
+"切ない|せつない": {
+"s": "別れの歌を聞くと[切ない]気持ちになる。",
+"de": "Abschiedslieder machen mich wehmütig.",
+"r": "{別|わか}れの{歌|うた}を{聞|き}くと[{切|せつ}ない]{気持|きも}ちになる。",
+"bedeutung": "wehmütig, schmerzlich"
+},
+"切り|きり": {
+"s": "この仕事は[切り]がいいところで休もう。",
+"de": "Machen wir Pause, wenn ein Abschnitt fertig ist.",
+"r": "この{仕事|しごと}は[{切|き}り]がいいところで{休|やす}もう。",
+"bedeutung": "Abschluss, Grenze"
+},
+"切る|きる": {
+"s": "はさみで紙を細く[切る]。",
+"de": "Ich schneide das Papier mit der Schere in Streifen.",
+"r": "はさみで{紙|かみ}を{細|ほそ}く[{切|き}る]。"
+},
+"切れ|きれ": {
+"s": "残った[切れ]で小さいふくろを作った。",
+"de": "Aus dem Stoffrest habe ich einen kleinen Beutel genäht.",
+"r": "{残|のこ}った[{切|き}れ]で{小|ちい}さいふくろを{作|つく}った。",
+"bedeutung": "Stoffstück"
+},
+"切れる|きれる": {
+"s": "この包丁はよく[切れる]。",
+"de": "Dieses Küchenmesser schneidet gut.",
+"r": "この{包丁|ほうちょう}はよく[{切|き}れる]。",
+"bedeutung": "gut schneiden"
+},
+"切れ目|きれめ": {
+"s": "話の[切れ目]で質問した。",
+"de": "In einer Gesprächspause stellte ich eine Frage.",
+"r": "{話|はなし}の[{切|き}れ{目|め}]で{質問|しつもん}した。",
+"bedeutung": "Pause, Einschnitt"
+},
+"切手|きって": {
+"s": "記念の[切手]を集めている。",
+"de": "Ich sammle Gedenkmarken.",
+"r": "{記念|きねん}の[{切手|きって}]を{集|あつ}めている。"
+},
+"切開|せっかい": {
+"s": "医者は傷口を少し[切開]した。",
+"de": "Der Arzt schnitt die Wunde ein wenig auf.",
+"r": "{医者|いしゃ}は{傷口|きずぐち}を{少|すこ}し[{切開|せっかい}]した。",
+"bedeutung": "Aufschneiden (medizinisch)"
 },
 "列|れつ": {
 "s": "店の前に長い[列]ができている。",
@@ -55,6 +171,34 @@
 "r": "{裁判所|さいばんしょ}は{今日|きょう}[{判決|はんけつ}]を{出|だ}した。",
 "bedeutung": "Urteil (Gericht)"
 },
+"別|べつ": {
+"s": "それとこれとは[別]の話だ。",
+"de": "Das ist eine andere Sache.",
+"r": "それとこれとは[{別|べつ}]の{話|はなし}だ。"
+},
+"別々|べつべつ": {
+"s": "料金は[別々]にはらいます。",
+"de": "Wir zahlen getrennt.",
+"r": "{料金|りょうきん}は[{別々|べつべつ}]にはらいます。",
+"bedeutung": "getrennt, einzeln"
+},
+"別に|べつに": {
+"s": "[別に]急いでいるわけではない。",
+"de": "Ich habe es nicht besonders eilig.",
+"r": "[{別|べつ}に]{急|いそ}いでいるわけではない。",
+"bedeutung": "(nicht) besonders"
+},
+"別れ|わかれ": {
+"s": "春は[別れ]の季節でもある。",
+"de": "Der Frühling ist auch die Zeit des Abschieds.",
+"r": "{春|はる}は[{別|わか}れ]の{季節|きせつ}でもある。",
+"bedeutung": "Abschied"
+},
+"別れる|わかれる": {
+"s": "駅で友だちと手をふって[別れた]。",
+"de": "Am Bahnhof habe ich mich winkend verabschiedet.",
+"r": "{駅|えき}で{友|とも}だちと{手|て}をふって[{別|わか}れた]。"
+},
 "利害|りがい": {
 "s": "両国の[利害]が一致して、話し合いが進んだ。",
 "de": "Die Interessen beider Länder stimmten überein, und die Gespräche kamen voran.",
@@ -65,6 +209,44 @@
 "de": "Auf dieser Straße ist die Geschwindigkeit begrenzt.",
 "r": "この{道|みち}は{速度|そくど}が[{制限|せいげん}]されている。",
 "bedeutung": "Beschränkung, Begrenzung"
+},
+"前|ぜん": {
+"s": "[前]首相がこの町を訪れた。",
+"de": "Der frühere Premierminister besuchte die Stadt.",
+"r": "[{前|ぜん}]{首相|しゅしょう}がこの{町|まち}を{訪|おとず}れた。",
+"bedeutung": "ehemalig, vorig",
+"lesungen": {
+"前": "ぜん"
+}
+},
+"前|まえ": {
+"s": "駅の[前]に新しい店ができた。",
+"de": "Vor dem Bahnhof hat ein neues Geschäft eröffnet.",
+"r": "{駅|えき}の[{前|まえ}]に{新|あたら}しい{店|みせ}ができた。"
+},
+"前もって|まえもって": {
+"s": "休む時は[前もって]知らせてください。",
+"de": "Sagen Sie vorher Bescheid, wenn Sie fehlen.",
+"r": "{休|やす}む{時|とき}は[{前|まえ}もって]{知|し}らせてください。",
+"bedeutung": "im Voraus"
+},
+"前売|まえうり": {
+"s": "映画の[前売]券を二まい買った。",
+"de": "Ich habe zwei Kinokarten im Vorverkauf geholt.",
+"r": "{映画|えいが}の[{前売|まえうり}]{券|けん}を{二|に}まい{買|か}った。",
+"bedeutung": "Vorverkauf"
+},
+"前後|ぜんご": {
+"s": "駅は七時[前後]がいちばんこむ。",
+"de": "Um sieben herum ist der Bahnhof am vollsten.",
+"r": "{駅|えき}は{七時|しちじ}[{前後|ぜんご}]がいちばんこむ。",
+"bedeutung": "vorn und hinten"
+},
+"前者|ぜんしゃ": {
+"s": "二つの案のうち[前者]を選んだ。",
+"de": "Von den zwei Vorschlägen habe ich den ersten gewählt.",
+"r": "{二|ふた}つの{案|あん}のうち[{前者|ぜんしゃ}]を{選|えら}んだ。",
+"bedeutung": "ersterer"
 },
 "割と|わりと": {
 "s": "この店の料理は[割と]安くておいしい。",
@@ -96,11 +278,79 @@
 "de": "Wenn man den Studentenausweis zeigt, bekommt man einen Rabatt.",
 "r": "{学生証|がくせいしょう}を{見|み}せると[{割引|わりびき}]が{受|う}けられる。"
 },
+"力|ちから": {
+"s": "このびんは[力]を入れないと開かない。",
+"de": "Diese Flasche geht nur mit Kraft auf.",
+"r": "このびんは[{力|ちから}]を{入|い}れないと{開|あ}かない。",
+"lesungen": {
+"開か": "あか"
+}
+},
+"力|りょく": {
+"s": "日本語の会話[力]を高めたい。",
+"de": "Ich möchte mein Sprechvermögen im Japanischen verbessern.",
+"r": "{日本語|にほんご}の{会話|かいわ}[{力|りょく}]を{高|たか}めたい。",
+"bedeutung": "-fähigkeit, -kraft",
+"lesungen": {
+"力": "りょく"
+}
+},
+"力強い|ちからづよい": {
+"s": "先生の[力強い]言葉に元気が出た。",
+"de": "Die kraftvollen Worte der Lehrerin machten mir Mut.",
+"r": "{先生|せんせい}の[{力強|ちからづよ}い]{言葉|ことば}に{元気|げんき}が{出|で}た。",
+"bedeutung": "kraftvoll"
+},
 "労働|ろうどう": {
 "s": "長時間の[労働]は体によくない。",
 "de": "Langes Arbeiten ist nicht gut für den Körper.",
 "r": "{長時間|ちょうじかん}の[{労働|ろうどう}]は{体|からだ}によくない。",
 "bedeutung": "Arbeit (körperlich, als Leistung)"
+},
+"勉強|べんきょう": {
+"s": "試験のための[勉強]で毎日いそがしい。",
+"de": "Mit dem Lernen für die Prüfung bin ich täglich beschäftigt.",
+"r": "{試験|しけん}のための[{勉強|べんきょう}]で{毎日|まいにち}いそがしい。"
+},
+"動かす|うごかす": {
+"s": "重い机を二人で[動かした]。",
+"de": "Zu zweit haben wir den schweren Tisch verschoben.",
+"r": "{重|おも}い{机|つくえ}を{二人|ふたり}で[{動|うご}かした]。",
+"bedeutung": "bewegen"
+},
+"動き|うごき": {
+"s": "町の人の[動き]を調べた。",
+"de": "Ich habe die Bewegungen der Stadtbewohner untersucht.",
+"r": "{町|まち}の{人|ひと}の[{動|うご}き]を{調|しら}べた。",
+"bedeutung": "Bewegung"
+},
+"動く|うごく": {
+"s": "パソコンが急に[動かなく]なった。",
+"de": "Der Computer funktionierte plötzlich nicht mehr.",
+"r": "パソコンが{急|きゅう}に[{動|うご}かなく]なった。"
+},
+"動作|どうさ": {
+"s": "体が温まると[動作]が軽くなる。",
+"de": "Ist der Körper warm, bewegt man sich leichter.",
+"r": "{体|からだ}が{温|あたた}まると[{動作|どうさ}]が{軽|かる}くなる。",
+"bedeutung": "Bewegung, Handlung"
+},
+"動力|どうりょく": {
+"s": "水車は川の流れを[動力]にする。",
+"de": "Das Wasserrad nutzt die Strömung als Antrieb.",
+"r": "{水車|すいしゃ}は{川|かわ}の{流|なが}れを[{動力|どうりょく}]にする。",
+"bedeutung": "Antriebskraft"
+},
+"動員|どういん": {
+"s": "大会の準備に多くの人が[動員]された。",
+"de": "Viele wurden für die Vorbereitung herangezogen.",
+"r": "{大会|たいかい}の{準備|じゅんび}に{多|おお}くの{人|ひと}が[{動員|どういん}]された。",
+"bedeutung": "Mobilisierung"
+},
+"動物|どうぶつ": {
+"s": "子どものころから[動物]が好きだ。",
+"de": "Seit meiner Kindheit mag ich Tiere.",
+"r": "{子|こ}どものころから[{動物|どうぶつ}]が{好|す}きだ。"
 },
 "勝負|しょうぶ": {
 "s": "この試合は、最後まで[勝負]がわからなかった。",

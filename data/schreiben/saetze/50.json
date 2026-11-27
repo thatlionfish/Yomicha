@@ -1,4 +1,21 @@
 {
+"借り|かり": {
+"s": "あなたには大きな[借り]がある。",
+"de": "Ich stehe tief in deiner Schuld.",
+"r": "あなたには{大|おお}きな[{借|か}り]がある。",
+"bedeutung": "Schuld, Geliehenes"
+},
+"借りる|かりる": {
+"s": "図書館で本を三さつ[借りた]。",
+"de": "Ich habe in der Bibliothek drei Bücher ausgeliehen.",
+"r": "{図書館|としょかん}で{本|ほん}を{三|さん}さつ[{借|か}りた]。"
+},
+"借金|しゃっきん": {
+"s": "車を買うために[借金]をした。",
+"de": "Für das Auto habe ich Schulden gemacht.",
+"r": "{車|くるま}を{買|か}うために[{借金|しゃっきん}]をした。",
+"bedeutung": "Schulden"
+},
 "側|がわ": {
 "s": "道の[右側]を歩いてください。",
 "de": "Bitte gehen Sie auf der rechten Straßenseite.",

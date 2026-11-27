@@ -1,4 +1,15 @@
 {
+"この間|このあいだ": {
+"s": "[この間]は手伝ってくれてありがとう。",
+"de": "Danke, dass du mir neulich geholfen hast.",
+"r": "[この{間|あいだ}]は{手伝|てつだ}ってくれてありがとう。"
+},
+"つかの間|つかのま": {
+"s": "仕事の合間の[つかの間]の休みだ。",
+"de": "Eine kurze Atempause zwischen der Arbeit.",
+"r": "{仕事|しごと}の{合間|あいま}の[つかの{間|ま}]の{休|やす}みだ。",
+"bedeutung": "kurzer Augenblick"
+},
 "長|ちょう": {
 "s": "兄は今年、[課長]になった。",
 "de": "Mein älterer Bruder ist dieses Jahr Abteilungsleiter geworden.",
@@ -19,6 +30,86 @@
 "s": "今年の冬休みはあまり[長く]ない。",
 "de": "Die Winterferien sind dieses Jahr nicht besonders lang.",
 "r": "{今年|ことし}の{冬休|ふゆやす}みはあまり[{長|なが}く]ない。"
+},
+"長女|ちょうじょ": {
+"s": "[長女]は今年、大学に入った。",
+"de": "Die älteste Tochter hat dieses Jahr zu studieren begonnen.",
+"r": "[{長女|ちょうじょ}]は{今年|ことし}、{大学|だいがく}に{入|はい}った。",
+"bedeutung": "älteste Tochter"
+},
+"長男|ちょうなん": {
+"s": "[長男]は銀行に勤めている。",
+"de": "Der älteste Sohn arbeitet bei einer Bank.",
+"r": "[{長男|ちょうなん}]は{銀行|ぎんこう}に{勤|つと}めている。",
+"bedeutung": "ältester Sohn"
+},
+"開く|あく": {
+"s": "このドアは自動で[開く]。",
+"de": "Diese Tür geht von selbst auf.",
+"r": "このドアは{自動|じどう}で[{開|あ}く]。"
+},
+"開く|ひらく": {
+"s": "来月、友だちが絵の展覧会を[開く]。",
+"de": "Nächsten Monat veranstaltet eine Freundin eine Bilderausstellung.",
+"r": "{来月|らいげつ}、{友|とも}だちが{絵|え}の{展覧会|てんらんかい}を[{開|ひら}く]。"
+},
+"開ける|あける": {
+"s": "暑いので窓を[開けて]もいいですか。",
+"de": "Es ist heiß, darf ich das Fenster öffnen?",
+"r": "{暑|あつ}いので{窓|まど}を[{開|あ}けて]もいいですか。"
+},
+"開会|かいかい": {
+"s": "大会の[開会]は九時です。",
+"de": "Die Eröffnung des Turniers ist um neun.",
+"r": "{大会|たいかい}の[{開会|かいかい}]は{九時|くじ}です。",
+"bedeutung": "Eröffnung"
+},
+"開始|かいし": {
+"s": "試合の[開始]は午後二時です。",
+"de": "Das Spiel beginnt um zwei Uhr nachmittags.",
+"r": "{試合|しあい}の[{開始|かいし}]は{午後|ごご}{二時|にじ}です。",
+"bedeutung": "Beginn"
+},
+"開発|かいはつ": {
+"s": "この会社は薬の[開発]をしている。",
+"de": "Diese Firma entwickelt Medikamente.",
+"r": "この{会社|かいしゃ}は{薬|くすり}の[{開発|かいはつ}]をしている。",
+"bedeutung": "Entwicklung"
+},
+"開通|かいつう": {
+"s": "新しいトンネルが来年[開通]する。",
+"de": "Der neue Tunnel wird nächstes Jahr eröffnet.",
+"r": "{新|あたら}しいトンネルが{来年|らいねん}[{開通|かいつう}]する。",
+"bedeutung": "Eröffnung (einer Strecke)"
+},
+"間|あいだ": {
+"s": "休みの[間]に部屋をそうじした。",
+"de": "In den Ferien habe ich das Zimmer geputzt.",
+"r": "{休|やす}みの[{間|あいだ}]に{部屋|へや}をそうじした。"
+},
+"間|かん": {
+"s": "東京と大阪の[間]を新幹線が走る。",
+"de": "Zwischen Tokio und Osaka fährt der Shinkansen.",
+"r": "{東京|とうきょう}と{大阪|おおさか}の[{間|かん}]を{新幹線|しんかんせん}が{走|はし}る。",
+"bedeutung": "zwischen (A und B)",
+"lesungen": {
+"間": "かん"
+}
+},
+"間|ま": {
+"s": "話の[間]の取り方が上手だ。",
+"de": "Er setzt beim Erzählen die Pausen geschickt.",
+"r": "{話|はなし}の[{間|ま}]の{取|と}り{方|かた}が{上手|じょうず}だ。",
+"bedeutung": "Pause, Zwischenraum",
+"lesungen": {
+"間": "ま"
+}
+},
+"間もなく|まもなく": {
+"s": "電車は[間もなく]駅に着きます。",
+"de": "Der Zug erreicht in Kürze den Bahnhof.",
+"r": "{電車|でんしゃ}は[{間|ま}もなく]{駅|えき}に{着|つ}きます。",
+"bedeutung": "in Kürze, bald"
 },
 "関与|かんよ": {
 "s": "彼はその計画に[関与]していない。",

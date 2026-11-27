@@ -1,8 +1,142 @@
 {
+"西|にし": {
+"s": "夕日が[西]の空にしずむ。",
+"de": "Die Abendsonne sinkt am westlichen Himmel.",
+"r": "{夕日|ゆうひ}が[{西|にし}]の{空|そら}にしずむ。"
+},
+"西日|にしび": {
+"s": "この部屋は夏に[西日]が強い。",
+"de": "Im Sommer knallt die Nachmittagssonne in dieses Zimmer.",
+"r": "この{部屋|へや}は{夏|なつ}に[{西日|にしび}]が{強|つよ}い。",
+"bedeutung": "tief stehende Westsonne"
+},
+"西洋|せいよう": {
+"s": "この建物は[西洋]の様式だ。",
+"de": "Dieses Gebäude ist im westlichen Stil.",
+"r": "この{建物|たてもの}は[{西洋|せいよう}]の{様式|ようしき}だ。"
+},
 "要求|ようきゅう": {
 "s": "労働者は給料を上げるよう[要求]した。",
 "de": "Die Arbeiter forderten eine Lohnerhöhung.",
 "r": "{労働者|ろうどうしゃ}は{給料|きゅうりょう}を{上|あ}げるよう[{要求|ようきゅう}]した。"
+},
+"見える|みえる": {
+"s": "窓から富士山が[見える]。",
+"de": "Vom Fenster aus sieht man den Fuji.",
+"r": "{窓|まど}から{富士山|ふじやま}が[{見|み}える]。"
+},
+"見せびらかす|みせびらかす": {
+"s": "弟は新しい時計を[見せびらかして]いる。",
+"de": "Mein Bruder protzt mit seiner neuen Uhr.",
+"r": "{弟|おとうと}は{新|あたら}しい{時計|とけい}を[{見|み}せびらかして]いる。",
+"bedeutung": "zur Schau stellen"
+},
+"見せる|みせる": {
+"s": "旅行の写真を友だちに[見せた]。",
+"de": "Ich habe Freunden die Reisefotos gezeigt.",
+"r": "{旅行|りょこう}の{写真|しゃしん}を{友|とも}だちに[{見|み}せた]。"
+},
+"見せ物|みせもの": {
+"s": "祭りには[見せ物]の小屋が出る。",
+"de": "Beim Fest stehen Schaubuden.",
+"r": "{祭|まつ}りには[{見|み}せ{物|もの}]の{小屋|こや}が{出|で}る。",
+"bedeutung": "Vorführung zur Schau"
+},
+"見つかる|みつかる": {
+"s": "なくしたさいふが[見つかった]。",
+"de": "Das verlorene Portemonnaie ist wieder da.",
+"r": "なくしたさいふが[{見|み}つかった]。"
+},
+"見つける|みつける": {
+"s": "安くていい部屋を[見つけた]。",
+"de": "Ich habe ein gutes, günstiges Zimmer gefunden.",
+"r": "{安|やす}くていい{部屋|へや}を[{見|み}つけた]。"
+},
+"見なす|みなす": {
+"s": "返事がない人は欠席と[見なす]。",
+"de": "Wer nicht antwortet, gilt als abwesend.",
+"r": "{返事|へんじ}がない{人|ひと}は{欠席|けっせき}と[{見|み}なす]。",
+"bedeutung": "ansehen als"
+},
+"見る|みる": {
+"s": "ねる前に少しテレビを[見る]。",
+"de": "Vor dem Schlafen sehe ich ein wenig fern.",
+"r": "ねる{前|まえ}に{少|すこ}しテレビを[{見|み}る]。"
+},
+"見上げる|みあげる": {
+"s": "高いビルを下から[見上げた]。",
+"de": "Ich habe von unten am Hochhaus hinaufgeschaut.",
+"r": "{高|たか}いビルを{下|した}から[{見上|みあ}げた]。",
+"bedeutung": "hinaufsehen"
+},
+"見下ろす|みおろす": {
+"s": "山の上から町を[見下ろした]。",
+"de": "Vom Berg habe ich auf die Stadt hinabgesehen.",
+"r": "{山|やま}の{上|うえ}から{町|まち}を[{見下|みお}ろした]。",
+"bedeutung": "hinabsehen"
+},
+"見事|みごと": {
+"s": "庭の桜が[見事]にさいた。",
+"de": "Die Kirsche im Garten blüht prächtig.",
+"r": "{庭|にわ}の{桜|さくら}が[{見事|みごと}]にさいた。",
+"bedeutung": "prächtig, großartig"
+},
+"見出し|みだし": {
+"s": "新聞の[見出し]だけ読んだ。",
+"de": "Ich habe nur die Überschriften der Zeitung gelesen.",
+"r": "{新聞|しんぶん}の[{見出|みだ}し]だけ{読|よ}んだ。"
+},
+"見地|けんち": {
+"s": "教育の[見地]から意見を述べた。",
+"de": "Ich äußerte mich aus pädagogischer Sicht.",
+"r": "{教育|きょういく}の[{見地|けんち}]から{意見|いけん}を{述|の}べた。",
+"bedeutung": "Gesichtspunkt"
+},
+"見学|けんがく": {
+"s": "授業で工場の[見学]に行った。",
+"de": "Mit der Klasse haben wir eine Fabrik besichtigt.",
+"r": "{授業|じゅぎょう}で{工場|こうじょう}の[{見学|けんがく}]に{行|い}った。",
+"bedeutung": "Besichtigung (zum Lernen)"
+},
+"見本|みほん": {
+"s": "[見本]を見てから注文した。",
+"de": "Ich habe erst das Muster angesehen und dann bestellt.",
+"r": "[{見本|みほん}]を{見|み}てから{注文|ちゅうもん}した。"
+},
+"見物|けんぶつ": {
+"s": "京都でお寺を[見物]した。",
+"de": "In Kyoto habe ich Tempel besichtigt.",
+"r": "{京都|きょうと}でお{寺|てら}を[{見物|けんぶつ}]した。"
+},
+"見習う|みならう": {
+"s": "先輩の仕事ぶりを[見習う]。",
+"de": "Ich nehme mir ein Beispiel an den Älteren.",
+"r": "{先輩|せんぱい}の{仕事|しごと}ぶりを[{見習|みなら}う]。",
+"bedeutung": "sich ein Beispiel nehmen"
+},
+"見計らう|みはからう": {
+"s": "時間を[見計らって]電話した。",
+"de": "Ich habe zu einem passenden Zeitpunkt angerufen.",
+"r": "{時間|じかん}を[{見計|みはか}らって]{電話|でんわ}した。",
+"bedeutung": "abpassen"
+},
+"見送り|みおくり": {
+"s": "空港まで友だちの[見送り]に行った。",
+"de": "Ich habe eine Freundin zum Flughafen gebracht.",
+"r": "{空港|くうこう}まで{友|とも}だちの[{見送|みおく}り]に{行|い}った。",
+"bedeutung": "Verabschiedung"
+},
+"見送る|みおくる": {
+"s": "駅のホームで両親を[見送った]。",
+"de": "Am Bahnsteig habe ich meine Eltern verabschiedet.",
+"r": "{駅|えき}のホームで{両親|りょうしん}を[{見送|みおく}った]。",
+"bedeutung": "verabschieden"
+},
+"見通し|みとおし": {
+"s": "この道は[見通し]が悪い。",
+"de": "Diese Straße ist unübersichtlich.",
+"r": "この{道|みち}は[{見通|みとお}し]が{悪|わる}い。",
+"bedeutung": "Sicht"
 },
 "規制|きせい": {
 "s": "祭りの日は車の通行が[規制]される。",
@@ -13,5 +147,39 @@
 "s": "この寮には厳しい[規則]がある。",
 "de": "In diesem Wohnheim gibt es strenge Regeln.",
 "r": "この{寮|りょう}には{厳|きび}しい[{規則|きそく}]がある。"
+},
+"親|おや": {
+"s": "[親]に心配をかけたくない。",
+"de": "Ich will meinen Eltern keine Sorgen machen.",
+"r": "[{親|おや}]に{心配|しんぱい}をかけたくない。"
+},
+"親しい|したしい": {
+"s": "彼とは[親しい]仲だ。",
+"de": "Mit ihm bin ich eng befreundet.",
+"r": "{彼|かれ}とは[{親|した}しい]{仲|なか}だ。",
+"bedeutung": "vertraut, eng"
+},
+"親しむ|したしむ": {
+"s": "子どものころから本に[親しんで]きた。",
+"de": "Seit der Kindheit bin ich mit Büchern vertraut.",
+"r": "{子|こ}どものころから{本|ほん}に[{親|した}しんで]きた。",
+"bedeutung": "vertraut werden, genießen"
+},
+"親切|しんせつ": {
+"s": "道を聞いたら[親切]に教えてくれた。",
+"de": "Auf meine Frage nach dem Weg half man mir freundlich.",
+"r": "{道|みち}を{聞|き}いたら[{親切|しんせつ}]に{教|おし}えてくれた。"
+},
+"親友|しんゆう": {
+"s": "[親友]に悩みを相談した。",
+"de": "Ich habe meine Sorgen mit einer engen Freundin besprochen.",
+"r": "[{親友|しんゆう}]に{悩|なや}みを{相談|そうだん}した。",
+"bedeutung": "enger Freund, enge Freundin"
+},
+"親父|おやじ": {
+"s": "うちの[親父]はつりが好きだ。",
+"de": "Mein alter Herr angelt gern.",
+"r": "うちの[{親父|おやじ}]はつりが{好|す}きだ。",
+"bedeutung": "Vater (salopp)"
 }
 }

@@ -24,10 +24,98 @@
 "de": "Nach einem Jahr Mühe habe ich die Prüfung bestanden.",
 "r": "{一年間|いちねんかん}{努力|どりょく}して、{試験|しけん}に[{合格|ごうかく}]した。"
 },
+"同|どう": {
+"s": "A社と話し合い、[同]社の案を受け入れた。",
+"de": "Nach Gesprächen mit Firma A nahmen wir deren Vorschlag an.",
+"r": "A{社|しゃ}と{話|はな}し{合|あ}い、[{同|どう}]{社|しゃ}の{案|あん}を{受|う}け{入|い}れた。",
+"bedeutung": "derselbe, besagt"
+},
+"同い年|おないどし": {
+"s": "彼とは[同い年]だ。",
+"de": "Er und ich sind gleich alt.",
+"r": "{彼|かれ}とは[{同|おな}い{年|どし}]だ。",
+"bedeutung": "gleichaltrig"
+},
+"同じ|おなじ": {
+"s": "私は妹と[同じ]学校に通っていた。",
+"de": "Ich war auf derselben Schule wie meine jüngere Schwester.",
+"r": "{私|わたし}は{妹|いもうと}と[{同|おな}じ]{学校|がっこう}に{通|かよ}っていた。"
+},
+"同一|どういつ": {
+"s": "二つは[同一]の人物だと分かった。",
+"de": "Es stellte sich heraus, dass beide dieselbe Person sind.",
+"r": "{二|ふた}つは[{同一|どういつ}]の{人物|じんぶつ}だと{分|わ}かった。",
+"bedeutung": "identisch, derselbe"
+},
+"同意|どうい": {
+"s": "ほとんどの人が私の案に[同意]した。",
+"de": "Fast alle stimmten meinem Vorschlag zu.",
+"r": "ほとんどの{人|ひと}が{私|わたし}の{案|あん}に[{同意|どうい}]した。",
+"bedeutung": "Zustimmung"
+},
+"同時|どうじ": {
+"s": "二人は[同時]に手を上げた。",
+"de": "Die beiden hoben gleichzeitig die Hand.",
+"r": "{二人|ふたり}は[{同時|どうじ}]に{手|て}を{上|あ}げた。",
+"bedeutung": "gleichzeitig"
+},
 "同格|どうかく": {
 "s": "この大会では、プロもアマチュアも[同格]に扱われる。",
 "de": "Bei diesem Turnier werden Profis und Amateure gleichrangig behandelt.",
 "r": "この{大会|たいかい}では、プロもアマチュアも[{同格|どうかく}]に{扱|あつか}われる。"
+},
+"名|な": {
+"s": "彼は[名]の知れた料理人だ。",
+"de": "Er ist ein namhafter Koch.",
+"r": "{彼|かれ}は[{名|な}]の{知|し}れた{料理人|りょうりにん}だ。",
+"bedeutung": "Name",
+"lesungen": {
+"名": "な"
+}
+},
+"名|めい": {
+"s": "参加者は二十[名]でした。",
+"de": "Es waren zwanzig Teilnehmende.",
+"r": "{参加者|さんかしゃ}は{二十|にじゅう}[{名|めい}]でした。",
+"bedeutung": "Zählwort für Personen",
+"lesungen": {
+"名": "めい"
+}
+},
+"名人|めいじん": {
+"s": "祖父はつりの[名人]だった。",
+"de": "Mein Großvater war ein Meister im Angeln.",
+"r": "{祖父|そふ}はつりの[{名人|めいじん}]だった。",
+"bedeutung": "Meister, Könner"
+},
+"名作|めいさく": {
+"s": "この映画は[名作]と言われている。",
+"de": "Dieser Film gilt als Meisterwerk.",
+"r": "この{映画|えいが}は[{名作|めいさく}]と{言|い}われている。",
+"bedeutung": "Meisterwerk"
+},
+"名前|なまえ": {
+"s": "花の[名前]を調べてみた。",
+"de": "Ich habe den Namen der Blume nachgeschlagen.",
+"r": "{花|はな}の[{名前|なまえ}]を{調|しら}べてみた。"
+},
+"名字|みょうじ": {
+"s": "日本では[名字]を先に書く。",
+"de": "In Japan schreibt man den Familiennamen zuerst.",
+"r": "{日本|にほん}では[{名字|みょうじ}]を{先|さき}に{書|か}く。",
+"bedeutung": "Familienname"
+},
+"名物|めいぶつ": {
+"s": "この町の[名物]はうなぎだ。",
+"de": "Die Spezialität dieser Stadt ist Aal.",
+"r": "この{町|まち}の[{名物|めいぶつ}]はうなぎだ。",
+"bedeutung": "Spezialität"
+},
+"名高い|なだかい": {
+"s": "ここは桜で[名高い]寺だ。",
+"de": "Dieser Tempel ist für seine Kirschblüte berühmt.",
+"r": "ここは{桜|さくら}で[{名高|なだか}い]{寺|てら}だ。",
+"bedeutung": "berühmt"
 },
 "告げる|つげる": {
 "s": "彼は何も[告げず]に出ていった。",
@@ -40,5 +128,72 @@
 "de": "Er hat ihr gestanden, dass er sie mag.",
 "r": "{彼|かれ}は{彼女|かのじょ}に{好|す}きだと[{告白|こくはく}]した。",
 "bedeutung": "Geständnis, Liebeserklärung"
+},
+"味|あじ": {
+"s": "このスープは[味]がこい。",
+"de": "Diese Suppe schmeckt kräftig.",
+"r": "このスープは[{味|あじ}]がこい。"
+},
+"味|み": {
+"s": "このソースは少し苦[味]がある。",
+"de": "Diese Soße ist leicht bitter.",
+"r": "このソースは{少|すこ}し{苦|にが}[{味|み}]がある。",
+"bedeutung": "Geschmacksnote",
+"lesungen": {
+"味": "み",
+"苦": "にが"
+}
+},
+"味わい|あじわい": {
+"s": "この詩には深い[味わい]がある。",
+"de": "Dieses Gedicht hat Tiefe.",
+"r": "この{詩|し}には{深|ふか}い[{味|あじ}わい]がある。",
+"bedeutung": "Geschmack, Reiz",
+"lesungen": {
+"深い": "ふかい"
+}
+},
+"味わう|あじわう": {
+"s": "お茶をゆっくり[味わう]。",
+"de": "Ich koste den Tee in Ruhe.",
+"r": "お{茶|ちゃ}をゆっくり[{味|あじ}わう]。",
+"bedeutung": "auskosten, schmecken"
+},
+"味方|みかた": {
+"s": "私はいつでもあなたの[味方]だ。",
+"de": "Ich bin immer auf deiner Seite.",
+"r": "{私|わたし}はいつでもあなたの[{味方|みかた}]だ。",
+"bedeutung": "Verbündete(r)"
+},
+"品|しな": {
+"s": "この店はいい[品]がそろっている。",
+"de": "Dieser Laden führt gute Ware.",
+"r": "この{店|みせ}はいい[{品|しな}]がそろっている。",
+"bedeutung": "Ware, Artikel"
+},
+"品|ひん": {
+"s": "彼女の話し方には[品]がある。",
+"de": "Ihre Art zu sprechen hat Stil.",
+"r": "{彼女|かのじょ}の{話|はな}し{方|かた}には[{品|ひん}]がある。",
+"bedeutung": "Anstand, Eleganz",
+"lesungen": {
+"品": "ひん"
+}
+},
+"品物|しなもの": {
+"s": "この店はめずらしい[品物]を売っている。",
+"de": "Dieser Laden verkauft seltene Waren.",
+"r": "この{店|みせ}はめずらしい[{品物|しなもの}]を{売|う}っている。"
+},
+"品質|ひんしつ": {
+"s": "この店の野菜は[品質]がいい。",
+"de": "Das Gemüse dieses Ladens hat gute Qualität.",
+"r": "この{店|みせ}の{野菜|やさい}は[{品質|ひんしつ}]がいい。",
+"bedeutung": "Qualität"
+},
+"員|いん": {
+"s": "図書館の係[員]に本の場所を聞いた。",
+"de": "Ich habe eine Angestellte der Bibliothek nach dem Buch gefragt.",
+"r": "{図書館|としょかん}の{係|かかり}[{員|いん}]に{本|ほん}の{場所|ばしょ}を{聞|き}いた。"
 }
 }

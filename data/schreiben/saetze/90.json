@@ -28,16 +28,181 @@
 "de": "Mein Großvater soll nächste Woche aus dem Krankenhaus entlassen werden.",
 "r": "{祖父|そふ}は{来週|らいしゅう}[{退院|たいいん}]する{予定|よてい}です。"
 },
+"送る|おくる": {
+"s": "実家の母に果物を[送った]。",
+"de": "Ich habe meiner Mutter Obst geschickt.",
+"r": "{実家|じっか}の{母|はは}に{果物|くだもの}を[{送|おく}った]。"
+},
+"送別|そうべつ": {
+"s": "先輩の[送別]会を開いた。",
+"de": "Wir haben eine Abschiedsfeier für den älteren Kollegen gegeben.",
+"r": "{先輩|せんぱい}の[{送別|そうべつ}]{会|かい}を{開|ひら}いた。",
+"bedeutung": "Verabschiedung"
+},
+"送料|そうりょう": {
+"s": "三千円以上は[送料]が無料です。",
+"de": "Ab dreitausend Yen ist der Versand gratis.",
+"r": "{三千円|さんぜんえん}{以上|いじょう}は[{送料|そうりょう}]が{無料|むりょう}です。",
+"bedeutung": "Versandkosten",
+"lesungen": {
+"千": "ぜん",
+"三千": "さんぜん"
+}
+},
+"送金|そうきん": {
+"s": "国の家族に毎月[送金]している。",
+"de": "Ich überweise meiner Familie daheim jeden Monat Geld.",
+"r": "{国|くに}の{家族|かぞく}に{毎月|まいつき}[{送金|そうきん}]している。",
+"bedeutung": "Geldüberweisung"
+},
+"通|つう": {
+"s": "手紙を三[通]書いた。",
+"de": "Ich habe drei Briefe geschrieben.",
+"r": "{手紙|てがみ}を{三|さん}[{通|つう}]{書|か}いた。",
+"bedeutung": "Zählwort für Briefe",
+"lesungen": {
+"通": "つう"
+}
+},
+"通う|かよう": {
+"s": "週に二回、料理の教室に[通って]いる。",
+"de": "Zweimal pro Woche gehe ich in einen Kochkurs.",
+"r": "{週|しゅう}に{二回|にかい}、{料理|りょうり}の{教室|きょうしつ}に[{通|かよ}って]いる。",
+"lesungen": {
+"通っ": "かよっ"
+}
+},
+"通じる|つうじる": {
+"s": "つたない英語でも気持ちは[通じる]。",
+"de": "Auch mit holprigem Englisch versteht man sich.",
+"r": "つたない{英語|えいご}でも{気持|きも}ちは[{通|つう}じる]。",
+"bedeutung": "verstanden werden"
+},
+"通す|とおす": {
+"s": "細い道を車を[通す]のは難しい。",
+"de": "Ein Auto durch die enge Gasse zu bringen ist schwer.",
+"r": "{細|ほそ}い{道|みち}を{車|くるま}を[{通|とお}す]のは{難|むずか}しい。",
+"bedeutung": "durchlassen, durchbringen"
+},
+"通ずる|つうずる": {
+"s": "この廊下は体育館に[通ずる]。",
+"de": "Dieser Flur führt zur Turnhalle.",
+"r": "この{廊下|ろうか}は{体育館|たいいくかん}に[{通|つう}ずる]。",
+"bedeutung": "führen zu"
+},
+"通り|とおり": {
+"s": "駅前の[通り]には店が並んでいる。",
+"de": "An der Straße vor dem Bahnhof reihen sich Läden.",
+"r": "{駅前|えきまえ}の[{通|とお}り]には{店|みせ}が{並|なら}んでいる。"
+},
+"通る|とおる": {
+"s": "この道は大きいトラックがよく[通る]。",
+"de": "Auf dieser Straße fahren oft große Lastwagen.",
+"r": "この{道|みち}は{大|おお}きいトラックがよく[{通|とお}る]。"
+},
+"通学|つうがく": {
+"s": "[通学]には一時間かかる。",
+"de": "Der Schulweg dauert eine Stunde.",
+"r": "[{通学|つうがく}]には{一時間|いちじかん}かかる。",
+"bedeutung": "Schulweg"
+},
 "通常|つうじょう": {
 "s": "[通常]、荷物は三日で届く。",
 "de": "Normalerweise kommt das Paket in drei Tagen an.",
 "r": "[{通常|つうじょう}]、{荷物|にもつ}は{三日|みっか}で{届|とど}く。",
 "bedeutung": "gewöhnlich, normalerweise"
 },
+"通用|つうよう": {
+"s": "このカードは全国で[通用]する。",
+"de": "Diese Karte gilt im ganzen Land.",
+"r": "このカードは{全国|ぜんこく}で[{通用|つうよう}]する。",
+"bedeutung": "Gültigkeit, Geltung"
+},
+"通知|つうち": {
+"s": "合格の[通知]が郵便で届いた。",
+"de": "Die Zusage kam mit der Post.",
+"r": "{合格|ごうかく}の[{通知|つうち}]が{郵便|ゆうびん}で{届|とど}いた。",
+"bedeutung": "Benachrichtigung"
+},
+"通行|つうこう": {
+"s": "工事のため、この道は[通行]できない。",
+"de": "Wegen Bauarbeiten ist die Straße gesperrt.",
+"r": "{工事|こうじ}のため、この{道|みち}は[{通行|つうこう}]できない。",
+"bedeutung": "Durchfahrt, Passage"
+},
+"週|しゅう": {
+"s": "雨の少ない[週]だった。",
+"de": "Es war eine regenarme Woche.",
+"r": "{雨|あめ}の{少|すく}ない[{週|しゅう}]だった。",
+"bedeutung": "Woche"
+},
+"週間|しゅうかん": {
+"s": "日本に来て二[週間]になる。",
+"de": "Ich bin seit zwei Wochen in Japan.",
+"r": "{日本|にほん}に{来|き}て{二|に}[{週間|しゅうかん}]になる。"
+},
+"運|うん": {
+"s": "[運]よく最後の席が取れた。",
+"de": "Zum Glück bekam ich den letzten Platz.",
+"r": "[{運|うん}]よく{最後|さいご}の{席|せき}が{取|と}れた。",
+"bedeutung": "Glück, Schicksal"
+},
+"運ぶ|はこぶ": {
+"s": "引っ越しの荷物を二階へ[運んだ]。",
+"de": "Ich habe das Umzugsgut in den ersten Stock getragen.",
+"r": "{引|ひ}っ{越|こ}しの{荷物|にもつ}を{二階|にかい}へ[{運|はこ}んだ]。"
+},
+"運動|うんどう": {
+"s": "体のために少し[運動]したほうがいい。",
+"de": "Für den Körper sollte man sich etwas bewegen.",
+"r": "{体|からだ}のために{少|すこ}し[{運動|うんどう}]したほうがいい。"
+},
+"運用|うんよう": {
+"s": "お金の[運用]について学んだ。",
+"de": "Ich habe gelernt, wie man Geld anlegt.",
+"r": "お{金|かね}の[{運用|うんよう}]について{学|まな}んだ。",
+"bedeutung": "Anwendung, Anlage"
+},
+"運転|うんてん": {
+"s": "夜の[運転]は気をつけたほうがいい。",
+"de": "Beim Fahren in der Nacht sollte man aufpassen.",
+"r": "{夜|よる}の[{運転|うんてん}]は{気|き}をつけたほうがいい。"
+},
+"運転手|うんてんしゅ": {
+"s": "バスの[運転手]に行き先を確かめた。",
+"de": "Ich habe den Busfahrer nach dem Ziel gefragt.",
+"r": "バスの[{運転手|うんてんしゅ}]に{行|い}き{先|さき}を{確|たし}かめた。"
+},
+"運送|うんそう": {
+"s": "荷物は[運送]会社にたのんだ。",
+"de": "Das Gepäck habe ich einer Spedition übergeben.",
+"r": "{荷物|にもつ}は[{運送|うんそう}]{会社|かいしゃ}にたのんだ。",
+"bedeutung": "Transport"
+},
 "過失|かしつ": {
 "s": "大事なファイルを消したのは、私の[過失]です。",
 "de": "Dass die wichtige Datei gelöscht wurde, war mein Versehen.",
 "r": "{大事|だいじ}なファイルを{消|け}したのは、{私|わたし}の[{過失|かしつ}]です。",
 "bedeutung": "Versehen, Fehler, Fahrlässigkeit"
+},
+"道|どう": {
+"s": "弟は柔[道]を習っている。",
+"de": "Mein Bruder lernt Judo.",
+"r": "{弟|おとうと}は{柔|やわ}[{道|どう}]を{習|なら}っている。",
+"bedeutung": "Weg (einer Kunst)",
+"lesungen": {
+"道": "どう"
+}
+},
+"道|みち": {
+"s": "[道]にまよって、時間がかかった。",
+"de": "Ich habe mich verlaufen und lange gebraucht.",
+"r": "[{道|みち}]にまよって、{時間|じかん}がかかった。"
+},
+"道場|どうじょう": {
+"s": "週に二回、[道場]でけいこをする。",
+"de": "Zweimal die Woche übe ich in der Übungshalle.",
+"r": "{週|しゅう}に{二回|にかい}、[{道場|どうじょう}]でけいこをする。",
+"bedeutung": "Übungshalle (Kampfkunst)"
 }
 }

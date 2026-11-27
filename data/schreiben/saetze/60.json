@@ -1,7 +1,117 @@
 {
+"思いっきり|おもいっきり": {
+"s": "休みの日に[思いっきり]遊んだ。",
+"de": "An freien Tagen habe ich mich richtig ausgetobt.",
+"r": "{休|やす}みの{日|ひ}に[{思|おも}いっきり]{遊|あそ}んだ。",
+"bedeutung": "aus Leibeskräften"
+},
+"思いっ切り|おもいっきり": {
+"s": "[思いっ切り]泣いたら楽になった。",
+"de": "Nachdem ich mich ausgeweint hatte, ging es mir besser.",
+"r": "[{思|おも}いっ{切|き}り]{泣|な}いたら{楽|らく}になった。",
+"bedeutung": "nach Herzenslust"
+},
+"思い出|おもいで": {
+"s": "この町には楽しい[思い出]がある。",
+"de": "Mit dieser Stadt verbinde ich schöne Erinnerungen.",
+"r": "この{町|まち}には{楽|たの}しい[{思|おも}い{出|で}]がある。",
+"bedeutung": "Erinnerung"
+},
+"思い出す|おもいだす": {
+"s": "写真を見ると子どものころを[思い出す]。",
+"de": "Das Foto erinnert mich an meine Kindheit.",
+"r": "{写真|しゃしん}を{見|み}ると{子|こ}どものころを[{思|おも}い{出|だ}す]。"
+},
+"思い切り|おもいきり": {
+"s": "ボールを[思い切り]投げた。",
+"de": "Ich habe den Ball mit voller Kraft geworfen.",
+"r": "ボールを[{思|おも}い{切|き}り]{投|な}げた。",
+"bedeutung": "mit aller Kraft"
+},
+"思う|おもう": {
+"s": "この映画はいい作品だと[思う]。",
+"de": "Ich finde, dieser Film ist ein gutes Werk.",
+"r": "この{映画|えいが}はいい{作品|さくひん}だと[{思|おも}う]。"
+},
+"思わず|おもわず": {
+"s": "あまりのおいしさに[思わず]声が出た。",
+"de": "Es schmeckte so gut, dass mir unwillkürlich ein Laut entfuhr.",
+"r": "あまりのおいしさに[{思|おも}わず]{声|こえ}が{出|で}た。",
+"bedeutung": "unwillkürlich"
+},
+"思考|しこう": {
+"s": "つかれると[思考]が止まる。",
+"de": "Wenn ich müde bin, steht das Denken still.",
+"r": "つかれると[{思考|しこう}]が{止|と}まる。",
+"bedeutung": "Denken"
+},
+"急|きゅう": {
+"s": "[急]な雨でかさがなくて困った。",
+"de": "Der plötzliche Regen brachte mich ohne Schirm in Verlegenheit.",
+"r": "[{急|きゅう}]な{雨|あめ}でかさがなくて{困|こま}った。"
+},
+"急かす|せかす": {
+"s": "朝は母に[急かされて]ばかりだ。",
+"de": "Morgens treibt mich meine Mutter ständig an.",
+"r": "{朝|あさ}は{母|はは}に[{急|せ}かされて]ばかりだ。",
+"bedeutung": "drängen"
+},
+"急ぐ|いそぐ": {
+"s": "時間がないから[急ごう]。",
+"de": "Wir haben keine Zeit, beeilen wir uns.",
+"r": "{時間|じかん}がないから[{急|いそ}ごう]。"
+},
+"急に|きゅうに": {
+"s": "[急に]気温が下がった。",
+"de": "Plötzlich fiel die Temperatur.",
+"r": "[{急|きゅう}に]{気温|きおん}が{下|さ}がった。",
+"bedeutung": "plötzlich"
+},
+"急行|きゅうこう": {
+"s": "[急行]に乗れば二十分で着く。",
+"de": "Mit dem Eilzug ist man in zwanzig Minuten da.",
+"r": "[{急行|きゅうこう}]に{乗|の}れば{二十分|にじゅっぷん}で{着|つ}く。",
+"lesungen": {
+"二十": "にじゅっ",
+"十": "じゅっ",
+"分": "ぷん"
+}
+},
 "性格|せいかく": {
 "s": "姉は明るい[性格]で、友達が多い。",
 "de": "Meine große Schwester hat ein fröhliches Wesen und viele Freunde.",
 "r": "{姉|あね}は{明|あか}るい[{性格|せいかく}]で、{友達|ともだち}が{多|おお}い。"
+},
+"悪|あく": {
+"s": "物語では[悪]がかならず負ける。",
+"de": "In Geschichten verliert immer das Böse.",
+"r": "{物語|ものがたり}では[{悪|あく}]がかならず{負|ま}ける。",
+"bedeutung": "das Böse",
+"lesungen": {
+"悪": "あく"
+}
+},
+"悪い|わるい": {
+"s": "天気が[悪い]ので出かけるのをやめた。",
+"de": "Wegen des schlechten Wetters bin ich nicht ausgegangen.",
+"r": "{天気|てんき}が[{悪|わる}い]ので{出|で}かけるのをやめた。"
+},
+"悪しからず|あしからず": {
+"s": "本日は休みます。[悪しからず]。",
+"de": "Heute geschlossen. Wir bitten um Verständnis.",
+"r": "{本日|ほんじつ}は{休|やす}みます。[{悪|あ}しからず]。",
+"bedeutung": "nichts für ungut"
+},
+"悪口|わるくち": {
+"s": "人の[悪口]は言わないほうがいい。",
+"de": "Über andere lästert man besser nicht.",
+"r": "{人|ひと}の[{悪口|わるくち}]は{言|い}わないほうがいい。",
+"bedeutung": "üble Nachrede"
+},
+"悪者|わるもの": {
+"s": "物語の最後で[悪者]はつかまる。",
+"de": "Am Ende der Geschichte wird der Schurke gefasst.",
+"r": "{物語|ものがたり}の{最後|さいご}で[{悪者|わるもの}]はつかまる。",
+"bedeutung": "Bösewicht"
 }
 }

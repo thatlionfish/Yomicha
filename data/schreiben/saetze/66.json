@@ -1,4 +1,126 @@
 {
+"お昼|おひる": {
+"s": "[お昼]は何を食べましたか。",
+"de": "Was haben Sie zu Mittag gegessen?",
+"r": "[お{昼|ひる}]は{何|なに}を{食|た}べましたか。",
+"bedeutung": "Mittag"
+},
+"明々後日|しあさって": {
+"s": "[明々後日]に東京へもどります。",
+"de": "In drei Tagen komme ich nach Tokio zurück.",
+"r": "[{明々後日|しあさって}]に{東京|とうきょう}へもどります。",
+"bedeutung": "in drei Tagen"
+},
+"明かす|あかす": {
+"s": "山の上で一夜を[明かした]。",
+"de": "Ich habe die Nacht auf dem Berg verbracht.",
+"r": "{山|やま}の{上|うえ}で{一夜|いちや}を[{明|あ}かした]。",
+"bedeutung": "durchwachen"
+},
+"明かり|あかり": {
+"s": "となりの家の[明かり]が消えた。",
+"de": "Das Licht im Nachbarhaus ist ausgegangen.",
+"r": "となりの{家|いえ}の[{明|あ}かり]が{消|き}えた。",
+"bedeutung": "Licht, Lampenschein"
+},
+"明くる|あくる": {
+"s": "[明くる]朝は雪になっていた。",
+"de": "Am nächsten Morgen lag Schnee.",
+"r": "[{明|あ}くる]{朝|あさ}は{雪|ゆき}になっていた。",
+"bedeutung": "folgend, nächst"
+},
+"明ける|あける": {
+"s": "もうすぐ夜が[明ける]。",
+"de": "Bald bricht der Tag an.",
+"r": "もうすぐ{夜|よる}が[{明|あ}ける]。",
+"bedeutung": "anbrechen, hell werden"
+},
+"明け方|あけがた": {
+"s": "[明け方]に鳥の声で目がさめた。",
+"de": "In der Morgendämmerung weckten mich die Vögel.",
+"r": "[{明|あ}け{方|がた}]に{鳥|とり}の{声|こえ}で{目|め}がさめた。",
+"bedeutung": "Tagesanbruch"
+},
+"明らか|あきらか": {
+"s": "二人の考えの違いは[明らか]だ。",
+"de": "Der Unterschied ihrer Ansichten ist offensichtlich.",
+"r": "{二人|ふたり}の{考|かんが}えの{違|ちが}いは[{明|あき}らか]だ。",
+"bedeutung": "offensichtlich"
+},
+"明るい|あかるい": {
+"s": "この部屋は[明るく]て気持ちがいい。",
+"de": "Dieses Zimmer ist hell und angenehm.",
+"r": "この{部屋|へや}は[{明|あか}るく]て{気持|きも}ちがいい。"
+},
+"明後日|あさって": {
+"s": "[明後日]までに返事をください。",
+"de": "Antworten Sie bitte bis übermorgen.",
+"r": "[{明後日|あさって}]までに{返事|へんじ}をください。"
+},
+"明後日|みょうごにち": {
+"s": "[明後日]、改めてうかがいます。",
+"de": "Übermorgen komme ich noch einmal vorbei.",
+"r": "[{明後日|みょうごにち}]、{改|あらた}めてうかがいます。",
+"bedeutung": "übermorgen (förmlich)"
+},
+"明日|あした": {
+"s": "[明日]は早起きしなければならない。",
+"de": "Morgen muss ich früh aufstehen.",
+"r": "[{明日|あした}]は{早起|はやお}きしなければならない。"
+},
+"明日|あす": {
+"s": "[明日]の会議は中止になりました。",
+"de": "Die Besprechung morgen fällt aus.",
+"r": "[{明日|あす}]の{会議|かいぎ}は{中止|ちゅうし}になりました。"
+},
+"明白|めいはく": {
+"s": "どちらが正しいかは[明白]だ。",
+"de": "Wer recht hat, ist offenkundig.",
+"r": "どちらが{正|ただ}しいかは[{明白|めいはく}]だ。",
+"bedeutung": "offenkundig"
+},
+"映える|はえる": {
+"s": "白い花は緑の中でよく[映える]。",
+"de": "Weiße Blüten kommen im Grün gut zur Geltung.",
+"r": "{白|しろ}い{花|はな}は{緑|みどり}の{中|なか}でよく[{映|は}える]。",
+"bedeutung": "schön zur Geltung kommen"
+},
+"映す|うつす": {
+"s": "かべに写真を大きく[映した]。",
+"de": "Ich habe das Foto groß an die Wand projiziert.",
+"r": "かべに{写真|しゃしん}を{大|おお}きく[{映|うつ}した]。",
+"bedeutung": "projizieren, spiegeln"
+},
+"映る|うつる": {
+"s": "池に赤い橋が[映って]いる。",
+"de": "Im Teich spiegelt sich eine rote Brücke.",
+"r": "{池|いけ}に{赤|あか}い{橋|はし}が[{映|うつ}って]いる。",
+"bedeutung": "sich spiegeln, erscheinen"
+},
+"映写|えいしゃ": {
+"s": "会場で古い映画を[映写]した。",
+"de": "Im Saal wurde ein alter Film vorgeführt.",
+"r": "{会場|かいじょう}で{古|ふる}い{映画|えいが}を[{映写|えいしゃ}]した。",
+"bedeutung": "Filmvorführung"
+},
+"映画|えいが": {
+"s": "週末に[映画]を二本見た。",
+"de": "Am Wochenende habe ich zwei Filme gesehen.",
+"r": "{週末|しゅうまつ}に[{映画|えいが}]を{二本|にほん}{見|み}た。",
+"lesungen": {
+"本": "ほん"
+}
+},
+"映画館|えいがかん": {
+"s": "[映画館]は日曜日でこんでいた。",
+"de": "Das Kino war sonntags voll.",
+"r": "[{映画館|えいがかん}]は{日曜日|にちようび}でこんでいた。"
+},
+"春|はる": {
+"s": "[春]になると桜がさく。",
+"de": "Im Frühling blühen die Kirschbäume.",
+"r": "[{春|はる}]になると{桜|さくら}がさく。"
+},
 "昨|さく": {
 "s": "[昨年]の夏は雨が多かった。",
 "de": "Im letzten Sommer hat es viel geregnet.",
@@ -14,10 +136,73 @@
 "de": "Gestern bin ich früh schlafen gegangen.",
 "r": "[{昨日|きのう}]は{早|はや}く{寝|ね}た。"
 },
+"昼|ひる": {
+"s": "[昼]の休みに散歩している。",
+"de": "In der Mittagspause gehe ich spazieren.",
+"r": "[{昼|ひる}]の{休|やす}みに{散歩|さんぽ}している。"
+},
+"昼休み|ひるやすみ": {
+"s": "[昼休み]に銀行へ行ってきた。",
+"de": "In der Mittagspause war ich bei der Bank.",
+"r": "[{昼休|ひるやす}み]に{銀行|ぎんこう}へ{行|い}ってきた。"
+},
+"昼間|ひるま": {
+"s": "この通りは[昼間]もあまり人がいない。",
+"de": "Diese Straße ist selbst tagsüber recht leer.",
+"r": "この{通|とお}りは[{昼間|ひるま}]もあまり{人|ひと}がいない。"
+},
+"昼食|ちゅうしょく": {
+"s": "[昼食]の後で打ち合わせがある。",
+"de": "Nach dem Mittagessen gibt es eine Absprache.",
+"r": "[{昼食|ちゅうしょく}]の{後|あと}で{打|う}ち{合|あ}わせがある。",
+"bedeutung": "Mittagessen"
+},
+"昼飯|ひるめし": {
+"s": "[昼飯]はいつもそばにしている。",
+"de": "Mittags esse ich immer Soba.",
+"r": "[{昼飯|ひるめし}]はいつもそばにしている。",
+"bedeutung": "Mittagessen (salopp)"
+},
+"時|じ": {
+"s": "会議は午後[三時]に始まる。",
+"de": "Die Besprechung beginnt um drei Uhr nachmittags.",
+"r": "{会議|かいぎ}は{午後|ごご}[{三時|さんじ}]に{始|はじ}まる。"
+},
+"時|とき": {
+"s": "ひまな[時]は何をしていますか。",
+"de": "Was machen Sie, wenn Sie Zeit haben?",
+"r": "ひまな[{時|とき}]は{何|なに}をしていますか。"
+},
+"時々|ときどき": {
+"s": "[時々]、一人で映画を見に行く。",
+"de": "Manchmal gehe ich allein ins Kino.",
+"r": "[{時々|ときどき}]、{一人|ひとり}で{映画|えいが}を{見|み}に{行|い}く。"
+},
+"時代|じだい": {
+"s": "今はスマホで何でもできる[時代]だ。",
+"de": "Heute ist eine Zeit, in der man mit dem Handy alles kann.",
+"r": "{今|いま}はスマホで{何|なん}でもできる[{時代|じだい}]だ。"
+},
+"時計|とけい": {
+"s": "[時計]が五分おくれている。",
+"de": "Die Uhr geht fünf Minuten nach.",
+"r": "[{時計|とけい}]が{五分|ごふん}おくれている。"
+},
+"時間|じかん": {
+"s": "勉強する[時間]がもっとほしい。",
+"de": "Ich hätte gern mehr Zeit zum Lernen.",
+"r": "{勉強|べんきょう}する[{時間|じかん}]がもっとほしい。"
+},
 "時間割|じかんわり": {
 "s": "新しい学期の[時間割]が配られた。",
 "de": "Der Stundenplan für das neue Semester wurde verteilt.",
 "r": "{新|あたら}しい{学期|がっき}の[{時間割|じかんわり}]が{配|くば}られた。"
+},
+"時間目|じかんめ": {
+"s": "三[時間目]は音楽の授業だ。",
+"de": "In der dritten Stunde ist Musikunterricht.",
+"r": "{三|さん}[{時間目|じかんめ}]は{音楽|おんがく}の{授業|じゅぎょう}だ。",
+"bedeutung": "… Unterrichtsstunde"
 },
 "景気|けいき": {
 "s": "最近は[景気]がよくなってきたと言われる。",
@@ -36,5 +221,34 @@
 "de": "Der Sommer ist dieses Jahr wirklich heiß, nicht wahr?",
 "r": "{今年|ことし}の{夏|なつ}は{本当|ほんとう}に[{暑|あつ}い]ね。",
 "bedeutung": "heiß (Wetter)"
+},
+"曜日|ようび": {
+"s": "会議の[曜日]を決めましょう。",
+"de": "Legen wir den Wochentag der Besprechung fest.",
+"r": "{会議|かいぎ}の[{曜日|ようび}]を{決|き}めましょう。",
+"bedeutung": "Wochentag"
+},
+"書く|かく": {
+"s": "ここに住所と名前を[書いて]ください。",
+"de": "Schreiben Sie hier bitte Adresse und Namen.",
+"r": "ここに{住所|じゅうしょ}と{名前|なまえ}を[{書|か}いて]ください。"
+},
+"書店|しょてん": {
+"s": "駅の中の[書店]に寄った。",
+"de": "Ich war in der Buchhandlung im Bahnhof.",
+"r": "{駅|えき}の{中|なか}の[{書店|しょてん}]に{寄|よ}った。",
+"bedeutung": "Buchhandlung"
+},
+"書物|しょもつ": {
+"s": "古い[書物]を大切に保管する。",
+"de": "Alte Schriften werden sorgsam aufbewahrt.",
+"r": "{古|ふる}い[{書物|しょもつ}]を{大切|たいせつ}に{保管|ほかん}する。",
+"bedeutung": "Buch, Schrift"
+},
+"書道|しょどう": {
+"s": "週に一度、[書道]の教室に通っている。",
+"de": "Einmal die Woche gehe ich zur Kalligrafie.",
+"r": "{週|しゅう}に{一度|いちど}、[{書道|しょどう}]の{教室|きょうしつ}に{通|かよ}っている。",
+"bedeutung": "Kalligrafie"
 }
 }

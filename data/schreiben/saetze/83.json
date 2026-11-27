@@ -1,0 +1,30 @@
+{
+"お茶|おちゃ": {
+"s": "熱い[お茶]を一ぱいどうぞ。",
+"de": "Bitte, eine Tasse heißen Tee.",
+"r": "{熱|あつ}い[お{茶|ちゃ}]を{一|いっ}ぱいどうぞ。"
+},
+"茶|ちゃ": {
+"s": "日本の[茶]の文化に興味がある。",
+"de": "Ich interessiere mich für die japanische Teekultur.",
+"r": "{日本|にほん}の[{茶|ちゃ}]の{文化|ぶんか}に{興味|きょうみ}がある。",
+"bedeutung": "Tee"
+},
+"茶の間|ちゃのま": {
+"s": "冬は[茶の間]に家族が集まる。",
+"de": "Im Winter versammelt sich die Familie im Wohnzimmer.",
+"r": "{冬|ふゆ}は[{茶|ちゃ}の{間|ま}]に{家族|かぞく}が{集|あつ}まる。",
+"bedeutung": "Wohnzimmer (japanisch)"
+},
+"茶色|ちゃいろ": {
+"s": "[茶色]のかばんを探しています。",
+"de": "Ich suche eine braune Tasche.",
+"r": "[{茶色|ちゃいろ}]のかばんを{探|さが}しています。"
+},
+"茶色い|ちゃいろい": {
+"s": "古い写真は[茶色く]なっていた。",
+"de": "Das alte Foto war braun geworden.",
+"r": "{古|ふる}い{写真|しゃしん}は[{茶色|ちゃいろ}く]なっていた。",
+"bedeutung": "braun"
+}
+}

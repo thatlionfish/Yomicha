@@ -1,8 +1,114 @@
 {
+"お母さん|おかあさん": {
+"s": "[お母さん]によろしくお伝えください。",
+"de": "Grüßen Sie bitte Ihre Mutter.",
+"r": "[お{母|かあ}さん]によろしくお{伝|つた}えください。"
+},
 "欠席|けっせき": {
 "s": "熱があったので、授業を[欠席]した。",
 "de": "Weil ich Fieber hatte, habe ich im Unterricht gefehlt.",
 "r": "{熱|ねつ}があったので、{授業|じゅぎょう}を[{欠席|けっせき}]した。"
+},
+"歌|うた": {
+"s": "子どものころに習った[歌]を思い出した。",
+"de": "Mir ist ein Lied aus der Kindheit eingefallen.",
+"r": "{子|こ}どものころに{習|なら}った[{歌|うた}]を{思|おも}い{出|だ}した。"
+},
+"歌|か": {
+"s": "式の初めに国[歌]を歌った。",
+"de": "Zu Beginn der Feier wurde die Nationalhymne gesungen.",
+"r": "{式|しき}の{初|はじ}めに{国|こっ}[{歌|か}]を{歌|うた}った。",
+"bedeutung": "Lied (in Zusammensetzungen)",
+"lesungen": {
+"国": "こっ"
+}
+},
+"歌う|うたう": {
+"s": "彼女は[歌う]のがとても上手だ。",
+"de": "Sie singt sehr gut.",
+"r": "{彼女|かのじょ}は[{歌|うた}う]のがとても{上手|じょうず}だ。"
+},
+"歌手|かしゅ": {
+"s": "好きな[歌手]の曲を聞く。",
+"de": "Ich höre Lieder meiner Lieblingssängerin.",
+"r": "{好|す}きな[{歌手|かしゅ}]の{曲|きょく}を{聞|き}く。",
+"bedeutung": "Sänger(in)"
+},
+"止す|よす": {
+"s": "そんなむだ使いは[止し]なさい。",
+"de": "Hör mit dieser Verschwendung auf.",
+"r": "そんなむだ{使|づか}いは[{止|よ}し]なさい。",
+"bedeutung": "aufhören, bleiben lassen",
+"lesungen": {
+"止し": "よし"
+}
+},
+"止まる|とまる": {
+"s": "この電車は次の駅に[止まらない]。",
+"de": "Dieser Zug hält nicht am nächsten Bahnhof.",
+"r": "この{電車|でんしゃ}は{次|つぎ}の{駅|えき}に[{止|と}まらない]。"
+},
+"止む|やむ": {
+"s": "雨は夕方には[止む]でしょう。",
+"de": "Der Regen hört wohl gegen Abend auf.",
+"r": "{雨|あめ}は{夕方|ゆうがた}には[{止|や}む]でしょう。"
+},
+"止める|とどめる": {
+"s": "今日は注意するだけに[止めた]。",
+"de": "Heute habe ich es bei einer Mahnung belassen.",
+"r": "{今日|きょう}は{注意|ちゅうい}するだけに[{止|とど}めた]。",
+"bedeutung": "belassen bei",
+"lesungen": {
+"止め": "とどめ"
+}
+},
+"止める|とめる": {
+"s": "駅の前で車を[止めて]ください。",
+"de": "Halten Sie bitte vor dem Bahnhof an.",
+"r": "{駅|えき}の{前|まえ}で{車|くるま}を[{止|と}めて]ください。"
+},
+"止める|やめる": {
+"s": "父は去年、たばこを[止めた]。",
+"de": "Mein Vater hat letztes Jahr mit dem Rauchen aufgehört.",
+"r": "{父|ちち}は{去年|きょねん}、たばこを[{止|や}めた]。",
+"lesungen": {
+"止め": "やめ"
+}
+},
+"正|せい": {
+"s": "計算の結果は[正]の数になる。",
+"de": "Das Ergebnis der Rechnung ist eine positive Zahl.",
+"r": "{計算|けいさん}の{結果|けっか}は[{正|せい}]の{数|かず}になる。",
+"bedeutung": "richtig",
+"lesungen": {
+"正": "せい"
+}
+},
+"正しい|ただしい": {
+"s": "[正しい]答えを一つ選びなさい。",
+"de": "Wählen Sie eine richtige Antwort.",
+"r": "[{正|ただ}しい]{答|こた}えを{一|ひと}つ{選|えら}びなさい。"
+},
+"正体|しょうたい": {
+"s": "ついに犯人の[正体]が分かった。",
+"de": "Endlich ist klar, wer der Täter wirklich ist.",
+"r": "ついに{犯人|はんにん}の[{正体|しょうたい}]が{分|わ}かった。",
+"bedeutung": "wahre Gestalt, Identität"
+},
+"正午|しょうご": {
+"s": "店は[正午]に開きます。",
+"de": "Der Laden öffnet um zwölf Uhr mittags.",
+"r": "{店|みせ}は[{正午|しょうご}]に{開|あ}きます。",
+"bedeutung": "zwölf Uhr mittags",
+"lesungen": {
+"開き": "あき"
+}
+},
+"正味|しょうみ": {
+"s": "袋の[正味]は百グラムです。",
+"de": "Der Inhalt des Beutels wiegt netto hundert Gramm.",
+"r": "{袋|ふくろ}の[{正味|しょうみ}]は{百|ひゃく}グラムです。",
+"bedeutung": "netto"
 },
 "正常|せいじょう": {
 "s": "検査の結果、体はすべて[正常]だった。",
@@ -15,10 +121,61 @@
 "de": "Der Name des neuen Ladens steht offiziell fest.",
 "r": "{新|あたら}しい{店|みせ}の{名前|なまえ}が[{正式|せいしき}]に{決|き}まった。"
 },
+"正月|しょうがつ": {
+"s": "[正月]は実家で過ごすつもりだ。",
+"de": "Neujahr will ich bei den Eltern verbringen.",
+"r": "[{正月|しょうがつ}]は{実家|じっか}で{過|す}ごすつもりだ。"
+},
 "正規|せいき": {
 "s": "兄は来月から[正規]の社員になる。",
 "de": "Mein älterer Bruder wird ab nächstem Monat fest angestellt.",
 "r": "{兄|あに}は{来月|らいげつ}から[{正規|せいき}]の{社員|しゃいん}になる。"
+},
+"歩|ほ": {
+"s": "ドアから五[歩]の所に机がある。",
+"de": "Fünf Schritte von der Tür steht ein Tisch.",
+"r": "ドアから{五|ご}[{歩|ほ}]の{所|ところ}に{机|つくえ}がある。",
+"bedeutung": "Zählwort für Schritte"
+},
+"歩く|あるく": {
+"s": "駅まで[歩いて]行くことにした。",
+"de": "Ich habe beschlossen, zum Bahnhof zu Fuß zu gehen.",
+"r": "{駅|えき}まで[{歩|ある}いて]{行|い}くことにした。"
+},
+"歩み|あゆみ": {
+"s": "町の百年の[歩み]を本にした。",
+"de": "Wir haben hundert Jahre Stadtgeschichte in ein Buch gefasst.",
+"r": "{町|まち}の{百年|ひゃくねん}の[{歩|あゆ}み]を{本|ほん}にした。",
+"bedeutung": "Gang, Entwicklung"
+},
+"歩む|あゆむ": {
+"s": "二人は同じ道を[歩んで]きた。",
+"de": "Die beiden sind denselben Weg gegangen.",
+"r": "{二人|ふたり}は{同|おな}じ{道|みち}を[{歩|あゆ}んで]きた。",
+"bedeutung": "(einen Weg) gehen"
+},
+"歩道|ほどう": {
+"s": "自転車は[歩道]をゆっくり走ってください。",
+"de": "Fahren Sie auf dem Gehweg bitte langsam.",
+"r": "{自転車|じてんしゃ}は[{歩道|ほどう}]をゆっくり{走|はし}ってください。",
+"bedeutung": "Gehweg"
+},
+"死|し": {
+"s": "人はだれでも[死]をさけられない。",
+"de": "Dem Tod kann kein Mensch entgehen.",
+"r": "{人|ひと}はだれでも[{死|し}]をさけられない。",
+"bedeutung": "Tod"
+},
+"死ぬ|しぬ": {
+"s": "飼っていた金魚が[死んで]しまった。",
+"de": "Mein Goldfisch ist gestorben.",
+"r": "{飼|か}っていた{金魚|きんぎょ}が[{死|し}んで]しまった。"
+},
+"死体|したい": {
+"s": "浜でくじらの[死体]が見つかった。",
+"de": "Am Strand wurde ein toter Wal gefunden.",
+"r": "{浜|はま}でくじらの[{死体|したい}]が{見|み}つかった。",
+"bedeutung": "toter Körper"
 },
 "残す|のこす": {
 "s": "ご飯を[残さない]で全部食べた。",
@@ -49,5 +206,77 @@
 "de": "Schade, dass das Feuerwerk wegen des Regens ausfällt.",
 "r": "{雨|あめ}で{花火|はなび}が{中止|ちゅうし}になって[{残念|ざんねん}]だ。",
 "bedeutung": "schade, bedauerlich"
+},
+"母|はは": {
+"s": "[母]は毎朝早く起きる。",
+"de": "Meine Mutter steht jeden Morgen früh auf.",
+"r": "[{母|はは}]は{毎朝|まいあさ}{早|はや}く{起|お}きる。"
+},
+"母国|ぼこく": {
+"s": "[母国]の料理がなつかしい。",
+"de": "Ich vermisse das Essen meiner Heimat.",
+"r": "[{母国|ぼこく}]の{料理|りょうり}がなつかしい。",
+"bedeutung": "Heimatland"
+},
+"母校|ぼこう": {
+"s": "十年ぶりに[母校]を訪れた。",
+"de": "Nach zehn Jahren habe ich meine alte Schule besucht.",
+"r": "{十年|じゅうねん}ぶりに[{母校|ぼこう}]を{訪|おとず}れた。",
+"bedeutung": "ehemalige Schule"
+},
+"母親|ははおや": {
+"s": "子どもは[母親]の後ろにかくれた。",
+"de": "Das Kind versteckte sich hinter der Mutter.",
+"r": "{子|こ}どもは[{母親|ははおや}]の{後|うし}ろにかくれた。",
+"bedeutung": "Mutter"
+},
+"毎|ごと": {
+"s": "一雨[毎]に春が近づく。",
+"de": "Mit jedem Regen rückt der Frühling näher.",
+"r": "{一雨|ひとあめ}[{毎|ごと}]に{春|はる}が{近|ちか}づく。",
+"bedeutung": "mit jedem …",
+"lesungen": {
+"毎": "ごと"
+}
+},
+"毎|まい": {
+"s": "[毎]回ちがう道を歩いている。",
+"de": "Ich gehe jedes Mal einen anderen Weg.",
+"r": "[{毎|まい}]{回|かい}ちがう{道|みち}を{歩|ある}いている。",
+"bedeutung": "jede(r), jedes",
+"lesungen": {
+"毎": "まい"
+}
+},
+"毎年|まいねん": {
+"s": "この祭りは[毎年]八月に行われる。",
+"de": "Dieses Fest findet jedes Jahr im August statt.",
+"r": "この{祭|まつ}りは[{毎年|まいねん}]{八月|はちがつ}に{行|おこな}われる。"
+},
+"毎度|まいど": {
+"s": "[毎度]ご利用ありがとうございます。",
+"de": "Vielen Dank, dass Sie uns immer wieder nutzen.",
+"r": "[{毎度|まいど}]ご{利用|りよう}ありがとうございます。",
+"bedeutung": "jedes Mal"
+},
+"毎日|まいにち": {
+"s": "健康のために[毎日]歩いている。",
+"de": "Für die Gesundheit gehe ich jeden Tag zu Fuß.",
+"r": "{健康|けんこう}のために[{毎日|まいにち}]{歩|ある}いている。"
+},
+"毎月|まいげつ": {
+"s": "[毎月]少しずつ貯金している。",
+"de": "Jeden Monat lege ich etwas zurück.",
+"r": "[{毎月|まいげつ}]{少|すこ}しずつ{貯金|ちょきん}している。"
+},
+"毎朝|まいあさ": {
+"s": "[毎朝]、公園を走っている。",
+"de": "Jeden Morgen laufe ich im Park.",
+"r": "[{毎朝|まいあさ}]、{公園|こうえん}を{走|はし}っている。"
+},
+"毎週|まいしゅう": {
+"s": "[毎週]日曜日にテニスをしている。",
+"de": "Jeden Sonntag spiele ich Tennis.",
+"r": "[{毎週|まいしゅう}]{日曜日|にちようび}にテニスをしている。"
 }
 }

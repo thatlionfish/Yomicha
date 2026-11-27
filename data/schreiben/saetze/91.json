@@ -1,7 +1,129 @@
 {
+"お金|おかね": {
+"s": "旅行のために[お金]をためている。",
+"de": "Ich spare Geld für eine Reise.",
+"r": "{旅行|りょこう}のために[お{金|かね}]をためている。"
+},
+"お金持ち|おかねもち": {
+"s": "宝くじに当たって[お金持ち]になりたい。",
+"de": "Ich möchte in der Lotterie gewinnen und reich werden.",
+"r": "{宝|たから}くじに{当|あ}たって[お{金持|かねも}ち]になりたい。"
+},
+"重|じゅう": {
+"s": "夏の外の仕事は[重]労働だ。",
+"de": "Arbeit im Freien ist im Sommer Schwerarbeit.",
+"r": "{夏|なつ}の{外|そと}の{仕事|しごと}は[{重|じゅう}]{労働|ろうどう}だ。",
+"bedeutung": "schwer-",
+"lesungen": {
+"重": "じゅう"
+}
+},
+"重い|おもい": {
+"s": "このかばんは[重くて]持てない。",
+"de": "Diese Tasche ist zu schwer zum Tragen.",
+"r": "このかばんは[{重|おも}くて]{持|も}てない。"
+},
+"重たい|おもたい": {
+"s": "雨にぬれたコートは[重たい]。",
+"de": "Der nasse Mantel ist schwer.",
+"r": "{雨|あめ}にぬれたコートは[{重|おも}たい]。",
+"bedeutung": "schwer"
+},
+"重なる|かさなる": {
+"s": "休みと出張の日が[重なった]。",
+"de": "Der freie Tag und die Dienstreise fielen zusammen.",
+"r": "{休|やす}みと{出張|しゅっちょう}の{日|ひ}が[{重|かさ}なった]。",
+"bedeutung": "sich überschneiden, sich stapeln"
+},
+"重ねる|かさねる": {
+"s": "皿を[重ねて]たなにしまう。",
+"de": "Ich stapele die Teller und räume sie ins Regal.",
+"r": "{皿|さら}を[{重|かさ}ねて]たなにしまう。",
+"bedeutung": "stapeln"
+},
+"重んじる|おもんじる": {
+"s": "この会社は安全を[重んじる]。",
+"de": "Diese Firma legt großen Wert auf Sicherheit.",
+"r": "この{会社|かいしゃ}は{安全|あんぜん}を[{重|おも}んじる]。",
+"bedeutung": "hochhalten, achten"
+},
+"重んずる|おもんずる": {
+"s": "礼を[重んずる]家で育った。",
+"de": "Ich bin in einem Haus aufgewachsen, das Höflichkeit hochhielt.",
+"r": "{礼|れい}を[{重|おも}んずる]{家|いえ}で{育|そだ}った。",
+"bedeutung": "hochschätzen"
+},
+"重体|じゅうたい": {
+"s": "事故で一人が[重体]だそうだ。",
+"de": "Bei dem Unfall soll eine Person lebensgefährlich verletzt sein.",
+"r": "{事故|じこ}で{一人|ひとり}が[{重体|じゅうたい}]だそうだ。",
+"bedeutung": "lebensgefährlicher Zustand"
+},
+"重力|じゅうりょく": {
+"s": "ボールは[重力]で下に落ちる。",
+"de": "Der Ball fällt durch die Schwerkraft.",
+"r": "ボールは[{重力|じゅうりょく}]で{下|した}に{落|お}ちる。",
+"bedeutung": "Schwerkraft"
+},
+"重大|じゅうだい": {
+"s": "会社から[重大]な発表があった。",
+"de": "Die Firma hat etwas Wichtiges bekannt gegeben.",
+"r": "{会社|かいしゃ}から[{重大|じゅうだい}]な{発表|はっぴょう}があった。",
+"bedeutung": "schwerwiegend, bedeutend"
+},
 "重役|じゅうやく": {
 "s": "会議には会社の[重役]が全員出席した。",
 "de": "An der Sitzung nahmen alle Vorstandsmitglieder der Firma teil.",
 "r": "{会議|かいぎ}には{会社|かいしゃ}の[{重役|じゅうやく}]が{全員|ぜんいん}{出席|しゅっせき}した。"
+},
+"野|の": {
+"s": "春の[野]には花がたくさんさく。",
+"de": "Auf den Frühlingswiesen blühen viele Blumen.",
+"r": "{春|はる}の[{野|の}]には{花|はな}がたくさんさく。",
+"bedeutung": "Feld, Wiese"
+},
+"野外|やがい": {
+"s": "夏は[野外]で音楽会がある。",
+"de": "Im Sommer gibt es Konzerte im Freien.",
+"r": "{夏|なつ}は[{野外|やがい}]で{音楽会|おんがくかい}がある。",
+"bedeutung": "im Freien"
+},
+"野心|やしん": {
+"s": "彼は大きな[野心]を持っている。",
+"de": "Er hat großen Ehrgeiz.",
+"r": "{彼|かれ}は{大|おお}きな[{野心|やしん}]を{持|も}っている。",
+"bedeutung": "Ehrgeiz"
+},
+"野生|やせい": {
+"s": "この山には[野生]のさるがいる。",
+"de": "Auf diesem Berg leben wilde Affen.",
+"r": "この{山|やま}には[{野生|やせい}]のさるがいる。",
+"bedeutung": "wild lebend"
+},
+"金|かね": {
+"s": "古いなべは[金]でできていて重い。",
+"de": "Der alte Topf ist aus Metall und schwer.",
+"r": "{古|ふる}いなべは[{金|かね}]でできていて{重|おも}い。",
+"bedeutung": "Metall"
+},
+"金|きん": {
+"s": "この指輪は[金]でできている。",
+"de": "Dieser Ring ist aus Gold.",
+"r": "この{指輪|ゆびわ}は[{金|きん}]でできている。",
+"bedeutung": "Gold",
+"lesungen": {
+"金": "きん"
+}
+},
+"金曜日|きんようび": {
+"s": "[金曜日]の夜は友だちと食事をする。",
+"de": "Freitagabends esse ich mit Freunden.",
+"r": "[{金曜日|きんようび}]の{夜|よる}は{友|とも}だちと{食事|しょくじ}をする。"
+},
+"金魚|きんぎょ": {
+"s": "祭りで[金魚]をすくった。",
+"de": "Auf dem Fest habe ich Goldfische gefangen.",
+"r": "{祭|まつ}りで[{金魚|きんぎょ}]をすくった。",
+"bedeutung": "Goldfisch"
 }
 }

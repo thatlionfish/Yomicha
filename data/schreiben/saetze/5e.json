@@ -1,8 +1,36 @@
 {
+"お帰り|おかえり": {
+"s": "[お帰り]なさい。早かったね。",
+"de": "Willkommen zurück. Du warst aber schnell.",
+"r": "[お{帰|かえ}り]なさい。{早|はや}かったね。",
+"bedeutung": "Willkommen zurück"
+},
 "席|せき": {
 "s": "電車でお年寄りに[席]をゆずった。",
 "de": "Im Zug habe ich einem älteren Menschen meinen Platz angeboten.",
 "r": "{電車|でんしゃ}でお{年寄|としよ}りに[{席|せき}]をゆずった。"
+},
+"帰す|かえす": {
+"s": "熱のある子を早く家に[帰した]。",
+"de": "Ich habe das fiebernde Kind früh heimgeschickt.",
+"r": "{熱|ねつ}のある{子|こ}を{早|はや}く{家|いえ}に[{帰|かえ}した]。",
+"bedeutung": "heimschicken"
+},
+"帰り|かえり": {
+"s": "会社の[帰り]に本屋に寄った。",
+"de": "Auf dem Heimweg von der Firma war ich im Buchladen.",
+"r": "{会社|かいしゃ}の[{帰|かえ}り]に{本屋|ほんや}に{寄|よ}った。"
+},
+"帰る|かえる": {
+"s": "今日は早めに家に[帰りたい]。",
+"de": "Heute möchte ich früh nach Hause.",
+"r": "{今日|きょう}は{早|はや}めに{家|いえ}に[{帰|かえ}りたい]。"
+},
+"帰京|ききょう": {
+"s": "出張を終えて[帰京]した。",
+"de": "Nach der Dienstreise bin ich nach Tokio zurückgekehrt.",
+"r": "{出張|しゅっちょう}を{終|お}えて[{帰京|ききょう}]した。",
+"bedeutung": "Rückkehr nach Tokio"
 },
 "帰宅|きたく": {
 "s": "昨日は仕事で[帰宅]が遅くなった。",
@@ -35,9 +63,156 @@
 "de": "Meine ältere Schwester wirkt das ganze Jahr über beschäftigt.",
 "r": "{姉|あね}は[{年中|ねんじゅう}]{忙|いそが}しそうにしている。"
 },
+"年代|ねんだい": {
+"s": "店には色々な[年代]の客が来る。",
+"de": "In den Laden kommen Gäste aller Altersgruppen.",
+"r": "{店|みせ}には{色々|いろいろ}な[{年代|ねんだい}]の{客|きゃく}が{来|く}る。",
+"bedeutung": "Altersgruppe"
+},
+"年度|ねんど": {
+"s": "新しい[年度]は四月に始まる。",
+"de": "Das neue Geschäftsjahr beginnt im April.",
+"r": "{新|あたら}しい[{年度|ねんど}]は{四月|しがつ}に{始|はじ}まる。",
+"bedeutung": "Haushaltsjahr, Schuljahr"
+},
+"年月|としつき": {
+"s": "長い[年月]をかけて庭を作り上げた。",
+"de": "Über viele Jahre hat er den Garten angelegt.",
+"r": "{長|なが}い[{年月|としつき}]をかけて{庭|にわ}を{作|つく}り{上|あ}げた。"
+},
+"年月|ねんげつ": {
+"s": "この橋は完成までに十年の[年月]がかかった。",
+"de": "Bis zur Fertigstellung der Brücke vergingen zehn Jahre.",
+"r": "この{橋|はし}は{完成|かんせい}までに{十年|じゅうねん}の[{年月|ねんげつ}]がかかった。"
+},
+"年生|ねんせい": {
+"s": "弟は小学三[年生]です。",
+"de": "Mein Bruder ist in der dritten Grundschulklasse.",
+"r": "{弟|おとうと}は{小学|しょうがく}{三|さん}[{年生|ねんせい}]です。",
+"bedeutung": "Schüler(in) im … Schuljahr"
+},
+"年長|ねんちょう": {
+"s": "二人のうち[年長]の方が代表だ。",
+"de": "Der Ältere der beiden ist der Vertreter.",
+"r": "{二人|ふたり}のうち[{年長|ねんちょう}]の{方|ほう}が{代表|だいひょう}だ。",
+"bedeutung": "höheres Alter, älter"
+},
+"年間|ねんかん": {
+"s": "この町には[年間]百万人の客が来る。",
+"de": "Jährlich kommen eine Million Gäste in diese Stadt.",
+"r": "この{町|まち}には[{年間|ねんかん}]{百万人|ひゃくまんにん}の{客|きゃく}が{来|く}る。",
+"bedeutung": "Jahr, jährlich"
+},
+"広々|ひろびろ": {
+"s": "[広々]とした公園で昼寝をした。",
+"de": "Ich habe im weitläufigen Park ein Nickerchen gemacht.",
+"r": "[{広々|ひろびろ}]とした{公園|こうえん}で{昼寝|ひるね}をした。",
+"bedeutung": "weitläufig"
+},
+"広い|ひろい": {
+"s": "[広い]庭のある家に住みたい。",
+"de": "Ich möchte in einem Haus mit großem Garten wohnen.",
+"r": "[{広|ひろ}い]{庭|にわ}のある{家|いえ}に{住|す}みたい。"
+},
+"広がる|ひろがる": {
+"s": "町じゅうにうわさが[広がった]。",
+"de": "Das Gerücht verbreitete sich in der ganzen Stadt.",
+"r": "{町|まち}じゅうにうわさが[{広|ひろ}がった]。",
+"bedeutung": "sich ausbreiten"
+},
+"広げる|ひろげる": {
+"s": "テーブルに地図を[広げた]。",
+"de": "Ich habe die Karte auf dem Tisch ausgebreitet.",
+"r": "テーブルに{地図|ちず}を[{広|ひろ}げた]。",
+"bedeutung": "ausbreiten, erweitern"
+},
+"広さ|ひろさ": {
+"s": "部屋の[広さ]は十分だ。",
+"de": "Das Zimmer ist groß genug.",
+"r": "{部屋|へや}の[{広|ひろ}さ]は{十分|じゅうぶん}だ。",
+"bedeutung": "Größe, Weite"
+},
+"広まる|ひろまる": {
+"s": "その歌は若者の間に[広まった]。",
+"de": "Das Lied wurde unter jungen Leuten bekannt.",
+"r": "その{歌|うた}は{若者|わかもの}の{間|あいだ}に[{広|ひろ}まった]。",
+"bedeutung": "sich verbreiten"
+},
+"広める|ひろめる": {
+"s": "お茶の文化を世界に[広めたい]。",
+"de": "Ich möchte die Teekultur in der Welt verbreiten.",
+"r": "お{茶|ちゃ}の{文化|ぶんか}を{世界|せかい}に[{広|ひろ}めたい]。",
+"bedeutung": "verbreiten"
+},
 "広告|こうこく": {
 "s": "駅に新しい映画の[広告]が出ている。",
 "de": "Am Bahnhof hängt Werbung für einen neuen Film.",
 "r": "{駅|えき}に{新|あたら}しい{映画|えいが}の[{広告|こうこく}]が{出|で}ている。"
+},
+"広場|ひろば": {
+"s": "駅前の[広場]で祭りがある。",
+"de": "Auf dem Bahnhofsvorplatz ist ein Fest.",
+"r": "{駅前|えきまえ}の[{広場|ひろば}]で{祭|まつ}りがある。",
+"bedeutung": "Platz"
+},
+"店|みせ": {
+"s": "この[店]は夜十時まで開いている。",
+"de": "Dieses Geschäft hat bis zehn Uhr abends offen.",
+"r": "この[{店|みせ}]は{夜|よる}{十時|じゅうじ}まで{開|あ}いている。",
+"lesungen": {
+"開い": "あい"
+}
+},
+"店員|てんいん": {
+"s": "[店員]にサイズをたずねた。",
+"de": "Ich habe den Verkäufer nach der Größe gefragt.",
+"r": "[{店員|てんいん}]にサイズをたずねた。"
+},
+"店屋|みせや": {
+"s": "この通りには小さな[店屋]が並んでいる。",
+"de": "An dieser Straße reihen sich kleine Läden.",
+"r": "この{通|とお}りには{小|ちい}さな[{店屋|みせや}]が{並|なら}んでいる。",
+"bedeutung": "Laden, Geschäft"
+},
+"度|たび": {
+"s": "この歌を聞く[度]に故郷を思い出す。",
+"de": "Jedes Mal bei diesem Lied denke ich an die Heimat.",
+"r": "この{歌|うた}を{聞|き}く[{度|たび}]に{故郷|こきょう}を{思|おも}い{出|だ}す。",
+"bedeutung": "jedes Mal",
+"lesungen": {
+"度": "たび"
+}
+},
+"度|ど": {
+"s": "この映画は三[度]も見た。",
+"de": "Diesen Film habe ich schon dreimal gesehen.",
+"r": "この{映画|えいが}は{三|さん}[{度|ど}]も{見|み}た。"
+},
+"建つ|たつ": {
+"s": "駅前に高いビルが[建った]。",
+"de": "Vor dem Bahnhof ist ein Hochhaus entstanden.",
+"r": "{駅前|えきまえ}に{高|たか}いビルが[{建|た}った]。",
+"bedeutung": "gebaut werden, stehen"
+},
+"建て|だて": {
+"s": "この辺りは二階[建て]の家が多い。",
+"de": "Hier gibt es viele zweistöckige Häuser.",
+"r": "この{辺|あた}りは{二階|にかい}[{建|だ}て]の{家|いえ}が{多|おお}い。"
+},
+"建てる|たてる": {
+"s": "兄は郊外に家を[建てた]。",
+"de": "Mein Bruder hat am Stadtrand ein Haus gebaut.",
+"r": "{兄|あに}は{郊外|こうがい}に{家|いえ}を[{建|た}てた]。"
+},
+"建前|たてまえ": {
+"s": "本音と[建前]を使い分ける。",
+"de": "Man unterscheidet wahre Meinung und offizielle Haltung.",
+"r": "{本音|ほんね}と[{建前|たてまえ}]を{使|つか}い{分|わ}ける。",
+"bedeutung": "offizielle Haltung"
+},
+"建物|たてもの": {
+"s": "駅前に高い[建物]がふえた。",
+"de": "Vor dem Bahnhof gibt es mehr hohe Gebäude.",
+"r": "{駅前|えきまえ}に{高|たか}い[{建物|たてもの}]がふえた。"
 }
 }

@@ -1,0 +1,67 @@
+{
+"青|あお": {
+"s": "空の[青]と雪の白がきれいだ。",
+"de": "Das Blau des Himmels und das Weiß des Schnees sind schön.",
+"r": "{空|そら}の[{青|あお}]と{雪|ゆき}の{白|しろ}がきれいだ。"
+},
+"青い|あおい": {
+"s": "[青い]海を見ると心が落ち着く。",
+"de": "Der Anblick des blauen Meeres beruhigt mich.",
+"r": "[{青|あお}い]{海|うみ}を{見|み}ると{心|こころ}が{落|お}ち{着|つ}く。"
+},
+"青少年|せいしょうねん": {
+"s": "[青少年]向けの本を作っている。",
+"de": "Wir machen Bücher für junge Menschen.",
+"r": "[{青少年|せいしょうねん}]{向|む}けの{本|ほん}を{作|つく}っている。",
+"bedeutung": "Jugend, junge Leute"
+},
+"青年|せいねん": {
+"s": "一人の[青年]が道を教えてくれた。",
+"de": "Ein junger Mann zeigte mir den Weg.",
+"r": "{一人|ひとり}の[{青年|せいねん}]が{道|みち}を{教|おし}えてくれた。",
+"bedeutung": "junger Mann"
+},
+"青春|せいしゅん": {
+"s": "祖母は[青春]の思い出を話した。",
+"de": "Meine Großmutter erzählte von ihrer Jugend.",
+"r": "{祖母|そぼ}は[{青春|せいしゅん}]の{思|おも}い{出|で}を{話|はな}した。",
+"bedeutung": "Jugendzeit"
+},
+"青白い|あおじろい": {
+"s": "彼は[青白い]顔をしていた。",
+"de": "Er war blass im Gesicht.",
+"r": "{彼|かれ}は[{青白|あおじろ}い]{顔|かお}をしていた。",
+"bedeutung": "bleich"
+},
+"音|おと": {
+"s": "台所から水の[音]がする。",
+"de": "Aus der Küche hört man Wasser.",
+"r": "{台所|だいどころ}から{水|みず}の[{音|おと}]がする。"
+},
+"音|おん": {
+"s": "外で大きな[音]がした。",
+"de": "Draußen gab es ein lautes Geräusch.",
+"r": "{外|そと}で{大|おお}きな[{音|おん}]がした。",
+"bedeutung": "Geräusch, Ton"
+},
+"音|ね": {
+"s": "すずしい虫の[音]が聞こえる。",
+"de": "Man hört den kühlen Klang der Insekten.",
+"r": "すずしい{虫|むし}の[{音|ね}]が{聞|き}こえる。",
+"bedeutung": "Klang",
+"lesungen": {
+"音": "ね"
+}
+},
+"音楽|おんがく": {
+"s": "勉強しながら[音楽]を聞く。",
+"de": "Beim Lernen höre ich Musik.",
+"r": "{勉強|べんきょう}しながら[{音楽|おんがく}]を{聞|き}く。"
+},
+"音色|ねいろ": {
+"s": "この楽器は[音色]がやわらかい。",
+"de": "Dieses Instrument klingt weich.",
+"r": "この{楽器|がっき}は[{音色|ねいろ}]がやわらかい。",
+"bedeutung": "Klangfarbe"
+}
+}

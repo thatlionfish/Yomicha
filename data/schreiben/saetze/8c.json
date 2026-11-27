@@ -29,6 +29,45 @@
 "de": "Beim Spiel gegen meinen kleinen Bruder habe ich schon wieder verloren.",
 "r": "{弟|おとうと}とのゲームで、また[{負|ま}けて]しまった。"
 },
+"買い物|かいもの": {
+"s": "仕事の帰りに[買い物]をする。",
+"de": "Auf dem Heimweg von der Arbeit kaufe ich ein.",
+"r": "{仕事|しごと}の{帰|かえ}りに[{買|か}い{物|もの}]をする。"
+},
+"買う|かう": {
+"s": "誕生日に新しい時計を[買って]もらった。",
+"de": "Zum Geburtstag habe ich eine neue Uhr bekommen.",
+"r": "{誕生日|たんじょうび}に{新|あたら}しい{時計|とけい}を[{買|か}って]もらった。"
+},
+"貸し|かし": {
+"s": "友だちに千円の[貸し]がある。",
+"de": "Eine Freundin schuldet mir noch tausend Yen.",
+"r": "{友|とも}だちに{千円|せんえん}の[{貸|か}し]がある。",
+"bedeutung": "Verleihen, Guthaben"
+},
+"貸し出し|かしだし": {
+"s": "この本は今、[貸し出し]中です。",
+"de": "Dieses Buch ist gerade verliehen.",
+"r": "この{本|ほん}は{今|いま}、[{貸|か}し{出|だ}し]{中|なか}です。",
+"bedeutung": "Ausleihe"
+},
+"貸す|かす": {
+"s": "友だちにかさを[貸して]あげた。",
+"de": "Ich habe einer Freundin einen Schirm geliehen.",
+"r": "{友|とも}だちにかさを[{貸|か}して]あげた。"
+},
+"貸家|かしや": {
+"s": "郊外に[貸家]が何げんかある。",
+"de": "Am Stadtrand gibt es einige Mietshäuser.",
+"r": "{郊外|こうがい}に[{貸家|かしや}]が{何|なん}げんかある。",
+"bedeutung": "Mietshaus"
+},
+"貸間|かしま": {
+"s": "大学の近くで[貸間]をさがした。",
+"de": "Ich habe in Uninähe ein Mietzimmer gesucht.",
+"r": "{大学|だいがく}の{近|ちか}くで[{貸間|かしま}]をさがした。",
+"bedeutung": "Zimmer zur Miete"
+},
 "費|ひ": {
 "s": "会社が[交通費]を払ってくれる。",
 "de": "Die Firma bezahlt mir die Fahrtkosten.",
@@ -65,6 +104,20 @@
 "de": "Für das neue Geschäft fehlen die Geldmittel.",
 "r": "{新|あたら}しい{事業|じぎょう}の[{資金|しきん}]が{足|た}りない。",
 "bedeutung": "Geldmittel, Finanzierung"
+},
+"質|しつ": {
+"s": "量より[質]を大切にしたい。",
+"de": "Mir ist Qualität wichtiger als Menge.",
+"r": "{量|りょう}より[{質|しつ}]を{大切|たいせつ}にしたい。",
+"bedeutung": "Qualität",
+"lesungen": {
+"質": "しつ"
+}
+},
+"質問|しつもん": {
+"s": "説明の後で[質問]の時間があります。",
+"de": "Nach der Erklärung ist Zeit für Fragen.",
+"r": "{説明|せつめい}の{後|あと}で[{質問|しつもん}]の{時間|じかん}があります。"
 },
 "質疑|しつぎ": {
 "s": "発表のあとで[質疑]の時間がある。",

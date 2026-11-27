@@ -21,5 +21,19 @@
 "s": "市長の[演説]を聞きに大勢の人が集まった。",
 "de": "Viele Menschen kamen, um die Rede des Bürgermeisters zu hören.",
 "r": "{市長|しちょう}の[{演説|えんぜつ}]を{聞|き}きに{大勢|おおぜい}の{人|ひと}が{集|あつ}まった。"
+},
+"漢字|かんじ": {
+"s": "毎日[漢字]を十こずつ覚えている。",
+"de": "Jeden Tag lerne ich zehn Kanji.",
+"r": "{毎日|まいにち}[{漢字|かんじ}]を{十|じゅっ}こずつ{覚|おぼ}えている。",
+"lesungen": {
+"十": "じゅっ"
+}
+},
+"漢語|かんご": {
+"s": "この文章には[漢語]が多い。",
+"de": "Dieser Text enthält viele sinojapanische Wörter.",
+"r": "この{文章|ぶんしょう}には[{漢語|かんご}]が{多|おお}い。",
+"bedeutung": "Wort chinesischer Herkunft"
 }
 }

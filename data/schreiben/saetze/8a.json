@@ -1,4 +1,48 @@
 {
+"言い出す|いいだす": {
+"s": "旅行に行こうと[言い出した]のは母だ。",
+"de": "Meine Mutter hat die Reise vorgeschlagen.",
+"r": "{旅行|りょこう}に{行|い}こうと[{言|い}い{出|だ}した]のは{母|はは}だ。",
+"bedeutung": "vorschlagen, davon anfangen"
+},
+"言う|いう": {
+"s": "母はいつも「早く寝なさい」と[言う]。",
+"de": "Meine Mutter sagt immer: Geh früh schlafen.",
+"r": "{母|はは}はいつも「{早|はや}く{寝|ね}なさい」と[{言|い}う]。"
+},
+"言わば|いわば": {
+"s": "このノートは[言わば]私の宝物だ。",
+"de": "Dieses Heft ist sozusagen mein Schatz.",
+"r": "このノートは[{言|い}わば]{私|わたし}の{宝物|たからもの}だ。",
+"bedeutung": "sozusagen"
+},
+"言語|げんご": {
+"s": "人は[言語]を使って考える。",
+"de": "Der Mensch denkt mithilfe der Sprache.",
+"r": "{人|ひと}は[{言語|げんご}]を{使|つか}って{考|かんが}える。",
+"bedeutung": "Sprache"
+},
+"計|けい": {
+"s": "一年の[計]は元日にあると言う。",
+"de": "Man sagt, den Jahresplan macht man an Neujahr.",
+"r": "{一年|いちねん}の[{計|けい}]は{元日|がんじつ}にあると{言|い}う。",
+"bedeutung": "Plan",
+"lesungen": {
+"計": "けい",
+"言う": "いう"
+}
+},
+"計る|はかる": {
+"s": "お湯を入れて時間を[計る]。",
+"de": "Ich gieße heißes Wasser auf und stoppe die Zeit.",
+"r": "お{湯|ゆ}を{入|い}れて{時間|じかん}を[{計|はか}る]。",
+"bedeutung": "messen"
+},
+"計画|けいかく": {
+"s": "夏の旅行の[計画]を立てた。",
+"de": "Ich habe die Sommerreise geplant.",
+"r": "{夏|なつ}の{旅行|りょこう}の[{計画|けいかく}]を{立|た}てた。"
+},
 "記念|きねん": {
 "s": "旅行の[記念]に写真を撮った。",
 "de": "Zur Erinnerung an die Reise haben wir ein Foto gemacht.",
@@ -15,16 +59,107 @@
 "de": "Der Firmenchef besucht nächsten Monat eine Fabrik im Ausland.",
 "r": "{社長|しゃちょう}は{来月|らいげつ}、{海外|かいがい}の{工場|こうじょう}を[{訪問|ほうもん}]する。"
 },
+"試し|ためし": {
+"s": "[試し]に新しい方法を使ってみた。",
+"de": "Probeweise habe ich eine neue Methode benutzt.",
+"r": "[{試|ため}し]に{新|あたら}しい{方法|ほうほう}を{使|つか}ってみた。",
+"bedeutung": "Versuch, Probe"
+},
+"試す|ためす": {
+"s": "色々な勉強法を[試した]。",
+"de": "Ich habe verschiedene Lernmethoden ausprobiert.",
+"r": "{色々|いろいろ}な{勉強|べんきょう}{法|ほう}を[{試|ため}した]。",
+"bedeutung": "ausprobieren"
+},
+"試み|こころみ": {
+"s": "町の新しい[試み]が注目されている。",
+"de": "Der neue Versuch der Stadt findet Beachtung.",
+"r": "{町|まち}の{新|あたら}しい[{試|こころ}み]が{注目|ちゅうもく}されている。",
+"bedeutung": "Versuch"
+},
+"試みる|こころみる": {
+"s": "新しい方法を[試みる]ことにした。",
+"de": "Ich habe beschlossen, eine neue Methode zu versuchen.",
+"r": "{新|あたら}しい{方法|ほうほう}を[{試|こころ}みる]ことにした。",
+"bedeutung": "versuchen"
+},
+"試験|しけん": {
+"s": "来週は日本語の[試験]がある。",
+"de": "Nächste Woche habe ich eine Japanischprüfung.",
+"r": "{来週|らいしゅう}は{日本語|にほんご}の[{試験|しけん}]がある。"
+},
+"話|はなし": {
+"s": "先生の[話]はいつも面白い。",
+"de": "Was der Lehrer erzählt, ist immer interessant.",
+"r": "{先生|せんせい}の[{話|はなし}]はいつも{面白|おもしろ}い。"
+},
+"話す|はなす": {
+"s": "電車の中で大声で[話さない]でください。",
+"de": "Bitte sprechen Sie im Zug nicht laut.",
+"r": "{電車|でんしゃ}の{中|なか}で{大声|おおごえ}で[{話|はな}さない]でください。"
+},
+"話中|はなしちゅう": {
+"s": "電話は[話中]でつながらなかった。",
+"de": "Die Leitung war besetzt.",
+"r": "{電話|でんわ}は[{話中|はなしちゅう}]でつながらなかった。",
+"bedeutung": "besetzt (Telefon)"
+},
+"話題|わだい": {
+"s": "その映画が今[話題]になっている。",
+"de": "Über den Film wird gerade viel geredet.",
+"r": "その{映画|えいが}が{今|いま}[{話題|わだい}]になっている。",
+"bedeutung": "Gesprächsthema"
+},
 "認める|みとめる": {
 "s": "彼はやっと自分の間違いを[認めた]。",
 "de": "Er hat endlich seinen Fehler zugegeben.",
 "r": "{彼|かれ}はやっと{自分|じぶん}の{間違|まちが}いを[{認|みと}めた]。"
+},
+"語|ご": {
+"s": "三つの外国[語]が話せるようになりたい。",
+"de": "Ich möchte drei Fremdsprachen sprechen können.",
+"r": "{三|みっ}つの{外国|がいこく}[{語|ご}]が{話|はな}せるようになりたい。"
+},
+"語る|かたる": {
+"s": "祖母は昔のことを静かに[語った]。",
+"de": "Meine Großmutter erzählte ruhig von früher.",
+"r": "{祖母|そぼ}は{昔|むかし}のことを{静|しず}かに[{語|かた}った]。",
+"bedeutung": "erzählen"
 },
 "語句|ごく": {
 "s": "わからない[語句]を辞書で調べた。",
 "de": "Ich habe die Wörter, die ich nicht verstand, im Wörterbuch nachgeschlagen.",
 "r": "わからない[{語句|ごく}]を{辞書|じしょ}で{調|しら}べた。",
 "bedeutung": "Wörter und Wendungen"
+},
+"語学|ごがく": {
+"s": "姉は[語学]の才能がある。",
+"de": "Meine Schwester ist sprachbegabt.",
+"r": "{姉|あね}は[{語学|ごがく}]の{才能|さいのう}がある。",
+"bedeutung": "Sprachenlernen"
+},
+"読み|よみ": {
+"s": "漢字の[読み]を調べる。",
+"de": "Ich schlage die Lesung des Kanji nach.",
+"r": "{漢字|かんじ}の[{読|よ}み]を{調|しら}べる。",
+"bedeutung": "Lesung, das Lesen"
+},
+"読み上げる|よみあげる": {
+"s": "先生が合格者の名前を[読み上げた]。",
+"de": "Die Lehrerin las die Namen der Bestandenen vor.",
+"r": "{先生|せんせい}が{合格者|ごうかくしゃ}の{名前|なまえ}を[{読|よ}み{上|あ}げた]。",
+"bedeutung": "laut vorlesen"
+},
+"読む|よむ": {
+"s": "ねる前に本を[読む]のが好きだ。",
+"de": "Ich lese gern vor dem Einschlafen.",
+"r": "ねる{前|まえ}に{本|ほん}を[{読|よ}む]のが{好|す}きだ。"
+},
+"読書|どくしょ": {
+"s": "秋の夜は[読書]を楽しむ。",
+"de": "An Herbstabenden genieße ich das Lesen.",
+"r": "{秋|あき}の{夜|よる}は[{読書|どくしょ}]を{楽|たの}しむ。",
+"bedeutung": "Lektüre, Lesen"
 },
 "論争|ろんそう": {
 "s": "新しい法律をめぐって[論争]が続いている。",

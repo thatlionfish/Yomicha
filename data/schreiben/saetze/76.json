@@ -1,4 +1,145 @@
 {
+"発|はつ": {
+"s": "ピストルの音が二[発]聞こえた。",
+"de": "Man hörte zwei Schüsse.",
+"r": "ピストルの{音|おと}が{二|に}[{発|はつ}]{聞|き}こえた。",
+"bedeutung": "Zählwort für Schüsse"
+},
+"発作|ほっさ": {
+"s": "祖父はせきの[発作]を起こした。",
+"de": "Mein Großvater bekam einen Hustenanfall.",
+"r": "{祖父|そふ}はせきの[{発作|ほっさ}]を{起|お}こした。",
+"bedeutung": "Anfall"
+},
+"発売|はつばい": {
+"s": "新しいゲームは来月[発売]される。",
+"de": "Das neue Spiel erscheint nächsten Monat.",
+"r": "{新|あたら}しいゲームは{来月|らいげつ}[{発売|はつばい}]される。",
+"bedeutung": "Verkaufsstart"
+},
+"発明|はつめい": {
+"s": "電話の[発明]は生活を大きく変えた。",
+"de": "Die Erfindung des Telefons hat das Leben stark verändert.",
+"r": "{電話|でんわ}の[{発明|はつめい}]は{生活|せいかつ}を{大|おお}きく{変|か}えた。",
+"bedeutung": "Erfindung"
+},
+"発生|はっせい": {
+"s": "夏は食中毒が[発生]しやすい。",
+"de": "Im Sommer kommt es leicht zu Lebensmittelvergiftungen.",
+"r": "{夏|なつ}は{食中毒|しょくちゅうどく}が[{発生|はっせい}]しやすい。",
+"bedeutung": "Auftreten, Entstehen"
+},
+"発病|はつびょう": {
+"s": "ウイルスは三日ほどで[発病]する。",
+"de": "Das Virus bricht nach etwa drei Tagen aus.",
+"r": "ウイルスは{三日|みっか}ほどで[{発病|はつびょう}]する。",
+"bedeutung": "Ausbruch einer Krankheit"
+},
+"発行|はっこう": {
+"s": "この雑誌は月に一回[発行]される。",
+"de": "Diese Zeitschrift erscheint einmal im Monat.",
+"r": "この{雑誌|ざっし}は{月|つき}に{一回|いっかい}[{発行|はっこう}]される。",
+"bedeutung": "Herausgabe, Ausgabe"
+},
+"発見|はっけん": {
+"s": "散歩中に面白い店を[発見]した。",
+"de": "Beim Spazieren habe ich einen interessanten Laden entdeckt.",
+"r": "{散歩|さんぽ}{中|ちゅう}に{面白|おもしろ}い{店|みせ}を[{発見|はっけん}]した。",
+"bedeutung": "Entdeckung"
+},
+"発言|はつげん": {
+"s": "会議で彼の[発言]が注目された。",
+"de": "Seine Äußerung in der Besprechung fand Beachtung.",
+"r": "{会議|かいぎ}で{彼|かれ}の[{発言|はつげん}]が{注目|ちゅうもく}された。",
+"bedeutung": "Äußerung"
+},
+"発足|ほっそく": {
+"s": "新しい研究会が四月に[発足]した。",
+"de": "Im April wurde ein neuer Forschungskreis gegründet.",
+"r": "{新|あたら}しい{研究会|けんきゅうかい}が{四月|しがつ}に[{発足|ほっそく}]した。",
+"bedeutung": "Gründung, Start"
+},
+"発車|はっしゃ": {
+"s": "まもなく[発車]します。",
+"de": "Der Zug fährt in Kürze ab.",
+"r": "まもなく[{発車|はっしゃ}]します。",
+"bedeutung": "Abfahrt (eines Fahrzeugs)"
+},
+"発電|はつでん": {
+"s": "この川の水は[発電]に使われている。",
+"de": "Das Wasser dieses Flusses dient der Stromerzeugung.",
+"r": "この{川|かわ}の{水|みず}は[{発電|はつでん}]に{使|つか}われている。",
+"bedeutung": "Stromerzeugung"
+},
+"発音|はつおん": {
+"s": "英語の[発音]を直してもらった。",
+"de": "Ich habe meine englische Aussprache korrigieren lassen.",
+"r": "{英語|えいご}の[{発音|はつおん}]を{直|なお}してもらった。"
+},
+"白|しろ": {
+"s": "このかばんは黒と[白]があります。",
+"de": "Diese Tasche gibt es in Schwarz und Weiß.",
+"r": "このかばんは{黒|くろ}と[{白|しろ}]があります。"
+},
+"白い|しろい": {
+"s": "[白い]シャツがよごれてしまった。",
+"de": "Mein weißes Hemd ist schmutzig geworden.",
+"r": "[{白|しろ}い]シャツがよごれてしまった。"
+},
+"百|ひゃく": {
+"s": "この寺は[百]年以上前に建てられた。",
+"de": "Dieser Tempel wurde vor mehr als hundert Jahren gebaut.",
+"r": "この{寺|てら}は[{百|ひゃく}]{年|ねん}{以上|いじょう}{前|まえ}に{建|た}てられた。"
+},
+"目|め": {
+"s": "長く本を読んで[目]がつかれた。",
+"de": "Vom langen Lesen sind meine Augen müde.",
+"r": "{長|なが}く{本|ほん}を{読|よ}んで[{目|め}]がつかれた。"
+},
+"目上|めうえ": {
+"s": "[目上]の人には丁寧に話す。",
+"de": "Mit Höherstehenden spricht man höflich.",
+"r": "[{目上|めうえ}]の{人|ひと}には{丁寧|ていねい}に{話|はな}す。",
+"bedeutung": "Höhergestellte, Ältere"
+},
+"目下|めした": {
+"s": "[目下]、原因を調べています。",
+"de": "Zurzeit untersuchen wir die Ursache.",
+"r": "[{目下|めした}]、{原因|げんいん}を{調|しら}べています。",
+"bedeutung": "gegenwärtig"
+},
+"目下|もっか": {
+"s": "[目下]の課題は人手の不足だ。",
+"de": "Die gegenwärtige Aufgabe ist der Personalmangel.",
+"r": "[{目下|もっか}]の{課題|かだい}は{人手|ひとで}の{不足|ふそく}だ。",
+"bedeutung": "derzeit",
+"lesungen": {
+"目下": "もっか"
+}
+},
+"目安|めやす": {
+"s": "一日三十分を勉強の[目安]にしている。",
+"de": "Ich nehme dreißig Minuten am Tag als Richtwert.",
+"r": "{一日|いちにち}{三十分|さんじゅっぷん}を{勉強|べんきょう}の[{目安|めやす}]にしている。",
+"bedeutung": "Richtwert, Anhaltspunkt",
+"lesungen": {
+"十": "じゅっ",
+"三十": "さんじゅっ",
+"分": "ぷん"
+}
+},
+"目方|めかた": {
+"s": "荷物の[目方]を量ってもらった。",
+"de": "Ich habe das Paket wiegen lassen.",
+"r": "{荷物|にもつ}の[{目方|めかた}]を{量|はか}ってもらった。",
+"bedeutung": "Gewicht"
+},
+"目立つ|めだつ": {
+"s": "彼の赤いぼうしはよく[目立つ]。",
+"de": "Seine rote Mütze fällt sehr auf.",
+"r": "{彼|かれ}の{赤|あか}いぼうしはよく[{目立|めだ}つ]。",
+"bedeutung": "auffallen"
+},
 "相談|そうだん": {
 "s": "進路について先生に[相談]した。",
 "de": "Ich habe mit meiner Lehrerin über meinen weiteren Weg gesprochen.",

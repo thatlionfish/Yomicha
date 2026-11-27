@@ -1,12 +1,114 @@
 {
+"土|つち": {
+"s": "雨のあとは[土]のにおいがする。",
+"de": "Nach dem Regen riecht es nach Erde.",
+"r": "{雨|あめ}のあとは[{土|つち}]のにおいがする。",
+"bedeutung": "Erde, Boden"
+},
+"土台|どだい": {
+"s": "家の[土台]を直す工事をした。",
+"de": "Das Fundament des Hauses wurde ausgebessert.",
+"r": "{家|いえ}の[{土台|どだい}]を{直|なお}す{工事|こうじ}をした。",
+"bedeutung": "Fundament, Grundlage"
+},
+"土地|とち": {
+"s": "祖父は[土地]を少し持っている。",
+"de": "Mein Großvater besitzt etwas Land.",
+"r": "{祖父|そふ}は[{土地|とち}]を{少|すこ}し{持|も}っている。",
+"bedeutung": "Grundstück, Boden"
+},
+"土手|どて": {
+"s": "川の[土手]を散歩した。",
+"de": "Ich bin auf dem Flussdamm spazieren gegangen.",
+"r": "{川|かわ}の[{土手|どて}]を{散歩|さんぽ}した。",
+"bedeutung": "Damm"
+},
+"土曜日|どようび": {
+"s": "[土曜日]は午前中だけ働いている。",
+"de": "Samstags arbeite ich nur vormittags.",
+"r": "[{土曜日|どようび}]は{午前中|ごぜんちゅう}だけ{働|はたら}いている。"
+},
+"土木|どぼく": {
+"s": "兄は[土木]の仕事をしている。",
+"de": "Mein Bruder arbeitet im Tiefbau.",
+"r": "{兄|あに}は[{土木|どぼく}]の{仕事|しごと}をしている。",
+"bedeutung": "Tiefbau"
+},
+"地|ち": {
+"s": "旅の話は天と[地]ほど違っていた。",
+"de": "Die Reiseberichte unterschieden sich wie Himmel und Erde.",
+"r": "{旅|たび}の{話|はなし}は{天|てん}と[{地|ち}]ほど{違|ちが}っていた。",
+"bedeutung": "Erde, Boden",
+"lesungen": {
+"地": "ち"
+}
+},
+"地下|ちか": {
+"s": "[地下]の駐車場に車を止めた。",
+"de": "Ich habe in der Tiefgarage geparkt.",
+"r": "[{地下|ちか}]の{駐車場|ちゅうしゃじょう}に{車|くるま}を{止|と}めた。",
+"bedeutung": "Untergrund, Kellergeschoss"
+},
+"地下水|ちかすい": {
+"s": "この町は[地下水]を飲み水にしている。",
+"de": "Diese Stadt nutzt Grundwasser als Trinkwasser.",
+"r": "この{町|まち}は[{地下水|ちかすい}]を{飲|の}み{水|みず}にしている。",
+"bedeutung": "Grundwasser"
+},
+"地主|じぬし": {
+"s": "祖父の家は昔、[地主]だった。",
+"de": "Die Familie meines Großvaters waren früher Grundbesitzer.",
+"r": "{祖父|そふ}の{家|いえ}は{昔|むかし}、[{地主|じぬし}]だった。",
+"bedeutung": "Grundbesitzer"
+},
 "地位|ちい": {
 "s": "女性の社会的[地位]は少しずつ上がってきた。",
 "de": "Die gesellschaftliche Stellung der Frauen ist nach und nach gestiegen.",
 "r": "{女性|じょせい}の{社会的|しゃかいてき}[{地位|ちい}]は{少|すこ}しずつ{上|あ}がってきた。"
 },
+"地元|じもと": {
+"s": "[地元]の野菜を使った料理だ。",
+"de": "Ein Gericht mit Gemüse aus der Gegend.",
+"r": "[{地元|じもと}]の{野菜|やさい}を{使|つか}った{料理|りょうり}だ。",
+"bedeutung": "die Gegend hier, örtlich"
+},
+"地名|ちめい": {
+"s": "古い[地名]には意味がある。",
+"de": "Alte Ortsnamen haben eine Bedeutung.",
+"r": "{古|ふる}い[{地名|ちめい}]には{意味|いみ}がある。",
+"bedeutung": "Ortsname"
+},
+"地味|じみ": {
+"s": "今日は[地味]な色の服を選んだ。",
+"de": "Heute habe ich schlichte Farben gewählt.",
+"r": "{今日|きょう}は[{地味|じみ}]な{色|いろ}の{服|ふく}を{選|えら}んだ。",
+"bedeutung": "schlicht, unauffällig"
+},
+"地図|ちず": {
+"s": "[地図]を見ながら目的地をさがした。",
+"de": "Mit dem Stadtplan habe ich das Ziel gesucht.",
+"r": "[{地図|ちず}]を{見|み}ながら{目的地|もくてきち}をさがした。"
+},
+"地方|ちほう": {
+"s": "[地方]の町で暮らしてみたい。",
+"de": "Ich möchte in einer Kleinstadt in der Provinz leben.",
+"r": "[{地方|ちほう}]の{町|まち}で{暮|く}らしてみたい。",
+"bedeutung": "Region, Provinz"
+},
 "地球|ちきゅう": {
 "s": "[地球]の気温は少しずつ上がっている。",
 "de": "Die Temperatur der Erde steigt allmählich.",
 "r": "[{地球|ちきゅう}]の{気温|きおん}は{少|すこ}しずつ{上|あ}がっている。"
+},
+"地理|ちり": {
+"s": "[地理]の授業で地図の見方を習った。",
+"de": "Im Erdkundeunterricht haben wir Kartenlesen gelernt.",
+"r": "[{地理|ちり}]の{授業|じゅぎょう}で{地図|ちず}の{見方|みかた}を{習|なら}った。"
+},
+"地質|ちしつ": {
+"s": "家を建てる前に[地質]を調べる。",
+"de": "Vor dem Hausbau prüft man den Untergrund.",
+"r": "{家|いえ}を{建|た}てる{前|まえ}に[{地質|ちしつ}]を{調|しら}べる。",
+"bedeutung": "Bodenbeschaffenheit"
 }
 }

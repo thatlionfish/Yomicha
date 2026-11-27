@@ -1,0 +1,60 @@
+{
+"社|しゃ": {
+"s": "この町には出版社が三[社]ある。",
+"de": "In dieser Stadt gibt es drei Verlage.",
+"r": "この{町|まち}には{出版社|しゅっぱんしゃ}が{三|さん}[{社|しゃ}]ある。",
+"bedeutung": "Zählwort für Firmen",
+"lesungen": {
+"社": "しゃ"
+}
+},
+"社会|しゃかい": {
+"s": "[社会]のために役に立つ仕事がしたい。",
+"de": "Ich möchte etwas arbeiten, das der Gesellschaft nützt.",
+"r": "[{社会|しゃかい}]のために{役|やく}に{立|た}つ{仕事|しごと}がしたい。"
+},
+"社長|しゃちょう": {
+"s": "新しい[社長]があいさつをした。",
+"de": "Der neue Firmenchef hat sich vorgestellt.",
+"r": "{新|あたら}しい[{社長|しゃちょう}]があいさつをした。"
+},
+"私|わたくし": {
+"s": "[私]、山田と申します。",
+"de": "Mein Name ist Yamada.",
+"r": "[{私|わたくし}]、{山田|やまだ}と{申|もう}します。"
+},
+"私|わたし": {
+"s": "[私]は会社で事務の仕事をしています。",
+"de": "Ich mache Büroarbeit in einer Firma.",
+"r": "[{私|わたし}]は{会社|かいしゃ}で{事務|じむ}の{仕事|しごと}をしています。"
+},
+"私有|しゆう": {
+"s": "ここから先は[私有]地です。",
+"de": "Ab hier ist Privatgrund.",
+"r": "ここから{先|さき}は[{私有|しゆう}]{地|ち}です。",
+"bedeutung": "privates Eigentum"
+},
+"私物|しぶつ": {
+"s": "会社の机に[私物]を置きすぎない。",
+"de": "Man sollte nicht zu viel Privates auf den Büroschreibtisch stellen.",
+"r": "{会社|かいしゃ}の{机|つくえ}に[{私物|しぶつ}]を{置|お}きすぎない。",
+"bedeutung": "persönliches Eigentum"
+},
+"私用|しよう": {
+"s": "会社の電話を[私用]で使わないでください。",
+"de": "Nutzen Sie das Firmentelefon bitte nicht privat.",
+"r": "{会社|かいしゃ}の{電話|でんわ}を[{私用|しよう}]で{使|つか}わないでください。",
+"bedeutung": "private Nutzung"
+},
+"私立|しりつ": {
+"s": "弟は[私立]の高校に入った。",
+"de": "Mein Bruder besucht eine private Oberschule.",
+"r": "{弟|おとうと}は[{私立|しりつ}]の{高校|こうこう}に{入|はい}った。",
+"bedeutung": "privat (Einrichtung)"
+},
+"秋|あき": {
+"s": "[秋]は読書にいい季節だ。",
+"de": "Der Herbst ist eine gute Jahreszeit zum Lesen.",
+"r": "[{秋|あき}]は{読書|どくしょ}にいい{季節|きせつ}だ。"
+}
+}

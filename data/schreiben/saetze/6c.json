@@ -1,4 +1,124 @@
 {
+"気|き": {
+"s": "失敗はあまり[気]にしないほうがいい。",
+"de": "Über Fehler macht man sich besser nicht zu viele Gedanken.",
+"r": "{失敗|しっぱい}はあまり[{気|き}]にしないほうがいい。"
+},
+"気に入る|きにいる": {
+"s": "このかばんがとても[気に入った]。",
+"de": "Diese Tasche gefällt mir sehr.",
+"r": "このかばんがとても[{気|き}に{入|い}った]。",
+"bedeutung": "gefallen"
+},
+"気まぐれ|きまぐれ": {
+"s": "春の天気は[気まぐれ]だ。",
+"de": "Das Frühlingswetter ist launisch.",
+"r": "{春|はる}の{天気|てんき}は[{気|き}まぐれ]だ。",
+"bedeutung": "Laune, launisch"
+},
+"気体|きたい": {
+"s": "水は熱すると[気体]になる。",
+"de": "Erhitztes Wasser wird gasförmig.",
+"r": "{水|みず}は{熱|ねっ}すると[{気体|きたい}]になる。",
+"bedeutung": "Gas"
+},
+"気分|きぶん": {
+"s": "散歩をしたら[気分]がよくなった。",
+"de": "Nach dem Spaziergang ging es mir besser.",
+"r": "{散歩|さんぽ}をしたら[{気分|きぶん}]がよくなった。"
+},
+"気味|きみ": {
+"s": "少しかぜ[気味]なので早く寝ます。",
+"de": "Ich fühle mich leicht erkältet und gehe früh schlafen.",
+"r": "{少|すこ}しかぜ[{気味|きみ}]なので{早|はや}く{寝|ね}ます。",
+"bedeutung": "Anflug von …",
+"lesungen": {
+"気味": "ぎみ"
+}
+},
+"気味|ぎみ": {
+"s": "今日はつかれ[気味]だ。",
+"de": "Heute bin ich etwas erschöpft.",
+"r": "{今日|きょう}はつかれ[{気味|ぎみ}]だ。",
+"bedeutung": "leicht …, Anflug von",
+"lesungen": {
+"気味": "ぎみ"
+}
+},
+"気品|きひん": {
+"s": "彼女の字には[気品]がある。",
+"de": "Ihre Handschrift hat etwas Edles.",
+"r": "{彼女|かのじょ}の{字|じ}には[{気品|きひん}]がある。",
+"bedeutung": "Würde, Anmut"
+},
+"気持ち|きもち": {
+"s": "朝の散歩は[気持ち]がいい。",
+"de": "Ein Morgenspaziergang tut gut.",
+"r": "{朝|あさ}の{散歩|さんぽ}は[{気持|きも}ち]がいい。"
+},
+"気立て|きだて": {
+"s": "彼女は[気立て]のいい人だ。",
+"de": "Sie ist ein gutherziger Mensch.",
+"r": "{彼女|かのじょ}は[{気立|きだ}て]のいい{人|ひと}だ。",
+"bedeutung": "Gemütsart"
+},
+"気質|きしつ": {
+"s": "彼は職人らしい[気質]を持っている。",
+"de": "Er hat das Wesen eines echten Handwerkers.",
+"r": "{彼|かれ}は{職人|しょくにん}らしい[{気質|きしつ}]を{持|も}っている。",
+"bedeutung": "Wesensart"
+},
+"気風|きふう": {
+"s": "この学校には自由な[気風]がある。",
+"de": "An dieser Schule herrscht ein freier Geist.",
+"r": "この{学校|がっこう}には{自由|じゆう}な[{気風|きふう}]がある。",
+"bedeutung": "Geist, Atmosphäre"
+},
+"水|みず": {
+"s": "暑い日は[水]をたくさん飲もう。",
+"de": "An heißen Tagen sollte man viel Wasser trinken.",
+"r": "{暑|あつ}い{日|ひ}は[{水|みず}]をたくさん{飲|の}もう。"
+},
+"水分|すいぶん": {
+"s": "暑い日は[水分]をよくとりましょう。",
+"de": "An heißen Tagen sollte man viel trinken.",
+"r": "{暑|あつ}い{日|ひ}は[{水分|すいぶん}]をよくとりましょう。",
+"bedeutung": "Flüssigkeit, Feuchtigkeit"
+},
+"水曜|すいよう": {
+"s": "[水曜]の午後は空いています。",
+"de": "Mittwochnachmittag habe ich Zeit.",
+"r": "[{水曜|すいよう}]の{午後|ごご}は{空|あ}いています。",
+"bedeutung": "Mittwoch"
+},
+"水曜日|すいようび": {
+"s": "[水曜日]までに申し込んでください。",
+"de": "Melden Sie sich bitte bis Mittwoch an.",
+"r": "[{水曜日|すいようび}]までに{申|もう}し{込|こ}んでください。"
+},
+"水気|みずけ": {
+"s": "野菜の[水気]をよく切ってください。",
+"de": "Lassen Sie das Gemüse gut abtropfen.",
+"r": "{野菜|やさい}の[{水気|みずけ}]をよく{切|き}ってください。",
+"bedeutung": "Feuchtigkeit"
+},
+"水田|すいでん": {
+"s": "[水田]に青い空が映っている。",
+"de": "Im Reisfeld spiegelt sich der blaue Himmel.",
+"r": "[{水田|すいでん}]に{青|あお}い{空|そら}が{映|うつ}っている。",
+"bedeutung": "bewässertes Reisfeld"
+},
+"水着|みずぎ": {
+"s": "海へ行く前に[水着]を買った。",
+"de": "Vor der Fahrt ans Meer habe ich Badezeug gekauft.",
+"r": "{海|うみ}へ{行|い}く{前|まえ}に[{水着|みずぎ}]を{買|か}った。",
+"bedeutung": "Badeanzug"
+},
+"水道|すいどう": {
+"s": "この国では[水道]の水がそのまま飲める。",
+"de": "In diesem Land kann man Leitungswasser trinken.",
+"r": "この{国|くに}では[{水道|すいどう}]の{水|みず}がそのまま{飲|の}める。"
+},
 "求める|もとめる": {
 "s": "市民は安全な町を[求めて]いる。",
 "de": "Die Bürger wünschen sich eine sichere Stadt.",
@@ -8,5 +128,58 @@
 "s": "自然には様々な[法則]がある。",
 "de": "In der Natur gibt es verschiedene Gesetzmäßigkeiten.",
 "r": "{自然|しぜん}には{様々|さまざま}な[{法則|ほうそく}]がある。"
+},
+"注|ちゅう": {
+"s": "むずかしい言葉には[注]がついている。",
+"de": "Schwierige Wörter haben eine Anmerkung.",
+"r": "むずかしい{言葉|ことば}には[{注|ちゅう}]がついている。",
+"bedeutung": "Anmerkung",
+"lesungen": {
+"注": "ちゅう"
+}
+},
+"注ぐ|そそぐ": {
+"s": "コップにお茶を[注いだ]。",
+"de": "Ich habe Tee in das Glas gegossen.",
+"r": "コップにお{茶|ちゃ}を[{注|そそ}いだ]。",
+"bedeutung": "(hinein)gießen",
+"lesungen": {
+"注い": "そそい"
+}
+},
+"注ぐ|つぐ": {
+"s": "お客さんにお酒を[注いだ]。",
+"de": "Ich habe dem Gast Sake eingeschenkt.",
+"r": "お{客|きゃく}さんにお{酒|さけ}を[{注|つ}いだ]。",
+"bedeutung": "einschenken",
+"lesungen": {
+"注い": "つい"
+}
+},
+"注す|さす": {
+"s": "花に水を[注した]。",
+"de": "Ich habe den Blumen Wasser nachgegossen.",
+"r": "{花|はな}に{水|みず}を[{注|さ}した]。",
+"bedeutung": "(ein)gießen",
+"lesungen": {
+"注し": "さし"
+}
+},
+"注意|ちゅうい": {
+"s": "足元に[注意]して歩いてください。",
+"de": "Achten Sie beim Gehen auf Ihre Schritte.",
+"r": "{足元|あしもと}に[{注意|ちゅうい}]して{歩|ある}いてください。"
+},
+"注文|ちゅうもん": {
+"s": "電話でピザを[注文]した。",
+"de": "Ich habe telefonisch eine Pizza bestellt.",
+"r": "{電話|でんわ}でピザを[{注文|ちゅうもん}]した。",
+"bedeutung": "Bestellung"
+},
+"注目|ちゅうもく": {
+"s": "新しい技術が[注目]されている。",
+"de": "Die neue Technik findet Beachtung.",
+"r": "{新|あたら}しい{技術|ぎじゅつ}が[{注目|ちゅうもく}]されている。",
+"bedeutung": "Aufmerksamkeit, Beachtung"
 }
 }

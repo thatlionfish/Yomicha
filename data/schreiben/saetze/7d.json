@@ -1,8 +1,50 @@
 {
+"紙|かみ": {
+"s": "この[紙]に名前を書いてください。",
+"de": "Schreiben Sie bitte Ihren Namen auf dieses Papier.",
+"r": "この[{紙|かみ}]に{名前|なまえ}を{書|か}いてください。"
+},
+"紙|し": {
+"s": "父は毎朝、経済[紙]を読む。",
+"de": "Mein Vater liest jeden Morgen eine Wirtschaftszeitung.",
+"r": "{父|ちち}は{毎朝|まいあさ}、{経済|けいざい}[{紙|し}]を{読|よ}む。",
+"bedeutung": "Zeitung, Blatt",
+"lesungen": {
+"紙": "し"
+}
+},
+"終える|おえる": {
+"s": "今日の仕事を早めに[終えた]。",
+"de": "Ich habe die heutige Arbeit früh beendet.",
+"r": "{今日|きょう}の{仕事|しごと}を{早|はや}めに[{終|お}えた]。",
+"bedeutung": "beenden"
+},
+"終る|おわる": {
+"s": "仕事が[終る]時間は毎日ちがう。",
+"de": "Wann die Arbeit endet, ist jeden Tag anders.",
+"r": "{仕事|しごと}が[{終|おわ}る]{時間|じかん}は{毎日|まいにち}ちがう。"
+},
+"終わり|おわり": {
+"s": "映画は[終わり]のほうがおもしろかった。",
+"de": "Gegen Ende war der Film am besten.",
+"r": "{映画|えいが}は[{終|お}わり]のほうがおもしろかった。"
+},
 "終了|しゅうりょう": {
 "s": "試験は三時に[終了]します。",
 "de": "Die Prüfung endet um drei Uhr.",
 "r": "{試験|しけん}は{三時|さんじ}に[{終了|しゅうりょう}]します。"
+},
+"終始|しゅうし": {
+"s": "彼は会議で[終始]黙っていた。",
+"de": "Er schwieg die ganze Besprechung über.",
+"r": "{彼|かれ}は{会議|かいぎ}で[{終始|しゅうし}]{黙|だま}っていた。",
+"bedeutung": "von Anfang bis Ende"
+},
+"終日|しゅうじつ": {
+"s": "日曜は[終日]、家で過ごした。",
+"de": "Sonntag war ich den ganzen Tag zu Hause.",
+"r": "{日曜|にちよう}は[{終日|しゅうじつ}]、{家|いえ}で{過|す}ごした。",
+"bedeutung": "den ganzen Tag"
 },
 "経済|けいざい": {
 "s": "日本の[経済]について調べている。",

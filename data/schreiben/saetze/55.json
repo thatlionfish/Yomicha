@@ -40,5 +40,43 @@
 "de": "Meine ältere Schwester arbeitet bei einem Handelshaus in Tokio.",
 "r": "{姉|あね}は{東京|とうきょう}の[{商社|しょうしゃ}]で{働|はたら}いている。",
 "bedeutung": "Handelsfirma, Handelshaus"
+},
+"問|もん": {
+"s": "テストは全部で十[問]です。",
+"de": "Der Test hat insgesamt zehn Fragen.",
+"r": "テストは{全部|ぜんぶ}で{十|じゅう}[{問|もん}]です。",
+"bedeutung": "Zählwort für Aufgaben",
+"lesungen": {
+"問": "もん"
+}
+},
+"問い|とい": {
+"s": "次の[問い]に答えなさい。",
+"de": "Beantworten Sie die folgende Frage.",
+"r": "{次|つぎ}の[{問|と}い]に{答|こた}えなさい。",
+"bedeutung": "Frage"
+},
+"問う|とう": {
+"s": "会社の責任を[問う]声が出ている。",
+"de": "Es werden Stimmen laut, die nach der Verantwortung der Firma fragen.",
+"r": "{会社|かいしゃ}の{責任|せきにん}を[{問|と}う]{声|こえ}が{出|で}ている。",
+"bedeutung": "fragen"
+},
+"問屋|とんや": {
+"s": "店の人は[問屋]から品物を仕入れる。",
+"de": "Händler beziehen Ware vom Großhändler.",
+"r": "{店|みせ}の{人|ひと}は[{問屋|とんや}]から{品物|しなもの}を{仕入|しい}れる。",
+"bedeutung": "Großhandlung"
+},
+"問答|もんどう": {
+"s": "客との[問答]を何度も練習した。",
+"de": "Ich habe Frage und Antwort mit Kunden oft geübt.",
+"r": "{客|きゃく}との[{問答|もんどう}]を{何度|なんど}も{練習|れんしゅう}した。",
+"bedeutung": "Frage und Antwort"
+},
+"問題|もんだい": {
+"s": "この[問題]は思ったより難しい。",
+"de": "Diese Aufgabe ist schwerer als gedacht.",
+"r": "この[{問題|もんだい}]は{思|おも}ったより{難|むずか}しい。"
 }
 }

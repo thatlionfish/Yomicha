@@ -1,4 +1,37 @@
 {
+"火|ひ": {
+"s": "料理の後は[火]を消したか確かめる。",
+"de": "Nach dem Kochen prüfe ich, ob das Feuer aus ist.",
+"r": "{料理|りょうり}の{後|あと}は[{火|ひ}]を{消|け}したか{確|たし}かめる。"
+},
+"火事|かじ": {
+"s": "昨夜、近所で[火事]があった。",
+"de": "Gestern Nacht hat es in der Nachbarschaft gebrannt.",
+"r": "{昨夜|さくや}、{近所|きんじょ}で[{火事|かじ}]があった。"
+},
+"火口|かこう": {
+"s": "山の[火口]から白いけむりが出ている。",
+"de": "Aus dem Krater steigt weißer Rauch auf.",
+"r": "{山|やま}の[{火口|かこう}]から{白|しろ}いけむりが{出|で}ている。",
+"bedeutung": "Krater"
+},
+"火山|かざん": {
+"s": "日本には[火山]がたくさんある。",
+"de": "In Japan gibt es viele Vulkane.",
+"r": "{日本|にほん}には[{火山|かざん}]がたくさんある。",
+"bedeutung": "Vulkan"
+},
+"火曜日|かようび": {
+"s": "[火曜日]は店が休みです。",
+"de": "Dienstags ist der Laden geschlossen.",
+"r": "[{火曜日|かようび}]は{店|みせ}が{休|やす}みです。"
+},
+"火花|ひばな": {
+"s": "たき火から[火花]が飛んだ。",
+"de": "Aus dem Lagerfeuer sprühten Funken.",
+"r": "たき{火|び}から[{火花|ひばな}]が{飛|と}んだ。",
+"bedeutung": "Funke"
+},
 "炎|ほのお": {
 "s": "ろうそくの[炎]が風で静かに揺れた。",
 "de": "Die Flamme der Kerze flackerte leise im Wind.",

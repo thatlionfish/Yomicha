@@ -1,4 +1,18 @@
 {
+"校|こう": {
+"s": "兄は私の出身[校]で教えている。",
+"de": "Mein Bruder unterrichtet an meiner früheren Schule.",
+"r": "{兄|あに}は{私|わたし}の{出身|しゅっしん}[{校|こう}]で{教|おし}えている。",
+"bedeutung": "Schule (in Zusammensetzungen)",
+"lesungen": {
+"校": "こう"
+}
+},
+"校長|こうちょう": {
+"s": "朝の会で[校長]先生が話した。",
+"de": "Beim Morgenappell sprach der Schulleiter.",
+"r": "{朝|あさ}の{会|かい}で[{校長|こうちょう}]{先生|せんせい}が{話|はな}した。"
+},
 "格|かく": {
 "s": "このホテルは駅前の店より[格]が上だ。",
 "de": "Dieses Hotel ist eine Klasse höher als die Häuser am Bahnhof.",

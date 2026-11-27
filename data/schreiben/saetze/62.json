@@ -1,4 +1,10 @@
 {
+"お手上げ|おてあげ": {
+"s": "この問題はむずかしくて[お手上げ]だ。",
+"de": "Bei dieser Aufgabe muss ich passen.",
+"r": "この{問題|もんだい}はむずかしくて[お{手上|てあ}げ]だ。",
+"bedeutung": "aufgeben müssen"
+},
 "成果|せいか": {
 "s": "毎日の練習の[成果]が出てきた。",
 "de": "Das tägliche Üben zeigt langsam Wirkung.",
@@ -10,10 +16,83 @@
 "de": "Mein Großvater hat mir vom Krieg in seiner Kindheit erzählt.",
 "r": "{祖父|そふ}は{子|こ}どものころの[{戦争|せんそう}]の{話|はなし}をしてくれた。"
 },
+"手|しゅ": {
+"s": "好きな野球選[手]に会えた。",
+"de": "Ich habe meinen Lieblings-Baseballspieler getroffen.",
+"r": "{好|す}きな{野球|やきゅう}{選|せん}[{手|しゅ}]に{会|あ}えた。",
+"bedeutung": "Person, die etwas ausübt",
+"lesungen": {
+"手": "しゅ"
+}
+},
+"手|て": {
+"s": "食事の前に[手]を洗いましょう。",
+"de": "Waschen wir uns vor dem Essen die Hände.",
+"r": "{食事|しょくじ}の{前|まえ}に[{手|て}]を{洗|あら}いましょう。"
+},
+"手ごろ|てごろ": {
+"s": "[手ごろ]な値段の時計をさがしている。",
+"de": "Ich suche eine Uhr zu einem annehmbaren Preis.",
+"r": "[{手|て}ごろ]な{値段|ねだん}の{時計|とけい}をさがしている。",
+"bedeutung": "passend, erschwinglich"
+},
+"手元|てもと": {
+"s": "[手元]の資料をご覧ください。",
+"de": "Sehen Sie bitte in Ihre Unterlagen.",
+"r": "[{手元|てもと}]の{資料|しりょう}をご{覧|らん}ください。",
+"bedeutung": "bei der Hand"
+},
+"手入れ|ていれ": {
+"s": "庭の[手入れ]に一日かかった。",
+"de": "Die Gartenpflege hat einen Tag gedauert.",
+"r": "{庭|にわ}の[{手入|てい}れ]に{一日|いちにち}かかった。",
+"bedeutung": "Pflege, Instandhaltung"
+},
+"手分け|てわけ": {
+"s": "[手分け]して部屋をそうじした。",
+"de": "Wir haben das Zimmer gemeinsam aufgeteilt geputzt.",
+"r": "[{手分|てわ}け]して{部屋|へや}をそうじした。",
+"bedeutung": "Arbeitsteilung"
+},
+"手前|てまえ": {
+"s": "駅の一つ[手前]でバスを降りた。",
+"de": "Ich bin eine Station vor dem Bahnhof ausgestiegen.",
+"r": "{駅|えき}の{一|ひと}つ[{手前|てまえ}]でバスを{降|お}りた。",
+"bedeutung": "diesseits, kurz davor"
+},
+"手品|てじな": {
+"s": "祖父が[手品]を見せてくれた。",
+"de": "Mein Großvater hat mir Zaubertricks gezeigt.",
+"r": "{祖父|そふ}が[{手品|てじな}]を{見|み}せてくれた。",
+"bedeutung": "Zauberkunststück"
+},
+"手本|てほん": {
+"s": "先輩の仕事ぶりを[手本]にする。",
+"de": "Ich nehme mir die Arbeitsweise Älterer zum Vorbild.",
+"r": "{先輩|せんぱい}の{仕事|しごと}ぶりを[{手本|てほん}]にする。",
+"bedeutung": "Vorbild, Vorlage"
+},
+"手紙|てがみ": {
+"s": "国の両親に[手紙]を出した。",
+"de": "Ich habe meinen Eltern daheim einen Brief geschickt.",
+"r": "{国|くに}の{両親|りょうしん}に[{手紙|てがみ}]を{出|だ}した。"
+},
 "手術|しゅじゅつ": {
 "s": "父の[手術]は無事に終わった。",
 "de": "Die Operation meines Vaters ist gut verlaufen.",
 "r": "{父|ちち}の[{手術|しゅじゅつ}]は{無事|ぶじ}に{終|お}わった。"
+},
+"手近|てぢか": {
+"s": "よく使う物は[手近]に置いている。",
+"de": "Oft Gebrauchtes habe ich griffbereit.",
+"r": "よく{使|つか}う{物|もの}は[{手近|てぢか}]に{置|お}いている。",
+"bedeutung": "in Reichweite"
+},
+"手間|てま": {
+"s": "この料理は[手間]がかかる。",
+"de": "Dieses Gericht macht Mühe.",
+"r": "この{料理|りょうり}は[{手間|てま}]がかかる。",
+"bedeutung": "Mühe, Zeitaufwand"
 },
 "打ち切る|うちきる": {
 "s": "人気がなくて、番組は三か月で[打ち切られた]。",

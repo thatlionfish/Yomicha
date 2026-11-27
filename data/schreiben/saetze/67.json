@@ -1,20 +1,98 @@
 {
+"か月|かげつ": {
+"s": "日本に来て[三か月]になる。",
+"de": "Es ist drei Monate her, dass ich nach Japan kam.",
+"r": "{日本|にほん}に{来|き}て[{三|さん}か{月|げつ}]になる。"
+},
+"さ来年|さらいねん": {
+"s": "[さ来年]、国に帰るつもりだ。",
+"de": "Übernächstes Jahr will ich in mein Land zurück.",
+"r": "[さ{来年|らいねん}]、{国|くに}に{帰|かえ}るつもりだ。"
+},
+"月|がつ": {
+"s": "試験は[三月]に行われる。",
+"de": "Die Prüfung findet im März statt.",
+"r": "{試験|しけん}は[{三月|さんがつ}]に{行|おこな}われる。"
+},
+"月|つき": {
+"s": "今夜は[月]がとてもきれいだ。",
+"de": "Heute Nacht ist der Mond sehr schön.",
+"r": "{今夜|こんや}は[{月|つき}]がとてもきれいだ。"
+},
+"月日|つきひ": {
+"s": "国を出てから長い[月日]がたった。",
+"de": "Seit ich mein Land verließ, ist viel Zeit vergangen.",
+"r": "{国|くに}を{出|で}てから{長|なが}い[{月日|つきひ}]がたった。"
+},
+"月曜日|げつようび": {
+"s": "[月曜日]の朝は電車がこむ。",
+"de": "Montagmorgens sind die Züge voll.",
+"r": "[{月曜日|げつようび}]の{朝|あさ}は{電車|でんしゃ}がこむ。"
+},
 "月末|げつまつ": {
 "s": "家賃は[月末]までに払ってください。",
 "de": "Bitte zahlen Sie die Miete bis zum Monatsende.",
 "r": "{家賃|やちん}は[{月末|げつまつ}]までに{払|はら}ってください。",
 "bedeutung": "Monatsende"
 },
+"有する|ゆうする": {
+"s": "彼は高い技術を[有する]。",
+"de": "Er verfügt über hohes Können.",
+"r": "{彼|かれ}は{高|たか}い{技術|ぎじゅつ}を[{有|ゆう}する]。",
+"bedeutung": "besitzen"
+},
+"有る|ある": {
+"s": "自信の[有る]人は声が大きい。",
+"de": "Wer Selbstvertrauen hat, spricht laut.",
+"r": "{自信|じしん}の[{有|あ}る]{人|ひと}は{声|こえ}が{大|おお}きい。"
+},
+"有力|ゆうりょく": {
+"s": "彼が次の市長の[有力]な候補だ。",
+"de": "Er ist ein aussichtsreicher Kandidat für das Bürgermeisteramt.",
+"r": "{彼|かれ}が{次|つぎ}の{市長|しちょう}の[{有力|ゆうりょく}]な{候補|こうほ}だ。",
+"bedeutung": "einflussreich, aussichtsreich"
+},
+"有名|ゆうめい": {
+"s": "この町はお茶で[有名]だ。",
+"de": "Diese Stadt ist für ihren Tee berühmt.",
+"r": "この{町|まち}はお{茶|ちゃ}で[{有名|ゆうめい}]だ。"
+},
+"有料|ゆうりょう": {
+"s": "この道路は[有料]です。",
+"de": "Diese Straße ist mautpflichtig.",
+"r": "この{道路|どうろ}は[{有料|ゆうりょう}]です。",
+"bedeutung": "gebührenpflichtig"
+},
 "有難い|ありがたい": {
 "s": "手伝ってもらえると本当に[有難い]。",
 "de": "Es wäre wirklich eine große Hilfe, wenn du mir hilfst.",
 "r": "{手伝|てつだ}ってもらえると{本当|ほんとう}に[{有難|ありがた}い]。"
+},
+"服|ふく": {
+"s": "この[服]は洗いやすい。",
+"de": "Diese Kleidung lässt sich leicht waschen.",
+"r": "この[{服|ふく}]は{洗|あら}いやすい。"
+},
+"朝|あさ": {
+"s": "気持ちのいい[朝]ですね。",
+"de": "Ein angenehmer Morgen, nicht wahr?",
+"r": "{気持|きも}ちのいい[{朝|あさ}]ですね。"
 },
 "期限|きげん": {
 "s": "レポートの提出[期限]は金曜日だ。",
 "de": "Die Abgabefrist für den Bericht ist Freitag.",
 "r": "レポートの{提出|ていしゅつ}[{期限|きげん}]は{金曜日|きんようび}だ。",
 "bedeutung": "Frist, Termin"
+},
+"木|き": {
+"s": "庭の[木]に小さい鳥が来ている。",
+"de": "Auf den Baum im Garten ist ein kleiner Vogel gekommen.",
+"r": "{庭|にわ}の[{木|き}]に{小|ちい}さい{鳥|とり}が{来|き}ている。"
+},
+"木曜日|もくようび": {
+"s": "次の会議は[木曜日]の三時です。",
+"de": "Die nächste Besprechung ist am Donnerstag um drei.",
+"r": "{次|つぎ}の{会議|かいぎ}は[{木曜日|もくようび}]の{三時|さんじ}です。"
 },
 "末|すえ": {
 "s": "長い話し合いの[末]、ようやく案が決まった。",
@@ -47,17 +125,145 @@
 "de": "Dieses Formular muss die Person selbst ausfüllen.",
 "r": "この{書類|しょるい}は[{本人|ほんにん}]が{書|か}かなければならない。"
 },
+"本体|ほんたい": {
+"s": "値段は[本体]だけで三万円だ。",
+"de": "Allein das Gerät kostet dreißigtausend Yen.",
+"r": "{値段|ねだん}は[{本体|ほんたい}]だけで{三万円|さんまんえん}だ。",
+"bedeutung": "Hauptteil, das Gerät selbst"
+},
+"本名|ほんみょう": {
+"s": "歌手の[本名]はあまり知られていない。",
+"de": "Den echten Namen der Sängerin kennen wenige.",
+"r": "{歌手|かしゅ}の[{本名|ほんみょう}]はあまり{知|し}られていない。",
+"bedeutung": "bürgerlicher Name"
+},
 "本国|ほんごく": {
 "s": "彼は来月、[本国]へ帰る予定だ。",
 "de": "Er wird nächsten Monat in sein Heimatland zurückkehren.",
 "r": "{彼|かれ}は{来月|らいげつ}、[{本国|ほんごく}]へ{帰|かえ}る{予定|よてい}だ。",
 "bedeutung": "Heimatland"
 },
+"本場|ほんば": {
+"s": "[本場]のカレーを食べてみたい。",
+"de": "Ich möchte echtes Curry vom Ursprungsort probieren.",
+"r": "[{本場|ほんば}]のカレーを{食|た}べてみたい。",
+"bedeutung": "Heimat (einer Sache), das Original"
+},
+"本文|ほんぶん": {
+"s": "メールの[本文]に用件を書いた。",
+"de": "Das Anliegen habe ich in den Text der Mail geschrieben.",
+"r": "メールの[{本文|ほんぶん}]に{用件|ようけん}を{書|か}いた。",
+"bedeutung": "Haupttext"
+},
+"本来|ほんらい": {
+"s": "これは[本来]の使い方ではない。",
+"de": "So ist es eigentlich nicht gedacht.",
+"r": "これは[{本来|ほんらい}]の{使|つか}い{方|かた}ではない。",
+"bedeutung": "eigentlich, ursprünglich"
+},
 "本格|ほんかく": {
 "s": "来月から新しい工事が[本格的]に始まる。",
 "de": "Ab nächstem Monat beginnen die neuen Bauarbeiten richtig.",
 "r": "{来月|らいげつ}から{新|あたら}しい{工事|こうじ}が[{本格的|ほんかくてき}]に{始|はじ}まる。",
 "bedeutung": "echt, richtig; 本格的 = ernsthaft, in vollem Umfang"
+},
+"本気|ほんき": {
+"s": "彼は[本気]で歌手を目指している。",
+"de": "Er will ernsthaft Sänger werden.",
+"r": "{彼|かれ}は[{本気|ほんき}]で{歌手|かしゅ}を{目指|めざ}している。",
+"bedeutung": "Ernst"
+},
+"本物|ほんもの": {
+"s": "この花は[本物]にしか見えない。",
+"de": "Diese Blume sieht aus wie echt.",
+"r": "この{花|はな}は[{本物|ほんもの}]にしか{見|み}えない。",
+"bedeutung": "das Echte"
+},
+"本質|ほんしつ": {
+"s": "問題の[本質]を考えよう。",
+"de": "Denken wir über den Kern des Problems nach.",
+"r": "{問題|もんだい}の[{本質|ほんしつ}]を{考|かんが}えよう。",
+"bedeutung": "Wesen, Kern"
+},
+"本音|ほんね": {
+"s": "酒を飲むと[本音]が出る。",
+"de": "Beim Trinken kommt die wahre Meinung heraus.",
+"r": "{酒|さけ}を{飲|の}むと[{本音|ほんね}]が{出|で}る。",
+"bedeutung": "wahre Absicht"
+},
+"本館|ほんかん": {
+"s": "受付は[本館]の一階にあります。",
+"de": "Der Empfang ist im Erdgeschoss des Hauptgebäudes.",
+"r": "{受付|うけつけ}は[{本館|ほんかん}]の{一階|いっかい}にあります。",
+"bedeutung": "Hauptgebäude",
+"lesungen": {
+"一": "いっ",
+"一階": "いっかい"
+}
+},
+"来|らい": {
+"s": "[来]学期から授業が増える。",
+"de": "Ab dem kommenden Halbjahr gibt es mehr Unterricht.",
+"r": "[{来|らい}]{学期|がっき}から{授業|じゅぎょう}が{増|ふ}える。",
+"bedeutung": "kommend, nächst-"
+},
+"来る|きたる": {
+"s": "[来る]日曜日に集会を行います。",
+"de": "Am kommenden Sonntag findet eine Versammlung statt.",
+"r": "[{来|きた}る]{日曜日|にちようび}に{集会|しゅうかい}を{行|おこな}います。",
+"bedeutung": "kommend",
+"lesungen": {
+"来る": "きたる"
+}
+},
+"来る|くる": {
+"s": "友だちが家に[来る]のを待っている。",
+"de": "Ich warte darauf, dass Freunde zu mir kommen.",
+"r": "{友|とも}だちが{家|いえ}に[{来|く}る]のを{待|ま}っている。"
+},
+"来場|らいじょう": {
+"s": "本日はご[来場]ありがとうございます。",
+"de": "Danke, dass Sie heute gekommen sind.",
+"r": "{本日|ほんじつ}はご[{来場|らいじょう}]ありがとうございます。",
+"bedeutung": "Besuch einer Veranstaltung"
+},
+"来年|らいねん": {
+"s": "[来年]は留学したいと思っている。",
+"de": "Nächstes Jahr möchte ich im Ausland studieren.",
+"r": "[{来年|らいねん}]は{留学|りゅうがく}したいと{思|おも}っている。"
+},
+"来日|らいにち": {
+"s": "友だちの[来日]を楽しみにしている。",
+"de": "Ich freue mich, dass eine Freundin nach Japan kommt.",
+"r": "{友|とも}だちの[{来日|らいにち}]を{楽|たの}しみにしている。",
+"bedeutung": "Ankunft in Japan"
+},
+"来月|らいげつ": {
+"s": "[来月]から新しい仕事を始める。",
+"de": "Ab nächsten Monat beginne ich eine neue Arbeit.",
+"r": "[{来月|らいげつ}]から{新|あたら}しい{仕事|しごと}を{始|はじ}める。"
+},
+"来週|らいしゅう": {
+"s": "くわしいことは[来週]お知らせします。",
+"de": "Einzelheiten teile ich nächste Woche mit.",
+"r": "くわしいことは[{来週|らいしゅう}]お{知|し}らせします。"
+},
+"東|ひがし": {
+"s": "太陽は[東]から出る。",
+"de": "Die Sonne geht im Osten auf.",
+"r": "{太陽|たいよう}は[{東|ひがし}]から{出|で}る。"
+},
+"東洋|とうよう": {
+"s": "この美術館は[東洋]の作品が多い。",
+"de": "Dieses Museum hat viele Werke aus Asien.",
+"r": "この{美術館|びじゅつかん}は[{東洋|とうよう}]の{作品|さくひん}が{多|おお}い。",
+"bedeutung": "Orient, Ostasien"
+},
+"東西|とうざい": {
+"s": "この通りは[東西]にのびている。",
+"de": "Diese Straße verläuft von Ost nach West.",
+"r": "この{通|とお}りは[{東西|とうざい}]にのびている。",
+"bedeutung": "Osten und Westen"
 },
 "果たして|はたして": {
 "s": "[果たして]明日は晴れるだろうか。",

@@ -1,4 +1,44 @@
 {
+"洋品店|ようひんてん": {
+"s": "駅前の[洋品店]でシャツを買った。",
+"de": "Im Bekleidungsladen am Bahnhof habe ich ein Hemd gekauft.",
+"r": "{駅前|えきまえ}の[{洋品店|ようひんてん}]でシャツを{買|か}った。",
+"bedeutung": "Bekleidungsgeschäft"
+},
+"洋服|ようふく": {
+"s": "着物より[洋服]のほうが動きやすい。",
+"de": "In westlicher Kleidung bewegt man sich leichter als im Kimono.",
+"r": "{着物|きもの}より[{洋服|ようふく}]のほうが{動|うご}きやすい。"
+},
+"洋風|ようふう": {
+"s": "[洋風]の家に住んでみたい。",
+"de": "Ich würde gern in einem westlichen Haus wohnen.",
+"r": "[{洋風|ようふう}]の{家|いえ}に{住|す}んでみたい。",
+"bedeutung": "westlicher Stil"
+},
+"海|うみ": {
+"s": "[海]の見える部屋にとまりたい。",
+"de": "Ich möchte in einem Zimmer mit Meerblick übernachten.",
+"r": "[{海|うみ}]の{見|み}える{部屋|へや}にとまりたい。"
+},
+"海外|かいがい": {
+"s": "[海外]に住む友だちと電話した。",
+"de": "Ich habe mit einer Freundin im Ausland telefoniert.",
+"r": "[{海外|かいがい}]に{住|す}む{友|とも}だちと{電話|でんわ}した。",
+"bedeutung": "Ausland, Übersee"
+},
+"海洋|かいよう": {
+"s": "船は広い[海洋]を進んだ。",
+"de": "Das Schiff fuhr über den weiten Ozean.",
+"r": "{船|ふね}は{広|ひろ}い[{海洋|かいよう}]を{進|すす}んだ。",
+"bedeutung": "Ozean"
+},
+"海運|かいうん": {
+"s": "この港は[海運]で栄えた。",
+"de": "Dieser Hafen blühte durch die Seefahrt.",
+"r": "この{港|みなと}は[{海運|かいうん}]で{栄|さか}えた。",
+"bedeutung": "Seetransport"
+},
 "消える|きえる": {
 "s": "急に部屋の電気が[消えた]。",
 "de": "Plötzlich ging im Zimmer das Licht aus.",

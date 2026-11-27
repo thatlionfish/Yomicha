@@ -1,0 +1,17 @@
+{
+"魚|うお": {
+"s": "市場でとれたての[魚]を売っている。",
+"de": "Auf dem Markt wird fangfrischer Fisch verkauft.",
+"r": "{市場|いちば}でとれたての[{魚|うお}]を{売|う}っている。",
+"bedeutung": "Fisch",
+"lesungen": {
+"魚": "うお",
+"市場": "いちば"
+}
+},
+"魚|さかな": {
+"s": "この店は[魚]の料理がおいしい。",
+"de": "In diesem Lokal schmecken die Fischgerichte gut.",
+"r": "この{店|みせ}は[{魚|さかな}]の{料理|りょうり}がおいしい。"
+}
+}

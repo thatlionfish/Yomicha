@@ -1,0 +1,48 @@
+{
+"意|い": {
+"s": "親の[意]に反して留学した。",
+"de": "Gegen den Willen der Eltern ging ich ins Ausland.",
+"r": "{親|おや}の[{意|い}]に{反|はん}して{留学|りゅうがく}した。",
+"bedeutung": "Wille, Absicht"
+},
+"意味|いみ": {
+"s": "この言葉の[意味]を教えてください。",
+"de": "Erklären Sie mir bitte die Bedeutung dieses Wortes.",
+"r": "この{言葉|ことば}の[{意味|いみ}]を{教|おし}えてください。"
+},
+"意図|いと": {
+"s": "彼の発言の[意図]が分からない。",
+"de": "Ich verstehe die Absicht seiner Äußerung nicht.",
+"r": "{彼|かれ}の{発言|はつげん}の[{意図|いと}]が{分|わ}からない。",
+"bedeutung": "Absicht"
+},
+"意地|いじ": {
+"s": "弟は[意地]を張ってあやまらない。",
+"de": "Mein Bruder ist stur und entschuldigt sich nicht.",
+"r": "{弟|おとうと}は[{意地|いじ}]を{張|は}ってあやまらない。",
+"bedeutung": "Eigensinn, Trotz"
+},
+"意地悪|いじわる": {
+"s": "弟に[意地悪]をして、しかられた。",
+"de": "Ich war gemein zu meinem Bruder und wurde geschimpft.",
+"r": "{弟|おとうと}に[{意地悪|いじわる}]をして、しかられた。",
+"bedeutung": "Gemeinheit, gemein"
+},
+"意外|いがい": {
+"s": "試験は[意外]にやさしかった。",
+"de": "Die Prüfung war überraschend leicht.",
+"r": "{試験|しけん}は[{意外|いがい}]にやさしかった。",
+"bedeutung": "unerwartet"
+},
+"意思|いし": {
+"s": "本人の[意思]を大切にしたい。",
+"de": "Ich möchte den Willen der Person achten.",
+"r": "{本人|ほんにん}の[{意思|いし}]を{大切|たいせつ}にしたい。",
+"bedeutung": "Wille, Absicht"
+},
+"意見|いけん": {
+"s": "会議ではだれでも[意見]が言える。",
+"de": "In der Besprechung kann jeder seine Meinung sagen.",
+"r": "{会議|かいぎ}ではだれでも[{意見|いけん}]が{言|い}える。"
+}
+}

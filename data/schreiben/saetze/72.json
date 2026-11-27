@@ -1,14 +1,156 @@
 {
+"お父さん|おとうさん": {
+"s": "友だちの[お父さん]は料理が上手だ。",
+"de": "Der Vater meiner Freundin kocht gut.",
+"r": "{友|とも}だちの[お{父|とう}さん]は{料理|りょうり}が{上手|じょうず}だ。"
+},
+"にせ物|にせもの": {
+"s": "この絵は[にせ物]だと分かった。",
+"de": "Das Bild stellte sich als Fälschung heraus.",
+"r": "この{絵|え}は[にせ{物|もの}]だと{分|わ}かった。",
+"bedeutung": "Fälschung"
+},
+"父|ちち": {
+"s": "[父]は銀行で働いています。",
+"de": "Mein Vater arbeitet bei einer Bank.",
+"r": "[{父|ちち}]は{銀行|ぎんこう}で{働|はたら}いています。"
+},
+"父母|ふぼ": {
+"s": "式には[父母]も出席した。",
+"de": "An der Feier nahmen auch die Eltern teil.",
+"r": "{式|しき}には[{父母|ふぼ}]も{出席|しゅっせき}した。",
+"bedeutung": "Vater und Mutter"
+},
+"父親|ちちおや": {
+"s": "[父親]は料理がとくいだ。",
+"de": "Der Vater kocht gern und gut.",
+"r": "[{父親|ちちおや}]は{料理|りょうり}がとくいだ。",
+"bedeutung": "Vater"
+},
+"牛|うし": {
+"s": "牧場で[牛]が草を食べている。",
+"de": "Auf der Weide fressen die Rinder Gras.",
+"r": "{牧場|ぼくじょう}で[{牛|うし}]が{草|くさ}を{食|た}べている。",
+"bedeutung": "Rind, Kuh"
+},
+"牛肉|ぎゅうにく": {
+"s": "今夜は[牛肉]を使ったカレーだ。",
+"de": "Heute Abend gibt es Curry mit Rindfleisch.",
+"r": "{今夜|こんや}は[{牛肉|ぎゅうにく}]を{使|つか}ったカレーだ。"
+},
+"物|もの": {
+"s": "部屋に[物]が多くて片づかない。",
+"de": "Im Zimmer liegt so viel herum, dass ich nicht fertig aufräume.",
+"r": "{部屋|へや}に[{物|もの}]が{多|おお}くて{片|かた}づかない。"
+},
+"物事|ものごと": {
+"s": "[物事]は順番に進めるとうまくいく。",
+"de": "Dinge gelingen, wenn man sie der Reihe nach angeht.",
+"r": "[{物事|ものごと}]は{順番|じゅんばん}に{進|すす}めるとうまくいく。",
+"bedeutung": "Dinge, Angelegenheiten"
+},
+"物体|ぶったい": {
+"s": "空に光る[物体]が見えた。",
+"de": "Am Himmel sah man ein leuchtendes Objekt.",
+"r": "{空|そら}に{光|ひか}る[{物体|ぶったい}]が{見|み}えた。",
+"bedeutung": "Gegenstand, Körper"
+},
 "物差し|ものさし": {
 "s": "[物差し]を使って、紙の長さを測った。",
 "de": "Mit dem Lineal habe ich die Länge des Papiers gemessen.",
 "r": "[{物差|ものさ}し]を{使|つか}って、{紙|かみ}の{長|なが}さを{測|はか}った。",
 "bedeutung": "Lineal; Maßstab"
 },
+"物理|ぶつり": {
+"s": "高校で[物理]を勉強した。",
+"de": "In der Oberschule habe ich Physik gelernt.",
+"r": "{高校|こうこう}で[{物理|ぶつり}]を{勉強|べんきょう}した。",
+"bedeutung": "Physik"
+},
+"物語|ものがたり": {
+"s": "子どものころ、この[物語]が好きだった。",
+"de": "Als Kind mochte ich diese Geschichte.",
+"r": "{子|こ}どものころ、この[{物語|ものがたり}]が{好|す}きだった。",
+"bedeutung": "Erzählung"
+},
+"物語る|ものがたる": {
+"s": "古い柱の傷が家の歴史を[物語る]。",
+"de": "Die Kerben im alten Pfosten erzählen die Geschichte des Hauses.",
+"r": "{古|ふる}い{柱|はしら}の{傷|きず}が{家|いえ}の{歴史|れきし}を[{物語|ものがた}る]。",
+"bedeutung": "erzählen, zeigen"
+},
 "物資|ぶっし": {
 "s": "被災地に[物資]を送った。",
 "de": "Wir haben Hilfsgüter in das Katastrophengebiet geschickt.",
 "r": "{被災地|ひさいち}に[{物資|ぶっし}]を{送|おく}った。",
 "bedeutung": "Güter, Material, Hilfsgüter"
+},
+"物質|ぶっしつ": {
+"s": "体に悪い[物質]がふくまれている。",
+"de": "Es sind gesundheitsschädliche Stoffe enthalten.",
+"r": "{体|からだ}に{悪|わる}い[{物質|ぶっしつ}]がふくまれている。",
+"bedeutung": "Stoff, Substanz"
+},
+"物足りない|ものたりない": {
+"s": "この料理は量が少し[物足りない]。",
+"de": "Die Portion lässt ein wenig zu wünschen übrig.",
+"r": "この{料理|りょうり}は{量|りょう}が{少|すこ}し[{物足|ものた}りない]。",
+"bedeutung": "nicht ganz befriedigend"
+},
+"物音|ものおと": {
+"s": "夜中に[物音]で目がさめた。",
+"de": "Mitten in der Nacht weckte mich ein Geräusch.",
+"r": "{夜中|よなか}に[{物音|ものおと}]で{目|め}がさめた。",
+"bedeutung": "Geräusch"
+},
+"特に|とくに": {
+"s": "果物の中で[特に]ももが好きだ。",
+"de": "Unter dem Obst mag ich besonders Pfirsiche.",
+"r": "{果物|くだもの}の{中|なか}で[{特|とく}に]ももが{好|す}きだ。"
+},
+"特別|とくべつ": {
+"s": "今日は[特別]な日だから、ケーキを買った。",
+"de": "Heute ist ein besonderer Tag, darum habe ich Kuchen gekauft.",
+"r": "{今日|きょう}は[{特別|とくべつ}]な{日|ひ}だから、ケーキを{買|か}った。"
+},
+"特売|とくばい": {
+"s": "卵の[特売]に長い列ができた。",
+"de": "Beim Sonderangebot für Eier bildete sich eine Schlange.",
+"r": "{卵|たまご}の[{特売|とくばい}]に{長|なが}い{列|れつ}ができた。",
+"bedeutung": "Sonderverkauf"
+},
+"特急|とっきゅう": {
+"s": "[特急]の切符を予約した。",
+"de": "Ich habe eine Fahrkarte für den Expresszug reserviert.",
+"r": "[{特急|とっきゅう}]の{切符|きっぷ}を{予約|よやく}した。"
+},
+"特有|とくゆう": {
+"s": "これはこの地方に[特有]の料理だ。",
+"de": "Dieses Gericht gibt es nur in dieser Region.",
+"r": "これはこの{地方|ちほう}に[{特有|とくゆう}]の{料理|りょうり}だ。",
+"bedeutung": "eigentümlich, typisch"
+},
+"特色|とくしょく": {
+"s": "この学校の[特色]は少人数の授業だ。",
+"de": "Das Besondere der Schule ist Unterricht in kleinen Gruppen.",
+"r": "この{学校|がっこう}の[{特色|とくしょく}]は{少人数|しょうにんずう}の{授業|じゅぎょう}だ。",
+"bedeutung": "Besonderheit"
+},
+"特長|とくちょう": {
+"s": "この商品の[特長]は軽いことだ。",
+"de": "Der Vorzug dieser Ware ist ihr geringes Gewicht.",
+"r": "この{商品|しょうひん}の[{特長|とくちょう}]は{軽|かる}いことだ。",
+"bedeutung": "Vorzug, Stärke"
+},
+"特集|とくしゅう": {
+"s": "雑誌で京都の[特集]を読んだ。",
+"de": "Ich habe das Sonderthema über Kyoto gelesen.",
+"r": "{雑誌|ざっし}で{京都|きょうと}の[{特集|とくしゅう}]を{読|よ}んだ。",
+"bedeutung": "Sonderbeitrag"
+},
+"犬|いぬ": {
+"s": "毎朝、[犬]を散歩に連れて行く。",
+"de": "Jeden Morgen führe ich den Hund aus.",
+"r": "{毎朝|まいあさ}、[{犬|いぬ}]を{散歩|さんぽ}に{連|つ}れて{行|い}く。"
 }
 }

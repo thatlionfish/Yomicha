@@ -1,0 +1,13 @@
+{
+"銀|ぎん": {
+"s": "大会で[銀]のメダルを取った。",
+"de": "Beim Wettkampf habe ich Silber gewonnen.",
+"r": "{大会|たいかい}で[{銀|ぎん}]のメダルを{取|と}った。",
+"bedeutung": "Silber"
+},
+"銀行|ぎんこう": {
+"s": "[銀行]でお金をおろした。",
+"de": "Ich habe bei der Bank Geld abgehoben.",
+"r": "[{銀行|ぎんこう}]でお{金|かね}をおろした。"
+}
+}

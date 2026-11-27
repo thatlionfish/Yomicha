@@ -1,8 +1,73 @@
 {
+"行|ぎょう": {
+"s": "次の[行]から読んでください。",
+"de": "Lesen Sie bitte ab der nächsten Zeile.",
+"r": "{次|つぎ}の[{行|ぎょう}]から{読|よ}んでください。",
+"lesungen": {
+"行": "ぎょう"
+}
+},
+"行い|おこない": {
+"s": "日ごろの[行い]がいいから晴れた。",
+"de": "Weil wir brav waren, scheint die Sonne.",
+"r": "{日|ひ}ごろの[{行|おこな}い]がいいから{晴|は}れた。",
+"bedeutung": "Verhalten, Tun"
+},
+"行う|おこなう": {
+"s": "入学式は四月三日に[行います]。",
+"de": "Die Einschulungsfeier findet am dritten April statt.",
+"r": "{入学式|にゅうがくしき}は{四月|しがつ}{三日|みっか}に[{行|おこな}います]。"
+},
+"行き|いき": {
+"s": "[行き]は電車、帰りはバスにした。",
+"de": "Hin habe ich die Bahn genommen, zurück den Bus.",
+"r": "[{行|い}き]は{電車|でんしゃ}、{帰|かえ}りはバスにした。"
+},
+"行き|ゆき": {
+"s": "大阪[行き]のバスは何番ですか。",
+"de": "Welche Nummer hat der Bus nach Osaka?",
+"r": "{大阪|おおさか}[{行|ゆ}き]のバスは{何番|なんばん}ですか。",
+"lesungen": {
+"行き": "ゆき"
+}
+},
+"行く|いく": {
+"s": "来週、家族で海へ[行く]予定だ。",
+"de": "Nächste Woche wollen wir mit der Familie ans Meer fahren.",
+"r": "{来週|らいしゅう}、{家族|かぞく}で{海|うみ}へ[{行|い}く]{予定|よてい}だ。"
+},
+"行っていらっしゃい|いっていらっしゃい": {
+"s": "気をつけて、[行っていらっしゃい]。",
+"de": "Pass auf dich auf, bis später!",
+"r": "{気|き}をつけて、[{行|い}っていらっしゃい]。"
+},
+"行ってらっしゃい|いってらっしゃい": {
+"s": "今日も元気に[行ってらっしゃい]。",
+"de": "Mach's gut, hab auch heute einen schönen Tag!",
+"r": "{今日|きょう}も{元気|げんき}に[{行|い}ってらっしゃい]。"
+},
+"行事|ぎょうじ": {
+"s": "町の[行事]に家族で参加した。",
+"de": "Wir haben als Familie an der Veranstaltung der Stadt teilgenommen.",
+"r": "{町|まち}の[{行事|ぎょうじ}]に{家族|かぞく}で{参加|さんか}した。",
+"bedeutung": "Veranstaltung"
+},
 "行列|ぎょうれつ": {
 "s": "人気のラーメン屋には毎日[行列]ができる。",
 "de": "Vor dem beliebten Ramen-Laden bildet sich jeden Tag eine Schlange.",
 "r": "{人気|にんき}のラーメン{屋|や}には{毎日|まいにち}[{行列|ぎょうれつ}]ができる。",
 "bedeutung": "Warteschlange, Umzug; (Mathematik) Matrix"
+},
+"行動|こうどう": {
+"s": "考えるだけでなく[行動]に移そう。",
+"de": "Nicht nur nachdenken, sondern handeln.",
+"r": "{考|かんが}えるだけでなく[{行動|こうどう}]に{移|うつ}そう。",
+"bedeutung": "Handlung, Verhalten"
+},
+"行方|ゆくえ": {
+"s": "ねこの[行方]が分からない。",
+"de": "Niemand weiß, wo die Katze geblieben ist.",
+"r": "ねこの[{行方|ゆくえ}]が{分|わ}からない。",
+"bedeutung": "Verbleib"
 }
 }

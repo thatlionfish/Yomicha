@@ -1,4 +1,54 @@
 {
+"四|し": {
+"s": "ゼロから[四]まで数えてください。",
+"de": "Zählen Sie bitte von null bis vier.",
+"r": "ゼロから[{四|し}]まで{数|かぞ}えてください。"
+},
+"四|よん": {
+"s": "このビルは[四]階建てだ。",
+"de": "Dieses Gebäude hat vier Stockwerke.",
+"r": "このビルは[{四|よん}]{階|かい}{建|だ}てだ。",
+"bedeutung": "vier"
+},
+"四つ|よっつ": {
+"s": "コップを[四つ]出してください。",
+"de": "Stellen Sie bitte vier Gläser hin.",
+"r": "コップを[{四|よっ}つ]{出|だ}してください。"
+},
+"四日|よっか": {
+"s": "旅行から帰るのは[四日]だ。",
+"de": "Ich komme am Vierten von der Reise zurück.",
+"r": "{旅行|りょこう}から{帰|かえ}るのは[{四日|よっか}]だ。"
+},
+"図|ず": {
+"s": "下の[図]を見てください。",
+"de": "Sehen Sie sich bitte die Abbildung unten an.",
+"r": "{下|した}の[{図|ず}]を{見|み}てください。",
+"bedeutung": "Abbildung"
+},
+"図々しい|ずうずうしい": {
+"s": "夜中に電話するなんて[図々しい]。",
+"de": "Mitten in der Nacht anzurufen ist unverschämt.",
+"r": "{夜中|よなか}に{電話|でんわ}するなんて[{図々|ずうずう}しい]。",
+"bedeutung": "unverschämt"
+},
+"図る|はかる": {
+"s": "会社は利用者をふやそうと[図って]いる。",
+"de": "Die Firma versucht, mehr Kunden zu gewinnen.",
+"r": "{会社|かいしゃ}は{利用者|りようしゃ}をふやそうと[{図|はか}って]いる。",
+"bedeutung": "planen, anstreben"
+},
+"図書|としょ": {
+"s": "学校の[図書]を大切に使おう。",
+"de": "Gehen wir sorgsam mit den Schulbüchern um.",
+"r": "{学校|がっこう}の[{図書|としょ}]を{大切|たいせつ}に{使|つか}おう。",
+"bedeutung": "Bücher (Bestand)"
+},
+"図書館|としょかん": {
+"s": "[図書館]では静かにしてください。",
+"de": "Bitte seien Sie in der Bibliothek leise.",
+"r": "[{図書館|としょかん}]では{静|しず}かにしてください。"
+},
 "国|くに": {
 "s": "夏休みに[国]へ帰るつもりだ。",
 "de": "In den Sommerferien will ich in meine Heimat zurückfahren.",
@@ -8,5 +58,35 @@
 "s": "[外国]に住んだことがある。",
 "de": "Ich habe schon einmal im Ausland gelebt.",
 "r": "[{外国|がいこく}]に{住|す}んだことがある。"
+},
+"国会|こっかい": {
+"s": "新しい法律が[国会]で決まった。",
+"de": "Das neue Gesetz wurde im Parlament beschlossen.",
+"r": "{新|あたら}しい{法律|ほうりつ}が[{国会|こっかい}]で{決|き}まった。",
+"bedeutung": "Parlament"
+},
+"国家|こっか": {
+"s": "環境問題は[国家]をこえた課題だ。",
+"de": "Umweltfragen gehen über den einzelnen Staat hinaus.",
+"r": "{環境|かんきょう}{問題|もんだい}は[{国家|こっか}]をこえた{課題|かだい}だ。",
+"bedeutung": "Staat, Nation"
+},
+"国有|こくゆう": {
+"s": "この森は[国有]の土地だ。",
+"de": "Dieser Wald ist Staatsgrund.",
+"r": "この{森|もり}は[{国有|こくゆう}]の{土地|とち}だ。",
+"bedeutung": "staatliches Eigentum"
+},
+"国立|こくりつ": {
+"s": "兄は[国立]の大学に通っている。",
+"de": "Mein Bruder studiert an einer staatlichen Universität.",
+"r": "{兄|あに}は[{国立|こくりつ}]の{大学|だいがく}に{通|かよ}っている。",
+"bedeutung": "staatlich"
+},
+"国語|こくご": {
+"s": "[国語]の時間に詩を読んだ。",
+"de": "Im Japanischunterricht haben wir Gedichte gelesen.",
+"r": "[{国語|こくご}]の{時間|じかん}に{詩|し}を{読|よ}んだ。",
+"bedeutung": "Landessprache"
 }
 }

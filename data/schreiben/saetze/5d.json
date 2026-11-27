@@ -1,4 +1,63 @@
 {
+"川|かわ": {
+"s": "夏は[川]で泳いで遊んだ。",
+"de": "Im Sommer haben wir im Fluss gebadet.",
+"r": "{夏|なつ}は[{川|かわ}]で{泳|およ}いで{遊|あそ}んだ。"
+},
+"工事|こうじ": {
+"s": "駅前で道路の[工事]が始まった。",
+"de": "Vor dem Bahnhof haben Straßenarbeiten begonnen.",
+"r": "{駅前|えきまえ}で{道路|どうろ}の[{工事|こうじ}]が{始|はじ}まった。",
+"bedeutung": "Bauarbeiten"
+},
+"工作|こうさく": {
+"s": "授業で紙の[工作]をした。",
+"de": "Im Unterricht haben wir mit Papier gebastelt.",
+"r": "{授業|じゅぎょう}で{紙|かみ}の[{工作|こうさく}]をした。",
+"bedeutung": "Basteln, Werken"
+},
+"工員|こういん": {
+"s": "父は若いころ[工員]だった。",
+"de": "Mein Vater war in jungen Jahren Fabrikarbeiter.",
+"r": "{父|ちち}は{若|わか}いころ[{工員|こういん}]だった。",
+"bedeutung": "Fabrikarbeiter"
+},
+"工場|こうじょう": {
+"s": "この町には車の[工場]がある。",
+"de": "In dieser Stadt gibt es eine Autofabrik.",
+"r": "この{町|まち}には{車|くるま}の[{工場|こうじょう}]がある。"
+},
+"工場|こうば": {
+"s": "町の[工場]で部品を作っている。",
+"de": "In der Werkstatt der Stadt werden Teile gefertigt.",
+"r": "{町|まち}の[{工場|こうば}]で{部品|ぶひん}を{作|つく}っている。",
+"bedeutung": "Fabrik, Werkstatt",
+"lesungen": {
+"工場": "こうば"
+}
+},
+"工学|こうがく": {
+"s": "大学で[工学]を学んでいる。",
+"de": "Ich studiere Ingenieurwissenschaften.",
+"r": "{大学|だいがく}で[{工学|こうがく}]を{学|まな}んでいる。",
+"bedeutung": "Ingenieurwissenschaft"
+},
+"工業|こうぎょう": {
+"s": "この地方は[工業]がさかんだ。",
+"de": "In dieser Region ist die Industrie stark.",
+"r": "この{地方|ちほう}は[{工業|こうぎょう}]がさかんだ。"
+},
+"左|ひだり": {
+"s": "日本では車は[左]側を走る。",
+"de": "In Japan fahren die Autos links.",
+"r": "{日本|にほん}では{車|くるま}は[{左|ひだり}]{側|がわ}を{走|はし}る。"
+},
+"左右|さゆう": {
+"s": "道をわたる前に[左右]を見る。",
+"de": "Vor dem Überqueren schaut man nach links und rechts.",
+"r": "{道|みち}をわたる{前|まえ}に[{左右|さゆう}]を{見|み}る。",
+"bedeutung": "links und rechts"
+},
 "差|さ": {
 "s": "この町は、昼と夜の気温の[差]が大きい。",
 "de": "In dieser Stadt ist der Temperaturunterschied zwischen Tag und Nacht groß.",

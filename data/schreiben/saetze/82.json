@@ -1,4 +1,45 @@
 {
+"色|いろ": {
+"s": "どの[色]にするか迷っている。",
+"de": "Ich überlege noch, welche Farbe ich nehme.",
+"r": "どの[{色|いろ}]にするか{迷|まよ}っている。"
+},
+"色|しょく": {
+"s": "このシャツは三[色]あります。",
+"de": "Dieses Hemd gibt es in drei Farben.",
+"r": "このシャツは{三|さん}[{色|しょく}]あります。",
+"bedeutung": "Zählwort für Farben",
+"lesungen": {
+"色": "しょく"
+}
+},
+"色々|いろいろ": {
+"s": "日本で[色々]な経験をした。",
+"de": "Ich habe in Japan allerlei erlebt.",
+"r": "{日本|にほん}で[{色々|いろいろ}]な{経験|けいけん}をした。"
+},
+"花|はな": {
+"s": "テーブルに[花]をかざった。",
+"de": "Ich habe den Tisch mit Blumen geschmückt.",
+"r": "テーブルに[{花|はな}]をかざった。"
+},
+"花びら|はなびら": {
+"s": "風で桜の[花びら]がまう。",
+"de": "Im Wind tanzen die Kirschblütenblätter.",
+"r": "{風|かぜ}で{桜|さくら}の[{花|はな}びら]がまう。",
+"bedeutung": "Blütenblatt"
+},
+"花火|はなび": {
+"s": "夏の夜に家族で[花火]を見た。",
+"de": "An einem Sommerabend sahen wir mit der Familie Feuerwerk.",
+"r": "{夏|なつ}の{夜|よる}に{家族|かぞく}で[{花火|はなび}]を{見|み}た。",
+"bedeutung": "Feuerwerk"
+},
+"花見|はなみ": {
+"s": "週末は公園で[花見]をした。",
+"de": "Am Wochenende haben wir im Park die Blüten betrachtet.",
+"r": "{週末|しゅうまつ}は{公園|こうえん}で[{花見|はなみ}]をした。"
+},
 "若々しい|わかわかしい": {
 "s": "祖母は七十歳だが、とても[若々しい]。",
 "de": "Meine Großmutter ist siebzig, wirkt aber sehr jugendlich.",
@@ -9,5 +50,22 @@
 "s": "この店は[若い]人たちに人気がある。",
 "de": "Dieser Laden ist bei jungen Leuten beliebt.",
 "r": "この{店|みせ}は[{若|わか}い]{人|ひと}たちに{人気|にんき}がある。"
+},
+"英字|えいじ": {
+"s": "父は毎朝、[英字]新聞を読む。",
+"de": "Mein Vater liest jeden Morgen eine englische Zeitung.",
+"r": "{父|ちち}は{毎朝|まいあさ}、[{英字|えいじ}]{新聞|しんぶん}を{読|よ}む。",
+"bedeutung": "lateinische Schrift"
+},
+"英文|えいぶん": {
+"s": "[英文]のメールを何度も読み返した。",
+"de": "Ich habe die englische Mail mehrmals gelesen.",
+"r": "[{英文|えいぶん}]のメールを{何度|なんど}も{読|よ}み{返|かえ}した。",
+"bedeutung": "englischer Text"
+},
+"英語|えいご": {
+"s": "[英語]のメールを書くのに時間がかかる。",
+"de": "Für E-Mails auf Englisch brauche ich lange.",
+"r": "[{英語|えいご}]のメールを{書|か}くのに{時間|じかん}がかかる。"
 }
 }

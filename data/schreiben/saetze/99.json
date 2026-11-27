@@ -1,0 +1,16 @@
+{
+"館|かん": {
+"s": "映画[館]の前で待ち合わせた。",
+"de": "Wir haben uns vor dem Kino verabredet.",
+"r": "{映画|えいが}[{館|かん}]の{前|まえ}で{待|ま}ち{合|あ}わせた。",
+"bedeutung": "Gebäude, Halle",
+"lesungen": {
+"館": "かん"
+}
+},
+"駅|えき": {
+"s": "[駅]で定期券を買った。",
+"de": "Am Bahnhof habe ich eine Monatskarte gekauft.",
+"r": "[{駅|えき}]で{定期券|ていきけん}を{買|か}った。"
+}
+}

@@ -1,4 +1,20 @@
 {
+"研ぐ|とぐ": {
+"s": "父は毎週、包丁を[研ぐ]。",
+"de": "Mein Vater schleift jede Woche die Messer.",
+"r": "{父|ちち}は{毎週|まいしゅう}、{包丁|ほうちょう}を[{研|と}ぐ]。",
+"bedeutung": "schleifen"
+},
+"研究|けんきゅう": {
+"s": "大学で海の生物を[研究]している。",
+"de": "An der Universität erforsche ich Meereslebewesen.",
+"r": "{大学|だいがく}で{海|うみ}の{生物|せいぶつ}を[{研究|けんきゅう}]している。"
+},
+"研究室|けんきゅうしつ": {
+"s": "先生は[研究室]にいらっしゃいます。",
+"de": "Die Professorin ist in ihrem Büro.",
+"r": "{先生|せんせい}は[{研究室|けんきゅうしつ}]にいらっしゃいます。"
+},
 "確認|かくにん": {
 "s": "出かける前に、窓が閉まっているか[確認]した。",
 "de": "Bevor ich aus dem Haus ging, habe ich geprüft, ob die Fenster zu sind.",

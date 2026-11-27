@@ -1,4 +1,175 @@
 {
+"お大事に|おだいじに": {
+"s": "どうぞ[お大事に]。",
+"de": "Gute Besserung!",
+"r": "どうぞ[お{大事|だいじ}に]。",
+"bedeutung": "Gute Besserung"
+},
+"お姉さん|おねえさん": {
+"s": "[お姉さん]によく似ていますね。",
+"de": "Sie sehen Ihrer älteren Schwester sehr ähnlich.",
+"r": "[お{姉|ねえ}さん]によく{似|に}ていますね。"
+},
+"夏|なつ": {
+"s": "この[夏]は国に帰らないつもりだ。",
+"de": "Diesen Sommer fahre ich nicht in mein Land.",
+"r": "この[{夏|なつ}]は{国|くに}に{帰|かえ}らないつもりだ。"
+},
+"夏休み|なつやすみ": {
+"s": "[夏休み]にアルバイトを始めた。",
+"de": "In den Sommerferien habe ich angefangen zu jobben.",
+"r": "[{夏休|なつやす}み]にアルバイトを{始|はじ}めた。"
+},
+"夕方|ゆうがた": {
+"s": "[夕方]になると少し涼しくなる。",
+"de": "Gegen Abend wird es etwas kühler.",
+"r": "[{夕方|ゆうがた}]になると{少|すこ}し{涼|すず}しくなる。"
+},
+"夕日|ゆうひ": {
+"s": "[夕日]が海を赤くそめた。",
+"de": "Die Abendsonne färbte das Meer rot.",
+"r": "[{夕日|ゆうひ}]が{海|うみ}を{赤|あか}くそめた。",
+"bedeutung": "Abendsonne"
+},
+"夕立|ゆうだち": {
+"s": "帰り道で[夕立]にあった。",
+"de": "Auf dem Heimweg geriet ich in einen Abendschauer.",
+"r": "{帰|かえ}り{道|みち}で[{夕立|ゆうだち}]にあった。",
+"bedeutung": "abendlicher Regenschauer"
+},
+"夕飯|ゆうはん": {
+"s": "[夕飯]の準備を手伝った。",
+"de": "Ich habe beim Vorbereiten des Abendessens geholfen.",
+"r": "[{夕飯|ゆうはん}]の{準備|じゅんび}を{手伝|てつだ}った。"
+},
+"外|がい": {
+"s": "この問題は専門[外]だ。",
+"de": "Diese Frage liegt außerhalb meines Fachs.",
+"r": "この{問題|もんだい}は{専門|せんもん}[{外|がい}]だ。",
+"bedeutung": "außerhalb von …",
+"lesungen": {
+"外": "がい"
+}
+},
+"外|そと": {
+"s": "[外]は風が強いようだ。",
+"de": "Draußen scheint ein starker Wind zu wehen.",
+"r": "[{外|そと}]は{風|かぜ}が{強|つよ}いようだ。"
+},
+"外|ほか": {
+"s": "[外]に何か質問はありませんか。",
+"de": "Gibt es sonst noch Fragen?",
+"r": "[{外|ほか}]に{何|なに}か{質問|しつもん}はありませんか。"
+},
+"外す|はずす": {
+"s": "家に帰ると、めがねを[外して]休む。",
+"de": "Zu Hause nehme ich die Brille ab und ruhe mich aus.",
+"r": "{家|いえ}に{帰|かえ}ると、めがねを[{外|はず}して]{休|やす}む。",
+"bedeutung": "abnehmen, lösen"
+},
+"外れる|はずれる": {
+"s": "急いで着たのでボタンが[外れて]いた。",
+"de": "In der Eile war ein Knopf offen.",
+"r": "{急|いそ}いで{着|き}たのでボタンが[{外|はず}れて]いた。",
+"bedeutung": "aufgehen, sich lösen"
+},
+"外出|がいしゅつ": {
+"s": "[外出]する時はかぎをかけてください。",
+"de": "Schließen Sie bitte ab, wenn Sie ausgehen.",
+"r": "[{外出|がいしゅつ}]する{時|とき}はかぎをかけてください。",
+"bedeutung": "Ausgehen"
+},
+"外国|がいこく": {
+"s": "いつか[外国]で働いてみたい。",
+"de": "Irgendwann möchte ich im Ausland arbeiten.",
+"r": "いつか[{外国|がいこく}]で{働|はたら}いてみたい。"
+},
+"外国人|がいこくじん": {
+"s": "この町には[外国人]が多く住んでいる。",
+"de": "In dieser Stadt wohnen viele Ausländer.",
+"r": "この{町|まち}には[{外国人|がいこくじん}]が{多|おお}く{住|す}んでいる。"
+},
+"外方|そっぽ": {
+"s": "弟はおこって[外方]を向いた。",
+"de": "Mein Bruder drehte sich verärgert weg.",
+"r": "{弟|おとうと}はおこって[{外方|そっぽ}]を{向|む}いた。",
+"bedeutung": "zur Seite (wegsehen)",
+"lesungen": {
+"外方": "そっぽ"
+}
+},
+"外来|がいらい": {
+"s": "病院の[外来]は午前中だけです。",
+"de": "Die Ambulanz hat nur vormittags geöffnet.",
+"r": "{病院|びょういん}の[{外来|がいらい}]は{午前中|ごぜんちゅう}だけです。",
+"bedeutung": "ambulant"
+},
+"多い|おおい": {
+"s": "この町は公園が[多い]。",
+"de": "In dieser Stadt gibt es viele Parks.",
+"r": "この{町|まち}は{公園|こうえん}が[{多|おお}い]。"
+},
+"多分|たぶん": {
+"s": "彼は[多分]まだ寝ていると思う。",
+"de": "Er schläft wahrscheinlich noch, denke ich.",
+"r": "{彼|かれ}は[{多分|たぶん}]まだ{寝|ね}ていると{思|おも}う。"
+},
+"多少|たしょう": {
+"s": "[多少]の失敗は気にしない。",
+"de": "Kleinere Fehler machen mir nichts aus.",
+"r": "[{多少|たしょう}]の{失敗|しっぱい}は{気|き}にしない。",
+"bedeutung": "mehr oder weniger, etwas"
+},
+"夜|や": {
+"s": "「千[夜]一夜物語」を読んでいる。",
+"de": "Ich lese „Tausendundeine Nacht“.",
+"r": "「{千|せん}[{夜|や}]{一夜|いちや}{物語|ものがたり}」を{読|よ}んでいる。",
+"bedeutung": "Zählwort für Nächte",
+"lesungen": {
+"夜": "や"
+}
+},
+"夜|よ": {
+"s": "秋の[夜]は長い。",
+"de": "Herbstnächte sind lang.",
+"r": "{秋|あき}の[{夜|よ}]は{長|なが}い。",
+"bedeutung": "Nacht",
+"lesungen": {
+"夜": "よ"
+}
+},
+"夜|よる": {
+"s": "この辺は[夜]になると静かだ。",
+"de": "Hier ist es nachts still.",
+"r": "この{辺|へん}は[{夜|よる}]になると{静|しず}かだ。"
+},
+"夜中|よなか": {
+"s": "[夜中]に雨の音で目がさめた。",
+"de": "Mitten in der Nacht weckte mich der Regen.",
+"r": "[{夜中|よなか}]に{雨|あめ}の{音|おと}で{目|め}がさめた。",
+"bedeutung": "mitten in der Nacht"
+},
+"夜明け|よあけ": {
+"s": "[夜明け]の空がうすい赤にそまった。",
+"de": "Der Morgenhimmel färbte sich zartrot.",
+"r": "[{夜明|よあ}け]の{空|そら}がうすい{赤|あか}にそまった。",
+"bedeutung": "Morgendämmerung"
+},
+"夜行|やこう": {
+"s": "東京まで[夜行]のバスで行った。",
+"de": "Ich bin mit dem Nachtbus nach Tokio gefahren.",
+"r": "{東京|とうきょう}まで[{夜行|やこう}]のバスで{行|い}った。",
+"bedeutung": "Nachtfahrt",
+"lesungen": {
+"行っ": "いっ"
+}
+},
+"夜間|やかん": {
+"s": "[夜間]は裏の入口を使ってください。",
+"de": "Nachts benutzen Sie bitte den hinteren Eingang.",
+"r": "[{夜間|やかん}]は{裏|うら}の{入口|いりぐち}を{使|つか}ってください。",
+"bedeutung": "nachts"
+},
 "大|だい": {
 "s": "私は甘いものが[大好き]だ。",
 "de": "Ich liebe Süßes.",
@@ -29,6 +200,11 @@
 "de": "Dieser Test war nicht besonders schwer.",
 "r": "このテストは[{大|たい}して]{難|むずか}しくなかった。"
 },
+"大事|だいじ": {
+"s": "[大事]な書類を家に忘れた。",
+"de": "Ich habe wichtige Unterlagen zu Hause vergessen.",
+"r": "[{大事|だいじ}]な{書類|しょるい}を{家|いえ}に{忘|わす}れた。"
+},
 "大人|おとな": {
 "s": "[大人]になったら何をしたい？",
 "de": "Was willst du machen, wenn du erwachsen bist?",
@@ -38,6 +214,178 @@
 "s": "うちの犬はとても[大人しい]。",
 "de": "Unser Hund ist sehr brav.",
 "r": "うちの{犬|いぬ}はとても[{大人|おとな}しい]。"
+},
+"大会|たいかい": {
+"s": "夏の水泳[大会]に出ることにした。",
+"de": "Ich nehme am Schwimmwettkampf im Sommer teil.",
+"r": "{夏|なつ}の{水泳|すいえい}[{大会|たいかい}]に{出|で}ることにした。",
+"bedeutung": "Wettkampf"
+},
+"大体|だいたい": {
+"s": "仕事は[大体]終わりました。",
+"de": "Die Arbeit ist im Großen und Ganzen fertig.",
+"r": "{仕事|しごと}は[{大体|だいたい}]{終|お}わりました。"
+},
+"大使|たいし": {
+"s": "各国の[大使]が集まって会議をした。",
+"de": "Die Botschafter verschiedener Länder kamen zusammen.",
+"r": "{各国|かっこく}の[{大使|たいし}]が{集|あつ}まって{会議|かいぎ}をした。",
+"bedeutung": "Botschafter(in)"
+},
+"大使館|たいしかん": {
+"s": "ビザのことで[大使館]へ行った。",
+"de": "Wegen des Visums war ich bei der Botschaft.",
+"r": "ビザのことで[{大使館|たいしかん}]へ{行|い}った。"
+},
+"大分|だいぶ": {
+"s": "熱は[大分]下がりました。",
+"de": "Das Fieber ist deutlich gesunken.",
+"r": "{熱|ねつ}は[{大分|だいぶ}]{下|さ}がりました。"
+},
+"大分|だいぶん": {
+"s": "雨は[大分]弱くなってきた。",
+"de": "Der Regen ist deutlich schwächer geworden.",
+"r": "{雨|あめ}は[{大分|だいぶん}]{弱|よわ}くなってきた。",
+"bedeutung": "beträchtlich, deutlich",
+"lesungen": {
+"大分": "だいぶん"
+}
+},
+"大切|たいせつ": {
+"s": "家族との時間を[大切]にしたい。",
+"de": "Ich möchte die Zeit mit der Familie wertschätzen.",
+"r": "{家族|かぞく}との{時間|じかん}を[{大切|たいせつ}]にしたい。"
+},
+"大半|たいはん": {
+"s": "参加者の[大半]は学生だった。",
+"de": "Die Mehrheit der Teilnehmenden waren Studierende.",
+"r": "{参加者|さんかしゃ}の[{大半|たいはん}]は{学生|がくせい}だった。",
+"bedeutung": "Großteil, Mehrheit"
+},
+"大学|だいがく": {
+"s": "[大学]で日本の歴史を学んでいる。",
+"de": "An der Universität studiere ich japanische Geschichte.",
+"r": "[{大学|だいがく}]で{日本|にほん}の{歴史|れきし}を{学|まな}んでいる。"
+},
+"大学生|だいがくせい": {
+"s": "弟は[大学生]で、一人でくらしている。",
+"de": "Mein Bruder studiert und lebt allein.",
+"r": "{弟|おとうと}は[{大学生|だいがくせい}]で、{一人|ひとり}でくらしている。"
+},
+"大学院|だいがくいん": {
+"s": "卒業後は[大学院]に進みたい。",
+"de": "Nach dem Abschluss möchte ich ein Aufbaustudium machen.",
+"r": "{卒業後|そつぎょうご}は[{大学院|だいがくいん}]に{進|すす}みたい。",
+"bedeutung": "Graduiertenschule"
+},
+"大家|おおや": {
+"s": "[大家]さんに家賃を払った。",
+"de": "Ich habe dem Vermieter die Miete gezahlt.",
+"r": "[{大家|おおや}]さんに{家賃|やちん}を{払|はら}った。",
+"bedeutung": "Vermieter"
+},
+"大家|たいか": {
+"s": "彼は書道の[大家]として知られる。",
+"de": "Er gilt als großer Meister der Kalligrafie.",
+"r": "{彼|かれ}は{書道|しょどう}の[{大家|たいか}]として{知|し}られる。",
+"bedeutung": "großer Meister",
+"lesungen": {
+"大家": "たいか"
+}
+},
+"大小|だいしょう": {
+"s": "くつの[大小]は自由に選べる。",
+"de": "Die Schuhgröße kann man frei wählen.",
+"r": "くつの[{大小|だいしょう}]は{自由|じゆう}に{選|えら}べる。",
+"bedeutung": "groß und klein, Größe"
+},
+"大工|だいく": {
+"s": "[大工]さんが家を直してくれた。",
+"de": "Der Zimmermann hat das Haus repariert.",
+"r": "[{大工|だいく}]さんが{家|いえ}を{直|なお}してくれた。",
+"bedeutung": "Zimmermann"
+},
+"大方|おおかた": {
+"s": "仕事は[大方]片づいた。",
+"de": "Die Arbeit ist größtenteils erledigt.",
+"r": "{仕事|しごと}は[{大方|おおかた}]{片|かた}づいた。",
+"bedeutung": "größtenteils"
+},
+"大木|たいぼく": {
+"s": "神社の庭に[大木]が立っている。",
+"de": "Im Schreinhof steht ein riesiger Baum.",
+"r": "{神社|じんじゃ}の{庭|にわ}に[{大木|たいぼく}]が{立|た}っている。",
+"bedeutung": "großer Baum"
+},
+"大気|たいき": {
+"s": "[大気]のよごれが問題になっている。",
+"de": "Die Verschmutzung der Atmosphäre wird zum Problem.",
+"r": "[{大気|たいき}]のよごれが{問題|もんだい}になっている。",
+"bedeutung": "Atmosphäre, Luft"
+},
+"大水|おおみず": {
+"s": "[大水]で橋が流された。",
+"de": "Das Hochwasser riss die Brücke fort.",
+"r": "[{大水|おおみず}]で{橋|はし}が{流|なが}された。",
+"bedeutung": "Hochwasser"
+},
+"大空|おおぞら": {
+"s": "鳥が[大空]を自由に飛んでいる。",
+"de": "Vögel fliegen frei am weiten Himmel.",
+"r": "{鳥|とり}が[{大空|おおぞら}]を{自由|じゆう}に{飛|と}んでいる。",
+"bedeutung": "weiter Himmel"
+},
+"大通り|おおどおり": {
+"s": "[大通り]に出ればタクシーがつかまる。",
+"de": "An der Hauptstraße bekommt man ein Taxi.",
+"r": "[{大通|おおどお}り]に{出|で}ればタクシーがつかまる。",
+"bedeutung": "Hauptstraße"
+},
+"大金|たいきん": {
+"s": "彼は[大金]を寄付した。",
+"de": "Er hat eine große Summe gespendet.",
+"r": "{彼|かれ}は[{大金|たいきん}]を{寄付|きふ}した。",
+"bedeutung": "viel Geld"
+},
+"天|てん": {
+"s": "努力した人を[天]は見ている。",
+"de": "Der Himmel sieht die, die sich mühen.",
+"r": "{努力|どりょく}した{人|ひと}を[{天|てん}]は{見|み}ている。",
+"bedeutung": "Himmel"
+},
+"天下|てんか": {
+"s": "この料理人の味は[天下]一品だ。",
+"de": "Der Geschmack dieses Kochs ist unübertroffen.",
+"r": "この{料理人|りょうりにん}の{味|あじ}は[{天下|てんか}]{一品|いっぴん}だ。",
+"bedeutung": "die ganze Welt",
+"lesungen": {
+"一品": "いっぴん",
+"一": "いっ",
+"品": "ぴん"
+}
+},
+"天体|てんたい": {
+"s": "望遠鏡で[天体]を観察した。",
+"de": "Ich habe Himmelskörper durchs Fernrohr betrachtet.",
+"r": "{望遠鏡|ぼうえんきょう}で[{天体|てんたい}]を{観察|かんさつ}した。",
+"bedeutung": "Himmelskörper"
+},
+"天国|てんごく": {
+"s": "温泉に入ると[天国]のようだ。",
+"de": "Im Thermalbad fühlt man sich wie im Himmel.",
+"r": "{温泉|おんせん}に{入|はい}ると[{天国|てんごく}]のようだ。",
+"bedeutung": "Paradies"
+},
+"天地|てんち": {
+"s": "引っ越して[天地]がひっくり返ったようだ。",
+"de": "Seit dem Umzug steht alles Kopf.",
+"r": "{引|ひ}っ{越|こ}して[{天地|てんち}]がひっくり{返|かえ}ったようだ。",
+"bedeutung": "Himmel und Erde"
+},
+"天気|てんき": {
+"s": "明日の[天気]はどうでしょうか。",
+"de": "Wie wird wohl das Wetter morgen?",
+"r": "{明日|あした}の[{天気|てんき}]はどうでしょうか。"
 },
 "天気予報|てんきよほう": {
 "s": "[天気予報]によると、明日は雪らしい。",
@@ -61,9 +409,90 @@
 "de": "Dann verabschiede ich mich schon einmal.",
 "r": "それでは、お{先|さき}に[{失礼|しつれい}]します。"
 },
+"女|おんな": {
+"s": "あの[女]の人は医者だそうだ。",
+"de": "Die Frau dort soll Ärztin sein.",
+"r": "あの[{女|おんな}]の{人|ひと}は{医者|いしゃ}だそうだ。"
+},
+"女|じょ": {
+"s": "私は三人きょうだいの長[女]です。",
+"de": "Ich bin die älteste Tochter von drei Geschwistern.",
+"r": "{私|わたし}は{三人|さんにん}きょうだいの{長|なが}[{女|じょ}]です。",
+"bedeutung": "Tochter (Zählung)",
+"lesungen": {
+"女": "じょ"
+}
+},
+"女の人|おんなのひと": {
+"s": "あの[女の人]は先生です。",
+"de": "Die Frau dort ist Lehrerin.",
+"r": "あの[{女|おんな}の{人|ひと}]は{先生|せんせい}です。",
+"bedeutung": "Frau"
+},
+"女の子|おんなのこ": {
+"s": "公園で[女の子]が花をつんでいる。",
+"de": "Im Park pflückt ein Mädchen Blumen.",
+"r": "{公園|こうえん}で[{女|おんな}の{子|こ}]が{花|はな}をつんでいる。"
+},
 "女優|じょゆう": {
 "s": "姉は[女優]になるのが夢だ。",
 "de": "Meine ältere Schwester träumt davon, Schauspielerin zu werden.",
 "r": "{姉|あね}は[{女優|じょゆう}]になるのが{夢|ゆめ}だ。"
+},
+"女子|じょし": {
+"s": "この学校は[女子]のほうが多い。",
+"de": "An dieser Schule gibt es mehr Mädchen.",
+"r": "この{学校|がっこう}は[{女子|じょし}]のほうが{多|おお}い。",
+"bedeutung": "Mädchen, Frauen"
+},
+"妹|いもうと": {
+"s": "[妹]は今年、中学生になった。",
+"de": "Meine jüngere Schwester ist dieses Jahr auf die Mittelschule gekommen.",
+"r": "[{妹|いもうと}]は{今年|ことし}、{中学生|ちゅうがくせい}になった。"
+},
+"姉|あね": {
+"s": "[姉]は結婚して大阪に住んでいる。",
+"de": "Meine ältere Schwester ist verheiratet und lebt in Osaka.",
+"r": "[{姉|あね}]は{結婚|けっこん}して{大阪|おおさか}に{住|す}んでいる。"
+},
+"姉妹|しまい": {
+"s": "私たちは三人[姉妹]です。",
+"de": "Wir sind drei Schwestern.",
+"r": "{私|わたし}たちは{三人|さんにん}[{姉妹|しまい}]です。",
+"bedeutung": "Schwestern"
+},
+"始まり|はじまり": {
+"s": "これが二人の友情の[始まり]だった。",
+"de": "Das war der Anfang ihrer Freundschaft.",
+"r": "これが{二人|ふたり}の{友情|ゆうじょう}の[{始|はじ}まり]だった。",
+"bedeutung": "Anfang"
+},
+"始まる|はじまる": {
+"s": "もうすぐ新しい学期が[始まる]。",
+"de": "Bald beginnt ein neues Schulhalbjahr.",
+"r": "もうすぐ{新|あたら}しい{学期|がっき}が[{始|はじ}まる]。"
+},
+"始めに|はじめに": {
+"s": "[始めに]、今日の予定を説明します。",
+"de": "Zu Beginn erkläre ich den heutigen Plan.",
+"r": "[{始|はじ}めに]、{今日|きょう}の{予定|よてい}を{説明|せつめい}します。",
+"bedeutung": "zu Beginn"
+},
+"始める|はじめる": {
+"s": "今年から日記を書き[始めた]。",
+"de": "Seit diesem Jahr schreibe ich Tagebuch.",
+"r": "{今年|ことし}から{日記|にっき}を{書|か}き[{始|はじ}めた]。"
+},
+"始発|しはつ": {
+"s": "旅行の日は[始発]の電車に乗った。",
+"de": "Am Reisetag nahm ich den ersten Zug.",
+"r": "{旅行|りょこう}の{日|ひ}は[{始発|しはつ}]の{電車|でんしゃ}に{乗|の}った。",
+"bedeutung": "erste Fahrt des Tages"
+},
+"始終|しじゅう": {
+"s": "妹は[始終]歌を歌っている。",
+"de": "Meine Schwester singt ständig.",
+"r": "{妹|いもうと}は[{始終|しじゅう}]{歌|うた}を{歌|うた}っている。",
+"bedeutung": "ständig"
 }
 }

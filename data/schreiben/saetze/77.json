@@ -1,8 +1,185 @@
 {
+"真っ二つ|まっぷたつ": {
+"s": "すいかを[真っ二つ]に切った。",
+"de": "Ich habe die Melone genau halbiert.",
+"r": "すいかを[{真|ま}っ{二|ぷた}つ]に{切|き}った。",
+"bedeutung": "genau entzwei"
+},
+"真っ先|まっさき": {
+"s": "火事の時は[真っ先]ににげてください。",
+"de": "Bei Feuer bringen Sie sich als Erstes in Sicherheit.",
+"r": "{火事|かじ}の{時|とき}は[{真|ま}っ{先|さき}]ににげてください。",
+"bedeutung": "allererst"
+},
+"真っ白|まっしろ": {
+"s": "朝起きると外は[真っ白]だった。",
+"de": "Morgens war draußen alles schneeweiß.",
+"r": "{朝|あさ}{起|お}きると{外|そと}は[{真|ま}っ{白|しろ}]だった。",
+"bedeutung": "schneeweiß"
+},
+"真っ赤|まっか": {
+"s": "はずかしくて顔が[真っ赤]になった。",
+"de": "Vor Scham wurde ich knallrot.",
+"r": "はずかしくて{顔|かお}が[{真|ま}っ{赤|か}]になった。",
+"bedeutung": "knallrot"
+},
+"真っ青|まっさお": {
+"s": "地図を忘れたことに気づいて[真っ青]になった。",
+"de": "Als ich merkte, dass die Karte fehlte, wurde ich blass.",
+"r": "{地図|ちず}を{忘|わす}れたことに{気|き}づいて[{真|ま}っ{青|さお}]になった。",
+"bedeutung": "tiefblau"
+},
+"真っ黒|まっくろ": {
+"s": "日に焼けて顔が[真っ黒]だ。",
+"de": "Das Gesicht ist von der Sonne ganz dunkel.",
+"r": "{日|ひ}に{焼|や}けて{顔|かお}が[{真|ま}っ{黒|くろ}]だ。",
+"bedeutung": "pechschwarz"
+},
+"真ん中|まんなか": {
+"s": "部屋の[真ん中]にテーブルを置いた。",
+"de": "Ich habe den Tisch in die Mitte des Zimmers gestellt.",
+"r": "{部屋|へや}の[{真|ま}ん{中|なか}]にテーブルを{置|お}いた。"
+},
+"真ん円い|まんまるい": {
+"s": "[真ん円い]月が空にうかんだ。",
+"de": "Ein kreisrunder Mond stand am Himmel.",
+"r": "[{真|ま}ん{円|まる}い]{月|つき}が{空|そら}にうかんだ。",
+"bedeutung": "kreisrund"
+},
+"真ん前|まんまえ": {
+"s": "駅の[真ん前]に交番がある。",
+"de": "Direkt vor dem Bahnhof ist eine Polizeiwache.",
+"r": "{駅|えき}の[{真|ま}ん{前|まえ}]に{交番|こうばん}がある。",
+"bedeutung": "direkt davor"
+},
+"真上|まうえ": {
+"s": "太陽が[真上]に来ると暑い。",
+"de": "Steht die Sonne genau oben, ist es heiß.",
+"r": "{太陽|たいよう}が[{真上|まうえ}]に{来|く}ると{暑|あつ}い。",
+"bedeutung": "genau über"
+},
+"真下|ました": {
+"s": "橋の[真下]を船が通る。",
+"de": "Genau unter der Brücke fährt ein Schiff.",
+"r": "{橋|はし}の[{真下|ました}]を{船|ふね}が{通|とお}る。",
+"bedeutung": "genau unter"
+},
+"真心|まごころ": {
+"s": "[真心]をこめておくり物を選んだ。",
+"de": "Ich habe das Geschenk mit Herz ausgesucht.",
+"r": "[{真心|まごころ}]をこめておくり{物|もの}を{選|えら}んだ。",
+"bedeutung": "Aufrichtigkeit"
+},
+"真理|しんり": {
+"s": "学者は[真理]を求めて研究する。",
+"de": "Gelehrte forschen auf der Suche nach der Wahrheit.",
+"r": "{学者|がくしゃ}は[{真理|しんり}]を{求|もと}めて{研究|けんきゅう}する。",
+"bedeutung": "Wahrheit"
+},
+"真空|しんくう": {
+"s": "お茶の葉を[真空]のふくろに入れる。",
+"de": "Ich fülle die Teeblätter in einen Vakuumbeutel.",
+"r": "お{茶|ちゃ}の{葉|は}を[{真空|しんくう}]のふくろに{入|い}れる。",
+"bedeutung": "Vakuum"
+},
+"着|ちゃく": {
+"s": "スーツを二[着]持っている。",
+"de": "Ich besitze zwei Anzüge.",
+"r": "スーツを{二|に}[{着|ちゃく}]{持|も}っている。",
+"bedeutung": "Zählwort für Kleidung",
+"lesungen": {
+"着": "ちゃく"
+}
+},
+"着々|ちゃくちゃく": {
+"s": "引っ越しの準備は[着々]と進んでいる。",
+"de": "Die Umzugsvorbereitungen kommen stetig voran.",
+"r": "{引|ひ}っ{越|こ}しの{準備|じゅんび}は[{着々|ちゃくちゃく}]と{進|すす}んでいる。",
+"bedeutung": "stetig, Schritt für Schritt"
+},
+"着く|つく": {
+"s": "会場に[着いたら]連絡してください。",
+"de": "Melden Sie sich, wenn Sie am Veranstaltungsort sind.",
+"r": "{会場|かいじょう}に[{着|つ}いたら]{連絡|れんらく}してください。"
+},
+"着ける|つける": {
+"s": "船を港に[着けた]。",
+"de": "Er legte mit dem Boot im Hafen an.",
+"r": "{船|ふね}を{港|みなと}に[{着|つ}けた]。",
+"bedeutung": "anlegen"
+},
+"着せる|きせる": {
+"s": "子どもに上着を[着せた]。",
+"de": "Ich habe dem Kind die Jacke angezogen.",
+"r": "{子|こ}どもに{上着|うわぎ}を[{着|き}せた]。",
+"bedeutung": "jemandem anziehen"
+},
+"着る|きる": {
+"s": "面接にはスーツを[着て]行く。",
+"de": "Zum Vorstellungsgespräch gehe ich im Anzug.",
+"r": "{面接|めんせつ}にはスーツを[{着|き}て]{行|い}く。"
+},
+"着工|ちゃっこう": {
+"s": "駅ビルは来年[着工]する予定だ。",
+"de": "Der Bau des Bahnhofsgebäudes soll nächstes Jahr beginnen.",
+"r": "{駅|えき}ビルは{来年|らいねん}[{着工|ちゃっこう}]する{予定|よてい}だ。",
+"bedeutung": "Baubeginn"
+},
+"着手|ちゃくしゅ": {
+"s": "来月から新しい仕事に[着手]する。",
+"de": "Ab nächsten Monat nehme ich die neue Arbeit in Angriff.",
+"r": "{来月|らいげつ}から{新|あたら}しい{仕事|しごと}に[{着手|ちゃくしゅ}]する。",
+"bedeutung": "Inangriffnahme"
+},
+"着物|きもの": {
+"s": "成人式で[着物]を着た。",
+"de": "Zur Volljährigkeitsfeier habe ich Kimono getragen.",
+"r": "{成人式|せいじんしき}で[{着物|きもの}]を{着|き}た。"
+},
+"着目|ちゃくもく": {
+"s": "この研究は食生活に[着目]した。",
+"de": "Die Studie richtet den Blick auf die Ernährung.",
+"r": "この{研究|けんきゅう}は{食生活|しょくせいかつ}に[{着目|ちゃくもく}]した。",
+"bedeutung": "Augenmerk"
+},
+"着色|ちゃくしょく": {
+"s": "この食品は[着色]していません。",
+"de": "Dieses Lebensmittel ist nicht gefärbt.",
+"r": "この{食品|しょくひん}は[{着色|ちゃくしょく}]していません。",
+"bedeutung": "Färbung"
+},
 "矢|や": {
 "s": "[矢]は的の真ん中に当たった。",
 "de": "Der Pfeil traf genau die Mitte der Zielscheibe.",
 "r": "[{矢|や}]は{的|まと}の{真|ま}ん{中|なか}に{当|あ}たった。",
 "bedeutung": "Pfeil"
+},
+"知らせ|しらせ": {
+"s": "合格の[知らせ]が届いた。",
+"de": "Die Nachricht vom Bestehen ist eingetroffen.",
+"r": "{合格|ごうかく}の[{知|し}らせ]が{届|とど}いた。",
+"bedeutung": "Nachricht"
+},
+"知らせる|しらせる": {
+"s": "結果は後でメールで[知らせます]。",
+"de": "Das Ergebnis teile ich später per Mail mit.",
+"r": "{結果|けっか}は{後|あと}でメールで[{知|し}らせます]。"
+},
+"知る|しる": {
+"s": "そのニュースは今朝[知った]。",
+"de": "Von dieser Nachricht habe ich heute früh erfahren.",
+"r": "そのニュースは{今朝|けさ}[{知|し}った]。"
+},
+"知事|ちじ": {
+"s": "県の[知事]が町を訪れた。",
+"de": "Der Präfekturgouverneur besuchte die Stadt.",
+"r": "{県|けん}の[{知事|ちじ}]が{町|まち}を{訪|おとず}れた。",
+"bedeutung": "Gouverneur"
+},
+"知人|ちじん": {
+"s": "[知人]の紹介で仕事が見つかった。",
+"de": "Durch eine Bekannte habe ich Arbeit gefunden.",
+"r": "[{知人|ちじん}]の{紹介|しょうかい}で{仕事|しごと}が{見|み}つかった。",
+"bedeutung": "Bekannte(r)"
 }
 }

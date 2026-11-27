@@ -1,4 +1,275 @@
 {
+"生|せい": {
+"s": "[生]あるものはいつか死ぬ。",
+"de": "Alles, was lebt, stirbt einmal.",
+"r": "[{生|せい}]あるものはいつか{死|し}ぬ。",
+"bedeutung": "Leben",
+"lesungen": {
+"生": "せい"
+}
+},
+"生|なま": {
+"s": "暑い日は[生]の野菜がおいしい。",
+"de": "An heißen Tagen schmeckt rohes Gemüse.",
+"r": "{暑|あつ}い{日|ひ}は[{生|なま}]の{野菜|やさい}がおいしい。",
+"bedeutung": "roh, frisch"
+},
+"生える|はえる": {
+"s": "春になると新しい草が[生える]。",
+"de": "Im Frühling wächst neues Gras.",
+"r": "{春|はる}になると{新|あたら}しい{草|くさ}が[{生|は}える]。",
+"bedeutung": "wachsen, sprießen"
+},
+"生かす|いかす": {
+"s": "経験を[生かせる]仕事をさがしている。",
+"de": "Ich suche eine Arbeit, die meine Erfahrung nutzt.",
+"r": "{経験|けいけん}を[{生|い}かせる]{仕事|しごと}をさがしている。",
+"bedeutung": "nutzen, zur Geltung bringen"
+},
+"生きる|いきる": {
+"s": "人は水なしでは[生きる]ことができない。",
+"de": "Ohne Wasser kann der Mensch nicht leben.",
+"r": "{人|ひと}は{水|みず}なしでは[{生|い}きる]ことができない。"
+},
+"生き物|いきもの": {
+"s": "山には色々な[生き物]がいる。",
+"de": "In den Bergen leben allerlei Tiere.",
+"r": "{山|やま}には{色々|いろいろ}な[{生|い}き{物|もの}]がいる。",
+"bedeutung": "Lebewesen, Tier"
+},
+"生き生き|いきいき": {
+"s": "子どもたちは[生き生き]と遊んでいた。",
+"de": "Die Kinder spielten voller Leben.",
+"r": "{子|こ}どもたちは[{生|い}き{生|い}き]と{遊|あそ}んでいた。",
+"bedeutung": "lebhaft, lebendig"
+},
+"生け花|いけばな": {
+"s": "母は[生け花]を教えている。",
+"de": "Meine Mutter unterrichtet Blumenstecken.",
+"r": "{母|はは}は[{生|い}け{花|ばな}]を{教|おし}えている。",
+"bedeutung": "Blumenstecken"
+},
+"生じる|しょうじる": {
+"s": "小さな誤解から問題が[生じた]。",
+"de": "Aus einem kleinen Missverständnis entstand ein Problem.",
+"r": "{小|ちい}さな{誤解|ごかい}から{問題|もんだい}が[{生|しょう}じた]。",
+"bedeutung": "entstehen, auftreten"
+},
+"生ずる|しょうずる": {
+"s": "環境が変わると新しい問題が[生ずる]。",
+"de": "Ändert sich die Umgebung, entstehen neue Probleme.",
+"r": "{環境|かんきょう}が{変|か}わると{新|あたら}しい{問題|もんだい}が[{生|しょう}ずる]。",
+"bedeutung": "entstehen"
+},
+"生まれ|うまれ": {
+"s": "私は九州の[生まれ]です。",
+"de": "Ich bin in Kyushu geboren.",
+"r": "{私|わたし}は{九州|きゅうしゅう}の[{生|う}まれ]です。",
+"bedeutung": "Geburt, Herkunft"
+},
+"生まれつき|うまれつき": {
+"s": "彼女は[生まれつき]耳がいい。",
+"de": "Sie hat von Geburt an ein gutes Gehör.",
+"r": "{彼女|かのじょ}は[{生|う}まれつき]{耳|みみ}がいい。",
+"bedeutung": "von Geburt an"
+},
+"生まれる|うまれる": {
+"s": "姉の家に赤ちゃんが[生まれた]。",
+"de": "Bei meiner Schwester ist ein Baby zur Welt gekommen.",
+"r": "{姉|あね}の{家|いえ}に{赤|あか}ちゃんが[{生|う}まれた]。"
+},
+"生やす|はやす": {
+"s": "父は最近、ひげを[生やして]いる。",
+"de": "Mein Vater lässt sich neuerdings einen Bart stehen.",
+"r": "{父|ちち}は{最近|さいきん}、ひげを[{生|は}やして]いる。",
+"bedeutung": "wachsen lassen"
+},
+"生る|なる": {
+"s": "庭の木に大きな実が[生った]。",
+"de": "Am Baum im Garten sind große Früchte gewachsen.",
+"r": "{庭|にわ}の{木|き}に{大|おお}きな{実|じつ}が[{生|な}った]。",
+"bedeutung": "Früchte tragen"
+},
+"生地|きじ": {
+"s": "この服は[生地]がやわらかい。",
+"de": "Der Stoff dieser Kleidung ist weich.",
+"r": "この{服|ふく}は[{生地|きじ}]がやわらかい。",
+"bedeutung": "Stoff"
+},
+"生年月日|せいねんがっぴ": {
+"s": "ここに[生年月日]を書いてください。",
+"de": "Tragen Sie hier bitte Ihr Geburtsdatum ein.",
+"r": "ここに[{生年月日|せいねんがっぴ}]を{書|か}いてください。",
+"bedeutung": "Geburtsdatum"
+},
+"生意気|なまいき": {
+"s": "弟はこのごろ[生意気]になった。",
+"de": "Mein Bruder ist neuerdings vorlaut geworden.",
+"r": "{弟|おとうと}はこのごろ[{生意気|なまいき}]になった。",
+"bedeutung": "vorlaut, frech"
+},
+"生意気な|なまいきな": {
+"s": "[生意気な]口をきいてはいけない。",
+"de": "Sei nicht so frech.",
+"r": "[{生意気|なまいき}な]{口|くち}をきいてはいけない。",
+"bedeutung": "frech, vorlaut"
+},
+"生死|せいし": {
+"s": "船の乗客の[生死]はまだ分からない。",
+"de": "Ob die Passagiere leben, ist noch unklar.",
+"r": "{船|ふね}の{乗客|じょうきゃく}の[{生死|せいし}]はまだ{分|わ}からない。",
+"bedeutung": "Leben oder Tod"
+},
+"生物|せいぶつ": {
+"s": "海の[生物]について調べた。",
+"de": "Ich habe über Meereslebewesen recherchiert.",
+"r": "{海|うみ}の[{生物|せいぶつ}]について{調|しら}べた。",
+"bedeutung": "Lebewesen"
+},
+"生理|せいり": {
+"s": "授業で植物の[生理]を学んだ。",
+"de": "Im Unterricht haben wir die Physiologie der Pflanzen gelernt.",
+"r": "{授業|じゅぎょう}で{植物|しょくぶつ}の[{生理|せいり}]を{学|まな}んだ。",
+"bedeutung": "Physiologie"
+},
+"生計|せいけい": {
+"s": "祖父は魚を売って[生計]を立てた。",
+"de": "Mein Großvater lebte vom Fischverkauf.",
+"r": "{祖父|そふ}は{魚|さかな}を{売|う}って[{生計|せいけい}]を{立|た}てた。",
+"bedeutung": "Lebensunterhalt"
+},
+"生長|せいちょう": {
+"s": "子どもの[生長]を毎年記録している。",
+"de": "Jedes Jahr halte ich das Wachsen der Kinder fest.",
+"r": "{子|こ}どもの[{生長|せいちょう}]を{毎年|まいとし}{記録|きろく}している。",
+"bedeutung": "Wachstum"
+},
+"用|よう": {
+"s": "何かご[用]があれば呼んでください。",
+"de": "Rufen Sie mich, wenn Sie etwas brauchen.",
+"r": "{何|なに}かご[{用|よう}]があれば{呼|よ}んでください。"
+},
+"用いる|もちいる": {
+"s": "図を[用いて]説明します。",
+"de": "Ich erkläre es anhand einer Abbildung.",
+"r": "{図|ず}を[{用|もち}いて]{説明|せつめい}します。",
+"bedeutung": "verwenden"
+},
+"用事|ようじ": {
+"s": "急な[用事]ができて行けなくなった。",
+"de": "Mir ist etwas Dringendes dazwischengekommen.",
+"r": "{急|きゅう}な[{用事|ようじ}]ができて{行|い}けなくなった。"
+},
+"用品|ようひん": {
+"s": "春は学校の[用品]がよく売れる。",
+"de": "Im Frühling verkaufen sich Schulsachen gut.",
+"r": "{春|はる}は{学校|がっこう}の[{用品|ようひん}]がよく{売|う}れる。",
+"bedeutung": "Bedarfsartikel"
+},
+"用心|ようじん": {
+"s": "火の元にはいつも[用心]している。",
+"de": "Mit offenem Feuer bin ich immer vorsichtig.",
+"r": "{火|ひ}の{元|もと}にはいつも[{用心|ようじん}]している。",
+"bedeutung": "Vorsicht"
+},
+"用意|ようい": {
+"s": "旅行の[用意]はもうできましたか。",
+"de": "Sind die Reisevorbereitungen schon fertig?",
+"r": "{旅行|りょこう}の[{用意|ようい}]はもうできましたか。"
+},
+"用紙|ようし": {
+"s": "受付で申し込みの[用紙]をもらった。",
+"de": "Am Empfang bekam ich ein Antragsformular.",
+"r": "{受付|うけつけ}で{申|もう}し{込|こ}みの[{用紙|ようし}]をもらった。",
+"bedeutung": "Formular"
+},
+"用語|ようご": {
+"s": "授業の前に[用語]の意味を調べた。",
+"de": "Vor dem Unterricht habe ich die Fachwörter nachgeschlagen.",
+"r": "{授業|じゅぎょう}の{前|まえ}に[{用語|ようご}]の{意味|いみ}を{調|しら}べた。",
+"bedeutung": "Fachausdruck"
+},
+"田|た": {
+"s": "[田]に水が入る季節になった。",
+"de": "Es ist die Zeit, in der Wasser auf die Reisfelder kommt.",
+"r": "[{田|た}]に{水|みず}が{入|はい}る{季節|きせつ}になった。",
+"bedeutung": "Reisfeld"
+},
+"田んぼ|たんぼ": {
+"s": "[田んぼ]でかえるが鳴いている。",
+"de": "Auf dem Reisfeld quaken Frösche.",
+"r": "[{田|た}んぼ]でかえるが{鳴|な}いている。",
+"bedeutung": "Reisfeld"
+},
+"男|おとこ": {
+"s": "あの[男]の人を知っていますか。",
+"de": "Kennen Sie den Mann dort?",
+"r": "あの[{男|おとこ}]の{人|ひと}を{知|し}っていますか。"
+},
+"男の人|おとこのひと": {
+"s": "受付に[男の人]が立っていた。",
+"de": "Am Empfang stand ein Mann.",
+"r": "{受付|うけつけ}に[{男|おとこ}の{人|ひと}]が{立|た}っていた。",
+"bedeutung": "Mann"
+},
+"男の子|おとこのこ": {
+"s": "[男の子]が元気に走っている。",
+"de": "Ein Junge rennt munter umher.",
+"r": "[{男|おとこ}の{子|こ}]が{元気|げんき}に{走|はし}っている。"
+},
+"男子|だんし": {
+"s": "[男子]の部は午後から始まる。",
+"de": "Der Wettbewerb der Jungen beginnt am Nachmittag.",
+"r": "[{男子|だんし}]の{部|ぶ}は{午後|ごご}から{始|はじ}まる。",
+"bedeutung": "Jungen, Männer"
+},
+"町|ちょう": {
+"s": "この[町]の一丁目に住んでいます。",
+"de": "Ich wohne im ersten Viertel dieses Ortsteils.",
+"r": "この[{町|ちょう}]の{一丁目|いっちょうめ}に{住|す}んでいます。",
+"lesungen": {
+"一": "いっ"
+}
+},
+"町|まち": {
+"s": "海に近い小さな[町]で育った。",
+"de": "Ich bin in einer kleinen Stadt am Meer aufgewachsen.",
+"r": "{海|うみ}に{近|ちか}い{小|ちい}さな[{町|まち}]で{育|そだ}った。"
+},
+"画|かく": {
+"s": "この漢字は十[画]で書く。",
+"de": "Dieses Kanji schreibt man mit zehn Strichen.",
+"r": "この{漢字|かんじ}は{十|じゅっ}[{画|かく}]で{書|か}く。",
+"bedeutung": "Zählwort für Striche",
+"lesungen": {
+"画": "かく",
+"十": "じゅっ"
+}
+},
+"画|が": {
+"s": "祖父は日本[画]を習っている。",
+"de": "Mein Großvater lernt japanische Malerei.",
+"r": "{祖父|そふ}は{日本|にほん}[{画|が}]を{習|なら}っている。",
+"bedeutung": "Bild, Malerei",
+"lesungen": {
+"画": "が"
+}
+},
+"画家|がか": {
+"s": "[画家]は朝の光をえがいた。",
+"de": "Der Maler malte das Morgenlicht.",
+"r": "[{画家|がか}]は{朝|あさ}の{光|ひかり}をえがいた。",
+"bedeutung": "Maler(in)"
+},
+"界|かい": {
+"s": "彼は芸能[界]で長く働いている。",
+"de": "Er arbeitet schon lange in der Unterhaltungswelt.",
+"r": "{彼|かれ}は{芸能|げいのう}[{界|かい}]で{長|なが}く{働|はたら}いている。",
+"bedeutung": "Welt, Branche",
+"lesungen": {
+"界": "かい"
+}
+},
 "疑う|うたがう": {
 "s": "彼の話を[疑う]理由は何もない。",
 "de": "Es gibt keinen Grund, seine Geschichte anzuzweifeln.",
@@ -8,5 +279,30 @@
 "s": "説明を聞いても、[疑問]が一つ残った。",
 "de": "Auch nach der Erklärung blieb eine Frage offen.",
 "r": "{説明|せつめい}を{聞|き}いても、[{疑問|ぎもん}]が{一|ひと}つ{残|のこ}った。"
+},
+"病|びょう": {
+"s": "祖父は胃[病]の薬を飲んでいる。",
+"de": "Mein Großvater nimmt Magenmedizin.",
+"r": "{祖父|そふ}は{胃|い}[{病|びょう}]の{薬|くすり}を{飲|の}んでいる。",
+"bedeutung": "Krankheit (in Zusammensetzungen)",
+"lesungen": {
+"病": "びょう"
+}
+},
+"病む|やむ": {
+"s": "心を[病む]人がふえている。",
+"de": "Immer mehr Menschen erkranken seelisch.",
+"r": "{心|こころ}を[{病|や}む]{人|ひと}がふえている。",
+"bedeutung": "erkranken, leiden"
+},
+"病気|びょうき": {
+"s": "祖父は大きな[病気]をしたことがない。",
+"de": "Mein Großvater war nie schwer krank.",
+"r": "{祖父|そふ}は{大|おお}きな[{病気|びょうき}]をしたことがない。"
+},
+"病院|びょういん": {
+"s": "熱が下がらないので[病院]へ行った。",
+"de": "Das Fieber sank nicht, also ging ich ins Krankenhaus.",
+"r": "{熱|ねつ}が{下|さ}がらないので[{病院|びょういん}]へ{行|い}った。"
 }
 }

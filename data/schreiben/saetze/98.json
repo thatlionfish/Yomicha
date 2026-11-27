@@ -1,8 +1,126 @@
 {
+"題|だい": {
+"s": "作文の[題]を自分で決めた。",
+"de": "Den Titel des Aufsatzes habe ich selbst gewählt.",
+"r": "{作文|さくぶん}の[{題|だい}]を{自分|じぶん}で{決|き}めた。",
+"bedeutung": "Titel, Thema"
+},
+"題する|だいする": {
+"s": "「春」と[題する]詩を読んだ。",
+"de": "Ich las ein Gedicht mit dem Titel „Frühling“.",
+"r": "「{春|はる}」と[{題|だい}する]{詩|し}を{読|よ}んだ。",
+"bedeutung": "betiteln"
+},
+"題名|だいめい": {
+"s": "本の[題名]が思い出せない。",
+"de": "Der Titel des Buches fällt mir nicht ein.",
+"r": "{本|ほん}の[{題名|だいめい}]が{思|おも}い{出|だ}せない。",
+"bedeutung": "Titel"
+},
+"風|かぜ": {
+"s": "冷たい[風]がふいている。",
+"de": "Es weht ein kalter Wind.",
+"r": "{冷|つめ}たい[{風|かぜ}]がふいている。"
+},
+"風|ふう": {
+"s": "この旅館は和[風]の造りだ。",
+"de": "Dieses Gasthaus ist im japanischen Stil gebaut.",
+"r": "この{旅館|りょかん}は{和|わ}[{風|ふう}]の{造|つく}りだ。",
+"bedeutung": "Stil, Art",
+"lesungen": {
+"風": "ふう"
+}
+},
+"風土|ふうど": {
+"s": "料理はその土地の[風土]を映す。",
+"de": "Die Küche spiegelt Klima und Land wider.",
+"r": "{料理|りょうり}はその{土地|とち}の[{風土|ふうど}]を{映|うつ}す。",
+"bedeutung": "Klima und Landschaft"
+},
 "風景|ふうけい": {
 "s": "窓の外には、静かな田舎の[風景]が広がる。",
 "de": "Vor dem Fenster breitet sich eine stille Landschaft auf dem Land aus.",
 "r": "{窓|まど}の{外|そと}には、{静|しず}かな{田舎|いなか}の[{風景|ふうけい}]が{広|ひろ}がる。",
 "bedeutung": "Landschaft, Szenerie"
+},
+"風習|ふうしゅう": {
+"s": "正月に年賀状を出す[風習]がある。",
+"de": "Es ist Brauch, zu Neujahr Karten zu schicken.",
+"r": "{正月|しょうがつ}に{年賀状|ねんがじょう}を{出|だ}す[{風習|ふうしゅう}]がある。",
+"bedeutung": "Brauch"
+},
+"風車|ふうしゃ": {
+"s": "丘の上に大きな[風車]が立っている。",
+"de": "Auf dem Hügel steht eine große Windmühle.",
+"r": "{丘|おか}の{上|うえ}に{大|おお}きな[{風車|ふうしゃ}]が{立|た}っている。",
+"bedeutung": "Windmühle"
+},
+"食う|くう": {
+"s": "腹がへったな。何か[食おう]。",
+"de": "Ich hab Kohldampf, lass uns was futtern.",
+"r": "{腹|はら}がへったな。{何|なに}か[{食|く}おう]。",
+"bedeutung": "essen (derb)"
+},
+"食べる|たべる": {
+"s": "野菜をもっと[食べる]ようにしている。",
+"de": "Ich achte darauf, mehr Gemüse zu essen.",
+"r": "{野菜|やさい}をもっと[{食|た}べる]ようにしている。"
+},
+"食べ物|たべもの": {
+"s": "好きな[食べ物]は何ですか。",
+"de": "Was ist Ihr Lieblingsessen?",
+"r": "{好|す}きな[{食|た}べ{物|もの}]は{何|なん}ですか。"
+},
+"食事|しょくじ": {
+"s": "[食事]の後でお薬を飲んでください。",
+"de": "Nehmen Sie das Medikament bitte nach dem Essen.",
+"r": "[{食事|しょくじ}]の{後|あと}でお{薬|くすり}を{飲|の}んでください。"
+},
+"食品|しょくひん": {
+"s": "[食品]の売り場は地下にあります。",
+"de": "Die Lebensmittelabteilung ist im Untergeschoss.",
+"r": "[{食品|しょくひん}]の{売|う}り{場|ば}は{地下|ちか}にあります。",
+"bedeutung": "Lebensmittel"
+},
+"食堂|しょくどう": {
+"s": "昼は大学の[食堂]で食べる。",
+"de": "Mittags esse ich in der Mensa.",
+"r": "{昼|ひる}は{大学|だいがく}の[{食堂|しょくどう}]で{食|た}べる。"
+},
+"食料|しょくりょう": {
+"s": "雪で山小屋の[食料]が足りなくなった。",
+"de": "Wegen des Schnees wurden in der Hütte die Vorräte knapp.",
+"r": "{雪|ゆき}で{山小屋|やまごや}の[{食料|しょくりょう}]が{足|た}りなくなった。",
+"bedeutung": "Nahrung, Proviant"
+},
+"食料品|しょくりょうひん": {
+"s": "地下には[食料品]の売り場がある。",
+"de": "Im Untergeschoss ist die Lebensmittelabteilung.",
+"r": "{地下|ちか}には[{食料品|しょくりょうひん}]の{売|う}り{場|ば}がある。"
+},
+"食物|しょくもつ": {
+"s": "災害に備えて[食物]をたくわえる。",
+"de": "Für Katastrophen lagert man Lebensmittel.",
+"r": "{災害|さいがい}に{備|そな}えて[{食物|しょくもつ}]をたくわえる。",
+"bedeutung": "Nahrungsmittel"
+},
+"飯|めし": {
+"s": "腹がへったから[飯]にしよう。",
+"de": "Ich hab Hunger, lass uns essen.",
+"r": "{腹|はら}がへったから[{飯|めし}]にしよう。",
+"bedeutung": "Essen, Mahlzeit (derb)",
+"lesungen": {
+"飯": "めし"
+}
+},
+"飲み物|のみもの": {
+"s": "冷たい[飲み物]はいかがですか。",
+"de": "Möchten Sie ein kaltes Getränk?",
+"r": "{冷|つめ}たい[{飲|の}み{物|もの}]はいかがですか。"
+},
+"飲む|のむ": {
+"s": "寝る前に温かいミルクを[飲む]。",
+"de": "Vor dem Schlafen trinke ich warme Milch.",
+"r": "{寝|ね}る{前|まえ}に{温|あたた}かいミルクを[{飲|の}む]。"
 }
 }
